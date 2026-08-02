@@ -1,0 +1,19 @@
+{
+  "name": "反物质维度",
+  "short_name": "反物质维度",
+  "description": "一款关于巨大数字和看着它们增长的放置类游戏",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111014",
+  "theme_color": "#111014",
+  "icons": [
+    {
+      "src": "./public/icon.png",
+      "sizes": "200x200",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

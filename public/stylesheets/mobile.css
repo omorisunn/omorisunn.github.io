@@ -1,0 +1,552 @@
+/* ============================================================
+   手机端适配 + 底部导航栏（SVG 图标）
+   仅在小屏设备（<=768px）生效；桌面端保持原版布局。
+   加速按钮在桌面端显示于侧边栏底部，移动端显示于底栏右侧。
+
+   注意：new-ui-styles.css 由 Vue 运行时动态插入，加载顺序在
+   本文件之后，因此本文件中与其同特异性的规则会被覆盖。
+   所有需要覆盖它的规则都使用 "html" 前缀提升特异性。
+   ============================================================ */
+
+/* 桌面端：侧边栏按钮图标默认隐藏，加速按钮放侧边栏底部 */
+.o-tab-btn__icon {
+  display: none;
+}
+
+.c-modern-sidebar__speed {
+  margin-top: auto;
+  border-top: 0.1rem solid var(--color-accent);
+}
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 768px) {
+  html {
+    --sidebar-width: 0;
+    /* 全局字号：原版 62.5%(10px)，此前调大到 68.75% 偏大，
+       现取 65%(10.4px)，比原版略大便于阅读，整体更紧凑 */
+    font-size: 65%;
+  }
+
+  html,
+  body {
+    overscroll-behavior: none;
+  }
+  html body {
+    padding: 0 !important;
+    /* 原版 overflow:hidden 适合桌面居中布局，手机上内容超屏必须可滚动 */
+    overflow-y: auto !important;
+    height: auto !important;
+  }
+  html #page {
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: auto !important;
+  }
+
+  /* 禁用双击缩放（touch-action: manipulation 会取消双击延迟与双击缩放，
+     同时保留滚动与捏合手势） */
+  html,
+  body,
+  #ui,
+  #ui * {
+    touch-action: manipulation !important;
+  }
+
+  /* 隐藏 "Click for info" 悬浮提示（遮挡顶栏数值） */
+  html .h2p-tooltip[data-v-how-to-play] {
+    display: none;
+  }
+  /* 帮助按钮缩小挪到右上角，不与顶栏数值抢空间 */
+  html .l-help-me[data-v-how-to-play],
+  html .h2p-tutorial--glow[data-v-how-to-play] {
+    right: 0.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  /* 侧边栏 → 底部固定导航栏 */
+  html .c-modern-sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: 3.5rem;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    background: color-mix(in srgb, var(--color-base) 92%, #000);
+    border-top: 0.1rem solid var(--color-accent);
+    box-shadow: 0 -0.15rem 0.8rem rgba(0, 0, 0, 0.55);
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .c-modern-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 货币显示移到顶栏了，隐藏侧边栏货币 */
+  html .c-modern-sidebar .c-modern-sidebar-currency,
+  html .c-modern-sidebar [data-v-modern-sidebar-currency],
+  html .c-modern-sidebar .l-modern-sidebar-currency {
+    display: none;
+  }
+
+  /* 导航按钮横排等宽，可横向滚动 */
+  html .c-modern-sidebar > .o-tab-btn,
+  html .c-modern-sidebar > .c-modern-sidebar__speed {
+    flex: 1 1 auto;
+    min-width: 3.5rem;
+    height: 3.5rem;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 0.62rem;
+    line-height: 1.1;
+  }
+  html .c-modern-sidebar > .o-tab-btn + .o-tab-btn {
+    border-left: 0.05rem solid rgba(128, 128, 128, 0.3);
+  }
+
+  html .c-modern-sidebar__speed {
+    margin-left: auto;
+    border: 0 !important;
+    border-left: 0 !important;
+    background: rgba(128, 128, 128, 0.1);
+  }
+
+  /* 加速自定义弹窗 */
+  html .c-speed-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.55);
+  }
+  html .c-speed-custom__box {
+    width: 78%;
+    max-width: 26rem;
+    background: var(--color-base);
+    border: 0.1rem solid var(--color-accent);
+    border-radius: 0.8rem;
+    padding: 1.1rem 1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+    box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.7);
+  }
+  html .c-speed-custom__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-text);
+    text-align: center;
+  }
+  html .c-speed-custom__input {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid var(--color-accent);
+    background: var(--color-text-inverted);
+    color: var(--color-text);
+    min-height: 2.8rem;
+  }
+  html .c-speed-custom__hint {
+    font-size: 0.85rem;
+    color: var(--color-text);
+    opacity: 0.75;
+    text-align: center;
+  }
+  html .c-speed-custom__buttons {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+  }
+  html .c-speed-custom__btn {
+    flex: 1 1 0;
+    max-width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.55rem 0;
+    border-radius: 0.4rem;
+    border: 0.1rem solid var(--color-accent);
+    cursor: pointer;
+  }
+  html .c-speed-custom__btn--ok {
+    background: var(--color-good);
+    color: black;
+    font-weight: bold;
+  }
+  html .c-speed-custom__btn--cancel {
+    background: var(--color-base);
+    color: var(--color-text);
+  }
+
+  /* 选中态：顶部 accent 色条 + 背景提亮 */
+  html .c-modern-sidebar > .o-tab-btn--active {
+    background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+    box-shadow: inset 0 0.22rem 0 0 var(--color-accent);
+  }
+  html .c-modern-sidebar > .o-tab-btn--active .o-tab-btn__label {
+    color: var(--color-accent);
+  }
+  html .c-modern-sidebar > .o-tab-btn--active .o-tab-btn__icon {
+    color: var(--color-accent);
+  }
+
+  /* 按钮内部：图标 + 小字竖排 */
+  html .c-modern-sidebar .l-tab-btn-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.14rem;
+    padding: 0.15rem 0.1rem;
+  }
+  .o-tab-btn__icon {
+    display: block;
+    line-height: 0;
+    /* 点击穿透图标,避免 SVG 干扰触摸事件的点击合成 */
+    pointer-events: none;
+  }
+  .o-tab-btn__icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .o-tab-btn__label {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 4.6rem;
+    font-size: 0.74rem;
+    line-height: 1.15;
+    font-weight: 600;
+    /* 提高深色底栏上的可读性 */
+    color: var(--color-text);
+    opacity: 0.92;
+    text-shadow: 0 0.05rem 0.15rem rgba(0, 0, 0, 0.8);
+  }
+  html .c-modern-sidebar .o-tab-btn__icon {
+    color: var(--color-text);
+    opacity: 0.9;
+    filter: drop-shadow(0 0.05rem 0.12rem rgba(0, 0, 0, 0.8));
+  }
+
+  /* 内容区全宽 + 给底栏留白 */
+  html .game-container {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 3.9rem;
+  }
+  html #page {
+    overflow-x: hidden;
+  }
+
+  /* 子标签面板：底栏上方弹出，横向滚动
+     注：用 display 控制显隐（!important），绕开 WebKit 上
+     opacity transition 卡住的问题 */
+  html .subtabs {
+    display: none !important;
+    position: fixed;
+    top: auto;
+    bottom: 3.5rem;
+    left: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    opacity: 0;
+    pointer-events: none;
+    background: var(--color-base);
+    border-top: 0.1rem solid var(--color-accent);
+    border-bottom: 0.1rem solid var(--color-accent);
+    padding: 0.3rem 0.4rem;
+    transition: opacity 0.12s linear;
+    z-index: 290;
+  }
+  html .o-tab-btn:hover .subtabs {
+    display: none !important;
+  }
+  html .subtabs--mobile-open {
+    display: flex !important;
+    opacity: 1 !important;
+    pointer-events: all !important;
+  }
+  html .o-tab-btn--subtab {
+    flex: 0 0 auto;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    margin: 0 0.25rem;
+    border-radius: 0.3rem;
+  }
+  .o-subtab__tooltip {
+    display: none;
+  }
+
+  /* 通知与存档计时器避开底栏 */
+  html .l-notification-container {
+    bottom: 3.9rem;
+    top: auto;
+  }
+  html .o-save-timer[data-v-save-timer] {
+    bottom: 4rem;
+    font-size: 0.75rem;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0.1rem solid var(--color-accent);
+    border-radius: 0 0.4rem 0 0;
+  }
+
+  /* 选项网格：桌面两列固定 22rem 宽按钮，手机上改为单列全宽 */
+  html .l-options-grid {
+    width: 100%;
+  }
+  html .l-options-grid__row {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  html .l-options-grid__row > * {
+    flex: 1 1 auto;
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 0.4rem !important;
+    margin-right: 0.4rem !important;
+  }
+  html .l-options-grid__row .o-primary-btn--option {
+    white-space: normal;
+    height: auto;
+    min-height: 2.7rem;
+    line-height: 1.3;
+    padding: 0.45rem 0.7rem;
+  }
+  html .l-dimensions-container {
+    padding: 0.4rem;
+  }
+
+  /* 顶栏声望信息：三块绝对定位固定宽度在手机上溢出，
+     改为自适应堆叠（反物质整行在上，无限/永恒各半行在下） */
+  html .c-prestige-info-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    min-height: 0;
+    position: relative;
+    padding: 0.5rem 0.5rem 0.5rem;
+    gap: 0.2rem 0;
+  }
+  /* 顶栏文本留出呼吸空间，避免压线 */
+  html .c-prestige-info-blocks .c-prestige-button-container {
+    line-height: 1.45;
+  }
+  html .c-prestige-info-blocks .c-game-header__antimatter,
+  html .c-prestige-info-blocks .c-game-header__ip-amount,
+  html .c-prestige-info-blocks .c-game-header__ep-amount {
+    padding: 0 0.15rem;
+  }
+  html .c-prestige-info-blocks > div {
+    position: static !important;
+    width: auto !important;
+    left: auto !important;
+    right: auto !important;
+    flex: 1 1 50%;
+    min-width: 0;
+  }
+  html .c-prestige-info-blocks > .l-game-header__center {
+    flex: 1 1 100%;
+    order: -1;
+  }
+  html .c-prestige-button-container {
+    text-align: center;
+  }
+  /* 顶栏内按钮缩小适配 */
+  html .c-prestige-button-container .o-prestige-button,
+  html .c-prestige-button-container .btn-big-crunch {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.55rem;
+    margin: 0.15rem auto;
+    max-width: 94%;
+    white-space: normal;
+    line-height: 1.25;
+  }
+
+  /* 成就网格：自动换行，每行 3~4 个 */
+  html .l-achievement-grid {
+    align-items: center;
+  }
+  html .l-achievement-grid__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  html .l-achievement-grid__cell {
+    margin: 0.4rem;
+  }
+
+  /* 主按钮与常见宽元素适配 */
+  html .o-primary-btn--new {
+    width: 100%;
+    max-width: 25rem;
+    margin: 0.4rem auto;
+  }
+
+  html .l-antimatter-dim-tab {
+    justify-content: flex-start;
+  }
+
+  html .tab-container {
+    justify-content: flex-start;
+  }
+
+  /* ---------- 维度页细节 ---------- */
+
+  /* 顶部按钮行（买到10/献祭/购买最大）：收窄左右留白 */
+  html .modes-container {
+    padding: 0 0.4rem;
+    margin-top: 0.4rem;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+  }
+  html .modes-container .o-primary-btn {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.3rem;
+    margin: 0;
+    white-space: normal;
+    line-height: 1.25;
+  }
+
+  /* "购买10个的加成倍数" 提示：独立一行居中，留足行高 */
+  html .l-antimatter-dim-tab > span {
+    display: block;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0.25rem 0.5rem 0.1rem;
+    color: var(--color-text);
+    opacity: 0.9;
+  }
+
+  /* 计数频率行：紧凑且居中，去掉悬空感 */
+  html .l-tickspeed-container {
+    padding: 0.35rem 0.4rem;
+    gap: 0.25rem;
+  }
+  html .l-tickspeed-container .o-primary-btn {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.5rem;
+    white-space: normal;
+    line-height: 1.25;
+  }
+
+  /* 维度行：文字与绿框之间留出内边距 */
+  html .l-dimensions-container .l-dimension-text-container {
+    padding-left: 0.7rem;
+  }
+  html .l-dimensions-container .l-dimension-single-row {
+    height: auto;
+    min-height: 5rem;
+    padding: 0.35rem 0;
+    /* 固定列比例:文字 4 份 + 按钮 3 份。minmax(0,..) 允许列收缩,
+       防止按钮内容把列撑破导致文字列被压缩 */
+    grid-template-columns: minmax(0, 4fr) minmax(0, 3fr) !important;
+  }
+  html .l-dimensions-container .l-dimension-text-container {
+    grid-column: 1 / 2 !important;
+  }
+  html .l-dimensions-container .l-dim-row-multi-button-container {
+    grid-column: 2 / 3 !important;
+    min-width: 0;
+  }
+  /* 购买按钮内部排版：两行文字居中、行距舒适 */
+  html .l-dim-row-multi-button-container {
+    padding-right: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html .l-dim-row-multi-button-container .o-primary-btn--new {
+    width: 100%;
+    max-width: 14rem;
+    margin: 0;
+    padding: 0.5rem 0.6rem;
+  }
+  html .l-dim-row-multi-button-container .button-content {
+    gap: 0.15rem;
+    flex-direction: column;
+  }
+  html .l-dim-row-multi-button-container .button-content > div {
+    line-height: 1.35;
+    font-size: 0.95rem;
+  }
+  html .l-dim-row-multi-button-container .l-dim-row-small-text {
+    font-size: 0.85rem;
+  }
+
+  /* 重置按钮（维度提升/反物质星系）：降饱和、不刺眼、内边距充足 */
+  html .resets-container {
+    height: auto;
+    min-height: 0;
+    justify-content: space-around;
+    gap: 0.4rem;
+    padding: 0.4rem 0.4rem 0;
+  }
+  html .resets-container .reset-container {
+    width: 48%;
+    height: auto;
+    min-height: 0;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    margin: 0;
+  }
+  html .resets-container .reset-container h4 {
+    font-size: 1.05rem;
+  }
+  html .resets-container .reset-container > span {
+    font-size: 0.85rem;
+    line-height: 1.35;
+    text-align: center;
+    padding: 0 0.3rem;
+  }
+  html .o-primary-btn--dimension-reset {
+    width: 100%;
+    height: auto;
+    min-height: 4.4rem;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    padding: 0.55rem 0.5rem;
+    margin: 0;
+    /* 用主题色但降低饱和度与面积感 */
+    background: color-mix(in srgb, var(--color-accent) 14%, var(--color-base));
+    border-color: color-mix(in srgb, var(--color-accent) 55%, var(--color-base));
+    color: var(--color-text);
+  }
+  html .o-primary-btn--dimension-reset:hover {
+    background: color-mix(in srgb, var(--color-accent) 24%, var(--color-base));
+  }
+
+  /* 进度条：不再被底栏遮挡，留足底部空间 */
+  html .c-progress-bar {
+    width: 86%;
+    margin: 0.6rem auto 1.2rem;
+  }
+}
