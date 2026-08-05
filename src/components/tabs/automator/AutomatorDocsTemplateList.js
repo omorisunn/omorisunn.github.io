@@ -11,10 +11,9 @@ export default {
     templates: () => GameDatabase.reality.automator.templates.scripts,
     pasteText() {
       return this.isBlock
-        ? `create a special block you can drag into your Automator where you would like it to be placed. It will then
-          automatically fill in all of the individual blocks needed for the template`
-        : `copy the template as text onto your clipboard. You can directly paste the template text into your Automator
-          wherever you would like it`;
+        ? `创建一个特殊的积木，你可以将它拖放到自动机中你想要放置的位置。它会自动
+          填充模板所需的所有独立积木`
+        : `将模板以文本形式复制到剪贴板。你可以将模板文本直接粘贴到自动机的任何位置`;
     }
   },
   methods: {
@@ -52,10 +51,10 @@ export default {
   },
   template: `
   <div>
-    These templates will let you do some more common things within the Automator. They may be slightly slower than
-    manually-written scripts, but don't require you to have any previous programming experience to use. Clicking any
-    of these buttons will open up a prompt with some input fields, which will generate a template you can place into
-    your Automator.
+    这些模板可以让你在自动机中完成一些更常见的操作。它们可能比
+    手写脚本稍慢，但使用它们不需要你具备任何编程经验。点击任意
+    按钮都会打开一个带有输入字段的窗口，从而生成一个可以放入
+    自动机的模板。
     <button
       v-for="template in templates"
       :key="template.name"
@@ -63,9 +62,9 @@ export default {
       @click="showModal(template)"
       data-v-automator-docs-template-list
     >
-      Template: {{ template.name }}
+      模板：{{ template.name }}
     </button>
-    Since you are currently in the {{ isBlock ? "Block" : "Text" }} editor, this panel will {{ pasteText }}.
+    由于你当前使用的是{{ isBlock ? "积木" : "文本" }}编辑器，此面板将{{ pasteText }}。
     <br>
     <br>
     <draggable

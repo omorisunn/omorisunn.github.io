@@ -19,7 +19,7 @@ export default {
   methods: {
     update() {
       this.speed = player.options.externalSpeed ?? 1;
-      this.isMobile = window.matchMedia("(max-width: 768px)").matches;
+      this.isMobile = window.matchMedia("(max-width: 900px)").matches;
     },
     cycle() {
       const speeds = [1, 2, 5, 10, 100, 1000];

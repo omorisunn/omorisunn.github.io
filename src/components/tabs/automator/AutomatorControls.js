@@ -33,9 +33,9 @@ export default {
       return this.$viewModel.tabs.reality.automator.editorScriptID;
     },
     playTooltip() {
-      if (this.isPaused) return "Resume Automator execution";
-      if (!this.isRunning) return "Start Automator";
-      return "Pause Automator execution";
+      if (this.isPaused) return "继续自动机执行";
+      if (!this.isRunning) return "启动自动机";
+      return "暂停自动机执行";
     },
     playButtonClass() {
       return {
@@ -52,10 +52,10 @@ export default {
       let lineNum = `0000${this.currentLine}`;
       lineNum = lineNum.slice(lineNum.length - digits);
 
-      if (this.isPaused) return `Paused: "${this.statusName}" (Resumes on Line ${lineNum})`;
-      if (this.isRunning) return `Running: "${this.statusName}" (Line ${lineNum})`;
-      if (this.hasErrors) return `Stopped: "${this.statusName}" has errors (Cannot run)`;
-      return `Stopped: Will start running "${this.statusName}"`;
+      if (this.isPaused) return `已暂停：“${this.statusName}”（将在第 ${lineNum} 行继续）`;
+      if (this.isRunning) return `运行中：“${this.statusName}”（第 ${lineNum} 行）`;
+      if (this.hasErrors) return `已停止：“${this.statusName}”存在错误（无法运行）`;
+      return `已停止：将开始运行“${this.statusName}”`;
     },
     maxScriptChars() {
       return AutomatorData.MAX_ALLOWED_SCRIPT_CHARACTERS;
@@ -210,21 +210,59 @@ export default {
       <span
         v-if="duplicateStatus"
         v-tooltip="'More than one script has this name!'"
-        class="fas fa-exclamation-triangle c-automator__status-text c-automator__status-text--error"
         data-v-automator-controls
-      />
+      >
+        <svg
+          class="c-automator__status-icon c-automator__status-icon--error"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M12 3.5L21 19.5H3z" />
+          <path d="M12 9.5v4.5" />
+          <circle cx="12" cy="17" r="0.5" fill="currentColor" stroke="none" />
+        </svg>
+      </span>
       <span
         v-if="editingDifferentScript"
         v-tooltip="'The automator is running a different script than the editor is showing'"
-        class="fas fa-circle-exclamation c-automator__status-text c-automator__status-text--warning"
         data-v-automator-controls
-      />
+      >
+        <svg
+          class="c-automator__status-icon c-automator__status-icon--warning"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="8.5" />
+          <path d="M12 7.2v5.2" />
+          <circle cx="12" cy="16" r="0.7" fill="currentColor" stroke="none" />
+        </svg>
+      </span>
       <span
         v-if="justCompleted"
         v-tooltip="'The automator completed running the previous script'"
-        class="fas fa-circle-check c-automator__status-text"
         data-v-automator-controls
-      />
+      >
+        <svg
+          class="c-automator__status-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="8.5" />
+          <path d="M8 12.5l2.8 2.8L16 9.5" />
+        </svg>
+      </span>
       <span
         class="c-automator__status-text"
         :class="{ 'c-automator__status-text--error' : hasErrors && !(isRunning || isPaused) }"

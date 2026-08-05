@@ -49,11 +49,11 @@ export default {
     <CostDisplay
       v-if="!isBought"
       :config="config"
-      name="Relic Shard"
+      name="块遗物碎片"
       label=""
     />
     <div v-else>
-      (Unlocked)
+      （已解锁）
     </div>
   </button>
   `

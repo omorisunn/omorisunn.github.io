@@ -15,7 +15,7 @@ export default {
       const localStr = timeDisplayShort(this.currentTime - this.lastLocalSave);
       const cloudStr = timeDisplayShort(this.currentTime - this.lastCloudSave);
       return this.cloudSaveEnabled
-        ? `${localStr} (local) | ${cloudStr} (cloud)`
+        ? `${localStr}（本地）| ${cloudStr}（云端）`
         : localStr;
     },
   },

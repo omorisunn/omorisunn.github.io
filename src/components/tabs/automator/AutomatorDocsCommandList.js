@@ -27,7 +27,7 @@ export default {
         @click="selectedCommand = -1"
         data-v-automator-docs-command-list
       />
-      Return to the Command List
+      返回命令列表
     </div>
     <AutomatorDocsManPage
       v-if="selectedCommand !== -1"
@@ -39,16 +39,16 @@ export default {
       class="c-automator-docs-page"
       data-v-automator-docs-command-list
     >
-      Click on an underlined command to see more details on syntax, usage, and functionality.
+      点击带下划线的命令可以查看有关语法、用法和功能的更多详细信息。
       <br>
       <br>
-      <span>Command List:</span>
+      <span>命令列表：</span>
       <br>
       <div
         v-for="(category, i) in categoryNames"
         :key="i"
       >
-        {{ category }} ({{ commandsInCategory(i).length }} commands)
+        {{ category }}（{{ commandsInCategory(i).length }} 个命令）
         <div
           v-for="command in commandsInCategory(i)"
           :key="command.id"
@@ -63,10 +63,10 @@ export default {
       </div>
       <br>
       <span>
-        Note: In the SYNTAX note on each command, <u>underlined</u> inputs are <i>required</i> inputs which you must
-        fill and inputs in [square brackets] are optional (if used, they should be input <i>without</i> the brackets).
-        Any other parts should be typed in as they appear. Unless otherwise stated, all of the inputs are
-        case-insensitive. Some commands may have more than one valid format, which will appear on separate lines.
+        注意：在每个命令的语法说明中，<u>带下划线</u>的输入是必须填写的<i>必需</i>输入，
+        [方括号]中的输入是可选的（如果使用，输入时不应包含括号）。
+        其他部分应按原样输入。除非另有说明，所有输入都不区分大小写。
+        部分命令可能有多种有效格式，这些格式会显示在不同的行上。
       </span>
     </div>
   </div>

@@ -19,29 +19,29 @@ export default {
       return this.challenge.isCompleted;
     },
     message() {
-      return `You will Big Crunch (if possible) and start a new Infinity within the Challenge with all the
-        Challenge-specific restrictions and modifiers active.
-        To complete the Challenge${this.challengeIsCompleted ? "" : " and gain its reward"},
-        you must reach the Challenge goal of
-        ${format(InfinityChallenge(this.id).goal)} Antimatter.
-        You do not start with any Dimension Boosts or Galaxies, regardless of upgrades.`;
+      return `你将进行大爆炸（如果可能）并在挑战中开始一次新的无限，所有
+        挑战专属限制和修正都会生效。
+        要完成挑战${this.challengeIsCompleted ? "" : "并获得其奖励"}，
+        你必须达到挑战目标
+        ${format(InfinityChallenge(this.id).goal)} 反物质。
+        无论拥有什么升级，你都不会以任何维度提升或星系开始。`;
     },
     entranceLabel() {
-      return `You are about to enter Infinity Challenge ${this.id}`;
+      return `你即将进入无限挑战 ${this.id}`;
     },
     reward() {
       let rewardDescription = this.challenge._config.reward.description;
       if (typeof rewardDescription === "function") {
         rewardDescription = rewardDescription();
       }
-      return `The reward for completing this challenge is: ${rewardDescription}`;
+      return `完成此挑战的奖励是：${rewardDescription}`;
     },
     condition() {
       let conditionOfChallenge = this.challenge._config.description;
       if (typeof conditionOfChallenge === "function") {
         conditionOfChallenge = conditionOfChallenge();
       }
-      return `Inside this Infinity Challenge, ${conditionOfChallenge}`;
+      return `在此无限挑战中，${conditionOfChallenge}`;
     }
   },
   created() {
@@ -74,7 +74,7 @@ export default {
       {{ reward }}
     </div>
     <template #confirm-text>
-      Begin
+      开始
     </template>
   </ModalWrapperChoice>
   `

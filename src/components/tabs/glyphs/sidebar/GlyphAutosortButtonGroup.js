@@ -22,13 +22,20 @@ export default {
       // These are the keys for AUTO_SORT_MODE, with SCORE only added conditionally if unlocked
       const availableSortModes = ["NONE", "LEVEL", "POWER", "EFFECT"];
       if (this.showScoreFilter) availableSortModes.push("SCORE");
-      return availableSortModes;
+      const names = {
+        NONE: "无",
+        LEVEL: "等级",
+        POWER: "力量",
+        EFFECT: "效果",
+        SCORE: "分数"
+      };
+      return availableSortModes.map(mode => names[mode]);
     },
     questionMarkTooltip() {
-      return `The automatic settings below will apply after every Reality`;
+      return `以下自动设置会在每次现实后生效`;
     },
     keepTooltip() {
-      return "If set to ON, Glyphs which your filter accepts will never be auto-purged even if they are worse";
+      return "如果设为开，你的筛选接受的符文即使更差也绝不会被自动清除";
     }
   },
   watch: {
@@ -64,30 +71,30 @@ export default {
       >
         ?
       </div>
-      Auto Glyph Arrangement:
+      自动符文整理：
     </div>
     <ButtonCycle
       v-model="autoSort"
       class="c-glyph-inventory-option"
-      text="Auto-sort Mode:"
+      text="自动排序模式："
       :labels="sortModes"
     />
     <ToggleButton
       v-model="autoCollapse"
       class="c-glyph-inventory-option"
-      label="Auto-collapse space:"
+      label="自动折叠空间："
     />
     <ToggleButton
       v-if="showAutoAutoClean"
       v-model="autoAutoClean"
       class="c-glyph-inventory-option"
-      label="Auto-purge on Realities:"
+      label="现实时自动清除："
     />
     <ToggleButton
       v-if="showAutoAutoClean"
       v-model="applyFilterToPurge"
       class="c-glyph-inventory-option"
-      label="Never Auto-purge Glyphs accepted by filter:"
+      label="绝不自动清除被筛选接受的符文："
       tooltip-class="c-glyph-inventory-option__tooltip"
       :tooltip-content="keepTooltip"
     />

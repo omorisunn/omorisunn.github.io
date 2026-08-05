@@ -1,7 +1,7 @@
 import { DC } from "../../constants.js";
 
 const specialInfinityGlyphDisabledEffectText = () => (PelleRifts.chaos.milestones[1].canBeApplied
-  ? "无限符文在佩勒的现实中特有的词条也被禁用了。"
+  ? "无限符文在 Pelle 的现实中特有的词条也被禁用了。"
   : "");
 
 export const eternityChallenges = [

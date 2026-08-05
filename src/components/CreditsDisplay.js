@@ -29,7 +29,7 @@ export default {
       class="c-credits-header"
       data-v-credits-display
     >
-      Antimatter Dimensions
+      反物质维度
     </h1>
 
     <div

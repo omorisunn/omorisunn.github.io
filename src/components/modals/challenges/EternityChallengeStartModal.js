@@ -19,29 +19,29 @@ export default {
       return this.challenge.isFullyCompleted;
     },
     message() {
-      return `You will Eternity (if possible) and start a new Eternity within the Challenge, with all the
-        Challenge-specific restrictions and modifiers active.
-        To complete the Challenge${this.challengeIsCompleted ? "" : " and gain its reward"},
-        you must reach the Challenge goal of
-        ${format(this.challenge.currentGoal)} Infinity Points. You can complete Eternity Challenges up to
-        ${formatInt(5)} times, with increasing goals and bonuses.`;
+      return `你将进行永恒（如果可能）并在挑战中开始一次新的永恒，所有
+        挑战专属限制和修正都会生效。
+        要完成挑战${this.challengeIsCompleted ? "" : "并获得其奖励"}，
+        你必须达到挑战目标
+        ${format(this.challenge.currentGoal)} 无限点数。永恒挑战最多可以完成
+        ${formatInt(5)} 次，目标和奖励会不断提升。`;
     },
     entranceLabel() {
-      return `You are about to enter Eternity Challenge ${this.id}`;
+      return `你即将进入永恒挑战 ${this.id}`;
     },
     reward() {
       let rewardDescription = this.challenge._config.reward.description;
       if (typeof rewardDescription === "function") {
         rewardDescription = rewardDescription();
       }
-      return `The reward for completing this challenge is: ${rewardDescription}`;
+      return `完成此挑战的奖励是：${rewardDescription}`;
     },
     condition() {
       let conditionOfChallenge = this.challenge._config.description;
       if (typeof conditionOfChallenge === "function") {
         conditionOfChallenge = conditionOfChallenge();
       }
-      return `Inside this Eternity Challenge, ${conditionOfChallenge}`;
+      return `在此永恒挑战中，${conditionOfChallenge}`;
     }
   },
   created() {
@@ -75,7 +75,7 @@ export default {
       {{ reward }}
     </div>
     <template #confirm-text>
-      Begin
+      开始
     </template>
   </ModalWrapperChoice>
   `

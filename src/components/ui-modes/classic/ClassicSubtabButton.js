@@ -24,10 +24,10 @@ export default {
         "o-tab-btn": true,
         "o-tab-btn--secondary": true,
         "o-subtab-btn--active": this.isCurrentSubtab,
-        "o-tab-btn--infinity": this.parentName === "Infinity",
-        "o-tab-btn--eternity": this.parentName === "Eternity",
-        "o-tab-btn--reality": this.parentName === "Reality",
-        "o-tab-btn--celestial": this.parentName === "Celestials"
+        "o-tab-btn--infinity": this.parentName === "无限",
+        "o-tab-btn--eternity": this.parentName === "永恒",
+        "o-tab-btn--reality": this.parentName === "现实",
+        "o-tab-btn--celestial": this.parentName === "天神"
       };
     },
   },
@@ -51,10 +51,21 @@ export default {
     data-v-classic-subtab-button
   >
     {{ tabName }}
-    <div
+    <svg
       v-if="hasNotification"
-      class="fas fa-circle-exclamation l-notification-icon"
-    />
+      class="l-notification-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      data-v-classic-subtab-button
+    >
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.2v5.2" />
+      <circle cx="12" cy="16" r="0.7" fill="currentColor" stroke="none" />
+    </svg>
   </button>
   `
 };

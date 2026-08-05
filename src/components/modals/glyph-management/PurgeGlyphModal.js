@@ -16,22 +16,22 @@ export default {
       return this.harsh ? 1 : 5;
     },
     extraMessage() {
-      if (this.glyphsDeleted === 0) return `This will Purge no Glyphs.`;
-      if (this.glyphsDeleted === this.glyphsTotal) return `This will Purge all your Glyphs.`;
-      return `${this.harsh ? `Harsh Purging` : `Purging`} will delete
+      if (this.glyphsDeleted === 0) return `这次清除不会删除任何符文。`;
+      if (this.glyphsDeleted === this.glyphsTotal) return `这次清除会删除你的所有符文。`;
+      return `${this.harsh ? `严厉清除` : `清除`}将删除
         ${formatInt(this.glyphsDeleted)}/${formatInt(this.glyphsTotal)}
-      of your Glyphs.`;
+      个符文。`;
     },
     explanation() {
-      if (this.harsh) return `Harsh Purging deletes Glyphs that are strictly worse than any other Glyph in your
-        inventory. For example, if a Glyph has all the same effects as another Glyph, but the values
-        of ALL of the effects are worse, then it will be deleted.`;
-      return `Purging deletes Glyphs that are strictly worse than other Glyphs, while keeping enough to equip a full
-        set with those effects. This behaves like Harsh Purge, except that regular Purge will not delete any given
-        Glyph unless it finds five Glyphs which are better (instead of only one).`;
+      if (this.harsh) return `严厉清除会删除比你背包中任何其他符文都严格更差的符文。
+        例如，如果一个符文与另一个符文拥有完全相同的效果，但所有效果的数值
+        都更差，那么它将被删除。`;
+      return `清除会删除严格差于其他符文的符文，同时保留足够装备
+        一套相同效果的符文。这类似于严厉清除，但普通清除只有在找到五个
+        更好的符文时才会删除某个符文（而不是只找一个）。`;
     },
     topLabel() {
-      return `You are about to ${this.harsh ? `Harsh Purge` : `Purge`} your Glyphs`;
+      return `你即将${this.harsh ? `严厉清除` : `清除`}你的符文`;
     },
 
     // These two don't need to be reactive since the modal force-closes itself whenever glyphs change
@@ -56,8 +56,8 @@ export default {
       {{ topLabel }}
     </template>
     <div class="c-modal-message__text">
-      This could delete Glyphs in your inventory that are good enough that you might want to use them
-      later. Purging will Purge Glyphs based on your Purge mode. Are you sure you want to do this?
+      这可能会删除你背包中足够好、以后可能想使用的符文。
+      清除将根据你的清除模式删除符文。你确定要这样做吗？
       <br>
       <br>
       {{ explanation }}

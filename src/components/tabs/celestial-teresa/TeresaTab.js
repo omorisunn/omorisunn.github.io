@@ -72,15 +72,15 @@ export default {
       };
     },
     pourText() {
-      return this.isPouredAmountCapped ? "Filled" : "Pour RM";
+      return this.isPouredAmountCapped ? "已装满" : "注入 RM";
     },
     runDescription() {
       return GameDatabase.celestials.descriptions[0].effects();
     },
     lastMachinesString() {
       return this.lastMachines.lt(DC.E10000)
-        ? `${quantify("Reality Machine", this.lastMachines, 2)}`
-        : `${quantify("Imaginary Machine", this.lastMachines.dividedBy(DC.E10000), 2)}`;
+        ? `${quantify("台现实机器", this.lastMachines, 2)}`
+        : `${quantify("台想象机器", this.lastMachines.dividedBy(DC.E10000), 2)}`;
     },
     unlockInfoTooltipArrowStyle() {
       return {
@@ -141,7 +141,7 @@ export default {
   <div class="l-teresa-celestial-tab">
     <CelestialQuoteHistory celestial="teresa" />
     <div>
-      You have {{ quantify("Reality Machine", rm, 2, 2) }}.
+      你有 {{ quantify("台现实机器", rm, 2, 2) }}。
     </div>
     <div class="l-mechanics-container">
       <div
@@ -150,7 +150,7 @@ export default {
       >
         <div class="c-teresa-unlock c-teresa-run-button">
           <span :class="{ 'o-pelle-disabled': isDoomed }">
-            Start Teresa's Reality.
+            开始 Teresa 的现实。
           </span>
           <div
             :class="runButtonClassObject"
@@ -161,22 +161,22 @@ export default {
           {{ runDescription }}
           <br><br>
           <div>
-            This Reality can be repeated for a stronger reward based on the antimatter gained within it.
+            此现实可以重复进行，根据其中获得的物质获得更强的奖励。
             <br><br>
             <span v-if="showRunReward">
-              Your record antimatter in Teresa's Reality is {{ format(bestAM, 2) }},
-              achieved with {{ lastMachinesString }}.
+              你在 Teresa 的现实中的最高反物质记录为 {{ format(bestAM, 2) }}，
+              使用了 {{ lastMachinesString }}。
               <br><br>
-              Glyph Set used:
+              使用的符文组：
               <GlyphSetPreview
-                text="Teresa's Best Glyph Set"
+                text="Teresa 的最佳符文组"
                 :text-hidden="true"
                 :force-name-color="false"
                 :glyphs="bestAMSet"
               />
             </span>
             <span v-else>
-              You have not completed Teresa's Reality yet.
+              你还没有完成 Teresa 的现实。
             </span>
           </div>
         </div>
@@ -184,14 +184,14 @@ export default {
           v-if="showRunReward"
           class="c-teresa-unlock"
         >
-          Teresa Reality reward: Glyph Sacrifice power {{ formatX(runReward, 2, 2) }}
+          Teresa 现实奖励：符文献祭力量 {{ formatX(runReward, 2, 2) }}
         </div>
         <div
           v-if="hasEPGen"
           class="c-teresa-unlock"
         >
           <span :class="{ 'o-pelle-disabled': isDoomed }">
-            Every second, you gain {{ formatPercents(0.01) }} of your peaked Eternity Points per minute this Reality.
+            每秒，你都会获得本现实中每分钟峰值永恒点数的 {{ formatPercents(0.01) }}。
           </span>
         </div>
       </div>
@@ -217,7 +217,7 @@ export default {
             :style="{ height: percentage}"
           >
             <div class="c-rm-store-label">
-              {{ formatX(rmMult, 2, 2) }} RM gain
+              {{ formatX(rmMult, 2, 2) }} RM 收益
               <br>
               {{ format(pouredAmount, 2, 2) }}/{{ format(pouredAmountCap, 2, 2) }}
             </div>
@@ -252,14 +252,14 @@ export default {
         class="c-teresa-shop"
       >
         <span class="o-teresa-pp">
-          You have {{ quantify("Perk Point", perkPoints, 2, 0) }}.
+          你有 {{ quantify("个福利点", perkPoints, 2, 0) }}。
         </span>
         <PerkShopUpgradeButton
           v-for="upgrade in upgrades"
           :key="upgrade.id"
           :upgrade="upgrade"
         />
-        You can now modify the appearance of your Glyphs to look like Music Glyphs.
+        你现在可以修改符文的外观，使其看起来像 Music Glyph。
       </div>
       <div
         v-else

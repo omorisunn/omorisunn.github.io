@@ -75,10 +75,10 @@ export default {
       return !this.isRecent(this.lastNotEmptyAt);
     },
     disabledText() {
-      if (!this.resource.isBase) return `Total effect inactive, disabled, or reduced to ${formatX(1)}`;
+      if (!this.resource.isBase) return `总效果未激活、被禁用或降低到 ${formatX(1)}`;
       return Decimal.eq(this.resource.mult, 0)
-        ? `You cannot gain this resource (prestige requirement not reached)`
-        : `You have no multipliers for this resource (will gain ${format(1)} on prestige)`;
+        ? `你无法获得此资源（未达到声望需求）`
+        : `此资源没有任何倍率（声望时将获得 ${format(1)}）`;
     },
     // IC4 is the first time the player sees a power-based effect, not counting how infinity power is handled.
     // This doesn't need to be reactive because completing IC4 for the first time forces a tab switch
@@ -344,7 +344,7 @@ export default {
       const formatFn = resource.isBase
         ? x => format(x, 2, 2)
         : x => formatX(x, 2, 2);
-      return `Dilation Effect: Exponent${formatPow(this.dilationExponent, 2, 3)}
+      return `膨胀效果：指数${formatPow(this.dilationExponent, 2, 3)}
         (${formatFn(beforeMult, 2, 2)} ➜ ${formatFn(afterMult, 2, 2)})`;
     },
     isRecent(date) {
@@ -397,7 +397,7 @@ export default {
           <PrimaryToggleButton
             v-if="hasSeenPowers && allowPowerToggle"
             v-model="replacePowers"
-            v-tooltip="'Change Display for Power effects'"
+            v-tooltip="'更改力量效果的显示方式'"
             off="^N"
             on="×N"
             class="o-primary-btn c-change-display-btn"
@@ -405,7 +405,7 @@ export default {
           />
           <i
             v-if="groups.length > 1"
-            v-tooltip="'Change Multiplier Grouping'"
+            v-tooltip="'更改倍率分组'"
             class="o-primary-btn c-change-display-btn fas fa-arrows-rotate"
             @click="changeGroup"
             data-v-multiplier-breakdown-entry
@@ -417,7 +417,7 @@ export default {
         class="c-no-effect"
         data-v-multiplier-breakdown-entry
       >
-        No Active Effects
+        无生效效果
         <br>
         <br>
         {{ disabledText }}
@@ -466,15 +466,14 @@ export default {
         data-v-multiplier-breakdown-entry
       >
         <div>
-          "Base AD Production" is the amount of Antimatter that you would be producing with your current AD upgrades
-          as if you had waited a fixed amount of time ({{ formatInt(10) }}-{{ formatInt(40) }} seconds depending on
-          your AD count) after a Sacrifice. This may misrepresent your actual production if your ADs have been
-          producing for a while, but the relative mismatch will become smaller as you progress further in the game
-          and numbers become larger.
+          “基础反物质维度产出”是你在当前反物质维度升级下，在献祭后等待固定时间
+          （根据你的反物质维度数量为 {{ formatInt(10) }} 至 {{ formatInt(40) }} 秒）将会产生的反物质数量。
+          如果你的反物质维度已经生产了一段时间，这可能会与你的实际产出有出入，
+          但随着你在游戏中不断推进、数字变得更大，相对差异会变小。
         </div>
         <div v-if="inNC12">
-          The breakdown in this tab within Normal Challenge 12 may be inaccurate for some entries, and might count
-          extra multipliers which apply to all Antimatter Dimensions rather than just the ones which are displayed.
+          在普通挑战 12 中，此标签页的某些条目可能不准确，并且可能计入适用于所有反物质维度
+          而非仅适用于所显示维度的额外倍率。
         </div>
       </div>
     </div>

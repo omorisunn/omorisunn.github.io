@@ -23,7 +23,7 @@ export default {
     };
   },
   computed: {
-    resetTerm() { return this.isDoomed ? "Armageddon" : "Reality"; },
+    resetTerm() { return this.isDoomed ? "末日审判" : "现实"; },
   },
   methods: {
     update() {
@@ -42,9 +42,9 @@ export default {
     @confirm="handleYesClick"
   >
     <template #header>
-      You are about to replace a Glyph
+      你即将替换一个符文
     </template>
-    Replacing a Glyph will restart this {{ resetTerm }}.
+    替换符文将重新开始本次{{ resetTerm }}。
   </ModalWrapperChoice>
   `
 };

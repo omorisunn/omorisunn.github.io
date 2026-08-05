@@ -1,0 +1,193 @@
+/* ============================================================
+   UI 美化层
+   与 mobile.css 配套：动画、图标尺寸、焦点态、滚动条、发光效果。
+   通用规则对桌面与移动端同时生效，移动端专属规则放在媒体查询内。
+   覆盖 new-ui-styles.css 的规则统一使用 "html" 前缀。
+   ============================================================ */
+
+/* ---------- 滚动条：细窄 + 主题色 ---------- */
+html ::-webkit-scrollbar {
+  width: 0.45rem;
+  height: 0.45rem;
+}
+html ::-webkit-scrollbar-track {
+  background: transparent;
+}
+html ::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-accent) 38%, transparent);
+  border-radius: 0.25rem;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--color-accent) 72%, transparent);
+}
+
+/* ---------- 键盘焦点：主题色轮廓 ---------- */
+html :focus-visible {
+  outline: 0.15rem solid var(--color-accent);
+  outline-offset: 0.12rem;
+  border-radius: 0.2rem;
+}
+
+/* ---------- 通用按钮过渡与反馈 ---------- */
+html .o-primary-btn,
+html .o-prestige-button,
+html .c-reality-upgrade-btn,
+html .o-tab-btn,
+html .o-automator-btn {
+  transition: transform 0.12s ease, filter 0.12s ease, box-shadow 0.12s ease,
+    background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+html .o-primary-btn:hover:not(.o-primary-btn--disabled),
+html .o-prestige-button:hover,
+html .c-reality-upgrade-btn:hover,
+html .o-automator-btn:hover {
+  box-shadow: 0 0 0.9rem color-mix(in srgb, var(--color-accent) 45%, transparent);
+}
+html .o-primary-btn:active:not(.o-primary-btn--disabled),
+html .o-prestige-button:active,
+html .c-reality-upgrade-btn:active,
+html .o-automator-btn:active {
+  transform: scale(0.97);
+}
+
+/* ---------- 底栏图标微动效 ---------- */
+html .o-tab-btn__icon svg {
+  transition: transform 0.16s ease;
+}
+html .c-modern-sidebar > .o-tab-btn:hover .o-tab-btn__icon svg,
+html .c-modern-sidebar > .o-tab-btn--active .o-tab-btn__icon svg {
+  transform: scale(1.08);
+}
+
+/* ---------- 模态关闭按钮：圆形 + 悬停旋转 ---------- */
+html .o-primary-btn--modal-close.c-modal__close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  padding: 0;
+  border-radius: 50%;
+  line-height: 1;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+html .o-primary-btn--modal-close.c-modal__close-btn:hover {
+  transform: rotate(90deg);
+  box-shadow: 0 0 0.7rem color-mix(in srgb, var(--color-bad) 55%, transparent);
+}
+html .o-primary-btn--modal-close.c-modal__close-btn svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  display: block;
+}
+
+/* ---------- 通知角标：SVG 尺寸约束 ---------- */
+html .l-notification-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  flex: 0 0 auto;
+}
+
+/* ---------- 手写 SVG 图标尺寸 ---------- */
+html .c-ad-slider__button-icon {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+}
+html .o-autobuyer-toggle-checkbox__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  vertical-align: -0.28rem;
+}
+html .c-automator__status-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  vertical-align: -0.22rem;
+}
+html .c-automator__status-icon--error {
+  color: var(--color-bad);
+}
+html .c-automator__status-icon--warning {
+  color: var(--color-good-paused);
+}
+html .c-gamespeed__icon {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  vertical-align: -0.15rem;
+}
+html .c-modal-celestial-quote-history__close[data-v-celestial-quote-history-display] {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+@media (max-width: 900px) {
+  /* 模态遮罩毛玻璃，增强层次感 */
+  html .l-modal-overlay {
+    backdrop-filter: blur(0.35rem);
+    -webkit-backdrop-filter: blur(0.35rem);
+  }
+
+  /* 新闻滚动条：细窄不挡内容 */
+  html .c-news-ticker {
+    scrollbar-width: none;
+  }
+  html .c-news-ticker::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 头栏货币：柔和主题光晕 */
+  html .c-prestige-info-blocks .c-game-header__antimatter {
+    text-shadow: 0 0 0.7rem color-mix(in srgb, var(--color-antimatter) 40%, transparent);
+  }
+  html .c-prestige-info-blocks .c-game-header__ip-amount {
+    text-shadow: 0 0 0.7rem color-mix(in srgb, var(--color-infinity) 40%, transparent);
+  }
+  html .c-prestige-info-blocks .c-game-header__ep-amount {
+    text-shadow: 0 0 0.7rem color-mix(in srgb, var(--color-eternity) 40%, transparent);
+  }
+
+  /* 存档计时器：柔和呼吸光 */
+  html .o-save-timer[data-v-save-timer] {
+    animation: ad-mobile-save-timer-glow 3s ease-in-out infinite;
+  }
+  @keyframes ad-mobile-save-timer-glow {
+    0%, 100% { box-shadow: 0 0 0.2rem color-mix(in srgb, var(--color-accent) 20%, transparent); }
+    50% { box-shadow: 0 0 0.65rem color-mix(in srgb, var(--color-accent) 55%, transparent); }
+  }
+
+  /* 面板入场：轻微上移淡入（配合标签页切换） */
+  html .tab-container .c-game-tab {
+    animation: ad-mobile-panel-in 0.28s ease-out both;
+  }
+  @keyframes ad-mobile-panel-in {
+    from { opacity: 0; transform: translateY(0.5rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* 维度行与卡片：悬停与点击反馈 */
+  html .l-dimensions-container > *,
+  html .l-infinity-dimensions-container > *,
+  html .l-time-dimensions-container > * {
+    transition: filter 0.15s ease, transform 0.15s ease;
+  }
+  html .l-dimensions-container > *:active,
+  html .l-infinity-dimensions-container > *:active,
+  html .l-time-dimensions-container > *:active {
+    filter: brightness(1.08);
+    transform: translateY(0.05rem);
+  }
+
+  /* 子标签按钮选中态：底部光条 */
+  html .o-tab-btn--subtab.o-subtab-btn--active {
+    box-shadow: inset 0 -0.18rem 0 0 var(--color-accent);
+    transform: translateY(-0.05rem);
+  }
+
+  /* 底部导航：标签文字与图标间距统一 */
+  html .c-modern-sidebar .l-tab-btn-inner {
+    gap: 0.12rem;
+  }
+}

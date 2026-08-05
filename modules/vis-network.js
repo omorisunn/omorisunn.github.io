@@ -5612,9 +5612,9 @@
    * Add and event listener. Works for all browsers.
    *
    * @param element - The element to bind the event listener to.
-   * @param action - Same as Element.addEventListener(action, —, —).
-   * @param listener - Same as Element.addEventListener(—, listener, —).
-   * @param useCapture - Same as Element.addEventListener(—, —, useCapture).
+   * @param action - Same as Element.addEventListener(action, -, -).
+   * @param listener - Same as Element.addEventListener(-, listener, -).
+   * @param useCapture - Same as Element.addEventListener(-, -, useCapture).
    */
 
 
@@ -5637,9 +5637,9 @@
    * Remove an event listener from an element
    *
    * @param element - The element to bind the event listener to.
-   * @param action - Same as Element.removeEventListener(action, —, —).
-   * @param listener - Same as Element.removeEventListener(—, listener, —).
-   * @param useCapture - Same as Element.removeEventListener(—, —, useCapture).
+   * @param action - Same as Element.removeEventListener(action, -, -).
+   * @param listener - Same as Element.removeEventListener(-, listener, -).
+   * @param useCapture - Same as Element.removeEventListener(-, -, useCapture).
    */
 
 
@@ -44871,9 +44871,9 @@
   });
 
   /**
-   *  The Floyd–Warshall algorithm is an algorithm for finding shortest paths in
+   *  The Floyd-Warshall algorithm is an algorithm for finding shortest paths in
    *  a weighted graph with positive or negative edge weights (but with no negative
-   *  cycles). - https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm
+   *  cycles). - https://en.wikipedia.org/wiki/Floyd-Warshall_algorithm
    */
   var FloydWarshall =
   /*#__PURE__*/

@@ -70,7 +70,7 @@ export default {
       if (!Enslaved.isRunning) return;
       const haveBoost = Glyphs.activeWithoutCompanion.find(e => e.level < Enslaved.glyphLevelMin) !== undefined;
       if (haveBoost) {
-        this.enslavedHint = "done... what little... I can... with Glyphs...";
+        this.enslavedHint = "完成了……用符文……我能做的……很少……";
       }
     },
     toggleAutoRestartCelestial() {
@@ -144,7 +144,7 @@ export default {
             class="o-clickable"
             data-v-glyphs-tab
           >
-            Repeat this Celestial's Reality
+            重复此天体的现实
           </label>
         </div>
 
@@ -154,16 +154,16 @@ export default {
 
         <div v-if="showInstability">
           <br>
-          Glyphs are becoming unstable.
+          符文正变得不稳定。
           <br>
-          Glyph levels higher than {{ formatInt(instabilityThreshold) }} are harder to reach.
+          高于 {{ formatInt(instabilityThreshold) }} 的符文等级更难达到。
           <br>
-          This effect is even stronger above level {{ formatInt(hyperInstabilityThreshold) }}.
+          在等级 {{ formatInt(hyperInstabilityThreshold) }} 以上，此效果会更加强烈。
         </div>
         <SingleGlyphCustomzationPanel />
         <ExpandingControlBox
           width-source="content"
-          label="Glyph Level Factors"
+          label="符文等级因素"
           container-class="c-glyph-level-factors-dropdown-header"
           class="l-glyph-level-factors"
           data-v-glyphs-tab
@@ -203,13 +203,13 @@ export default {
                 :class="glyphInfoClass(!sacrificeDisplayed)"
                 @click="setInfoState(false)"
               >
-                Current Glyph effects
+                当前符文效果
               </button>
               <button
                 :class="glyphInfoClass(sacrificeDisplayed)"
                 @click="setInfoState(true)"
               >
-                Glyph Sacrifice totals
+                符文献祭总值
               </button>
             </div>
             <SacrificedGlyphs v-if="sacrificeUnlocked && sacrificeDisplayed" />

@@ -9,23 +9,21 @@ export default {
   },
   computed: {
     message() {
-      return `Dilating time will start a new Eternity, and all Dimension multiplier's exponents and
-        tickspeed multiplier's exponent will be reduced to ${formatPow(0.75, 2, 2)}. If you can Eternity while Dilated,
-        your Tachyon Particles will be increased to a value based on your highest antimatter and any Tachyon Particle
-        multipliers you have.`;
+      return `膨胀时间将开始一次新的永恒，所有维度倍率的指数和
+        计数频率倍率的指数都会降低到 ${formatPow(0.75, 2, 2)}。如果你能在膨胀状态下永恒，
+        你的快子粒子将根据你的最高反物质和拥有的任何快子粒子倍率提升到一个数值。`;
     },
     entranceLabel() {
-      return `You are about to enter Dilation`;
+      return `你即将进入膨胀`;
     },
     EPSinceLabel() {
       if (player.dilation.lastEP.eq(-1)) {
-        return "This is your first Dilation";
+        return "这是你的第一次膨胀";
       }
       if (!isInCelestialReality() && Ra.unlocks.unlockDilationStartingTP.canBeApplied) {
-        return `You already have the maximum feasible amount of Tachyon Particles you can attain due to
-          Teresa's Level ${formatInt(25)} reward.`;
+        return `由于 Teresa 的等级 ${formatInt(25)} 奖励，你已经拥有所能获得的最大可行快子粒子数量。`;
       }
-      return `You last completed Dilation at ${format(player.dilation.lastEP, 2, 2)} Eternity Points.`;
+      return `你上次在 ${format(player.dilation.lastEP, 2, 2)} 永恒点数时完成了膨胀。`;
     }
   },
   methods: {
@@ -55,7 +53,7 @@ export default {
       {{ message }}
     </div>
     <template #confirm-text>
-      Enter
+      进入
     </template>
   </ModalWrapperChoice>
   `

@@ -7,12 +7,12 @@ export default {
   },
   computed: {
     upgrades: () => RealityUpgrades.all,
-    costScalingTooltip: () => `Prices start increasing faster above ${format(1e30)} RM and then even faster
-      above ${format(Decimal.NUMBER_MAX_VALUE, 1)} RM`,
-    possibleTooltip: () => `Checkered upgrades are impossible to unlock this Reality. Striped upgrades are
-      still possible.`,
-    lockTooltip: () => `This will only function if you have not already failed the condition or
-      unlocked the upgrade.`,
+    costScalingTooltip: () => `价格在超过 ${format(1e30)} RM 后增长会变快，在超过
+      ${format(Decimal.NUMBER_MAX_VALUE, 1)} RM 后会更快`,
+    possibleTooltip: () => `方格图案的升级在本次现实中无法解锁。条纹图案的升级
+      仍然可以解锁。`,
+    lockTooltip: () => `只有在你尚未失败条件或
+      尚未解锁该升级时，此功能才会生效。`,
   },
   methods: {
     id(row, column) {
@@ -25,30 +25,30 @@ export default {
       class="c-reality-upgrade-infotext"
       data-v-reality-upgrades-tab
     >
-      Mouseover <i class="fas fa-question-circle" /> icons for additional information.
+      将鼠标悬停在 <i class="fas fa-question-circle" /> 图标上可查看更多信息。
       <br>
-      The first row of upgrades can be purchased endlessly for increasing costs
+      第一行升级可以无限购买，价格会不断上涨
       <span :ach-tooltip="costScalingTooltip">
         <i class="fas fa-question-circle" />
       </span>
-      and the rest are single-purchase.
+      ，其余升级为一次性购买。
       <br>
-      Single-purchase upgrades also have requirements which, once completed, permanently unlock the ability
-      to purchase the upgrades at any point.
+      一次性升级还有需求，一旦完成，就会永久解锁
+      随时购买这些升级的能力。
       <span :ach-tooltip="possibleTooltip">
         <i class="fas fa-question-circle" />
       </span>
       <br>
-      Locked upgrades show their requirement and effect by default; unlocked ones show
-      their effect, current bonus, and cost. Hold shift to swap this behavior.
+      锁定的升级默认显示其需求和效果；已解锁的升级显示
+      其效果、当前加成和价格。按住 shift 可以交换此行为。
       <br>
-      You can shift-click upgrades with <i class="fas fa-lock-open" /> to make the game prevent you
-      from doing anything this Reality which would cause you to fail their unlock condition.
+      你可以按住 shift 点击带有 <i class="fas fa-lock-open" /> 的升级，让游戏阻止你
+      在本次现实中做出任何会导致其解锁条件失败的操作。
       <span :ach-tooltip="lockTooltip">
         <i class="fas fa-question-circle" />
       </span>
       <br>
-      Every completed row of purchased upgrades increases your Glyph level by {{ formatInt(1) }}.
+      每完成一整行已购买的升级，你的符文等级就会提高 {{ formatInt(1) }}。
     </div>
     <div
       v-for="row in 5"

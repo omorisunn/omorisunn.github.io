@@ -45,23 +45,23 @@ export default {
         @click="toggleCollapse"
         data-v-pelle-bar-panel
       />
-      Pelle Strikes and Rifts
+      Pelle 打击与裂隙
     </div>
     <div
       v-if="!isCollapsed"
       class="l-pelle-content-container"
       data-v-pelle-bar-panel
     >
-      Rifts can be activated by clicking on their bars.
-      <span v-if="strikes.length > 1">You cannot activate more than two Rifts at once.</span>
+      裂隙可以通过点击其进度条来激活。
+      <span v-if="strikes.length > 1">你不能同时激活超过两个裂隙。</span>
       <br v-else>
-      When active, Rifts consume {{ formatPercents(decayRate) }} of another resource per second.
+      激活时，裂隙每秒消耗另一种资源的 {{ formatPercents(decayRate) }}。
       <br>
-      Rift effects apply even when not activated, and are based on the total amount drained.
+      即使未激活，裂隙效果也会生效，并基于总消耗量计算。
       <b
         class="o-strike-warning"
         data-v-pelle-bar-panel
-      >Pelle Strike penalties are permanent and remain active even after Armageddon!</b>
+      >Pelle 打击的惩罚是永久的，即使在末日审判之后仍然生效！</b>
       <div
         class="c-pelle-bar-container"
         data-v-pelle-bar-panel

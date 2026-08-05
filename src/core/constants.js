@@ -346,9 +346,9 @@ window.CANCER_GLYPH_SYMBOLS = {
   power: "⚡",
   infinity: "8",
   replication: "⚤",
-  time: "🕟",
+  time: "◷",
   dilation: "☎",
-  effarig: "🦒",
+  effarig: "◬",
   reality: "⛧",
   cursed: "☠",
   companion: "³"

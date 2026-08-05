@@ -38,7 +38,7 @@ export default {
       this.iapDisabled = !ShopPurchaseData.isIAPEnabled;
       this.cost = Math.clampMin(this.purchase.cost, 0);
       this.hasChosen = GlyphAppearanceHandler.chosenFromModal !== null;
-      this.chosenSet = GlyphAppearanceHandler.chosenFromModal?.name ?? "Not Selected";
+      this.chosenSet = GlyphAppearanceHandler.chosenFromModal?.name ?? "未选择";
       this.lockedCount = GlyphAppearanceHandler.lockedSets.length;
     },
     openSelectionModal() {
@@ -75,7 +75,7 @@ export default {
         :class="{ 'o-shop-button-multiplier--disabled': iapDisabled }"
         data-v-shop-button
       >
-        Currently {{ purchase.formatEffect(currentMult) }}, next: {{ purchase.formatEffect(nextMult) }}
+        当前 {{ purchase.formatEffect(currentMult) }}，下一级：{{ purchase.formatEffect(nextMult) }}
       </span>
     </div>
     <div>
@@ -85,7 +85,7 @@ export default {
           class="o-shop-button-multiplier"
           data-v-shop-button
         >
-          All Sets unlocked!
+          所有套装已解锁！
         </div>
         <div v-else>
           <button
@@ -93,9 +93,9 @@ export default {
             @click="openSelectionModal"
             data-v-shop-button
           >
-            Choose Set
+            选择套装
           </button>
-          Chosen Set: {{ chosenSet }}
+          已选择套装：{{ chosenSet }}
         </div>
       </div>
       <div
@@ -104,10 +104,10 @@ export default {
         data-v-shop-button
       >
         <div v-if="allSetsUnlocked">
-          All Sets unlocked!
+          所有套装已解锁！
         </div>
         <div v-else>
-          Will unlock {{ quantify("set", lockedCount) }}
+          将解锁 {{ quantify("个套装", lockedCount) }}
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@ export default {
       @click="performPurchase"
       data-v-shop-button
     >
-      Cost: {{ cost }}
+      价格：{{ cost }}
       <img
         src="./public/images/std_coin.png"
         class="o-shop-button-button__img"
@@ -128,7 +128,7 @@ export default {
       class="o-shop-button-locked-text"
       data-v-shop-button
     >
-      This affects a feature you have not unlocked yet ({{ purchase.lockText }})
+      这会影响你尚未解锁的功能（{{ purchase.lockText }}）
     </div>
   </div>
   `

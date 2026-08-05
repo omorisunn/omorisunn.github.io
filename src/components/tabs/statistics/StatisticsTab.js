@@ -61,13 +61,13 @@ export default {
       const num = this.infinity.count;
       return num.gt(0)
         ? `${this.formatDecimalAmount(num)} ${pluralize("次无限", num.floor())}`
-        : "no Infinities";
+        : "尚无无限";
     },
     eternityCountString() {
       const num = this.eternity.count;
       return num.gt(0)
         ? `${this.formatDecimalAmount(num)} ${pluralize("次永恒", num.floor())}`
-        : "no Eternities";
+        : "尚无永恒";
     },
     fullGameCompletions() {
       return player.records.fullGameCompletions;
@@ -171,13 +171,13 @@ export default {
   >
     <div>
       <PrimaryButton onclick="Modal.catchup.show(0)">
-        View Content Summary
+        查看内容摘要
       </PrimaryButton>
       <div
         class="c-stats-tab-title c-stats-tab-general"
         data-v-statistics-tab
       >
-        General
+        常规
       </div>
       <div
         class="c-stats-tab-general"
@@ -240,31 +240,31 @@ export default {
         class="c-stats-tab-title c-stats-tab-infinity"
         data-v-statistics-tab
       >
-        Infinity
+        无限
       </div>
       <div>
-        You have {{ infinityCountString }}<span v-if="eternity.isUnlocked"> this Eternity</span>.
+        你拥有 {{ infinityCountString }}<span v-if="eternity.isUnlocked">（本永恒内）</span>。
       </div>
       <div v-if="infinity.banked.gt(0)">
-        You have {{ formatDecimalAmount(infinity.banked.floor()) }}
-        {{ pluralize("存储的无限", infinity.banked.floor()) }}。
+        你拥有 {{ formatDecimalAmount(infinity.banked.floor()) }}
+        {{ pluralize("个存储的无限", infinity.banked.floor()) }}。
       </div>
       <div v-if="infinity.hasBest">
-        Your fastest Infinity was {{ infinity.best.toStringShort() }}.
+        你最快的无限用时为 {{ infinity.best.toStringShort() }}。
       </div>
       <div v-else>
-        You have no fastest Infinity<span v-if="eternity.isUnlocked"> this Eternity</span>.
+        你没有最快的无限记录<span v-if="eternity.isUnlocked">（本永恒内）</span>。
       </div>
       <div>
-        You have spent {{ infinity.this.toStringShort() }} in this Infinity.
+        你本次无限已用时 {{ infinity.this.toStringShort() }}。
         <span v-if="reality.isUnlocked">
-          ({{ infinity.thisReal.toStringShort() }} real time)
+          （{{ infinity.thisReal.toStringShort() }} 真实时间）
         </span>
       </div>
       <div>
-        Your best Infinity Points per minute
-        <span v-if="eternity.count.gt(0)">this Eternity </span>
-        is {{ format(infinity.bestRate, 2, 2) }}.
+        你每分钟最佳无限点数
+        <span v-if="eternity.count.gt(0)">（本永恒内）</span>
+        为 {{ format(infinity.bestRate, 2, 2) }}。
       </div>
       <br>
     </div>
@@ -277,35 +277,35 @@ export default {
         class="c-stats-tab-title c-stats-tab-eternity"
         data-v-statistics-tab
       >
-        Eternity
+        永恒
       </div>
       <div>
-        You have {{ eternityCountString }}<span v-if="reality.isUnlocked"> this Reality</span>.
+        你拥有 {{ eternityCountString }}<span v-if="reality.isUnlocked">（本现实内）</span>。
       </div>
       <div v-if="infinity.projectedBanked.gt(0)">
-        You will gain {{ formatDecimalAmount(infinity.projectedBanked.floor()) }}
-        永恒时{{ pluralize("存储的无限", infinity.projectedBanked.floor()) }}
-        ({{ formatDecimalAmount(infinity.bankRate) }} per minute).
+        永恒时你将获得 {{ formatDecimalAmount(infinity.projectedBanked.floor()) }}
+        {{ pluralize("个存储的无限", infinity.projectedBanked.floor()) }}
+        （每分钟 {{ formatDecimalAmount(infinity.bankRate) }}）。
       </div>
       <div v-else-if="infinity.banked.gt(0)">
-        You will gain no Banked Infinities on Eternity.
+        永恒时你不会获得存储的无限。
       </div>
       <div v-if="eternity.hasBest">
-        Your fastest Eternity was {{ eternity.best.toStringShort() }}.
+        你最快的永恒用时为 {{ eternity.best.toStringShort() }}。
       </div>
       <div v-else>
-        You have no fastest Eternity<span v-if="reality.isUnlocked"> this Reality</span>.
+        你没有最快的永恒记录<span v-if="reality.isUnlocked">（本现实内）</span>。
       </div>
       <div>
-        You have spent {{ eternity.this.toStringShort() }} in this Eternity.
+        你本次永恒已用时 {{ eternity.this.toStringShort() }}。
         <span v-if="reality.isUnlocked">
-          ({{ eternity.thisReal.toStringShort() }} real time)
+          （{{ eternity.thisReal.toStringShort() }} 真实时间）
         </span>
       </div>
       <div>
-        Your best Eternity Points per minute
-        <span v-if="reality.isUnlocked">this Reality </span>
-        is {{ format(eternity.bestRate, 2, 2) }}.
+        你每分钟最佳永恒点数
+        <span v-if="reality.isUnlocked">（本现实内）</span>
+        为 {{ format(eternity.bestRate, 2, 2) }}。
       </div>
       <br>
     </div>
@@ -321,27 +321,27 @@ export default {
         {{ isDoomed ? "末日现实" : "现实" }}
       </div>
       <div>你已经进行了 {{ quantifyInt("次现实", reality.count) }}。</div>
-      <div>Your fastest game-time Reality was {{ reality.best.toStringShort() }}.</div>
-      <div>Your fastest real-time Reality was {{ reality.bestReal.toStringShort() }}.</div>
+      <div>你最快的游戏时间现实为 {{ reality.best.toStringShort() }}。</div>
+      <div>你最快的真实时间现实为 {{ reality.bestReal.toStringShort() }}。</div>
       <div
         :class="{ 'c-stats-tab-doomed' : isDoomed }"
         data-v-statistics-tab
       >
-        You have spent {{ reality.this.toStringShort() }}
+        你本次已用时 {{ reality.this.toStringShort() }}
         在这个{{ isDoomed ? "末日决战" : "现实" }}中。
-        ({{ reality.thisReal.toStringShort() }} real time)
+        （{{ reality.thisReal.toStringShort() }} 真实时间）
       </div>
       <div
         v-if="isDoomed"
         class="c-stats-tab-doomed"
         data-v-statistics-tab
       >
-        You have been Doomed for {{ realTimeDoomed.toStringShort() }}, real time.
+        你已处于末日 {{ realTimeDoomed.toStringShort() }}（真实时间）。
       </div>
       <div>
-        Your best Reality Machines per minute is {{ format(reality.bestRate, 2, 2) }}.
+        你每分钟最佳现实机器为 {{ format(reality.bestRate, 2, 2) }}。
       </div>
-      <div>Your best Glyph rarity is {{ formatRarity(reality.bestRarity) }}.</div>
+      <div>你最好的符文稀有度为 {{ formatRarity(reality.bestRarity) }}。</div>
       <br>
     </div>
   </div>

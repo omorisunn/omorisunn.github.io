@@ -337,7 +337,7 @@ export const normalAchievements = [
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() { return ``; },
     get reward() {
-      return `All维度增强 stronger in the first ${formatInt(3)} minutes of Infinities。`;
+      return `All 维度增强 stronger in the first ${formatInt(3)} minutes of Infinities。`;
     },
     effect: () => Math.max(6 / (Time.thisInfinity.totalMinutes + 3), 1),
     effectCondition: () => Time.thisInfinity.totalMinutes < 3,
@@ -430,7 +430,7 @@ export const normalAchievements = [
     checkEvent: [GAME_EVENT.BIG_CRUNCH_AFTER, GAME_EVENT.REALITY_RESET_AFTER],
     get reward() { return ``; },
     get reward() {
-      return `All维度增强 stronger in the first ${formatInt(3)} minutes of Infinities,
+      return `All 维度增强 stronger in the first ${formatInt(3)} minutes of Infinities,
       but only in Challenges。`;
     },
     effect: () => (Player.isInAnyChallenge ? Math.max(4 / (Time.thisInfinity.totalMinutes + 1), 1) : 1),
@@ -500,7 +500,7 @@ export const normalAchievements = [
     checkRequirement: () => AntimatterDimensions.all.every(x => x.multiplier.gte(Decimal.NUMBER_MAX_VALUE)),
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     get reward() { return ``; },
-    get reward() { return `All维度增强 ${formatPercents(0.1)}。`; },
+    get reward() { return `All 维度增强 ${formatPercents(0.1)}。`; },
     effect: 1.1
   },
   {
@@ -525,7 +525,7 @@ export const normalAchievements = [
     checkRequirement: () => Time.challengeSum.totalSeconds < 5,
     checkEvent: [GAME_EVENT.BIG_CRUNCH_AFTER, GAME_EVENT.REALITY_RESET_AFTER],
     get reward() { return ``; },
-    get reward() { return `All维度增强 ${formatPercents(0.4)} stronger, but only in challenges。`; },
+    get reward() { return `All 维度增强 ${formatPercents(0.4)} stronger, but only in challenges。`; },
     effect: 1.4,
     effectCondition: () => Player.isInAnyChallenge
   },
@@ -550,7 +550,7 @@ export const normalAchievements = [
     checkRequirement: () => Time.totalTimePlayed.totalDays >= 8,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     reward: "",
-    reward: "Extremely small multiplier to反物质维度 based on time played。",
+    reward: "Extremely small multiplier to 反物质维度 based on time played。",
     effect: () => Math.max(Math.pow(Time.totalTimePlayed.totalDays / 2, 0.05), 1),
     formatEffect: value => `${formatX(value, 2, 2)}`
   },
@@ -691,7 +691,7 @@ export const normalAchievements = [
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() { return ``; },
     get reward() {
-      return `All维度增强 significantly stronger in the
+      return `All 维度增强 significantly stronger in the
       first ${formatInt(5)} seconds of Infinities。`;
     },
     effect: () => Math.max((5 - Time.thisInfinity.totalSeconds) * 60, 1),
@@ -710,7 +710,7 @@ export const normalAchievements = [
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() { return ``; },
     get reward() {
-      return `All维度增强 significantly stronger in the
+      return `All 维度增强 significantly stronger in the
       first ${formatInt(60)} seconds of Infinities。`;
     },
     effect: () => Math.max((1 - Time.thisInfinity.totalMinutes) * 100, 1),
@@ -786,7 +786,7 @@ export const normalAchievements = [
     name: "",
     name: "8 nobody got time for that",
     description: "",
-    description: "Eternity without buying反物质维度 1-7。",
+    description: "Eternity without buying 反物质维度 1-7。",
     checkRequirement: () => player.requirementChecks.eternity.onlyAD8,
     checkEvent: GAME_EVENT.ETERNITY_RESET_BEFORE
   },
@@ -957,7 +957,7 @@ export const normalAchievements = [
     checkEvent: GAME_EVENT.DIMBOOST_AFTER,
     get reward() { return ``; },
     get reward() {
-      return `The multiplier from Dimension Boosts to反物质维度 is ${formatPercents(0.01)} higher。`;
+      return `The multiplier from Dimension Boosts to 反物质维度 is ${formatPercents(0.01)} higher。`;
     },
     effect: 1.01
   },
@@ -969,7 +969,7 @@ export const normalAchievements = [
     get description() { return `Get a total Dimensional Sacrifice multiplier of ${formatPostBreak(DC.E9000)}。`; },
     checkRequirement: () => Sacrifice.totalBoost.exponent >= 9000,
     checkEvent: GAME_EVENT.SACRIFICE_RESET_AFTER,
-    reward: `Dimensional Sacrifice doesn't reset your反物质维度
+    reward: `Dimensional Sacrifice doesn't reset your 反物质维度
       and the Autobuyer activates every tick if turned on。`,
   },
   {
@@ -986,7 +986,7 @@ export const normalAchievements = [
     name: "",
     name: "You're already dead。",
     description: "",
-    description: "Eternity without buying反物质维度 2-8。",
+    description: "Eternity without buying 反物质维度 2-8。",
     checkRequirement: () => player.requirementChecks.eternity.onlyAD1,
     checkEvent: GAME_EVENT.ETERNITY_RESET_BEFORE
   },
@@ -1364,7 +1364,7 @@ export const normalAchievements = [
     checkRequirement: () => player.requirementChecks.reality.noPurchasedTT,
     checkEvent: GAME_EVENT.REALITY_RESET_BEFORE,
     get reward() { return ``; },
-    get reward() { return `Gain ${formatX(2.5, 0, 1)} generated Time Theorems, and a free coupon to McDonalds™️。`; },
+    get reward() { return `Gain ${formatX(2.5, 0, 1)} generated Time Theorems, and a free coupon to McDonalds™。`; },
     effect: 2.5
   },
   {
@@ -1601,7 +1601,7 @@ export const normalAchievements = [
     // Weirdly specific reward? Yes, its V's ST bonus because we forgot to disable it
     // when balancing Pelle and only realised too late.
     get reward() { return ``; },
-    get reward() { return `All维度增强 raised to ${formatPow(1.0812403840463596, 0, 3)}`; },
+    get reward() { return `All 维度增强 raised to ${formatPow(1.0812403840463596, 0, 3)}`; },
     effect: 1.0812403840463596
   },
   {

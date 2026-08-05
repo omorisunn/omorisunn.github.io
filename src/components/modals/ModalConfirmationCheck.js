@@ -22,7 +22,7 @@ export default {
       };
     },
     tooltipText() {
-      return `${this.setting ? "Disable" : "Reenable"} the ${this.confirmation.name} confirmation`;
+      return `${this.setting ? "禁用" : "启用"}${this.confirmation.name}确认提示`;
     },
   },
   created() {
@@ -49,7 +49,7 @@ export default {
       </div>
     </div>
     <span class="c-modal__confirmation-toggle__text">
-      Don't show this message again
+      不再显示此消息
     </span>
   </div>
   `

@@ -9,12 +9,6 @@ export default {
     },
   },
   computed: {
-    autobuyerToggleClass() {
-      if (this.isDisabled) {
-        return this.isActive ? "fas fa-pause" : "fas fa-times";
-      }
-      return this.isActive ? "fas fa-check" : "fas fa-times";
-    },
     autobuyerStateClass() {
       if (this.isDisabled) {
         return {
@@ -37,7 +31,40 @@ export default {
     @click="emitClick"
   >
     <label :class="autobuyerStateClass">
-      <span :class="autobuyerToggleClass" />
+      <svg
+        v-if="isActive && !isDisabled"
+        class="o-autobuyer-toggle-checkbox__icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M4.5 12.5l5 5L19.5 6.5" />
+      </svg>
+      <svg
+        v-else-if="isActive && isDisabled"
+        class="o-autobuyer-toggle-checkbox__icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.4"
+        stroke-linecap="round"
+      >
+        <path d="M6.5 12h11" />
+      </svg>
+      <svg
+        v-else
+        class="o-autobuyer-toggle-checkbox__icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.4"
+        stroke-linecap="round"
+      >
+        <path d="M6 6l12 12M18 6L6 18" />
+      </svg>
     </label>
     <input
       :checked="isActive && !isDisabled"

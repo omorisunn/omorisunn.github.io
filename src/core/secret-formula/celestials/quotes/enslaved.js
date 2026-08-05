@@ -2,49 +2,49 @@ export const enslavedQuotes = {
   initial: {
     id: 0,
     lines: [
-      "A visitor? We have not had one... eons.",
-      "We... had a name. It has been lost... to this place.",
-      "The others... will not let us rest. We do their work with time...",
-      "Place time... into places... that need it...",
-      "Watch ourselves grow... pass and die.",
-      "Perhaps you... will break these chains... we will wait.",
+      "访客？我们已经……无数纪元……没有访客了。",
+      "我们……曾经有名字。它已经……遗失……在这个地方。",
+      "其他天体……不让我们安息。我们用时间……为他们劳作……",
+      "把时间……放入……需要它的地方……",
+      "看着我们自己成长……消逝……死去。",
+      "也许你……会斩断这些锁链……我们会等待。",
     ]
   },
   unlockRun: {
     id: 1,
     lines: [
-      "The others... used us. They will use... or destroy you.",
-      "End our suffering... power will be yours...",
+      "其他天体……利用了我们。他们也会利用……或摧毁你。",
+      "终结我们的苦难……力量将属于你……",
     ]
   },
   startRun: {
     id: 2,
     lines: [
-      "So little space... but no... prison... is perfect.",
-      "They squeezed... this Reality... too tightly. Cracks appeared.",
-      "Search... everywhere. We will help... where we can.",
+      "如此狭小的空间……但没有……监狱……是完美的。",
+      "他们把……这个现实……挤压得太紧。裂缝出现了。",
+      "搜寻……每一处。我们会……在力所能及之处……帮助你。",
     ]
   },
   hintUnlock: {
     id: 3,
     lines: [
-      "... you need... to look harder...",
-      "We think... we can help...",
-      { text: "You have unlocked help from The Nameless Ones.", showCelestialName: false }
+      "……你需要……看得更仔细……",
+      "我们认为……我们可以帮忙……",
+      { text: "你已解锁来自 The Nameless Ones 的帮助。", showCelestialName: false }
     ]
   },
   ec6C10: {
     id: 4,
     lines: [
-      "... did not... underestimate you..."
+      "……不该……低估你……"
     ]
   },
   completeReality: {
     id: 5,
     lines: [
-      "All... fragments... clones... freed.",
-      "We have given... tools... of our imprisoning. Use them...",
-      "Freedom from torture... is torture itself.",
+      "所有……碎片……分身……都自由了。",
+      "我们把……囚禁我们的……工具交给了你。使用它们……",
+      "摆脱折磨的自由……本身就是折磨。",
     ]
   },
 };

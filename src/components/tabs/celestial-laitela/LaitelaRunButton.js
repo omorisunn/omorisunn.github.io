@@ -18,8 +18,8 @@ export default {
   },
   computed: {
     completionTime() {
-      if (this.tierNotCompleted) return "Not completed at this tier";
-      return `Fastest Completion: ${TimeSpan.fromSeconds(this.realityTime).toStringShort()}`;
+      if (this.tierNotCompleted) return "未完成此层级";
+      return `最快完成：${TimeSpan.fromSeconds(this.realityTime).toStringShort()}`;
     },
     runEffects() {
       return GameDatabase.celestials.descriptions[5].effects().split("\n");
@@ -61,7 +61,7 @@ export default {
   template: `
   <button :class="classObject()">
     <span :class="{ 'o-pelle-disabled': isDoomed }">
-      <b>Start Lai'tela's Reality</b>
+      <b>开始 Lai'tela 的现实</b>
     </span>
     <div
       :class="runButtonClassObject()"
@@ -69,19 +69,19 @@ export default {
     />
     <div v-if="realityReward > 1">
       <b>
-        All Dark Matter multipliers are {{ formatX(realityReward, 2, 2) }} higher.
+        所有暗物质倍率提升为原来的 {{ formatX(realityReward, 2, 2) }} 倍。
       </b>
       <span v-if="maxDimTier > 0">
         <br><br>
         {{ completionTime }}
         <br>
         <span v-if="maxDimTier <= 7">
-          <b>Highest active dimension: {{ formatInt(maxDimTier) }}</b>
+          <b>最高激活维度：{{ formatInt(maxDimTier) }}</b>
         </span>
         <br><br>
-        Glyph Set:
+        符文组：
         <GlyphSetPreview
-          text="Fastest Destabilization Glyph Set"
+          text="最快失稳符文组"
           :text-hidden="true"
           :force-name-color="false"
           :glyphs="bestSet"
@@ -90,10 +90,10 @@ export default {
       <span v-else>
         <br>
         <b>
-          You also gain an additional {{ formatX(8) }} Dark Energy.
+          你还额外获得 {{ formatX(8) }} 暗能量。
         </b>
         <br><br>
-        Lai'tela's Reality has been fully destabilized and cannot have its reward further improved.
+        Lai'tela 的现实已完全失稳，其奖励无法再进一步提升。
       </span>
       <br>
     </div>

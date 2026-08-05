@@ -442,14 +442,14 @@ export default {
       class="l-glyph-levels-and-weights__factor l-glyph-level-and-weights-note"
       data-v-glyph-levels-and-weights
     >
-      Note: All resources here are log10 of their actual values.
+      注意：此处的所有资源都是其实际数值的 log10。
     </div>
     <div
       :style="rowStyle('info2')"
       class="l-glyph-levels-and-weights__factor l-glyph-level-and-weights-note"
       data-v-glyph-levels-and-weights
     >
-      EP, Replicanti, and DT use their highest values this Reality.
+      EP、复制体和膨胀时间使用本次现实中的最高值。
     </div>
     <template v-if="adjustVisible">
       <div
@@ -457,13 +457,13 @@ export default {
         class="l-glyph-levels-and-weights__adjust-outline"
       />
       <div class="l-glyph-levels-and-weights__adjust-label">
-        Adjust weights
+        调整权重
         <div class="l-glyph-levels-and-weights__reset-btn-outer">
           <div
             :class="resetWeightsButtonClass()"
             @click="resetWeights"
           >
-            Reset
+            重置
           </div>
         </div>
       </div>
@@ -472,7 +472,7 @@ export default {
           v-if="showAutoAdjustWeights"
           v-model="isAutoAdjustWeightsOn"
           class="c-glyph-levels-and-weights__auto-btn"
-          label="Auto adjustment:"
+          label="自动调整："
         />
       </div>
       <div

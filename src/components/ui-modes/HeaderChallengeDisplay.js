@@ -30,12 +30,12 @@ export default {
         };
       }
       return [
-        celestialReality(Teresa, "特蕾莎", "teresa"),
-        celestialReality(Effarig, "鹿颈长", "effarig"),
-        celestialReality(Enslaved, "无名氏", "enslaved"),
-        celestialReality(V, "薇", "v"),
-        celestialReality(Ra, "太阳神", "ra"),
-        celestialReality(Laitela, "莱特拉", "laitela"),
+        celestialReality(Teresa, "Teresa", "teresa"),
+        celestialReality(Effarig, "Effarig", "effarig"),
+        celestialReality(Enslaved, "The Nameless Ones", "enslaved"),
+        celestialReality(V, "V", "v"),
+        celestialReality(Ra, "Ra", "ra"),
+        celestialReality(Laitela, "Lai'tela", "laitela"),
         {
           name: () => "时间膨胀",
           isActive: token => token,

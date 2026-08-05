@@ -31,29 +31,29 @@ export default {
       {
         pet: Ra.pets.teresa,
         scalingUpgradeVisible: () => Ra.unlocks.chargedInfinityUpgrades.isUnlocked,
-        scalingUpgradeText: () => `You can Charge ${quantifyInt("Infinity Upgrade", Ra.totalCharges)}.`,
+        scalingUpgradeText: () => `你可以为 ${quantifyInt("个无限升级", Ra.totalCharges)} 充能。`,
       },
       {
         pet: Ra.pets.effarig,
         scalingUpgradeVisible: () => AlchemyResources.all.filter(r => r.isUnlocked).length > 0,
         scalingUpgradeText: () => {
           const resources = AlchemyResources.all.filter(r => r.isUnlocked).length;
-          return `You have unlocked ${quantifyInt("Alchemy Resource", resources)}.`;
+          return `你已经解锁了 ${quantifyInt("个炼金资源", resources)}。`;
         },
       },
       {
         pet: Ra.pets.enslaved,
         scalingUpgradeVisible: () => Ra.unlocks.improvedStoredTime.isUnlocked,
-        scalingUpgradeText: () => `Stored game time
-          ${formatX(Ra.unlocks.improvedStoredTime.effects.gameTimeAmplification.effectOrDefault(1), 2)} and real time
-          +${formatInt(Ra.unlocks.improvedStoredTime.effects.realTimeCap.effectOrDefault(0) / (1000 * 3600))} hours`,
+        scalingUpgradeText: () => `存储游戏时间
+          ${formatX(Ra.unlocks.improvedStoredTime.effects.gameTimeAmplification.effectOrDefault(1), 2)}，真实时间
+          上限 +${formatInt(Ra.unlocks.improvedStoredTime.effects.realTimeCap.effectOrDefault(0) / (1000 * 3600))} 小时`,
       },
       {
         pet: Ra.pets.v,
         scalingUpgradeVisible: () => Ra.unlocks.unlockHardV.isUnlocked,
         scalingUpgradeText: () => {
           const triadCount = Ra.unlocks.unlockHardV.effectOrDefault(0);
-          return `You have unlocked ${quantifyInt("Triad Study", triadCount)}.`;
+          return `你已经解锁了 ${quantifyInt("个三元研究", triadCount)}。`;
         },
       }
     ],
@@ -76,8 +76,8 @@ export default {
       return GameDatabase.celestials.descriptions[4].effects().replace(/^\w/u, c => c.toUpperCase()).split("\n");
     },
     memoryDescription() {
-      return `Within Ra's Reality, Memory Chunks for Celestial Memories
-        will be generated based on certain resource amounts.`;
+      return `在 Ra 的现实中，天体记忆的记忆块
+        将根据特定资源数量生成。`;
     },
     isDoomed: () => Pelle.isDoomed,
   },
@@ -108,23 +108,23 @@ export default {
     <div class="c-ra-memory-header">
       <CelestialQuoteHistory celestial="ra" />
       <div v-if="!isRaCapped">
-        Each Memory Chunk generates a base of one Memory per second<span v-if="memoriesPerChunk > 1">,
-          which has been increased to {{ quantify("Memory", memoriesPerChunk, 2, 3) }} per second</span>.
+        每个记忆块基础每秒生成 1 点记忆<span v-if="memoriesPerChunk > 1">，
+          目前已经提升到每秒 {{ quantify("点记忆", memoriesPerChunk, 2, 3) }}</span>。
         <br>
-        Storing real time prevents Memory Chunk generation, but Memories will still be gained normally.
+        存储真实时间会阻止记忆块生成，但记忆仍会正常获得。
         <span v-if="memoriesPerChunk > 1">
           <br>
-          This is being increased due to {{ memoryBoosts }}.
+          由于{{ memoryBoosts }}，这一数值正在提升。
         </span>
       </div>
       <div v-else>
-        All Memories have been returned.
+        所有记忆都已归还。
       </div>
     </div>
     <div>
-      Mouse-over the icons below the bar to see descriptions of upgrades,
+      将鼠标悬停在进度条下方的图标上可以查看升级说明，
       <br>
-      and mouse-over <i class="fas fa-question-circle" /> icons for specific resource information.
+      将鼠标悬停在 <i class="fas fa-question-circle" /> 图标上可以查看特定资源信息。
     </div>
     <div class="l-ra-all-pets-container">
       <RaPet
@@ -136,9 +136,9 @@ export default {
     <div class="l-ra-non-pets">
       <button class="c-ra-run-button">
         <h2 :class="{ 'o-pelle-disabled': isDoomed }">
-          <span v-if="isRunning">You are in </span>
-          <span v-else>Start </span>
-          Ra's Reality
+          <span v-if="isRunning">你正处于 </span>
+          <span v-else>开始 </span>
+          Ra 的现实
         </h2>
         <div
           :class="runButtonClassObject"
@@ -165,8 +165,8 @@ export default {
           Remembrance
         </h1>
         <span :style="petStyle">
-          Whichever Celestial has Remembrance will get {{ formatX(remembranceMult) }} Memory Chunk gain. The other
-          Celestials will get {{ formatX(remembranceNerf, 1, 1) }} Memory Chunk gain.
+          拥有 Remembrance 的天体将获得 {{ formatX(remembranceMult) }} 的记忆块收益。其他
+          天体将获得 {{ formatX(remembranceNerf, 1, 1) }} 的记忆块收益。
         </span>
         <div
           v-if="hasRemembrance"
@@ -182,8 +182,8 @@ export default {
           v-else
           class="c-ra-remembrance-unlock-inner"
         >
-          Unlocked by getting {{ formatInt(remembranceReq) }} total Celestial Memory levels
-          (you need {{ formatInt(remembranceReq - totalLevels) }} more)
+          通过获得总计 {{ formatInt(remembranceReq) }} 级天体记忆等级解锁
+          （你还需要 {{ formatInt(remembranceReq - totalLevels) }} 级）
         </div>
       </div>
     </div>

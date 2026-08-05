@@ -386,7 +386,7 @@ export const ADNotations = (function (exports, Decimal, tslib) { 'use strict';
     return LettersNotation;
   }(CustomNotation);
 
-  var EMOJI = ["😠", "🎂", "🎄", "💀", "🍆", "👪", "🌈", "💯", "🍦", "🎃", "💋", "😂", "🌙", "⛔", "🐙", "💩", "❓", "☢", "🙈", "👍", "☂", "✌", "⚠", "❌", "😋", "⚡"];
+  var EMOJI = ["α", "β", "γ", "δ", "ε", "ζ", "η", "θ", "ι", "κ", "λ", "μ", "ν", "ξ", "ο", "π", "ρ", "σ", "τ", "υ", "φ", "χ", "ψ", "ω", "Γ", "Δ"];
 
   var EmojiNotation = function (_super) {
     tslib.__extends(EmojiNotation, _super);
@@ -1083,7 +1083,7 @@ export const ADNotations = (function (exports, Decimal, tslib) { 'use strict';
     return ImperialNotation;
   }(Notation);
 
-  var HOURS = ["🕛", "🕐", "🕑", "🕒", "🕓", "🕔", "🕕", "🕖", "🕗", "🕘", "🕙", "🕚"];
+  var HOURS = ["12", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
   var LOG12 = Math.log10(12);
 
   var ClockNotation = function (_super) {
@@ -1102,7 +1102,7 @@ export const ADNotations = (function (exports, Decimal, tslib) { 'use strict';
     });
     Object.defineProperty(ClockNotation.prototype, "infinite", {
       get: function get() {
-        return "🕛🕡";
+        return "12:30";
       },
       enumerable: false,
       configurable: true

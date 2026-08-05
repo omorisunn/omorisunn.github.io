@@ -416,7 +416,7 @@ export const tabs = [
       },
       {
         key: "teresa",
-        name: "特蕾莎",
+        name: "Teresa",
         symbol: "Ϟ",
         component: "TeresaTab",
         id: 1,
@@ -424,7 +424,7 @@ export const tabs = [
       },
       {
         key: "effarig",
-        name: "鹿颈长",
+        name: "Effarig",
         symbol: "Ϙ",
         component: "EffarigTab",
         condition: () => TeresaUnlocks.effarig.isUnlocked,
@@ -433,7 +433,7 @@ export const tabs = [
       },
       {
         key: "enslaved",
-        name: "无名氏",
+        name: "The Nameless Ones",
         symbol: "<div class='o-tab-btn--cel3'>\uf0c1</div>",
         component: "EnslavedTab",
         condition: () => EffarigUnlock.eternity.isUnlocked,
@@ -442,7 +442,7 @@ export const tabs = [
       },
       {
         key: "v",
-        name: "薇",
+        name: "V",
         symbol: "⌬",
         component: "VTab",
         condition: () => Achievement(151).isUnlocked,
@@ -451,7 +451,7 @@ export const tabs = [
       },
       {
         key: "ra",
-        name: "太阳神",
+        name: "Ra",
         symbol: "<i class='fas fa-sun'></i>",
         component: "RaTab",
         condition: () => VUnlocks.raUnlock.isUnlocked,
@@ -460,7 +460,7 @@ export const tabs = [
       },
       {
         key: "laitela",
-        name: "莱特拉",
+        name: "Lai'tela",
         symbol: "ᛝ",
         component: "LaitelaTab",
         condition: () => Laitela.isUnlocked,
@@ -469,7 +469,7 @@ export const tabs = [
       },
       {
         key: "pelle",
-        name: "佩勒",
+        name: "Pelle",
         symbol: "♅",
         component: "PelleTab",
         condition: () => Pelle.isUnlocked,

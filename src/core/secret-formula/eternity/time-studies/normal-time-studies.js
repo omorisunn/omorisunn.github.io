@@ -672,7 +672,7 @@ export const normalTimeStudies = [
     requirement: [() => Ra.unlocks.unlockHardV.effectOrDefault(0) >= 3, 225, 226, 233],
     reqType: TS_REQUIREMENT_TYPE.ALL,
     requiresST: [225, 226, 233],
-    description: () => `从时间研究225、226以及鹿颈长的无限中多获得 ${formatPercents(0.5)} 复制器星系`,
+    description: () => `从时间研究225、226以及 Effarig 的无限中多获得 ${formatPercents(0.5)} 复制器星系`,
     effect: 1.5,
     unlocked: () => Ra.unlocks.unlockHardV.effectOrDefault(0) >= 3
   },

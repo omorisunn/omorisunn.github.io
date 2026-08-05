@@ -31,11 +31,11 @@ export default {
     pauseModeString() {
       switch (this.pauseMode) {
         case BLACK_HOLE_PAUSE_MODE.NO_PAUSE:
-          return "Do not pause";
+          return "不暂停";
         case BLACK_HOLE_PAUSE_MODE.PAUSE_BEFORE_BH1:
-          return this.hasBH2 ? "Before BH1" : "Before activation";
+          return this.hasBH2 ? "在黑洞 1 前" : "在激活前";
         case BLACK_HOLE_PAUSE_MODE.PAUSE_BEFORE_BH2:
-          return "Before BH2";
+          return "在黑洞 2 前";
         default:
           throw new Error("Unrecognized BH offline pausing mode");
       }
@@ -65,8 +65,8 @@ export default {
         BlackHole(2).duration / BlackHole(2).cycleLength];
       this.detailedBH2 = this.bh2Status();
 
-      if (player.blackHoleNegative < 1) this.stateChange = this.isPaused ? "Uninvert" : "Invert";
-      else this.stateChange = this.isPaused ? "Unpause" : "Pause";
+      if (player.blackHoleNegative < 1) this.stateChange = this.isPaused ? "取消反转" : "反转";
+      else this.stateChange = this.isPaused ? "取消暂停" : "暂停";
     },
     bh2Status() {
       const bh1Remaining = BlackHole(1).timeWithPreviousActiveToNextStateChange;
@@ -75,14 +75,14 @@ export default {
       // Both BH active
       if (BlackHole(1).isActive && BlackHole(2).isActive) {
         const bh2Duration = Math.min(bh1Remaining, bh2Remaining);
-        return `Black Hole 2 is active for the next ${TimeSpan.fromSeconds(bh2Duration).toStringShort()}!`;
+        return `黑洞 2 将在接下来的 ${TimeSpan.fromSeconds(bh2Duration).toStringShort()} 内保持激活！`;
       }
 
       // BH1 active, BH2 will trigger before BH1 runs out
       if (BlackHole(1).isActive && (bh2Remaining < bh1Remaining)) {
         const bh2Duration = Math.min(bh1Remaining - bh2Remaining, BlackHole(2).duration);
-        return `Black Hole 2 will activate before Black Hole 1 deactivates,
-          for ${TimeSpan.fromSeconds(bh2Duration).toStringShort()}`;
+        return `黑洞 2 将在黑洞 1 停用前激活，
+          持续 ${TimeSpan.fromSeconds(bh2Duration).toStringShort()}`;
       }
 
       // BH2 won't start yet next cycle
@@ -90,20 +90,20 @@ export default {
         const cycleCount = BlackHole(1).isActive
           ? Math.floor((bh2Remaining - bh1Remaining) / BlackHole(1).duration) + 1
           : Math.floor(bh2Remaining / BlackHole(1).duration);
-        return `Black Hole 2 will activate after ${quantifyInt("more active cycle", cycleCount)} of Black Hole 1.`;
+        return `黑洞 2 将在黑洞 1 再激活 ${quantifyInt("个周期", cycleCount)} 后激活。`;
       }
 
       // BH1 inactive, BH2 ready to go when BH1 activates
       if (BlackHole(2).isCharged) {
         const bh2Duration = Math.min(BlackHole(1).duration, bh2Remaining);
-        return `Black Hole 2 will activate with Black Hole 1,
-          for ${TimeSpan.fromSeconds(bh2Duration).toStringShort()}.`;
+        return `黑洞 2 将与黑洞 1 一起激活，
+          持续 ${TimeSpan.fromSeconds(bh2Duration).toStringShort()}。`;
       }
 
       // BH1 inactive, BH2 starts at some point after BH1 activates
       const bh2Duration = Math.min(BlackHole(1).duration - bh2Remaining, BlackHole(2).duration);
-      return `Black Hole 2 will activate ${TimeSpan.fromSeconds(bh2Remaining).toStringShort()} after
-        Black Hole 1, for ${TimeSpan.fromSeconds(bh2Duration).toStringShort()}.`;
+      return `黑洞 2 将在黑洞 1 激活 ${TimeSpan.fromSeconds(bh2Remaining).toStringShort()} 后激活，
+        持续 ${TimeSpan.fromSeconds(bh2Duration).toStringShort()}。`;
     },
     togglePause() {
       BlackHoles.togglePause();
@@ -149,10 +149,10 @@ export default {
       data-v-black-hole-tab
     >
       <i v-if="isEnslaved">
-        You must... seek... other methods...
+        你必须……另寻他法……
         <br>
       </i>
-      The physics of this Reality do not allow the existence of Black Holes.
+      此现实的物理规律不允许黑洞存在。
     </div>
     <div
       v-else-if="!isUnlocked"
@@ -160,12 +160,12 @@ export default {
       data-v-black-hole-tab
     >
       <BlackHoleUnlockButton @blackholeunlock="startAnimation" />
-      The Black Hole makes the entire game run significantly faster for a short period of time.
+      黑洞会在短时间内让整个游戏运行速度大幅提升。
       <br>
-      Starts at {{ formatX(180) }} faster for {{ formatInt(10) }} seconds, once per hour.
+      初始为每小时一次，在 {{ formatInt(10) }} 秒内加速 {{ formatX(180) }} 倍。
       <br>
       <br>
-      Unlocking the Black Hole also gives {{ formatInt(10) }} Automator Points.
+      解锁黑洞还会获得 {{ formatInt(10) }} 点自动机点数。
     </div>
     <template v-else>
       <div class="c-subtab-option-container">
@@ -173,7 +173,7 @@ export default {
           class="o-primary-btn o-primary-btn--subtab-option"
           @click="togglePause"
         >
-          {{ stateChange }} Black Hole
+          {{ stateChange }}黑洞
         </button>
         <button
           v-if="!isPermanent"
@@ -181,7 +181,7 @@ export default {
           @click="changePauseMode"
           data-v-black-hole-tab
         >
-          Auto-pause: {{ pauseModeString }}
+          自动暂停：{{ pauseModeString }}
         </button>
       </div>
       <canvas
@@ -199,17 +199,17 @@ export default {
         <span v-if="hasBH2 && !isPermanent">
           <b>{{ detailedBH2 }}</b>
           <br>
-          The timer for Black Hole 2 only advances while Black Hole 1 is active.
+          黑洞 2 的计时器只在黑洞 1 激活时前进。
           <br>
-          Upgrades affect the internal timer; the header shows real time until next activation.
+          升级影响内部计时器；顶部显示的是距下次激活的真实时间。
         </span>
         <br>
         <div v-if="!isPermanent">
-          Black holes become permanently active when they are active for more than {{ formatPercents(0.9999, 2) }}
-          of the time.
+          当黑洞的激活时间占比超过 {{ formatPercents(0.9999, 2) }}
+          时，它们将永久激活。
           <br>
-          Active time percent: {{ formatPercents(blackHoleUptime[0], 3) }}
-          <span v-if="hasBH2">and {{ formatPercents(blackHoleUptime[1], 3) }}</span>
+          激活时间占比：{{ formatPercents(blackHoleUptime[0], 3) }}
+          <span v-if="hasBH2">和 {{ formatPercents(blackHoleUptime[1], 3) }}</span>
         </div>
         <BlackHoleChargingSliders class="l-enslaved-shop-container" />
       </div>

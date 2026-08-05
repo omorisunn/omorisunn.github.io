@@ -12,24 +12,24 @@ export default {
   },
   computed: {
     refiningOrSacrificing() {
-      if (this.isRefining) return `Refine`;
-      return `Sacrifice`;
+      if (this.isRefining) return `精炼`;
+      return `献祭`;
     },
     topLabel() {
-      return `You are about to ${this.refiningOrSacrificing} all rejected Glyphs`;
+      return `你即将${this.refiningOrSacrificing}所有被拒绝的符文`;
     },
     message() {
       const negativeWarning = AutoGlyphProcessor.hasNegativeEffectScore()
-        ? ` Note that some of your Effect Filter scores are negative, which may cause you to lose some Glyphs
-          you normally want to keep.`
+        ? ` 注意：你的一些效果筛选分数为负值，这可能导致你失去一些
+          通常想保留的符文。`
         : "";
-      return `Are you sure you want to ${this.refiningOrSacrificing} all rejected Glyphs? This will remove
-        all Glyphs that would be rejected by your current Glyph Filter settings.${negativeWarning}`;
+      return `你确定要${this.refiningOrSacrificing}所有被拒绝的符文吗？这将移除
+        所有会被你当前符文筛选设置拒绝的符文。${negativeWarning}`;
     },
     extraMessage() {
-      if (this.glyphsDeleted === 0) return `This will remove no Glyphs.`;
-      if (this.glyphsDeleted === this.glyphsTotal) return `This will remove all your Glyphs.`;
-      return `This process will remove ${this.glyphsDeleted}/${this.glyphsTotal} Glyphs.`;
+      if (this.glyphsDeleted === 0) return `这不会移除任何符文。`;
+      if (this.glyphsDeleted === this.glyphsTotal) return `这将移除你的所有符文。`;
+      return `此过程将移除 ${this.glyphsDeleted}/${this.glyphsTotal} 个符文。`;
     },
 
     // These two don't need to be reactive since the modal force-closes itself whenever glyphs change

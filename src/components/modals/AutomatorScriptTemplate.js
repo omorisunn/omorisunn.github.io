@@ -127,10 +127,10 @@ export default {
           blocks: blockifyTextAutomator(this.templateScript.script).blocks
         };
         AutomatorData.blockTemplates.push(newTemplateBlock);
-        GameUI.notify.info("Custom template block created");
+        GameUI.notify.info("已创建自定义模板块");
       } else {
         copyToClipboard(this.templateScript.script);
-        GameUI.notify.info("Template copied to clipboard");
+        GameUI.notify.info("模板已复制到剪贴板");
       }
       this.emitClose();
     }
@@ -138,15 +138,15 @@ export default {
   template: `
   <ModalWrapper class="c-automator-template-container">
     <template #header>
-      {{ name }} Template
+      {{ name }}模板
     </template>
     <div class="c-automator-template-description">
       {{ description }}
     </div>
     <div class="c-automator-template-inputs">
-      <b>Required Information:</b>
+      <b>必填信息：</b>
       <br>
-      Use a preset Study Tree:
+      使用预设时间研究树：
       <button
         v-for="(preset, presetNumber) in presets"
         :key="preset.name"
@@ -161,7 +161,7 @@ export default {
         @click="loadCurrent"
         data-v-automator-script-template
       >
-        <i>Current Tree</i>
+        <i>当前研究树</i>
       </button>
       <div
         v-for="input in inputs"
@@ -191,7 +191,7 @@ export default {
       </div>
     </div>
     <div class="c-automator-template-warnings">
-      <b>Possible things to consider:</b>
+      <b>可能需要考虑的事项：</b>
       <div v-if="validWarnings.length !== 0">
         <div
           v-for="warning in validWarnings"
@@ -202,7 +202,7 @@ export default {
         </div>
       </div>
       <div v-else>
-        (If something seems wrong with the template inputs, it will show up here)
+        （如果模板输入有问题，会显示在这里）
       </div>
       <br>
       <br>
@@ -212,13 +212,13 @@ export default {
       class="o-primary-btn"
       @click="copyAndClose"
     >
-      {{ isBlock ? "Create custom template block" : "Copy this template to your clipboard" }} and close this modal
+      {{ isBlock ? "创建自定义模板块" : "将此模板复制到剪贴板" }}并关闭此窗口
     </button>
     <button
       v-else
       class="o-primary-btn o-primary-btn--disabled"
     >
-      Cannot generate template (You have {{ quantifyInt("invalid input", invalidInputCount) }})
+      无法生成模板（你有 {{ quantifyInt("个无效输入", invalidInputCount) }}）
     </button>
   </ModalWrapper>
   `

@@ -12,72 +12,71 @@ export const changelog = [
     date: [2024, 5, 2],
     name: "Celebrate Android Reality Update",
     info: `
-Congratulations for the release of Android Reality Update! In order to celebrate this big milestone, we implemented
-some changes mainly based on the player comments and feedback from the Android version.
+
+祝贺安卓现实更新发布！为了庆祝这一重要里程碑，我们根据安卓版玩家的评论和反馈实施了一些改动。
 <br>
 <br>
-<b><i>Once again, thank you so much for playing Antimatter Dimensions!</i></b>
+<b><i>再次感谢你们游玩反物质维度！</i></b>
 <br>
 <br>
-<b>Major things:</b><br>
+<b>主要内容：</b><br>
 <ul>
-<li>Added newly joined Android testers in credits</li>
-<li>Added a new perk</li>
+<li>在制作人员中加入了新加入的安卓测试人员</li>
+<li>新增一个福利</li>
 </ul>
 <br>
-<b>Additional QoL and information:</b><br>
+<b>额外的生活质量与信息：</b><br>
 <ul>
-<li>Study Presets now carry over when you start over, and Companion Glyph will not leave you too</li>
-<li>Swapped cel2 and Perk shop unlocks</li>
-<li>TS131 now has an additional effect</li>
-<li>Enter key now works in autobuyer inputs to apply changes</li>
-<li>Reward of achievement 118 now improves Sacrifice autobuyer</li>
-<li>Glyph preset settings are now including/increased by default</li>
-<li>Glyph recycle now checks the Glyph effects with Glyph level set in Reality autobuyer</li>
-<li>Added a new cel7 upgrade mimicking EM40</li>
-<li>Added a show all tabs button in tab modify modal</li>
-<li>Added a display when Auto EC is disabled by requirement lock</li>
-<li>Added an option to swap symbol and border colors on Glyphs</li>
-<li>Added a functionality to change the visible resource on Modern UI</li>
-<li>Added a new modal for adjusting exponent notation formatting more flexibly</li>
-<li>Automator now ignores blackhole command while it is being disabled</li>
-<li>EM1000 requirement is now Eternity in 5 seconds or less</li>
-<li>Study tree will now automatically respec when exiting an EC</li>
-<li>Disabled a rebuyable TP upgrade in cel7, because it caused confusion to many players</li>
-<li>Rebalanced 3rd milestone of 5th bar due to the above upgrade deletion</li>
-<li>Various minor text changes</li>
+<li>研究预设现在会在重新开始时保留，Companion Glyph 也不会离开你</li>
+<li>交换了 cel2 与福利商店的解锁顺序</li>
+<li>TS131 现在有额外效果</li>
+<li>自动购买器输入框现在支持按回车应用更改</li>
+<li>成就 118 的奖励现在会改进献祭自动购买器</li>
+<li>符文预设设置现在默认包含/提高</li>
+<li>符文回收现在会使用现实自动购买器中设置的符文等级检查符文效果</li>
+<li>新增模拟 EM40 的 cel7 升级</li>
+<li>在标签页修改窗口中加入显示全部标签页按钮</li>
+<li>当自动永恒挑战因需求锁定被禁用时加入显示</li>
+<li>新增交换符文符号与边框颜色的选项</li>
+<li>新增在现代界面上更改可见资源的功能</li>
+<li>新增一个用于更灵活调整指数计数法格式的窗口</li>
+<li>自动机现在会在黑洞被禁用时忽略黑洞命令</li>
+<li>EM1000 的需求现在是 5 秒或更短完成永恒</li>
+<li>退出永恒挑战时研究树现在会自动重新分配</li>
+<li>禁用了 cel7 中一个可重复购买的 TP 升级，因为它让许多玩家困惑</li>
+<li>由于上述升级删除，重新平衡了第 5 条的第 3 个里程碑</li>
+<li>各种微小的文本改动</li>
 </ul>
 <br>
-<b>Minor UI Changes:</b><br>
+<b>次要界面改动：</b><br>
 <ul>
-<li>Adjusted perk layouts for new DAB perk</li>
-<li>Made Glyph sorting order consistent in showcase modal</li>
-<li>Added light and dark Glyph rarity colorblind palettes</li>
-<li>Adjusted various minor UI glitches</li>
+<li>为新 DAB 福利调整了福利布局</li>
+<li>使展示窗口中的符文排序顺序保持一致</li>
+<li>新增浅色与深色符文稀有度色盲配色</li>
+<li>修复了各种微小的界面问题</li>
 </ul>
 <br>
-<b>Bugfixes:</b><br>
+<b>错误修复：</b><br>
 <ul>
-<li>Fixed link to Synergism</li>
-<li>Fixed tooltip in TD tab</li>
-<li>Fixed offline progress bug</li>
-<li>Fixed Glyph Rarity color bug in popup</li>
-<li>Fixed automator pause command ticking wrongly</li>
-<li>Fixed a NaN display bug with certain autobuyer inputs</li>
-<li>Fixed some buggy behavior for saves without START perk</li>
-<li>Fixed TS192 gave console error while it is being disabled</li>
-<li>Fixed wording on cel7 dilation modal claiming that EP will not be gained</li>
-<li>Fixed ! not being parsed properly when used in study strings in automator scripts</li>
-<li>Fixed Max All TD button not behaving properly with an active Telemechanical Process lock</li>
-<li>Fixed Effarig Glyphs in presets were messed up bug because of the internal format change</li>
-<li>Fixed Glyph preset did not pick the highest level Glyphs while level:increased is selected</li>
-<li>Fixed remnant count not being properly reset when entering cel7 dilation with animation on</li>
-<li>Fixed EC TT cost being calculated incorrectly when using EC! functionality and tree respec simultaneously</li>
-<li>Fixed constant data not being properly carried over on full completion and migrated data on saves
-affected by this bug</li>
-<li>Removed duplicated achievement page text on Design theme</li>
-<li>Prevented offline progress from going above the 1e6 limit that the options menu has</li>
-<li>Fixed tpyo of the century</li>
+<li>修复了 Synergism 的链接</li>
+<li>修复了时间维度标签页中的提示</li>
+<li>修复了离线进度错误</li>
+<li>修复了弹出窗口中符文稀有度颜色错误</li>
+<li>修复了自动机暂停命令计时错误</li>
+<li>修复了某些自动购买器输入的 NaN 显示错误</li>
+<li>修复了没有 START 福利的存档的异常行为</li>
+<li>修复了 TS192 在被禁用时产生控制台错误</li>
+<li>修复了 cel7 膨胀窗口声称不会获得永恒点数的措辞</li>
+<li>修复了自动机脚本的研究字符串中 ! 解析不正确</li>
+<li>修复了遥机械进程锁激活时全部最大时间维度按钮行为异常</li>
+<li>修复了内部格式更改导致预设中 Effarig 符文错乱的错误</li>
+<li>修复了选择提高等级时符文预设未选择最高等级符文的问题</li>
+<li>修复了开启动画进入 cel7 膨胀时遗物数量未正确重置的问题</li>
+<li>修复了同时使用 EC! 功能与研究树重新分配时 EC 时间之理价格计算错误</li>
+<li>修复了完整通关时常量数据未正确结转以及受此错误影响的存档数据迁移问题</li>
+<li>移除了设计主题中重复的成就页文本</li>
+<li>防止离线进度超过选项菜单中的 1e6 限制</li>
+<li>修复了本世纪最著名的拼写错误</li>
 </ul>
 <br>
 `
@@ -86,94 +85,82 @@ affected by this bug</li>
     date: [2023, 7, 18],
     name: "Final Official Patch",
     info: `
-All of the previous patches since "The Reality Update" have been with the goal of fixing commonly reported bugs and
-implementing highly suggested features. However, this patch is planned to be the final official patch. There may be
-a few minor patches from bugs/requests in response to this set of changes, but these will likely be fixed or added
-as they come in. We may try to add more beyond that, but this is no longer a guarantee and future changes will
-probably not have their own changelog entries.
+
+自“现实更新”以来的所有补丁都以修复常见错误和实现强烈建议的功能为目标。不过，本补丁计划为最后一个官方补丁。针对这批改动可能还会有少量修复错误或回应请求的小补丁，但这些很可能会随着反馈陆续修复或添加。我们可能会尝试添加更多内容，但不再保证，未来的改动可能也不会有自己的更新日志条目。
 <br>
 <br>
-<b><i>At this point, the official version of the game is largely considered to be complete.
-Thank you so much for playing Antimatter Dimensions!</i></b>
+<b><i>至此，游戏的官方版本基本被认为已经完成。非常感谢你们游玩反物质维度！</i></b>
 <br>
 <br>
-<b>New things:</b><br>
+<b>新内容：</b><br>
 <ul>
-<li>Time Study import strings now allow you to immediately enter an Eternity Challenge on importing if the
-string contains an EC and ends with a "!"</li>
-<li>Added hotkeys for Dilation and Glyph respec on Armageddon</li>
-<li>Shift-clicking the Reality button now forces the Glyph selection modal to show up regardless of your settings</li>
-<li>Added 3 more perk layouts (Square, horizontal grid, and distance from START)</li>
-<li>You can now toggle "upgrade locks" for some Reality and Imaginary upgrades, which will automatically prevent
-any manual or automatic actions that would fail their unlock condition</li>
-<li>Glyph Filter settings can now also be imported and exported as text</li>
-<li>You can now tell your filter to immediately Reality (once available, if your autobuyer is on) if none of the
-upcoming choices will be accepted by the filter</li>
-<li>Added Space Theorems (current and total) as an Automator currency</li>
-<li>Added the ability to disable offline time simulation when the game is suspended (due to being out of focus or
-from device hibernation)</li>
-<li>Added information related to save creation time on statistics tab</li>
-<li>The game will now periodically perform automatic local backups, similar to the Android version of the game</li>
+<li>时间研究导入字符串现在允许你在导入时立即进入永恒挑战，如果字符串包含 EC 并以“!”结尾</li>
+<li>为膨胀和末日审判时的符文重新分配添加了快捷键</li>
+<li>按住 shift 点击现实按钮现在无论设置如何都会强制显示符文选择窗口</li>
+<li>新增 3 种福利布局（方形、水平网格和距 START 的距离）</li>
+<li>现在可以为部分现实和想象升级切换“升级锁定”，它会自动阻止任何会导致解锁条件失败的手动或自动操作</li>
+<li>符文筛选设置现在也可以作为文本导入和导出</li>
+<li>你可以让筛选器在即将到来的选择都不会被接受时立即现实（一旦可用，如果自动购买器开启）</li>
+<li>新增空间之理（当前与总数）作为自动机货币</li>
+<li>新增在游戏被挂起时禁用离线时间模拟的能力（因失去焦点或设备休眠）</li>
+<li>在统计页新增存档创建时间相关信息</li>
+<li>游戏现在会像安卓版一样定期自动进行本地备份</li>
 </ul>
 <br>
-<b>Additional QoL and information:</b><br>
+<b>额外的生活质量与信息：</b><br>
 <ul>
-<li>The tutorial at the start of the game now also emphasizes the How To Play</li>
-<li>Achievements with rewards now have an additional icon on their bottom-left corner</li>
-<li>Infinity and Eternity autobuyers now have status text on their settings boxes which indicate when they will next
-trigger a prestige when on "time" or "X highest" mode</li>
-<li>Eternity Challenges now stay visible on the EC tab as long as you have unlocked them at some point on that Reality,
-even if you unlock a different one afterwards without completing it first</li>
-<li>Resource catchup modal is now slightly more detailed during the first few Realities</li>
-<li>Upgrades affected by the EU2 perk now show more accurate cost text</li>
-<li>You can no longer accidentally Reality without selecting a Glyph; the confirm option will not appear unless one
-is selected. (Disabling the selection modal after unlocking sacrifice still lets the game choose randomly)</li>
-<li>Recent Prestiges for Reality now displays iM when appropriate</li>
-<li>Numerous How To Play entries have been updated or clarified to more accurately describe the game's features</li>
-<li>Added more display options for Recent Prestiges tab</li>
-<li>Many various minor text changes</li>
+<li>游戏开头的教程现在也会强调如何游玩</li>
+<li>有奖励的成就现在在左下角有额外图标</li>
+<li>无限和永恒自动购买器现在在其设置框上有状态文本，在“时间”或“X 最高”模式下显示下次触发声望的时间</li>
+<li>永恒挑战现在只要你在该现实中的某个时刻解锁过，就会保持可见，即使之后未完成就解锁了另一个</li>
+<li>前几次现实中的资源追赶窗口现在稍微更详细</li>
+<li>受 EU2 福利影响的升级现在显示更准确的价格文本</li>
+<li>你不能再未选择符文就意外现实；除非选中符文，否则确认选项不会出现。（解锁献祭后禁用选择窗口仍会让游戏随机选择）</li>
+<li>最近的现实记录在适当时现在显示 iM</li>
+<li>许多如何游玩条目已更新或澄清，以更准确描述游戏功能</li>
+<li>为最近重置标签页新增更多显示选项</li>
+<li>许多各种微小的文本改动</li>
 </ul>
 <br>
-<b>Minor UI Changes:</b><br>
+<b>次要界面改动：</b><br>
 <ul>
-<li>Purchase count tooltips for Dimensions now pop out to the left side instead of above</li>
-<li>Changed Break Infinity tab symbol on Modern UI</li>
-<li>Time Study import modal now shows info an import image as a two-column layout to reduce the need to scroll</li>
-<li>Clarified interactions with TS31 and other upgrades</li>
-<li>Eternity Challenges now have a visual overlay to show how many completions they have</li>
-<li>The Reality reset modal now warns you more firmly if you can otherwise Reality for rewards instead</li>
-<li>Added an icon for recently unequipped Glyphs</li>
-<li>Added an "auto" Glyph BG color mode which matches black/white Glyph backgrounds to your current Theme</li>
-<li>Improved color contrast for different Glyph rarities and added decorative borders to Glyphs depending on their
-rarity and/or type</li>
-<li>Added a message modal to clarify why not all Glyphs could be unequipped in certain cases</li>
-<li>Effarig Glyphs now show their effects in "celestial order"</li>
-<li>All <i>inventory</i> Glyphs now also show reduced levels when global level nerfs are active</li>
-<li>Cursed Glyphs can now also be made on cel4's tab</li>
-<li>The glow for the Singularity milestone button can now be disabled</li>
+<li>维度的购买次数提示现在从左侧弹出而不是上方</li>
+<li>更改了现代界面上打破无限标签页的符号</li>
+<li>时间研究导入窗口现在以两列布局显示导入图像信息，减少滚动需求</li>
+<li>澄清了 TS31 与其他升级的交互</li>
+<li>永恒挑战现在有视觉覆盖层显示其完成次数</li>
+<li>现实重置窗口现在更强烈地警告你如果本来可以获得现实奖励</li>
+<li>为最近卸下的符文新增图标</li>
+<li>新增“自动”符文背景颜色模式，将黑白符文背景与当前主题匹配</li>
+<li>改进了不同符文稀有度的颜色对比度，并根据稀有度或类型为符文添加装饰边框</li>
+<li>新增消息窗口，说明某些情况下为何无法卸下所有符文</li>
+<li>Effarig 符文现在按“天体顺序”显示其效果</li>
+<li>当全局等级削弱生效时，所有<i>背包</i>中的符文现在也显示降低后的等级</li>
+<li>被诅咒的符文现在也可以在 cel4 标签页制作</li>
+<li>奇点里程碑按钮的发光现在可以禁用</li>
 </ul>
 <br>
-<b>Bugfixes:</b><br>
+<b>错误修复：</b><br>
 <ul>
-<li>Fixed IP/EP rate display not updating properly when save slot is changed</li>
-<li>Prevented Time Study presets from having duplicate names</li>
-<li>Fixed Eternity button having incorrect styling below Infinite IP in dilation</li>
-<li>Fixed poor Glyph uniformity behavior without START perk</li>
-<li>Fixed some Glyph information being colored based on BG color instead of Theme color</li>
-<li>Disabled automator undo/redo from functioning on tabs other than the editor</li>
-<li>Fixed purchased music Glyphs getting turned into regular Glyphs when cosmetics are reset</li>
-<li>Made Glyph preset loading more forgiving and less likely to fail to load presets</li>
-<li>Fixed cel1 Reality RM record being incorrectly tracked in some cases</li>
-<li>Fixed Glyph filter sometimes not comparing to rarity properly</li>
-<li>Fixed cel7 Glyph slot not appearing/disappearing properly in certain cases</li>
-<li>Fixed misalignment in cel6 icon (credit to @mrkrutaman for the fix)</li>
-<li>Disabled IAP purchase for all Glyph Cosmetics when already purchased</li>
-<li>Fixed Hibernation offline time not giving real-time resources</li>
-<li>Hibernation offline simulation now properly uses offline time settings</li>
-<li>Added a few missing notifications for hotkey presses</li>
-<li>Made Standard notation format larger integers properly</li>
-<li>Removed news ticker with broken link</li>
-<li>Various more minor bugfixes</li>
+<li>修复了切换存档槽位时无限点数/永恒点数速率显示不更新的问题</li>
+<li>防止时间研究预设有重复名称</li>
+<li>修复了膨胀中无限点数无限时永恒按钮样式错误</li>
+<li>修复了没有 START 福利时符文均匀性行为不佳</li>
+<li>修复了部分符文信息按背景色而非主题色着色</li>
+<li>禁用了自动机撤销/重做在编辑器以外的标签页生效</li>
+<li>修复了外观重置时已购买的 Music 符文变成普通符文的问题</li>
+<li>使符文预设加载更宽容，更不容易失败</li>
+<li>修复了某些情况下 cel1 现实记录跟踪错误</li>
+<li>修复了符文筛选有时未正确比较稀有度</li>
+<li>修复了某些情况下 cel7 符文槽位显示/消失异常</li>
+<li>修复了 cel6 图标的错位（感谢 @mrkrutaman 的修复）</li>
+<li>已购买全部符文外观后禁用内购购买</li>
+<li>修复了休眠离线时间不提供真实时间资源</li>
+<li>休眠离线模拟现在正确使用离线时间设置</li>
+<li>补充了一些缺失的快捷键按下通知</li>
+<li>使标准计数法正确格式化更大的整数</li>
+<li>移除了链接损坏的新闻滚动条</li>
+<li>各种更多次要错误修复</li>
 </ul>
 <br>
 `
@@ -182,80 +169,76 @@ rarity and/or type</li>
     date: [2023, 5, 25],
     name: "Multiplier Tab, Automator, and Major mechanics fixes",
     info: `
-<b>Multiplier Tab:</b><br>
+
+<b>倍率标签页：</b><br>
 <ul>
-<li>Added a tab for Replicanti speed multipliers</li>
-<li>Power effects can now also be shown as an equivalent-value multiplier</li>
-<li>AD tab now has special behavior within NC12</li>
-<li>Made general categories (ie. "Achievements" or "Time Studies") still openable even with single entries</li>
-<li>DT nerfs no longer apply to game speed within the multiplier tab</li>
-<li>Entries referring to individual upgrades are now worded more consistently</li>
-<li>Filled in a bunch of miscellaneous missing effects and fixed a few mislabeled effects</li>
+<li>新增复制器速度倍率标签</li>
+<li>幂效果现在也可以显示为等效倍率</li>
+<li>反物质维度标签现在在 NC12 中有特殊行为</li>
+<li>使一般类别（如“成就”或“时间研究”）即使只有单一条目也可以展开</li>
+<li>膨胀时间削弱不再在倍率标签页中影响游戏速度</li>
+<li>引用单个升级的条目现在措辞更一致</li>
+<li>补充了各种缺失的效果，并修复了一些标注错误的效果</li>
 </ul>
 <br>
-
-<b>Automator Features:</b><br>
+<b>自动机功能：</b><br>
 <ul>
-<li>Automator-related notifications in the top-right now have their own coloring</li>
-<li>Constants now stay in a consistent order when refreshing the page</li>
-<li>New scripts now have enforced unique names by default</li>
-<li>NOTIFY command now also supports single-quotes, as well as mixtures of single/double quotes</li>
-<li>Added buttons for deleting individual constants, and another button to delete all of them</li>
-<li>Added undo/redo functionality</li>
-<li>You can now import all your study presets into the automator as constants</li>
-<li>Added WAIT functionality for next BH1/BH2 activation</li>
-<li>Added STOP command to immediately halt script execution</li>
-<li>You can now use the highest filter score out of your available Glyph options as a variable for
-  comparisons</li>
+<li>右上角与自动机相关的通知现在有独立配色</li>
+<li>常量在刷新页面时现在保持一致的顺序</li>
+<li>新脚本默认强制唯一名称</li>
+<li>NOTIFY 命令现在也支持单引号，以及单双引号混合</li>
+<li>新增删除单个常量的按钮，以及删除全部常量的按钮</li>
+<li>新增撤销/重做功能</li>
+<li>现在可以将所有研究预设作为常量导入自动机</li>
+<li>为下一次 BH1/BH2 激活新增 WAIT 功能</li>
+<li>新增 STOP 命令立即停止脚本执行</li>
+<li>现在可以使用可用符文选项中的最高筛选分数作为比较变量</li>
 </ul>
 <br>
-
-<b>Automator Bugfixes:</b><br>
+<b>自动机错误修复：</b><br>
 <ul>
-<li>Block-to-text conversion should be less aggressive on deleting errored lines</li>
-<li>Fixed block editor wiping internal contents of all later blocks whenever block nesting changes</li>
-<li>Fixed a bug which sometimes caused the automator to attempt to run errored scripts and crash the game</li>
-<li>Fixed automator constants not being compared to built-in keywords correctly</li>
-<li>Fixed execution skipping the first line whenever scripts restart due to a REALITY command</li>
-<li>Fixed a few syntax coloring bugs in the Automator text editor</li>
-<li>Fixed a bug which caused the automator to prevent some resources from being reset after full completions</li>
+<li>积木转文本在删除出错行时应不那么激进</li>
+<li>修复了积木嵌套变化时积木编辑器清除所有后续积木内部内容的问题</li>
+<li>修复了有时导致自动机尝试运行有错误脚本并使游戏崩溃的错误</li>
+<li>修复了自动机常量未与内置关键字正确比较</li>
+<li>修复了脚本因 REALITY 命令重新启动时跳过第一行的问题</li>
+<li>修复了自动机文本编辑器中的几个语法着色错误</li>
+<li>修复了完整通关后自动机阻止某些资源重置的错误</li>
 </ul>
 <br>
-
-<b>Game Mechanic fixes:</b><br>
+<b>游戏机制修复：</b><br>
 <ul>
-<li>Dark Energy no longer resets after Annihilation</li>
-<li>Dooming is now prevented if you have less than 5 empty inventory slots</li>
-<li>"Refine to cap, then sacrifice" mode now sacrifices when the related resource is still locked</li>
-<li>Secret achievement 46 is now properly awarded if the condition is met while offline</li>
-<li>Storing real time no longer prevents autobuyers from ticking</li>
-<li>Fixed bugged modal and game crash when attempting to exit a Celestial Reality from the Glyph tab</li>
-<li>IAP flag in speedruns is now updated more consistently</li>
-<li>Fixed Reality button sometimes showing an incorrect projected RM value due to amplification</li>
-<li>Fixed Black Holes getting stuck as permanently inactive in some cases</li>
-<li>Fixed negative Glyph counts not being properly updated when using Glyph undo</li>
-<li>Glyph purge modals now count identical Glyphs properly</li>
-<li>Fixed Glyph purge modals sometimes not appearing</li>
-<li>Fixed a poor interaction between the new Glyph RNG and negative seed values</li>
-<li>Fixed Glyph RNG seed not advancing after amplified realities</li>
+<li>暗能量在湮灭后不再重置</li>
+<li>背包空槽位少于 5 个时现在禁止进入末日</li>
+<li>“精炼到上限后献祭”模式现在在关联资源仍锁定时献祭</li>
+<li>秘密成就 46 现在会在离线时满足条件时正确授予</li>
+<li>存储真实时间不再阻止自动购买器计时</li>
+<li>修复了从符文标签页尝试退出天体现实时的错误窗口和游戏崩溃</li>
+<li>速通中的内购标志现在更新更一致</li>
+<li>修复了现实按钮有时因放大显示错误的预计现实机器值</li>
+<li>修复了某些情况下黑洞卡在永久不活动状态</li>
+<li>修复了符文撤销时负符文数量未正确更新</li>
+<li>符文清除窗口现在正确计算相同符文</li>
+<li>修复了符文清除窗口有时不出现</li>
+<li>修复了新符文随机数与负种子值的异常交互</li>
+<li>修复了放大现实后符文随机种子不推进</li>
 </ul>
-
-<br><b>Other changes:</b><br>
+<br>
+<b>其他改动：</b><br>
 <ul>
-<li>Added confirmation option to hide Glyph purge modals which mass-sacrifice</li>
-<li>Improved UI behavior when importing saves in certain conditions</li>
-<li>Teresa's EU-start upgrade now applies retroactively</li>
-<li>Offline ticks are now limited to a minimum of 33ms instead of 50ms</li>
-<li>"Offline" progress due to device hibernation now gets simulated as if it were offline time
-  instead of being applied as a single large tick</li>
-<li>Offline/hibernation maximum time has been increased from 6 hours to 24 hours</li>
-<li>Text references to Teresa's Perk Shop have been more standardized</li>
-<li>Positioning for V's entries in navigation was adjusted to prevent text overlap</li>
-<li>AMOLED themes now have proper theming on credits scroll</li>
-<li>Fixed Achievement 142 not unlocking when unlocking the Black Hole</li>
-<li>Fixed Reality Glyph cosmetics not handling colors properly</li>
-<li>Exit Dilation modal no longer erroneously appears outside of Dilation</li>
-<li>A handful of more minor text and typo fixes</li>
+<li>新增隐藏批量献祭符文清除窗口的确认选项</li>
+<li>改进了某些情况下导入存档的界面行为</li>
+<li>Teresa 的 EU 起始升级现在追溯生效</li>
+<li>离线 tick 现在限制为最小 33 毫秒而不是 50 毫秒</li>
+<li>设备休眠导致的“离线”进度现在像离线时间一样模拟，而不是作为单个大 tick 应用</li>
+<li>离线/休眠最大时间从 6 小时增加到 24 小时</li>
+<li>对 Teresa 的福利商店的文本引用已更标准化</li>
+<li>调整了导航中 V 条目的位置以防止文本重叠</li>
+<li>AMOLED 主题现在在制作人员滚动时有正确主题</li>
+<li>修复了成就 142 在解锁黑洞时未解锁</li>
+<li>修复了现实符文外观颜色处理不当</li>
+<li>退出膨胀窗口不再在膨胀之外错误出现</li>
+<li>少量更多次要文本和拼写修复</li>
 </ul>
 <br>
 `
@@ -264,69 +247,60 @@ rarity and/or type</li>
     date: [2023, 4, 7],
     name: "Speedrunner and Glyph RNG",
     info: `
-<b>Major Changes:</b><br>
+
+<b>主要改动：</b><br>
 <ul>
-<li><b>Glyph RNG for Realities 2-21 has been completely overhauled.</b> The new RNG now attempts to give
-you a much more even spread of effects during these Realities; for each group of 5 consecutive Realities,
-you will now see every Glyph type exactly 4 times and every individual effect will always appear <i>at least once</i>
-amongst those 4 choices.
-</li>
-<li>Two side effects of the above change: 2-effect glyphs are now a fair bit more common
-(about 30% more common for replication and dilation and 140% more common for the other three) and the Glyph options for
-your <i>current</i> Reality may have changed when first loading up this version of the game.</li>
-<li>Starting a speedrun save now properly carries over all the other stats which would have normally carried over after
-finishing the game</li>
-<li>Previous speedrun records are now also stored in the save and can now be compared on a newly-added subtab</li>
-<li>Glyph RNG seed can now be modified in-game during a speedrun, as long as you have not realitied yet</li>
-<li>Credits page was updated to include people recently brought on for testing the Reality update on Android</li>
-<li>The "Total Termination" upgrade now affects <i>all</i> Glyph types</li>
+<li><b>第 2 至 21 次现实的符文随机数已彻底重做。</b>新随机数尝试在这些现实中给你更均匀的效果分布；每连续 5 次现实中，每种符文类型会出现恰好 4 次，每个单独效果在 4 个选项中<i>至少出现一次</i>。</li>
+<li>上述改动的两个副作用：双效果符文现在常见得多（复制和膨胀大约多 30%，其他三种多 140%），并且首次加载此版本时，你<i>当前</i>现实的符文选项可能已改变。</li>
+<li>开始速通存档现在正确结转通关后通常保留的所有其他统计</li>
+<li>以前的速通记录现在也存储在存档中，可以在新增的子标签中比较</li>
+<li>符文随机种子现在可以在速通中于游戏内修改，只要尚未进行现实</li>
+<li>制作人员页已更新，包括最近参与安卓现实更新测试的人员</li>
+<li>“彻底终止”升级现在影响<i>所有</i>符文类型</li>
 </ul>
 <br>
-
-<b>New QoL/features:</b><br>
+<b>新的生活质量/功能：</b><br>
 <ul>
-<li>Real time (in stats) is now paused after gaining the final achievement</li>
-<li>Perk tree interactivity has been made generally more responsive</li>
-<li>Added two new default perk tree layouts (an Android-version grid and \uE010)</li>
-<li>Eternity autobuyer now only triggers at full completion count with ECB perk instead of immediately</li>
-<li>Added a button to reset all individual Glyph cosmetics</li>
-<li>Added a confirmation modal for exiting challenges using the header button</li>
-<li>Shift-clicking the icon on the Glyph filter now bumps it to the next <i>lower</i> threshold</li>
-<li>Glyph presets now have 2 additional slots (5 => 7)</li>
-<li>Added time estimates for reaching max Replicanti and Dilated Time this Reality</li>
-<li>Hovering over the dilation button now shows all time estimate tooltips at once</li>
-<li>Clicking already-bought dilation studies now moves you over to the appropriate related tab</li>
-<li>All progress-locked options now remain permanently modifiable after full game completions</li>
+<li>获得最后一个成就后，统计中的真实时间现在暂停</li>
+<li>福利树交互总体上更灵敏</li>
+<li>新增两种默认福利树布局（安卓版网格和 \uE010）</li>
+<li>永恒自动购买器现在在 ECB 福利下只在完整完成次数时触发，而不是立即</li>
+<li>新增重置所有单个符文外观的按钮</li>
+<li>新增使用顶栏按钮退出挑战的确认窗口</li>
+<li>按住 shift 点击符文筛选图标现在跳到下一个<i>较低</i>阈值</li>
+<li>符文预设现在有 2 个额外槽位（5 变 7）</li>
+<li>新增达到本次现实最大复制器和膨胀时间的预计时间</li>
+<li>悬停膨胀按钮现在同时显示所有时间估计提示</li>
+<li>点击已购买的膨胀研究现在会跳到相应标签页</li>
+<li>所有进度锁定选项在完整通关后现在保持永久可修改</li>
 </ul>
 <br>
-
-<b>Improved UI/Layout:</b><br>
+<b>改进的界面/布局：</b><br>
 <ul>
-<li>Speedrun time formatting now has 3 hour digits and suppresses END formatting on some subtabs</li>
-<li>Improved autobuyer textbox contrast on some themes</li>
-<li>Reality header in stats tab now shows cel7-related stats as well</li>
-<li>Clarified how Relic Shard rarity boost and cursed Glyphs work</li>
-<li>Added %/sec to ID8 when relevant</li>
-<li>Added TT to offline progress entries</li>
-<li>Added BH cost scaling to its H2P entry</li>
-<li>Changed AD Dimension purchase buttons to be stylized like cel6 when Continuum is active</li>
-<li>Improved light/dark TS contrast between buyable and bought states</li>
-<li>Speedrun widget now takes up less screen space when collapsed</li>
-<li>Other various minor text fixes</li>
+<li>速通时间格式现在有 3 位小时数字，并在部分子标签隐藏游戏结束格式</li>
+<li>改进了一些主题上自动购买器文本框的对比度</li>
+<li>统计页中的现实标题现在也显示 cel7 相关统计</li>
+<li>澄清了遗物碎片稀有度加成和被诅咒符文的工作方式</li>
+<li>在适当时为 ID8 添加了 %/秒</li>
+<li>为离线进度条目添加了时间之理</li>
+<li>为其如何游玩条目添加了黑洞价格缩放</li>
+<li>连续体激活时，反物质维度购买按钮现在采用 cel6 风格</li>
+<li>改进了可购买与已购买状态之间的浅/深 TS 对比度</li>
+<li>速通小组件折叠时占用更少屏幕空间</li>
+<li>其他各种微小的文本修复</li>
 </ul>
 <br>
-
-<b>Bugfixes:</b><br>
+<b>错误修复：</b><br>
 <ul>
-<li>Fixed buggy Glyph set names from reskinned Companion Glyphs</li>
-<li>Fixed broken external links in "About the game"</li>
-<li>Fixed AD autobuyer settings being unmodifiable in some cases</li>
-<li>Fixed some display bugs with fractional Infinity/Eternity count</li>
-<li>Recent prestige tab now properly accounts for amplification</li>
-<li>Fixed subtab switching when switching game saves</li>
-<li>Fixed Replicanti estimate not accounting for update rate correctly in some cases</li>
-<li>Fixed Transience of Information not calculating its RM requirement correctly</li>
-<li>Various more minor bugfixes</li>
+<li>修复了换皮 Companion 符文的符文组名称异常</li>
+<li>修复了“关于游戏”中的损坏外部链接</li>
+<li>修复了某些情况下反物质维度自动购买器设置无法修改</li>
+<li>修复了小数无限/永恒次数的一些显示错误</li>
+<li>最近重置标签页现在正确考虑放大</li>
+<li>修复了切换存档时子标签切换问题</li>
+<li>修复了某些情况下复制器估计未正确考虑更新频率</li>
+<li>修复了信息短暂未正确计算其现实机器需求</li>
+<li>各种更多次要错误修复</li>
 </ul>
 `
   },
@@ -334,60 +308,56 @@ finishing the game</li>
     date: [2023, 2, 22],
     name: "Visuals and Code prep",
     info: `
-<b>Big Changes:</b><br>
+
+<b>重大改动：</b><br>
 <ul>
-<li>Cloud saving now only saves one slot at a time and does so every 10 minutes instead of every 5.
-  <b>If you are using the Cloud, please back up your saves locally just in case. This was hard to thoroughly
-  test and we don't want you to lose your saves.</b></li>
-<li>Please update your theme to v10 for the best user experience (added a new secret theme)</li>
-<li>Blobs now have color in the font file</li>
-<li>Changed recent prestige page to be an organized table with more information</li>
-<li>Multiversal effect should no longer cause a UI softlock if the game processes too slowly</li>
-<li>Lots of changes on the backend and Github repository in preparation for making the game open-source</li>
+<li>云存档现在一次只保存一个槽位，并且每 10 分钟保存一次而不是每 5 分钟。<b>如果你使用云存档，请务必在本地备份存档以防万一。这很难彻底测试，我们不想让你丢失存档。</b></li>
+<li>请将主题更新到 v10 以获得最佳体验（新增了一个秘密主题）</li>
+<li>水滴现在在字体文件中有颜色</li>
+<li>将最近重置页改为更有条理的表格并包含更多信息</li>
+<li>多元效果不再因游戏处理过慢导致界面卡死</li>
+<li>为将游戏开源做了大量后端和 Github 仓库改动</li>
 </ul>
 <br>
-
-<b>New QoL/features:</b><br>
+<b>新的生活质量/功能：</b><br>
 <ul>
-<li>5xEP now always triggers before TD autobuyers</li>
-<li>Added time and relic shard modes for auto-reality</li>
-<li>Added tracking for total time across full game completions</li>
-<li>Changed some default player properties to make poor game behavior less likely</li>
-<li>Added an option to invert generated/total TT in study tab</li>
-<li>Expanded info for optimizing prestige for resource/time</li>
-<li>Added a new animation for inverted black holes</li>
+<li>5 倍永恒点数现在总是在时间维度自动购买器之前触发</li>
+<li>为自动现实新增时间和遗物碎片模式</li>
+<li>新增完整通关总时间跟踪</li>
+<li>更改了一些默认玩家属性以减少不良游戏行为的可能性</li>
+<li>新增在研究标签页反转生成/总时间之理的选项</li>
+<li>扩展了按资源/时间优化声望的信息</li>
+<li>为反转黑洞新增动画</li>
 </ul>
 <br>
-
-<b>Improved UI/Layout:</b><br>
+<b>改进的界面/布局：</b><br>
 <ul>
-<li>Fixed option dropdown being blurry on some browsers</li>
-<li>Fixed some numbers being formatted with the wrong number of decimal places or not using notation</li>
-<li>Added text for unequippable glyphs in cel7</li>
-<li>Further clarified game/real time behavior in various places</li>
-<li>TS21 now shows its effect as a multiplier</li>
-<li>Increased contrast on reality upgrade buttons</li>
-<li>Made ACHNR perk behave more consistently</li>
-<li>Updated some entries in the credits</li>
-<li>Added max DT this reality</li>
-<li>Fixed a lot of things not being visually disabled in cel7</li>
-<li>Many more minor fixes</li>
+<li>修复了某些浏览器上选项下拉菜单模糊</li>
+<li>修复了一些数字小数位数错误或未使用计数法</li>
+<li>为 cel7 中不可装备符文添加文本</li>
+<li>进一步澄清了各处的游戏/真实时间行为</li>
+<li>TS21 现在将效果显示为倍率</li>
+<li>提高了现实升级按钮的对比度</li>
+<li>使 ACHNR 福利行为更一致</li>
+<li>更新了制作人员中的一些条目</li>
+<li>新增本次现实最大膨胀时间</li>
+<li>修复了 cel7 中许多未视觉禁用的问题</li>
+<li>更多次要修复</li>
 </ul>
 <br>
-
-<b>Bugfixes:</b><br>
+<b>错误修复：</b><br>
 <ul>
-</li><li>Fixed Modern sidebar resource rounding incorrectly
-</li><li>Fixed automator errors on post-completion new games
-</li><li>Fixed some news entry stats not being updated properly
-</li><li>Fixed news repeat buffer not working
-</li><li>Updated progress-locking conditions for some news messages
-</li><li>Fixed edge cases for secret achievements 12 and 42
-</li><li>Fixed cel5-3 memories having the wrong name in offline progress
-</li><li>Fixed Dilated runs not giving EP or being tracked in records
-</li><li>Fixed replicanti time being incorrect in cel7
-</li><li>Fixed hotkeys allowing autobuyers to be changed even when locked
-</li><li>Fixed Continuum H2P entry disappearing in cel7
+<li>修复了现代侧栏资源舍入错误</li>
+<li>修复了完整通关后新游戏的自动机错误</li>
+<li>修复了部分新闻条目统计未正确更新</li>
+<li>修复了新闻重复缓冲不工作</li>
+<li>更新了部分新闻消息的进度锁定条件</li>
+<li>修复了秘密成就 12 和 42 的边界情况</li>
+<li>修复了 cel5-3 记忆在离线进度中名称错误</li>
+<li>修复了膨胀速通未给予永恒点数或未记录</li>
+<li>修复了 cel7 中复制器时间错误</li>
+<li>修复了快捷键允许在锁定时更改自动购买器</li>
+<li>修复了连续体如何游玩条目在 cel7 中消失</li>
 </ul>
 `
   },
@@ -395,53 +365,51 @@ finishing the game</li>
     date: [2023, 1, 26],
     name: "Timewall Reduction",
     info: `
-<b>Balance Changes:</b><br>
+
+<b>平衡改动：</b><br>
 <ul>
-<li>EC4 infinity requirement scales slower (50M => 25M per tier)</li>
-<li>EC11 goals have been reduced by e50 on all tiers</li>
-<li>Improved visibility for cel3 hints (progress is now always visible and accumulates 10x faster)</li>
-<li>Made BH auto-pulse always force charging at 99%, removed adjustability for charge rate</li>
-<li>Momentum grows 2.5x faster</li>
-<li>Reduced final singularity milestone (8e45 => 2.5e45)</li>
-<li>Speedruns now also start with achievements 35 and 76</li>
+<li>EC4 的无限需求缩放变慢（每级 5000 万变 2500 万）</li>
+<li>EC11 的所有层级目标减少 e50</li>
+<li>改进了 cel3 提示的可见性（进度现在始终可见，并且积累快 10 倍）</li>
+<li>使黑洞自动脉冲在 99% 时强制充能，移除了充能速率的可调性</li>
+<li>动量增长快 2.5 倍</li>
+<li>降低了最终奇点里程碑（8e45 变 2.5e45）</li>
+<li>速通现在也以成就 35 和 76 开始</li>
 </ul>
 <br>
-
-<b>New Quality-of-Life:</b><br>
+<b>新的生活质量：</b><br>
 <ul>
-<li>Made TS tree import text persist between closing the modal</li>
-<li>Added "Respec and load" buttons/options for TS loading</li>
-<li>Added "Sort by Level" to glyph inventory</li>
-<li>Auto-EC now holds (but doesn't complete) the next one when paused</li>
+<li>使研究树导入文本在关闭窗口后保留</li>
+<li>为时间研究加载新增“重新分配并加载”按钮/选项</li>
+<li>为符文背包新增“按等级排序”</li>
+<li>自动永恒挑战在暂停时现在保持（但不完成）下一个</li>
 </ul>
 <br>
-
-<b>Bugfixes:</b><br>
+<b>错误修复：</b><br>
 <ul>
-<li>Modern-Metro themes now have the correct AD color</li>
-<li>Cloud save conflict option buttons now work properly</li>
-<li>"Buy 10" multiplier now always shows</li>
-<li>Crunch modal no longer shows up pre-break with hotkeys</li>
-<li>Next EC rewards now show "Next:" even when capped</li>
-<li>EC requirements no longer scale up after max completions</li>
-<li>Fixed Companion Glyph still counting as a glyph in some cases (LE, nav, achievements)</li>
-<li>Fixed black hole-related achievements not affecting displayed interval/duration</li>
-<li>Cel5 times now account for storing real time</li>
-<li>Cel6 text now updates properly after destabilization</li>
+<li>现代 Metro 主题现在有正确的反物质维度颜色</li>
+<li>云存档冲突选项按钮现在正常工作</li>
+<li>“购买 10”倍率现在始终显示</li>
+<li>大爆炸窗口不再在打破无限前通过快捷键出现</li>
+<li>下一个永恒挑战奖励现在在达到上限时也显示“下一个：”</li>
+<li>永恒挑战需求在最大完成次数后不再继续提高</li>
+<li>修复了某些情况下 Companion Glyph 仍被计为符文（LE、导航、成就）</li>
+<li>修复了黑洞相关成就不影响显示的间隔/持续时间</li>
+<li>cel5 时间现在考虑存储真实时间</li>
+<li>cel6 文本在失稳后现在正确更新</li>
 </ul>
 <br>
-
-<b>Minor Changes:</b><br>
+<b>次要改动：</b><br>
 <ul>
-<li>Improved Cloud conflict detection (eternities in early eternity and max DT in dilation)</li>
-<li>Added ability to hide Google info when Cloud saving</li>
-<li>Added "Common Abbreviations" to H2P</li>
-<li>Added max replicanti text</li>
-<li>Reduced IP/min and EP/min hiding thresholds on prestige buttons</li>
-<li>Added an outline for fully-completed EC studies</li>
-<li>Added cel3 icon to cosmetics</li>
-<li>Made paperclips less invisible</li>
-<li>Fixed more minor typos and made many minor wording improvements</li>
+<li>改进了云冲突检测（早期永恒的永恒次数和膨胀中的最大膨胀时间）</li>
+<li>新增云保存时隐藏 Google 信息的能力</li>
+<li>在如何游玩中新增“常用缩写”</li>
+<li>新增最大复制器文本</li>
+<li>降低了声望按钮上无限点数/分钟和永恒点数/分钟隐藏阈值</li>
+<li>为完全完成的永恒挑战研究新增轮廓</li>
+<li>为外观新增 cel3 图标</li>
+<li>让回形针不那么隐形</li>
+<li>修复更多次要拼写错误并做了许多措辞改进</li>
 </ul>
 `
   },
@@ -449,46 +417,44 @@ finishing the game</li>
     date: [2023, 1, 9],
     name: "The Companion Glyph doesn't want to hurt you",
     info: `
-<b>Mechanic Changes:</b><br>
+
+<b>机制改动：</b><br>
 <ul>
-<li>Buffed Break Infinity passive infinity generation upgrade (Cap is now once per 100ms instead of
-  165ms and is reached at a fastest of 50ms instead of 33ms)</li>
-<li>Limited offline ticks to a minimum length of 50ms</li>
-<li>The Companion Glyph no longer counts as a Glyph for the purposes of Glyph-based requirements</li>
+<li>增强了打破无限的被动无限生成升级（上限现在为每 100 毫秒一次而不是 165 毫秒，最快达到 50 毫秒而不是 33 毫秒）</li>
+<li>将离线 tick 限制为最小长度 50 毫秒</li>
+<li>Companion Glyph 在基于符文的计算中不再计为符文</li>
 </ul>
 <br>
-
-<b>Bugfixes:</b><br>
+<b>错误修复：</b><br>
 <ul>
-<li>Fixed EM6 being disabled even if EM200/EM1000 are still locked</li>
-<li>Fixed EM200 applying when auto-eternity is in the wrong mode</li>
-<li>Made EU1 apply properly on-purchase</li>
-<li>Made EU2 always check before EP-based autobuyers trigger</li>
-<li>Fixed being able to enter cel7 while in another celestial reality</li>
-<li>Fixed autobuyers being unmodifiable in early cel7</li>
-<li>Fixed ECB using current IP instead of max IP</li>
-<li>Cleared New! notifications upon loading different saves</li>
-<li>Fixed IC5 erroneously applying C9 effect to tickspeed cost</li>
+<li>修复了 EM6 在 EM200/EM1000 仍锁定时被禁用</li>
+<li>修复了自动永恒处于错误模式时 EM200 生效</li>
+<li>使 EU1 在购买时正确生效</li>
+<li>使 EU2 总是在基于永恒点数的自动购买器触发前检查</li>
+<li>修复了在另一个天体现实中可以进入 cel7</li>
+<li>修复了早期 cel7 中自动购买器无法修改</li>
+<li>修复了 ECB 使用当前无限点数而不是最大无限点数</li>
+<li>加载不同存档时清除“新！”通知</li>
+<li>修复了 IC5 错误地将 C9 效果应用于计数频率价格</li>
 </ul>
 <br>
-
-<b>Text Changes:</b><br>
+<b>文本改动：</b><br>
 <ul>
-<li>Added warning for lag in animated themes</li>
-<li>Fixed incorrect text on references to the IP formula</li>
-<li>Clarified ach156 only applying to generated TT</li>
-<li>Updated some slightly out-of-date How To Play entries</li>
-<li>Added additional info to Glyph Filter and Alchemy in H2P</li>
-<li>Reworded DT mult from replicanti glyph effect to not use very small numbers</li>
-<li>Improved Perk wording consistency</li>
-<li>Fixed a few spots with unformatted and/or unblinded numbers</li>
-<li>Fixed various punctuation inconsistencies</li>
-<li>Made Big Crunch autobuyer always show interval, even if below update rate</li>
-<li>Moved EC8 ID purchase count nearer to the top of the page</li>
-<li>Added "approximately" to replicanti timer at low amounts</li>
-<li>Made AG button text account for achievements which stop certain resources from being reset</li>
-<li>Added text in a few places for capped upgrades/effects</li>
-<li>Added news ticker suggestions up to Dec 26th, fixed some incorrect news tickers</li>
+<li>为动画主题中的卡顿新增警告</li>
+<li>修复了引用无限点数公式的错误文本</li>
+<li>澄清了成就 156 只适用于生成的时间之理</li>
+<li>更新了一些略过时的如何游玩条目</li>
+<li>在如何游玩中为符文筛选和炼金术新增额外信息</li>
+<li>重写了复制器符文效果的膨胀时间倍率，避免使用极小的数字</li>
+<li>改进了福利措辞的一致性</li>
+<li>修复了几处未格式化或未模糊的数字</li>
+<li>修复了各种标点不一致</li>
+<li>使大爆炸自动购买器始终显示间隔，即使低于更新频率</li>
+<li>将 EC8 无限维度购买次数移到页面顶部附近</li>
+<li>在低数量时为复制器计时器新增“大约”</li>
+<li>使反物质星系按钮文本考虑阻止某些资源重置的成就</li>
+<li>在几处为达到上限的升级/效果添加文本</li>
+<li>新增截至 12 月 26 日的新闻滚动条建议，修复了一些错误的新闻滚动条</li>
 </ul>
 `
   },
@@ -496,22 +462,23 @@ finishing the game</li>
     date: [2022, 12, 21],
     name: "First Post-release Patch",
     info: `
-<b>Various Miscellaneous Changes:</b><br>
+
+<b>各种杂项改动：</b><br>
 <ul>
-<li>Fixed NC6 not actually spending lower dimensions when purchasing upgrades</li>
-<li>Changed matter scale text ("If every antimatter were...") to only change once per second</li>
-<li>Fixed some text overflow issues in IC3 and reality upgrades</li>
-<li>Reworded reality reminder text</li>
-<li>Fixed Alt-T hotkey not working before completing tickspeed challenge</li>
-<li>Fixed glyph tooltips not appearing in a certain secret theme</li>
-<li>Made clicking challenge header switch to the tab of the innermost challenge</li>
-<li>Changed EU1 perk to apply to all forms of eternity gain, not just manual ones</li>
-<li>Fixed some bugs related to achievement Bulked Up</li>
-<li>Fixed various typos</li>
-<li>Rolled back styling change for unpurchasable upgrades on dark themes</li>
-<li>Fixed ID/TD multiplier tabs disappearing within EC11</li>
-<li>Fixed a game crash when attempting to run empty or invalid automator scripts</li>
-<li>Fixed a few bugs in celestial content</li>
+<li>修复了 NC6 购买升级时未实际花费低维维度</li>
+<li>将物质尺度文本（“如果每一份反物质都是……”）改为每秒只变化一次</li>
+<li>修复了 IC3 和现实升级中的一些文本溢出问题</li>
+<li>重写了现实提醒文本</li>
+<li>修复了完成计数频率挑战前 Alt-T 快捷键不工作</li>
+<li>修复了某个秘密主题中符文提示不出现</li>
+<li>使点击挑战标题切换到最内层挑战的标签页</li>
+<li>将 EU1 福利改为适用于所有形式的永恒获得，而不仅是手动</li>
+<li>修复了与成就“肌肉发达”相关的错误</li>
+<li>修复了各种拼写错误</li>
+<li>回滚了深色主题上不可购买升级的样式更改</li>
+<li>修复了 EC11 内无限维度/时间维度倍率标签消失</li>
+<li>修复了尝试运行空或无效自动机脚本时游戏崩溃</li>
+<li>修复了天体内容中的几个错误</li>
 </ul>
 `
   },
@@ -519,331 +486,298 @@ finishing the game</li>
     date: [2022, 12, 17],
     name: "The Reality Update",
     info: `
-<b>MAJOR STUFF:</b><br>
+
+<b>重大内容：</b><br>
 <ul>
-<li>The Reality prestige layer.</li>
-<li>Added Glyphs.</li>
-<li>Added Reality Upgrades.</li>
-<li>Added Perks.</li>
-<li>Added an Automator.</li>
-<li>Added a Black Hole.</li>
-<li>Added Celestials.</li>
-<li>Added a new Modern UI style. The Old UI style is still available as Classic UI.</li>
-<li>Added modals to replace browser alerts, confirmations, and prompts.</li>
-<li>Added a How to Play modal with much more detail compared to the old How to Play.</li>
-<li>Added 5 new rows of achievements.</li>
-<li>Added a Multiplier Breakdown subtab.</li>
-<li>Added more Nicolas Cage.</li>
-<li>Cloud saving is now available to everyone. This needs your Google account.</li>
-<li>Shop tab is now available to everyone.</li>
-<li>Redesigned overall UI styling.</li>
+<li>现实声望层级。</li>
+<li>新增符文。</li>
+<li>新增现实升级。</li>
+<li>新增福利。</li>
+<li>新增自动机。</li>
+<li>新增黑洞。</li>
+<li>新增天神。</li>
+<li>新增现代界面风格。旧界面风格仍作为经典界面提供。</li>
+<li>新增窗口以取代浏览器弹窗、确认和提示。</li>
+<li>新增如何游玩窗口，比旧版如何游玩详细得多。</li>
+<li>新增 5 行成就。</li>
+<li>新增倍率细分子标签。</li>
+<li>加入更多尼古拉斯·凯奇。</li>
+<li>云存档现在对所有人可用。这需要你的 Google 账户。</li>
+<li>商店标签页现在对所有人可用。</li>
+<li>重新设计了整体界面样式。</li>
 <li>\uE010</li>
-<li>Rewrote the game UI using the Vue.js framework, significantly improving performance, stability,
-  and code maintainability.</li>
-<li>Added a speedrun mode.</li>
+<li>使用 Vue.js 框架重写了游戏界面，显著提高了性能、稳定性和代码可维护性。</li>
+<li>新增速通模式。</li>
 </ul>
 <br>
-
-Options and Accessibility:
+选项与无障碍：
 <ul>
-<li>Added a content summary modal to help players remember older game mechanics after a long time away.</li>
-<li>Added more keyboard shortcuts.</li>
-<li>Added more confirmations. (can be turned off in options)</li>
-<li>Added animations for Eternity and Dilation. (can be turned off in options)</li>
-<li>Added more community news and new AI news. (generated by AI using data from suggestions by community)</li>
-<li>Added a tutorial glow effect and icon to some buttons when first starting the game.</li>
-<li>Added a dropdown menu for easier selection of themes and notations.</li>
-<li>Added secret number of secret themes, all of which are no longer case sentitive.</li>
-<li>Unlocked secret themes are now permanently available to select from the dropdown.</li>
-<li>Added more notations.</li>
-<li>Added options to import and export saves from files.</li>
-<li>Added a max all Infinity Dimensions button.</li>
-<li>Added a button to minimize TT shop.</li>
-<li>Added 3 more study tree save slots. (total of 6)</li>
-<li>Added a blob.</li>
-<li>Added the ability to edit existing study tree slots.</li>
-<li>Added a modal for automatic selection of study tree paths when shift-clicking.</li>
-<li>Added a line of text on the IC tab telling "All Infinity Challenges unlocked" when all ICs are unlocked.</li>
-<li>Added a line of text on the EC tab telling that how many ECs are unlocked.</li>
-<li>Added options for adjusting save frequency and displaying time since last save.</li>
-<li>Added the ability to name your save file.</li>
-<li>Entries in away progress can now be individually shown or hidden.</li>
-<li>Added the ability to hide tabs and subtabs.</li>
-<li>Added options for adjusting offline progress behavior.</li>
-<li>Added an option to automatically switch tabs on some events.</li>
-<li>Added options to adjust news ticker scroll speed and repetition.</li>
-<li>Added IDs for Challenges and Achievements. (can be turned off in options)</li>
-<li>Added more progress bar information. (EC goal, progress in Dilation until TP gain)</li>
-<li>Added an option to turn off dynamic amount in autobuyers.</li>
-<li>Added a display showing you what type of Infinity/Eternity/Reality you are in, such as Dilation or Challenges</li>
-<li>You can now press other hotkeys while holding down a hotkey without interrupting the held hotkey.</li>
-<li>Info displays are now visible by default. (can be turned off in options)</li>
-<li>Improved import save modal by adding resouce information and offline progress mode selection.</li>
-<li>Number input fields may now have input assistance depending on your browser. (such as up and down arrows
-  on the side)</li>
-<li>Resetting the game now requires inputting a specific phrase in order to prevent accidental resets.</li>
+<li>新增内容摘要窗口，帮助玩家在长时间离开后回忆旧的游戏机制。</li>
+<li>新增更多键盘快捷键。</li>
+<li>新增更多确认提示（可在选项中关闭）。</li>
+<li>为永恒和膨胀新增动画（可在选项中关闭）。</li>
+<li>新增更多社区新闻和新的 AI 新闻（由 AI 使用社区建议数据生成）。</li>
+<li>首次开始游戏时，部分按钮新增教程发光效果和图标。</li>
+<li>新增下拉菜单，更方便选择主题和计数法。</li>
+<li>新增秘密数量的秘密主题，所有主题不再区分大小写。</li>
+<li>已解锁的秘密主题现在可以永久从下拉菜单中选择。</li>
+<li>新增更多计数法。</li>
+<li>新增从文件导入和导出存档的选项。</li>
+<li>新增全部最大无限维度按钮。</li>
+<li>新增最小化时间之理商店的按钮。</li>
+<li>新增 3 个研究树存档槽位（共 6 个）。</li>
+<li>新增一个水滴。</li>
+<li>新增编辑现有研究树槽位的能力。</li>
+<li>新增按住 shift 点击时自动选择研究树路径的窗口。</li>
+<li>在无限挑战标签页新增一行文本，在所有无限挑战解锁时显示“所有无限挑战已解锁”。</li>
+<li>在永恒挑战标签页新增一行文本，显示已解锁多少个永恒挑战。</li>
+<li>新增调整保存频率和显示距上次保存时间的选项。</li>
+<li>新增为存档文件命名的能力。</li>
+<li>离线进度条目现在可以单独显示或隐藏。</li>
+<li>新增隐藏标签页和子标签的能力。</li>
+<li>新增调整离线进度行为的选项。</li>
+<li>新增在某些事件时自动切换标签页的选项。</li>
+<li>新增调整新闻滚动条滚动速度和重复的选项。</li>
+<li>为挑战和成就新增编号（可在选项中关闭）。</li>
+<li>新增更多进度条信息（永恒挑战目标、膨胀中到快子粒子获得的进度）。</li>
+<li>新增关闭自动购买器动态数量的选项。</li>
+<li>新增显示你当前处于哪种无限/永恒/现实（如膨胀或挑战）的显示。</li>
+<li>现在可以按住一个快捷键的同时按下其他快捷键，而不会中断。</li>
+<li>信息显示现在默认可见（可在选项中关闭）。</li>
+<li>改进了导入存档窗口，新增资源信息和离线进度模式选择。</li>
+<li>数字输入框现在可能根据浏览器提供输入辅助（如侧边的上下箭头）。</li>
+<li>重置游戏现在需要输入特定短语以防止意外重置。</li>
 </ul>
 <br>
-
-Wording and Layout Changes:
+措辞与布局改动：
 <ul>
-<li>Changed "Dimension Shift" to "Dimension Boost".</li>
-<li>Changed "Infinitied stat" to "Infinities".</li>
-<li>Changed "free galaxy" to "Tachyon Galaxy".</li>
-<li>Tickspeed now displays as a X/sec rate instead of a very small fraction X/Y tick time.</li>
-<li>Changed various texts for better clarity.</li>
-<li>Moved Autobuyers subtab to a new Automation tab and added additional controls for other Autobuyers to the tab,
-  such as Infinity Dimension and Replicanti autobuyers.</li>
-<li>Added subsections in the Statistics subtab.</li>
-<li>Footer links have been moved to the new How to Play and About the Game modals.</li>
-<li>Changed some Achievement names and pictures.</li>
-<li>Changed some secret Achievement name and requirements.</li>
-<li>The cost of bought Infinity upgrades is now hidden.</li>
-<li>The "BREAK INFINITY" button is now visible (but locked) even before Automated Big Crunch interval is 0.1s.</li>
-<li>Improved text for post-break cost scaling upgrades.</li>
-<li>The exit Challenge button is now hidden when the player is not in a challenge.</li>
-<li>Eternity Challenges now show their current reward as well as the reward for the next completion.</li>
-<li>Having Eternities no longer prevents the Infinity animation from playing.</li>
-<li>Added colors to the Crunch/Eternity buttons when you have more than e50 of IP/EP; the color shows if you gain less
-  (red), around same (white), or more (green) IP/EP than you currently have.</li>
-<li>Moved study 33 to right side.</li>
-<li>Changed "Normal Dimensions" to "Antimatter Dimensions".</li>
-<li>Changed "Challenges" to "Normal Challenges".</li>
-<li>Fixed some tpyos.</li>
+<li>将“维度变换”改为“维度提升”。</li>
+<li>将“无限次数统计”改为“无限次数”。</li>
+<li>将“免费星系”改为“快子星系”。</li>
+<li>计数频率现在显示为每秒 X 次，而不是 X/Y tick 时间的极小分数。</li>
+<li>更改了各种文本以提高清晰度。</li>
+<li>将自动购买器子标签移到新的自动化标签页，并将其他自动购买器的额外控制加入该标签页，如无限维度和复制器自动购买器。</li>
+<li>在统计子标签中新增小节。</li>
+<li>页脚链接已移到新的如何游玩和关于游戏窗口。</li>
+<li>更改了一些成就名称和图片。</li>
+<li>更改了一些隐藏成就的名称和需求。</li>
+<li>已购买无限升级的价格现在隐藏。</li>
+<li>“打破无限”按钮现在在自动大爆炸间隔为 0.1 秒之前也可见（但锁定）。</li>
+<li>改进了打破无限后价格缩放升级的文本。</li>
+<li>玩家不在挑战中时，退出挑战按钮现在隐藏。</li>
+<li>永恒挑战现在显示当前奖励以及下一次完成的奖励。</li>
+<li>拥有永恒次数不再阻止无限动画播放。</li>
+<li>当你拥有超过 e50 的无限点数/永恒点数时，爆炸/永恒按钮新增颜色；颜色显示你获得比当前少（红）、差不多（白）还是多（绿）的无限点数/永恒点数。</li>
+<li>将研究 33 移到右侧。</li>
+<li>将“普通维度”改为“反物质维度”。</li>
+<li>将“挑战”改为“普通挑战”。</li>
+<li>修复了一些拼写错误。</li>
 </ul>
 <br>
-
-New Upgrades and Improved Technical Behavior:
+新升级与改进的技术行为：
 <ul>
-<li>Autobuyers are now unlockable before Infinity with antimatter, but can only be upgraded after completing their
-  respective Challenges.</li>
-<li>Added a new Infinity upgrade for 1e3 IP that gives you 50% of your best IP/min without using Max All,
-  while offline.</li>
-<li>Added a new Eternity milestone that gives you 25% of your best EP/min while offline.</li>
-<li>Added another 2 new milestones that give you Infinities and Eternities while offline.</li>
-<li>The "Infinity Point generation based on fastest Infinity" upgrade now takes all IP multipliers into account.</li>
-<li>Tickspeed calculation is now dynamic, updating immediately instead of requiring an upgrade to be purchased.</li>
-<li>You can buy multiple RG at once if you have enough replicanti; you are no longer limited to one per game tick.</li>
-<li>Improved Time Dimension Max all behavior.</li>
-<li>Normal and Infinity Challenges now give rewards after Big Crunch.</li>
-<li>The Eternity autobuyer can now trigger when you have reached the EC goal, regardless of the settings.</li>
+<li>自动购买器现在可以在无限前用反物质解锁，但只能在完成各自挑战后升级。</li>
+<li>新增 1e3 无限点数的无限升级，离线时无需使用全部最大就能获得最佳无限点数/分钟的 50%。</li>
+<li>新增永恒里程碑，离线时给予最佳永恒点数/分钟的 25%。</li>
+<li>新增另外 2 个里程碑，离线时给予无限次数和永恒次数。</li>
+<li>“基于最快无限的无限点数生成”升级现在考虑所有无限点数倍率。</li>
+<li>计数频率计算现在动态进行，立即更新，无需购买升级。</li>
+<li>如果复制器足够，可以一次购买多个复制器星系；不再限制每个游戏 tick 一个。</li>
+<li>改进了时间维度全部最大行为。</li>
+<li>普通和无限挑战现在在大爆炸后给予奖励。</li>
+<li>永恒自动购买器现在可以在达到永恒挑战目标时触发，无论设置如何。</li>
 </ul>
 <br>
-
-Balance Changes:
+平衡改动：
 <ul>
-<li>NC10, 11, and 12 now unlock after 16 Infinities</li>
-<li>Each Achievement grants an additional 1.03x multiplier to Antimatter Dimensions.</li>
-<li>The Big Crunch Autobuyer's initial interval has been halved, requiring only half as much IP to max out, and
-  other autobuyers have drastically lowered initial intervals.</li>
-<li>The 500 IP Infinity upgrade now costs 300 IP.</li>
-<li>Nicolas Cage.</li>
-<li>The 20-eternities milestone was moved to 8-eternities.</li>
-<li>Increased cost scaling for Time Dimensions after 1e6000.</li>
-<li>TS 83 has been hard capped.</li>
-<li>EC10 reward for less than 5 completions has been nerfed (reward at 5 completions is the same).</li>
-<li>Lowered the Dilation unlock requirement from 13000 to 12900 total TT.</li>
-<li>TP gain amount in Dilation is now calculated based on the highest AM reached.</li>
-<li>Purchasing the study to unlock Dilation now requires a 23rd row study purchase.</li>
-<li>Changed the condition of IC1 (now it just applies Challenge restrictions, instead of running them).</li>
-<li>Changed the unlock conditions of IC2 (from 1e5000 to 1e10500) and IC6 (from 1e20000 to 1e22500).</li>
-<li>Changed the goal of IC1 (from 1e850 to 1e650).</li>
-<li>Changed the goal of IC5 (from 1e11111 to 1e16500).</li>
-<li>Added reward to "I forgot to nerf that" (5% mult to 1st AD).</li>
-<li>Added reward to "Is this safe?" (keep 1 RG on Infinity).</li>
-<li>Added reward to "Eternities are the new Infinity" (gain x2 more Eternities).</li>
-<li>Added reward to "This is what I have to do to get rid of you" (remove downside from TS 131 and 133).</li>
-<li>Changed reward of "That's FAST!" (from 1000 to 5000).</li>
-<li>Changed reward of "That's FASTER!" (from 2e5 to 5e5).</li>
-<li>Changed reward of "Forever isn't that long" (from 1e10 to 5e10).</li>
-<li>Changed reward of "Blink of an eye" (from 1e25 with dimension mult to 5e25).</li>
-<li>Changed reward of "That wasn't an eternity" (from 2e25 to 5e25).</li>
-<li>Changed requirement of "The Gods are pleased" (from x600 to x600 outside of NC8).</li>
-<li>Changed requirement of "Daredevil" (from 2 to 3).</li>
-<li>Changed requirement of "Blink of an eye" (from 200 ms to 250 ms).</li>
-<li>Changed requirement of "Game design is my passion (Hevipelle did nothing wrong)" (from 10 sec to 15 sec).</li>
-<li>Changed requirement of "MAXIMUM OVERDRIVE" (from 1e300 IP/min to 1e300 IP).</li>
-<li>Changed requirement of "Eternities are the new Infinity" (from 200 ms to 250 ms).</li>
-<li>Changed requirement of "Is this safe?" (from 30 minutes to 1 hour).</li>
-<li>Changed requirement of "Like feasting" (from 1e100 to 1e90).</li>
-<li>Changed requirement of "No ethical consumption" (from 5e9 to 2e9).</li>
-<li>Changed requirement of "When will it be enough?" (from 1e20000 to 1e18000).</li>
-<li>Changed requirement of "I never liked this infinity stuff anyway" (from 1e140000 to 1e200000).</li>
-<li>Changed requirement of "Unique snowflakes" (from 630 to 569).</li>
-<li>Changed requirement of "Now you're thinking with dilation!" (from 1e600 EP to 1e260000 AM).</li>
-<li>Changed requirement of "This is what I have to do to get rid of you" (from 1e20000 to 1e26000).</li>
-<li>Changed achievement 41 to "No DLC required", "buy 16 IU", "unlock 2 new IU".</li>
-<li>Changed position of "Zero deaths" (from 43 to 64).</li>
-<li>Changed position of "1 Million is a lot" (from 64 to 77).</li>
-<li>Changed position of "How the antitables have turned" (from 77 to 43).</li>
-<li>Swapped achievements 101 and 117.</li>
-<li>Swapped achievements 113 and 124.</li>
-<li>Lowered initial costs of post-break cost scaling upgrades (Tickspeed cost from 3e6 to 1e6,
-  Dimension cost from 1e8 to 1e7).</li>
-<li>NC7 was reworked to not have RNG.</li>
+<li>NC10、11 和 12 现在在 16 次无限后解锁</li>
+<li>每个成就额外为反物质维度提供 1.03 倍率。</li>
+<li>大爆炸自动购买器的初始间隔减半，只需一半的无限点数即可最大化，其他自动购买器的初始间隔也大幅降低。</li>
+<li>500 无限点数的无限升级现在花费 300 无限点数。</li>
+<li>尼古拉斯·凯奇。</li>
+<li>20 次永恒的里程碑移到 8 次永恒。</li>
+<li>提高了 1e6000 后时间维度的价格缩放。</li>
+<li>TS 83 已硬上限。</li>
+<li>EC10 少于 5 次完成的奖励被削弱（5 次完成的奖励相同）。</li>
+<li>将膨胀解锁需求从总计 13000 降到 12900 时间之理。</li>
+<li>膨胀中的快子粒子获得现在基于达到的最高物质计算。</li>
+<li>购买解锁膨胀的研究现在需要购买第 23 行的研究。</li>
+<li>更改了 IC1 的条件（现在只是应用挑战限制，而不是运行它们）。</li>
+<li>更改了 IC2（从 1e5000 到 1e10500）和 IC6（从 1e20000 到 1e22500）的解锁条件。</li>
+<li>更改了 IC1 的目标（从 1e850 到 1e650）。</li>
+<li>更改了 IC5 的目标（从 1e11111 到 1e16500）。</li>
+<li>为“我忘了削弱那个”新增奖励（第一反物质维度 5% 倍率）。</li>
+<li>为“这安全吗？”新增奖励（无限时保留 1 个复制器星系）。</li>
+<li>为“永恒是新的无限”新增奖励（获得双倍永恒次数）。</li>
+<li>为“这就是我摆脱你的方法”新增奖励（移除 TS 131 和 133 的负面效果）。</li>
+<li>更改了“太快了！”的奖励（从 1000 到 5000）。</li>
+<li>更改了“更快了！”的奖励（从 2e5 到 5e5）。</li>
+<li>更改了“永恒并不那么长”的奖励（从 1e10 到 5e10）。</li>
+<li>更改了“眨眼之间”的奖励（从带维度倍率的 1e25 到 5e25）。</li>
+<li>更改了“那不算永恒”的奖励（从 2e25 到 5e25）。</li>
+<li>更改了“众神很满意”的需求（从 NC8 内 x600 改为 NC8 外 x600）。</li>
+<li>更改了“胆大妄为”的需求（从 2 到 3）。</li>
+<li>更改了“眨眼之间”的需求（从 200 毫秒到 250 毫秒）。</li>
+<li>更改了“游戏设计是我的激情（Hevipelle 没有做错任何事）”的需求（从 10 秒到 15 秒）。</li>
+<li>更改了“极限超频”的需求（从 1e300 无限点数/分钟到 1e300 无限点数）。</li>
+<li>更改了“永恒是新的无限”的需求（从 200 毫秒到 250 毫秒）。</li>
+<li>更改了“这安全吗？”的需求（从 30 分钟到 1 小时）。</li>
+<li>更改了“如狼似虎”的需求（从 1e100 到 1e90）。</li>
+<li>更改了“没有道德的消费”的需求（从 5e9 到 2e9）。</li>
+<li>更改了“什么时候才够？”的需求（从 1e20000 到 1e18000）。</li>
+<li>更改了“我从来不喜欢这些无限的东西”的需求（从 1e140000 到 1e200000）。</li>
+<li>更改了“独特的雪花”的需求（从 630 到 569）。</li>
+<li>更改了“现在你在用膨胀思考！”的需求（从 1e600 永恒点数到 1e260000 反物质）。</li>
+<li>更改了“这就是我摆脱你的方法”的需求（从 1e20000 到 1e26000）。</li>
+<li>将成就 41 改为“无需 DLC”，“购买 16 个无限升级”，“解锁 2 个新无限升级”。</li>
+<li>更改了“零死亡”的位置（从 43 到 64）。</li>
+<li>更改了“一百万很多”的位置（从 64 到 77）。</li>
+<li>更改了“反物质表逆转”的位置（从 77 到 43）。</li>
+<li>交换了成就 101 和 117。</li>
+<li>交换了成就 113 和 124。</li>
+<li>降低了打破无限后价格缩放升级的初始价格（计数频率从 3e6 到 1e6，维度从 1e8 到 1e7）。</li>
+<li>NC7 已重做，不再有随机性。</li>
 </ul>
 <br>
-
-Removed features:
+移除的功能：
 <ul>
-<li>Infinity is now non-fixable.</li>
-<li>Removed autobuyer priority.</li>
-<li>Removed production graph subtab.</li>
-<li>Removed fungame.</li>
-<li>Removed savefixer.</li>
-<li>Removed some news.</li>
-<li>Removed floating text from purchasing Dimensions.</li>
-<li>Removed blob that caused game crash.</li>
+<li>无限现在无法固定。</li>
+<li>移除了自动购买器优先级。</li>
+<li>移除了产出图表子标签。</li>
+<li>移除了趣味游戏。</li>
+<li>移除了存档修复器。</li>
+<li>移除了一些新闻。</li>
+<li>移除了购买维度时的浮动文本。</li>
+<li>移除了导致游戏崩溃的水滴。</li>
 </ul>
 <br>
-
-Bugfixes:
+错误修复：
 <ul>
-<li>ID and replicanti autobuyer buttons are now hidden in EC8.</li>
-<li>Fixed next Sacrifice multiplier not properly displaying NC8's effect.</li>
-<li>Fixed a bug where IC5's cost increment was applied 2 times.</li>
-<li>Fixed a bug where inverted themes were broken.</li>
-<li>Fixed a bug where resetting the game unlocks a secret achievement.</li>
-<li>Fixed a bug where ECs are showing wrong goals after their 5th completion.</li>
-<li>Fixed a bug where non-antimatter galaxies weren't applying for tickspeed if your total galaxy count was less
-  than 3.</li>
-<li>Fixed a bug where you could produce more than infinite antimatter for 1 tick even if you had a fixed Infinity or
-  were in a challenge.</li>
-<li>Fixed a bug where formatted numbers on autobuyers wouldn't update properly when changing your notation.</li>
-<li>Fixed a bug where Infinity Dimensions would automatically purchase upon unlocking them in EC8 while autobuyers were
-  enabled.</li>
-<li>Fixed a bug where the replicanti upgrade autobuyers would incorrectly display as off upon load/import.</li>
-<li>Fixed a bug where the replicanti interval upgrade would say it would upgrade to a number below the max speed.</li>
-<li>Fixed a bug where your Infinity Dimension mult would show as 0x if you had 0 infinity power.</li>
-<li>Fixed a bug where you could complete EC4 with 1 more Infinity than was allowed, by using the autobuyer.</li>
-<li>Fixed a bug where all non-Dimension Autobuyers didn't respect notation on the cost to reduce their interval.</li>
-<li>Fixed a bug where the Achievement reward from "To infinity!" wasn't working.</li>
-<li>Fixed a bug where the Sacrifice confirmation would show if you pressed the hotkey even when
-  you can't Sacrifice.</li>
-<li>Fixed a bug where the game saved notification would appear twice when importing a save.</li>
-<li>Fixed a bug where the speed of the Tachyon Particle animation was affected your monitor's refresh rate. (if you have
-  a 60hz monitor, it will be the same speed as it was before)</li>
-<li>Fixed a bug where the Achievement unlock notification for unlocking "4.3333 minutes of Infinity" said
-  "Minute of Infinity".</li>
-<li>Fixed a bug where you could still Sacrifice after reaching Infinity.</li>
-<li>Fixed a bug where your free tickspeed upgrade count would display as a negative number shortly after purchasing your
-  first Time Dimension.</li>
-<li>Fixed a bug where you were unable to purchase Dimensions if you had exactly their cost and their cost was below
-  Infinity.</li>
-<li>Fixed a bug where the "X%" text on the progress bar was left aligned rather than centered.</li>
-<li>Fixed a bug where the Achievement image for "Blink of an eye" was a gif.</li>
-<li>Fixed a bug where the Achievement unlock condition of "Yo dawg, I heard you liked infinities" was not checked
-  correctly.</li>
-<li>Fixed a bug where the formula for the displayed multiplier on TS11 was incorrect.</li>
-<li>Fixed a bug where the Sacrifice and Dimension Boost Autobuyer would not honor Autobuyer interval.</li>
-<li>Fixed a bug where the Reality link was just a video of some guy dancing.</li>
-<li>Fixed a bunch of other bugs.</li>
+<li>无限维度和复制器自动购买器按钮现在在 EC8 中隐藏。</li>
+<li>修复了下次献祭倍率未正确显示 NC8 效果。</li>
+<li>修复了 IC5 的价格增量应用两次的错误。</li>
+<li>修复了反转主题损坏的错误。</li>
+<li>修复了重置游戏解锁隐藏成就的错误。</li>
+<li>修复了第 5 次完成后永恒挑战显示错误目标的错误。</li>
+<li>修复了总星系数少于 3 时非反物质星系未应用于计数频率的错误。</li>
+<li>修复了即使固定无限或在挑战中，也可能有 1 个 tick 产出超过无限反物质的错误。</li>
+<li>修复了更改计数法时自动购买器上格式化数字未正确更新的错误。</li>
+<li>修复了 EC8 中解锁无限维度时自动购买器启用会自动购买的错误。</li>
+<li>修复了复制器升级自动购买器在加载/导入时错误显示为关闭。</li>
+<li>修复了复制器间隔升级会显示升级到低于最大速度的数字。</li>
+<li>修复了无限力量为 0 时无限维度倍率显示为 0 倍。</li>
+<li>修复了使用自动购买器可以比允许的多 1 次无限完成 EC4。</li>
+<li>修复了所有非维度自动购买器未按计数法显示降低间隔的价格。</li>
+<li>修复了“到无限！”的成就奖励不工作。</li>
+<li>修复了无法献祭时按快捷键仍显示献祭确认。</li>
+<li>修复了导入存档时游戏已保存通知出现两次。</li>
+<li>修复了快子粒子动画速度受显示器刷新率影响（如果你有 60Hz 显示器，速度与之前相同）。</li>
+<li>修复了解锁“4.3333 分钟无限”成就的通知显示“分钟无限”。</li>
+<li>修复了达到无限后仍可献祭的错误。</li>
+<li>修复了购买第一个时间维度后免费计数频率升级数量短暂显示为负数。</li>
+<li>修复了价格正好等于且低于无限时无法购买维度。</li>
+<li>修复了进度条上“X%”文本左对齐而不是居中。</li>
+<li>修复了“眨眼之间”的成就图片是 gif。</li>
+<li>修复了“哟兄弟，我听说你喜欢无限”的成就解锁条件检查错误。</li>
+<li>修复了 TS11 显示倍率公式错误。</li>
+<li>修复了献祭和维度提升自动购买器不遵守自动购买器间隔。</li>
+<li>修复了现实链接只是某个家伙跳舞的视频。</li>
+<li>修复了其他一大堆错误。</li>
+</ul>
 `
   },
   {
     date: [2018, 6, 17],
     name: "This Update Sucks",
     info: `
-<b>MAJOR STUFF:</b><br>
+
+<b>重大内容：</b><br>
 <ul>
-<li>TIME DILATION</li>
-<li>3 ROWS OF SECRET ACHIEVEMENTS</li>
-<li>Added more Nicolas Cage.</li>
-<li>1 new row of achievements.</li>
-<li>Added 3 study tree save slots.</li>
-<li>Greatly improved performance. (up to 5x in certain cases, ~3x in almost all cases)</li>
-<li>Nerfed EC10 reward. ((infinities * EC10 completions * 0.000002+1) >
-(infinities ^ 0.9 * EC10 completions * 0.000002+1))</li>
-<li>Added even more Nicolas Cage.</li>
-<li>Time study 11 has been capped at 1e2500 and now displays its current multiplier.</li>
-<li>Time study 193 has been buffed, requires ~1012680 eternities to cap, rather than 1.5m, and is now capped at 1e13000
-instead of ~1.81e12900/1.5m eternities. (1.02^x) > (1.03^x)</li>
-<li>The second eternity upgrade has been buffed, and now soft caps at 100k, rather than 125k. The end result is very
-slightly higher. ((x/300)^log4(2x)) > ((x/200)^log4(2x))</li>
-<li>EC1 now requires 20k eternities per tier to unlock, down from 25k.</li>
-<li>TD cost scaling has been increased after costs of 1e1300. (this is in addition to the current increase)</li>
-<li>Added additional galaxy cost scaling after 800 galaxies.</li>
-<li>Added a button to buy the maximum amount of eternity point multipliers at once.</li>
-<li>Offline progress processes ~5x faster, and now simulates autobuyers. (please note that offline progress is still
-capped at 1000 ticks, with additional ticks increasing the production of said 1000 ticks)</li>
-<li>Added a new save file system that allows 3 different save files at once all with cloud save enabled, along with
-a new cloud save UI.</li>
-<li>Added an animation to visualize your multiplier gain when you purchase 10 of a dimension, dimension boost/shift,
-or sacrifice.</li>
-<li>Nicolas Cage.</li>
-<li>Added an animation to big crunches. This will only trigger if you haven't eternitied, have a fastest infinity time
-above 1 minute, and haven't broken infinity.</li>
-<li>Added a button in the options menu to disable individual animations.</li>
-<li>Added more news ticker entries</li>
+<li>时间膨胀</li>
+<li>3 行隐藏成就</li>
+<li>加入更多尼古拉斯·凯奇。</li>
+<li>新增 1 行成就。</li>
+<li>新增 3 个研究树存档槽位。</li>
+<li>大幅提高性能（某些情况下最多 5 倍，几乎所有情况下约 3 倍）。</li>
+<li>削弱了 EC10 奖励。（(无限次数 * EC10 完成次数 * 0.000002+1) 改为 (无限次数 ^ 0.9 * EC10 完成次数 * 0.000002+1)）</li>
+<li>加入更多尼古拉斯·凯奇。</li>
+<li>时间研究 11 已上限为 1e2500，现在显示其当前倍率。</li>
+<li>时间研究 193 已增强，需要约 1012680 次永恒才能达到上限，而不是 150 万，现在上限为 1e13000 而不是约 1.81e12900/150 万次永恒。（1.02^x 改为 1.03^x）</li>
+<li>第二个永恒升级已增强，现在在 10 万次软上限，而不是 12.5 万次。最终结果略高。（(x/300)^log4(2x) 改为 (x/200)^log4(2x)）</li>
+<li>EC1 现在每级需要 2 万次永恒解锁，从 2.5 万降低。</li>
+<li>时间维度价格在 1e1300 后缩放增加（在现有增加的基础上）。</li>
+<li>在 800 个星系后新增额外星系价格缩放。</li>
+<li>新增一次购买最大数量永恒点数倍率的按钮。</li>
+<li>离线进度处理速度快约 5 倍，现在模拟自动购买器（请注意离线进度仍上限为 1000 个 tick，额外 tick 会增加这 1000 个 tick 的产出）。</li>
+<li>新增允许同时拥有 3 个不同存档文件且均启用云存档的新存档系统，以及新的云存档界面。</li>
+<li>新增动画，可视化购买 10 个维度、维度提升或献祭时的倍率获得。</li>
+<li>尼古拉斯·凯奇。</li>
+<li>为大爆炸新增动画。只有当你尚未永恒、最快无限时间超过 1 分钟且尚未打破无限时才会触发。</li>
+<li>在选项菜单中新增禁用单个动画的按钮。</li>
+<li>新增更多新闻滚动条条目。</li>
 </ul>
 <br>
-<b>Minor stuff:</b><br>
+<b>次要内容：</b><br>
 <ul>
-<li>Reduced the space between the secondary eternity tab buttons.</li>
-<li>The EC3 description now specifies that dimensional sacrifice is disabled.</li>
-<li>Autobuyer inputs now support commas and notation on exponents.</li>
-<li>When purchasing the EP or IP multipliers, autobuyer inputs will now always format the updated value above 1000.</li>
-<li>The size and placement of the auto IP multiplier and auto RG toggles have been adjusted to fit with the other auto
-toggles.</li>
-<li>Total time played now increases at a normal rate inside EC12.</li>
-<li>Fastest infinity time now updates normally inside EC12.</li>
-<li>The time theorem purchasing background is now 20 pixels wider.</li>
-<li>Changed the wording on time study 133 for clarity.</li>
-<li>Added various missing periods to achievements.</li>
-<li>Improved chart performance. (it's still pretty laggy if your settings are too high)</li>
-<li>You can now purchase study 201 while you have EC11/12 bought, but you cannot purchase another path.</li>
-<li>Purchasing study 131 no longer turns off your replicanti galaxy autobuyer, but instead displays it as disabled.</li>
-<li>You can now purchase another split using shift while you have study 201.</li>
-<li>You now purchase max galaxies manually by clicking or using the hotkey with more than 6 eternities.</li>
-<li>You can now purchase single dimension boosts and galaxies by holding shift while purchasing.</li>
-<li>ID8 will now display a rate of change after completing EC7 at least once.</li>
-<li>Added an oxford comma to formatted time values.</li>
-<li>Made the dimensional sacrifice button 40px wider to prevent the text overflowing.</li>
-<li>Made the all tab eternity and infinity point displays 30px wider to prevent the text overflowing.</li>
-<li>Moved the big crunch button up to prevent blocking the statistics and achievement tab buttons.</li>
-<li>Moved the eternity and infinity buttons inwards to prevent the HTML layout jumping around.</li>
-<li>Fixed the placement of certain footers.</li>
-<li>Fixed a typo where a news ticker said "Dimesional Sacrifice" instead of "Dimensional Sacrifice"</li>
-<li>Fixed a bug where TDs displayed a 2x multiplier per purchase when they actually gave a 4x multiplier.</li>
-<li>Fixed a bug where study 51 wouldn't respect notation.</li>
-<li>Fixed a bug where the infinity challenges tab would always show.</li>
-<li>Fixed a bug where the auto RG toggle would jiggle left and right 1 pixel in certain cases.</li>
-<li>Fixed a bug where the rate of change on the 7th dimension wouldn't take into account ID1 while in EC7.</li>
-<li>Fixed a bug where EC12 displayed 0.1 seconds after 5 completions, but actually required 0.0 seconds.</li>
-<li>Fixed a bug where tickspeed elements wouldn't hide correctly in certain cases.</li>
-<li>Fixed a bug where bought eternity challenge unlock studies would show as gray in the dark theme rather than a deep
-purple.</li>
-<li>Fixed a bug where dimensions 5-8 would hide upon eternity even with the 30 eternity milestone.</li>
-<li>Fixed a bug where popup colors weren't inverted in the inverted and inverted metro themes.</li>
-<li>Fixed a bug where the eternity point amount wouldn't show when you imported a save with eternity points into a save
-without them.</li>
-<li>Fixed a bug where locked eternity challenges didn't have a hover effect in the dark metro theme.</li>
-<li>Fixed a bug where popups weren't properly centered.</li>
-<li>Fixed a bug where ID autobuyers would purchase IDs upon unlock even while disabled.</li>
-<li>Fixed a bug where study tree branches drawn to row 22 were off-centered.</li>
-<li>Fixed a bug where EP/min and IP/min peaks wouldn't update properly upon import.</li>
-<li>Fixed a bug where infinity dimension autobuyers wouldn't hide properly upon import.</li>
-<li>Fixed a bug where the IP multiplier autobuyer wouldn't hide properly upon import.</li>
-<li>Fixed a bug where the option to change big crunch modes wouldn't hide properly upon import.</li>
-<li>Fixed a bug where the max buy galaxy interval setting wouldn't hide properly upon import.</li>
-<li>Fixed a bug where the RG autobuyer wouldn't hide properly upon import.</li>
-<li>Fixed a bug where the eternity confirmation option wouldn't hide properly upon import.</li>
-<li>Fixed a bug where the replicanti upgrade autobuyers wouldn't hide properly upon import.</li>
-<li>Fixed a bug where your update rate wouldn't update upon import.</li>
-<li>Fixed a bug where the chart line color wouldn't update properly upon import.</li>
-<li>Fixed a bug where achievement images were being cut off by 4 pixels on the right and bottom sides.</li>
-<li>Fixed a bug where "Yo dawg, I heard you liked infinities..." only required 1e300 times the previous infinity.</li>
-<li>Fixed a bug where the auto sacrifice interval would still display as 0.10 seconds even with the
-double autobuyer speed breaking infinity upgrade.</li>
-<li>Fixed a bug where certain time studies were 1 pixel too far to the left or right.</li>
-<li>Fixed a bug where studies 223 & 224 weren't taken into account when displaying antimatter galaxies as
-distant antimatter galaxies.</li>
-<li>Fixed a bug where study 227 would multiply your 4th time dimension production by 0
-if you had no sacrifice bonus.</li>
-<li>Fixed a bug where the game would say "You have 1 eternity points." rather than "You have 1 eternity point.".</li>
-<li>Fixed a bug where popups would remain open after changing tabs.</li>
-<li>Fixed a bug where you were able to select the achievement images by clicking and dragging over them.</li>
-<li>Fixed a bug where studies 233 and 234 had the wrong classes assigned to them on load.</li>
+<li>减少了次要永恒标签按钮之间的间距。</li>
+<li>EC3 描述现在明确说明维度献祭被禁用。</li>
+<li>自动购买器输入现在支持逗号和指数计数法。</li>
+<li>购买永恒点数或无限点数倍率时，自动购买器输入现在始终将更新后的值格式化为超过 1000。</li>
+<li>调整了自动无限点数倍率和自动复制器星系开关的大小和位置，使其与其他自动开关一致。</li>
+<li>总游玩时间现在在 EC12 中以正常速度增加。</li>
+<li>最快无限时间现在在 EC12 中正常更新。</li>
+<li>时间之理购买背景现在宽 20 像素。</li>
+<li>为清晰更改了时间研究 133 的措辞。</li>
+<li>为成就补充了各种缺失的句号。</li>
+<li>改进了图表性能（设置过高时仍会相当卡顿）。</li>
+<li>现在可以在已购买 EC11/12 时购买研究 201，但不能购买另一条路径。</li>
+<li>购买研究 131 不再关闭复制器星系自动购买器，而是显示为禁用。</li>
+<li>拥有研究 201 时，现在可以按住 shift 购买另一条分叉。</li>
+<li>拥有超过 6 次永恒时，现在可以通过点击或快捷键手动购买最大星系。</li>
+<li>现在可以在购买时按住 shift 购买单个维度提升和星系。</li>
+<li>ID8 在至少完成一次 EC7 后将显示变化率。</li>
+<li>为格式化时间值添加牛津逗号。</li>
+<li>将维度献祭按钮加宽 40 像素以防止文本溢出。</li>
+<li>将全部标签页的永恒和无限点数显示加宽 30 像素以防止文本溢出。</li>
+<li>将大爆炸按钮上移，防止遮挡统计和成就标签按钮。</li>
+<li>将永恒和无限按钮向内移动，防止 HTML 布局跳动。</li>
+<li>修复了某些页脚的位置。</li>
+<li>修复了新闻滚动条将“维度献祭”写成“维献祭”的拼写错误。</li>
+<li>修复了时间维度显示每次购买 2 倍倍率而实际给予 4 倍倍率的错误。</li>
+<li>修复了研究 51 不遵守计数法。</li>
+<li>修复了无限挑战标签页始终显示。</li>
+<li>修复了某些情况下自动复制器星系开关左右抖动 1 像素。</li>
+<li>修复了 EC7 中第 7 维度变化率未考虑 ID1。</li>
+<li>修复了 EC12 在 5 次完成后显示 0.1 秒但实际需要 0.0 秒。</li>
+<li>修复了某些情况下计数频率元素隐藏不正确。</li>
+<li>修复了已购买的永恒挑战解锁研究在深色主题中显示为灰色而不是深紫色。</li>
+<li>修复了拥有 30 次永恒里程碑时维度 5 至 8 仍会在永恒时隐藏。</li>
+<li>修复了反转和反转 Metro 主题中弹窗颜色未反转。</li>
+<li>修复了将带永恒点数的存档导入无永恒点数的存档时永恒点数不显示。</li>
+<li>修复了深色 Metro 主题中锁定永恒挑战没有悬停效果。</li>
+<li>修复了弹窗未正确居中。</li>
+<li>修复了无限维度自动购买器在解锁时即使禁用也会购买。</li>
+<li>修复了绘制到第 22 行的研究树分支偏中心。</li>
+<li>修复了导入时永恒点数/分钟和无限点数/分钟峰值未正确更新。</li>
+<li>修复了导入时无限维度自动购买器未正确隐藏。</li>
+<li>修复了导入时无限点数倍率自动购买器未正确隐藏。</li>
+<li>修复了导入时更改大爆炸模式选项未正确隐藏。</li>
+<li>修复了导入时最大购买星系间隔设置未正确隐藏。</li>
+<li>修复了导入时复制器星系自动购买器未正确隐藏。</li>
+<li>修复了导入时永恒确认选项未正确隐藏。</li>
+<li>修复了导入时复制器升级自动购买器未正确隐藏。</li>
+<li>修复了导入时更新频率不更新。</li>
+<li>修复了导入时图表线条颜色未正确更新。</li>
+<li>修复了成就图片右侧和底部被裁剪 4 像素。</li>
+<li>修复了“哟兄弟，我听说你喜欢无限……”只要求上次无限的 1e300 倍。</li>
+<li>修复了拥有双倍自动购买器速度打破无限升级时自动献祭间隔仍显示 0.10 秒。</li>
+<li>修复了某些时间研究向左或向右偏移 1 像素。</li>
+<li>修复了显示远方反物质星系时未考虑研究 223 和 224。</li>
+<li>修复了没有献祭加成时研究 227 将第四时间维度产出乘以 0。</li>
+<li>修复了游戏会说“你有 1 点永恒点数们”而不是“你有 1 点永恒点数”。</li>
+<li>修复了切换标签页后弹窗仍保持打开。</li>
+<li>修复了可以通过点击并拖动选择成就图片。</li>
+<li>修复了加载时研究 233 和 234 分配了错误的类。</li>
 </ul>
 `
   },
@@ -851,99 +785,92 @@ if you had no sacrifice bonus.</li>
     date: [2018, 4, 1],
     name: "Fixed a Bug where there wasn't an Update",
     info: `
-Huge thanks to Omsi for helping me a ton with this.<br><br>
-<b>MAJOR STUFF:</b><br>
+
+非常感谢 Omsi 在这件事上帮了我很多。<br><br>
+<b>重大内容：</b><br>
 <ul>
-<li>2 NEW ETERNITY CHALLENGES</li>
-<li>12 NEW TIME STUDIES</li>
-<li>Time study 132 has been buffed from a 30% bonus to a 40% bonus.</li>
-<li>Added an achievement bonus for "Popular music": "Replicanti galaxies divide your replicanti by 1.79e308 instead of
-resetting them to 1."</li>
-<li>Added an achievement bonus for "IT'S OVER 9000": "Sacrifice doesn't reset your dimensions."</li>
-<li>Added an achievement bonus for "Like feasting on a behind": "IP multiplier based on time spent this infinity."</li>
-<li>Added an achievement bonus for "What do I have to do to get rid of you": "Time dimensions are multiplied by
-the number of studies you have."</li>
-<li>Added "Infinity" notation.</li>
-<li>Added "Brackets" notation.</li>
-<li>Added an import/export system for the time study tree.</li>
-<li>Added an EP/min & peak EP/min display to the eternity button.</li>
-<li>Added an eternity hotkey.</li>
-<li>Added something to help you pick your theme.</li>
-<li>Added a few more IAPs.</li>
-<li>Reduced the cost of "Double IP gain from all sources" IAP from 50 ➜ 40</li>
+<li>2 个新的永恒挑战</li>
+<li>12 个新的时间研究</li>
+<li>时间研究 132 从 30% 加成增强为 40% 加成。</li>
+<li>为“流行音乐”新增成就奖励：“复制器星系将你的复制器除以 1.79e308 而不是重置为 1。”</li>
+<li>为“超过 9000！”新增成就奖励：“献祭不再重置你的维度。”</li>
+<li>为“如狼似虎”新增成就奖励：“无限点数倍率基于本次无限所花时间。”</li>
+<li>为“我要怎么做才能摆脱你”新增成就奖励：“时间维度乘以你拥有的研究数量。”</li>
+<li>新增“无限”计数法。</li>
+<li>新增“括号”计数法。</li>
+<li>新增时间研究树的导入/导出系统。</li>
+<li>为永恒按钮新增永恒点数/分钟和峰值永恒点数/分钟显示。</li>
+<li>新增永恒快捷键。</li>
+<li>新增帮助选择主题的功能。</li>
+<li>新增几个内购。</li>
+<li>将“所有来源的无限点数获得翻倍”内购价格从 50 降到 40。</li>
 </ul>
 <br>
-<b>Minor stuff:</b><br>
+<b>次要内容：</b><br>
 <ul>
-<li>Added an option to not plot drops in production on the chart. (It will instead copy the newest data point)</li>
-<li>Added displays for the current bonuses from time studies 71, 72, and 73.</li>
-<li>Built up speed for 6 hours to do it in 0.5x A presses.</li>
-<li>Changed study 72 to only work on the 4th infinity dimension, but doubled its power. (No effective change)</li>
-<li>Alchemy 120 (Vivification) scaling decreased.</li>
-<li>Fixed a bug where the buttons to purchase time studies wouldn't move in inverted themes on firefox.</li>
-<li>Fixed a bug. Antman, you're good to go.</li>
-<li>Fixed a bug that gave you the ability to set a custom name for your theme when using a secret theme.</li>
-<li>Fixed BLJ. Shoutout to SimpleFlips.</li>
-<li>Fixed a bug that caused purchasing the EP multiplier to require multiple clicks.</li>
-<li>Removed the ghost from the game. Was annoying.</li>
-<li>Fixed a bug that allowed you to earn "Long lasting relationship" in EC7.</li>
-<li>Monkeys no longer eat humans, as intended.</li>
-<li>Fixed a bug where the reward from EC7 could display -1.</li>
-<li>Increased the drop rate of collector's pendant items by 20%.</li>
-<li>Fixed a bug where the infinity requirement for EC4 could be less than 0.</li>
-<li>Transcension gives less Ancient Souls.</li>
-<li>Fixed a bug where the visual display for autobuyer bulk buy settings wouldn't update upon your first eternity.</li>
-<li>Fixed the rickroll. Now it's properly not working.</li>
-<li>Fixed a bug where the EP multiplier would break if its power exceeded 1.79e308.</li>
-<li>Leeroy Jenkins' Battlecry now doesn't trigger Patches.</li>
-<li>Fixed a bug where the confirmation for starting an infinity challenge would say you need to reach infinity.</li>
-<li>Cursors now do circles around the cookie.</li>
-<li>Fixed a bug where the offline progress popup would simply say "While you were away" if nothing happened.</li>
-<li>Traction has been slightly increased to reduce unwanted drifts.</li>
-<li>Fixed a bug that in rare cases would cause the offline progress popup to say you gained "NaNeInfinity" time shards
-or infinity power.</li>
-<li>Fixed a bug where the tickspeed visual display wouldn't update upon any form of reset.</li>
-<li>Bugged a fix where eternity was dumb.</li>
-<li>CS now makes notes go faster in mania.</li>
-<li>Fixed a bug where replicanti were hidden but still unlocked if you eternitied for the 50th time
-while they were locked.</li>
-<li>Dirt is now more abundant.</li>
-<li>Fixed a bug where the 1st dimension wasn't producing the 0th dimension.</li>
-<li>Fixed a bug where The Nameless Ones were too easy.</li>
-<li>Fixed a bug where in a specific case, 2 eternity challenges would appear as running at the same time.</li>
-<li>Increased TukkunFCG YC rewards by 15%.</li>
-<li>Added more space. SPAAAAAAACE</li>
-<li>Fixed a bug where the eternity challenges tab would hide after refreshing with less than 1e2000 antimatter.</li>
-<li>Fixed a bug where eternity challenges wouldn't update correctly upon import.</li>
-<li>Fixed a bug where dimension display values wouldn't update in certain cases.</li>
-<li>Portals are now not red.</li>
-<li>Fixed a bug where the ON/OFF text on the challenge confirmation option wasn't capitalized upon load.</li>
-<li>Reduced GRB's autokill threshold to 2500/2000 power/toughness.</li>
-<li>Fixed a typo where the eternity confirmation option said "Eternity confimation".</li>
-<li>Added bugs because Omsi wants more bugs to fix. Absolute legend, I'm telling you, the queen is legendary.</li>
-<li>Fixed a typo where the reward for "That's faster!" said you started with 20000 antimatter, rather than 200000.</li>
-<li>Added depression to your themes.</li>
-<li>Fixed inconsistencies with the standard notation naming convention.</li>
-<li>Tried to fix a bug where the game was bad but failed. The game is still bad.</li>
-<li>Changed the wording on EC4 to say "X or less" rather than "less than X".
-(It always worked this way, this is just a correction)</li>
-<li>Made donkeys less fast, so you can actually catch them now.</li>
-<li>Changed the wording on the EC2 reward to say "affects 1st Infinity Dimension" rather than
-"affects Infinity Dimensions". (It always worked this way, this is just a correction)</li>
-<li>Increased the base breeding speed of trimps by 10%.</li>
-<li>You can now click through the footer and progress bar to access buttons that they are overlapping.
-(This is for smaller screens)</li>
-<li>Made periods longer.</li>
-<li>Added loot boxes.</li>
-<li>Removed loot boxes.</li>
-<li>Added various missing periods to achievement descriptions.</li>
-<li>Added a missing period to time spent in this eternity.</li>
-Increased the price of creation count increases from 50 god power to 60.</li>
-<li>Added a missing space to the "Autobuyers work twice as fast." upgrade.</li>
-<li>Manually buying max dimension boosts no longer requires 10 eternities or more, and now only requires the bulk buy
-dimension boosts breaking infinity upgrade.</li>
-<li>Did a barrel roll.</li>
-<li>Added more useless patch notes</li>
+<li>新增不在图表上绘制产出下降的选项（改为复制最新数据点）。</li>
+<li>新增时间研究 71、72 和 73 当前加成显示。</li>
+<li>积累了 6 小时速度，以 0.5 倍 A 键次数完成。</li>
+<li>将研究 72 改为只作用于第四无限维度，但力量翻倍（无实际变化）。</li>
+<li>炼金术 120（活化）缩放降低。</li>
+<li>修复了 Firefox 反转主题中购买时间研究按钮不移位的错误。</li>
+<li>修复了一个错误。Antman，你可以出发了。</li>
+<li>修复了使用秘密主题时可以为主题设置自定义名称的错误。</li>
+<li>修复了 BLJ。感谢 SimpleFlips。</li>
+<li>修复了购买永恒点数倍率需要多次点击的错误。</li>
+<li>把鬼从游戏中移除了。太烦人。</li>
+<li>修复了可以在 EC7 中获得“长久的关系”的错误。</li>
+<li>猴子不再吃人，如预期。</li>
+<li>修复了 EC7 奖励可能显示为负 1。</li>
+<li>将收藏家吊坠物品的掉落率提高 20%。</li>
+<li>修复了 EC4 的无限需求可能小于 0。</li>
+<li>超升现在给予更少的古代灵魂。</li>
+<li>修复了第一次永恒时自动购买器批量购买设置视觉显示不更新。</li>
+<li>修复了瑞克摇，现在它正确地不工作了。</li>
+<li>修复了永恒点数倍率力量超过 1.79e308 时崩溃。</li>
+<li>Leeroy Jenkins 的战吼现在不会触发 Patches。</li>
+<li>修复了开始无限挑战的确认会说你需要达到无限。</li>
+<li>光标现在绕着饼干转圈。</li>
+<li>修复了离线进度弹窗在什么都没发生时只说“当你离开时”。</li>
+<li>略微增加了牵引力以减少不必要的漂移。</li>
+<li>修复了罕见情况下离线进度弹窗说你获得“NaNeInfinity”时间碎片或无限力量。</li>
+<li>修复了任何形式重置后计数频率视觉显示不更新。</li>
+<li>把永恒很蠢的修复弄出了错误。</li>
+<li>CS 现在让音游里的音符更快。</li>
+<li>修复了复制器锁定时第 50 次永恒后复制器隐藏但仍解锁。</li>
+<li>泥土现在更丰富了。</li>
+<li>修复了第一维度不产出第零维度。</li>
+<li>修复了 The Nameless Ones 太容易。</li>
+<li>修复了特定情况下 2 个永恒挑战同时显示运行中。</li>
+<li>将 TukkunFCG YC 奖励提高 15%。</li>
+<li>添加了更多空间。太空间了。</li>
+<li>修复了少于 1e2000 反物质时刷新后永恒挑战标签页隐藏。</li>
+<li>修复了导入时永恒挑战未正确更新。</li>
+<li>修复了某些情况下维度显示值不更新。</li>
+<li>传送门现在不是红色的。</li>
+<li>修复了加载时挑战确认选项的开启/关闭文本未大写。</li>
+<li>将 GRB 的自动击杀阈值降低到 2500/2000 力量/韧性。</li>
+<li>修复了永恒确认选项拼成“永恒确认”的拼写错误。</li>
+<li>添加了错误，因为 Omsi 想要更多错误来修复。绝对传奇，我告诉你，女王是传奇。</li>
+<li>修复了“更快了！”奖励说以 20000 反物质开始而不是 200000。</li>
+<li>为你的主题添加了抑郁。</li>
+<li>修复了标准计数法命名约定不一致。</li>
+<li>尝试修复游戏很差劲的错误但失败了。游戏仍然很差劲。</li>
+<li>将 EC4 的措辞改为“X 或更少”而不是“少于 X”（它一直如此工作，这只是修正）。</li>
+<li>让驴子不那么快，现在你能追上它们了。</li>
+<li>将 EC2 奖励措辞改为“影响第一无限维度”而不是“影响无限维度”（它一直如此工作，这只是修正）。</li>
+<li>将 Trimps 的基础繁殖速度提高 10%。</li>
+<li>现在可以点击穿过页脚和进度条访问被覆盖的按钮（适用于小屏幕）。</li>
+<li>让句号更长。</li>
+<li>添加了开箱。</li>
+<li>移除了开箱。</li>
+<li>为成就描述补充了各种缺失的句号。</li>
+<li>为本次永恒所花时间补充缺失的句号。</li>
+<li>将创造次数增加价格从 50 神力量提高到 60。</li>
+<li>为“自动购买器工作速度快两倍”升级补充缺失的空格。</li>
+<li>手动购买最大维度提升不再需要 10 次永恒或更多，现在只需要批量购买维度提升打破无限升级。</li>
+<li>做了一个滚桶动作。</li>
+<li>添加了更多没用的补丁说明。</li>
 </ul>
 `
   },
@@ -951,247 +878,245 @@ dimension boosts breaking infinity upgrade.</li>
     date: [2018, 2, 1],
     name: "Eternity Challenges",
     info: `
+
 <ul>
-<li>NEW TIME STUDIES</li>
-<li>2 new achievement rows</li>
-<li>Made certain news messages only show if you have reached certain levels of progression</li>
-<li>Massively improved performance of calculating dimension costs thanks to SpectralFlame.
-(Cuts cpu usage by up to 2/3 in late-game)</li>
-<li>New news (get it?) ticker entries.</li>
-<li>Added a production chart.</li>
-<li>Added new statistics to replace the scale statistic after 1e100000 antimatter.</li>
-<li>Added a new milestone for 30 eternities: "Start with all normal dimensions available for purchase".</li>
-<li>Added an option to change the update rate of the game, ranging from 33ms to 200ms.
-(before this, it was locked at 50ms)</li>
-<li>The game now partially simulates offline progress, instead of estimating it.</li>
-<li>Added 3 new eternity upgrades.</li>
-<li>Added a reward to the "NEW DIMENSIONS???" achievement, "Your achievement bonus affects Infinity Dimensions."</li>
-<li>Buffed time study 111. (10 ^ (log10(antimatter) / 290- 0.75)) > (10 ^ (log10(antimatter) / 285- 0.75))</li>
-<li>Buffed time study 83. (1.0001^x) > (1.0004^x)</li>
-<li>Nerfed eternity upgrade 1. ((x+1)^3) > (x+1)</li>
-<li>Nerfed eternity upgrade 2. (x^log4(2x)) > ((x/300)^log4(2x) with harsher formula above 125,000)</li>
-<li>Fixed a bunch of bugs and changed a bunch of things. (more detail below)</li>
-<li>Added buy max buttons to Time Dimensions and Time Theorems.</li>
-<li>Added a hotkey for replicanti galaxies. (R)</li><br>
-<li>Nitty gritty:</li>
-<li>Greatly improved the performance of calculating bonus tickspeed from time dimensions.</li>
-<li>Replaced all references to soft resets with references to dimension boosts.</li>
-<li>Made achievements update on import/hardreset.</li>
-<li>Made the game take into account your infinity points gained on crunch for the purposes of
-eternity point gain when you eternity.</li>
-<li>The replicanti interval is now displayed after and reductions / increases.</li>
-<li>Added missing periods to various achievements.</li>
-<li>Made the bonus from time study 131 display next to max replicanti galaxies.</li>
-<li>Added time dimensions to the info scale.</li>
-<li>Changed the description of time study 31 to "Powers up bonuses that are based on your infinitied stat
-(to the power of 4)" from "Powers up existing upgrades based on infinitied stat (to the power of 4)".</li>
-<li>Changed the description of "MAXIMUM OVERDRIVE" to say "Big Crunch with X" instead of "Reach X".</li>
-<li>Added "with reduced effect" to the description of time study 71, 72, and 73.</li>
-<li>Changed the text on autobuy max dimension boosts to "Buy max dimboosts every X seconds:"
-from "Max dimboost interval:". (To achieve parity with the autobuy max galaxies text)</li>
-<li>Made the challenges button always show if you have more than 1 eternity.</li>
-<li>Fixed centering issues with infinity and eternity upgrades.</li>
-<li>Various minor changes to themes to improve consistency. (Too minute to list, even here)</li>
-<li>Made the eternity autobuyer number multiply by 5 when you buy the eternity point multiplier.</li>
-<li>Increased the requirement for "Is This Hell?". (5 > 6.66 seconds)</li>
-<li>Reduced the starting replicanti interval upgrade cost. (1e160 > 1e140)</li>
-<li>Galaxies are labeled "Distant Antimatter Galaxies" when the cost scaling starts. (At 100 galaxies)</li>
-<li>Dimensions no longer produce anything after reaching challenge goal, or after reaching infinity with fixed infinity.
-This is due to the c6 being abusable.</li>
-<li>Made the 7 and 25 eternity milestones work much faster.</li>
-<li>After unlocking bulk dimboosts, clicking dimension boost or pressing D will buy max dimension boosts.</li>
-<li>Moved fake news, don't you dare to sleep, spreading cancer, and one for each dimension to rows 2, 3, 4,
-and 7 respectively.</li>
-<li>Added a visual display of how many galaxies/dim boosts you have next to the cost.</li>
-<li>Added an explanation of hotkeys to the options page.</li>
-<li>Made shift+1-8 purchase singular dimensions and shift+T purchase a singular tickspeed upgrade.</li>
-<li>Reworked the display of the buy time theorem buttons.</li>
-<li>The milestones page now has 2 columns.</li>
-<li>Extended support for standard notation to e3e18, and letter/cancer notation (almost) infinitely.</li>
-<li>Added support for standard, letter and logrithm notation in autobuyer inputs.</li>
-<li>Added "in a challenge" to the description of "Zero Deaths".</li>
-<li>Made most large numbers in achievements be listed in your chosen notation.</li>
-<li>Nerfed "Gift From The Gods"'s achievement reward.</li>
-<li>Made purchasing time theorems with EP require at least 1 time dimension.</li>
-<li>First eternity now takes you to the time dimensions tab.</li>
-<li>Time dimension prices now have 2 decimal places.</li>
-<li>Reformatted the tick interval reduction text for very small numbers.</li>
-<li>The game now keeps track of when you automatically do an infinity, and you can passively gain IP based off the
-IP/min in that run if you go offline (but only if infinity isn't broken).</li>
-<li>Made time study 171 apply retroactively. This was causing an issue with production being much lower than expected
-when going into a long run on the same run as respeccing.</li>
-<li>Fixed a bug where max all wasn't giving achievements when buying dimensions.</li>
-<li>Fixed a bug where the game wouldn't show the default dimensions tab upon hard resetting.</li>
-<li>Fixed a bug where time dimensions were called "X Dimension" rather than "X Time Dimension".</li>
-<li>Fixed a bug where the replicanti galaxy button would show as locked if you had more than
-the listed max replicanti galaxies and study 131.</li>
-<li>Fixed a bug where the last ten eternities average said IP/X rather than EP/X.</li>
-<li>Fixed a bug where the big crunch autobuyer said "X times since last crunch" instead of "X times last crunch".</li>
-<li>Fixed a bug where the challenge records display wouldn't update upon import.</li>
-<li>Fixed a bug where hotkeys wouldn't work sometimes.</li>
-<li>Fixed a bug where secret theme names would display as "0" after refreshing.</li>
-<li>Fixed a bug where time studies would move around when your window size was too small.</li>
-<li>Fixed a bug where infinity dimensions would reset when clicking on a challenge and not entering while
-challenge confirmations were on.</li>
-<li>Fixed a bug where you always had the infinity challenge 1 reward.</li>
-<li>Fixed a bug where eternity milestone classes weren't set correctly upon import.</li>
-<li>Fixed a bug where the eternity autobuyer, sacrifice autobuyer, time dimension tab, and replicanti
-wasn't hiding correctly upon import.</li>
-<li>Fixed a bug where buy max dim boosts was able to buy 1 too many boosts.</li>
-<li>Fixed a bug where the study tree would be off-centered if the game windows wasn't wide enough.</li>
-<li>Fixed a bug where you could buy factions of dimension boosts with dimension boost bulk buy.</li>
-<li>Fixed a bug where your autobuy max dimension boost interval would set itself to itself
-if you eternitied while changing it.</li>
-<li>Fixed a bug where secondary statistic tabs weren't hiding upon import.</li>
-<li>Fixed a bug where replicanti galaxies wouldn't give a bonus if you had less than 3 galaxies.</li>
-<li>Fixed a bug where the dimension boost autobuyer would ignore dimension boost costs until they costed 8th dimensions.
-</li>
-<li>Fixed a bug where the future shop multipliers were displayed before the x rather than after.</li>
-<li>Fixed a bug where the challenge confirmation button's off and on were lowercase.</li>
-<li>Fixed a bug where the static infinity point display would disappear after eternity.</li>
-</ul>`
+<li>新的时间研究</li>
+<li>2 行新成就</li>
+<li>使某些新闻消息只在达到一定进度后才显示</li>
+<li>感谢 SpectralFlame 大幅改进了维度价格计算的性能（后期可减少高达三分之二的 CPU 使用）。</li>
+<li>新增新闻滚动条条目。</li>
+<li>新增产出图表。</li>
+<li>新增统计以取代 1e100000 反物质后的尺度统计。</li>
+<li>为 30 次永恒新增里程碑：“以所有普通维度可购买开始”。</li>
+<li>新增更改游戏更新频率的选项，范围为 33 毫秒到 200 毫秒（此前锁定为 50 毫秒）。</li>
+<li>游戏现在部分模拟离线进度，而不是估算。</li>
+<li>新增 3 个永恒升级。</li>
+<li>为“新维度？？？”成就新增奖励：“你的成就倍率影响无限维度。”</li>
+<li>增强时间研究 111。（10 ^ (log10(反物质) / 290 - 0.75) 改为 10 ^ (log10(反物质) / 285 - 0.75)）</li>
+<li>增强时间研究 83。（1.0001^x 改为 1.0004^x）</li>
+<li>削弱永恒升级 1。（(x+1)^3 改为 x+1）</li>
+<li>削弱永恒升级 2。（x^log4(2x) 改为 (x/300)^log4(2x)，12.5 万以上公式更严苛）</li>
+<li>修复了一堆错误并更改了一堆内容（详情如下）。</li>
+<li>为时间维度和时间之理新增购买最大按钮。</li>
+<li>新增复制器星系快捷键（R）。</li>
+<li>细节：</li>
+<li>大幅改进了计算时间维度免费计数频率的性能。</li>
+<li>将所有软重置引用替换为维度提升引用。</li>
+<li>使成就在导入/硬重置时更新。</li>
+<li>使游戏在永恒时考虑爆炸获得的无限点数来计算永恒点数获得。</li>
+<li>复制器间隔现在在减少/增加后显示。</li>
+<li>为各种成就补充缺失的句号。</li>
+<li>使时间研究 131 的加成显示在最大复制器星系旁。</li>
+<li>将时间维度加入信息尺度。</li>
+<li>将时间研究 31 的描述从“增强基于无限次数统计的现有升级（4 次方）”改为“增强基于无限次数统计的加成（4 次方）”。</li>
+<li>将“极限超频”的描述改为“用 X 大爆炸”而不是“达到 X”。</li>
+<li>为时间研究 71、72 和 73 的描述添加“效果减弱”。</li>
+<li>将自动购买最大维度提升文本改为“每 X 秒购买最大维度提升：”而不是“最大维度提升间隔：”（与自动购买最大星系文本保持一致）。</li>
+<li>使挑战按钮在拥有超过 1 次永恒时始终显示。</li>
+<li>修复了无限和永恒升级的居中问题。</li>
+<li>主题的各种微小改动以提高一致性（太细微，这里也列不出来）。</li>
+<li>使购买永恒点数倍率时永恒自动购买器数字乘以 5。</li>
+<li>提高了“这是地狱吗？”的需求（5 改为 6.66 秒）。</li>
+<li>降低了复制器间隔升级的初始价格（1e160 改为 1e140）。</li>
+<li>价格缩放开始时星系被标记为“远方反物质星系”（100 个星系时）。</li>
+<li>达到挑战目标或固定无限后达到无限时，维度不再产出任何东西。这是因为 c6 可以被滥用。</li>
+<li>使 7 和 25 次永恒里程碑工作快得多。</li>
+<li>解锁批量维度提升后，点击维度提升或按 D 将购买最大维度提升。</li>
+<li>将假新闻、你敢睡吗、传播癌症和每个维度一个分别移到第 2、3、4 和 7 行。</li>
+<li>新增显示你拥有的星系/维度提升数量，位于价格旁。</li>
+<li>在选项页新增快捷键说明。</li>
+<li>使 shift+1-8 购买单个维度，shift+T 购买单个计数频率升级。</li>
+<li>重做了购买时间之理按钮的显示。</li>
+<li>里程碑页现在有 2 列。</li>
+<li>将标准计数法支持扩展到 e3e18，字母/癌症计数法（几乎）无限。</li>
+<li>为自动购买器输入新增标准、字母和对数计数法支持。</li>
+<li>为“零死亡”的描述添加“在挑战中”。</li>
+<li>使成就中的大多数大数字以你选择的计数法显示。</li>
+<li>削弱了“众神之礼”的成就奖励。</li>
+<li>使使用永恒点数购买时间之理至少需要 1 个时间维度。</li>
+<li>第一次永恒现在带你到时间维度标签页。</li>
+<li>时间维度价格现在有 2 位小数。</li>
+<li>重新格式化了极小数字的 tick 间隔减少文本。</li>
+<li>游戏现在跟踪自动无限的时间，如果你离线，可以基于该次运行中的无限点数/分钟被动获得无限点数（但仅在未打破无限时）。</li>
+<li>使时间研究 171 追溯生效。这解决了与重新分配同一次进行长跑时产出远低于预期的问题。</li>
+<li>修复了全部最大购买维度时未给予成就。</li>
+<li>修复了硬重置后游戏不显示默认维度标签页。</li>
+<li>修复了时间维度被称为“X 维度”而不是“X 时间维度”。</li>
+<li>修复了拥有超过列出的最大复制器星系和研究 131 时复制器星系按钮显示为锁定。</li>
+<li>修复了最近十次永恒平均值说无限点数/次而不是永恒点数/次。</li>
+<li>修复了大爆炸自动购买器说“距上次爆炸 X 次”而不是“上次爆炸 X 次”。</li>
+<li>修复了导入时挑战记录显示不更新。</li>
+<li>修复了快捷键有时不工作。</li>
+<li>修复了刷新后秘密主题名称显示为“0”。</li>
+<li>修复了窗口过小时时间研究移动。</li>
+<li>修复了挑战确认开启时点击挑战而未进入会重置无限维度。</li>
+<li>修复了始终拥有无限挑战 1 奖励。</li>
+<li>修复了导入时永恒里程碑类未正确设置。</li>
+<li>修复了导入时永恒自动购买器、献祭自动购买器、时间维度标签页和复制器未正确隐藏。</li>
+<li>修复了购买最大维度提升能多买 1 个。</li>
+<li>修复了游戏窗口不够宽时研究树偏中心。</li>
+<li>修复了可以用维度提升批量购买购买小数维度提升。</li>
+<li>修复了更改自动购买最大维度提升间隔时永恒会将其设置回自身。</li>
+<li>修复了导入时次要统计标签未隐藏。</li>
+<li>修复了少于 3 个星系时复制器星系不提供加成。</li>
+<li>修复了维度提升自动购买器在价格变为第八维度前忽略维度提升价格。</li>
+<li>修复了未来商店倍率显示在 x 之后而不是之前。</li>
+<li>修复了挑战确认按钮的关闭和开启为小写。</li>
+<li>修复了永恒后静态无限点数显示消失。</li>
+</ul>
+`
   },
   {
     date: [2017, 12, 1],
     name: "\"Eternity\" update",
     info: `
+
 <ul>
-<li>Time studies tree with free respec</li>
-<li>Eternity Milestones with tons of automation</li>
-<li>Eternity upgrades</li>
-<li>TIME DIMENSIONS</li>
-<li>REPLICANTIS</li>
-<li>More themes made by Omsi</li>
-<li>Disable hotkeys option</li>
-<li>Current IP/min post-break</li>
-<li>Infinity Challenge times</li>
-<li>Past 10 eternities</li>
-<li>Lowered IP multiplier cost by 1 Order of magnitude.</li>
-<li>3 more rows of achievements</li>
-<li>Infinity challenge reward nerfs (1st: 1.5x ➜ 1.3x; 3rd: lowered; 4th: mult^1.1 ➜ mult^1.05)</li>
-<li>More news ticker entries</li>
-<li>Immensely improved performance thanks to break_infinity.js made by Patashu, it replaces decimal.js</li>
-<li>Added LZString for cloud saving purposes.</li>
-<li>Achievement refractoring to reduce save string size made by StrangeTim.</li>
-<li>Commas between exponents option for numbers higher than e100000</li>
-<li>Added logarithm notation</li>
-<li>Made letter and cancer notation last longer.
+<li>带免费重新分配的时间研究树</li>
+<li>带大量自动化的永恒里程碑</li>
+<li>永恒升级</li>
+<li>时间维度</li>
+<li>复制器</li>
+<li>Omsi 制作的更多主题</li>
+<li>禁用快捷键选项</li>
+<li>打破无限后的当前无限点数/分钟</li>
+<li>无限挑战时间</li>
+<li>过去十次永恒</li>
+<li>无限点数倍率价格降低一个数量级。</li>
+<li>3 行新成就</li>
+<li>无限挑战奖励削弱（第 1 个：1.5 倍改为 1.3 倍；第 3 个：降低；第 4 个：倍率^1.1 改为倍率^1.05）</li>
+<li>更多新闻滚动条条目</li>
+<li>感谢 Patashu 制作的 break_infinity.js，它取代了 decimal.js，性能大幅提升</li>
+<li>为云存档添加 LZString。</li>
+<li>StrangeTim 制作的成就重构以减少存档字符串大小。</li>
+<li>高于 e100000 的数字指数之间逗号选项</li>
+<li>新增对数计数法</li>
+<li>让字母和癌症计数法持续更久。</li>
 </ul>
 `
   },
   {
     date: [2017, 10, 10],
     info: `
+
 <ul>
-<li>Complete refactoring for all upgrade UI.</li>
-<li>Minor Upgrade Changes. (Capping some upgrades)</li>
-<li>Kred shop- 3 paid Upgrades- More upgrades (and upgrade improvements) coming in the future.</li>
-<li>8 new Achievements- Achievement Rewards have also been added.</li>
-<li>Infinity Challenges- additional challenges to do going from Inf Dim 2 to current end game and beyond.</li>
-<li>Main Screen UI updates- IP points are now visible everywhere.</li>
-<li>Hotkeys- C for Big Crunch, M for Max All, S for Dimensional Sacrifice, D for Dimension Shift/Boost,
-G for Antimatter Galaxy, Numbers 1-8 for Buy 10 (D1-8), A for Toggle Autobuyers.</li>
-<li>Bug Fixes- At least 2, including a percentage buff.</li>
-</ul>`
+<li>所有升级界面完整重构。</li>
+<li>次要升级改动（上限部分升级）。</li>
+<li>Kred 商店，3 个付费升级，未来会有更多升级（和升级改进）。</li>
+<li>8 个新成就，同时新增成就奖励。</li>
+<li>无限挑战，从无限维度 2 到当前终局及以后的额外挑战。</li>
+<li>主界面更新，无限点数现在随处可见。</li>
+<li>快捷键：C 大爆炸、M 全部最大、S 维度献祭、D 维度提升、G 反物质星系、数字 1-8 购买 10 个（维度 1-8）、A 切换自动购买器。</li>
+<li>错误修复，至少 2 个，包括一个百分比加成。</li>
+</ul>
+`
   },
   {
     date: [2017, 9, 25],
     info: `
+
 <ul>
-<li>NEW DIMENSIONS?</li>
-<li>Super Secret Post-Infinity Dimensions added. Get more antimatter to find out!</li>
-<li>Post-break double galaxy upgrade nerfed. It now gives 50% more.</li>
-<li>Four new post-break upgrades added.</li>
-<li>Scaling of the dimension cost multiplier increased.</li>
-<li>Eight new achievements added.</li>
-<li>Cloud saving maybe added.</li>
-<li>Refunded Dimension cost increase multiplier and changed the cost.</li>
-</ul>`
+<li>新维度？</li>
+<li>新增超级秘密的无限后维度。获得更多反物质来发现吧！</li>
+<li>打破无限后的双倍星系升级被削弱，现在只提供 50% 更多。</li>
+<li>新增四个打破无限后的升级。</li>
+<li>维度价格倍率的缩放提高。</li>
+<li>新增八个成就。</li>
+<li>可能新增了云存档。</li>
+<li>退还了维度价格增量倍率并更改了价格。</li>
+</ul>
+`
   },
   {
     date: [2017, 9, 19],
     name: "Breaking Infinity",
     info: `
+
 <ul>
-<li>Post infinity content added (Breaking infinity), requires big crunch speed to be maxed.</li>
-<li>New upgrade tree pre-breaking, included one upgrade that be taken multiple times to
-increase infinity point gains.</li>
-<li>Eight late game post-breaking upgrades.</li>
-<li>Eight new achievements.</li>
-<li>Reworked autobuyer prices and times, full refund for all points spent on them.</li>
-<li>Autobuyers now can be upgraded beyond 0.1 seconds, and they also now 'wait' after their interval has passed,
-instantly buying once they are able to.</li>
-<li>Automatic DimBoosts, Galaxies, and Big Crunches now have an input box.</li>
-<li>Unique achievement rewards for multiple achievements.</li>
-<li>Zero galaxies now gives 11% tickspeed.</li>
-<li>Galaxies past two give diminishing returns, Faster than a Potato made easier to compensate.</li>
-<li>Game now updates 20 times a second with increased performance, max autobuyer speed is not impacted.</li>
-<li>Autobuyer settings are now saved in between sessions.</li>
-<li>Monitor scaling issues mainly fixed.</li>
-<li>Priority should be working properly.</li>
-<li>Big crunch button is now less obtrusive.</li>
-<li>Your screen no longer defaults to the dimensions tab when you reach infinity
-(if you have broken infinity or if your fastest time to reach infinity is less than one minute).</li>
-<li>More statistics have been added such as record challenge times and last ten infinities.</li>
-<li>Times below one minute are now kept at two decimal points of precision.</li>
-<li>Percentage increase per second for dimensions 1-8 are now kept to two decimal points of precision.</li>
-<li>The reset button works better now.</li>
-</ul>`
+<li>新增无限后内容（打破无限），需要大爆炸速度最大化。</li>
+<li>打破无限前的新升级树，包括一个可以多次购买以增加无限点数获得的升级。</li>
+<li>八个打破无限后的后期升级。</li>
+<li>八个新成就。</li>
+<li>重做了自动购买器价格和时间，全额退还所有花费的点数。</li>
+<li>自动购买器现在可以升级到 0.1 秒以上，并且在间隔过后会“等待”，一旦能够购买就立即购买。</li>
+<li>自动维度提升、星系和大爆炸现在有输入框。</li>
+<li>多个成就拥有独特成就奖励。</li>
+<li>零星系现在提供 11% 计数频率。</li>
+<li>超过两个星系后收益递减，为补偿使“比土豆还快”更容易。</li>
+<li>游戏现在每秒更新 20 次，性能提高，最大自动购买器速度不受影响。</li>
+<li>自动购买器设置现在在会话之间保存。</li>
+<li>显示器缩放问题基本修复。</li>
+<li>优先级现在应该正常工作。</li>
+<li>大爆炸按钮现在不那么显眼。</li>
+<li>你的屏幕不再在达到无限时默认切到维度标签页（如果你已打破无限或最快达到无限的时间少于 1 分钟）。</li>
+<li>新增更多统计，如挑战记录时间和最近十次无限。</li>
+<li>低于 1 分钟的时间现在保留两位小数精度。</li>
+<li>维度 1-8 的每秒百分比增长现在保留两位小数精度。</li>
+<li>重置按钮现在工作得更好。</li>
+</ul>
+`
   },
   {
     date: [2017, 9, 7],
     name: "Challenges",
     info: `
+
 <ul>
-<li>Added 12 challenges.</li>
-<li>Added 8 new achievements.</li>
-<li>Added autobuyers.</li>
-</ul>`
+<li>新增 12 个挑战。</li>
+<li>新增 8 个成就。</li>
+<li>新增自动购买器。</li>
+</ul>
+`
   },
   {
     // These were originally spread throughout 28/8 to 30/8.
     // But they would otherwise hold too little content on their own
     date: [2017, 8, 30],
     info: `
+
 <ul>
-<li>Added news on top of the page.</li>
-<li>Added a multiplier for completing a row of achievements.</li>
-<li>New letter notation option.</li>
-<li>Nerfed galaxies from +3% to +2%.</li>
-<li>Added 8 new achievements.</li>
-<li>Added Dimensional Sacrifice, appears at 5th dimension shift/boost.</li>
-<li>More notations!</li>
-<li>Bar until infinity at the bottom.</li>
-<li>Some UI changes.</li>
-</ul>`
+<li>在页面顶部新增新闻。</li>
+<li>新增完成一行成就的倍率。</li>
+<li>新增字母计数法选项。</li>
+<li>星系从 +3% 削弱为 +2%。</li>
+<li>新增 8 个成就。</li>
+<li>新增维度献祭，在第 5 次维度提升时出现。</li>
+<li>更多计数法！</li>
+<li>底部新增到无限的进度条。</li>
+<li>一些界面改动。</li>
+</ul>
+`
   },
   {
     date: [2017, 8, 24],
     name: "Infinity",
     info: `
+
 <ul>
-<li>Now when you get to 1.7e308 antimatter, you reach infinity, and you can reset again at infinity,
-gaining infinity points.</li>
-<li>You can use infinity points for upgrades.</li>
-<li>The game also now runs 6 hours while it is closed.</li>
-<li>In addition there are some graphic updates.</li>
-</ul>`
+<li>现在当你达到 1.7e308 反物质时，你达到无限，可以在无限时再次重置并获得无限点数。</li>
+<li>你可以使用无限点数购买升级。</li>
+<li>游戏现在在关闭时也会运行 6 小时。</li>
+<li>此外还有一些图形更新。</li>
+</ul>
+`
   },
   // These were originally spread throughout 3/5 to 7/5.
   // But they would otherwise hold too little content on their own
   {
     date: [2017, 5, 7],
     info: `
+
 <ul>
-<li>Added this changelog, fixed money displaying problem. Added a title to the HTML.</li>
-<li>The game now works offtab.</li>
-<li>Fixed the bug with costs showing for example 1000 SxTg.</li>
-<li>Visual update! And statistics.</li>
-<li>Added export and import options.</li>
-<li>Added save button although game saves every 10 seconds.</li>
-<li>Slightly smaller text and added a max all button.</li>
-<li>Saves should now FINALLY work properly.</li>
-</ul>`
+<li>新增此更新日志，修复了金钱显示问题。为 HTML 添加了标题。</li>
+<li>游戏现在在后台标签页也能运行。</li>
+<li>修复了价格显示为例如 1000 SxTg 的错误。</li>
+<li>视觉更新！还有统计。</li>
+<li>新增导出和导入选项。</li>
+<li>新增保存按钮，虽然游戏每 10 秒自动保存。</li>
+<li>文本稍小，并新增全部最大按钮。</li>
+<li>存档现在应该终于正常工作了。</li>
+</ul>
+`
   }
 ];
 

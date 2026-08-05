@@ -52,8 +52,8 @@ export default {
       return Enslaved.storedTimeInsideEnslaved(this.storedBlackHole);
     },
     realityTitle() {
-      if (this.isRunning) return "You are inside The Nameless Ones' Reality";
-      return "Start The Nameless Ones' Reality";
+      if (this.isRunning) return "你正处于 The Nameless Ones 的现实中";
+      return "开始 The Nameless Ones 的现实";
     },
     runButtonClassObject() {
       return {
@@ -67,9 +67,9 @@ export default {
       return GameDatabase.celestials.descriptions[2].effects().split("\n");
     },
     realTimeButtonText() {
-      if (!this.offlineEnabled) return "Offline Progress is disabled";
-      if (this.autoStoreReal) return "Offline time stored";
-      return "Offline time used for production";
+      if (!this.offlineEnabled) return "离线进度已禁用";
+      if (this.autoStoreReal) return "离线时间已存储";
+      return "离线时间用于产出";
     },
     // Use this here since Nameless has a fairly non-standard character, and SFCs don't support using \uf0c1
     enslavedSymbol: () => Enslaved.symbol,
@@ -206,7 +206,7 @@ export default {
       <PrimaryToggleButton
         v-model="autoRelease"
         class="o-primary-btn--subtab-option"
-        label="Pulse Black Hole:"
+        label="脉冲黑洞："
       />
     </div>
     <div class="l-enslaved-celestial-tab--inner">
@@ -220,7 +220,7 @@ export default {
               {{ realityTitle }}
             </div>
             <div v-if="completed">
-              <b>(Completed)</b>
+              <b>（已完成）</b>
             </div>
             <div
               :class="runButtonClassObject"
@@ -244,8 +244,8 @@ export default {
             >
               {{ line }}
             </div>
-            <b>Reward: Unlock Tesseracts, which let you increase Infinity Dimension caps
-              (see Infinity Dimension tab)</b>
+            <b>奖励：解锁超立方体，它们允许你提高无限维度上限
+              （参见无限维度标签页）</b>
           </div>
         </div>
       </div>
@@ -255,13 +255,13 @@ export default {
           class="o-primary-btn"
           onclick="Modal.enslavedHints.show()"
         >
-          Examine the Reality more closely...
+          更仔细地检查这个现实……
         </PrimaryButton>
         <div class="l-enslaved-top-container">
           <div class="l-enslaved-top-container__half">
-            While charging, game speed multipliers are {{ hasAutoRelease ? "decreased" : "disabled" }},
-            and the lost speed is converted into stored game time. Discharging the Black Hole allows you to skip
-            forward in time. Stored game time is also used to unlock certain upgrades.
+            充能期间，游戏速度倍率会被{{ hasAutoRelease ? "降低" : "禁用" }}，
+            损失的速度会转化为存储的游戏时间。释放黑洞可以让你
+            向前跳过时间。存储的游戏时间也用于解锁某些升级。
             <button
               :class="storeGameTimeClass"
               @click="toggleStoreBlackHole"
@@ -273,23 +273,23 @@ export default {
                 {{ timeDisplayShort(storedBlackHole) }}
               </div>
               <div>
-                {{ isStoringBlackHole ? "Charging Black Hole": "Charge Black Hole" }}
+                {{ isStoringBlackHole ? "正在为黑洞充能" : "为黑洞充能" }}
               </div>
             </button>
             <button
               :class="dischargeClass"
               @click="useStored"
             >
-              <span>Discharge Black Hole</span>
+              <span>释放黑洞</span>
               <p v-if="isRunning">
-                {{ timeDisplayShort(nerfedBlackHoleTime) }} in this Reality
+                本现实中为 {{ timeDisplayShort(nerfedBlackHoleTime) }}
               </p>
             </button>
           </div>
           <div class="l-enslaved-top-container__half">
-            Storing real time completely halts all production, setting game speed to {{ formatInt(0) }}.
-            You can use stored real time to "amplify" a Reality, simulating repeated runs of it.
-            Amplified Realities give all the rewards that normal Realities do.
+            存储真实时间会完全停止所有产出，将游戏速度设为 {{ formatInt(0) }}。
+            你可以使用存储的真实时间“放大”一次现实，模拟重复进行该现实。
+            被放大的现实会提供与普通现实相同的所有奖励。
             <button
               :class="[storeRealTimeClass,
                        {'l-fixed-setting': hasReachedCurrentCap}]"
@@ -300,7 +300,7 @@ export default {
                 {{ timeDisplayShort(storedReal) }}
               </div>
               <div>
-                {{ isStoringReal ? "Storing real time": "Store real time" }}
+                {{ isStoringReal ? "正在存储真实时间" : "存储真实时间" }}
               </div>
             </button>
             <button
@@ -314,10 +314,10 @@ export default {
               {{ realTimeButtonText }}
             </button>
             <div>
-              Efficiency: {{ storedRealEfficiencyDesc }}
+              效率：{{ storedRealEfficiencyDesc }}
             </div>
             <div>
-              Maximum stored real time: {{ storedRealCapDesc }}
+              最大存储真实时间：{{ storedRealCapDesc }}
             </div>
           </div>
         </div>
@@ -333,10 +333,10 @@ export default {
           >
             {{ unlock.description() }}
             <div v-if="!hasUnlock(unlock)">
-              Costs: {{ timeDisplayShort(unlock.price) }}
+              价格：{{ timeDisplayShort(unlock.price) }}
             </div>
             <span v-if="isStoringBlackHole && !hasUnlock(unlock) && timeUntilBuy(unlock.price) > 0">
-              Time to obtain: {{ timeDisplayShort(timeUntilBuy(unlock.price)) }}
+              获得所需时间：{{ timeDisplayShort(timeUntilBuy(unlock.price)) }}
             </span>
           </button>
         </div>

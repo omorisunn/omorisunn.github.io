@@ -1,0 +1,222 @@
+/* ============================================================
+   元功能与后期界面移动端补充
+   覆盖：天体页、炼金、选项、商店、统计、模态框、浮层。
+   仅小屏生效；覆盖 new-ui-styles.css 的规则统一使用 html 前缀。
+   ============================================================ */
+
+@media (max-width: 900px) {
+  /* ---------- 天体页通用：容器不超宽 ---------- */
+  html .l-mechanics-container {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  html .l-teresa-mechanic-container,
+  html .l-rm-container,
+  html .l-rm-container-labels {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  html .c-teresa-shop {
+    width: 100%;
+    max-width: 100%;
+    margin: 0.6rem 0 0;
+  }
+  html .l-spoon-btn-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .c-teresa-unlock,
+  html .c-teresa-run-button,
+  html .c-teresa-shop .o-teresa-shop-button {
+    width: 100%;
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Effarig / Enslaved / V / Ra / Lai'tela / Pelle 常用面板 */
+  html .l-effarig-tab,
+  html .l-enslaved-celestial-tab,
+  html .l-v-celestial-tab,
+  html .l-ra-celestial-tab,
+  html .l-laitela-celestial-tab,
+  html .l-pelle-celestial-tab,
+  html .l-celestial-navigation {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  html .l-effarig-tab > *,
+  html .l-enslaved-celestial-tab > *,
+  html .l-v-celestial-tab > *,
+  html .l-ra-celestial-tab > *,
+  html .l-laitela-celestial-tab > *,
+  html .l-pelle-celestial-tab > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+  html .l-enslaved-top-container,
+  html .l-enslaved-upgrades-column,
+  html .l-enslaved-shop-container,
+  html .l-v-unlocks-container,
+  html .l-laitela-mechanics-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  html .l-v-milestones-grid,
+  html .l-v-milestones-grid__row {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .l-v-milestones-grid__row > * {
+    flex: 1 1 45%;
+    min-width: 8rem;
+  }
+  html .l-effarig-machines-container,
+  html .l-effarig-relics-container,
+  html .l-effarig-shop-and-run,
+  html .l-effarig-run,
+  html .l-effarig-shop,
+  html .c-effarig-relics,
+  html .c-laitela-singularity-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .l-pelle-panel-container,
+  html .l-pelle-bar-container {
+    flex-wrap: wrap;
+  }
+  html .l-pelle-panel-container .c-pelle-upgrade-container {
+    flex: 1 1 45%;
+    min-width: 9rem;
+  }
+  /* 天体导航大画布：容器内横向滚动，不撑破页面 */
+  html .l-celestial-navigation {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  html .l-celestial-navigation .c-wide-canvas-element {
+    max-width: none;
+  }
+
+  /* ---------- 炼金 ---------- */
+  html .l-ra-alchemy-tab {
+    width: 100%;
+  }
+  html .l-ra-alchemy-tab .c-alchemy-resource-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .l-ra-alchemy-tab .c-alchemy-resource-info {
+    flex: 1 1 40%;
+    min-width: 8rem;
+    max-width: 14rem;
+  }
+
+  /* ---------- 选项子页 ---------- */
+  html .l-options-tab {
+    width: 100%;
+    min-width: 0;
+  }
+  html .l-options-tab > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+  html .l-options-grid__row .o-primary-btn--option {
+    font-size: 1rem;
+  }
+
+  /* ---------- 商店 ---------- */
+  html .l-shop-buttons-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  html .l-shop-buttons-container .o-shop-button-button {
+    flex: 1 1 45%;
+    min-width: 8rem;
+    max-width: 16rem;
+    white-space: normal;
+    line-height: 1.25;
+  }
+  html .c-shop-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .c-shop-header__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ---------- 统计 ---------- */
+  html .c-stats-tab {
+    width: 100%;
+    min-width: 0;
+  }
+  html .c-stats-tab > * {
+    max-width: 100%;
+  }
+  html .c-matter-scale-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  html .c-stats-tab .l-statistics-table,
+  html .c-stats-tab table {
+    width: 100%;
+  }
+
+  /* ---------- 速通里程碑与过往数据 ---------- */
+  html .l-speedrun-milestone-tab {
+    width: 100%;
+  }
+  html .c-past-runs-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ---------- 模态框内容 ---------- */
+  html .c-modal-options,
+  html .l-modal-options {
+    min-width: 0;
+  }
+  html .c-modal-options input[type="text"],
+  html .c-modal-options input[type="number"],
+  html .c-modal-options textarea,
+  html .l-modal-options input[type="text"],
+  html .l-modal-options input[type="number"],
+  html .l-modal-options textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html .l-modal-options__save-record,
+  html .l-modal-options__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  html .l-modal-options__grid > * {
+    flex: 1 1 45%;
+    min-width: 8rem;
+  }
+  html .l-modal-buttons .o-primary-btn {
+    min-width: 6.5rem;
+  }
+
+  /* ---------- 浮层 ---------- */
+  html .l-notification-container {
+    left: 0.5rem;
+    right: 0.5rem;
+    align-items: stretch;
+  }
+  html .l-notification-container .o-notification {
+    max-width: 100%;
+  }
+  html .c-gamespeed {
+    font-size: 0.85rem;
+  }
+}

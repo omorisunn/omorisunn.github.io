@@ -36,21 +36,21 @@ export default {
       const toExport = AutomatorBackend.exportFullScriptData(id);
       if (toExport) {
         copyToClipboard(toExport);
-        GameUI.notify.automator(`Exported all data associated with "${this.script.name}" to your clipboard`, 6000);
+        GameUI.notify.automator(`已将“${this.script.name}”关联的所有数据导出到剪贴板`, 6000);
       } else {
-        GameUI.notify.error("Could not export data from blank Automator script!");
+        GameUI.notify.error("无法从空白的自动机脚本导出数据！");
       }
     }
   },
   template: `
   <div class="l-entry-padding">
     <button
-      v-tooltip="'Export Full Script Data'"
+      v-tooltip="'导出完整脚本数据'"
       class="l-button-margin fas fa-file-export"
       @click="exportData(script.id)"
       data-v-automator-data-transfer-single-entry
     />
-    <b>Script name: {{ script.name }}</b>
+    <b>脚本名称：{{ script.name }}</b>
     <br>
     <span v-if="hasPresets">
       <span
@@ -58,27 +58,27 @@ export default {
         @click="hidePresets = !hidePresets"
         data-v-automator-data-transfer-single-entry
       />
-      References {{ quantifyInt("recognized study preset", presets.length) }}
+      引用了 {{ quantifyInt("个已识别的时间研究预设", presets.length) }}
       <span v-if="!hidePresets">
         <div
           v-for="id in presets"
           :key="id"
         >
-          <span v-if="presetData[id].name">"{{ presetData[id].name }}" (slot {{ id + 1 }}):</span>
-          <span v-else>Preset slot {{ id + 1 }}:</span>
+          <span v-if="presetData[id].name">"{{ presetData[id].name }}"（槽位 {{ id + 1 }}）：</span>
+          <span v-else>预设槽位 {{ id + 1 }}：</span>
           <br>
           <div
             class="l-value-padding"
             data-v-automator-data-transfer-single-entry
           >
             <span v-if="presetData[id].studies">{{ presetData[id].studies }}</span>
-            <i v-else>Empty Study Preset</i>
+            <i v-else>空白研究预设</i>
           </div>
         </div>
       </span>
     </span>
     <span v-else>
-      Does not reference any study presets.
+      未引用任何时间研究预设。
     </span>
     <br>
     <span v-if="hasConstants">
@@ -87,7 +87,7 @@ export default {
         @click="hideConstants = !hideConstants"
         data-v-automator-data-transfer-single-entry
       />
-      References {{ quantifyInt("defined constant", constants.length) }}
+      引用了 {{ quantifyInt("个已定义的常量", constants.length) }}
       <span v-if="!hideConstants">
         <div
           v-for="name in constants"
@@ -105,7 +105,7 @@ export default {
       </span>
     </span>
     <span v-else>
-      Does not reference any defined constants.
+      未引用任何已定义的常量。
     </span>
   </div>
   `

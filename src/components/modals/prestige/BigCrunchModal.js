@@ -20,23 +20,23 @@ export default {
     },
     message() {
       const info = this.isFirstInfinity ? this.firstInfinityInfo : ``;
-      return `Upon Infinity, all Dimensions, Dimension Boosts, and Antimatter Galaxies are reset. ${info}`;
+      return `无限时，所有维度、维度提升和反物质星系都会被重置。${info}`;
     },
     firstInfinityInfo() {
-      return `In return, you gain an Infinity Point (IP). This allows you to buy multiple upgrades that you can
-        find in the Infinity tab. You will also gain one Infinity, which is the stat shown in the Statistics tab.`;
+      return `作为交换，你会获得 1 点无限点数（IP）。这允许你购买无限标签页中的多种升级。
+        你还会获得 1 次无限，即统计页中显示的数值。`;
     },
     ipGainInfo() {
-      return `You will gain ${quantify("Infinity", this.gainedInfinities, 2, 0)}
-        and ${quantify("Infinity Point", this.gainedInfinityPoints, 2, 0)}.`;
+      return `你将获得 ${quantify("次无限", this.gainedInfinities, 2, 0)}
+        和 ${quantify("点无限点数", this.gainedInfinityPoints, 2, 0)}。`;
     },
     startingResources() {
       const gainedResources = [];
-      if (this.startingAM.gte(10)) gainedResources.push(`${quantify("Antimatter", this.startingAM, 2, 1)}`);
-      if (this.startingBoosts > 0) gainedResources.push(`${quantify("Dimension Boost", this.startingBoosts)}`);
-      if (this.willStartWithGalaxy) gainedResources.push(`${quantify("Galaxy", 1)}`);
+      if (this.startingAM.gte(10)) gainedResources.push(`${quantify("反物质", this.startingAM, 2, 1)}`);
+      if (this.startingBoosts > 0) gainedResources.push(`${quantify("次维度提升", this.startingBoosts)}`);
+      if (this.willStartWithGalaxy) gainedResources.push(`${quantify("个星系", 1)}`);
 
-      return `You will start your next Infinity with ${makeEnumeration(gainedResources)}.`;
+      return `你的下一次无限将从${makeEnumeration(gainedResources)}开始。`;
     }
   },
   methods: {

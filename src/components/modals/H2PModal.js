@@ -60,7 +60,7 @@ export default {
     <ModalCloseButton @click="emitClose" />
     <div class="l-h2p-header">
       <div class="c-h2p-title">
-        How To Play
+        如何游玩
       </div>
     </div>
     <div class="l-h2p-container">

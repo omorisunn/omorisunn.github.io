@@ -17,7 +17,7 @@ const rebuyable = config => {
 export const pelleGalaxyGeneratorUpgrades = {
   additive: rebuyable({
     id: "galaxyGeneratorAdditive",
-    description: "Increase base Galaxy generation by 2",
+    description: "基础星系生成量提高 2",
     cost: x => Math.pow(3, x),
     effect: x => x * 2,
     formatEffect: x => `${format(x, 2, 2)}/s`,
@@ -26,7 +26,7 @@ export const pelleGalaxyGeneratorUpgrades = {
   }),
   multiplicative: rebuyable({
     id: "galaxyGeneratorMultiplicative",
-    description: "Multiply Galaxy generation",
+    description: "倍增星系生成量",
     cost: x => Math.pow(10, x),
     effect: x => Decimal.pow(2.5, x),
     formatEffect: x => formatX(x, 2, 1),
@@ -35,7 +35,7 @@ export const pelleGalaxyGeneratorUpgrades = {
   }),
   antimatterMult: rebuyable({
     id: "galaxyGeneratorAntimatterMult",
-    description: "Multiply Galaxy generation",
+    description: "倍增星系生成量",
     cost: x => Decimal.pow("1e100000000", 10 ** x),
     effect: x => Decimal.pow(2, x),
     formatEffect: x => formatX(x, 2),
@@ -44,7 +44,7 @@ export const pelleGalaxyGeneratorUpgrades = {
   }),
   IPMult: rebuyable({
     id: "galaxyGeneratorIPMult",
-    description: "Multiply Galaxy generation",
+    description: "倍增星系生成量",
     cost: x => Decimal.pow("1e2000000", 100 ** x),
     effect: x => Decimal.pow(2, x),
     formatEffect: x => formatX(x, 2),
@@ -53,7 +53,7 @@ export const pelleGalaxyGeneratorUpgrades = {
   }),
   EPMult: rebuyable({
     id: "galaxyGeneratorEPMult",
-    description: "Multiply Galaxy generation",
+    description: "倍增星系生成量",
     cost: x => Decimal.pow("1e10000", 1000 ** x),
     effect: x => Decimal.pow(2, x),
     formatEffect: x => formatX(x, 2),

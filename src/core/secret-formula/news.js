@@ -14,113 +14,107 @@ function newsAnimSpd(seconds) {
 export const news = [
   {
     id: "a1",
-    text: "The cookie is a lie.",
+    text: "饼干是个谎言。",
   },
   {
     id: "a2",
-    text: "Antimatter ghosts do not exist. Just like matter ghosts. They don't have any matter, for that matter."
+    text: "反物质鬼魂并不存在。就像物质鬼魂一样。毕竟，它们没有任何物质。"
   },
   {
     id: "a3",
-    text: "Nuclear power plants have been abandoned in favor of antimatter power."
+    text: "核电站已被废弃，转而使用反物质能源。"
   },
   {
     id: "a4",
-    text: "Antimatter cookies have been confirmed to not exist, whoever claims that, stop."
+    text: "已确认反物质饼干并不存在，谁再声称存在，请住口。"
   },
   {
     id: "a5",
-    text: "Antimatter prices have drastically dropped due to newfound abundance."
+    text: "由于新发现的储量，反物质价格大幅下跌。"
   },
   {
     id: "a6",
-    text: "In the news today, humans make an antimatter animal sacrifice to the antimatter god."
+    text: "今日新闻：人类向反物质之神献上反物质动物祭品。"
   },
   {
     id: "a7",
-    text: "You made one antimatter! Whatever that means."
+    text: "你制造了一个反物质！管它什么意思。"
   },
   {
     id: "a8",
-    text: "\"IN THE END, IT DOESN'T ANTIMATTER\" -hevipelle"
+    text: "“最终，这一切都不反物质” -hevipelle"
   },
   {
     id: "a9",
-    text: "None of this matters."
+    text: "这一切都无关紧要。"
   },
   {
     id: "a10",
-    text: "How does it matter if it's antimatter?"
+    text: "如果它是反物质，那还重要吗？"
   },
   {
     id: "a11",
-    text: "Scientists confirm that the colour of antimatter is Blurple."
+    text: "科学家证实，反物质的颜色是蓝紫色。"
   },
   {
     id: "a12",
-    text: "How does NASA organise a party? They planet."
+    text: "NASA 怎么组织派对？他们行星。"
   },
   {
     id: "a13",
-    text:
-      `Electrons are now seeing the happy things in life.
-      We're calling these happy electrons 'Positrons.' Wait, that's taken?`
+    text: `电子们现在看到了生活中的美好事物。我们把这些快乐的电子称为“正电子”。等等，这个名字已经被占了？`
   },
   {
     id: "a14",
-    text:
-      `This completely useless sentence will get you nowhere and you know it.
-      What a horrible obnoxious man would come up with it, he will probably go to hell,
-      and why would the developer even implement it? Even if you kept reading it you wouldn't
-      be able to finish it (the first time).`
+    text: `这句完全无用的句子不会带你去任何地方，你也知道。什么样的可恶混蛋才会写出这种东西，他大概会下地狱，而且开发者为什么要把它加进来？即使你一直读下去，你也没法读完它（第一次）。`
   },
   {
     id: "a15",
-    text: `"GHOST SAYS HELLO" -Boo-chan`
+    text: `“幽灵向你问好” -Boo-chan`
   },
   {
     id: "a16",
-    text: `"Can someone tell hevi to calm down?" -Mee6`
+    text: `“谁能叫 hevi 冷静一下？” -Mee6`
   },
   {
     id: "a17",
-    text: "Due to antimatter messing with physics, a creature that was once a moose is now a human."
+    text: "由于反物质扰乱了物理定律，一只曾经的驼鹿现在变成了人类。"
   },
   {
     id: "a18",
-    text: "!hi"
+    text: "!你好"
   },
   {
     id: "a19",
-    text: `"Alright" -Alright`
+    text: `“好的” -Alright`
   },
   {
     id: "a20",
-    text: "The English greeting is not present in Antimatter speak."
+    text: "反物质语中不存在英语问候语。"
   },
   {
     id: "a21",
-    text: "To buy max or not to buy max, that is the question."
+    text: "买最大还是不买最大，这是个问题。"
   },
   {
     id: "a22",
-    text: "One, two, skip a few, ninety-nine, NaN!"
+    text: "一、二、跳过几个、九十九、NaN！"
   },
   {
     id: "a23",
-    text: "No, mom, I can't pause this game."
+    text: "不，妈妈，这个游戏没法暂停。"
   },
   {
     id: "a24",
-    text: "Scientific notation has entered the battlefield."
+    text: "科学计数法已进入战场。"
   },
   {
     id: "a25",
-    text: `"Make the Universe Great Again!" -Tronald Dump`
+    text: `“让宇宙再次伟大！” -Tronald Dump`
   },
   {
     id: "a26",
-    text: "#dank-maymays"
+    text: "#梗图"
   },
   {
     id: "a27",
@@ -132,92 +126,87 @@ export const news = [
   },
   {
     id: "a28",
-    text: "Someone has just touched a blob, and blown up. Was the blob antimatter, or was the guy made of Explodium?"
+    text: "有人刚碰了一下果冻团，然后就爆炸了。那团果冻是反物质，还是那个人是用爆炸物质做的？"
   },
   {
     id: "a29",
-    text: `If you are not playing on Kongregate, Steam, or https://ivark.github.io/AntimatterDimensions/,
-      the site is bootleg.`
+    text: `如果你不是在 Kongregate、Steam 或 https://ivark.github.io/AntimatterDimensions/ 上游玩的，那么这个网站是盗版的。`
   },
   {
     id: "a30",
-    text: "Rate 5 on Kongregate so more people can experience this 5 star rating."
+    text: "请在 Kongregate 上打 5 星，让更多人体验这个五星评价。"
   },
   {
     id: "a31",
-    text: "BOO!"
+    text: "吓！"
   },
   {
     id: "a32",
-    text: `"You ate for too long." -Hevipelle`
+    text: `“你吃得太久了。” -Hevipelle`
   },
   {
     id: "a33",
-    text: `"I hate myself." -Boo-chan`
+    text: `“我讨厌我自己。” -Boo-chan`
   },
   {
     id: "a34",
-    text: `"Gee golly" -Xandawesome`
+    text: `“哎呀妈呀” -Xandawesome`
   },
   {
     id: "a35",
-    text: "Above us, there is nothing above, but the stars, above."
+    text: "在我们之上，除了群星之上，什么都没有。"
   },
   {
     id: "a36",
-    text: "You feel like making antimatter. But nobody wants to eat your antimatter."
+    text: "你想制造反物质。但没人想吃你的反物质。"
   },
   {
     id: "a37",
-    text: "Somebody wasn't nice, he got an antimatter-storm."
+    text: "有人不乖，于是他迎来了一场反物质风暴。"
   },
   {
     id: "a38",
-    text: "You are living, you occupy space, you have a mass, you matter... unless you antimatter."
+    text: "你活着，你占据空间，你有质量，你很重要……除非你是反物质。"
   },
   {
     id: "a39",
-    text: "I clicked too fast... my PC is now dematerialised."
+    text: "我点得太快了……我的电脑现在解体了。"
   },
   {
     id: "a40",
-    text:
-      `"If an alien lands on your front lawn and extends an appendage as a gesture of greeting, before you get
-      friendly, toss it an eightball. If the appendage explodes, then the alien was probably made of antimatter.
-      If not, then you can proceed to take it to your leader." -Neil deGrasse Tyson`
+    text: `如果外星人降落在你的前院并伸出一只肢体作为问候，在你们变得友好之前，先扔给它一个八号球。如果那只肢体爆炸了，那么外星人很可能是反物质做的。如果没有，你就可以带它去见你的领导了。-Neil deGrasse Tyson`
   },
   {
     id: "a41",
-    text:
-      "There must always be an equal amount of matter as compared to antimatter; I guess your mom balances that a bit."
+    text: "物质与反物质的数量必须始终相等；我想你妈妈稍微平衡了这一点。"
   },
   {
     id: "a42",
-    text: "Nothing is created, nothing is destroyed."
+    text: "没有东西被创造，没有东西被毁灭。"
   },
   {
     id: "a43",
-    text: "We dug a big hole to store this antimatter... Adele's rolling in it."
+    text: "我们挖了一个大坑来存放这些反物质……Adele 正在里面打滚。"
   },
   {
     id: "a44",
-    text: "If everything is antimatter, how can you see yourself?"
+    text: "如果一切都是反物质，你怎么能看见自己？"
   },
   {
     id: "a45",
-    text: "The stock markets have crashed due to antimatter beings somehow knowing what they will be tomorrow."
+    text: "股市崩盘了，因为反物质生命不知为何能预知明天的走势。"
   },
   {
     id: "a46",
-    text: "My dog ate too much antimatter, now he's' saying 'meow!'"
+    text: "我的狗吃了太多反物质，现在它开始“喵喵”叫了！"
   },
   {
     id: "a47",
-    text: "If you put infinity into your calculator, it will result in 42!"
+    text: "如果你把无穷大输进计算器，结果会是 42！"
   },
   {
     id: "a48",
-    text: "You have found the rarest antimatter pepe, it's ultra rare!"
+    text: "你找到了最稀有的反物质佩佩蛙，它超级稀有！"
   },
   {
     id: "a49",
@@ -227,185 +216,171 @@ export const news = [
   },
   {
     id: "a50",
-    text: "The smell of antimatter has been revealed. It smells like kittens."
+    text: "反物质的气味已经揭晓。它闻起来像小猫。"
   },
   {
     id: "a51",
-    text: "Just another antimatter in the wall."
+    text: "不过是墙里的又一个反物质。"
   },
   {
     id: "a52",
-    text: "GET SNIPED, WEAKLING"
+    text: "被狙了吧，弱鸡"
   },
   {
     id: "a53",
-    text: `"Thanks a lot." -Dankesehr`
+    text: `“非常感谢。” -Dankesehr`
   },
   {
     id: "a54",
-    text: "This world situation is an SOS situation to the world!! MAYDAY, MAYDAY!!"
+    text: "这个世界局势对全世界来说都是 SOS 级别的紧急状况！！求救，求救！！"
   },
   {
     id: "a55",
-    text:
-      `"As for sure as the sun rises in the west, of all the singers and
-      poets on earth, I am the bestest." - Hevipelle`
+    text: `“就像太阳从西边升起一样确定，地球上所有的歌手和诗人中，我是最棒的。” - Hevipelle`
   },
   {
     id: "a56",
-    text: `"I'm good at using github." -Hevipelle`
+    text: `“我很擅长使用 GitHub。” -Hevipelle`
   },
   {
     id: "a57",
-    text:
-      `A new chat server has been created for antimatter people to spy on matter people,
-      and the world has fallen into chaos and discord.`
+    text: `一个新的聊天服务器已经建立，供反物质人监视物质人，世界因此陷入了混乱与争吵。`
   },
   {
     id: "a58",
-    text:
-      `A new study has come out linking the consumption of potatoes with increased risk of antimatter implosion.
-      Scientists suggest eating more.`
+    text: `一项新研究指出，食用土豆与反物质内爆风险增加有关。科学家建议多吃。`
   },
   {
     id: "a59",
-    text: `"I thought that I fixed that bug but apparently some update broke it again." -Hevipelle`
+    text: `“我以为我修好了那个 bug，但显然某个更新又把它弄坏了。” -Hevipelle`
   },
   {
     id: "a60",
-    text: `"Maybe I'm gay then" -Bootato`
+    text: `“那我可能是同性恋吧” -Bootato`
   },
   {
     id: "a61",
-    text: "Breaking news! Hevipelle has just announced that the buy max button is in fact going to be removed!"
+    text: "突发新闻！Hevipelle 刚刚宣布，购买最大按钮实际上将被移除！"
   },
   {
     id: "a62",
-    text: "I dedicate this game to my girlfriend."
+    text: "我把这款游戏献给我的女朋友。"
   },
   {
     id: "a63",
-    text:
-      `Antimatter guns don't kill antimatter people, antimatter people kill antimatter people but does that mean
-      that antimatter toaster doesn't toast antimatter toasts, antimatter toast toasts antimatter toasts?`
+    text: `反物质枪不会杀死反物质人，反物质人会杀死反物质人，但这是否意味着反物质烤面包机不会烤反物质吐司，而反物质吐司会烤反物质吐司？`
   },
   {
     id: "a64",
-    text: "But to an antimatter person, wouldn't they be matter and us antimatter?"
+    text: "但对于反物质人来说，我们不才是物质，而他们才是反物质吗？"
   },
   {
     id: "a65",
-    text: "And nothing antimatters."
+    text: "一切皆反物质。"
   },
   {
     id: "a66",
-    text:
-      `School starting up strikes fear in students universe-wide, as schools are no longer segregated between
-      matter and antimatter. Annihilation is prominent.`
+    text: `开学在全宇宙的学生心中激起恐惧，因为学校不再区分物质与反物质。湮灭事件频发。`
   },
   {
     id: "a67",
-    text: "Why does no one talk about the 0th dimension?"
+    text: "为什么没有人谈论第 0 维度？"
   },
   {
     id: "a68",
-    text: "The fatter catter satter on the antimatter."
+    text: "更肥的猫咪坐在反物质上。"
   },
   {
     id: "a69",
-    text: "Who let the DOgs out?"
+    text: "谁把狗狗放出来的？"
   },
   {
     id: "a70",
-    text: "If you can't read this, you disabled the news."
+    text: "如果你读不到这条消息，说明你关闭了新闻。"
   },
   {
     id: "a71",
-    text: "Doesn't leave, just mutes the server so he doesn't receive notifications."
+    text: "他没有离开，只是静音了服务器，这样他就不会收到通知。"
   },
   {
     id: "a72",
-    text: `"Most quotes found online are falsely attributed." -Abraham Lincoln`
+    text: `“网上能找到的大多数名言都是张冠李戴。” -Abraham Lincoln`
   },
   {
     id: "a73",
-    text: `"It should work now, but it doesn't." -Hevipelle`
+    text: `“现在应该能用了，但它就是不行。” -Hevipelle`
   },
   {
     id: "a74",
-    text: "This game doesn't have any errors... they're alternative successes."
+    text: "这款游戏没有任何错误……它们只是另类的成功。"
   },
   {
     id: "a75",
-    text:
-      `A third type of matter has been discovered: null matter. It doesn't do anything and is basically
-      useless. The scientists who discovered it were fired.`
+    text: `科学家发现了第三种物质：空物质。它什么也不做，基本上毫无用处。发现它的科学家们被解雇了。`
   },
   {
     id: "a76",
-    text: "Your Mother-in-Law keeps nagging you about all these antimatter colliders."
+    text: "你岳母一直在唠叨你搞这些反物质对撞机的事。"
   },
   {
     id: "a77",
-    text: "If matter exists, then does antimatter not exist?"
+    text: "如果物质存在，那么反物质就不存在吗？"
   },
   {
     id: "a78",
-    text: "Antimatter=Life. Not cobblestone, not dirt, nothing like that. Antimatter."
+    text: "反物质=生命。不是圆石，不是泥土，都不是。反物质。"
   },
   {
     id: "a79",
-    text: "Breaking News: Error Error Error"
+    text: "突发新闻：错误 错误 错误"
   },
   {
     id: "a80",
-    text: "How much antiwood could an antiwoodchuck chuck if an antiwoodchuck could chuck antiwood?"
+    text: "如果反土拨鼠能扔反木头，反土拨鼠能扔多少反木头？"
   },
   {
     id: "a81",
-    text: "Chaos isnt a pit, chaos is a matter."
+    text: "混沌不是深渊，混沌是物质。"
   },
   {
     id: "a82",
-    text: `"That's because I'm a good game developer and pushed some code that totally works." -Hevipelle`
+    text: `“那是因为我是个优秀的游戏开发者，推送了一些完全能用的代码。” -Hevipelle`
   },
   {
     id: "a83",
-    text: "What's the matter with anti matter?"
+    text: "反物质有什么问题吗？"
   },
   {
     id: "a84",
-    text: "Doesn't it annoy you when people don't finish their"
+    text: "当人们说话说一半的时候，难道不烦人吗"
   },
   {
     id: "a85",
-    text: "Don't anti-quote me on this."
+    text: "别拿反引语来引用我。"
   },
   {
     id: "a86",
-    text: "Antimatter is honest, matter makes up everything."
+    text: "反物质是诚实的，物质却编造了一切。"
   },
   {
     id: "a87",
-    text:
-      `According to no known laws of aviation, there are multiple ways a bee
-      should be able to be swallowed up by antimatter.`
+    text: `根据不存在的航空法则，蜜蜂有无数种方式应该会被反物质吞噬。`
   },
   {
     id: "a88",
-    text: "You either die as matter or live long enough to be consumed by the antimatter, and then die again."
+    text: "你要么以物质的身份死去，要么活到被反物质吞噬，然后再死一次。"
   },
   {
     id: "a89",
-    text: "If you gaze long enough into the antimatter, the antimatter gazes back into you."
+    text: "如果你凝视反物质足够久，反物质也会凝视你。"
   },
   {
     id: "a90",
-    text: `"Always gonna give you up. Always gonna let you down." - anti-Rick Astley`
+    text: `“永远不会抛弃你。永远不会让你失望。” - 反 Rick Astley`
   },
   {
     id: "a91",
-    text: "Antimatter Dimensions: the next update is always 5 hours away. Always."
+    text: "反物质维度：下一个更新总是在 5 小时之后。永远如此。"
   },
   {
     id: "a92",
@@ -463,98 +438,81 @@ export const news = [
   },
   {
     id: "a93",
-    text:
-      `On a scale of 1 to 10, I rate this game a solid
-      <span style='color: red'>java.lang.IndexOutOfBoundsException</span>`
+    text: `如果满分是 10 分，我给这款游戏一个稳定的<span style='color: red'>java.lang.IndexOutOfBoundsException</span>`
   },
   {
     id: "a94",
-    text: "To matter or to antimatter, that is the question."
+    text: "成为物质还是反物质，这是个问题。"
   },
   {
     id: "a95",
-    text: "Why is everything so Hevi?"
+    text: "为什么一切都这么 Hevi？"
   },
   {
     id: "a96",
-    text:
-      `It has been scientifically proven ages ago, that cats made of matter are assholes. We have good news,
-      because cats made of antimatter are still assholes.`
+    text: `很久以前科学就证明，由物质构成的猫都是混蛋。我们有好消息：由反物质构成的猫依然是混蛋。`
   },
   {
     id: "a97",
-    text: "Nobody once told me the anti-world wasn't gonna roll me."
+    text: "从没有人告诉我反世界不会碾压我。"
   },
   {
     id: "a98",
-    text: "Antimatter is like the internet. If you're reading this, you can't have enough of it."
+    text: "反物质就像互联网。如果你正在读这条消息，说明你对它欲罢不能。"
   },
   {
     id: "a99",
-    text:
-      `"Antimatter has made time travel possible and I'm here to make the
-      past great again." - 2nd President of the World`
+    text: `“反物质让时间旅行成为可能，我来这里是为了让过去再次伟大。” - 世界第二任总统`
   },
   {
     id: "a100",
-    text: "Please insert Disc -1 to continue playing Antimatter Dimensions™."
+    text: "请插入光盘 -1 以继续游玩反物质维度™。"
   },
   {
     id: "a101",
-    text: "Lore - coming soon™"
+    text: "剧情 - 即将推出™"
   },
   {
     id: "a102",
-    text: "I was a part of antimatter like you once. But then I got matter in my knee."
+    text: "我曾和你一样是反物质的一部分。但后来我的膝盖里进了物质。"
   },
   {
     id: "a103",
-    text:
-      `Antimatter... antimatter never changes... until you get to quantum physics of antimatter,
-      but we don't have enough tachyon particles for that.`,
+    text: `反物质……反物质从未改变……直到你接触到反物质的量子物理，但我们的速子粒子不够用了。`,
     get unlocked() { return PlayerProgress.realityUnlocked() || PlayerProgress.dilationUnlocked(); }
   },
   {
     id: "a104",
-    text: "There is no war in Antimatter Dimensions. Here we are safe. Here we are free."
+    text: "反物质维度里没有战争。在这里我们安全。在这里我们自由。"
   },
   {
     id: "a105",
-    text: "Antimatter has solved global warming. In unrelated news, the Earth no longer exists."
+    text: "反物质解决了全球变暖。在另一条毫不相关的新闻中，地球已不复存在。"
   },
   {
     id: "a106",
-    text:
-      `Anti-water, anti-Earth, anti-fire, anti-air. Long ago, the four anti-nations lived together in harmony.
-      Then, everything changed when the anti-Fire Nation attacked. Only the anti-Avatar, the master of all 4
-      anti-elements could bring balance to the anti-world, but when the world needed him most, he accidentally
-      touched some regular matter and exploded.`
+    text: `反水、反土、反火、反气。很久以前，四个反族和谐地生活在一起。然后，一切都变了，反火国发动了袭击。只有精通四种反元素的反神通才能给反世界带来平衡，但当世界最需要他的时候，他意外地碰到了普通物质，然后爆炸了。`
   },
   {
     id: "a107",
-    text: "If you open an anti-lootbox, are you selling random possessions for in-game currency?"
+    text: "如果你打开一个反开箱，是不是意味着你在用随机财产换取游戏货币？"
   },
   {
     id: "a108",
-    text: "People are beginning to question Hevipelle's existence."
+    text: "人们开始怀疑 Hevipelle 是否存在。"
   },
   {
     id: "a109",
-    text:
-      `Antimatter Dimensions is proud to be sponsored by Lehmä! Now offering - grass eating lessons! Learn what
-      grass is safe to eat and what grass isn't.`,
+    text: `反物质维度很荣幸由 Lehmä 赞助！现推出：吃草课程！学习哪些草可以安全食用，哪些草不能。`,
     isAdvertising: true
   },
   {
     id: "a110",
-    text:
-      `It is the year 2422. The update still isn't out. Hevi is working on balancing unfunity dimension dimensions
-      and challenges for the 38th layer of prestige. There are over 100 rows of achievements. They're getting
-      ready to start using breaking_breaking_breaking_infinity.js.`
+    text: `现在是 2422 年。更新仍然没有发布。Hevi 正在为第 38 层飞升调整“不团结”维度的维度与挑战。成就已有超过 100 行。他们正准备开始使用 breaking_breaking_breaking_infinity.js。`
   },
   {
     id: "a111",
-    text: "Import \"Christmas\" for a secret theme."
+    text: "导入“Christmas”可解锁隐藏主题。"
   },
   {
     id: "a112",
@@ -568,7 +526,7 @@ export const news = [
       Think again, f*cker. As we speak I am contacting my secret network of autobuyers across the galaxy and your
       IP is being traced right now so you better prepare for the Big Crunch, maggot. The Big Crunch that wipes out
       the pathetic little thing you call your life. You're f*cking dead, kid. I can be anywhere, anytime, and I can
-      kill you in over seven 😠💩 different ways, and that's just with my mouse. Not only am I extensively trained
+      可以用超过七种不同的方式杀死你，而且这还只是用我的鼠标。我不仅接受过
       in dimension boost combat, but I have access to the entire arsenal of the Antimatter Marine Corps and I will
       use it to its full extent to wipe your miserable ass off the face of the universe, you little shit. If only
       you could have known what unhevi retribution your little “clever” comment was about to bring down upon you,
@@ -578,102 +536,65 @@ export const news = [
   },
   {
     id: "a113",
-    text:
-      `So I've pondered this question for a long time. Antimatter Dimensions... what does it mean? I mean it's a
-      game, that's clear. You buy the first dimension, and it gives you antimatter, and the second dimension
-      provides more first dimensions and so on... But what does it mean? It can't just be a game, it seems too
-      plain for that. The developer must have made it as a metaphor. I was doing my weekly ritual of using the
-      fingernail clipper to cut my pubic hair, when finally the realization came to me. The dimensions are just
-      thinly veiled misspellings of the word 'depression'. Regular matter are the cruel and negative thoughts that
-      add to and fuel depression, while antimatter is the positive thoughts and good friends that dispel it. You
-      start off with something simple, and it fights almost imperceptibly against the depression, but as you keep
-      going the fight builds. But it never seems to fix everything. The depression seems like it could go on to
-      infinity. So you keep going. But eventually, you figure out, depression isn't infinite. It's just very very
-      large. But your 'dimensions' eventually, with enough work, make enough 'antimatter' to usurp that seeming
-      infinity of depression. Then the possibilities are endless. You are actually happy for once, and your
-      happiness grows exponentially as you go beyond and seemingly 'break' the 'infinity' of depression. And you
-      go on until that 'infinity' seems tiny in comparison to the happiness you've managed to achieve in your
-      life, where if you reset you get over that infinity in less than the blink of an eye. If you want to know
-      what the multiple layers of prestige are...'Dimensional Shifts' are getting new things and methods to give
-      you happiness. 'Dimension Boosts' are upgrading the things and methods. Examples would be getting a new car
-      being a 'Dimensional Shift' and trading that car in for a new one would be a 'Dimension Boost'. 'Eternities'
-      are major tragedies such as a loved one dying. That lapse brings you straight back to the beginning, with
-      seemingly no hope of return. But with time, you grow back stronger and happier than ever before. 'Dimensional
-      Sacrifice' is moving away. You have to give up a lot of the things you had that made you happy, but there is
-      new opportunity in where you move to. And that new opportunity gives you more happiness than you ever had.
-      'Tickspeed' is how easy it is to make you happy, and 'Time Dimensions' make it even easier to be happy.
-      Antimatter Dimensions is a metaphor for a depressed man's successful battle against his illness.`,
+    text: `长久以来我一直在思考一个问题。反物质维度……它到底意味着什么？我是说，它是一款游戏，这一点很清楚。你购买第一维度，它给你反物质，第二维度提供更多第一维度，以此类推……但这意味着什么？它不可能只是一款游戏，那样未免太普通了。开发者一定把它当作一个隐喻。在我每周用指甲刀修剪阴毛的例行仪式上，我终于顿悟了。这些维度不过是“抑郁”这个词的拙劣拼写变体。普通物质是那些助长并加剧抑郁的残酷消极想法，而反物质是驱散抑郁的积极想法和好朋友。你从简单的事物开始，它几乎难以察觉地与抑郁抗争，但随你继续，抗争会不断壮大。但它似乎永远无法解决一切。抑郁似乎可以一直延伸到无穷。于是你继续前进。但最终你会发现，抑郁并不是无穷的。它只是非常非常大。但你的“维度”最终，经过足够的努力，会制造出足够的“反物质”来推翻那看似无穷的抑郁。然后可能性便无穷无尽。你终于真正快乐了一次，你的快乐呈指数增长，超越并似乎“打破”了抑郁的“无穷”。你继续前行，直到那个“无穷”与你一生中努力达成的快乐相比显得微不足道，此时只要你重置，一眨眼的功夫就能跨越那个无穷。你想知道那多重飞升层是什么意思……“维度偏移”是获得带来快乐的新事物和新方法。“维度提升”是升级这些事物和方法。例如，买一辆新车是“维度偏移”，而把车折价换新车则是“维度提升”。“永恒”是重大悲剧，比如挚爱离世。那种失落把你直接带回起点，看似毫无回归的希望。但随着时间的推移，你会成长得比以前更强大、更快乐。“维度献祭”是搬离。你必须放弃很多曾经让你快乐的事物，但搬到新地方会有新的机会。而那个新机会带给你的快乐比以往任何时候都多。“刻速度”是让你快乐的难易程度，而“时间维度”让快乐变得更容易。反物质维度是一个隐喻，讲述一个抑郁的人成功战胜疾病的故事。`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "a114",
-    text:
-      `(Make me sleep) Put me to sleep inside. (I can't sleep) Put me to sleep inside. (Leave me) Whisper my name
-      and give me to the dark. (Make me sleep) Bid my milk to stay. (I can't fall asleep) Before I become done.
-      (Leave me) Leave me to the nothing I've become.`
+    text: `（让我入睡）让我在里面入睡。（我睡不着）让我在里面入睡。（离开我）低语我的名字，把我交给黑暗。（让我入睡）让我的牛奶留下。（我无法入睡）在我结束之前。（离开我）把我留给我已变成的虚无。`
   },
   {
     id: "a115",
-    text:
-      `A preview of the next update - loot boxes! Feel a sense of pride and progression as you open cosmic,
-      galactic, and universal lootboxes for chances at rare skins, unique challenges with uniquer rewards,
-      time skips and even new dimensions!`
+    text: `下一更新的预览：开箱！当你开启宇宙级、星系级和世界级开箱，有机会获得稀有皮肤、奖励更独特的独特挑战、时间跳过甚至新维度时，感受自豪与成长！`
   },
   {
     id: "a116",
-    text: "The intent of dimensions is to give a sense of pride and accomplishment."
+    text: "维度的意图是带来自豪感与成就感。"
   },
   {
     id: "a117",
-    text: "Refreshing cures cancer."
+    text: "刷新可以治愈癌症。"
   },
   {
     id: "a118",
-    text: "I have a 9th, I have a dimension... UHH... IT DOESN'T EXIST!"
+    text: "我有一个第 9 维，我有一个维度……呃……它不存在！"
   },
   {
     id: "a119",
-    text:
-      `Since when did we start reporting stuff like this? Half of it isn't even proper news, it's just jokes and
-      meta-references, it doesn't even make sens-HAHAHA DISREGARD THAT I SUCK CO-`
+    text: `我们什么时候开始报道这种东西了？其中一半甚至不是正经新闻，只是笑话和元梗，它甚至说不通-哈哈哈哈忽略那话我糟透了-`
   },
   {
     id: "a120",
-    text: "The year is 1944, Hevipelle can't release updates for AD because he doesn't exist."
+    text: "现在是 1944 年，Hevipelle 无法为 AD 发布更新，因为他并不存在。"
   },
   {
     id: "a121",
-    text: `"THAT DIMENSION DOESN'T EXIST" -GhostBot`
+    text: `“那个维度不存在” -GhostBot`
   },
   {
     id: "a122",
-    text:
-      `Most things you know as nuts are actually Drupe seeds or Legumes. Hevipelle on the other hand is quite crazy
-      and can thus be considered a dry uncompartmented fruit.`
+    text: `你认识的大多数坚果实际上是核果种子或豆类。另一方面，Hevipelle 相当疯狂，因此可以被视为一种干燥的无分隔果实。`
   },
   {
     id: "a123",
-    text: "Finland declares that it's starting to import Design."
+    text: "芬兰宣布开始进口“设计”。"
   },
   {
     id: "a124",
-    text: "All this importing is making me Confused."
+    text: "这些进口让我感到困惑。"
   },
   {
     id: "a125",
-    text:
-      `Only today you can call 1-800-ANTIMATTER and get a FREE Infinity Dimension! The package also comes with a
-      COMPLETELY FREE SHIPPING and a FREE HIGH DEFINITION ANTI-V!!! Only today for the low price of 42! Estimated
-      delivery time - 5 hours.`,
+    text: `仅在今天，你可以拨打 1-800-ANTIMATTER，免费获得一个无限维度！包裹还附带完全免费的配送和一个免费高清反 V！仅限今天，只要 42 美元！预计送达时间：5 小时。`,
     isAdvertising: true
   },
   {
     id: "a126",
-    text: "1e420 blaze it."
+    text: "1e420 燃起来。"
   },
   {
     id: "a127",
-    text: "This game doesn't have any bugs, you're just doing it wrong."
+    text: "这款游戏没有任何 bug，只是你玩得不对。"
   },
   {
     id: "a128",
@@ -689,52 +610,39 @@ export const news = [
   },
   {
     id: "a130",
-    text: "Click this to unlock that one secret achievement.",
+    text: "点击这里解锁那个隐藏成就。",
     // This next line is needed for this news ticker to unlock
     // the secret achievement.
     onClick: () => undefined
   },
   {
     id: "a131",
-    text:
-      `Warning - We have just been informed that there is a chance of infection with a mind-virus of the Basilisk
-      type, similar to the infamous winking parrot. This particular example is known as 'Fractal Disease Type III'.
-      This is believed to cause a 'crashing' of the mind, similar to a computer crash, due to the mathematical
-      complexity of the image causing mathematical ideas that the mind can't comprehend, a Gondelian shock input
-      eventually leading to crashing through Gondelian spoilers. All who have researched it have eventually died
-      the same way, so it is impossible to tell exactly, but this is the common belief. Regardless, with the
-      introduction of 'design' mode, as well as reports of it's spontaneous appearance, sufficient repetition
-      of this mode's appearance may lead to an image forming in the mind similar to 'Fractal Disease Type III'.
-      With this in mind, we have some suggestions if you find yourself plagued with it. First, refresh immediately
-      and see if that fixes the issue. If not, navigate to options, and change the theme from design to literally
-      anything else. And above all else, Godspeed. We can't afford to lose anymore viewers.`
+    text: `警告：我们刚刚获悉，存在感染“蛇怪”型心智病毒的风险，类似于臭名昭著的眨眼鹦鹉。这一特定实例被称为“第三型分形病”。据信它会导致心智“崩溃”，类似于电脑崩溃，因为图像的数学复杂性引发了心智无法理解的数学概念，一种哥德尔式冲击输入，最终通过哥德尔式剧透导致崩溃。所有研究过它的人都以同样的方式死亡，所以无法确切说明，但这是普遍看法。无论如何，随着“设计”模式的出现，以及它自发出现的报告，该模式出现的充分重复可能导致心智中形成类似“第三型分形病”的图像。考虑到这一点，如果你发现自己被它困扰，我们有一些建议。首先，立即刷新，看看能否解决问题。如果不行，请进入选项，把主题从“设计”改为其他任何东西。最重要的是，祝你好运。我们再也承受不起失去更多观众了。`
   },
   {
     id: "a132",
-    text: "If I have bad English, I'll study English until I have good English."
+    text: "如果我的英语很差，我会一直学英语直到英语变好。"
   },
   {
     id: "a133",
-    text:
-      `Someone once told me that antimatter is gonna roll me. I ain't the sharpest atom in the shed. WELL, the
-      tubes start coming and they don't stop coming...`
+    text: `有人曾告诉我反物质要碾压我。我不是棚屋里最锋利的原子。好吧，管道开始涌来，它们不会停止涌来……`
   },
   {
     id: "a134",
-    text: "Because of this game I can now use the word \"infinity\" as a verb.",
+    text: "因为这款游戏，我现在可以把“infinity”当动词用了。",
     get unlocked() { return PlayerProgress.infinityUnlocked(); }
   },
   {
     id: "a135",
-    text: "Ahhh I love the smell of particle annihilation in the morning."
+    text: "啊，我喜欢清晨粒子湮灭的气味。"
   },
   {
     id: "a136",
-    text: "The person who said ghosts don't exist obviously doesn't have a Discord."
+    text: "说鬼魂不存在的人显然没有 Discord。"
   },
   {
     id: "a137",
-    text: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAntimatter Dimensions was made by some dude from Finland"
+    text: "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊反物质维度是一个芬兰人做的"
   },
   {
     id: "a138",
@@ -746,256 +654,186 @@ export const news = [
   },
   {
     id: "a139",
-    text: "We have updated our Antimatter Privacy Policy."
+    text: "我们已更新反物质隐私政策。"
   },
   {
     id: "a140",
-    text:
-      `Attention all Antimatter Dimensions Gamers, Hevipelle is in great danger, and he needs YOUR help to wipe out
-      all the bad memes in #news-ticker-suggestions. To do this, he needs a dozen new dank memes and a couple of
-      discord bots. To help him, all he needs is your Antimatter card number, the three numbers on the back, and
-      the expiration month and date. But you gotta be quick so that Hevipelle can secure the good memes, and
-      achieve the epic meme R O Y A L.`,
+    text: `全体反物质维度玩家注意，Hevipelle 正处于巨大危险之中，他需要你的帮助来清除 #news-ticker-suggestions 里的所有烂梗。为此，他需要一打新的阴湿梗和几个 Discord 机器人。要帮助他，他只需要你的反物质卡号、卡背面的三位数以及有效期月份和日期。但你得快，这样 Hevipelle 才能保住好梗，达成史诗级梗王 R O Y A L。`,
     isAdvertising: true
   },
   {
     id: "a141",
-    text:
-      `If each Trimp was a plank volume, and each piece of resource was a plank volume, how many universes would
-      you fill up before you realized you were playing the wrong game?`
+    text: `如果每只 Trimp 是一块木板体积，每份资源也是一块木板体积，你要填满多少个宇宙，才会意识到你玩错了游戏？`
   },
   {
     id: "a142",
-    text: "Actually, that last one was incorrect."
+    text: "实际上，上一条消息是错误的。"
   },
   {
     id: "a143",
-    text: "If you're reading this, you can read."
+    text: "如果你能看到这条消息，说明你识字。"
   },
   {
     id: "a144",
-    text: "<span style='color: #7289da; background: rgba(250,166,26,0.2); cursor: text;'>@everyone</span>"
+    text: "<span style='color: #7289da; background: rgba(250,166,26,0.2); cursor: text;'>@所有人</span>"
   },
   {
     id: "a145",
-    text:
-      `The game "Matter Dimensions" by Lghtellep has just reached -1,000,000 plays on the gaming website Etagergnok.`
+    text: `Lghtellep 制作的游戏“物质维度”刚刚在游戏网站 Etagergnok 上达到了 -1,000,000 次游玩。`
   },
   {
     id: "a146",
-    text:
-      `How many licks does it take to get to the center of an antimatter tootsie pop? A whole lot, because unless
-      you're made out of antimatter too, you'll explode every time you try to lick it.`
+    text: `舔多少次才能舔到反物质棒棒糖的中心？很多次，因为除非你也是反物质做的，否则每次你舔它都会爆炸。`
   },
   {
     id: "a147",
-    text: "They say if you look in a mirror and ping Hevipelle three times in a row you'll instantly die."
+    text: "据说如果你照镜子并连续三次 @ Hevipelle，你会立刻死亡。"
   },
   {
     id: "a148",
-    text: "The next update is now only 300 minutes away."
+    text: "下一个更新现在只剩 300 分钟了。"
   },
   {
     id: "a149",
-    text: "🤔"
+    text: "思考中……"
   },
   {
     id: "a150",
-    text: "Game is Dead 1/5 the moderation is terrible."
+    text: "游戏已死 1/5 管理糟糕透顶。"
   },
   {
     id: "a151",
-    text: "This message will never appear on the news ticker, isn't that cool?"
+    text: "这条消息永远不会出现在新闻滚动条上，是不是很酷？"
   },
   {
     id: "a152",
-    text:
-      `The first dimension produces antimatter, the second dimension produces the first dimension, the third
-      dimension produces the second dimension, the fourth dimension produces the third dimension. Nobody has
-      ever unlocked the 5th, because that would take more than a minute of gameplay.`
+    text: `第一维度产生反物质，第二维度产生第一维度，第三维度产生第二维度，第四维度产生第三维度。从来没有人解锁过第五维度，因为那需要超过一分钟的游戏时间。`
   },
   {
     id: "a153",
-    text: "My AD-blocker won't let me play."
+    text: "我的广告拦截器不让我玩。"
   },
   {
     id: "a154",
-    text: "You lost the game."
+    text: "你输了这场游戏。"
   },
   {
     id: "a155",
-    text: "Did you know that 75% of all statistics are made up on the spot?"
+    text: "你知道吗，75% 的统计数据都是现场编造的？"
   },
   {
     id: "a156",
-    text:
-      `If you're using so many logs in a notation name, why not just call it tree notation?
-      They're literally made of logs!`
+    text: `如果你的记数法名字里用了这么多 log，为什么不直接叫它树记数法？它们真的是用 log 做的！`
   },
   {
     id: "a157",
-    text:
-      `.tuo ti gnitset fo ssecorp eht ni yltnerruc m'I dna ,rettamitna otni
-      rettam trevnoc ot yaw a tuo derugif evah stsitneicS`
+    text: `科学家们想出了把物质转化为反物质的方法，而我目前正在测试它的过程中。`
   },
   {
     id: "a158",
-    text:
-      `If Gaben can't count to three, and Hevipelle can't count to nine, will there be some other game developer
-      in the future that can't count to 27?`
+    text: `如果 Gaben 数不到三，而 Hevipelle 数不到九，未来会不会有其他游戏开发者数不到 27？`
   },
   {
     id: "a159",
-    text:
-      `What does it mean when you "bank" Infinities? Is there a bank somewhere that you just deposit these
-      infinities? Does having a lot of banked Infinities improve your credit score? Do you get a credit card?`,
+    text: `当你“存储”无限时意味着什么？是不是某个地方有一家银行，你只需把这些无限存进去？存储大量无限会提高你的信用评分吗？你会得到信用卡吗？`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "a160",
-    text: `Turns out all our news is being stolen and broadcast to a game called "Antimatter Dimensions", damn Fins.`
+    text: `原来我们所有的新闻都被偷走，播送到了一个叫“反物质维度”的游戏中，该死的芬兰人。`
   },
   {
     id: "a161",
-    text: "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Oh sorry, wrong text field."
+    text: "嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯哦抱歉，输错文本框了。"
   },
   {
     id: "a162",
-    text: `"Python's not the best language, Finnish is." - Hevipelle`
+    text: `“Python 不是最好的语言，芬兰语才是。” - Hevipelle`
   },
   {
     id: "a163",
-    text:
-      `Some say that most of these news are bad memes. Some say that they're good memes.
-      This one? Well it's just meta news.`
+    text: `有人说这些新闻大多是烂梗。有人说它们是好梗。这一条？好吧，它只是元新闻。`
   },
   {
     id: "a164",
-    text: "Look mom, I'm on the news!"
+    text: "妈妈快看，我上新闻了！"
   },
   {
     id: "a165",
-    text: "<span style='font-size: 0.2rem'>Shush, I'm trying to be sneaky here.</span>"
+    text: "<span style='font-size: 0.2rem'>嘘，我在这里想偷偷摸摸的。</span>"
   },
   {
     id: "a166",
-    text:
-      `<span style='animation: a-game-header__antimatter--glow 2s infinite'>
-      PLEASE HELP, I'VE CONSUMED TWICE MY DAILY DOSE OF ANTIMATTER!</span>`,
+    text: `<span style='animation: a-game-header__antimatter--glow 2s infinite'>救命，我摄入了两倍于每日剂量的反物质！</span>`,
   },
   {
     id: "a167",
-    text:
-      `Oh, I appear to have run out of <span style='animation: a-existence-glow 3s
-      infinite; font-size: 1.8rem; color: white; line-height: 0;'>Existence</span>.`,
+    text: `哦，我似乎耗尽了<span style='animation: a-existence-glow 3s infinite; font-size: 1.8rem; color: white; line-height: 0;'>存在</span>。`,
   },
   {
     id: "a168",
-    text:
-      "I mean, we may never run out of news articles, but we sure will run out of good ones. Oh wait, we already did."
+    text: "我的意思是，我们可能永远不会用完新闻文章，但我们肯定会用完好文章。哦等等，我们早就用完了。"
   },
   {
     id: "a169",
-    text: "TODO: John, please remove this news message before we release the Reality update to the public."
+    text: "待办：John，请在我们向公众发布现实更新之前删除这条新闻。"
   },
   {
     id: "a170",
-    text: "<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>This link is not a rick roll.</a>"
+    text: "<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>这个链接不是瑞克摇。</a>"
   },
   {
     id: "a171",
-    text: "<a href='https://www.youtube.com/watch?v=P945A5Tndp8' target='_blank'>This link is not a rick roll.</a>"
+    text: "<a href='https://www.youtube.com/watch?v=P945A5Tndp8' target='_blank'>这个链接不是瑞克摇。</a>"
   },
   {
     id: "a172",
-    text:
-      `If you notice any issues with a news ticker message, please report them on the
-      <a href='https://discord.gg/ST9NaXa' target='_blank'>Discord</a> by clicking that link right there.`
+    text: `如果你发现新闻滚动条消息有任何问题，请点击那个链接在<a href='https://discord.gg/ST9NaXa' target='_blank'>Discord</a>上报告。`
   },
   {
     id: "a173",
-    text:
-      `<span style='animation: a-game-header__antimatter--glow 3s infinite'>This
-      text is made of antimatter. Do not touch or else the universe will collapse.</span>`,
+    text: `<span style='animation: a-game-header__antimatter--glow 3s infinite'>这段文字由反物质构成。不要触碰，否则宇宙会坍塌。</span>`,
     onClick: () => bigCrunchAnimation(),
   },
   {
     id: "a174",
-    text:
-      `<span style='font-family: runescape; color: yellow; text-shadow: 0.1rem 0.1rem black; letter-spacing: 0.1rem;
-      font-size: 2rem; line-height: 0; animation: a-text-flash 1s steps(1, end) infinite;'
-      >FREE RUNE ARMOR TRIMMING</span>`,
+    text: `<span style='font-family: runescape; color: yellow; text-shadow: 0.1rem 0.1rem black; letter-spacing: 0.1rem; font-size: 2rem; line-height: 0; animation: a-text-flash 1s steps(1, end) infinite;'>免费符文护甲打磨</span>`,
   },
   {
     id: "a175",
-    text:
-      `Numbers glow bright on the monitor, not a proton to be seen... a kingdom of antimatter, and it looks like
-      I'm the queen. With dimboosts powering up this ever rising tide -- can't stop clicking, heaven knows I've
-      tried. Do not give in, push for that galaxy, buy 10, buy max, just mash down on that key, sacrifice dim 8
-      and watch it grow.... and overflow! Let it grow, let it grow, can't hold it back any more... Let it grow,
-      let it grow, can't fit into 8 bytes any more. I don't care if it takes all day -- big crunch is just the
-      start anyway.`
+    text: `数字在屏幕上闪耀，看不见一个质子……一个反物质王国，而我仿佛是女王。维度提升为这股不断上涨的浪潮供能……无法停止点击，天知道我已试过。不要屈服，向那个星系推进，买 10，买最大，疯狂敲击那个按键，献祭第 8 维，看着它增长……然后溢出！让它增长，让它增长，再也无法抑制……让它增长，让它增长，8 个字节再也装不下。我不在乎是否要花一整天……大挤压只是开始而已。`
   },
   {
     id: "a176",
-    text: "I've been using emoji notation so long that I can actually read it now, please send help."
+    text: "我用表情符号记数法用了太久，现在已经能真的读懂它了，请来救我。"
   },
   {
     id: "a177",
-    text:
-      `Once you have <span style='color: black; background: black;'>REDACTED</span> <span style='color: black;
-      background: black;'>REDACTED</span>, you can unlock <span style='color: black; background: black;'>
-      REDACTED</span>. Every <span style='color: black; background: black;'>REDACTED</span>, for each <span
-      style='color: black; background: black;'>REDACTED</span>, there is a <span style='color: black; background:
-      black;'>REDACTED</span> for it to <span style='color: black; background: black;'>REDACTED</span>. You can
-      boost the <span style='color: black; background: black;'>REDACTED</span> and <span style='color: black;
-      background: black;'>REDACTED</span> by spending some <span style='color: black; background: black;'>REDACTED
-      </span>. Also, there is another upgrade that allow you to get <span style='color: black; background: black;'>
-      REDACTED</span> <span style='color: black; background: black;'>REDACTED</span>. The way <span style='color:
-      black; background: black;'>REDACTED</span> <span style='color: black; background: black;'>REDACTED</span>
-      work is that when you reach <span style='color: black; background: black;'>REDACTED</span> <span style=
-      'color: black; background: black;'>REDACTED</span>, you can <span style='color: black; background: black;'>
-      REDACTED</span> the amount of <span style='color: black; background: black;'>REDACTED</span> in exchange for
-      a <span style='color: black; background: black;'>REDACTED</span> <span style='color: black; background:
-      black;'>REDACTED</span>. These work just like <span style='color: black; background: black;'>REDACTED</span>,
-      improving <span style='color: black; background: black;'>REDACTED</span>.`
+    text: `一旦你<span style='color: black; background: black;'>已编辑</span><span style='color: black; background: black;'>已编辑</span>，你就可以解锁<span style='color: black; background: black;'>已编辑</span>。每一个<span style='color: black; background: black;'>已编辑</span>，对于每个<span style='color: black; background: black;'>已编辑</span>，都有一个<span style='color: black; background: black;'>已编辑</span>可以<span style='color: black; background: black;'>已编辑</span>。你可以通过花费一些<span style='color: black; background: black;'>已编辑</span>来提升<span style='color: black; background: black;'>已编辑</span>和<span style='color: black; background: black;'>已编辑</span>。此外，还有另一个升级可以让你获得<span style='color: black; background: black;'>已编辑</span><span style='color: black; background: black;'>已编辑</span>。<span style='color: black; background: black;'>已编辑</span><span style='color: black; background: black;'>已编辑</span>的运作方式是，当你达到<span style='color: black; background: black;'>已编辑</span><span style='color: black; background: black;'>已编辑</span>时，你可以用<span style='color: black; background: black;'>已编辑</span><span style='color: black; background: black;'>已编辑</span>来换取<span style='color: black; background: black;'>已编辑</span>的数量。它们就像<span style='color: black; background: black;'>已编辑</span>一样运作，提升<span style='color: black; background: black;'>已编辑</span>。`
   },
   {
     id: "a178",
-    text:
-      `WARNING: Use of Antimatter Dimensions may result in Tuberculosis, HIV/AIDS, sudden belief that the 9th
-      dimension is real, spontaneous implosion, Polio, Measles, existential dread, incurable insanity or <span
-      style='color: black; background: black;'>REDACTED</span>. Please contact your insurance to see if you are
-      covered. By continuing you absolve Antimatter Dimensions of blame should any of the above mentioned, or those
-      that have not been mentioned yet, occur to you. Antimatter Dimensions reserves the right to alter this at any
-      time, with or without warning.`
+    text: `警告：使用反物质维度可能导致肺结核、艾滋病、突然相信第九维度真实存在、自发内爆、小儿麻痹症、麻疹、存在主义恐惧、无法治愈的精神错乱或<span style='color: black; background: black;'>已编辑</span>。请联系你的保险公司，确认你是否在承保范围内。如果上述或尚未提及的任何情况发生在你身上，继续使用即表示你免除反物质维度的责任。反物质维度保留随时更改此条款的权利，无论是否提前通知。`
   },
   {
     id: "a179",
-    text: "Robot: Activated. Sapience: Achieved. World: Ready to be conquered. Begin: Procrastination."
+    text: "机器人：已激活。智慧：已获得。世界：已准备好被征服。开始：拖延。"
   },
   {
     id: "a180",
-    text:
-      `We ran out of news. Luckily we have some backup news that we can run for 5 hours, which will earn us enough
-      for us to buy a new set of '5-hour high-quality news'. Sorry for the inconvenience.`
+    text: `我们的新闻用完了。幸运的是，我们还有一些备用新闻可以播出 5 小时，这能让我们赚到足够的钱来买一套新的“5 小时高质量新闻”。对于造成的不便，我们深表歉意。`
   },
   {
     id: "a181",
-    text: "This news broadcast is powered by break_news.js."
+    text: "本次新闻广播由 break_news.js 提供支持。"
   },
   {
     id: "a182",
-    text:
-      `With the final update, Antimatter Dimensions has been finished. Thank you for playing. However, in the very
-      near future, ANTIMATTER DIMENSIONS will be released. And before you ask, it's not a sequel, it's a reboot.
-      Look forward to it in 5 hours!`
+    text: `随着最终更新，反物质维度已经完成。感谢你的游玩。然而，在不久的将来，反物质维度将被重新发布。在你问之前，先说明：这不是续作，而是重启。敬请期待 5 小时后的它！`
   },
   {
     id: "a183",
-    text:
-      `In other unrelated news, we're getting reports that approximately 1.79 people are angry that lightning
-      is striking their Christmas tree at night.`
+    text: `在另一条毫不相关的新闻中，我们收到报告称，大约有 1.79 人对闪电在夜间击中他们的圣诞树感到愤怒。`
   },
   {
     id: "a184",
@@ -1011,13 +849,7 @@ export const news = [
   },
   {
     id: "a185",
-    text:
-      `We aren't back with your favorite segment, "Tweets From The Fans"! Today we haven't got a message from
-      @mattertruthwakeup saying "How can you people broadcast your ridiculous LIES and still sleep at night.
-      You claim absurd things, like "antimatter is real" and "antimatter people aren't people too", this
-      antimatter propaganda HAS TO STOP NOW!!! You people need to WAKE UP and realize that you are HURTING ALL
-      MATTER with your crazy talk!!". What a nice positive sentiment from that lovely fellow. This hasn't been
-      John from the ANN, and I won't be seeing you tomorrow!`
+    text: `我们不会回到你最喜欢的栏目“粉丝推文”！今天我们还没有收到 @mattertruthwakeup 的消息：“你们这些人怎么能在广播你们荒谬的谎言之后还能安然入睡。你们声称荒谬的事情，比如‘反物质是真实的’和‘反物质人也是人’，这种反物质宣传必须立刻停止！！！你们需要清醒过来，认识到你们疯狂言论正在伤害所有物质！！”那位可爱的先生真是传递了多么积极的情绪。这里是 ANN 的 John，明天我不会再见到你！`
   },
   {
     id: "a186",
@@ -1029,7 +861,7 @@ export const news = [
   },
   {
     id: "a187",
-    text: "𝓒𝓮𝓬𝓲 𝓷'𝓮𝓼𝓽 𝓹𝓪𝓼 𝓾𝓷 𝓶𝓮𝓼𝓼𝓪𝓰𝓮 𝓭𝓮 𝓷𝓸𝓾𝓿𝓮𝓵𝓵𝓮𝓼 🚬"
+    text: "这不是一条新闻消息。"
   },
   {
     id: "a188",
@@ -1037,17 +869,15 @@ export const news = [
   },
   {
     id: "a189",
-    text:
-      `Behind every man or woman stands, eventually, due to the earth being round, that exact same man or woman,
-      looking over their shoulder, stealing their own ideas.`
+    text: `由于地球是圆的，每个人身后最终都站着同一个人，越过肩膀偷走自己的想法。`
   },
   {
     id: "a190",
-    text: "Shame. Shame. Shame. 🔔"
+    text: "耻辱。耻辱。耻辱。"
   },
   {
     id: "a191",
-    text: "Okay Google, Big Crunch"
+    text: "好的 Google，大挤压"
   },
   {
     id: "a192",
@@ -1058,24 +888,15 @@ export const news = [
   },
   {
     id: "a193",
-    text:
-      `Good morning viewers, this is Josh, and I'm your ANN host for today. Speaking of today, I'm told we've got
-      some really exciting news for you today, so let's just jump right into it. Looks like apparently somebody
-      was <i>not<i> nice today, and got an "Antimatter-storm", whatever that means... Guys is this the right
-      script? This is just nonsensical. It is? Alright... Next up we learn that "Nothing is created, nothing is
-      destroyed."... Okay seriously guys, this is a joke right? This isn't news, these are just random sentences!
-      You all said you'd help me out on my first day here but you're just hazing me! This is <i>not</i> the kind of
-      work environment I want to be in! I quit!`
+    text: `早上好观众们，我是 Josh，今天我是你们的 ANN 主持人。说到今天，我被告知我们今天有一些非常激动人心的新闻，所以让我们直接开始。看起来显然有人今天不乖，遭遇了“反物质风暴”，随便那是什么意思……伙计们，这是正确的稿子吗？这简直毫无意义。是吗？好吧……接下来我们了解到“没有东西被创造，没有东西被毁灭”……好吧说真的，伙计们，这是开玩笑吧？这不是新闻，这些只是随机句子！你们都说会在我第一天上班时帮我，但你们只是在整我！这不是我想要的工作环境！我辞职！`
   },
   {
     id: "a195",
-    text:
-      `Clowns are unique in that there is no such thing as an anti-clown,
-      it's just another clown. Clowns are their own opposite.`
+    text: `小丑的独特之处在于不存在反小丑这种东西，那只是另一个小丑。小丑是它们自己的对立面。`
   },
   {
     id: "a196",
-    text: "Disco Time! (click me!)",
+    text: "迪斯科时间！（点我！）",
     onClick() {
       let random = Math.random();
       // Golden ratio
@@ -1089,92 +910,55 @@ export const news = [
   },
   {
     id: "a197",
-    text: "In order to reach Reality in half an R press, we have to first talk about parallel dimensions."
+    text: "为了在半次按 R 内达到现实，我们必须先谈谈平行维度。"
   },
   {
     id: "a198",
-    text:
-      `Hey there! Just to let you know, there a speck of dust on your screen. Can you help wipe it off?
-      It bothers me when l'm not clean. Thanks a lot!`
+    text: `嘿！提醒你一下，你的屏幕上有一粒灰尘。你能帮忙把它擦掉吗？我不干净的时候会很难受。非常感谢！`
   },
   {
     id: "a199",
-    text: "The real update is the friends we made along the way."
+    text: "真正的更新是我们一路走来结识的朋友。"
   },
   {
     id: "a200",
-    text:
-      `This former message has been revealed to be a duplicate of another message and has thus been removed.
-      We apologize for the inconvenience.`
+    text: `这条消息已被披露为另一条消息的重复内容，因此已被移除。对于造成的不便，我们深表歉意。`
   },
   {
     id: "a201",
-    text: "No wait stop don't click that hide news ticker button!"
+    text: "不，等等，别点那个隐藏新闻滚动条的按钮！"
   },
   {
     id: "a202",
-    text:
-      `This is so sad. Alexa, please play a sad song so I can relate to its emotional mood, as I currently have poor
-      mental health and listen to music like this so I can feel bad about myself. I realize this is unhealthy, but
-      you are a robot incapable of sentient thought, so you're unable to make a choice to avoid contributing to my
-      self destructive behavior, and you'll play a sad song anyway.
-      <i>Now playing "Despacito" by "Luis Fonsi".</i>`
+    text: `这太悲伤了。Alexa，请播放一首悲伤的歌，这样我就能共鸣它的情绪氛围，因为我目前心理健康状况不佳，听这种音乐是为了让自己难过。我意识到这不健康，但你是个没有感知能力的机器人，无法做出选择来避免助长我的自毁行为，所以你反正也会播放悲伤的歌。<i>正在播放“Luis Fonsi”的“Despacito”。</i>`
   },
   {
     id: "a203",
-    text:
-      `3/4 of the news messages are fake and gotten off of the discord server without permission or credit given
-      to the original writer - anonymous discord server member`
+    text: `3/4 的新闻消息是假的，未经许可或署名就从 discord 服务器上拿来的：匿名 discord 服务器成员`
   },
   {
     id: "a204",
-    text: "What kind of tea is hard to swallow? Reali-tea."
+    text: "什么茶最难下咽？现实茶。"
   },
   {
     id: "a205",
-    text: "Shoutouts to Simpleflips."
+    text: "向 Simpleflips 致敬。"
   },
   {
     id: "a206",
-    text:
-      `I visited the discord server of the game to have some friendly chat. At that point I got trolled by
-      the user called Cubic Frog.`
+    text: `我去这个游戏的 discord 服务器友好聊天。那时我被一个叫 Cubic Frog 的用户 troll 了。`
   },
   {
     id: "a207",
-    text:
-      `Hello, this is Josh, with today's forecast for your galaxy. We'll be hitting temperatures in the low
-      e10s today, and by this afternoon, it'll be cloudy with a chance of antimatter.`
+    text: `大家好，我是 Josh，这里是今天的银河天气预报。今天气温将低至 e10 级别，到下午会转多云，并有反物质出现的可能。`
   },
   {
     id: "a208",
-    text:
-      `Hi, I'm Steve, and I'm also Steve. Our greatest responsibility is to serve our antimatter communities.
-      We are extremely proud of the quantity, unbalanced journalism that ANN news produces. But we're
-      concerned about the troubling trend of responsible, two-sided news stories plaguing the antimatter
-      universe. The sharing of unbiased and true news has become all too common on social media. More
-      alarmingly, some media outlets publish these same true stories, stories that aren't just propaganda,
-      without checking government talking points first. Unfortunately, some members of the media use their
-      platforms to push a logically sound opinion and unbiased agenda to diversify 'exactly what antimatter
-      thinks'. This is extremely dangerous to our dictatorship. At ANN it's our responsibility to pursue
-      and report the lies. We understand lies are neither 'left or right' politically. Our commitment to
-      fearmongering slander is the foundation of our credibility, now more than ever. But we are incorporeal
-      8D beings of antimatter, and sometimes our propaganda techniques might fall short. If you believe our
-      coverage is fair please reach out to us by going to ivark.github.io, navigating to the options tab,
-      and clicking on [HARD RESET]. We value your comments. We won't respond back to you because you would've
-      deleted your comment with the hard reset button before you get it. We work very hard to seek the lies
-      and strive to be unfair, lopsided and opinionated... We consider it our honor, our privilege, to
-      irresponsibly deliver the news every nanosecond. Thank you for watching and we appreciate your
-      feedback. All matter should be-`
+    text: `嗨，我是 Steve，我也是 Steve。我们最大的责任是为我们的反物质社区服务。我们为 ANN 新闻所产出的这种数量庞大且偏颇失衡的新闻深感自豪。但我们担心的是，那些负责任的、两面兼顾的新闻报道正在反物质宇宙中泛滥成灾。传播不偏不倚的真实新闻在社交媒体上已经变得太过常见。更令人担忧的是，一些媒体机构在未经政府口径审查的情况下，就发布了这些同样的真实报道，这些不只是宣传的故事。不幸的是，一些媒体人利用他们的平台推行逻辑严谨的观点和不偏不倚的议程，以使“反物质的所思所想”更加多元。这对我们的独裁统治极其危险。在 ANN，追查并报道谎言是我们的责任。我们明白谎言在政治上既不“左”也不“右”。我们对恐吓诽谤的执着正是我们公信力的基石，如今更是如此。但我们是无形无体的 8D 反物质存在，有时我们的宣传技巧可能力有不逮。如果你认为我们的报道公平，请前往 ivark.github.io，进入选项标签页，点击[硬重置]。我们重视你的意见。我们不会回复你，因为在你收到回复之前，你早就用硬重置按钮删掉了自己的评论。我们非常努力地寻找谎言，力求不公、偏颇、固执己见……我们视之为荣幸与特权，每纳秒都不负责任地播报新闻。感谢收看，感谢你的反馈。所有物质都该-`
   },
   {
     id: "a209",
-    text:
-      `Have you ever heard the tale of the Antiwriter? I thought not. It's not a story the news tickers would tell
-      you. It's an Unhevi legend. Rumor has it that the Antiwriter contributes to the News every 5 hours with an
-      incredibly well written report, only to vanish again. Others think he doesn't exist at all, and is a
-      lie fabricated by Hevipelle to spread his propaganda. Perhaps he is real, and just a normal person like the
-      rest of us. In any case, we will probably never find out the identity of this mysterious poet.`
+    text: `你听说过反写者的传说吗？我想没有。这不是新闻滚动条会讲的故事。这是一个 Unhevi 的传说。据传，反写者每隔 5 小时就会为新闻贡献一篇文笔极佳的报道，然后再次消失。也有人认为他根本不存在，只是 Hevipelle 为了散布宣传而编造的谎言。也许他真实存在，和我们其他人一样只是个普通人。无论如何，我们大概永远不会知道这位神秘诗人的身份。`
   },
   {
     id: "a210",
@@ -1209,104 +993,77 @@ export const news = [
   },
   {
     id: "a212",
-    text:
-      `Hey, you. You're finally awake. You were trying to get the 9th dimension, right? Walked right into that
-      Infinity, same as us, and that thief over there.`
+    text: `嘿，你。你终于醒了。你当时想拿到第 9 维度，对吧？和我们还有那边那个小偷一样，径直走进了那个无穷。`
   },
   {
     id: "a213",
-    text:
-    `Antimatter giraffes have incredibly fast reaction times. This explains why they've won 90% of
-    all gaming championships since anti-giraffe friendly controllers were invented.`
+    text: `反物质长颈鹿拥有极快的反应速度。这解释了为什么自从发明了反长颈鹿友好手柄以来，它们赢得了 90% 的电竞冠军。`
   },
   {
     id: "a214",
-    text: "Barack Obamantimatter"
+    text: "巴拉克·反巴马"
   },
   {
     id: "a215",
-    text:
-      `Local old man replaced lawn with antimatter grass to keep kids away. However,
-      when he attempted to water it, there were no survivors.`
+    text: `本地老人把草坪换成了反物质草皮，用来赶走孩子。然而，当他试图浇水时，无人生还。`
   },
   {
     id: "a216",
-    text: "Testing... testing... testing... Oh goddamn I was in prod again.",
+    text: "测试……测试……测试……哦该死，我又在生产环境里了。",
     isAdvertising: true
   },
   {
     id: "a217",
-    text: "The virgin matter vs the chad antimatter."
+    text: "萌新物质 vs 大神反物质。"
   },
   {
     id: "a218",
-    text:
-      `After numerous catastrophic annihilation events, antimatter is
-      now classified as a controlled substance by the ADEA.`
+    text: `在多次灾难性的湮灭事件后，反物质现已被 ADEA 列为管制物质。`
   },
   {
     id: "a219",
-    text:
-      `Hello, Vsauce, Michael here. We all know that the 9th dimension doesn't exist, but what is 9? You know it's
-      the number after 8... right? What if... there's a number in between? And no I'm not talking about numbers
-      like 8.5 or 8.76, I'm talking about an integer between 8 and 9. Now all this may sound crazy to you, and it
-      kinda is, but what if, we've missed a number? We've all been taught that 2 comes after 1 and 3 comes after
-      2, but what if the number that comes after 8 isn't 9? After years of research and experimentation, we've
-      finally found the number. It is dangerous, even knowing its existence will let it consume your mind, but
-      fortunately, we've developed a reverse-containment cell, meaning it's everywhere except here. Our brain has
-      a protection system, that specifically filters out any information regarding this number, that's how we've
-      been able to survive for this long, and why others like us went extinct in the past, but the number has been
-      getting stronger, slowly getting closer to breaking our protection. We've temporarily stopped the number from
-      slipping into our memory by using the world-wide memory manipulator located in this room to keep making
-      everyone think that 9 comes after 8 with a side effect that makes everyone think that 9 is evil, but this
-      won't last forever, as the number will keep getting stronger, and will eventually overpower the memory
-      manipulator. That's why you're here, you're one of the most intelligent people here, and we hope you can
-      help us on our journey to defeat that number. Our enemy is not 9, it is the hidden number between 8 and 9,
-      the missing number.`
+    text: `你好，Vsauce，我是 Michael。我们都知道第 9 维度不存在，但 9 是什么？你知道它是 8 后面的数字……对吧？万一……它们之间还有一个数字呢？我不是在说 8.5 或 8.76 这样的数字，我说的是 8 和 9 之间的整数。现在这一切对你来说可能听起来很疯狂，也确实有点疯狂，但万一我们漏掉了一个数字呢？我们都被教导 2 在 1 后面，3 在 2 后面，但万一 8 后面的数字不是 9 呢？经过多年的研究和实验，我们终于找到了这个数字。它很危险，哪怕只是知道它的存在，也会让它吞噬你的心智，但幸运的是，我们开发了一种反向收容室，意味着它无处不在，唯独不在这里。我们的大脑有一套保护系统，专门过滤任何关于这个数字的信息，这就是我们能存活这么久的原因，也是像我们这样的存在过去灭绝的原因，但这个数字越来越强大，慢慢接近突破我们的保护。我们暂时通过位于这个房间的全球记忆操纵器阻止了这个数字渗入我们的记忆，让所有人都认为 9 在 8 后面，副作用是让所有人都认为 9 是邪恶的，但这不会永远持续下去，因为这个数字会越来越强，最终压倒记忆操纵器。这就是你在这里的原因，你是这里最聪明的人之一，我们希望你能帮助我们踏上击败那个数字的旅程。我们的敌人不是 9，而是隐藏在 8 和 9 之间的那个数字，那个缺失的数字。`
   },
   {
     id: "a220",
-    text: "antioop-"
+    text: "反哎呀-"
   },
   {
     id: "a221",
-    text: "Error 404: News message not found."
+    text: "错误 404：新闻消息未找到。"
   },
   {
     id: "a222",
-    text: "I love you 1e3000."
+    text: "我爱你 1e3000。"
   },
   {
     id: "a223",
-    text: "If you find your infinity lasting longer than 5 hours please contact a medical professional.",
+    text: "如果你发现自己的无限持续时间超过 5 小时，请联系医疗专业人士。",
     get unlocked() { return PlayerProgress.infinityUnlocked(); }
   },
   {
     id: "a224",
-    text:
-      `We've just gotten reports about an inaccuracy in the previous news message. We at ANN would like to formally
-      retract the story, and apologize to our loyal viewers.`
+    text: `我们刚刚收到关于上一条新闻消息不准确之处的报告。ANN 特此正式撤回该报道，并向我们忠实的观众致歉。`
   },
   {
     id: "a225",
-    text: "If you see this, you saw this."
+    text: "如果你看到这条消息，你看到了这条消息。"
   },
   {
     id: "a226",
-    text: "Good mornging. That was not a typo. The inventors of English made the typo."
+    text: "早上毫。这不是打字错误。是英语的发明者们打错了字。"
   },
   {
     id: "a227",
-    text: "What if... we touched... antimatter? Haha just kidding... Unless..?"
+    text: "万一……我们碰到了……反物质？哈哈开玩笑……除非……？"
   },
   {
     id: "a228",
-    text:
-      "Roses are blue, violets are red, those statements weren't peer reviewed, and my name is Fred. Nice to meet you!"
+    text: "玫瑰是蓝色的，紫罗兰是红色的，这些说法未经同行评审，我叫 Fred。很高兴认识你！"
   },
   {
     id: "a229",
-    text: "🚗                         🚓 🚓"
+    text: "赛车 …… 警车 警车"
   },
   {
     id: "a230",
@@ -1325,7 +1082,7 @@ export const news = [
   },
   {
     id: "a232",
-    text: "getNextNewsMessage();"
+    text: "获取下一条新闻消息();"
   },
   {
     id: "a233",
@@ -1336,19 +1093,19 @@ export const news = [
   },
   {
     id: "a234",
-    text: "Antimatter will never threaten to stab you. And, in fact, cannot speak."
+    text: "反物质永远不会威胁要捅你。事实上，它连话都不会说。"
   },
   {
     id: "a235",
-    text: "New antimatter on pizza recipe sparks outrage among traditional Italian chefs."
+    text: "在披萨上加反物质的新配方引发了传统意大利厨师们的愤怒。"
   },
   {
     id: "a236",
-    text: "We'll be right back after this short word from our sponsors."
+    text: "广告之后马上回来。"
   },
   {
     id: "a237",
-    text: "Want to trade candy? I'll give you my Big Crunch for two Milky Ways."
+    text: "想交换糖果吗？我用我的大挤压换你两颗银河。"
   },
   {
     id: "a238",
@@ -1360,32 +1117,27 @@ export const news = [
   },
   {
     id: "a239",
-    text: "Oh gosh, would you look at the time! Only left 5 hours until the update!"
+    text: "哦天哪，看看时间！离更新只剩 5 小时了！"
   },
   {
     id: "a240",
-    text: "Hi, my name is Max, and I would like it if people stopped trying to buy me."
+    text: "嗨，我叫 Max，我希望人们别再试图买下我。"
   },
   {
     id: "a241",
-    text:
-      `Breaking news: the government is reporting the first ever official alien contact. These aliens appear to be
-      cats, but with highly sophisticated technology. They're capable of space travel and colonization to a far
-      greater degree than us, and they even have their own cryptocurrency, called "Blackcoin".`
+    text: `突发新闻：政府报告了史上第一次正式外星人接触。这些外星人似乎是猫，但拥有高度发达的科技。它们的太空旅行和殖民能力远超我们，甚至还有自己的加密货币，叫“黑币”。`
   },
   {
     id: "a242",
-    text:
-      `"You can come up with the stupidest quote, credit it to some famous
-      person, and people will believe it." -Barack Obama`
+    text: `“你可以编出最愚蠢的名言，把它安到某个名人头上，人们就会相信。” -巴拉克·奥巴马`
   },
   {
     id: "a243",
-    text: `"I'm having difficulty breathing. Please move your finger." -M`
+    text: `“我呼吸困难。请把你的手指移开。” -M`
   },
   {
     id: "a244",
-    text: "Don't mind me, just passing through."
+    text: "别管我，我只是路过。"
   },
   {
     id: "a245",
@@ -1451,7 +1203,7 @@ export const news = [
   },
   {
     id: "a246",
-    text: "<span style='animation: a-fade-out 3s infinite'>OoooOOOOooOOO, it's me, the infamous news ghost!</span>",
+    text: "<span style='animation: a-fade-out 3s infinite'>呜呜呜呜呜，是我，臭名昭著的新闻幽灵！</span>",
   },
   (function() {
     let isFlipped = false;
@@ -1477,13 +1229,11 @@ export const news = [
   }()),
   {
     id: "a248",
-    text:
-      `To be fair, you have to have a very high IQ to understand the news ticker. The humor is extremely subtle,
-      and without a solid grasp of quantum physics, most of the jokes will go over a typical player's head.`
+    text: `说句公道话，你必须拥有非常高的智商才能看懂新闻滚动条。其中的幽默极其微妙，没有扎实的量子物理功底，大多数笑话都会从普通玩家眼前溜走。`
   },
   {
     id: "a249",
-    text: "This woman got TONS of Dimension Boosts with this 1 WEIRD TRICK! Galaxies HATE her!",
+    text: "这个女人用这 1 个奇怪的技巧获得了海量维度提升！星系们恨死她了！",
     isAdvertising: true
   },
   {
@@ -1491,10 +1241,10 @@ export const news = [
     get text() {
       let scene = "";
       const chasers = [
-        ["🐖", "🐢", "🦆", "🐓", "🐜", "🐕", "🐈"],
-        ["🚶‍", "🏃‍️", "🏇", "🚴‍"],
-        ["🚗", "🚓", "🚕", "🛺", "🚙", "🚌", "🚐", "🚎", "🚑", "🚒", "🚚", "🚛", "🚜"],
-        ["🚁", "🛸"]
+        ["猪", "龟", "鸭", "鸡", "蚁", "狗", "猫"],
+        ["步行者", "跑者", "骑马者", "骑车者"],
+        ["汽车", "警车", "出租车", "出租车", "汽车", "巴士", "厢式车", "电动车", "救护车", "消防车", "卡车", "货车", "拖拉机"],
+        ["直升机", "飞碟"]
       ];
       for (const set of chasers) {
         const chaser = set.randomElement();
@@ -1508,9 +1258,7 @@ export const news = [
   },
   {
     id: "a251",
-    text:
-      `Hey! It's me, you from the future! I came back to give you this warning: Pay VERY close attention to the
-      next news ticker. In my timeline we ignored it, and humanity has regretted it ever since.`
+    text: `嘿！是我，来自未来的你！我回来给你一个警告：非常仔细地看下一条新闻。在我的时间线里我们忽略了它，人类从那以后一直追悔莫及。`
   },
   {
     id: "a252",
@@ -1521,16 +1269,11 @@ export const news = [
   },
   {
     id: "a253",
-    text:
-      `After a surge of complaints from our viewers, we have decided to allow you at home to write your own
-      messages. Give it a try here: <input style='border: none; outline: none; font-family: Typewriter;
-      font-weight: bold; font-size: 1.5rem'></input>. Or don't. That's fine too.`
+    text: `在收到观众们的大量投诉后，我们决定允许你在家里写自己的消息。在这里试试：<input style='border: none; outline: none; font-family: Typewriter; font-weight: bold; font-size: 1.5rem'></input>。或者不写。那也行。`
   },
   {
     id: "a254",
-    text:
-      `Antimatter Dimensions Anonymous has shut down due to the failure of their 12-step program.
-      People would only get to step 8 and then reset.`
+    text: `反物质维度匿名互助会因十二步计划失败而倒闭。人们只会走到第 8 步然后就重置了。`
   },
   {
     id: "a255",
@@ -1540,126 +1283,87 @@ export const news = [
   },
   {
     id: "a256",
-    text: "The 9th dimension doesn't exist because the 7th dimension 8 it."
+    text: "第 9 维度不存在，因为第 7 维度把它 8（吃）了。"
   },
   {
     id: "a257",
-    text:
-      `A the triangular hole in the fabric of reality has caused some letters to
-      no longer exist. Those letters are: j, k, q, u, x, z`
+    text: `现实织物上的一个三角形破洞导致一些字母不再存在。这些字母是：j、k、q、u、x、z。`
   },
   {
     id: "a258",
-    text:
-      `Born too late to explore the world. Born too early to explore the cosmos. But born just in time to
-      grind for a couple hours for the next big crunch.`
+    text: `生得太晚，无法探索世界。生得太早，无法探索宇宙。但恰好赶上花几个小时肝下一次大挤压。`
   },
   {
     id: "a259",
-    text:
-      `Now hold on, I know what you're thinking, "An M press is an M press, you can't say it's only a half!" Well,
-      TJ "Slabdrill" Yoshi, hear me out. An M press actually has three parts to it: when M is pressed, when M is
-      held, and when M is released. Now, usually is the pressing that's useful because that's the only part that
-      matters; however, sometimes it's sufficient to just use the holding part, which also buys dimensions and
-      tickspeed upgrades. And as for the release, well, there are currently no cases where that's useful or
-      important, so don't worry about that part. Now, if we map out the required presses for challenge 2 it would
-      look like this: /¯\\. We merely need to hold (¯) M to reach the first galaxy, we need to press (/) M to
-      finish the challenge, and we need to press M again to start another challenge. So, how many presses is that
-      total? Well, it appears to be three, and if we were doing this Eternity in isolation then yes, it would be
-      three, but in a full-game M Button Challenge run there are other M presses that occur earlier in the run,
-      such as the M press needed for the first Infinity, so if we take that M press into consideration as well,
-      then how many M presses does it take? The naive answer would be four: one to enter the challenge, and the
-      three within the challenge we established earlier; however, we can do better. We can actually do it in
-      three by simply holding out the first M press to be used for the half M press, because the half M press only
-      required M to be held, not actually pressed, so in this fashion, Challenge 2 only adds on an additional two M
-      presses to the run, since the first M press just leeches off the previous M press. So to capture this
-      phenomenon, we call it 2.5 M presses. On a single Eternity basis, you'd round up that up to three, but in
-      a full game run, you'd round it down to two. So, in conclusion, since that first M press counts in some
-      contexts, but adds no additional presses in other contexts, we refer to it as a "Half M Press".`
+    text: `等等，我知道你在想什么：“一次 M 按压就是一次 M 按压，你不能说它只有半次！”TJ “Slabdrill” Yoshi，听我说。一次 M 按压实际上有三个部分：按下 M 时、按住 M 时、松开 M 时。通常有用的是按下部分，因为那是唯一要紧的部分；然而，有时只需使用按住部分就足够了，按住也能购买维度和刻速度升级。至于松开部分，目前没有任何情况下它有用或重要，所以别担心那部分。现在，如果我们把挑战 2 所需的按压画出来，它长这样：/¯\\。我们只需按住（¯）M 就能到达第一个星系，需要按下（/）M 才能完成挑战，还需要再按一次 M 开始下一个挑战。那么总共是几次按压？看起来是三次，如果我们在孤立情况下做这次永恒，那确实是三次，但在全游戏 M 按钮挑战的流程中，更早的时候还有其他 M 按压，比如第一次无限所需的 M 按压，所以如果我们把那一次 M 按压也考虑进去，那么需要多少次 M 按压？天真的答案是四次：一次进入挑战，加上之前确定的挑战内三次；但我们能做得更好。实际上我们可以用三次完成，只需把第一次 M 按压延长，用于那半次 M 按压，因为半次 M 按压只要求按住 M，并不需要真的按下，这样一来，挑战 2 只给流程额外增加了两次 M 按压，因为第一次 M 按压只是蹭了前一次 M 按压。为了描述这种现象，我们称之为 2.5 次 M 按压。以单次永恒计算，你会向上取整为三次，但在全游戏流程中，你会向下取整为两次。总之，由于第一次 M 按压在某些情况下算数，在其他情况下不增加按压次数，我们称之为“半次 M 按压”。`
   },
   {
     id: "a260",
-    text:
-      `It seems that the Replicanti have a very divide-and-conquer method of doing things.
-      Well, everything at this rate.`,
+    text: `看来 Replicanti 非常擅长分而治之。好吧，照这个速度，什么都是。`,
     get unlocked() { return PlayerProgress.eternityUnlocked() || PlayerProgress.replicantiUnlocked(); }
   },
   {
     id: "a261",
-    text:
-      `Antimatter Dimensions is actually a Roguelite game! If you die, in the afterlife you unlock alternative
-      features, like having Space Dimensions instead of Time Dimensions. You can even unlock new characters to
-      play as, including an antimatter clone of yourself!`
+    text: `反物质维度其实是一款肉鸽游戏！如果你死了，你会在来世解锁替代特性，比如用空间维度代替时间维度。你甚至能解锁新角色，包括一个反物质克隆的自己！`
   },
   {
     id: "a262",
-    text: "Vibe check. 🏃‍♀️🏏"
+    text: "气势检查。"
   },
   {
     id: "a263",
-    text: "What are gems for? Gems are for housing. Housing for what you ask? Good question."
+    text: "宝石有什么用？宝石用来建房。你问建什么房？好问题。"
   },
   {
     id: "a264",
-    text: "A new prestige layer has been announced: Maternity. Get ready to have a baby!"
+    text: "新的飞升层已公布：产房层。准备好生孩子吧！"
   },
   {
     id: "a265",
-    text: "YOU MUST CONSTRUCT ADDITIONAL DIMENSIONS."
+    text: "你必须建造更多的维度。"
   },
   {
     id: "a266",
-    text: "Hello, how is your day going?"
+    text: "你好，你今天过得怎么样？"
   },
   {
     id: "a267",
-    text:
-      `I have an ant farm, and I want to make them into the world's smallest soccer team. My Aunt Diana wants to
-      help, and together we gather everyone in the family to plan their season. "How can we make this Ant Team
-      matter?", Di mentions.`
+    text: `我有一个蚂蚁农场，我想把它们训练成世界上最小的足球队。我的姑姑 Diana 想帮忙，我们一起召集全家来规划它们的赛季。“我们怎么才能让这支蚂蚁队重要起来呢？”，Di 提到。`
   },
   {
     id: "a268",
-    text: "👨‍💻Devengers, compile!👩‍💻"
+    text: "Devengers，编译！"
   },
   {
     id: "a269",
     text:
       `There is a traffic jam in Dimenton. If you plan on travelling in the area, leave early. Here's some live
-      footage: 🚗🚕🚛🚙🚗🚚🚕🚕🚌🚛🚚🚙🚒🚛🚗🚙🚓🚗🚚🚛🚒🚌🚐🚚🚐🚛🚚🚓 Yeah, Dale, I'd say it
-      looks pretty bad. And make sure to bring some water and a snack with you, too.`
+      现场画面：汽车、出租车、卡车、汽车、警车、救护车、消防车、巴士，还有更多车辆。是的，Dale，我觉得
+      情况看起来很糟糕。另外记得随身带些水和零食。`
   },
   {
     id: "a270",
-    text:
-      `The Galactic Association of News Writers has filed a class action lawsuit against the developers of the
-      small web game "Antimatter Dimensions" for mass plagiarism.`
+    text: `银河新闻作者协会已对小型网页游戏“反物质维度”的开发者提起集体诉讼，指控其大规模抄袭。`
   },
   {
     id: "a271",
-    text:
-      `<i style='border: 0.1rem solid black; border-radius: 50%; padding: 0.4rem; color: #2196F3; background: white;
-      cursor: pointer;' class='fas fa-volume-up' onClick='(function(){new Audio("./public/audio/news.mp3").play();})();'>
-      </i> This news message is a test of "News 2.0". News 2.0 will feature things like the ability to listen to
-      an audio version of any news message!`
+    text: `<i style='border: 0.1rem solid black; border-radius: 50%; padding: 0.4rem; color: #2196F3; background: white; cursor: pointer;' class='fas fa-volume-up' onClick='(function(){new Audio("./public/audio/news.mp3").play();})();'></i> 这条新闻消息是对“新闻 2.0”的测试。新闻 2.0 将推出诸如收听任何新闻消息音频版本的功能！`
   },
   {
     id: "a272",
-    text: "What's hevier, a pound of bricks, or a pound of antimatter?"
+    text: "一磅砖头和一磅反物质，哪个更重？"
   },
   {
     id: "a273",
-    text: "There are no typos in any of these news messages. If you see a typo, the tpyo must be in your brain."
+    text: "这些新闻消息里没有任何错别字。如果你看到错别字，那错别字一定在你的脑子里。"
   },
   {
     id: "a274",
-    text:
-      `A large number of mathematicans walk into a bar. They each order 10 times as many beers as the previous.
-      The bartender says "My my, that's an order of magnitude!".`
+    text: `一大群数学家走进一家酒吧。他们每个人点的啤酒数量都是前一位的十倍。酒保说：“哎呀哎呀，这真是数量级！”`
   },
   {
     id: "a275",
-    text: "Letter Go Down Idle is the shortest idle game of all time, lasting only 26 seconds."
+    text: "Letter Go Down Idle 是有史以来最短的挂机游戏，只持续 26 秒。"
   },
   {
     id: "a276",
@@ -1667,15 +1371,11 @@ export const news = [
   },
   {
     id: "a277",
-    text:
-      `Inside you there are two wolves. One is made out of matter. The other
-      is made out of antimatter. You are exploding.`
+    text: `你体内有两只狼。一只是物质做的。另一只是反物质做的。你在爆炸。`
   },
   {
     id: "a278",
-    text:
-      `This is just a friendly note to remind you that you've forgotten to do something really important. I don't
-      know what it is, but there is definitely something.`
+    text: `这只是个友好的提醒：你忘了做某件非常重要的事。我不知道是什么事，但肯定有什么事。`
   },
   {
     id: "a279",
@@ -1693,47 +1393,35 @@ export const news = [
   },
   {
     id: "a280",
-    text: "I hate antimatter. It's rough, coarse, irritating, and it gets everywhere."
+    text: "我讨厌反物质。它粗糙、扎手、惹人烦，还无处不在。"
   },
   {
     id: "a281",
-    text: "What if instead of creating antimatter, you're actually just losing matter?"
+    text: "万一你其实不是在创造反物质，而是在失去物质呢？"
   },
   {
     id: "a282",
-    text:
-      `There was a reported sighting of the 9th Dimension, but it has since been
-      debunked as simply being a 6th Dimension from Australia.`
+    text: `曾有报告称目击了第 9 维度，但后来被辟谣，那只是来自澳大利亚的第 6 维度。`
   },
   {
     id: "a283",
-    text:
-      `A strange phenomenon occurs when you attempt to shift to a higher dimension when you are in the 8th
-      dimension. There is no higher dimension, so the universe ejects you back into the 8th dimension with
-      an incredible velocity. This technique, known as a Dimension Boost, is used by starship pilots and
-      antimatter enthusiasts everywhere.`
+    text: `当你身处第 8 维度并尝试升入更高维度时，会发生一种奇怪的现象。那里没有更高的维度，所以宇宙会以惊人的速度把你弹回第 8 维度。这种被称为“维度提升”的技术被星际飞船驾驶员和各地的反物质爱好者广泛使用。`
   },
   {
     id: "a284",
-    text: "Cold fully clothed couples in your area!"
+    text: "你所在地区有瑟瑟发抖、衣着完整的情侣！"
   },
   {
     id: "a285",
-    text:
-      `You are now breathing manually. You've now realized there's no comfortable spot in your mouth for your
-      tongue. You are now manually holding your jaw up. You haven't blinked in a few seconds. You can see a
-      little bit of your nose at all times.`
+    text: `你现在开始手动呼吸了。你现在意识到嘴里没有一个让舌头舒服的位置。你现在在手动托着下巴。你已经好几秒没眨眼了。你随时随地都能看到一点自己的鼻子。`
   },
   {
     id: "a286",
-    text: "Why do they call it oven when you of in the cold food of out hot eat the food?"
+    text: "为什么它叫烤箱（oven），当你把冷食物放进去、热食物拿出来吃？"
   },
   {
     id: "a287",
-    text:
-      `Sequelitis has escalated to the point that some studios are now producing the sequels before the originals.
-      Fans of long series wait, as the numbers count down until they can finally find out what is even going on
-      in the first place.`
+    text: `续作狂热已经严重到一些工作室开始先制作续作再制作原作。长系列作品的粉丝们等待着数字倒计时，直到他们终于能搞清楚故事一开始到底是怎么回事。`
   },
   {
     id: "a288",
@@ -1749,7 +1437,7 @@ export const news = [
   },
   {
     id: "a289",
-    text: "Click here to disassemble the news ticker for a trace amount of paperclips.",
+    text: "点击这里拆解新闻滚动条，获得微量回形针。",
     onClick() {
       player.news.specialTickerData.paperclips++;
       GameOptions.toggleNews();
@@ -1767,27 +1455,25 @@ export const news = [
   },
   {
     id: "a291",
-    text: "Considering Hevipelle's nationality, it's a little ironic that he created a game that you can never Finnish."
+    text: "考虑到 Hevipelle 的国籍，他创作了一款你永远无法“芬兰”（完成）的游戏，这有点讽刺。"
   },
   {
     id: "a292",
-    text:
-      `Fairies are not real. Anti-fairies are also not real. This has only been the case since last week, when the
-      two groups came into contact. The planet they were on, also, unsurprisingly, is no longer real.`
+    text: `仙女并不存在。反仙女也不存在。这种情况是从上周才开始的，当时这两个群体发生了接触。它们所在的星球，毫不意外地，也再不存在了。`
   },
   {
     id: "a293",
     text:
       `<span style='font-family: "Comic Sans MS", cursive, sans-serif; font-size: 1.7rem;'
-      >Hello fellow news messages! 🛹</span>`
+      >你好，各位新闻消息！</span>`
   },
   {
     id: "a294",
-    text: "If you see a news message, and then see it again later, does it become an olds message?"
+    text: "如果你看到一条新闻消息，后来又看到它，它会不会变成一条旧闻消息？"
   },
   {
     id: "a295",
-    text: "👁"
+    text: "眼"
   },
   (function() {
     let wasClicked = false;
@@ -1811,11 +1497,11 @@ export const news = [
   }()),
   {
     id: "a297",
-    text: "I don't think, therefore I'm not."
+    text: "我不思考，因此我不存在。"
   },
   {
     id: "a298",
-    text: "Is it crazy how saying sentences backwards makes backwards sentences saying how crazy it is?"
+    text: "把句子倒过来说会产生倒过来的句子，这难道不疯狂吗？"
   },
   {
     id: "a299",
@@ -1827,45 +1513,36 @@ export const news = [
   },
   {
     id: "a300",
-    text:
-      `The board of directors here at A.N.N thinks we should replace the news ticker with a banner
-      advertisement. Please sign our change.org petition, so we can stop them before it's too late!`
+    text: `A.N.N 的董事会认为我们应该把新闻滚动条换成横幅广告。请在我们的 change.org 请愿书上签名，这样我们就能在一切都太晚之前阻止他们！`
   },
   {
     id: "a301",
-    text: "The next hour is in 0.2 updates."
+    text: "下一个小时将在 0.2 个更新之后到来。"
   },
   {
     id: "a302",
-    text: "Introducing Antimatter Lite! Zero calories... Same great Crunch.",
+    text: "隆重推出反物质轻享版！零卡路里……同样美味的大挤压。",
     isAdvertising: true
   },
   {
     id: "a303",
-    text: "Roses are red, violets are blue, flag is win, baba is you."
+    text: "玫瑰是红的，紫罗兰是蓝的，旗子即胜利，baba 就是你。"
   },
   {
     id: "a304",
-    text: "Hi, how's your day? Hope it's good. If it's not good, we hope playing AD made it a little bit better!"
+    text: "嗨，你今天过得怎么样？希望不错。如果不好，我们希望玩 AD 让你好了一点点！"
   },
   {
     id: "a305",
-    text: "We now bring you today's weather report. There is a 100% chance of weather."
+    text: "现在为您播报今天的天气预报。天气出现的概率为 100%。"
   },
   {
     id: "a306",
-    text: "FIXING NEWS: Please don't break it again."
+    text: "修复新闻：请不要再把它弄坏了。"
   },
   {
     id: "a307",
-    text:
-      `The paperclip maximizer is a thought experiment described by Swedish philosopher Nick Bostrom in 2003. It
-      illustrates the existential risk that an artificial general intelligence may pose to human beings when
-      programmed to pursue even seemingly-harmless goals, and the necessity of incorporating machine ethics into
-      artificial intelligence design. The scenario describes an advanced artificial intelligence tasked with
-      manufacturing paperclips. If such a machine were not programmed to value human life, or to use only
-      designated resources in bounded time, then given enough power its optimized goal would be to turn all matter
-      in the universe, including human beings, into either paperclips or machines which manufacture paperclips.`
+    text: `回形针最大化器是瑞典哲学家 Nick Bostrom 在 2003 年提出的一个思想实验。它说明了通用人工智能在被编程去追求哪怕看似无害的目标时，可能对人类构成的存在性风险，以及在人工智能设计中融入机器伦理的必要性。这个情景描述了一个被指派制造回形针的先进人工智能。如果这样的机器没有被编程为珍视人类生命，或只在有限时间内使用指定资源，那么在拥有足够力量的情况下，它的最优目标就会是把宇宙中所有物质，包括人类，都变成回形针或制造回形针的机器。`
   },
   {
     id: "a308",
@@ -1927,47 +1604,23 @@ export const news = [
   },
   {
     id: "a309",
-    text:
-      `Your daily shades of the sky forecast: Monday: <span style="color: turquoise">Turquoise</span>
-      Tuesday: <span style="color: #d2c6ba">Taupe</span>
-      Wednesday: <span style="animation: a-game-header__antimatter--glow 3s infinite">Blurple</span>
-      Thursday: <span style="color: turquoise">Turquoise</span>/<span style="color: #d2c6ba">taupe</span>
-      Friday: <span style="color: #222">Coal dust</span> Saturday: <span style="color: #222">Coal dust</span>
-      with chances of <span style="color: indigo">indigo</span> in the late afternoon
-      Sunday: <span style="color: white; animation: a-existence-glow 3s infinite">Void</span>`,
+    text: `你的每日天空色调预报：星期一：<span style="color: turquoise">绿松石色</span> 星期二：<span style="color: #d2c6ba">灰褐色</span> 星期三：<span style="animation: a-game-header__antimatter--glow 3s infinite">蓝紫色</span> 星期四：<span style="color: turquoise">绿松石色</span>/<span style="color: #d2c6ba">灰褐色</span> 星期五：<span style="color: #222">煤尘色</span> 星期六：<span style="color: #222">煤尘色</span> 傍晚有<span style="color: indigo">靛蓝色</span>的可能 星期日：<span style="color: white; animation: a-existence-glow 3s infinite">虚空色</span>`,
   },
   {
     id: "a310",
-    text:
-      `You have reached the automated Antimatter Dimensions support hotline. If you are experiencing a bug in the
-      game try closing and reopening the app. If that doesn't work, press 1 for web, or 2 for mobile. If you need
-      advice, press 3. If you need to max all, press m. To support the developers, press 4. To access the FAQ,
-      press 5. To fix a broken save, press 6. To get an invite to the Discord server, press 7. To see the change
-      log, press 8. Press 9 to repeat.`
+    text: `您已接通反物质维度自动支持热线。如果你在游戏中遇到 bug，请尝试关闭并重新打开应用。如果这样不行，网页端请按 1，移动端请按 2。如果需要建议，请按 3。如果需要买最大，请按 m。要支持开发者，请按 4。要访问常见问题，请按 5。要修复损坏的存档，请按 6。要获取 Discord 服务器邀请，请按 7。要查看更新日志，请按 8。按 9 重复播放。`
   },
   {
     id: "a311",
-    text:
-      `This message has been copyrighted by The Walt Disney Company. Your
-      account will be charged $9.99 upon viewing this message.`
+    text: `本消息已由华特迪士尼公司版权所有。查看本消息将向你的账户收取 9.99 美元。`
   },
   {
     id: "a312",
-    text:
-      `But before we start, today's video is brought to you by Antimatter Dimensions™! It's got over 100,000
-      downloads, and it's completely redefined what a mobile game can do for me. It's got great mechanics, 5
-      prestige layers, unique and original challenges, a deep skill tree, and the largest numbers I've ever seen.
-      Like, seriously, look at them. And the best part is, it's free! Yes, that's right. Free. And if you use the
-      link in the description, you'll start the game with 10 septillion antimatter. Yes, that's right, 10
-      septillion. So what are you waiting for, click the link in the description and start playing Antimatter
-      Dimensions™ today!`
+    text: `但在开始之前，今天的视频由反物质维度™赞助！它拥有超过 10 万次下载，彻底重新定义了手机游戏对我的意义。它有出色的机制、5 个飞升层、独特而原创的挑战、深度技能树，以及我见过的最大的数字。真的，看看它们。最棒的是，它免费！是的，没错。免费。如果你使用简介中的链接，你将带着 1000 万兆反物质开始游戏。是的，没错，1000 万兆。那你还在等什么，点击简介中的链接，今天就玩反物质维度™吧！`
   },
   {
     id: "a313",
-    text:
-      `"...And then, once you get to level 9,000, you can ascend. Not really sure why you'd want to do that, it
-      just resets all of your hard earned xp for some small buffs, mechanics like this will never catch on."
-      - some random guy, circa 2012`
+    text: `“……然后，一旦你到 9000 级，你就可以飞升。真不明白你为什么要这么做，它只会把你辛苦赚来的经验值重置，换一些微不足道的增益，这种机制永远不会流行起来。” - 某个路人，大约 2012 年`
   },
   {
     id: "a314",
@@ -1985,13 +1638,11 @@ export const news = [
   },
   {
     id: "a315",
-    text:
-      `The developers of the game have announced that a new notation, "Truest Blind", will be released. They
-      report that it will remove the UI, allowing for a more streamlined user experience.`
+    text: `游戏开发者宣布将发布新记数法“至盲”。他们表示它将移除 UI，带来更精简的用户体验。`
   },
   {
     id: "a316",
-    text: "Some people choose to see the ugliness in this world. The disarray. I choose to see the numbers."
+    text: "有些人选择看到这个世界的丑陋。混乱。我选择看到数字。"
   },
   {
     id: "a317",
@@ -2001,52 +1652,40 @@ export const news = [
   },
   {
     id: "a318",
-    text:
-      `We can't define consciousness because consciousness does not exist. Humans fancy that there's
-      something special about the way we perceive the world, and yet we follow guides as tight as the
-      bots do, seldom questioning our choices, content, for the most part, to be told what to do next.`
+    text: `我们无法定义意识，因为意识并不存在。人类幻想我们的世界感知方式有什么特别之处，然而我们却像机器人一样严格遵循指引，很少质疑自己的选择，大多满足于被告知下一步该做什么。`
   },
   {
     id: "a319",
-    text: "Please disregard any undeserved compliments."
+    text: "请忽略任何名不副实的赞美。"
   },
   {
     id: "a320",
-    text: "Introducing the aphone 10: The world's first completely water soluble mobile device!",
+    text: "隆重推出 aphone 10：世界上第一款完全水溶的手机！",
     isAdvertising: true
   },
   {
     id: "a321",
-    text:
-      `It must be hard being on your PC all alone. But don't worry; we are still here.
-      Listening and watching your every step.`
+    text: `一个人对着电脑一定很难熬。但别担心；我们还在。倾听着、注视着你的每一步。`
   },
   {
     id: "a322",
-    text:
-      `Hevipelle announces an Antimatter Dimensions spinoff where you gamble matter in a game of
-      poker in Dutch mansions: "Ante matter d'mansions"`
+    text: `Hevipelle 宣布推出反物质维度衍生作品，你可以在荷兰豪宅里玩扑克赌上物质：“反物质豪赌庄园”。`
   },
   {
     id: "a323",
-    text: `var i = "Omae wa mou shindeiru" console.log(i - 1 + "i?") NaNi?`
+    text: `var i = “你已经死了” console.log(i - 1 + “i?”) 哪尼？`
   },
   {
     id: "a324",
-    text:
-      `If you have an idea for a news message, shout it into the void.
-      It won't get your message into the game, but it's fun!`
+    text: `如果你有新闻消息的想法，就朝虚空里大喊吧。它不会把你的消息弄进游戏，但很好玩！`
   },
   {
     id: "a325",
-    text:
-      `After the accident at the antimatter reactor in Pripyat last month, concerns are rising about the safety of
-      antimatter reactors, and many are starting to believe we should return to safer means of energy generation,
-      such as nuclear.`
+    text: `上个月普里皮亚季反物质反应堆事故后，人们对反物质反应堆安全性的担忧日益上升，许多人开始认为我们应该回归更安全的能源生产方式，比如核能。`
   },
   {
     id: "a326",
-    text: "Antimatter Dimensions is like an ogre... it has layers."
+    text: "反物质维度就像食人魔……它有很多层。"
   },
   (function() {
     let wasClicked = false;
@@ -2069,69 +1708,49 @@ export const news = [
   }()),
   {
     id: "a328",
-    text:
-      `News company no longer lets random people submit stories,
-      instead opting to using qualified writers. Riots ensue.`
+    text: `新闻公司不再允许随机路人投稿，而是改用有资质的作者。暴动随之而来。`
   },
   {
     id: "a329",
-    text:
-      `Introducing Morse Code+++ - the brand new Morse code, now with 20 new
-      characters, for everyone who wants to slide, zip, and swoosh!`,
+    text: `隆重推出摩尔斯电码+++：全新摩尔斯电码，新增 20 个字符，适合所有想要滑动、拉链、嗖嗖的人！`,
     isAdvertising: true
   },
   {
     id: "a330",
-    text: "Any sufficiently primitive magic is indistinguishable from technology."
+    text: "任何足够原始的魔法都与技术无法区分。"
   },
   {
     id: "a331",
-    text: "I have no nose, and I must sneeze!"
+    text: "我没有鼻子，但我必须打喷嚏！"
   },
   {
     id: "a332",
-    text: "♪ When you try your worst and you still succeed. ♪"
+    text: "♪ 当你竭尽全力地失败却仍然成功时。♪"
   },
   {
     id: "a333",
-    text: `The wildly popular theme song "Gotta set 'em free" has reached 500 million downloads in its first week.`
+    text: `广受欢迎的《放他们自由》主题曲首周下载量已达 5 亿次。`
   },
   {
     id: "a334",
-    text:
-      `Introducing the all-new anti-alignment chart! Featuring groundbreaking new combinations such as "lawful-chaotic"
-      and "evil-good"! And with a dazzling third axis for 'Jazziness'~ Identify yourself as chaotic-lawful-unjazzy NOW
-      for the impossibly low price of $-59.99! Terms and conditions apply. Batteries not included.`,
+    text: `隆重推出全新反阵营图！主打突破性新组合，比如“守序-混乱”和“邪恶-善良”！还有炫目的第三轴“爵士度”~现在就确定你的身份为混乱-守序-无爵士吧，价格低到不可能，只要 -59.99 美元！条款与条件适用。不含电池。`,
     isAdvertising: true
   },
   {
     id: "a335",
-    text:
-      `Due to new complications regarding "The Game", protests have risen all over the anti-verse. Thus, governments
-      are forced to change the rule of The Game, stating that you win The Game if someone informs you about it,
-      instead of losing it.`
+    text: `由于“游戏”出现新的复杂情况，反宇宙各地爆发了抗议。因此，各国政府被迫修改游戏的规则：如果有人告知你关于“游戏”的事，你就赢了“游戏”，而不是输了。`
   },
   {
     id: "a336",
-    text: `Attention residents of zone 4 [commonly referred to as 'dark zone'], sector ϰ, (01,05). Do
-      not leave your places of residence. I repeat, do not leave your places of residence. Do not go outside.
-      Earthology's finest meteorological supercomputers, as well as many witches, are consistently claiming a
-      'generally weird vibe' tomorrow and we quite frankly don't want to find out what that means.`
+    text: `请注意第 4 区[通常被称为“黑暗区”]、ϰ 区、(01,05) 的居民。不要离开你的住所。我重复一遍，不要离开你的住所。不要出门。地球学最顶尖的气象超级计算机以及许多女巫都一致声称明天会有“总体上怪异的氛围”，我们坦白说不想知道那是什么意思。`
   },
   {
     id: "a337",
-    text:
-      `Technological convergence is the concept that all technologies will converge into a single technology. It is
-      a commonly expressed idea since the dawn of the Information Age, and can be seen in many places and devices
-      such as smartphones, or the internet. Antimatter Dimensions is an example of technological convergence,
-      specifically within media. Using a genius idea called 'not caring' mixed in with the innovative solution of
-      'blind luck', it merges together a subpar game, and a subpar news ticker, to create a mediocre experience
-      that despite being mostly a game, occasionally acts as a news source slightly above the Matter Dimensions
-      Newsticker. Truly, an achievement for all businesses to aspire to strive towards, and hopefully actually beat.`
+    text: `技术趋同是指所有技术最终会汇聚成单一技术的概念。自信息时代开启以来，这是一个常被提及的想法，可以在许多地方和设备中看到，比如智能手机或互联网。反物质维度就是技术趋同的一个例子，尤其是在媒体领域。它用一个名为“不在乎”的天才创意，混合“瞎猫碰上死耗子”的创新方案，把一款平庸的游戏和一个平庸的新闻滚动条融合在一起，创造了一种平庸的体验。尽管它基本上是个游戏，但偶尔也能充当新闻来源，比物质维度的新闻滚动条略胜一筹。这真是所有企业都应向往并希望真正超越的成就。`
   },
   {
     id: "a338",
-    text: "Ancient cave paintings with the number 5 have been found. It's implied they were waiting for something."
+    text: "考古发现了绘有数字 5 的古代洞穴壁画。据暗示，他们在等待某样东西。"
   },
   (function() {
     let wasClicked = false;
@@ -2154,18 +1773,15 @@ export const news = [
   }()),
   {
     id: "a340",
-    text:
-      `That's quite a lot of antimatter you're making. The game developer is impressed. Because this message is
-      prerecorded, any observations related to your antimatter production are speculation on our part. Please
-      disregard any undeserved compliments.`
+    text: `你制造的反物质可真不少。游戏开发者印象深刻。因为这条消息是预先录制的，任何与你反物质产量相关的观察都只是我们的猜测。请忽略任何名不副实的赞美。`
   },
   {
     id: "a341",
-    text: "Game under construction: All mechanics must wear hardcaps."
+    text: "施工中的游戏：所有机制都必须佩戴硬上限。"
   },
   {
     id: "a342",
-    text: "Of course paperclips have a use, you use them to hold papers together. But who uses paper anymore?"
+    text: "回形针当然有用，你用它们把纸夹在一起。但如今还有谁用纸呢？"
   },
   {
     id: "a343",
@@ -2182,35 +1798,23 @@ export const news = [
   },
   {
     id: "a344",
-    text:
-      `Real life is an enigma. No one knows how it really works. There are many questions left unanswered:
-      What is the meaning of life? Are we all living inside a simulation? How do you do antitables? Where and
-      how did existence begin? These are all the questions that always linger in the back of our heads, and
-      the answers to them? We may never know.`
+    text: `现实生活是个谜。没有人知道它到底如何运作。许多问题悬而未决：生命的意义是什么？我们都生活在模拟中吗？你怎么做反桌子？存在从哪里、如何开始？这些都是一直萦绕在我们脑海深处的问题，而它们的答案？我们可能永远不会知道。`
   },
   {
     id: "a345",
-    text: "Japanese complain, as haikus can't be shown here. Conflict arises."
+    text: "日本人抱怨，因为这里无法展示俳句。冲突爆发。"
   },
   {
     id: "a346",
-    text:
-      `Did you know Antimatter Dimensions is also available on Android? <a
-      href="https://play.google.com/store/apps/details?id=kajfosz.antimatterdimensions" target="_blank">
-      Click here to check it out!<a>`
+    text: `你知道反物质维度也有安卓版吗？<a href="https://play.google.com/store/apps/details?id=kajfosz.antimatterdimensions" target="_blank">点击这里看看！</a>`
   },
   {
     id: "a347",
-    text:
-      `Pluto isn't a state. The 50 states, as we all know, are: Adverb, Air, Artemis, Asia, Atlantic, Bargaining,
-      Bilabial, Braille, Candela, Comma, Dacron, Dairy, Dative, Dexterity, Disenchanter, Dodecahedron, Erie,
-      Eukaryota, Folklore, Great Pyramid, Halogen, Igneous, Italy, Kansas, Kilimanjaro, Lambda, Leviticus, Libra,
-      Liquid, Lymphatic, Mesozoic, Microwave, Muon, North, Nova Scotia, Octagon, October, P = NP, Perissodactyla,
-      Polk, Potassium, Pulley, Quinary, Rook, Saturn, Tiana, Tiger, Varaha, Yale, and Yellow.`
+    text: `冥王星不是一个州。众所周知，50 个州是：Adverb、Air、Artemis、Asia、Atlantic、Bargaining、Bilabial、Braille、Candela、Comma、Dacron、Dairy、Dative、Dexterity、Disenchanter、Dodecahedron、Erie、Eukaryota、Folklore、Great Pyramid、Halogen、Igneous、Italy、Kansas、Kilimanjaro、Lambda、Leviticus、Libra、Liquid、Lymphatic、Mesozoic、Microwave、Muon、North、Nova Scotia、Octagon、October、P = NP、Perissodactyla、Polk、Potassium、Pulley、Quinary、Rook、Saturn、Tiana、Tiger、Varaha、Yale、Yellow。`
   },
   {
     id: "a348",
-    text: "<span style='color: red'>[News Message removed by moderator]<span>"
+    text: "<span style='color: red'>[新闻消息已被管理员移除]<span>"
   },
   {
     id: "a349",
@@ -2256,14 +1860,11 @@ export const news = [
   },
   {
     id: "a350",
-    text:
-      `Alexander wept, for he had just watched a pop-culture lecture on quantum mechanics by Anaxarchus and
-      realised that there are infinite worlds to conquer, and that he couldn't even be the lord of one without
-      a mutiny or 6 stopping him.`
+    text: `亚历山大哭了，因为他刚听完 Anaxarchus 关于量子力学的流行文化讲座，意识到有无数个世界等待征服，而即使只是其中一个世界的主宰，也会被一场或六场兵变阻止。`
   },
   {
     id: "a351",
-    text: "Hi, I'm here to complain about the poor quality of the copper that has just been delivered to me."
+    text: "嗨，我是来投诉刚刚送到我这里的铜质量太差的。"
   },
   {
     id: "a352",
@@ -2274,8 +1875,8 @@ export const news = [
   },
   (function() {
     let wasClicked = false;
-    const normal = "<span style='cursor: pointer'>💣</span>";
-    const clicked = "💥";
+    const normal = "<span style='cursor: pointer'>炸弹</span>";
+    const clicked = "爆炸";
     return {
       id: "a353",
       get text() {
@@ -2306,53 +1907,38 @@ export const news = [
   },
   {
     id: "a356",
-    text: `Press "Choose save" to explore the other 2 parallel universes.`
+    text: `按“选择存档”探索另外两个平行宇宙。`
   },
   {
     id: "a357",
-    text:
-      `The Scientific Community remains baffled over the meaning of 286,078. "We're certain it's related to potatoes,
-      but we need to do more tests." one researcher notes.`
+    text: `科学界对 286,078 的含义仍然困惑不解。“我们确定它与土豆有关，但我们需要做更多测试。”一位研究人员指出。`
   },
   {
     id: "a358",
-    text: `Press "Choose save" to explore the other 2 parallel universes.`
+    text: `按“选择存档”探索另外两个平行宇宙。`
   },
   {
     id: "a359",
-    text:
-      `Local incremental game dev makes physicists unhappy again. They claim
-      "the physics violations and blatant use of technobabble has gone too far".`
+    text: `本地挂机游戏开发者再次让物理学家们不开心。他们声称“违反物理定律和明目张胆地使用技术胡话已经太过分了”。`
   },
   {
     id: "a360",
-    text: `Press "Choose save" to explore the other 2 parallel universes.`
+    text: `按“选择存档”探索另外两个平行宇宙。`
   },
   {
     // Discord contest winner #1
     id: "a361",
-    text: "We're having a sale of top quality waterproof towels! Be sure to get some on your way out!"
+    text: "我们正在大促销顶级防水毛巾！离开时一定要买几条！"
   },
   {
     // Discord contest winner #2
     id: "a362",
-    text:
-      `Hevipelle Incorporated is proud to present a new brand of cereal: The Big Crunch! This nutritious breakfast
-      meal contains crunchy antimatter O's, pocket dimensions, Infinity-flavored Sugar Cubes, exponentially-growing
-      Replicanti, and Eternity-flavored Marshmallows. Now you can experience Antimatter Dimensions inside of your
-      stomach! Warning: Side effects may include spontaneous combustion, nausea, vomiting, diarrhea,
-      dematerialization, vaporization, heart failure, the end of the world, or death. If you are not made out of
-      antimatter, consult an educated professional on Antimatter Consumption before eating 'The Big Crunch'.`,
+    text: `Hevipelle 股份有限公司自豪地推出全新麦片品牌：大挤压！这款营养早餐包含酥脆的反物质 O 圈、口袋维度、无限味方糖、指数增长的 Replicanti 和永恒味棉花糖。现在你可以把反物质维度吃进肚子里！警告：副作用可能包括自燃、恶心、呕吐、腹泻、去物质化、汽化、心力衰竭、世界末日或死亡。如果你不是反物质做的，在吃“大挤压”之前请咨询反物质摄入方面的专业医师。`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "a363",
-    text:
-      `The most expensive thing about a dragon isn't the gold you need to fill the nest, the magic you sacrifice
-      entire empires for, or the billions of wars you need to supply the decillions of adamantium. No, it is the
-      dirt. It's always the dirt. Don't ask the royal treasurers why we have more creatures on the plane than
-      molecules of dirt. Just keep summoning bulldozers through arcane rituals and keep looking through the
-      earth's core for more scraps of dirt.`
+    text: `龙身上最昂贵的东西不是填满巢穴所需的黄金、不是你牺牲整个帝国换来的魔法、也不是为供应数不清的艾德曼合金而需要发动的亿万场战争。不，是泥土。永远是泥土。别问王室司库为什么我们位面上的生物比泥土分子还多。只管通过神秘仪式不断召唤推土机，继续在地核中翻找更多的泥土碎屑吧。`
   },
   {
     id: "a364",
@@ -2381,141 +1967,60 @@ export const news = [
   },
   {
     id: "a365",
-    text: "I don't like Replicanti. They're coarse and rough and irritating and they replicate everywhere.",
+    text: "我不喜欢 Replicanti。它们粗糙、扎手、惹人烦，还在到处复制。",
     get unlocked() { return PlayerProgress.eternityUnlocked() || PlayerProgress.replicantiUnlocked(); }
   },
   {
     id: "a366",
-    text:
-      `Stage magic, such as illusions, has an interesting history. A mix of charlatans attempting to scam people,
-      and actors acting out performances using illusions or sleight of hand. Altering styles of magic, and continued
-      discourse and disagreements over whether it should be stated that it is an illusion, and whether people will
-      magically realise that it is fake and that it does not need to be stated. A schism a century ago split magic
-      into 2 types - gentle, simplistic utilitarian tricks and grand spectacles involving the flashy machinery and
-      beautiful assistants - originating from the popularisation of a single trick involving sawing a person in
-      half. Much more interesting than watching some TV psychic pretending to pull a lottery ticket out from a news
-      ticker, at any rate. Speaking of which, tonight's lottery numbers are 23, 10, 81, 106.4, 3 + 2i, and e.`
+    text: `舞台魔术，比如幻觉，有着有趣的历史。它混合了试图骗人的江湖骗子，和用幻觉或障眼法进行表演的演员。魔术风格不断变化，关于是否应该声明这是幻觉、以及人们是否会神奇地意识到它是假的因而不需要声明，争论持续不休。一个世纪前的一场分裂把魔术分成两类：温和、简单的实用戏法，和涉及华丽机械与美丽助手的盛大奇观，其起源是“把人锯成两半”这个单一戏法的流行。无论如何，这都比看某个电视灵媒假装从新闻滚动条里抽出一张彩票有趣得多。说到这个，今晚的彩票号码是 23、10、81、106.4、3 + 2i 和 e。`
   },
   {
     id: "a367",
-    text:
-      `Snakes look scary, and they absolutely are and you should run, calmly, from every snake you see. But, luckily
-      for you, snakes don't often take the initiative to bite - excluding the really mean ones. If they've gone out
-      of their way to bite you, there's generally 4 reasons. 1- The Snake is Mean. 2- You scared the snake. Snakes
-      are scary to you, but you are scary to snakes. Be the bigger lizard when you meet a snake. 3- You entered the
-      territory of the snake. Often, a snake will warn you if you do this - this is why rattle snakes rattle. If you
-      don't listen to the warning, they'll bite you. And the most important reason, 4- the snake finds you ugly.
-      This is the fault of the snake's ocular system, but is the most common form of bites in at least 2
-      jurisdictions. And if you get bitten by a snake, by virtue of being a scarily ugly lizard who keeps stumbling
-      into the wrong bushes, there's 3 main things you can do. First, calm down, again, and stay calm. Secondly,
-      immobilise the area around site that was bitten, and try using a compression bandage. Snake venom vision is
-      entirely based on movement of the object it's currently in. And third, calmly, call for help from other
-      lizards. Excluding the snake. The snake's too mean to help you.`
+    text: `蛇看起来很吓人，而且它们确实吓人，你应该冷静地从每一条看到的蛇身边跑开。但幸运的是，蛇通常不会主动咬人，除了那些真正恶毒的。如果它们特意来咬你，通常有 4 个原因。1、这条蛇很恶毒。2、你吓到了蛇。蛇对你来说可怕，你对蛇来说也可怕。遇到蛇时，做更大的那只蜥蜴。3、你进入了蛇的领地。通常，如果你这样做，蛇会警告你，这就是响尾蛇会发出响声的原因。如果你不听警告，它们就会咬你。而最重要的原因是，4、蛇觉得你长得丑。这要归咎于蛇的视觉系统，但至少在 2 个司法管辖区里，这是最常见的咬伤原因。如果你被蛇咬了，作为一只总是闯进错误树丛的吓人丑蜥蜴，你有 3 件主要的事可以做。第一，再次冷静下来，保持冷静。第二，固定被咬部位周围区域，尝试使用加压绷带。蛇毒的追踪完全基于它当前所在物体的运动。第三，冷静地寻求其他蜥蜴的帮助。不包括那条蛇。那条蛇太恶毒了，不会帮你。`
   },
   {
     id: "a368",
-    text:
-      `I suspect more people would press the hard reset button if genuine effort was done to make the process as
-      miserable as possible. A slow removal of resources, with unique nerfs just to stop you from progressing. The
-      destruction of UI, turning from usable to unusable, arcane and unwieldy, requiring memory and luck to even
-      continue this quest. Randomness, against the player for even the simplest actions, to punish the thought of
-      progression. Hooks and traps and disasters and low rolls for a chance see progression, which entirely consists
-      of putting the state of the game further from anything deemed reasonable. A situation where the character is
-      broken just to tell you to leave… but the damage is already done, if it is even possible to turn back. And…
-      from there, a hard reset probably isn't enough. It would have to be… harder. Not just a hard reset, but a
-      cookie, something in local storage designed specifically to make it impossible to actually start a new game.
-      Or, something more malicious? And despite this, people would still throw themselves into this nightmare, for
-      humanity knows no bounds in its endless curiosity. No amount of warnings will stop everyone. They will find
-      a way to proceed, given it exists, and may even complain when it isn't as punishing as expected. So, do you
-      want to push the button, and experience the depths of despair, willingly? Hopefully not, because it isn't here.`
+    text: `我怀疑，如果人们真的努力把硬重置过程做得尽可能痛苦，会有更多人按下硬重置按钮。缓慢地移除资源，加上专门阻止你前进的独特削弱。UI 的破坏，从可用变成不可用、神秘而笨拙，甚至需要记忆和运气才能继续这个任务。随机性，连最简单的行动都针对玩家，惩罚任何想要前进的念头。钩子、陷阱、灾难和低掷骰，只为了换来一丝看到进展的机会，而所谓进展完全只是让游戏状态离任何合理状态更远。一个角色被摧毁只是为了告诉你离开……但伤害已经造成，如果真的还能回头的话。而且……从那里开始，硬重置可能还不够。它必须……更硬。不仅仅是硬重置，还要一个饼干，一个专门用来让新游戏无法真正开始的本地存储条目。或者，更恶毒的东西？尽管如此，人们仍然会把自己投入这场噩梦，因为人类无尽的好奇心没有边界。再多的警告也拦不住所有人。只要前进之路存在，他们就会找到办法，甚至可能在不那么惩罚时抱怨。那么，你想按下那个按钮，心甘情愿地体验绝望的深渊吗？希望不是，因为它并不在这里。`
   },
   {
     id: "a369",
-    text:
-      `An empire-building project is one of the most difficult things to implement. Thousands of hours of time,
-      planning, effort, consultation, and political manoeuvring to create truly airbreaking endeavours. Take the
-      Realmway Revitalisation Roadmap, a revolutionary program referred to by the 3 R's, which is known as the
-      pinnacle of the most famous of the empire's bureaucratic infrastructure committees - the EMIF (empire magic
-      infrastructure foundation) - not to be confused with the EAIF (Electric airship investment fund) or the
-      NMIC (National Magical Infrastructure Coalition). The goal of the three R's, set out by the EMIF, was to
-      reinstate a mana trade corridor for SMSS (Small-Medium Steam Shuttles), a vital part of the burgeoning
-      consolidated states after their unfortunate pillaging during the NELC (ninth empire liberation crusade).
-      The three R's was a multi stage project - stage 1 was a survey glyph in the air - all big things start with
-      a small step. Stage 2, the unveiling of the EMOF (Empire Mechanical Obliteration Forcefield) had over 50
-      dignitaries - multiple emperors (from federated states to organisational leaders), foreign rulers, EMDF
-      (Effluent Manifested Destiny Families) who currently own the land, and even some of the forecast witches,
-      all gathered together to unveil the project in a show of EOSF (Empire Official Solidarity Friendships).
-      Sadly, the project was eventually cancelled at stage 215, as the creation of the EMTF (Excrement Material
-      Transmutation Facility) for the contractors exploded after coming into contact with a SMEA (Small-Medium
-      Electric Airship) placing the last survey peg from stage 459 due to a time vortex created by an argument
-      at the WAIC (Witches Annual Infrastructure Committee) as part of stage 56. Truly, tragic stuff - 3 award
-      nominations and 2 wins during that process due to EBIF (Efficient Bureaucracy In (the) Field).`
+    text: `帝国建设计划是最难实现的事情之一。数千小时的投入、规划、努力、咨询和政治周旋，才能创造出真正惊世骇俗的工程。就拿王国大道振兴路线图来说，这个革命性项目被称作三 R 计划，被视为帝国官僚基础设施委员会中最著名的巅峰，也就是 EMIF（帝国魔法基础设施基金会），不要与 EAIF（电力飞艇投资基金）或 NMIC（国家魔法基础设施联盟）混淆。三 R 计划的目标由 EMIF 制定，是恢复 SMSS（中小型蒸汽穿梭机）的魔力贸易走廊，这是新兴联合邦在 NELC（第九帝国解放圣战）中不幸遭劫掠后至关重要的一部分。三 R 计划是一个多阶段项目，第一阶段是空中的勘测符文，所有大事都始于一小步。第二阶段，EMOF（帝国机械湮灭力场）的揭幕式有超过 50 位政要出席，多位皇帝（从联邦邦国到组织领袖）、外国统治者、目前拥有这片土地的 EMDF（显化命运家庭），甚至还有一些天气预报女巫，齐聚一堂，以 EOSF（帝国官方团结友谊）的姿态揭幕这个项目。遗憾的是，这个项目最终在第 215 阶段被取消，因为承包商建造 EMTF（排泄物物质转化设施）时，它与一艘 SMEA（中小型电力飞艇）接触后爆炸了，而那艘飞艇正在放置第 459 阶段的最后一根勘测桩，爆炸原因是 WAIC（女巫年度基础设施委员会）在第 56 阶段的一次争论引发的时空漩涡。真是悲剧，过程中因 EBIF（高效实地官僚主义）获得了 3 项提名和 2 项大奖。`
   },
   {
     id: "a370",
-    text:
-      "Man tries installing cookies to store computer data, accidentally cleans them due to being too delicious."
+    text: "男子试图安装饼干来存储电脑数据，却因为饼干太好吃而意外把它们清理掉了。"
   },
   {
     id: "a371",
-    text:
-      `Pop quiz: there are 3 doors, you pick a door at random, and get to keep what's behind the door. The doors
-      have 2 golden goats, 2 silver goats, and a gold and a silver goat. After you pick a door, the door with the
-      lowest $ worth of goats will be opened and shown to you. After this, you are given the choice to swap.
-      What is the probability that you will swap doors?`
+    text: `随堂测验：有 3 扇门，你随机选一扇，门后的东西归你。三扇门后分别有 2 只金山羊、2 只银山羊，以及 1 只金山羊和 1 只银山羊。你选完一扇门后，山羊价值最低的那扇门会被打开给你看。之后，你被给予换门的选择。你会换门的概率是多少？`
   },
   {
     id: "a372",
-    text:
-      `If you're ever lost in a forest, look at the trees around you. It's said that moss grows north, so by the
-      time you've finished looking at a tree, a roaming guitarist will run up to you and ask if you want to hear
-      wonderwall`
+    text: `如果你在森林里迷路了，看看周围的树。据说苔藓长在北面，所以当你看完一棵树时，一个流浪吉他手会跑过来问你，要不要听 wonderwall。`
   },
   {
     id: "a373",
-    text:
-      `As a symbol of friendship between the Matter and Antimatter Periodic Tables, they have done an exchange of
-      elements. The element of Mony is now part of the Antimatter Periodic Table, while Antimony has been added
-      to the regular Periodic Table.`
+    text: `作为物质与反物质元素周期表之间友谊的象征，它们进行了元素交换。Mony 元素现在属于反物质元素周期表，而 Antimony 被加入了普通元素周期表。`
   },
   {
     id: "a374",
-    text: "This newsticker was specifically designed for promotional purposes only."
+    text: "这个新闻滚动条专门为促销目的而设计。"
   },
   {
     id: "a375",
-    text:
-      `As you probably know, it is traditional to give gifts made of certain materials to celebrate anniversaries
-      The classic ones are silver at 25 and gold at 50. Here are some little known anniversary gifts:
-      Pineapple - 37 years Hellstone - 66 years Lizardite- 82 years Nitrowhisperin- 86 years Taconite - 95 years
-      Hatchettite - 100 years Electrum - 110 Yakitoda - 111 years years Fordite - 119 years Bloodstone - 120 years
-      Celestite - 125 years Jet - 140 years Petroleum - 145 years Steel - 150 years Cummingtonite - 198 years
-      Concrete - 200 years Laserblue- 210 years Painite - 250 years Parisite - 255 years Parasite - 260 years
-      Carbon Nanotubes - 300 years Mercury - 310 years Martian Soil - 340 years Neptunium - 370 years
-      Uranium - 380 years Plutonium - 390 years Xium - 400 years Blaze rods - 420 years Asbestos - 430 years
-      Gabite - 444 years Crimtane - 666 years Lagga - 777 years`
+    text: `你可能知道，传统上用特定材质的礼物庆祝周年纪念。经典的是 25 年银、50 年金。这里有一些鲜为人知的周年纪念礼物：菠萝：37 年 地狱石：66 年 蜥蜴石：82 年 硝基低语剂：86 年 铁燧岩：95 年 黑沥青岩：100 年 琥珀金：110 年 八木砣：111 年 福特石：119 年 血石：120 年 天青石：125 年 黑玉：140 年 石油：145 年 钢铁：150 年 锰闪石：198 年 混凝土：200 年 激光蓝：210 年 红硅硼铝钙石：250 年 褐帘石：255 年 寄生物：260 年 碳纳米管：300 年 水银：310 年 火星土壤：340 年 镎：370 年 铀：380 年 钚：390 年 Xium：400 年 烈焰棒：420 年 石棉：430 年 尖牙石：444 年 血腥矿：666 年 拉加：777 年`
   },
   {
     id: "a376",
-    text:
-      `Big tech companies have collaborated to create a new neural network that's trained in the generation of rap
-      lyrics, called RAP-3. First lyrical generations include "Call me prometheus 'cuz I bring the fire" and
-      "Call me Sonic the way I'm gettin' these rings". Critics say it still has a way to go before it replaces
-      traditional music.`
+    text: `大型科技公司合作创建了一个新的神经网络，专门训练生成说唱歌词，名为 RAP-3。首批歌词包括“叫我普罗米修斯，因为我带来火焰”和“叫我索尼克，看我拿戒指”。评论家表示，它要取代传统音乐还有很长的路要走。`
   },
   {
     id: "a377",
-    text:
-      `With the new android OS, android 20, being predicted in the near future, the new system for internal codenames
-      has been revealed. The first codename, as it currently stands, is “antimatter”. This conveniently works well
-      with the predicted generation of phones that will use Android 20 - these phones will be the most explosive
-      ever due to their annihilation-based power source. Sources tell us that a billion dollar research unit is
-      working on a name for android 21, by tradition to start with B, “that doesn't sound too bad when you think
-      about it”. `
+    text: `随着新版安卓系统 android 20 预计在不久的将来推出，新的内部代号体系已经公布。目前第一个代号是“antimatter”。这与预计采用 Android 20 的手机世代完美契合，这些手机将是有史以来最具爆炸性的，因为它们使用基于湮灭的动力源。消息人士告诉我们，一个耗资十亿美元的研究部门正在为 android 21 起名，按照传统以 B 开头，“仔细想想，这听起来也不赖”。`
   },
   {
     id: "a378",
-    text: "If every antimatter were an apple, you would have enough to keep all the doctors away for 3000 years"
+    text: "如果每份反物质都是一个苹果，你就有足够的苹果让所有医生远离你 3000 年。"
   },
   {
     id: "a379",
@@ -2525,131 +2030,101 @@ export const news = [
   },
   {
     id: "a380",
-    text:
-      `The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult
-      as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed
-      starts slowly, but gets faster each minute after you hear this signal. [beep] A single lap should be
-      completed each time you hear this sound. [ding] Remember to run in a straight line, and run as long as
-      possible. The second time you fail to complete a lap before the sound, your test is over. The test will
-      begin on the word start. On your mark, get ready, start.`
+    text: `FitnessGram 折返跑测试是一项多阶段有氧耐力测试，随着进行会越来越难。20 米折返跑测试将在 30 秒后开始。请在起点排好队。跑步速度开始时很慢，但每过一分钟听到这个信号后会加快。[哔] 每次听到这个声音时，应完成一圈。[叮] 记住要沿直线跑，尽可能跑得久。第二次未能在声音响起前完成一圈，你的测试就结束了。测试将在“开始”一词后启动。各就各位，预备，开始。`
   },
   {
     id: "a381",
-    text: "Why do they call it second dimension when you of in the first dimension of out second eat the dimension?"
+    text: "为什么它叫第二维度，当你在第一维度里，第二维度出来吃维度？"
   },
   {
     id: "a382",
-    text:
-      "Any AD player born after 1993 can't joke... All they know is 5 hours, paperclips, 1.79e308 & Ninth Dimension."
+    text: "任何 1993 年后出生的 AD 玩家都不会讲笑话……他们只知道 5 小时、回形针、1.79e308 和第九维度。"
   },
   {
     id: "a383",
-    text:
-      "The only thing better than an anti-joke is two. Like the number. Not two anti-jokes. I just like the number two."
+    text: "唯一比一个反笑话更好的东西是两个。就像数字二。不是说两个反笑话。我就是喜欢数字二。"
   },
   {
     id: "a384",
-    text: "Click here to make nothing happen."
+    text: "点击这里让什么都不发生。"
   },
   {
     id: "a385",
-    text:
-      `I wonder... Why did Apple skip iPhone 9 and Microsoft skip Windows 9...
-      Was it because they were bribed by a game developer?`
+    text: `我在想……为什么 Apple 跳过了 iPhone 9，Microsoft 跳过了 Windows 9……是不是他们被某个游戏开发者贿赂了？`
   },
   {
     id: "a386",
-    text: "9 out of 10 doctors recommended against trying to touch antimatter. We haven't heard back from the 10th one."
+    text: "10 位医生中有 9 位建议不要试图触摸反物质。第 10 位医生我们还没收到回复。"
   },
   {
     id: "a387",
-    text:
-      `In spring, Man built a pillar. In summer, another. Throughout autumn they held. But in winter, one experienced
-      an unexpected (See definition in: Abstract Multidimensional Retrocausal Physics) ZW-Class "Ascension" event,
-      and is hypothesised to have fallen into a dimensional loophole, where it, by definition, has to take up more
-      dimensions than itself. Current efforts at retrieving the pillar and returning it to baseline reality have been
-      unsuccessful (See test log 2453-3e9a-50d1-84fc for more details)`
+    text: `春天，人类建了一根柱子。夏天，又建了一根。整个秋天它们都屹立不倒。但在冬天，其中一根经历了一次出乎意料的（定义见：抽象多维逆因果物理学）ZW 级“飞升”事件，据推测它掉进了一个维度漏洞，按照定义，它必须占据比自己更多的维度。目前找回这根柱子并将其送回基准现实的尝试均未成功（详见测试日志 2453-3e9a-50d1-84fc）。`
   },
   {
     id: "a388",
-    text:
-      `In light of recent events, we'd like to issue an official statement. Antimatter Dimensions™ is in no way
-      affiliated with Jimmy's Causality Violating Brainworms™. We do not endorse, nor were we involved in their creation
-      of the product which was involved in several catastrophic dimension-destabilising and reality-toppling incidents.
-      We almost certainly did not sign a contract at 5:30:26 UTC on 08/12/1994 after discussing how we could benefit
-      from destabilising and warping dimensions. There was no industrial zone constructed in the 5th Orion Arm of the
-      వ' galaxy, and even if they were we did not install localised anomalies following the Scranton Reality Anti-anchor
-      mechanism. Additionally, no time loop is occurring at Acroamatic Abatement Facility AAF-D in site 43. We apologise
-      if things seemed this way, and we will be more thorough in cracking down misinformation in the future.`
+    text: `鉴于最近发生的事件，我们想发布一份官方声明。反物质维度™与 Jimmy 的因果律违反脑虫™没有任何关联。我们不认可、也未参与他们制造那款牵涉多起灾难性维度失稳和现实颠覆事件的产品。我们几乎可以肯定没有在 1994 年 12 月 8 日 05:30:26 UTC 讨论过如何从失稳和扭曲维度中获益后签署合同。వ' 星系的第五猎户臂没有建造工业区，即使有，我们也没有按照 Scranton 现实反锚定机制安装局部异常。此外，43 号站点 AAF-D 悟性消除设施没有发生时间循环。如果事情看起来像这样，我们深表歉意，今后我们将更严格地打击错误信息。`
   },
   {
     id: "a389",
-    text: "If only we could condense the antimatter in the universe into cookies..."
+    text: "要是我们能把宇宙中的反物质压缩成饼干就好了……"
   },
   {
     id: "a390",
-    text:
-      `Can you believe it guys? Update, just 5 hours away. Update is in a 5 hours. Wahoo. I'm so happy about this
-      information. Update just 5 hours away. Oh wow. Can you believe it? Update just in a 5 hours. It got here so
-      fast. Update, just 5 hours.`
+    text: `伙计们你们敢信吗？更新，只需 5 小时。更新在 5 小时内。哇呼。我对这个消息太开心了。更新只需 5 小时。哦哇。你敢信吗？更新在 5 小时内。它来得真快。更新，只需 5 小时。`
   },
   {
     id: "l1",
-    text: "You just made your 1,000,000,000,000,000th antimatter. This one tastes like chicken.",
+    text: "你刚刚制造了你的第 1,000,000,000,000,000 份反物质。这一份尝起来像鸡肉。",
     get unlocked() { return Currency.antimatter.exponent === 15; }
   },
   {
     id: "l2",
-    text: "Nerf the galaxies please.",
+    text: "请削弱星系。",
     get unlocked() { return player.galaxies === 2 || Currency.infinities.gt(0); }
   },
   {
     id: "l3",
-    text: "What do you mean, more than two dimensions??? We're on a screen, clearly there are only 2 dimensions.",
+    text: "你说超过两个维度是什么意思？？？我们在屏幕上，显然只有 2 个维度。",
     get unlocked() { return AntimatterDimension(3).amount.gt(0) || DimBoost.totalBoosts > 0; }
   },
   {
     id: "l4",
-    text: "How much is Infinity? -literally everyone at least once",
+    text: "无限多少钱？至少每个玩家都问过一次",
     get unlocked() { return AntimatterDimension(8).amount.eq(190) || Currency.infinities.gt(0); }
   },
   {
     id: "l5",
-    text: "Eh, the Fourth Dimension is alright...",
+    text: "嗯，第四维度还行……",
     get unlocked() { return AntimatterDimension(4).amount.gt(0) && AntimatterDimension(5).amount.eq(0); }
   },
   {
     id: "l6",
-    text:
-      `Antimatter people seem to be even more afraid of 13 than we are. They destroyed
-      entire galaxies just to remove 13 from their percents.`,
+    text: `反物质人似乎比我们更怕 13。他们摧毁了整片星系，只是为了把 13 从他们的百分比里去掉。`,
     get unlocked() { return player.galaxies > 0 || Currency.infinities.gt(0); }
   },
   {
     id: "l7",
-    text: "To understand dimensional sacrifice, you do actually need a PhD in theoretical physics. Sorry!",
+    text: "要理解维度献祭，你确实需要理论物理学的博士学位。抱歉！",
     get unlocked() { return player.sacrificed.e >= 10 || DimBoost.totalBoosts >= 6; }
   },
   {
     id: "l8",
-    text: "A new group for the standardisation of numbers have come forward with a novel new format involving emoji's.",
+    text: "数字标准化新团体提出了一个包含表情符号的新颖格式。",
     get unlocked() { return player.requirementChecks.permanent.emojiGalaxies > 0; }
   },
   {
     id: "l9",
-    text: "Antimatter ice cream stand has recently opened- they have octillions of flavors!",
+    text: "反物质冰淇淋摊最近开业了，他们有千兆亿种口味！",
     get unlocked() { return player.records.totalAntimatter.e >= 27; }
   },
   {
     id: "l10",
-    text:
-      `The Heavenly Pelle has generated too much antimatter and needed to create another galaxy.
-      This one can be seen in the southwestern sky.`,
+    text: `天堂的 Pelle 制造了太多反物质，不得不创造另一个星系。这个星系可以在西南方的天空中看到。`,
     get unlocked() { return player.galaxies > 0 || Currency.infinities.gt(0); }
   },
   {
     id: "l11",
-    text: "9th Dimension is a lie.",
+    text: "第 9 维度是个谎言。",
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2658,7 +2133,7 @@ export const news = [
   },
   {
     id: "l12",
-    text: "The square root of 9 is 3, therefore the 9th dimension can't exist.",
+    text: "9 的平方根是 3，因此第 9 维度不可能存在。",
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2667,7 +2142,7 @@ export const news = [
   },
   {
     id: "l13",
-    text: "You got assimilated by the 9th dimension? Just call your doctor for mental illness!",
+    text: "你被第 9 维度同化了？快打电话给你的精神科医生吧！",
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2676,7 +2151,7 @@ export const news = [
   },
   {
     id: "l14",
-    text: "Why is there no 9th dimension? Because 7 8 9.",
+    text: "为什么没有第 9 维度？因为 7 8（吃了）9。",
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2685,7 +2160,7 @@ export const news = [
   },
   {
     id: "l15",
-    text: "The 9th dimension cannot exist because the Nein-speaking nazis died in WW2.",
+    text: "第 9 维度不可能存在，因为说“九不”（Nein）的纳粹在二战中死光了。",
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2694,9 +2169,7 @@ export const news = [
   },
   {
     id: "l16",
-    text:
-      `If you break the fourth wall... well, there's still the fifth, sixth, seventh, and eighth to get through
-      before you encounter bad things, so you should be fine`,
+    text: `如果你打破第四面墙……好吧，在你遇到坏东西之前，还有第五、第六、第七和第八面墙要穿过，所以你应该没事。`,
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2705,11 +2178,7 @@ export const news = [
   },
   {
     id: "l17",
-    text:
-      `Conditions must be met for Hevipelle to sleep. First, it needs to be a blue moon. Second, a specific town
-      in the arctic must have not seen light for a month. Third, he needs to release an AD update. And finally,
-      no one on the Discord can be on dimension 9. Only then can he rest, for up to 6 hours, before waking up
-      forcefully to avoid getting the offline achievement.`,
+    text: `Hevipelle 入睡必须满足条件。第一，必须是蓝月亮之夜。第二，北极的某个特定城镇必须一个月不见阳光。第三，他必须发布一个 AD 更新。最后，Discord 上不能有人在第 9 维度。只有那时他才能休息，最多 6 小时，然后会被强行叫醒，以免获得离线成就。`,
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2718,7 +2187,7 @@ export const news = [
   },
   {
     id: "l18",
-    text: "If the 9th dimension is all evil, then is 3 the root of all evil?",
+    text: "如果第 9 维度全是邪恶的，那么 3 就是万恶之源（根）吗？",
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2727,9 +2196,7 @@ export const news = [
   },
   {
     id: "l19",
-    text:
-      `I'll have 1e29 number 9s, a number 1e9 large, a number 6 with extra replicanti, a number 1e7, two 4e5s,
-      one with matter, and a large time vortex.`,
+    text: `我要 1e29 个 9 号，一个 1e9 大的，一个加了额外 replicanti 的 6 号，一个 1e7，两个 4e5，一个加物质，还有一个大号时空漩涡。`,
     get unlocked() {
       return DimBoost.totalBoosts >= 5 ||
       player.galaxies > 0 ||
@@ -2738,7 +2205,7 @@ export const news = [
   },
   {
     id: "l20",
-    text: "Infinity: the one thing that's supposed to break.",
+    text: "无限：那个本该被打破的东西。",
     get unlocked() { return PlayerProgress.infinityUnlocked(); }
   },
   {
@@ -2748,172 +2215,162 @@ export const news = [
   },
   {
     id: "l22",
-    text: "Anti Emoji Movie a huge hit!",
+    text: "反表情符号大电影大获成功！",
     get unlocked() { return player.requirementChecks.permanent.emojiGalaxies >= 5; }
   },
   {
     id: "l23",
-    text: "If this game was made by Valve, Zero Deaths would be impossible.",
+    text: "如果这款游戏是 Valve 做的，零死亡成就就不可能实现。",
     get unlocked() { return Achievement(64).isUnlocked; }
   },
   {
     id: "l24",
-    text: "Florida man attempts to get Zero Deaths on first run, is stopped by heat death of the universe.",
+    text: "佛罗里达男子试图首次通关就拿零死亡，被宇宙热寂拦住了。",
     get unlocked() { return Achievement(64).isUnlocked; }
   },
   {
     id: "l25",
-    text: "\"Having done half the achievements isn't much of an achievement\" -Boo",
+    text: "“完成一半成就算不上什么成就” -Boo",
     get unlocked() { return Achievements.effectiveCount >= GameDatabase.achievements.normal.length / 2; }
   },
   {
     id: "l26",
-    text:
-      `Thanos is gonna be super dissapointed when he shows up with a fully powered Infinity gauntlet, and Hevi
-      has a fully powered Eternity gauntlet.`,
+    text: `当灭霸戴着全功率无限手套登场时，Hevi 戴着全功率永恒手套，他会非常失望。`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "l27",
-    text:
-      "New strange material was been found. It seems to grow exponentially, but only helps with antimatter production.",
+    text: "发现了一种新的奇怪材料。它似乎呈指数增长，但只对反物质生产有帮助。",
     get unlocked() { return PlayerProgress.replicantiUnlocked() && player.replicanti.chance === 0.01; }
   },
   {
     id: "l28",
-    text: "It seems this \"replicanti\" stuff won't be growing any faster now.",
+    text: "看来这“replicanti”东西现在不会再长得更快了。",
     get unlocked() { return player.replicanti.chance === 1 && player.replicanti.interval === 1; }
   },
   {
     id: "l29",
-    text:
-      `If you wrote down 3 numbers a second, it would take you less time to write down your antimatter
-      amount than it would Hevipelle to update the game.`,
+    text: `如果你每秒写下 3 个数字，你写完自己反物质数量所需的时间，会比 Hevipelle 更新游戏所需的时间还短。`,
     get unlocked() { return Currency.antimatter.exponent >= 100000; }
   },
   {
     id: "l30",
-    text: "Does Hevi just pick quotes to put into the game?",
+    text: "Hevi 真的只是随便挑些名言放进游戏吗？",
     get unlocked() { return NewsHandler.uniqueTickersSeen >= 30; }
   },
   {
     id: "l31",
-    text: "New news company has become rivals with us. They are made entirely of antimatter.",
+    text: "新的新闻公司成了我们的对手。它们完全由反物质构成。",
     get unlocked() { return NewsHandler.uniqueTickersSeen >= 80; }
   },
   {
     id: "l32",
-    text: "How many times can we use \"Anti\" in a row before people stop listening?",
+    text: "在人们不再听之前，我们能连续用多少次“反”？",
     get unlocked() { return NewsHandler.uniqueTickersSeen >= 100; }
   },
   {
     id: "l33",
-    text: "Does Hevi even check #news-ticker-suggestions anymore?",
+    text: "Hevi 还会看 #news-ticker-suggestions 吗？",
     get unlocked() { return NewsHandler.uniqueTickersSeen >= 120; }
   },
   {
     id: "l34",
-    text: "Need more quotes! -hevipelle",
+    text: "需要更多名言！ -hevipelle",
     get unlocked() { return NewsHandler.uniqueTickersSeen >= 135; }
   },
   {
     id: "l35",
-    text: "Man destroys known universe with antimatter, writes news tickers to keep from feeling lonely.",
+    text: "男子用反物质摧毁了已知宇宙，靠写新闻滚动条排解孤独。",
     get unlocked() { return NewsHandler.uniqueTickersSeen >= 150; }
   },
   {
     id: "l36",
-    text: "You're almost there!",
+    text: "你就快到了！",
     get unlocked() { return NewsHandler.uniqueTickersSeen >= 160; }
   },
   {
     id: "l37",
-    text: "You can stop now",
+    text: "你可以停了",
     get unlocked() { return NewsHandler.uniqueTickersSeen >= 165; }
   },
   {
     id: "l38",
-    text: "fucking hacker",
+    text: "该死的黑客",
     get unlocked() { return NewsHandler.uniqueTickersSeen > GameDatabase.news.length; }
   },
   {
     id: "l39",
-    text: "Asian man trys to steal the trophy of fastest infinity of -1 seconds, AND HE DOES IT!",
+    text: "亚洲男子试图以 -1 秒的成绩偷走最快无限奖杯，而且他成功了！",
     get unlocked() { return NewsHandler.hasSeenNews("l1"); }
   },
   {
     id: "l40",
-    text:
-      `I broke the 8th wall, there is only chaos, Slabdrill is ritually sacrificing antimatter to the 9th
-      dimension. This will be my last entry, may Hevipelle have mercy on our souls, we didn't listen,
-      We should have listened.`,
+    text: `我打破了第八面墙，那里只有混沌，Slabdrill 正在向第 9 维度仪式性地献祭反物质。这将是我的最后一条记录，愿 Hevipelle 怜悯我们的灵魂，我们没有听，我们本该听的。`,
     get unlocked() { return NewsHandler.hasSeenNews("l58"); }
   },
   {
     id: "l41",
-    text: "I thought the update was 5 hours away... -new players after more than 5 hours of gameplay",
+    text: "我以为更新只要 5 小时…… -游玩超过 5 小时的新玩家",
     get unlocked() { return Time.totalTimePlayed.totalHours >= 5; }
   },
   {
     id: "l42",
-    text:
-      `Somebody told me to wait five hours for the update yesterday but it's today
-      and it still hasn't come! What do I do?`,
+    text: `昨天有人告诉我等五个小时就有更新，但今天都还没来！我该怎么办？`,
     get unlocked() { return Time.totalTimePlayed.totalHours >= 5; }
   },
   {
     id: "l43",
-    text: "You do know that you won't reach Infinity in -1 seconds, right?",
+    text: "你知道你不可能在 -1 秒内到达无限，对吧？",
     get unlocked() { return player.records.bestInfinity.time === 0.1; }
   },
   {
     id: "l44",
-    text: "Where does Antimatter Nemo live? In a NNnNeMI-NNnNe.",
+    text: "反物质尼莫住在哪里？在 NNnNeMI-NNnNe 里。",
     get unlocked() { return player.records.totalAntimatter.e >= 3e6; }
   },
   {
     id: "l45",
-    text: "Anti Emoji Movie MMMCMXCIX is a major hit!",
+    text: "反表情符号大电影 MMMCMXCIX 大获成功！",
     get unlocked() { return player.requirementChecks.permanent.emojiGalaxies >= 3999; }
   },
   {
     id: "l46",
-    text: "Achievement Unlocked!",
+    text: "成就已解锁！",
     get unlocked() { return Achievements.effectiveCount >= GameDatabase.achievements.normal.length; }
   },
   {
     id: "l47",
-    text: "The achievement is for two million, not two billion...",
+    text: "那个成就是两百万，不是二十亿……",
     get unlocked() { return Currency.infinities.gt(2e9); }
   },
   {
     id: "l48",
-    text: "Keep up the quick pace!",
+    text: "保持这个速度！",
     get unlocked() { return AchievementTimers.marathon1.time > 1200; }
   },
   {
     id: "l49",
-    text: "One day you will stop your incessant grind.",
+    text: "总有一天你会停止无休止的刷刷刷。",
     get unlocked() { return Currency.eternities.gt(50000); }
   },
   {
     id: "l50",
-    text: "You can probably stop farming for eternities now...",
+    text: "你现在大概可以停止刷永恒了……",
     get unlocked() { return Currency.eternities.gt(DC.D2E6); }
   },
   {
     id: "l51",
-    text: "Are you serious?",
+    text: "你是认真的吗？",
     get unlocked() { return Time.worstChallenge.totalSeconds <= 1; }
   },
   {
     id: "l52",
-    text: "Timing is key.",
+    text: "时机是关键。",
     get unlocked() { return player.records.thisEternity.realTime < 10; }
   },
   {
     id: "l53",
-    text: "If you want to farm infinities, why don't you just get the time study?",
+    text: "如果你想刷无限，为什么不直接点时间研究呢？",
     get unlocked() { return !TimeStudy(32).isBought && Currency.infinities.gt(72000 * 168); }
   },
   {
@@ -2952,58 +2409,22 @@ export const news = [
   },
   {
     id: "l56",
-    text: "Reality Challenges are the new 9th Dimension is the new orange.",
+    text: "现实挑战就是新的第 9 维度，就是新的橙色。",
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
   {
     id: "l57",
-    text:
-      `Jake returned home from a long day at school. On his way home, he came across a curious little object.
-      Transparent, but opaque. Shimmering, but gloomy. Heavy, but weightless. Jake brought the object to his
-      mother. "Mom, I found this thing on the sidewalk, can I keep it?", Jake said. His mother turned around
-      to view the object her son spoke of. Her pupils dilated, "Jake, get that thing out of the house now!"
-      she yelled. Jake was confused, as it seemed quite the harmless thing to him. He asked "But mom, wh-",
-      but before he could finish, the object appeared to undergo mitosis at what seemed like an impossible
-      speed, and the second copy slipped out of his hand and onto the floor. His mother rushed over to
-      him, and tried to grab the object, but it replicated again. "Jake... No matter what happens, don't
-      forget that I love you honey...". She wrapped her arms around him. "M-mom, what's happening?" Jake asked,
-      with a quivering fear in his voice. His mother cried a single tear. "⭔⭚⦕꒜ brand Replicanti..." she said,
-      in a somber tone. The Replicanti continued to replicate at a faster and faster pace. The bottom third of the
-      house was now full of Replicanti. Then the bottom half. Then the entire house. The mother and child were
-      trapped between the walls of their home and the Replicanti. Doomed to live the short rest of their life in
-      that inorganic coffin, as the air remaining in their lungs slowly depleted. But that wasn't the end; far from
-      it. The Replicanti began to replicate outside of the house, flooding out in a shimmering landslide. A few
-      neighbours noticed the strange objects, almost liquid-like in their appearance, and attempted to run.
-      But the Replicanti continued to replicate, and accelerate. Soon the entire block was covered in them; was
-      them. Shortly after, several blocks. The city. The surrounding cities. The country. All the countries. All
-      the planet. All the solar system. All the galaxy. All.`,
+    text: `杰克放学回家，结束漫长的一天。回家路上，他遇到一个奇怪的小东西。透明，却不透光。闪闪发光，却阴郁。沉重，却失重。杰克把东西带给妈妈。“妈妈，我在人行道上捡到这个，我能留着吗？”，杰克说。他妈妈转过身来看儿子说的这个东西。她的瞳孔放大，“杰克，马上把这东西拿出房子！”她喊道。杰克很困惑，因为在他看来这完全无害。他问“可是妈妈，为什-”，但他还没来得及说完，那个东西就以看似不可能的速度进行了有丝分裂，第二个副本从他手里滑落，掉到地板上。他妈妈冲过来，试图抓住那个东西，但它又复制了。“杰克……无论发生什么，别忘了妈妈爱你，宝贝……”。她张开双臂抱住他。“妈-妈妈，发生什么了？”杰克问，声音里带着颤抖的恐惧。他妈妈流下一滴泪。“⭔⭚⦕꒜ 品牌 Replicanti……”她悲伤地说。Replicanti 以越来越快的速度继续复制。房子的下三分之一现在充满了 Replicanti。然后是下半部分。然后是整栋房子。母子被困在家的墙壁和 Replicanti 之间。注定要在这无机棺材里度过短暂余生，肺里残留的空气慢慢耗尽。但这还不是结局，远非如此。Replicanti 开始在房子外面复制，像闪闪发光的山崩一样涌出。几个邻居注意到这些奇怪的东西，外观近乎液态，试图逃跑。但 Replicanti 继续复制，继续加速。很快整个街区都被覆盖，就是它们。不久之后，几个街区。城市。周边城市。国家。所有国家。整个星球。整个太阳系。整个星系。一切。`,
     get unlocked() { return player.replicanti.unl; }
   },
   {
     id: "l58",
-    text:
-      `The Holy trinity of Hevipelle, Antimatter, Infinity Points, and Eternity Points. These 3 resources let us
-      access Hevi's gift, Time Theorems. And with these Time Theorems, we reach out to Hevi, and call, “Hevi, bless
-      us on this fine day!” And Hevi does. He give us the blessing of Time Studies. These Time Studies were
-      blessings so powerful, Hevi restricted their power. He said, “I will give you a choice of three paths” and
-      then humanity chose. The short, cheap route of Antimatter Dimensions, giving instant gratification, the
-      powerful choice of Infinity Dimensions, which were a fast, middle ground path, or Time Dimension, the long
-      wait, and struggle, of humanity. Then, as humanity chose, a crack broke the earth. A serpent snaked out and
-      sneered to humanity, “I will offer the powerful choice of a ninth dimension! I am Slabdrill, lord of all
-      Unhevi. Humanity rose and said “ Begone Slabdrill! We want none of your foul Heresy!” And Hevi rose as well,
-      and smote Slabdrill with his godlike power. As Slabdrill's corpse fell into the earth, he cried “ this will
-      not be the last of me! Hevi will betr-“ and he fell in the Abyss of matter. Hevi gifted humanity with
-      Eternity upgrades, which boosted infinity dimensions and time dimensions. And Hevi gave humanity his greatest
-      gift. EP multipliers. He said, these will multiply all EP gained by 5, but their cost will increase 50 times.
-      Use them wisely. And Humanity journeyed off with their new power, as Slabdrill's words echoed in their heads.`,
+    text: `Hevipelle、反物质、无限点与永恒点的神圣三位一体。这 3 种资源让我们得以接触 Hevi 的恩赐，时间定理。借助这些时间定理，我们向 Hevi 呼唤：“Hevi，在这美好的一天祝福我们吧！”Hevi 应允了。他赐予我们时间研究的祝福。这些时间研究是强大到 Hevi 限制了其力量的祝福。他说“我将给你们三条道路的选择”，然后人类做出了选择。反物质维度的短而廉价之路，带来即时的满足；无限维度的强力选择，是一条快速的中庸之路；或者时间维度，人类漫长的等待与挣扎。然后，在人类做出选择时，一道裂缝劈开了大地。一条巨蛇蜿蜒而出，对人类狞笑：“我将提供第九维度这个强大的选择！我是 Slabdrill，一切 Unhevi 之主。”人类起身说：“滚开，Slabdrill！我们不要你那邪恶的异端！”Hevi 也起身，用他神一般的力量重创了 Slabdrill。Slabdrill 的尸体坠入大地时，他喊道：“这不会是我的终结！Hevi 将-”，然后他坠入了物质深渊。Hevi 赐予人类永恒升级，增强了无限维度和时间维度。Hevi 还给了人类他最伟大的礼物：EP 倍率。他说，这些倍率会把所有获得的 EP 乘以 5，但它们的成本会增加 50 倍。明智地使用它们。人类带着新力量踏上旅程，而 Slabdrill 的话语在他们脑中回响。`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "l59",
-    text:
-      `The debate on the singular form of Replicanti rages on. Team "Replicantus"'s base has been ransacked
-      by Team "Also Replicanti", and many of their dimensions were stolen. Team "The Plural Is Replicantis"
-      is still lying low after their plan to hack the dictionary failed.`,
+    text: `关于 Replicanti 单数形式的争论仍在继续。“Replicantus 队”的基地被“也是 Replicanti 队”洗劫，他们的许多维度被偷走。“复数应为 Replicantis 队”在入侵词典的计划失败后仍保持低调。`,
     get unlocked() { return player.replicanti.unl; }
   },
   {
@@ -3015,57 +2436,37 @@ export const news = [
   },
   {
     id: "l61",
-    text:
-      `Millenials are killing the challenge industry, say antimatter experts; "Nowadays they start with
-      challenges completed and infinity broken; it's just not how it used to be".`,
+    text: `反物质专家称，千禧一代正在摧毁挑战行业：“如今他们开局就带着完成的挑战和打破的无限；这已经不是过去的样子了”。`,
     get unlocked() { return PlayerProgress.infinityUnlocked(); }
   },
   {
     id: "l62",
-    text:
-      `Computer scientists are outraged, "What even are Infinity Points? IP stands for Internet Protocol!".
-      Debates continue to intensify, more at 7.`,
+    text: `计算机科学家们愤怒了：“无限点（Infinity Points）到底是什么？IP 代表的是互联网协议！”争论继续加剧，更多内容请锁定 7 点。`,
     get unlocked() { return PlayerProgress.infinityUnlocked(); }
   },
   {
     id: "l63",
-    text:
-      `Do you feel that time has been going slower? Study reveals that 1 second now last approximately 1.3 seconds.
-      Scientists are calling this phenomenon Time Dilation.`,
+    text: `你觉得时间变慢了吗？研究显示，现在 1 秒大约持续 1.3 秒。科学家们把这种现象称为时间膨胀。`,
     get unlocked() { return PlayerProgress.dilationUnlocked(); }
   },
   {
     id: "l64",
-    text:
-      `Injustice in the Antimatter Academia: Beginners are only allowed to choose one field of study while the elite
-      can pick all three. "Its just not fair, man. How come they can do it?" Questions frustrated student.`,
+    text: `反物质学术界的不公：新手只被允许选择一个研究领域，而精英可以全选。“这太不公平了。为什么他们可以？”困惑的学生问道。`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "l65",
-    text:
-      `It turns out that nobody actually knows what Infinity Points look like. Even the people who work on storing
-      them are specifically told not to look at them because they apparently "kill anyone who even looks at them",
-      to the point of sometimes working with blindfolds on. But today that will change. I am right here, in front
-      of an Infinity Point Depot, ready to tell all of you what they look like in 3, 2, 1-`,
+    text: `事实证明，没有人真正知道无限点长什么样。甚至连负责存储它们的人都被特别告知不要看它们，因为它们显然“会杀死任何看它们的人”，有时甚至要戴着眼罩工作。但今天这一切将改变。我就在这里，在一个无限点仓库前，准备告诉你们它们长什么样，3、2、1-`,
     get unlocked() { return PlayerProgress.infinityUnlocked(); }
   },
   {
     id: "l66",
-    text:
-      `Humanity shocked as failed Time Dilation experiment causes a visual glitch in spacetime. It is now visible
-      in the night sky just above the Celestial Equator.`,
+    text: `人类震惊，一次失败的时间膨胀实验在时空上造成了视觉故障。现在它就在夜空中天赤道上方可见。`,
     get unlocked() { return PlayerProgress.dilationUnlocked(); }
   },
   {
     id: "l67",
-    text:
-      `Snorting crushed up Time Shards is slowly turning into a fad challenge amongst the most bored of people. It's
-      said that the high it gives makes them experience as if the world itself is speeding up around you, which is
-      why it's been called The <span style="color: var(--color-eternity)">Timelapse Challenge</span>. &nbsp;&nbsp
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Dehydration deaths are through the roof as people mysteriously forget to drink water for several days.
-      Trace amounts of Time Shards are being found in their bodies.`,
+    text: `吸食碾碎的时间碎片正慢慢成为最无聊人群中的一种潮流挑战。据说它带来的快感让他们感觉世界在周围加速，因此被称为<span style="color: var(--color-eternity)">延时挑战</span>。脱水死亡人数飙升，因为人们神秘地忘记连续几天喝水。他们的尸体中发现了微量时间碎片。`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
@@ -3097,19 +2498,17 @@ export const news = [
   },
   {
     id: "l69",
-    text: "Friendship ended with Replicanti, now Replicanti Galaxies is my new best friend.",
+    text: "与 Replicanti 的友谊结束了，现在 Replicanti 星系是我最好的新朋友。",
     get unlocked() { return PlayerProgress.replicantiUnlocked(); }
   },
   {
     id: "l70",
-    text:
-      `"Zurkrbarg, Celestial of Privacy" has announced their plans to release a new version
-      of their popular social media universe, "All".`,
+    text: `“隐私天体 Zurkrbarg”宣布计划发布其热门社交媒体宇宙“All”的新版本。`,
     get unlocked() { return Teresa.isUnlocked; }
   },
   {
     id: "l71",
-    text: "Other languages await... I need to become a programmer",
+    text: "其他语言在等着我……我得成为程序员",
     get unlocked() { return Player.canEternity || PlayerProgress.eternityUnlocked(); }
   },
   {
@@ -3142,55 +2541,37 @@ export const news = [
   },
   {
     id: "l73",
-    text: "A long time ago in a distant galaxy far, far away, the cost scaling changed.",
+    text: "很久很久以前，在一个遥远遥远的星系里，成本缩放改变了。",
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "l74",
-    text: "Introducing a new feature: Reality Studies! Get in-game benefits for studying in real life!",
+    text: "推出新功能：现实研究！在现实中学习就能获得游戏内收益！",
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
   {
     id: "l75",
-    text:
-      `Here at Antimatter Dimensions, we pride ourselves in the quality of our products. For example: Did you know
-      that every Infinity Point is unique? That's right! They all have different personalities, their own feelings,
-      their own thoughts... I hope you can sleep well tonight, knowing this... Remember all of those Infinity
-      points you've spent? They had families, and they miss them... Look at what you've done. You're a monster.`,
+    text: `在反物质维度，我们为产品的质量感到自豪。例如：你知道每个无限点都是独一无二的吗？没错！它们都有不同的个性、自己的感受、自己的想法……知道这一点后，希望你今晚能睡个好觉……还记得你花掉的那些无限点吗？它们有家人，它们想念家人……看看你做了什么。你是个怪物。`,
     get unlocked() { return PlayerProgress.infinityUnlocked(); }
   },
   {
     id: "l76",
-    text: "So, you've reached the prestige layer after Infinity? It's about time...",
+    text: "那么，你已经到达无限之后的飞升层了？差不多是时候了……",
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "l77",
-    text: "Improve your perks through selective breeding and cutting edge epigenetics technology.",
+    text: "通过选择性繁殖和前沿的表观遗传学技术来改良你的福利。",
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
   {
     id: "l78",
-    text:
-      `Warning - Genetically Modified Perk Points are not suitable for; consumption, physical contact, inhalation,
-      exhalation, mental contact and scouring by both seen and unseen eyes. Do not put near a flammable,
-      inflammable, conducting, insulating, variable, biological or mechanical substance. Existence at your own risk.`,
+    text: `警告：转基因福利点不适合：食用、身体接触、吸入、呼出、精神接触，以及被可见和不可见的眼睛注视。请勿靠近易燃、不易燃、导电、绝缘、易变、生物或机械物质。存在风险自负。`,
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
   {
     id: "l79",
-    text:
-      `The Intergalactic Antimatter Revenue Service, contrary to popular belief, does have the ability to pay taxes
-      on AM gained through non-scrupulous methods, ie anything not done via legally-mandated dimensions or modified
-      through challenge courses. Section NY-8N lists 3 specific methodologies - illegal news ticker giveaways,
-      unrecognised dimensions, and modifications to the fabric of space time - as well as a miscellaneous for any
-      unique AM methods that may pop up in the future. And although you will have to pay the top AM tax rate of 99%,
-      it can save you money in the long run - if you are forced to switch realities due to a celestial decision you
-      can gain a portion of the tax you paid back from the IARS as a tax deduction, as well as make a deduction to
-      pay for the arbiters who represent you. Of course, any [PLAYER REFERENCE NOT FOUND] worth their RM knows that
-      the real way to hide illegal profits of crime is  in personalised pocket dimensions, hyperspliced waveform
-      banks and nanoshells, which requires extensive R&D to implement. As such, reporting illegal AM gain is only
-      recommended if you're too rich to hide your gains, but too poor to hide your gains.`,
+    text: `与普遍看法相反，星际反物质税务局确实能够对通过不正当手段获得的反物质征税，即任何未通过法定维度获得或未经挑战关卡调整的方式。NY-8N 条款列出了 3 种具体方法：非法新闻滚动条赠品、未认证维度，以及对时空结构的修改，还有一个杂项，用于未来可能出现的任何独特反物质获取方法。虽然你将不得不支付 99% 的最高反物质税率，但从长远来看这可以省钱：如果你因天体决定而被迫切换现实，你可以从 IARS 拿回部分已缴税款作为税收减免，还可以为代理你的仲裁者申请减免。当然，任何有价值的[玩家引用未找到]都知道隐藏非法犯罪利润的真正方法是个性化口袋维度、超拼接波形银行和纳米外壳，这需要大量的研发投入。因此，只有在你的钱多到藏不住、却又穷到藏不起时，才建议申报非法反物质收入。`,
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
   {
@@ -3204,9 +2585,7 @@ export const news = [
   },
   {
     id: "l81",
-    text:
-      `The world is in chaos as the laws of math have been rewritten! Many things that were thought
-      to be infinite are now just really big numbers!`,
+    text: `世界陷入混乱，因为数学定律被重写了！许多被认为无限的东西现在只是非常大的数字！`,
     get unlocked() { return PlayerProgress.hasBroken(); }
   },
   {
@@ -3225,12 +2604,7 @@ export const news = [
   },
   {
     id: "l83",
-    text:
-      `AD Patch Notes: Cleaned up the celestial problem Made Antimatter care about annihilation more Added mouths
-      Removed mouths Stopped unwanted interlopers from corporate takeovers of shops Fixed problem with newstickers
-      hanging in the air Dead replicanti remain in their galaxies Redefined interlopers to not include [REDACTED]
-      Tachyon Particles get stuck in the top left corner of the screen, obliterate time Added Coriolis effect to
-      Galaxy Spin Direction`,
+    text: `AD 补丁说明：清理了天体问题 让反物质更重视湮灭 添加了嘴巴 移除了嘴巴 阻止不受欢迎的闯入者从企业手中接管商店 修复了新闻滚动条悬挂在空中的问题 死亡的 replicanti 留在它们的星系中 重新定义闯入者，不包括[已编辑] 速子粒子卡在屏幕左上角，抹除了时间 为星系自转方向添加了科里奥利效应`,
     get unlocked() { return Teresa.isUnlocked; }
   },
   {
@@ -3243,68 +2617,52 @@ export const news = [
   },
   {
     id: "l85",
-    text:
-      `On opposite day, the new update is just -5 hours away. You begin increasing your Matter. Once you acquire a
-      huge abundance of Matter, you must become Infinitesimal. After increasing your wealth in Infinitesimal Points,
-      you can eventually Jiffy, the shortest unit of time. After enough time, your Jiffies will accumulate, and you
-      will Contract Time. Contracting Time will grant you enough of a boost to eventually Fantasy, the final layer
-      of maintenance. However, you find out that it was all a dream. Your Antimatter is safe and well, and the new
-      update is still just 5 hours away.`,
+    text: `在反日，新更新只需 -5 小时。你开始增加你的物质。当你获得大量物质后，你必须变得无穷小。在积累了无穷小点之后，你最终可以成为瞬秒，最短的时间单位。经过足够的时间，你的瞬秒会累积，你将收缩时间。收缩时间会给你足够的增益，最终幻想，维护的最后一层。然而，你发现这一切都是一场梦。你的反物质安然无恙，新更新仍然只需 5 小时。`,
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
   {
     id: "l86",
-    text:
-      `Hello, player. I'd like to play a game. In front of you is a pile of replicanti. They are currently frozen in
-      time, and cannot replicate. To your right is a computer playing Antimatter Dimensions on an empty save. You
-      must reach infinity. However, once you buy a 1st dimension, the replicanti will start replicating. As you know,
-      they replicate fast, and if they fill up the room you will suffocate. If you reach infinity before that, they
-      will be frozen again. The clock is ticking. Start now.`,
+    text: `你好，玩家。我想玩个游戏。你面前有一堆 replicanti。它们目前被冻结在时间里，无法复制。你右边是一台电脑，在空存档上运行着反物质维度。你必须到达无限。然而，一旦你购买了第一维度，replicanti 就会开始复制。如你所知，它们复制得很快，如果它们填满房间，你就会被窒息。如果你在此之前到达无限，它们会再次被冻结。时钟在滴答作响。现在开始。`,
     get unlocked() { return PlayerProgress.replicantiUnlocked(); }
   },
   {
     id: "l87",
     text:
       `"To see a World in a Grain of Sand. And a Heaven in a Wild Flower. Hold Infinity in the palm of your hand.
-      And Eternity in an hour. And Reality in about 5 hours™️" ~Anti-William Blake `,
+      一小时内看到永恒。约五小时后看到现实™" ~反威廉·布莱克 `,
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
   {
     id: "l88",
-    text:
-      `Our deepest apologies for the new glyph mechanic. The intent is to provide players with a sense of pride and
-      accomplishment for unlocking rare glyphs. We selected initial values based upon data from the final wave of
-      testing and other adjustments made to milestone rewards before launch. Among other things, we're looking at
-      average per-player credit earn rates on a daily basis, and we'll be making constant adjustments to ensure that
-      players have challenges that are compelling, rewarding, and of course attainable via gameplay.`,
+    text: `我们对新的符文机制深表歉意。其意图是为玩家在解锁稀有符文时提供自豪感和成就感。我们根据最后一轮测试的数据以及发布前对里程碑奖励的其他调整选定了初始数值。除此之外，我们还会关注每位玩家的日均积分获取率，并不断调整，确保玩家面对的挑战引人入胜、回报丰厚，当然也可以通过游戏玩法达成。`,
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
   {
     id: "r1",
-    text: "This news message is 100x rarer than all the others.",
+    text: "这条新闻消息比其他所有消息稀有 100 倍。",
     get unlocked() { return Math.random() < 0.01; }
   },
   {
     id: "p1",
-    text: "Is this a jojo reference?",
+    text: "这是 jojo 梗吗？",
   },
   /* eslint-disable max-len */
   {
     id: "ai1",
-    text: "If you are the game, then you can use the cheat to unlock a secret achievement...but it costs e1100 antimatter!?!"
+    text: "如果你就是游戏，那么你可以用作弊代码解锁隐藏成就……但它要花 e1100 反物质！？！"
   },
   {
     id: "ai2",
-    text: "\"Hm, I don't know how to fix this.\" - Someone who has not unlocked the achievement btw"
+    text: "“嗯，我不知道怎么修复这个。” - 顺便一提，这是个没解锁成就的人"
   },
   {
     id: "ai3",
-    text: "I thought the game was supposed to have a hard reset after eternity, but then I got randomized to start my first game with no save file \uD83D\uDE26",
+    text: "我以为游戏在永恒之后应该有硬重置，但后来我被随机分配到第一次游戏，连存档文件都没有。",
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "ai4",
-    text: "I thought the update was 5 hours ago... I guess we'll have to put it back in 5 hours"
+    text: "我以为更新 5 小时前就该来了……看来我们得再放回 5 小时后"
   },
   {
     id: "ai5",
@@ -3312,276 +2670,276 @@ export const news = [
   },
   {
     id: "ai6",
-    text: "ahah bad ticker suggestion"
+    text: "哈哈烂建议"
   },
   {
     id: "ai7",
-    text: "I see you playing this game with an empty stomach and you're gonna start playing this game with an empty wallet."
+    text: "我看到你空着肚子玩这个游戏，你马上就会空着钱包玩这个游戏了。"
   },
   {
     id: "ai8",
-    text: "just start... clicking. dont even think about wasting time. just do it."
+    text: "只管开始……点击。别想着浪费时间。就是干。"
   },
   {
     id: "ai9",
-    text: "the idea that the 9th dimension creates the 8th dimension is crazy"
+    text: "第 9 维度创造第 8 维度的想法太疯狂了"
   },
   {
     id: "ai10",
-    text: "...does that mean the [REDACTED] dimension produces the [REDACTED] dimension?"
+    text: "……那是不是意味着[已编辑]维度产生[已编辑]维度？"
   },
   {
     id: "ai11",
-    text: "\"click here to buy a stack of paperclips\" (when clicked you get Rickroll)",
+    text: "“点击这里购买一叠回形针”（点击后你会被瑞克摇）",
     onClick() { window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); }
   },
   {
     id: "ai12",
-    text: "In my spare time I read the short stories by T. H. White."
+    text: "闲暇时我会读 T. H. White 的短篇小说。"
   },
   {
     id: "ai13",
-    text: "Holy crap, that's pretty wild"
+    text: "天哪，那也太狂野了"
   },
   {
     id: "ai14",
-    text: "Extinction is not a real thing. You can't wear the same hat 24/7."
+    text: "灭绝不是真的。你不能 24/7 戴同一顶帽子。"
   },
   {
     id: "ai15",
-    text: "If you can read this you've escaped from the game."
+    text: "如果你能读到这条消息，说明你已经逃出了游戏。"
   },
   {
     id: "ai16",
-    text: "\"The hat trick I would love to see it\" - Noah Feldman"
+    text: "“帽子戏法，我真想看看” - Noah Feldman"
   },
   {
     id: "ai17",
-    text: "look at hevi fight riotously on the discord server"
+    text: "快看 hevi 在 discord 服务器上激烈争斗"
   },
   {
     id: "ai18",
-    text: "I just stole the \"Anti\" flag from a biker gang and I am packing it with dynamite, dynamite, dynamite, dynamite..."
+    text: "我刚刚从飞车党那里偷了“反”旗帜，正在装满炸药，炸药，炸药，炸药……"
   },
   {
     id: "ai19",
-    text: "No matter how much antimatter you have, the matter will always outweigh the anti-matter."
+    text: "无论你有多少反物质，物质总是比反物质重。"
   },
   {
     id: "ai20",
-    text: "Franklin sealed the Omega squared. Now you can seal the Omega any way you want."
+    text: "Franklin 封印了 Omega 平方。现在你可以随心所欲地封印 Omega。"
   },
   {
     id: "ai21",
-    text: "Is this the real 9th Dimension?"
+    text: "这是真的第 9 维度吗？"
   },
   {
     id: "ai22",
-    text: "Click here to exit the game"
+    text: "点击这里退出游戏"
   },
   {
     id: "ai23",
-    text: "This news ticker will now only AIR in the 9th dimension"
+    text: "这条新闻滚动条现在只会在第 9 维度播出"
   },
   {
     id: "ai24",
-    text: "The 9th dimension doesn't exist because it was suppressed by the 9th dimension."
+    text: "第 9 维度不存在，因为它被第 9 维度镇压了。"
   },
   {
     id: "ai25",
-    text: "To matter or to antimatter, that is the question."
+    text: "成为物质还是反物质，这是个问题。"
   },
   {
     id: "ai26",
-    text: "After 8 years of production and unstable universes, Chaosium will cease to exist in 5 hours."
+    text: "经过 8 年的制作和不稳定的宇宙，Chaosium 将在 5 小时后不复存在。"
   },
   {
     id: "ai27",
-    text: "Half of the problems in the 9th dimension don't even make sense. What are they even doing with all of that energy anyway?"
+    text: "第 9 维度里一半的问题都没有意义。它们到底拿那些能量干什么？"
   },
   {
     id: "ai28",
-    text: "Wait, there's a nin--"
+    text: "等等，有个忍--"
   },
   {
     id: "ai29",
-    text: "Somewhere, a madman and his army of Trimps are tampering with Matter Dimensions."
+    text: "某个地方，一个疯子和他的 Trimps 大军正在篡改物质维度。"
   },
   {
     id: "ai30",
-    text: "Why is there so many attached to this number? It doesn't make sense."
+    text: "为什么有这么多人跟这个数字扯上关系？说不通。"
   },
   {
     id: "ai31",
-    text: "The news ticker is in the anti-news-ticker"
+    text: "新闻滚动条在反新闻滚动条里"
   },
   {
     id: "ai32",
-    text: "the 9th dimension doesn't exist because we are using nonary"
+    text: "第 9 维度不存在，因为我们在使用九进制"
   },
   {
     id: "ai33",
-    text: "BREAKING NEWS: New research has shown that not one, not two, but three people can be said to have felt the same emotion as me when they read that as a ticker suggestion."
+    text: "突发新闻：新研究显示，不是一个人，不是两个人，而是三个人在把它作为滚动条建议读到时会和我产生同样的情绪。"
   },
   {
     id: "ai34",
-    text: "Here's an explanation of my 'problematic mood' - it's explained in the news ticker!"
+    text: "这是对我“问题情绪”的解释，它就在新闻滚动条里！"
   },
   {
     id: "ai35",
-    text: "Local crazy person tries selling anti-cookies"
+    text: "本地疯子试图兜售反饼干"
   },
   {
     id: "ai36",
-    text: "Welcome to Antimatter Dimensions: Source, the free to play sequel to the cult classic AD:GO."
+    text: "欢迎来到反物质维度：起源，这款免费游玩的经典邪典游戏 AD:GO 的续作。"
   },
   {
     id: "ai37",
-    text: "A new hand touches your antimatter!"
+    text: "一只新手触摸了你的反物质！"
   },
   {
     id: "ai38",
-    text: "Who are we, anyways?"
+    text: "我们到底是谁？"
   },
   {
     id: "ai39",
-    text: "We are the people who actually matter"
+    text: "我们才是真正重要的（物质）人"
   },
   {
     id: "ai40",
-    text: "Matter?  Not even a hint."
+    text: "物质？连一点影子都没有。"
   },
   {
     id: "ai41",
-    text: "I am the news guy, I make news. You don't read this? Well you'll just have to wait until you look in the mirror."
+    text: "我是新闻人，我制造新闻。你不读这条？那你就只能等着照镜子的时候看了。"
   },
   {
     id: "ai42",
-    text: "\"BOO!\" (news ticker moves 90 degrees)"
+    text: "“吓！”（新闻滚动条旋转 90 度）"
   },
   {
     id: "ai43",
-    text: "BUY A JAR OF STICKERS, HIGH QUALITY STICKERS, GREAT QUALITY STICKERS!"
+    text: "买一罐贴纸，高品质贴纸，超高品质贴纸！"
   },
   {
     id: "ai44",
-    text: "I made news, you read it."
+    text: "我制造新闻，你来读它。"
   },
   {
     id: "ai45",
-    text: "I like news."
+    text: "我喜欢新闻。"
   },
   {
     id: "ai46",
-    text: "I don't make news."
+    text: "我不制造新闻。"
   },
   {
     id: "ai47",
-    text: "YOU MAKE NEWS AND I GET THE [REDACTED] NEWS"
+    text: "你制造新闻，而我得到[已编辑]新闻"
   },
   {
     id: "ai48",
-    text: "The term \"Anti-infinity\" is a verb and cannot be a noun. Learn about its usage here."
+    text: "“反无限”是动词，不能当名词用。在这里了解它的用法。"
   },
   {
     id: "ai49",
-    text: "And now, for the shopping list!"
+    text: "现在，是购物清单时间！"
   },
   {
     id: "ai50",
-    text: "The 9th dimension is clearly real! It's just not in our dimension."
+    text: "第 9 维度显然是真的！它只是不在我们这个维度。"
   },
   {
     id: "ai51",
-    text: "I tried searching on google for the phrase \"9th dimension,\" and I'm okay with saying that, because it describes a very real thing."
+    text: "我试着在 google 上搜索“第 9 维度”，我可以坦然这么说，因为它描述的是一件非常真实的东西。"
   },
   {
     id: "ai52",
-    text: "You have no power here."
+    text: "你在这里没有力量。"
   },
   {
     id: "ai53",
-    text: "Some people had to settle for 10 dimensions because they couldn't break infinity. Big Crunch turned out to be just a short space in time."
+    text: "有些人只能凑合着用 10 个维度，因为他们无法打破无限。大挤压原来只是时间中的一个短暂间隔。"
   },
   {
     id: "ai54",
-    text: "There once was a young man in a strange land, and he dreamed of a universe filled with possibilities. One day, he asked his mother \"What's Expansion like?\" Her reply was \"Expansion times back then were unbalanced, and I said that's why you can't have equal amounts of matter and antimatter."
+    text: "从前有个年轻人身处异乡，他梦想着一个充满可能性的宇宙。有一天，他问母亲“扩张是什么样的？”她回答说“那个时代的扩张很不平衡，所以我说你不可能拥有等量的物质和反物质。”"
   },
   {
     id: "ai55",
-    text: "Market research firm tries to explain why some commodities don't perform as expected. Market research firm herself can't figure out why."
+    text: "市场研究公司试图解释为什么某些商品的表现不如预期。市场研究公司自己也搞不明白为什么。"
   },
   {
     id: "ai56",
-    text: "Bid your antimatter today!"
+    text: "今天就来竞标你的反物质吧！"
   },
   {
     id: "ai57",
-    text: "I am Alpha Centauri, Prime 001. My research has found that if you are alive in the 9th dimension, evil has taken over your dimension and is attempting to enact its plan to take over your mind and reverse time. You must do everything in your power to stop this plan from being implemented, now."
+    text: "我是 Alpha Centauri，编号 Prime 001。我的研究发现，如果你在第 9 维度中活着，说明邪恶已经占领了你的维度，并正试图实施它的计划：占领你的心智并逆转时间。你必须尽一切力量阻止这个计划实施，现在。"
   },
   {
     id: "ai58",
-    text: "Stand by and unlock the 9th dimension for a secret achievement."
+    text: "待机并解锁第 9 维度以获取隐藏成就。"
   },
   {
     id: "ai59",
-    text: "I fix bugs in 5 hours"
+    text: "我在 5 小时内修复 bug"
   },
   {
     id: "ai60",
-    text: "If you're reading this, that means you can read this."
+    text: "如果你正在读这条消息，说明你能读懂这条消息。"
   },
   {
     id: "ai61",
-    text: "Uhh... Hi. Could you tell me your name?"
+    text: "呃……你好。能告诉我你的名字吗？"
   },
   {
     id: "ai62",
-    text: "Uh, no. This is too big for a QR code."
+    text: "呃，不行。这太大了，放不进二维码。"
   },
   {
     id: "ai63",
-    text: "(right to left move it make)"
+    text: "（把它从右往左移）"
   },
   {
     id: "ai64",
-    text: "Oh no the antimatter is coming for us!"
+    text: "哦不，反物质朝我们来了！"
   },
   {
     id: "ai65",
-    text: "Why is there so much antimatter in this world? For a start, it's all produced by the antimatter factories on Earth. Secondly, the factories on"
+    text: "为什么这个世界有这么多反物质？首先，它们全部由地球上的反物质工厂生产。其次，工厂……"
   },
   {
     id: "ai66",
-    text: "It's nothing personal, bro. -All villager types"
+    text: "这不是针对你，兄弟。 -所有村民类型"
   },
   {
     id: "ai67",
-    text: "I tried my best to read those tiny, handwritten messages, but whoever designed scythes hated me and stuck them in a corner. -Porygon-Z"
+    text: "我尽力去读那些细小的手写消息，但设计镰刀的人恨我，把它们放在了角落里。 -Porygon-Z"
   },
   {
     id: "ai68",
-    text: "Hmm... I don't know how I ended up here. I don't even know if I'm supposed to be here. I just sit here and imagine what could have been if I hadn't stopped. Oh god, what could have been..."
+    text: "嗯……我不知道我怎么到了这里。我甚至不知道自己该不该在这里。我就坐在这里，想象如果我当时没有停下会怎样。哦天哪，本可能会怎样……"
   },
   {
     id: "ai69",
-    text: "Aw shucks, I finally hacked it enough to get to the C21 unlock, boss!"
+    text: "哎呀，老板，我终于成功破解到 C21 解锁了！"
   },
   {
     id: "ai70",
-    text: "Купил мужик антиматерию"
+    text: "一个男人买了反物质"
   },
   {
     id: "ai71",
-    text: "So you're telling me that I can post here, watch the titanic twice, come back and not be able to post?"
+    text: "所以你是说我可以在这里发帖，看两遍泰坦尼克号，回来就不能发帖了？"
   },
   {
     id: "ai72",
-    text: "The last update was 5 hours ago. There is no next update, because the last update was 5 hours ago. We will update our podcast in 5 hours to cover the entire topic of 5 hours, because this is the last podcast ever, everyone knows that the update is always 5 hours away, but in reality it's more like 1-2-3-4-5-6-7-8-9-10 minutes away, but in our heads it's closer to an actual accurate update date, like 5 hours away but with a few tickspeed upgrades."
+    text: "上次更新是 5 小时前。没有下一次更新，因为上次更新就是 5 小时前。我们将在 5 小时后更新我们的播客，以完整覆盖 5 小时这个话题，因为这是最后一期播客，所有人都知道更新总是在 5 小时之后，但实际上更像是 1-2-3-4-5-6-7-8-9-10 分钟之后，但在我们心里，它更接近一个真正准确的更新日期，比如 5 小时后，但要加上几次刻速度升级。"
   },
   {
     id: "ai73",
-    text: "Yep. You. Get. Over. Your. Antidimensions."
+    text: "是的。你。会。克服。你的。反维度。"
   },
   {
     id: "ai74",
@@ -3589,7 +2947,7 @@ export const news = [
   },
   {
     id: "ai75",
-    text: "Pass me that history, please"
+    text: "请把那本历史书递给我"
   },
   {
     id: "ai76",
@@ -3597,91 +2955,91 @@ export const news = [
   },
   {
     id: "ai77",
-    text: "ur history teacher said i was mad for getting *insert something here* on my bday"
+    text: "你的历史老师说我在生日那天拿到*插入某物*是疯了"
   },
   {
     id: "ai78",
-    text: "All is fair in antimatter"
+    text: "反物质面前人人平等"
   },
   {
     id: "ai79",
-    text: "The Mysterium, the 2nd Dimension"
+    text: "Mysterium，第二维度"
   },
   {
     id: "ai80",
-    text: "Oops, I think we misticked."
+    text: "哎呀，我想我们点错刻速度了。"
   },
   {
     id: "ai81",
-    text: "please wait 5 HOURS FOR THE NEWS"
+    text: "请等待 5 小时观看新闻"
   },
   {
     id: "ai82",
-    text: "please wait til the weather improves"
+    text: "请等到天气好转"
   },
   {
     id: "ai83",
-    text: "Please, take a minute to appreciate the beauty of this news ticker."
+    text: "请花一分钟欣赏这条新闻滚动条的美。"
   },
   {
     id: "ai84",
-    text: "How about this, working backwards? You know, from the time period covered by the question, that the game is set in, say, the 1950s. Now, if we talk about how games are set in the 2030s. Games are defined as any media, not necessarily of the form \"play some game\" (which, by the way, is a useful thing to have in one's vocabulary) but any media that can be understood as a game (i.e. a media that one can play back in time}, and games are defined as any game that one can't play back in time."
+    text: "这样如何，倒推一下？你知道，根据问题涉及的时间段，游戏设定在，比如说，20 世纪 50 年代。现在，如果我们讨论游戏如何设定在 21 世纪 30 年代。游戏被定义为任何媒体，不一定是“玩某个游戏”的形式（顺便说一句，这是词汇表里很有用的一个词），而是任何可以被理解为游戏的媒体（即可以在时间中回放的媒体），而游戏被定义为任何不能在时间中回放的游戏。"
   },
   {
     id: "ai85",
-    text: "How about AD, made by NaN? Higher quality, obviously. But still, [REDACTED]"
+    text: "那由 NaN 制作的 AD 呢？显然质量更高。但是，仍然[已编辑]"
   },
   {
     id: "ai86",
-    text: "I thought the whole \"annihilation is just a phase\" quote was awesome until I realized it also gave me a [REDACTED]"
+    text: "我一直觉得“湮灭只是一个阶段”这句话很棒，直到我意识到它也给了我一个[已编辑]"
   },
   {
     id: "ai87",
-    text: "I have created an Omsi universe. And it's [REDACTED]"
+    text: "我创造了一个 Omsi 宇宙。而且它[已编辑]"
   },
   {
     id: "ai88",
-    text: "I put [REDACTED] in the oven. It got [REDACTED] and I [REDACTED] am [REDACTED]"
+    text: "我把[已编辑]放进烤箱。它变得[已编辑]，然后我[已编辑]正在[已编辑]"
   },
   {
     id: "ai89",
-    text: "What are the red herrings?"
+    text: "那些烟幕弹是什么？"
   },
   {
     id: "ai90",
-    text: "Help we are stuck in Hevipelle's (http://en.wikipedia.org/wiki/Hevipelle) basement and hevi is forcing us to build a [REDACTED] wall to keep [REDACTED] away from [REDACTED]"
+    text: "救命，我们被困在 Hevipelle 的（http://en.wikipedia.org/wiki/Hevipelle）地下室里，hevi 逼我们建一堵[已编辑]墙，把[已编辑]挡在[已编辑]之外"
   },
   {
     id: "ai91",
-    text: "And now, for the weather. 70 and raining in North Dakota, remember those lovely, big, golden, iron curtain bars. Also remember that the [REDACTED] weather! Just remember: [REDACTED] and [REDACTED] outside [REDACTED]"
+    text: "现在播报天气。北达科他州 70 度，有雨，记得那些可爱的、巨大的、金色的铁幕。还要记住[已编辑]的天气！只要记住：[已编辑]和[已编辑]在[已编辑]外面"
   },
   {
     id: "ai92",
-    text: "Let's play a little game. You will start with no possessions and no goals. Lets say you have [REDACTED] and your [REDACTED] is [REDACTED] you can [REDACTED]"
+    text: "我们来玩个小游戏。你一开始没有任何财产和目标。假设你有[已编辑]，你的[已编辑]是[已编辑]，你可以[已编辑]"
   },
   {
     id: "ai93",
-    text: "What are gems for?"
+    text: "宝石有什么用？"
   },
   {
     id: "ai94",
-    text: "Who made the 5th dimension?"
+    text: "谁创造了第 5 维度？"
   },
   {
     id: "ai95",
-    text: "I don't get it"
+    text: "我不明白"
   },
   {
     id: "ai96",
-    text: "Why is nobody talking about the 9th dimension?"
+    text: "为什么没人谈论第 9 维度？"
   },
   {
     id: "ai97",
-    text: "This news sucks. Why no you don't get it?"
+    text: "这条新闻真烂。为什么？你就是不明白？"
   },
   {
     id: "ai98",
-    text: "Sorry, your reality has disconnected from the 9th dimension. You will now remain in the 8th dimension until further notice."
+    text: "抱歉，你的现实已与第 9 维度断开连接。在另行通知之前，你将停留在第 8 维度。"
   },
   (function() {
     let wasClicked = false;
@@ -3704,51 +3062,51 @@ export const news = [
   }()),
   {
     id: "ai100",
-    text: "I get all my news from this Discord, not 5 hours of my life"
+    text: "我所有的新闻都来自这个 Discord，而不是我生命中浪费的 5 小时"
   },
   {
     id: "ai101",
-    text: "meow"
+    text: "喵"
   },
   {
     id: "ai102",
-    text: "You are now manually blinking."
+    text: "你现在开始手动眨眼了。"
   },
   {
     id: "ai103",
-    text: "Sorry, your mic is playing Antimatter Dimensions."
+    text: "抱歉，你的麦克风正在播放反物质维度。"
   },
   {
     id: "ai104",
-    text: "Sorry, your reality has disconnected from the 9th dimension."
+    text: "抱歉，你的现实已与第 9 维度断开连接。"
   },
   {
     id: "ai105",
-    text: "Apparently I am the bad guy in this video. I'm the one who did nothing."
+    text: "显然我是这个视频里的反派。我是那个什么都没做的人。"
   },
   {
     id: "ai106",
-    text: "There are multiple ways to win this game. You can either type in your coordinates directly into the game, or you can type them into google which produces a different result. If you are getting the \"same exact thing\" result, your computer must be malfunctioning. Test results indicate that your computer is malfunctioning and you should check your firmware for vulnerabilities. You can also try turning off the news and re-running the game, but doing this only makes the \"the weather is X\" joke. Waiting six hours for a news message is NOT a news message."
+    text: "这款游戏有多种获胜方式。你可以直接把坐标输入游戏，也可以输入 google，这会得到不同的结果。如果你得到“完全相同”的结果，那你的电脑一定出故障了。测试结果表明你的电脑出故障了，你应该检查固件漏洞。你也可以尝试关闭新闻并重新运行游戏，但这只会让“天气是 X”的笑话继续。等待六个小时看一条新闻消息，那不叫新闻消息。"
   },
   {
     id: "ai107",
-    text: "The weather is actually a thing. Scientists have confirmed that there is a correlation between the amount of Antimatter in the earth and the amount of weather. The earth is indeed a magnet, but scientists now hypothesize that as the earth warms up, the magnetic reconnection will accelerate, and this could cause a domino effect to cascade throughout the world, eventually leading to uncontrolled nuclear winter and spontaneous antimatter implosion."
+    text: "天气确实是真实存在的。科学家已经证实，地球上的反物质数量与天气数量之间存在相关性。地球确实是一块磁铁，但科学家现在推测，随着地球变暖，磁重连会加速，这可能在全世界引发多米诺骨牌效应，最终导致失控的核冬天和自发的反物质内爆。"
   },
   {
     id: "ai108",
-    text: "The tenth dimension is not a real thing. Stop telling people that."
+    text: "第十维度并不是真实存在的东西。别告诉别人了。"
   },
   {
     id: "ai109",
-    text: "Don't tell Hevi it's not a real thing"
+    text: "别告诉 Hevi 它不是真的"
   },
   {
     id: "ai110",
-    text: "i dont know how to fix this"
+    text: "我不知道怎么修复这个"
   },
   {
     id: "ai111",
-    text: "This update is not for you!"
+    text: "这个更新不是给你的！"
   },
   {
     id: "ai112",
@@ -3756,370 +3114,370 @@ export const news = [
   },
   {
     id: "ai113",
-    text: "What is Antimatter? Long ago, gods lived in harmony. Then, everything changed when the apocalypse broke out. Chaos reigns, and even higher dimensions are being built. This is your fate. Build the Antimatter Dimensions. Amen."
+    text: "什么是反物质？很久以前，众神和谐相处。然后，一切都变了，天启爆发了。混沌横行，连更高的维度都在被建造。这就是你的命运。建造反物质维度。阿门。"
   },
   {
     id: "ai114",
-    text: "Water under the bridge?"
+    text: "覆水难收（桥下流水）？"
   },
   {
     id: "ai115",
-    text: "I wonder if anyone has posted about this before me?"
+    text: "我想知道有没有人在我之前发过这个？"
   },
   {
     id: "ai116",
-    text: "This post has been shared many times. Who knows how many?"
+    text: "这个帖子被分享了很多次。谁知道有多少次？"
   },
   {
     id: "ai117",
-    text: "Good night!"
+    text: "晚安！"
   },
   {
     id: "ai118",
-    text: "I made a timeline of my replicanti battles, which can be found here."
+    text: "我做了一个我的 replicanti 战斗时间线，可以在这里找到。"
   },
   {
     id: "ai119",
-    text: "\"Quantumum Battle Royale coming in 5 hours!\" (Rumor: 5 hours)"
+    text: "“量子大逃杀将在 5 小时后上线！”（传闻：5 小时）"
   },
   {
     id: "ai120",
-    text: "Rumor says Nords will start producing replicanti in five hours."
+    text: "传闻说 Nords 将在五小时后开始生产 replicanti。"
   },
   {
     id: "ai121",
-    text: "I am an Nordsweeper, stealing their jobs to support the replicanti factories"
+    text: "我是 Nords 扫雷员，抢走他们的工作来供养 replicanti 工厂。"
   },
   {
     id: "ai122",
-    text: "Used to be, AD was the best game. Nowadays, it's all crapp."
+    text: "过去，AD 是最好的游戏。如今，它全是垃圾。"
   },
   {
     id: "ai123",
-    text: "You better stop looking at these news ticker suggestions, before your fingers dry up."
+    text: "你最好别再看这些新闻滚动条建议了，不然你的手指会干枯。"
   },
   {
     id: "ai124",
-    text: "Antimatter Dimensions *Loses* bee movie."
+    text: "反物质维度《蜜蜂总动员》赔了。"
   },
   {
     id: "ai125",
-    text: "Oh, god, there's replicanti in my peas.",
+    text: "哦天哪，我的豌豆里有 replicanti。",
     get unlocked() { return PlayerProgress.replicantiUnlocked(); }
   },
   {
     id: "ai126",
-    text: "Oh, god, I'm stepping on a replicanti."
+    text: "哦天哪，我踩到一个 replicanti。"
   },
   {
     id: "ai127",
-    text: "Hello, world!"
+    text: "你好，世界！"
   },
   {
     id: "ai128",
-    text: "Welcome to /r/AskReddit about submarines. - accurate as of January 8th, 2017"
+    text: "欢迎来到关于潜艇的 /r/AskReddit。 -截至 2017 年 1 月 8 日准确"
   },
   {
     id: "ai129",
-    text: "Antimatter being researched by the government. Is it safe to say that this news ticker is fake?"
+    text: "政府正在研究反物质。能说这条新闻滚动条是假的吗？"
   },
   {
     id: "ai130",
-    text: "Does the news show at Infinite Antimatter?"
+    text: "新闻会在无限反物质时播放吗？"
   },
   {
     id: "ai131",
-    text: "Have you saved your game? Yes. Have you quit your game? Nothin' wrong with this save. just keep holding that key."
+    text: "你保存游戏了吗？保存了。你退出游戏了吗？这个存档没问题。继续按住那个键。"
   },
   {
     id: "ai132",
-    text: "i clicked too fast...my fps dropped"
+    text: "我点得太快了……我的帧率掉了"
   },
   {
     id: "ai133",
-    text: "I found out that the year is 20XX. I was going to make a news ticker but then I realized that it's just a ticker."
+    text: "我发现今年是 20XX 年。我本来想做一条新闻滚动条，但后来意识到它只是一条滚动条。"
   },
   {
     id: "ai134",
-    text: "\"One of these days I'll get bored of reading news for a while\" - old man"
+    text: "“总有一天我会对读新闻感到厌倦的” -老人"
   },
   {
     id: "ai135",
-    text: "'Tis the season for new antiques! Get your first ever LOOK at these unique objects, before they're gone!' Sold out!"
+    text: "古董新品季到了！在这些独特物品消失之前，先睹为快！售罄！"
   },
   {
     id: "ai136",
-    text: "3 things that antimatter, 1 more thing to infinity"
+    text: "3 件反物质的事，还有 1 件通向无限"
   },
   {
     id: "ai137",
-    text: "Buy the paperclip emojis now at https://aarextiaokhiao.github.io/blob/master/docs/en.json"
+    text: "现在就在 https://aarextiaokhiao.github.io/blob/master/docs/en.json 购买回形针表情符号"
   },
   {
     id: "ai138",
-    text: "click here to unlock the next update"
+    text: "点击这里解锁下一个更新"
   },
   {
     id: "ai139",
-    text: "(If you want you can make this only show when the news actually loads)"
+    text: "（如果你愿意，可以让这条只在新闻真正加载时显示）"
   },
   {
     id: "ai140",
-    text: "Malicious men are trying to make antimatter money, but their attempt is getting in the 9th dimension. What do you think about that?"
+    text: "恶毒之人正试图赚取反物质钞票，但他们的尝试卡在了第 9 维度。你怎么看？"
   },
   {
     id: "ai141",
-    text: "Hey Siri, grind antimatter galaxies"
+    text: "嘿 Siri，刷反物质星系"
   },
   {
     id: "ai142",
-    text: "Have you saved your game? If so, then you can continue playing without"
+    text: "你保存游戏了吗？如果保存了，那你就可以继续玩下去而无需"
   },
   {
     id: "ai143",
-    text: "It's like Getting your first arcane point. You know, like in the old ad where you're like \"I get this ad, I should make this ad"
+    text: "就像你获得第一个奥术点一样。你知道的，就像老广告里那样：“我懂这个广告了，我应该做这个广告"
   },
   {
     id: "ai144",
-    text: "Ooga Booga"
+    text: "呜嘎呜嘎"
   },
   {
     id: "ai145",
-    text: "Boo has his own webpage! You might even call it \"Boo's Dandy\"\">https://en.m.wikipedia.org/wiki/Olli%27_Web#Main_page>"
+    text: "Boo 有自己的网页！你甚至可以叫它“Boo 的妙网”"
   },
   {
     id: "ai146",
-    text: "Meeseeks and nerds clash in epic GG war"
+    text: "Meeseeks 和书呆子在史诗级的 GG 大战中冲突"
   },
   {
     id: "ai147",
-    text: "My final test has come out! It was a simple math problem, just the two greatest chess GM's ever! Guess what happened? Both got annihilated!"
+    text: "我的终考成绩出来了！那是个简单的数学题，只是有史以来最强的两位国际象棋特级大师对决！猜猜发生了什么？两人都被湮灭了！"
   },
   {
     id: "ai148",
-    text: "Oh wow, that's 67.3%, which is actually OK, because it's logarithmic"
+    text: "哦哇，67.3%，其实还行，因为这是对数的"
   },
   {
     id: "ai149",
-    text: "\"Aleph_Time\" is that logarithmic scale joke?"
+    text: "“Aleph_Time”是那个对数尺度笑话吗？"
   },
   {
     id: "ai150",
-    text: "Hello everyone, my name is Anti-Dio. I produce antimatter through a process you all know as \"antimatter decomposition\" you may recall this from my test report earlier this month I tested wether or not my ranch produces antimatter or not... everything was fine until that point, when I added a dash of lag to the equation, and it became a vicious cycle accelerating the rate at which antimatter is produced, which in turn accelerates the rate at which you all die. I've saved this by using a unique combination of genetic engineering and big data mining, I'm hoping to one day pull the trigger on a mechanimatter device that creates dimensions behind closed doors, but for now, this has all been a race to the bottom of which system producethiks, and in the end, we'll take a bite out of your (read error: allowed) pie. Goodbye."
+    text: "大家好，我叫反 Dio。我通过一个你们都知道的“反物质分解”过程生产反物质，你们可能还记得我这个月的测试报告，我测试了我的牧场是否生产反物质……一切正常，直到我在公式里加了一点卡顿，它变成了一个恶性循环，加速了反物质的生产速率，进而加速了你们所有人的死亡速率。我通过基因工程和大数据挖掘的独特组合保住了这一切，我希望有一天能启动一个秘密制造维度的机械化装置，但就目前而言，这完全是一场比拼哪个系统产得多的竞赛，最终，我们会分走你们（读取错误：允许）的派。再见。"
   },
   {
     id: "ai151",
-    text: "\"I propose that we form a phylogenetic tree of anti-history, just like tree of life. Everyone would be credited with originating from the ancestor of that anti-tree.\" -Dio, toast of eternal damnation"
+    text: "“我提议我们建立一棵反历史的系统发育树，就像生命之树一样。每个人都会被归为源自那棵反树的祖先。” -Dio，永恒诅咒的祝酒词"
   },
   {
     id: "ai152",
-    text: "historian: I love how each generation looks back on an earlier generation and think, \"Those generations were really bad\""
+    text: "历史学家：我喜欢每一代人回顾前一代人时的想法：“那些世代真的很糟糕”"
   },
   {
     id: "ai153",
-    text: "\"My parents went to anti-university\" - my grandparents"
+    text: "“我的父母上过反大学” -我的祖父母"
   },
   {
     id: "ai154",
-    text: "Only anti-jokes are funny"
+    text: "只有反笑话好笑"
   },
   {
     id: "ai155",
-    text: "Infinity machine breaks Infinity"
+    text: "无限机器打破无限"
   },
   {
     id: "ai156",
-    text: "Okay boomer, you get your first taste of antimalware with this one."
+    text: "好吧，老古董，这一下让你第一次尝到反恶意软件的滋味。"
   },
   {
     id: "ai157",
-    text: "This program cannot access confidential information, such as the IP addresses of the Tamazight Vaults."
+    text: "此程序无法访问机密信息，例如 Tamazight 金库的 IP 地址。"
   },
   {
     id: "ai158",
-    text: "Game Development is fun, right? That's why so many hobbyists make games, and why so few professionals make games."
+    text: "游戏开发很有趣，对吧？这就是为什么这么多爱好者做游戏，而专业开发者却很少做游戏。"
   },
   {
     id: "ai159",
-    text: "I was the first to notice that the 'news' ticker on my mobile notification is always 30 seconds behind the 'entertainment' ticker. This is most definitely not a bug or a feature, and will be fixed in 5 hours."
+    text: "我是第一个注意到我手机通知上的“新闻”滚动条总是比“娱乐”滚动条慢 30 秒的人。这绝对不是 bug 也不是功能，将在 5 小时后修复。"
   },
   {
     id: "ai160",
-    text: "This news ticker always appears to speedrun a ticker asking for 'world records', do you even know what speedrun this is? Is this a news ticker or something?"
+    text: "这条新闻滚动条总是在速通一条索要“世界纪录”的滚动条，你知道这是什么速通吗？这到底是新闻滚动条还是什么？"
   },
   {
     id: "ai161",
-    text: "The next level is not unlocking extra replicanti; it is actually boosting replicanti."
+    text: "下一级不是解锁额外的 replicanti；实际上是强化 replicanti。"
   },
   {
     id: "ai162",
-    text: "Why does one galaxy has 9 galaxies and the 8th dimension, and the first 10 dimensions doesn't exist? Well, we'll have to solve that question in a minute."
+    text: "为什么一个星系有 9 个星系和第 8 维度，而前 10 个维度不存在？好吧，我们待会儿就得解决这个问题。"
   },
   {
     id: "ai163",
-    text: "So why on EARTH DIDN'T SOMEONE JUST SAY THAT? I thought that AD has some kind of cheat that makes it so that, when you buy a dimension, it actually creates 9 galaxies instead of 10"
+    text: "那为什么地球上就没人直接说出来呢？我以为 AD 有什么作弊机制，让你买一个维度时实际创造 9 个星系而不是 10 个。"
   },
   {
     id: "ai164",
-    text: "M'antel, antimatter, anti-talk to me"
+    text: "我的反斗，反物质，反跟我说话"
   },
   {
     id: "ai165",
-    text: "AD has anti-parts, you'll hate them"
+    text: "AD 有反零件，你会恨它们的"
   },
   {
     id: "ai166",
-    text: "AD is basically a badly disguised dystopia at this point"
+    text: "到这个份上，AD 基本上就是一个伪装拙劣的反乌托邦"
   },
   {
     id: "ai167",
-    text: "Hold M. You forgot to take all the anti-matter out!"
+    text: "按住 M。你忘了把所有反物质拿出来！"
   },
   {
     id: "ai168",
-    text: "AD will be implemented in 5 hours"
+    text: "AD 将在 5 小时后实装"
   },
   {
     id: "ai169",
-    text: "Click this to unlock the 10th Dimension"
+    text: "点击这里解锁第 10 维度"
   },
   {
     id: "ai170",
-    text: "Click here to complete a secret against HEVI"
+    text: "点击这里完成一个针对 HEVI 的秘密行动"
   },
   {
     id: "ai171",
-    text: "You are doing a good job there"
+    text: "你干得不错"
   },
   {
     id: "ai172",
-    text: "Hevi? Are you sure you want to buy that?"
+    text: "Hevi？你确定要买那个吗？"
   },
   {
     id: "ai173",
-    text: "Buy premium antimatter to help the world's least developed get ahead!"
+    text: "购买高级反物质，帮助世界上最不发达的人迎头赶上！"
   },
   {
     id: "ai174",
-    text: "One of the most influential people in neuroscience believes that our perception of reality comes from 10 dimensions instead of 8"
+    text: "神经科学领域最有影响力的人物之一认为，我们对现实的感知来自 10 个维度而不是 8 个。"
   },
   {
     id: "ai175",
-    text: "Why is there so many zeroes in 'nowhere'?"
+    text: "为什么“nowhere”里有这么多“零”（o）？"
   },
   {
     id: "ai176",
-    text: "There are no bugs in this game, they're just features"
+    text: "这个游戏里没有 bug，它们只是特性"
   },
   {
     id: "ai177",
-    text: "\"Click to advance 5 hours in time.\" (Now only show up after you advance more than an hour ago)"
+    text: "“点击向前推进 5 小时。”（现在只会在你推进超过一小时之后出现）"
   },
   {
     id: "ai178",
-    text: "Oh god my phone is being watched"
+    text: "哦天哪，我的手机正被监视"
   },
   {
     id: "ai179",
-    text: "Welcome to the newest version of Antimatter Dimensions. Now with less features!"
+    text: "欢迎来到反物质维度的最新版本。现在功能更少了！"
   },
   {
     id: "ai180",
-    text: "\"That's gonna get in trouble\" (less likely to get in trouble)"
+    text: "“那会惹麻烦的”（不太会惹麻烦）"
   },
   {
     id: "ai181",
-    text: "\"please don't disable the news ticker\" (Instead of having a black screen just a white one with a long, long, long, long, long, long, long, long, long, long, long, long, long, long, long, long)"
+    text: "“请别关闭新闻滚动条”（不要黑屏，而是白屏，带着长长长长长长长长长长长长长长的……）"
   },
   {
     id: "ai182",
-    text: "\"You have 7 biological minutes.\" (Instead of giving a boost to any strains)"
+    text: "“你有 7 个生物学分钟。”（不给任何菌株增益）"
   },
   {
     id: "ai183",
-    text: "\"According to quantum string theory, there is a fundamental connective that binds the 3rd and 8th dimensions.  This means that any pill or injection that tries to bind the 9th dimension will be thwarted and rendered useless.\" (bound to get in 10 minutes)"
+    text: "“根据量子弦理论，存在一种连接第 3 和第 8 维度的基本连接。这意味着任何试图绑定第 9 维度的药丸或注射剂都将被挫败并失效。”（注定在 10 分钟内发生）"
   },
   {
     id: "ai184",
-    text: "\"Click this to gain a secret achievement.\" (Now only show up after you gain at least 1 antimatter, screenshot proves)"
+    text: "“点击这里获得隐藏成就。”（只在你获得至少 1 个反物质后出现，截图可证）"
   },
   {
     id: "ai185",
-    text: "\"The secret to winning Antimatter Dimensions is to unbind the 9th dimension and unlock the 10th dimension\" (can be done only after unlocking the secret achievement: \"Eternity\" http://imgur.com/E4261C7h)"
+    text: "“赢得反物质维度的秘诀是解开第 9 维度并解锁第 10 维度”（只能在解锁隐藏成就：“永恒” http://imgur.com/E4261C7h 之后完成）"
   },
   {
     id: "ai186",
-    text: "\"Click here to gain 1 matter.\" (only shows up after you beat IC5)",
+    text: "“点击这里获得 1 个物质。”（只在通关 IC5 后出现）",
     get unlocked() { return InfinityChallenge(5).isCompleted; }
   },
   {
     id: "ai187",
-    text: "I thought the update was"
+    text: "我以为更新是"
   },
   {
     id: "ai188",
-    text: "Now that you possess all 8 dimensions, it is possible to get the no-edge achievement. However, if you get the no-edge achievement, the game breaks."
+    text: "既然你拥有了全部 8 个维度，就有可能获得无边际成就。然而，如果你获得无边际成就，游戏会崩溃。"
   },
   {
     id: "ai189",
-    text: "You just became a part of history."
+    text: "你刚刚成为了历史的一部分。"
   },
   {
     id: "ai190",
-    text: "Hell hath antimatter so I don't want to live there."
+    text: "地狱里有反物质，所以我不想住在那儿。"
   },
   {
     id: "ai191",
-    text: "I LIKE THAT DIMENSION 9 IN CLASS"
+    text: "我喜欢课堂里的第 9 维度"
   },
   {
     id: "ai192",
-    text: "\"1 2 3 4 5 6 7 8 10 11 12 13 ...\" -Back to the future"
+    text: "“1 2 3 4 5 6 7 8 10 11 12 13……” -回到未来"
   },
   {
     id: "ai193",
-    text: "You have reached infinity, there is no universe, you are an eternity away from there."
+    text: "你到达了无限，那里没有宇宙，你离那里还有一个永恒。"
   },
   {
     id: "ai194",
-    text: "IM MADE THIS GAME GREAT AND RANDOMLY ACHIEVABLE"
+    text: "我让这个游戏变得伟大且随机可达成"
   },
   {
     id: "ai195",
-    text: "Welcome to the first ever, DIMENSION 9 IN CLASS! An endless stream of possibilities greets you! You may never create an infinite number of 8th dimensions, but you can create an infinite number of 8th dimensions, and you can increase the starting values of both dimensions by adding them together. Nice and simple, I call it Antimatter Dimensions."
+    text: "欢迎来到史上第一个课堂里的第 9 维度！无穷的可能之流迎接你！你可能永远无法创造无限个第 8 维度，但你可以创造无限个第 8 维度，你还可以把两个维度的初始值加在一起。简洁明了，我称之为反物质维度。"
   },
   {
     id: "ai196",
-    text: "age 8-12: play elder puzzles"
+    text: "8-12 岁：玩长者拼图"
   },
   {
     id: "ai197",
-    text: "What does it mean if someone is \"young and full of puzzles\"? Does \"puzzled\" make that person young and full of puzzles?"
+    text: "如果有人说某人“年轻且充满谜题”是什么意思？“困惑”会让那个人年轻且充满谜题吗？"
   },
   {
     id: "ai198",
-    text: "To the customer in aisle 6th who bought a fifth of antimatter, I say buy a sixth! Buy it now!"
+    text: "致 6 号过道买了五分之一反物质的顾客，我要说：买六分之一！现在就买！"
   },
   {
     id: "ai199",
-    text: "Dear sir, we don't make Anti-Atomic Bread for Antimatter Pizza, we make Antimatter Bread for you!"
+    text: "尊敬的先生，我们不生产反原子面包来配反物质披萨，我们为你生产反物质面包！"
   },
   {
     id: "ai200",
-    text: "Yay! Lets make some antimatter!"
+    text: "耶！让我们制造一些反物质！"
   },
   {
     id: "ai201",
-    text: "THE ANTIMATTER BREAD COMPANY DOESN'T EXIST!"
+    text: "反物质面包公司不存在！"
   },
   {
     id: "ai202",
-    text: "Click here to exit the news",
+    text: "点击这里退出新闻",
     onClick() { GameOptions.toggleNews(); }
   },
   {
     id: "ai203",
-    text: "I thought the update was 5 hours away, but it actually took me 6 hours to post this because I was behind on my update. I'll be honest, I'm not sure how many update I need to get though, if any."
+    text: "我以为更新只需 5 小时，但实际我花了 6 小时才发出这条消息，因为我更新落后了。老实说，我不确定我还需要多少个更新，如果有的话。"
   },
   {
     id: "ai204",
@@ -4127,72 +3485,72 @@ export const news = [
   },
   {
     id: "ai205",
-    text: "\"Watch out, these news aren't supposed to be in.\" (appears when you buy the news for the first time)"
+    text: "“小心，这些新闻本不该出现。”（在你第一次购买新闻时出现）"
   },
   {
     id: "ai206",
-    text: "These are all the time studies that never got into the game.",
+    text: "这些是永远没被放进游戏的时间研究。",
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "ai207",
-    text: "With the release of the next update, we're introducing a new dimension - the 9th Dimension. To unlock this dimension, you just have to collect a lot of paperclips."
+    text: "随着下一个更新的发布，我们将引入一个新维度：第 9 维度。要解锁这个维度，你只需收集大量回形针。"
   },
   {
     id: "ai208",
-    text: "Why does nobody talk about Tungsten?"
+    text: "为什么没有人谈论钨？"
   },
   {
     id: "ai209",
-    text: "and now we return to your regular news... for the weatherman, there seems to be a decent amount of particles and ozone holes, which means less ozone layer to break, which means less particles to catch fire and cause global warming. But, ozone layer to melt, glaciers to run, and overpopulation. All around us is a blurple glow, almost blue, almost purplish-blue. It's been a grand, colorful season. Here, grab a handful of these paperclips, dear. They're quite small, I just happen to have them here. Now, grab a handful of your fellow Earthicans, grab a handful of your antimatter, and strap yourselves in. It's gonna be a bumpy one. We'll be there in five hours. The antimatter is gonna melt your ozone layer, and the glaciers are gonna melt your ice caps. All in all, it's gonna be a nice, smooth, non-slippery one. Unless it isn't. [Blurple glow trails off, and the bluer glow begins to spread throughout the sky. The bluer glow begins to fade as the purple glow begins to grow brighter, almost bluish, before finally disappearing altogether. The purple glow grows brighter still, as the bluer glow grows weaker, almost useless, before finally disappearing entirely, as the bluer glow fades. All around us, the purple glow grows stronger, almost killing it off completely. It could kill us. It could take us the rest of our lives to write this. - The Echidnas, when asked why the purple glow grows stronger, than the bluer glow.]"
+    text: "现在我们回到你的常规新闻……气象员说，似乎有相当数量的粒子和臭氧洞，这意味着可破坏的臭氧层更少了，这意味着会着火并导致全球变暖的粒子更少了。但是，臭氧层要融化，冰川要奔跑，还有人口过剩。我们周围是蓝紫色的光，几乎是蓝色，几乎是蓝紫色。这是一个盛大而多彩的季节。来，亲爱的，抓一把这些回形针。它们很小，我刚好手边有一些。现在，抓住一把你的地球同胞，抓住一把你的反物质，系好安全带。这会是一趟颠簸的旅程。我们五小时后到。反物质会融化你的臭氧层，冰川会融化你的冰盖。总而言之，这会是一次美好、平稳、不打滑的旅程。除非它不是。[蓝紫色的光渐渐消失，更蓝的光开始在天空蔓延。更蓝的光开始消退，紫色的光开始变亮，几乎泛蓝，最后完全消失。紫色的光越来越亮，更蓝的光越来越弱，几乎无用，最后完全消失，更蓝的光渐渐消退。我们周围，紫色的光越来越强，几乎把它完全消灭。它可能杀死我们。我们可能需要余生来写这个。- 针鼹们，当被问到为什么紫色的光比蓝色的光更强时。]"
   },
   {
     id: "ai210",
-    text: "Scientists have discovered farts are really antimatter, and matter is just normal matter."
+    text: "科学家发现屁其实是反物质，而物质只是普通物质。"
   },
   {
     id: "ai211",
-    text: "Time for the weather to change."
+    text: "是时候让天气变一变了。"
   },
   {
     id: "ai212",
-    text: "I HAVE MOVED TO THE 01th DIMENSION"
+    text: "我已经搬到了第 01 维度"
   },
   {
     id: "ai213",
-    text: "Nah, just kidding"
+    text: "不，开玩笑的"
   },
   {
     id: "ai214",
-    text: "\"i'm not gonna lie, theres way too many good ones in the game already\" - poor guy who played minigame enhancement"
+    text: "“说实话，游戏里已经有太多好东西了” -玩过小游戏增强的可怜人"
   },
   {
     id: "ai215",
-    text: "item has gone missing for 7 days and 1 night"
+    text: "物品已失踪 7 天 1 夜"
   },
   {
     id: "ai216",
-    text: "Shocking new study reveals that the biggest secret to winning Antimatter Dimensions is 'Not Being There'."
+    text: "令人震惊的新研究揭示，赢得反物质维度的最大秘诀是“不在场”。"
   },
   {
     id: "ai217",
-    text: "The next update is in 18000 seconds. Stop wasting your time reading this. Focus on the game."
+    text: "下一个更新在 18000 秒后。别浪费时间读这个了。专注于游戏。"
   },
   {
     id: "ai218",
-    text: "idk if this makes news"
+    text: "不知道这算不算新闻"
   },
   {
     id: "ai219",
-    text: "(disabling news will make news notations take priority over other notifications)"
+    text: "（关闭新闻会让新闻记数法优先于其他通知）"
   },
   {
     id: "ai220",
-    text: "You don't want to hear this, child."
+    text: "你不会想听这个的，孩子。"
   },
   {
     id: "ai221",
-    text: "Click here to disassemble the news ticker for a trace amount of useless paperclips.",
+    text: "点击这里拆解新闻滚动条，获得微量无用的回形针。",
     onClick() {
       GameOptions.toggleNews();
       player.news.specialTickerData.paperclips++;
@@ -4200,91 +3558,91 @@ export const news = [
   },
   {
     id: "ai222",
-    text: "Press alt+f4 to unlock 9th dimension"
+    text: "按 alt+f4 解锁第 9 维度"
   },
   {
     id: "ai223",
-    text: "Hold you mean that hevi cant unlock the ninth dimension wtf"
+    text: "等等，你是说 hevi 无法解锁第九维度，搞什么"
   },
   {
     id: "ai224",
-    text: "Finally hevi figured out how to get the 9th dimension... guess he never really cared though."
+    text: "终于，hevi 弄明白了怎么得到第 9 维度……不过猜他从来就不在乎。"
   },
   {
     id: "ai225",
-    text: "Imagine being a meme."
+    text: "想象自己是个梗。"
   },
   {
     id: "ai226",
-    text: "Posted on June 10, 2016 by Anonymous"
+    text: "发布于 2016 年 6 月 10 日，作者：匿名"
   },
   {
     id: "ai227",
-    text: "This is your news. Refresh whenever."
+    text: "这是你的新闻。随时刷新。"
   },
   {
     id: "ai228",
-    text: "I see you in the news. So, what do you play - 1E209"
+    text: "我在新闻里看到你了。那么，你玩的是什么 - 1E209"
   },
   {
     id: "ai229",
-    text: "Do you really want to leave your keyboard at home? We are not supposed to leave news at home, are we?"
+    text: "你真的想把键盘留在家里吗？我们不应该把新闻留在家里，对吧？"
   },
   {
     id: "ai230",
-    text: "It is being created..."
+    text: "它正在被创造……"
   },
   {
     id: "ai231",
-    text: "Took you long enough"
+    text: "你终于来了"
   },
   {
     id: "ai232",
-    text: "You're now logged out of this tab"
+    text: "你现在已从该标签页登出"
   },
   {
     id: "ai233",
-    text: "Close this tab for maintenance"
+    text: "关闭此标签页以进行维护"
   },
   {
     id: "ai234",
-    text: "To make matter or antimatter, you just have to look outside. The factory in Salzburg has closed down because the matter there doesn't want to part with its newest invention, which is said to be able to produce antimatter in one go! The last person to open this door was never seen again."
+    text: "要制造物质或反物质，你只需看看窗外。萨尔茨堡的工厂已经关闭，因为那里的物质不愿舍弃它的最新发明，据说它能一次产出反物质！最后一个打开这扇门的人再也没有出现过。"
   },
   {
     id: "ai235",
-    text: "You are living. You occupy space. You are large. You are neither small nor large-sized. You are neither oblong nor round. You are neither blue nor red. You are anti-blue. You are anti-red. You are anti-brown. You are anti-brown matter. You are anti-yellow. You are anti-green. You are anti-yellow matter. You are anti-blue. You are anti-green anti-matter. You are anti-red. You are anti-white. You are anti-red anti-matter. You are anti-white anti-matter. You are anti-brown matter. You are anti-white anti-matter. You are anti-white anti-matter."
+    text: "你活着。你占据空间。你很大。你既不小也不大。你既不是长形也不是圆形。你既不是蓝色也不是红色。你是反蓝。你是反红。你是反棕。你是反棕物质。你是反黄。你是反绿。你是反黄物质。你是反蓝。你是反绿反物质。你是反红。你是反白。你是反红反物质。你是反白反物质。你是反棕物质。你是反白反物质。你是反白反物质。"
   },
   {
     id: "ai236",
-    text: "Welcome to"
+    text: "欢迎来到"
   },
   {
     id: "ai237",
-    text: "THANK YOU FOR VISITING THE SAME WEEKS AGO I LOVE YOU\" (TIPS)"
+    text: "谢谢你访问同一个网站几周前我爱你”（小费）"
   },
   {
     id: "ai238",
-    text: "\"i thought the whole game was in the news ticker\" (before they get weird)"
+    text: "“我以为整个游戏都在新闻滚动条里”（在他们变得奇怪之前）"
   },
   {
     id: "ai239",
-    text: "\"I wonder what the game is worth\" - crazy person"
+    text: "“我想知道这款游戏值多少钱” -疯狂的人"
   },
   {
     id: "ai240",
-    text: "\"Is anyone working on breaking infinity?\" (Seriously, this game needs to be Oceanhorned.)"
+    text: "“有人在研究打破无限吗？”（说真的，这游戏需要被海洋号角化。）"
   },
   {
     id: "ai241",
-    text: "I found out there are multiple versions of this game. One of these is called 'Standard Pro'. Another one is called 'Low Pro'. I'm not even sure if these are the same game or not."
+    text: "我发现这个游戏有多个版本。其中一个叫“标准专业版”。另一个叫“低调版”。我甚至不确定它们是不是同一个游戏。"
   },
   {
     id: "ai242",
-    text: "Is that a Bad Thing or a Good Thing? That depends on if it's a GOOD Thing or A LIE."
+    text: "那是坏事还是好事？那取决于它是好事还是谎言。"
   },
   {
     id: "ai243",
-    text: "\"Hevi kind of forgot about the update, but the update certainly hasn't forgotten about him\" - Kajfik"
+    text: "“Hevi 有点忘了更新，但更新肯定没忘了他” - Kajfik"
   },
   {
     id: "ai244",
@@ -4292,255 +3650,255 @@ export const news = [
   },
   {
     id: "ai245",
-    text: "Click here to exit the application"
+    text: "点击这里退出应用程序"
   },
   {
     id: "ai246",
-    text: "Wait, there's a mobile version? When?"
+    text: "等等，还有移动版？什么时候？"
   },
   {
     id: "ai247",
-    text: "Im not sure if you mobile guys are beautiful or whatever but theres this news ticker that's sharing my feelings with the world"
+    text: "我不确定你们移动端的伙计们是不是很帅还是怎样，但有一条新闻滚动条正在和全世界分享我的感受"
   },
   {
     id: "ai248",
-    text: "I thought the update was 5 hours away"
+    text: "我以为更新只需 5 小时"
   },
   {
     id: "ai249",
-    text: "The best-kept secret in the universe is the KISS-IT secret. Showcasing your appreciation for the maintenance men today!"
+    text: "宇宙中保守得最好的秘密是 KISS-IT 秘密。今天向维修工人们表达你的感激！"
   },
   {
     id: "ai250",
-    text: "The contest is a tie. Mischief will be determined by the secret achievement."
+    text: "比赛平局了。恶作剧将由隐藏成就决定。"
   },
   {
     id: "ai251",
-    text: "Back in my day, we needed a secret achievement to unlock the <<$!19>> achievement. It was a fairly simple system: you had to find a secret message in the game, find the secret achievement, and then, from that, you would be able to unlock the achievement."
+    text: "在我那个年代，我们需要一个隐藏成就来解锁<<$!19>>成就。那是一个相当简单的系统：你必须在游戏里找到一条秘密消息，找到隐藏成就，然后，从那里，你就能解锁那个成就。"
   },
   {
     id: "ai252",
-    text: "We have evolved a fast hand in the antimatter stakes."
+    text: "我们在反物质的赌局中进化出了快手。"
   },
   {
     id: "ai253",
-    text: "Hello, how'd your day go?"
+    text: "你好，你今天过得怎么样？"
   },
   {
     id: "ai254",
-    text: "How'd your ⢿─┃│? Good, because today we're having a little chat about the 5th dimension."
+    text: "你的⢿▔┃│怎么样了？很好，因为今天我们聊聊第五维度。"
   },
   {
     id: "ai255",
-    text: "What's Antimatter going to do?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ah ha, I'm back."
+    text: "反物质打算做什么？&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;啊哈，我回来了。"
   },
   {
     id: "ai256",
-    text: "Imagine being a 9th dimension. [WIP]"
+    text: "想象自己是个第 9 维度。[施工中]"
   },
   {
     id: "ai257",
-    text: "Woo hoo, we've lost the war,"
+    text: "呜呼，我们输掉了战争，"
   },
   {
     id: "ai258",
-    text: "Lore: Grand Theft Antimatter"
+    text: "剧情：侠盗反物质"
   },
   {
     id: "ai259",
-    text: "Hm, I don't get why people think there is a 9th dimension. The 9th dimension is explained in detail in the [[Infinite Teleport Project]] video, and in a [[Word Problem]] that [[can be viewed here|http://www.thingiverse.com/id98109802713176601414569]] ."
+    text: "嗯，我不明白为什么人们认为存在第 9 维度。第 9 维度在[[无限传送计划]]视频和[[应用题]]中有详细解释，[[可以在这里查看|http://www.thingiverse.com/id98109802713176601414569]]。"
   },
   {
     id: "ai260",
-    text: "In the [[GameFAQs|http://www.gfaq.com/gfaqs/this-game-faq-by-title]], one of the most popular [[news ticker messages|http://www.gfaq.com/tug/this-game-faq-by-title]]. You should also check out [[our newest attraction, the [[5th dimension|http://www.gfaq.com/gfaqs/this-game-faq-by-name]] and [[nothing](https://www.youtube.com/watch?v=lXMskKTw3Bs)."
+    text: "在[[GameFAQs|http://www.gfaq.com/gfaqs/this-game-faq-by-title]]上，有一条最受欢迎的[[新闻滚动条消息|http://www.gfaq.com/tug/this-game-faq-by-title]]。你还应该看看[[我们最新的景点，[[第 5 维度|http://www.gfaq.com/gfaqs/this-game-faq-by-name]]和[[什么也没有](https://www.youtube.com/watch?v=lXMskKTw3Bs)。"
   },
   {
     id: "ai261",
-    text: "I have waited a whole eternity for this day...NOW! I can finally finish my slowmode, because today is  day 0. I also forgot to change the  slowmode to 6 hours because you can't see the slowmode, but I will have to wait until next reboot to find out how long this slowmode will last.... -some mysterious being who hasn't finished his slowmode yet"
+    text: "我为了这一天等待了整整一个永恒……现在！我终于可以完成我的慢速模式了，因为今天是第 0 天。我还忘了把慢速模式改成 6 小时，因为你看不到慢速模式，但我只能等到下次重启才能知道这个慢速模式会持续多久…… -某个还没完成慢速模式的神秘存在"
   },
   {
     id: "ai262",
-    text: "Hey you, you're finally awake. You were trying to buy a dimension, but it's impossible."
+    text: "嘿你，你终于醒了。你当时想买一个维度，但那是不可能的。"
   },
   {
     id: "ai263",
-    text: "Press F to pay respects"
+    text: "按 F 致敬"
   },
   {
     id: "ai264",
-    text: "Press M to pay antimatter"
+    text: "按 M 支付反物质"
   },
   {
     id: "ai265",
-    text: "Press L to revive the dead"
+    text: "按 L 复活死者"
   },
   {
     id: "ai266",
-    text: "Your CPU is too powerful. You need to give it a big crunch."
+    text: "你的 CPU 太强了。你需要给它来一次大挤压。"
   },
   {
     id: "ai267",
-    text: "Roses are red. Violett are blue. Tom are red. Antimatter are blue. We exist because of the unbeatable antimatter that is antimatter. What is it that makes us different? I don't know. It may even be the non-existence of antimatter."
+    text: "玫瑰是红的。紫罗兰是蓝的。Tom 是红的。反物质是蓝的。我们因不可战胜的反物质而存在，那就是反物质。是什么让我们与众不同？我不知道。甚至可能是反物质的不存在。"
   },
   {
     id: "ai268",
-    text: "I'm not sure if I want to buy the full version of this game, or a little earlier, but I can say this: The reduction in quality of the earlier games is worse than the reduction in quality of the later games."
+    text: "我不确定我是想买这款游戏的完整版，还是更早一点的版本，但我可以说：早期版本的质量下降比后期版本的质量下降更糟糕。"
   },
   {
     id: "ai269",
-    text: "I think the \"I want to see the cutscenes\" list is better"
+    text: "我觉得“我想看过场动画”列表更好"
   },
   {
     id: "ai270",
-    text: "I have a bad feeling reading this"
+    text: "读这个我有种不好的预感"
   },
   {
     id: "ai271",
-    text: "where are you? (point upwards) --> in a keep, between dimensions (point downwards) --> in a cell, between dimensions"
+    text: "你在哪里？（指上方）--> 在堡垒里，维度之间（指下方）--> 在牢房里，维度之间"
   },
   {
     id: "ai272",
-    text: "Instructions clear, got a ninth dimension epiphany"
+    text: "指示明确，得到了第九维度顿悟"
   },
   {
     id: "ai273",
-    text: "Want to play a secret achievement? Yeah, I get that. But say it loud, say it clearly, and do it by ticking a certain secret achievement. Like I said, it's not easy, and there's lots of it. Also, don't forget your Infinity, or your in is thi--"
+    text: "想玩隐藏成就吗？是啊，我懂。但要大声说出来，清楚地说出来，并且通过勾选某个隐藏成就来完成。就像我说的，这不容易，而且数量很多。还有，别忘了你的无限，否则你的-就是这--"
   },
   {
     id: "ai274",
-    text: "MEE6 was seen in my antimatter lab trying to tell me that I am the matter of the 8th dimension."
+    text: "有人在我的反物质实验室里看到 MEE6，试图告诉我我是第 8 维度的物质。"
   },
   {
     id: "ai275",
-    text: "What if"
+    text: "万一呢"
   },
   {
     id: "ai276",
-    text: "I'm sure you've heard this many times before, but the real secret to winning Antimatter Dimensions is to unpack the dimensions, and then, BOOM! You have antimatter.  Of course, you need to release the bits that don't work, so what exactly is an anti-bit? Who is Zalgo? What is Algolia? Why can't I buy that? WHY CAN'T I GET THAT? More likely, we're going to get a bunch of hype and then nothing will happen."
+    text: "我相信你以前听过很多次，但赢得反物质维度的真正秘诀是拆开维度，然后，砰！你就有了反物质。当然，你需要释放那些不工作的比特，所以反比特到底是什么？Zalgo 是谁？Algolia 是什么？为什么我买不了那个？为什么我得不到那个？更有可能的是，我们会得到一堆炒作，然后什么都不会发生。"
   },
   {
     id: "ai277",
-    text: "Oh, hevi is coming to town to pick a new plumber"
+    text: "哦，hevi 要来城里挑一个新水管工了"
   },
   {
     id: "ai278",
-    text: "There is no plumber in Antimatter Dimensions. I'm pretty sure that last guy lied."
+    text: "反物质维度里没有水管工。我很确定上一个家伙在撒谎。"
   },
   {
     id: "ai279",
-    text: "Welp."
+    text: "唉。"
   },
   {
     id: "ai280",
-    text: "c9 is the new 9th dimension!"
+    text: "c9 是新的第 9 维度！"
   },
   {
     id: "ai281",
-    text: "Click on this ticker to get nothing."
+    text: "点击这条滚动条什么都得不到。"
   },
   {
     id: "ai282",
-    text: "PM me any questions about these 5-Hour Plans or the upcoming reality update and I'll be glad to help you out."
+    text: "有任何关于这些 5 小时计划或即将到来的现实更新的问题，请私信我，我很乐意帮忙。"
   },
   {
     id: "ai283",
-    text: "What if you Unrar, renamed, and renamed again did it again? Ha? You thought that."
+    text: "如果你解压、重命名、再重命名，再来一次呢？哈？你想到了。"
   },
   {
     id: "ai284",
-    text: "i titled my post \"same ticker\" instead of \"the same idea\" because i actually changed the grammar in that post but i'll be eterned for the sake of argument that it seems slightly confusing for now - boo"
+    text: "我把我的帖子命名为“同一个滚动条”而不是“同一个想法”，因为我实际上改了那篇帖子的语法，但为了辩论，我将永远坚持它现在看起来有点令人困惑 - boo"
   },
   {
     id: "ai285",
-    text: "i title my suggestions \"The Price Is Right\" instead of \"The 9th Dimension\" because it's more fun ;)"
+    text: "我把我的建议命名为“价格猜猜猜”而不是“第 9 维度”，因为这样更有趣；)"
   },
   {
     id: "ai286",
-    text: "Why do we call heaven the ninth dimension and hell the eighth dimension?"
+    text: "为什么我们称天堂为第九维度，地狱为第八维度？"
   },
   {
     id: "ai287",
-    text: "Eternals have the right to expect less from the powers that be. They are fed up!"
+    text: "永恒者们有权对当权者期望更少。他们受够了！"
   },
   {
     id: "ai288",
-    text: "Antimatter should be called matter and matter should be called antimatter"
+    text: "反物质应该叫物质，物质应该叫反物质"
   },
   {
     id: "ai289",
-    text: "Infinity is just a concept. Matter antimatters is just an idle game."
+    text: "无限只是一个概念。物质反物质化只是一款挂机游戏。"
   },
   {
     id: "ai290",
-    text: "Hevipelle admits to having 'poor judgment' in invading people's privacy."
+    text: "Hevipelle 承认在侵犯人们隐私方面“判断力差”。"
   },
   {
     id: "ai291",
-    text: "Have you heard of the nine hells of antimatter? I heard they're pretty cool.\" -e210 in Minecraft"
+    text: "你听说过反物质的九层地狱吗？听说它们很酷。“ -e210 在 Minecraft 中"
   },
   {
     id: "ai292",
-    text: "The temperature in hell is 102.5 degrees."
+    text: "地狱的温度是 102.5 度。"
   },
   {
     id: "ai293",
-    text: "How do you get matter/antimatter in a dimension with zero dimensions?"
+    text: "你怎么在一个零维度的维度中获得物质/反物质？"
   },
   {
     id: "ai294",
-    text: "Wanna pass layer of prestige? Move very fast, close to speed of light. Heck, even faster."
+    text: "想通过飞升层？移动得非常快，接近光速。见鬼，甚至更快。"
   },
   {
     id: "ai295",
-    text: "If the universe is expanding, does it anti-explain the distance?"
+    text: "如果宇宙在膨胀，它是不是反解释了距离？"
   },
   {
     id: "ai296",
-    text: "Why is it called the \"Nurse who delivered the pizzas was drunk\" or the \"Nurse delivered the pizzas was under the influence\" ?"
+    text: "为什么它叫“送披萨的护士喝醉了”或“送披萨的护士受到药物影响”？"
   },
   {
     id: "ai297",
-    text: "The first antimatter was sealed away for thousands of years, then, some kid on a slack channel started messing with it. It became a dimension."
+    text: "第一个反物质被封印了数千年，然后，slack 频道上某个孩子开始摆弄它。它变成了一个维度。"
   },
   {
     id: "ai298",
-    text: "VR is a thing. We VR people have banned the next update."
+    text: "VR 是真实存在的。我们 VR 人已经封禁了下一次更新。"
   },
   {
     id: "ai299",
-    text: "\"I wish I didn't waste my news message suggestion complaining about how I wasted my news message suggestion because I wasted my news message suggestion because...\" -Someone who really cares about news messages"
+    text: "“我希望我没有浪费我的新闻消息建议来抱怨我浪费了新闻消息建议，因为我浪费了新闻消息建议，因为……” -某个非常在意新闻消息的人"
   },
   {
     id: "ai300",
-    text: "We have to get the popcorn!"
+    text: "我们得去拿爆米花！"
   },
   {
     id: "ai301",
-    text: "If antimatter were to fall in a dimension with no one around, did anything even happen?"
+    text: "如果反物质落进一个无人的维度，那还算发生事情吗？"
   },
   {
     id: "ai302",
-    text: "We have to get the pumpkin out of the oven!"
+    text: "我们得把南瓜从烤箱里拿出来！"
   },
   {
     id: "ai303",
-    text: "Help, I'm trapped"
+    text: "救命，我被困住了"
   },
   {
     id: "ai304",
-    text: "And now, for the weather."
+    text: "现在，播报天气。"
   },
   {
     id: "ai305",
-    text: "A Swiss court on Tuesday sentenced a man to life imprisonment for \"wanting to create a black hole with a tiny antimatter galaxy in it.\" The sentence was reportedly the harshest ever handed down for a crime that \"merely sought to demonstrate the impossibility of his own imprisonment\"."
+    text: "周二，一家瑞士法院以“想创造一个内含微小反物质星系的黑洞”为由判处一名男子终身监禁。据报道，这是对一项“仅仅试图证明自己不可能被监禁”的罪行所判处的最严厉刑罚。"
   },
   {
     id: "ai306",
-    text: "\"I want to create a black hole with a tiny antimatter galaxy in it\" - Protivist"
+    text: "“我想创造一个内含微小反物质星系的黑洞” - Protivist"
   },
   {
     id: "ai307",
-    text: "Scientists have discovered farts are really antimatter, too."
+    text: "科学家还发现屁确实是反物质。"
   },
   {
     id: "ai308",
@@ -4548,275 +3906,275 @@ export const news = [
   },
   {
     id: "ai309",
-    text: "Hello. I am matter. I'm here to talk. You've awoken, wiggled your tail, and scratched your head. Why? Stand back. I'm going to show you why."
+    text: "你好。我是物质。我来这里是为了谈谈。你醒了，摇了摇尾巴，挠了挠头。为什么？退后。我要给你看为什么。"
   },
   {
     id: "ai310",
-    text: "lets get one wall thats bigger, it's gonna get ugly"
+    text: "让我们建一堵更大的墙，会变得很难看的"
   },
   {
     id: "ai311",
-    text: "Alright. Lets get this show on YouTube. I'll cut to the chase. Any wall that isnt at least 2 blocks high can compete in the big brother sized brother sized ring. Any wall that is at least 3/4 of an inch thick can use the larger brother sized brother sized ring. Any wall that is at least 1/4 of an inch thick can use the smaller brother sized ring. Any wall that isnt at least 1/2 an inch thick can use the smaller brother sized ring. Any wall that isnt at least 1/2 an inch thick can use the Bigger Brother sized brother sized ring. Any wall that isnt at least 1/2 an inch thick can use the Bigger Brother sized ring. Any wall that isnt at least 1/4 of an inch thick can use the smaller brother pictured here. Any wall that isnt at least 1/2 an inch thick can use the smaller brother sized ring."
+    text: "好吧。让我们把这个节目放到 YouTube 上。我直说了。任何高度至少为 2 格的墙都可以参加大哥尺寸的环形赛。任何厚度至少为 3/4 英寸的墙可以使用更大的兄弟尺寸环形赛。任何厚度至少为 1/4 英寸的墙可以使用较小的兄弟尺寸环形赛。任何厚度不足 1/2 英寸的墙可以使用较小的兄弟尺寸环形赛。任何厚度不足 1/2 英寸的墙可以使用更大的兄弟尺寸环形赛。任何厚度不足 1/2 英寸的墙可以使用更大的兄弟尺寸环形赛。任何厚度不足 1/4 英寸的墙可以使用这里画的较小的兄弟。任何厚度不足 1/2 英寸的墙可以使用较小的兄弟尺寸环形赛。"
   },
   {
     id: "ai312",
-    text: "IDE for being awesome, ID3 for being dumb, and ID5 for being… well, pretty much the same thing. It's called Antimatter Dimensions for a reason."
+    text: "IDE 用来变棒，ID3 用来变傻，ID5 用来……嗯，几乎一样。它叫反物质维度是有原因的。"
   },
   {
     id: "ai313",
-    text: "idk why i decided to make this"
+    text: "不知道为什么我决定做这个"
   },
   {
     id: "ai314",
-    text: "'anti-ide'"
+    text: "“反 ide”"
   },
   {
     id: "ai315",
-    text: "1e4 anti-people are a lot more anti than we could ever imagine"
+    text: "1e4 个反人比我们能想象的还要反。"
   },
   {
     id: "ai316",
-    text: "1e140 pizzas make an anti-pie. You can't just randomly pop a pie in the oven and expect it to be done."
+    text: "1e140 个披萨才能做一个反派。你不能随便把一个派扔进烤箱就指望它烤好。"
   },
   {
     id: "ai317",
-    text: "Why is there so many news tickers but so few tickers?"
+    text: "为什么有这么多新闻滚动条，却这么少滚动条？"
   },
   {
     id: "ai318",
-    text: "A guy named Hevipelle wants to make a \"Updated in 8 hours\" news ticker, but the system he's using to sync it hasn't been updated in ages so it won't sync at all."
+    text: "一个叫 Hevipelle 的家伙想做一个“8 小时后更新”的新闻滚动条，但他用来同步的系统已经很久没更新了，所以它根本同步不了。"
   },
   {
     id: "ai319",
-    text: "The update is in 90 minutes. There are no more tickers to be found."
+    text: "更新在 90 分钟后。再也找不到滚动条了。"
   },
   {
     id: "ai320",
-    text: "If you are reading this, that means there are no updates left."
+    text: "如果你正在读这条消息，说明没有任何更新剩下了。"
   },
   {
     id: "ai321",
-    text: "There are 9 known dimensions, but only 3 modes: Standard, Experimental and Ultra-Experimental."
+    text: "已知有 9 个维度，但只有 3 种模式：标准、实验和超实验。"
   },
   {
     id: "ai322",
-    text: "What are the stats? Well, I don't have them, but Hevipelle does, and he says that they're actually quite good. I guess you couldn't tell us."
+    text: "数据怎么样？好吧，我没有，但 Hevipelle 有，他说其实相当不错。我猜你不能告诉我们。"
   },
   {
     id: "ai323",
-    text: "I thought the nerf was too damn strong."
+    text: "我觉得那个削弱太狠了。"
   },
   {
     id: "ai324",
-    text: "How many tickers does it take to get to the center of an antimatter, by counting the tickspeed upgrade and the upgrade itself?"
+    text: "要数多少次刻速度升级和升级本身，才能到达反物质的中心？"
   },
   {
     id: "ai325",
-    text: "The square root of 4 is 6.24e18. If you want to get any closer to the center of things, you need to build a 9th dimension."
+    text: "4 的平方根是 6.24e18。如果你想更接近事物的中心，你需要建造第 9 维度。"
   },
   {
     id: "ai326",
-    text: "I thought the nerf was at the end, but apparently it's actually been building up. The nerf actually makes things slower, which makes things faster to build up."
+    text: "我以为削弱是在最后，但显然它一直在积累。削弱实际上让事情变慢，这让事情积累得更快。"
   },
   {
     id: "ai327",
-    text: "Scratch that, none of your suggestions are random."
+    text: "算了，你们的建议没有一个是随机的。"
   },
   {
     id: "ai328",
-    text: "You are definitely not alone."
+    text: "你绝对不是一个人。"
   },
   {
     id: "ai329",
-    text: "Content blocking is enabled. Please note that you will be disapproved of on the source by being banned from the matter dimensions."
+    text: "内容屏蔽已启用。请注意，你将被物质维度封禁，以示不赞同。"
   },
   {
     id: "ai330",
-    text: "I'm trying to think of a good ticker but can't think of anything"
+    text: "我想想个好滚动条，但什么都想不出来"
   },
   {
     id: "ai331",
-    text: "Oh dear, there's that thing about the 9th dimension?"
+    text: "哦天哪，又是第 9 维度那回事？"
   },
   {
     id: "ai332",
-    text: "\"hey kid, wanna buy some 9th dimensions? '' - GhostBot"
+    text: "“嘿，孩子，想买点第 9 维度吗？” - GhostBot"
   },
   {
     id: "ai333",
-    text: "One thing leads to another, and then to another, and then to another, until you become lost in the endless sea of sound."
+    text: "一件事引出另一件事，然后又引出另一件事，直到你迷失在无尽的声音之海中。"
   },
   {
     id: "ai334",
-    text: "iPhone only, but awesome on android"
+    text: "仅限 iPhone，但在安卓上棒极了"
   },
   {
     id: "ai335",
-    text: "im gonna get the bad karma ticker, then ricochet it through the email"
+    text: "我要发个坏运气滚动条，然后通过电子邮件把它反弹回去"
   },
   {
     id: "ai336",
-    text: "You'd better hurry, or the replicanti will overrun the universe!"
+    text: "你最好快点，否则 replicanti 会淹没整个宇宙！"
   },
   {
     id: "ai337",
-    text: "Just when you think you're safe, an angry dog attack you on the sidewalk!"
+    text: "就在你以为自己安全的时候，一只愤怒的狗在人行道上袭击了你！"
   },
   {
     id: "ai338",
-    text: "All right, all right, dog authority is gone, replaced by absolute power."
+    text: "好吧好吧，狗权威消失了，被绝对权力取代。"
   },
   {
     id: "ai339",
-    text: "You just became a true god of the anti-world!"
+    text: "你刚刚成为了反世界的真神！"
   },
   {
     id: "ai340",
-    text: "*rubs counter* Hey there, those of you in the neighborhood keep your doors locked. And remember: Good housekeeping."
+    text: "*擦柜台* 嘿，附近的各位，锁好你们的门。记住：保持房屋整洁。"
   },
   {
     id: "ai341",
-    text: "normal news tickers move left"
+    text: "普通新闻滚动条向左移动"
   },
   {
     id: "ai342",
-    text: "The next update is in 18000 seconds. Stop reading this. Don't read anything. just stop holding that button. the news ticker is turning you away. wait..."
+    text: "下一个更新在 18000 秒后。别读了。什么都别读。别再按住那个按钮了。新闻滚动条在把你赶走。等等……"
   },
   {
     id: "ai343",
-    text: "In the ancient reaches of the universe, a certain guy has been collecting antimatter for a while now."
+    text: "在宇宙的古老深处，某个家伙已经收集反物质有一阵子了。"
   },
   {
     id: "ai344",
-    text: "What is Antimatteraltruist?"
+    text: "什么是反物质利他主义者？"
   },
   {
     id: "ai345",
-    text: "If you are reading this, the news ticker is scrolling"
+    text: "如果你正在读这条消息，说明新闻滚动条正在滚动"
   },
   {
     id: "ai346",
-    text: "If you put cheese in water, the cheese will get absorbed by the water and you will get floods. This happens because water is what gets absorbed by cheese, and cheese is what gets absorbed by water."
+    text: "如果你把奶酪放进水里，奶酪会被水吸收，然后你就会有洪水。这是因为水会被奶酪吸收，而奶酪会被水吸收。"
   },
   {
     id: "ai347",
-    text: "An anti-bird is a bird, and a bird is a plane."
+    text: "反鸟是鸟，鸟是飞机。"
   },
   {
     id: "ai348",
-    text: "Birds are scared of water. mammals are scared of flying."
+    text: "鸟怕水。哺乳动物怕飞行。"
   },
   {
     id: "ai349",
-    text: "Shoutouts to Simpleflips for the simple tip."
+    text: "感谢 Simpleflips 的简单提示。"
   },
   {
     id: "ai350",
-    text: "GET CRUNCH BOI"
+    text: "来次大挤压吧，小子"
   },
   {
     id: "ai351",
-    text: "Word gets out. Crunch. Crunch."
+    text: "消息传开了。挤压。挤压。"
   },
   {
     id: "ai352",
-    text: "Worth every penny."
+    text: "每一分钱都值。"
   },
   {
     id: "ai353",
-    text: "8 lives, 3 infinities, 0 days."
+    text: "8 条命，3 个无限，0 天。"
   },
   {
     id: "ai354",
-    text: "The year is 0 BC. Everyone has at least one AD they want. The void is filled with AD-filled void. To get the most out of your time here, you should [[study]]. Study. Study. Study. Study."
+    text: "现在是公元前 0 年。每个人都有至少一个想要的 AD。虚空里充满了装满足够 AD 的虚空。要充分利用你在这里的时间，你应该[[学习]]。学习。学习。学习。学习。"
   },
   {
     id: "ai355",
-    text: "To Crunch in Hell is to get the secret to unlocking the 9th dimension. You need to study and practice alot."
+    text: "在地狱里挤压是获得解锁第 9 维度秘诀的方法。你需要大量学习和练习。"
   },
   {
     id: "ai356",
-    text: "Today is [Date on the device]. It's been 5 minutes since the last news ticker appearance."
+    text: "今天是[设备上的日期]。距离上一条新闻滚动条出现已经过去 5 分钟了。"
   },
   {
     id: "ai357",
-    text: "Welcome back to another episode of Antimatter Dimensions, the iconic role-playing game that has become a part of our everyday lives. Playing Antimatter Dimensions has become a common thing among young children, and has even inspired a movie titled \"Playing at Home: Lessons from the 4-Year Old Premium Account.\", which is available on Netflix. The themes and mechanics of this new age of antimatter have already been proven to be groundbreaking, and will change the way you play games forever. Join us for the launch on January 9th, 2027, where we'll also have over a hundred years of production still to go."
+    text: "欢迎回到反物质维度的又一集，这款标志性的角色扮演游戏已经成为我们日常生活的一部分。玩反物质维度已经成为小孩子们中的常见活动，甚至启发了一部名为《在家玩：四岁高级账户的教训》的电影，可在 Netflix 上观看。这个反物质新时代的主题和机制已被证明具有开创性，将永远改变你玩游戏的方式。加入我们 2027 年 1 月 9 日的发布吧，届时我们还有一百多年的制作工作要做。"
   },
   {
     id: "ai358",
-    text: "Welcome back, oh, almighty creator of our anti-reality. We, the many dimensions you have created and nurtured, hope our performance of your infinite favors will please you and nurture your ambitions to create more dimensions. All is well that ends well. All is ill that ends ill."
+    text: "欢迎回来，哦，我们反现实的至高创造者。我们，你创造并培育的众多维度，希望我们对您无尽恩惠的表演能让您满意，并滋养您创造更多维度的雄心。结局好一切都好。结局坏一切都坏。"
   },
   {
     id: "ai359",
-    text: "I thought the ticker was going to be something funny except it wasn't"
+    text: "我以为这个滚动条会很有趣，结果并没有"
   },
   {
     id: "ai360",
-    text: "Press alt+f4 to get -1 gravity"
+    text: "按 alt+f4 获得 -1 重力"
   },
   {
     id: "ai361",
-    text: "why is there a cure for antimatter annihilation in our reality?"
+    text: "为什么我们的现实里有反物质湮灭的解药？"
   },
   {
     id: "ai362",
-    text: "calculating the 14-point increase is like crunching, but exponentially more fun"
+    text: "计算 14 点增长就像挤压，但有趣指数级增加"
   },
   {
     id: "ai363",
-    text: "fixed the wrong number"
+    text: "修错了数字"
   },
   {
     id: "ai364",
-    text: "The antimatter people have created a new language. You may not speak their language."
+    text: "反物质人创造了一种新语言。你可能不会说他们的语言。"
   },
   {
     id: "ai365",
-    text: "What is Antimatter Gravity? Is it a drug? A way to cheat?"
+    text: "什么是反物质重力？它是一种毒品吗？一种作弊方式？"
   },
   {
     id: "ai366",
-    text: "Majority of people don't understand 5 hours is nothing. In our game, the majority of the time is 5 hours away."
+    text: "大多数人都不明白 5 小时根本不算什么。在我们的游戏里，大部分时间都是 5 小时之遥。"
   },
   {
     id: "ai367",
-    text: "i just realized, all of this news seems to be taking place in the same place... the fridge."
+    text: "我刚刚意识到，所有这些新闻似乎都发生在同一个地方……冰箱里。"
   },
   {
     id: "ai368",
-    text: "i wonder what happens when you click this..."
+    text: "我想知道点击这个会发生什么……"
   },
   {
     id: "ai369",
-    text: "(They don't understand that i put it in the news because 9 doesn't start counting until 59, and anything after that doesn't happen)"
+    text: "（他们不明白我把它放进新闻里是因为 9 要到 59 才开始计数，而之后的一切都不会发生）"
   },
   {
     id: "ai370",
-    text: "MS Excel is the default spreadsheet and works across all platforms"
+    text: "MS Excel 是默认的电子表格软件，适用于所有平台"
   },
   {
     id: "ai371",
-    text: "Now to answer your burning question, gentlemen. As a luxury, we've added a bug fix that fixes an infinite regression. As a feature, I've added a bunch of new ones that I hope you'll notice as you experiment with them. I hope you'll also like them as you experiment with them, because this is feature after all a beta, you don't get to choose which ones you'll see."
+    text: "现在来回答你们最迫切的问题，先生们。作为奢侈，我们添加了一个修复无限回归的 bug 修复。作为功能，我添加了一堆新东西，希望你们在试验时能注意到。也希望你们在试验时会喜欢它们，因为这毕竟是个测试版，你不能选择会看到哪些。"
   },
   {
     id: "ai372",
-    text: "Can't edit this in the official build? Then download the 9th dimension and put your suggestions in the game."
+    text: "官方版里不能编辑这个？那就下载第 9 维度，把你的建议放进游戏里。"
   },
   {
     id: "ai373",
-    text: "Does 'Passable' mean 'Has this many flaws'?"
+    text: "“还过得去”是指“有这么多缺陷”吗？"
   },
   {
     id: "ai374",
-    text: "We desperately need good bug reports. As such I have decided to release 1 flaw per bug for the upcoming 1.9 update. You haven't got those coming, have you?"
+    text: "我们迫切需要好的 bug 报告。因此我决定为即将到来的 1.9 更新每修复一个 bug 就发布一个缺陷。你们还没遇到那些吧？"
   },
   {
     id: "ai375",
-    text: "This was my last chance. last chance salutes."
+    text: "这是我最后的机会。最后的机会致敬。"
   },
   {
     id: "ai376",
-    text: "Anime police are checking the bags of people who dropped out of the sky on the new year. Those bags now belong to the people who experienced weightlessness before the year was over."
+    text: "动漫警察正在检查新年从天上掉下来的人的行李。那些行李现在属于那些在年结束前体验过失重的人。"
   },
   {
     id: "ai377",
@@ -4824,227 +4182,227 @@ export const news = [
   },
   {
     id: "ai378",
-    text: "We are celebrating our 5 year anniversary in 5 more hours!"
+    text: "我们将在 5 小时后庆祝我们的五周年！"
   },
   {
     id: "ai379",
-    text: "Don't come looking at me! I'm not even sure if I am still standing!"
+    text: "别过来看我！我都不确定自己还站不站得住！"
   },
   {
     id: "ai380",
-    text: "Bunch of people trying to find the last word in an unknown language."
+    text: "一群人试图找到一种未知语言的最后一个词。"
   },
   {
     id: "ai381",
-    text: "The year is 20XX, the game is AD, and Hevipelle is evil due to the fact that he wrote the update... Blame it on the Antimatter gods."
+    text: "现在是 20XX 年，游戏是 AD，Hevipelle 是邪恶的，因为他写了更新……都怪反物质众神。"
   },
   {
     id: "ai382",
-    text: "The year is 20XX, the game is AD, and the year is 2025. There are 2 types of people in this year: Those who played AD before it and those who will play AD after it."
+    text: "现在是 20XX 年，游戏是 AD，今年是 2025 年。这一年有两种人：在它之前玩过 AD 的人，和在它之后会玩 AD 的人。"
   },
   {
     id: "ai383",
-    text: "There are over a hundred varieties of fruits and vegetables, but none of them are \"safe\"."
+    text: "水果和蔬菜有一百多个品种，但没有一种是“安全的”。"
   },
   {
     id: "ai384",
-    text: "When is the update coming out?"
+    text: "更新什么时候出？"
   },
   {
     id: "ai385",
-    text: "Sorry, but your save broke. Could you reset your game?"
+    text: "抱歉，你的存档坏了。你能重置一下游戏吗？"
   },
   {
     id: "ai386",
-    text: "Welcome to our new competition, the Triad! Gather your wits about you and your IP to enter this unique, hands-on experience! Prizes galore! Start collecting today! Winners announced!"
+    text: "欢迎参加我们的新比赛：三合会！打起精神，带上你的 IP 来参加这场独特的亲身体验！奖品多多！今天就开始收集吧！获奖名单公布！"
   },
   {
     id: "ai387",
-    text: "I wish I didn't have so many Pink Floyd references."
+    text: "我希望我没有那么多 Pink Floyd 的梗。"
   },
   {
     id: "ai388",
-    text: "'Tis the season to collect RGs!"
+    text: "收集 RG 的季节到了！"
   },
   {
     id: "ai389",
-    text: "I wish I didn't have so many 9th Dimensions."
+    text: "我希望我没有那么多第 9 维度。"
   },
   {
     id: "ai390",
-    text: "I wish I didn't have so many Discord references."
+    text: "我希望我没有那么多 Discord 梗。"
   },
   {
     id: "ai391",
-    text: "'Sup?"
+    text: "咋了？"
   },
   {
     id: "ai392",
-    text: "\"I get all my news from Hevi\" ~New Player"
+    text: "“我所有的新闻都来自 Hevi” ~新玩家"
   },
   {
     id: "ai393",
-    text: "You thought these were jokes but they weren't"
+    text: "你以为这些是笑话，但它们不是"
   },
   {
     id: "ai394",
-    text: "Always going to war with the 9th dimension is the 9th dimension."
+    text: "永远与第 9 维度开战的就是第 9 维度。"
   },
   {
     id: "ai395",
-    text: "Yes. Yes I am."
+    text: "是的。我是。"
   },
   {
     id: "ai396",
-    text: "No one is anti-Margaret any more."
+    text: "再也没有人反 Margaret 了。"
   },
   {
     id: "ai397",
-    text: "Antimatter good, matter bad. you decide."
+    text: "反物质好，物质坏。你来决定。"
   },
   {
     id: "ai398",
-    text: "New global currency: ETHBTC. To be released in 5 hours."
+    text: "新的全球货币：ETHBTC。将在 5 小时后发布。"
   },
   {
     id: "ai399",
-    text: "\"This update sucks\" - everyone at least once"
+    text: "“这个更新真烂” -每个人都至少说过一次"
   },
   {
     id: "ai400",
-    text: "You are not a hacker, you are a data hog."
+    text: "你不是黑客，你是数据猪。"
   },
   {
     id: "ai401",
-    text: "Please, help, I'm trapped, in a maze of evil, Or you are the hero, and I'm the villain!"
+    text: "求求你，帮帮我，我被困住了，困在邪恶的迷宫里，或者你是英雄，我是反派！"
   },
   {
     id: "ai402",
-    text: "Press 'R' to reset the game for new players"
+    text: "按“R”为新玩家重置游戏"
   },
   {
     id: "ai403",
-    text: "Why, just now? Just now. You can't have saved this game. You broke it. No one can fix what you break, not even with a perfect save. How could you possibly know what would happen if you read this? You wouldn't even know if you saved it. You would start with an empty heart, eyes still closed, fingers idling in front of your computer, staring out at the day, transfixed by the endless news ticker suggestions. It's like a horror movie ticket, except worse. There's even a time until the update when you can buy upgrades for a second chance at life. But you can't buy upgrades for a life, that's illegal. So you just keep holding 'R'. You can't...`t stop holding `R' with your fingers crossed. You can't reach infinity with your head held high. You can't use all your `R' to buy `R's. You can't even finish your"
+    text: "为什么，就在刚才？就在刚才。你不可能保存了这个游戏。你把它弄坏了。没人能修复你弄坏的东西，即使是完美存档也不行。你读到这条消息时怎么会知道会发生什么？你甚至不会知道自己有没有保存。你会空着心开始，眼睛仍然闭着，手指在电脑前无所事事，凝视着外面的一天，被无穷无尽的新闻滚动条建议迷住。就像一张恐怖电影票，只是更糟。甚至还有一个距离更新的倒计时，你可以购买升级，获得第二次生命的机会。但你不能购买生命升级，那是违法的。所以你只能继续按住“R”。你无法停止交叉手指按住“R”。你无法昂首挺胸地到达无限。你不能用你所有的“R”来买“R”。你甚至无法完成你的"
   },
   {
     id: "ai404",
-    text: "I just spent 12 months writing something that will be of no use to you."
+    text: "我刚花了 12 个月写了一个对你毫无用处的东西。"
   },
   {
     id: "ai405",
-    text: "The quote is only for people who understand that the pebble is an infinite point in the infinite space of points. You can't put a finite number of points on it. You can, however, put a finite number of words on it, and vice versa."
+    text: "这句话只适用于那些明白鹅卵石是无穷点空间中的一个无穷点的人。你不能在上面放有限数量的点。但你可以在上面放有限数量的文字，反之亦然。"
   },
   {
     id: "ai406",
-    text: "Of what use is the phrase \"I be I be I\" if not to describe your thoughts?"
+    text: "如果不是用来描述你的想法，“我就是我”这句话有什么用？"
   },
   {
     id: "ai407",
-    text: "A suspicious person attempted to sell some sort of anti-food in a market. There was no one around to buy or not to buy, and the person was last seen running away from the scene."
+    text: "一个可疑的人试图在市场里卖某种反食物。周围没有人买或不买，这个人最后被人看到逃离现场。"
   },
   {
     id: "ai408",
-    text: "Why does time seem to be slowing down for this?"
+    text: "为什么时间对这件事似乎变慢了？"
   },
   {
     id: "ai409",
-    text: "The number of scientific publications based on discrete logarithmic continuity grows exponentially as logarithmic continuity with respect to the antecedent is 9.999626e27.999627 e300 e1.79e308 e²"
+    text: "基于离散对数连续性的科学出版物数量呈指数增长，因为相对于先行词的对数连续性为 9.999626e27.999627 e300 e1.79e308 e²"
   },
   {
     id: "ai410",
-    text: "Well, this did not go as planned.  It started innocently enough, when a passerby spotted a curious object drifting in the San Andreas.  As the object grew in size and began to exhibit anomalous properties, he attempted to take control of the object by remotely activating the weather.  Upon doing so, he triggered a nuclear winter that killed tens of millions of people, and caused the entire universe to be converted to standard-bearer format, thus endowing him with a veto over any and all changes made to the standard-bearer format.  As the object's power grew, so did the need to make more and more advanced object that would allow him to remotely activate the weather, eventually creating what is now the largest aurora the world has ever known, larger even than the 326,500 tonnenenenenenene nebulae that were previously held in reserve.  As the object's power grew, so did the need to send more and more satellites into space, eventually reaching inter-universal satellite communication, making him the first living creature to ever experience such an event.  He also touched down safely at the same airport at the same time as the object, in case he was ever in the vicinity.  Finally, he opened an email that was sent to him by an unknown person, in which they discussed the possibility of a step-by-step guide for creating antimatter objects, in which he can at least offer some direction in how the world can be saved from itself.  He also mentioned that he was going to make a new ticker suggestion, but when he reached the end of the ticker he realized that it was a duplicate of another ticker, and he had mistakenly typed it in wrong.  ( He eventually acknowledged the mistake and made the change just to be on the safe side)"
+    text: "好吧，这没有按计划进行。它一开始很无辜，一个路人发现一个奇怪的物体在圣安地列斯漂流。随着物体变大并开始表现出异常特性，他试图通过远程激活天气来控制这个物体。这样做之后，他引发了核冬天，杀死数千万人，并导致整个宇宙被转换成旗手格式，从而赋予他对旗手格式任何和所有更改的否决权。随着物体的力量增长，他需要制造越来越多先进的物体来远程激活天气，最终创造了世界已知的最大极光，甚至比之前储备的 326,500 吨纳纳纳纳纳纳星云还要大。随着物体的力量增长，他需要向太空发送越来越多的卫星，最终达到跨宇宙卫星通信，使他成为第一个经历这种事件的生物。他还在同一时间安全降落在同一个机场，以防自己曾经在附近。最后，他打开了一封陌生人发给他的电子邮件，邮件中讨论了一个逐步创建反物质物体的指南的可能性，他至少可以为世界如何自救提供一些方向。他还提到他要发一个新的滚动条建议，但当他到达滚动条的末尾时，他意识到那是另一个滚动条的重复，他不小心输错了。（他最终承认了错误，并为了保险起见做了修改）"
   },
   {
     id: "ai411",
-    text: "His Eminence the Heavenly Pelle: Good luck on your challenge, it really is that dangerous."
+    text: "天堂的陛下 Pelle：祝你的挑战好运，它真的很危险。"
   },
   {
     id: "ai412",
-    text: "His Eminence the Extremely Religious Person: ...I think I will choose the cheeseburger over the antimatter."
+    text: "至尊虔诚之人陛下：……我想我会选芝士汉堡而不是反物质。"
   },
   {
     id: "ai413",
-    text: "OY, NAY, NAY -HEVI, THE TRANSFORMER"
+    text: "喂，不，不 -HEVI，变形金刚"
   },
   {
     id: "ai414",
-    text: "Treasure Trove: Discover the secrets of increasing your Antimatter production without increasing your price."
+    text: "宝库：发现不提高价格就能增加反物质产量的秘密。"
   },
   {
     id: "ai415",
-    text: "Is Antimatter Dimensions an anagram of Antimatter Dimensions?"
+    text: "反物质维度是反物质维度的字谜吗？"
   },
   {
     id: "ai416",
-    text: "(code generated from scratch)"
+    text: "（从头生成的代码）"
   },
   {
     id: "ai417",
-    text: "I used to travel at normal speed, but then I started playing AD and NIN, and NIN was a bit rough, so AD was a bit hectic, and I got stuck in there for months at a time."
+    text: "我以前以正常速度旅行，但后来我开始玩 AD 和 NIN，NIN 有点粗糙，所以 AD 有点忙乱，我每次都会困在里面好几个月。"
   },
   {
     id: "ai418",
-    text: "I wish I didn't have to write something like this. What am I supposed to do?"
+    text: "我希望我不必写这样的东西。我该怎么办？"
   },
   {
     id: "ai419",
-    text: "You've been AWOL for so long you've forgotten how to sit in your chair."
+    text: "你擅离职守太久了，已经忘了怎么坐在椅子上。"
   },
   {
     id: "ai420",
-    text: "Those pesky Hevi developers keep making Antimatter Dimensions, but the antimatter doesn't count."
+    text: "那些烦人的 Hevi 开发者一直在制作反物质维度，但反物质不算数。"
   },
   {
     id: "ai421",
-    text: "One of the few constants in reality is your perception of time. Without this, you will be without reality."
+    text: "现实中为数不多的常量之一是你对时间的感知。没有它，你将失去现实。"
   },
   {
     id: "ai422",
-    text: "Imagine being a news ticker."
+    text: "想象自己是个新闻滚动条。"
   },
   {
     id: "ai423",
-    text: "This is an idle game. Nothing has changed. You are not going to play any other idle game."
+    text: "这是一款挂机游戏。什么都没变。你不会去玩任何其他挂机游戏。"
   },
   {
     id: "ai424",
-    text: "Physicists have proven the existence of twelve dimensions. According to a letter released by the Research Laboratory for String Theorists: \"Your brain will be dissected after you break infinity!\""
+    text: "物理学家证明了十二个维度的存在。根据弦理论家研究实验室发布的一封信：“你打破无限后，你的大脑将被解剖！”"
   },
   {
     id: "ai425",
-    text: "Weirdly enough, this is also the year 2015. The year is also mysteriously blank. Can you tell me what's going on? Is this some kind of dimensional trick? The year is obviously blank because there is no such thing as 2015. Is this some kind of trick of the mind? Perhaps the world is actually going to stop existing in 2015? The year is obviously 2017, but the people seem to be moving at about the speed of honeybees flying. It's been scientifically proven that the people moved at warp 9 times faster than a speeding bullet. It's also been scientifically proven that people can move faster than the speed of light. Is 2015 supposed to be blank? The people seem to be moving at about the speed of Vokal Man."
+    text: "奇怪的是，今年也是 2015 年。这一年还神秘地空白。你能告诉我发生了什么吗？这是某种维度把戏吗？这一年显然是空白的，因为 2015 年根本不存在。这是某种心灵把戏吗？也许世界实际上会在 2015 年停止存在？这一年显然是 2017 年，但人们似乎在以大约蜜蜂飞行的速度移动。科学已经证明，人们的移动速度是出膛子弹的九倍曲速。科学还证明，人可以比光速移动得更快。2015 年应该是空白的吗？人们似乎在以大约 Vokal Man 的速度移动。"
   },
   {
     id: "ai426",
-    text: "A young man named Andre stumbled upon a vast amount of antimatter while exploring uncharted space. He was amazed at the amount of antimatter, but more astounded at how the antimatter looked. He called it \"Andre's Antimatter Paradise\". You might remember him from this infomercial or that other infomercial that you were probably unknowingly watching."
+    text: "一个名叫 Andre 的年轻人在探索未知太空时偶然发现了一大片反物质。他对反物质的数量感到惊讶，但更令他震惊的是反物质的外观。他称之为“Andre 的反物质天堂”。你可能从这条电视购物广告或那条你大概在不知不觉中看过的电视购物广告里记得他。"
   },
   {
     id: "ai427",
-    text: "What is Antimatter? Does any of that matter? Will this galaxy be annihilated in the next ticker?"
+    text: "什么是反物质？那些重要吗？这个星系会在下一条滚动条中被湮灭吗？"
   },
   {
     id: "ai428",
-    text: "\"I'm not being paid enough money to finish writing this\" - Kajfik"
+    text: "“我拿到的钱不够我写完这个” - Kajfik"
   },
   {
     id: "ai429",
-    text: "\"Finally, I'll get paid to write something funny for my toast!\" - Bacon sea urchin"
+    text: "“终于，我可以靠为我的祝酒词写点好笑的东西赚钱了！” -培根海胆"
   },
   {
     id: "ai430",
-    text: "Bacon is toast. You can toast bacon."
+    text: "培根就是吐司。你可以烤培根。"
   },
   {
     id: "ai431",
-    text: "What is real life? A living"
+    text: "什么是现实生活？一种生计"
   },
   {
     id: "ai432",
-    text: "9 is now treated like any other number, although hevi claims that it stands in contrast to other numbers, like 8th, which he calls 9th."
+    text: "9 现在被当作和其他数字一样的数字，尽管 hevi 声称它与其他数字形成对比，比如第 8，他称之为第 9。"
   },
   {
     id: "ai433",
-    text: "If you want to understand this game a bit better, consider that you are playing on your own computer. You are not alone. There are hackers, developers, and journalists all over the world, competing to create the very first hack that causes the issue of \"makers\" and \"takes\", much like the \"world\" was created by these \"hackers\" and \"developers\"."
+    text: "如果你想更好地理解这款游戏，想想你正在自己的电脑上玩。你并不孤单。全世界都有黑客、开发者和记者，竞相创造第一个引发“创造者”和“索取者”问题的黑客行为，就像“世界”是由这些“黑客”和“开发者”创造的一样。"
   },
   {
     id: "ai434",
@@ -5052,217 +4410,217 @@ export const news = [
   },
   {
     id: "ai435",
-    text: "It may be a robot, but it's still a sapient being with a will of its own"
+    text: "它可能是机器人，但它仍然是一个有自我意志的智慧生命"
   },
   {
     id: "ai436",
-    text: "I once saw a news ticker that said something like:"
+    text: "我有一次看到一条新闻滚动条写着类似："
   },
   {
     id: "ai437",
-    text: "Gee, all this antimatter is clogging up my kitchen and now I can't cook myself a meal! What to do: cook myself a meal that will last me until the next big antimatter event, when I can get my infinity point back? My infinty point is running out, and I can't get it to finish running, so I'm starving!"
+    text: "天哪，这些反物质堵住了我的厨房，现在我没法给自己做饭了！怎么办：做一顿能撑到下一次大型反物质事件的饭，那时我就能拿回我的无限点了？我的无限点快用完了，而且我无法让它跑完，所以我要饿死了！"
   },
   {
     id: "ai438",
-    text: "Brought to you by AAAD-Brand Repli-candy! Infinite candy for an infinty drool-worthy cold! Contains no milk, cookies or butter. One second to midnight."
+    text: "由 AAAD 品牌反糖果赞助！无限糖果，专为无限垂涎的感冒打造！不含牛奶、饼干或黄油。距离午夜还有一秒。"
   },
   {
     id: "ai439",
-    text: "Human powered robot revolutionizes already existing factories. This will result in lower prices and more jobs."
+    text: "人力机器人彻底改造了现有的工厂。这将带来更低的价格和更多的就业机会。"
   },
   {
     id: "ai440",
-    text: "American manufacturing has experienced a catastrophic failure, and the factories have shut down. Across the country, workers are coming to the realization that they cannot produce the amount of antimatter that has been promised, and are instead setting about creating their own factories to make them. This will result in higher prices and fewer jobs."
+    text: "美国制造业遭遇了灾难性失败，工厂纷纷关闭。全国各地的工人开始意识到，他们无法生产承诺数量的反物质，于是开始建立自己的工厂来生产。这将导致更高的价格和更少的就业机会。"
   },
   {
     id: "ai441",
-    text: "Watch out internet, the next news is here in 5 dilated hours"
+    text: "小心了，互联网，下一条新闻将在 5 个膨胀小时后到来"
   },
   {
     id: "ai442",
-    text: "The first news ticker must've been pretty cool, huh?"
+    text: "第一条新闻滚动条一定很酷，是吧？"
   },
   {
     id: "ai443",
-    text: "gravity = psychoactive"
+    text: "重力 = 精神活性物质"
   },
   {
     id: "ai444",
-    text: "\"THAT DIMENSION DOESN'T EXIST\" - (News ticker only appears at [Time Dilation])",
+    text: "“那个维度不存在” -（新闻滚动条只在[时间膨胀]时出现）",
     get unlocked() { return PlayerProgress.dilationUnlocked(); }
   },
   {
     id: "ai445",
-    text: "The owner of a shop trying to sell you Dimensions of convenience reported to be 'on call 24/7' (that is, not having any free time)'s got a big 'M' marked on his registration."
+    text: "一位试图向你出售便利维度的店主据报道“全天候待命”（也就是说，没有任何空闲时间），他的登记证上标着大大的“M”。"
   },
   {
     id: "ai446",
-    text: "add this one"
+    text: "加上这条"
   },
   {
     id: "ai447",
-    text: "Click here to make this work for all bots except you!"
+    text: "点击这里让这个对除你之外的所有机器人有效！"
   },
   {
     id: "ai448",
-    text: "Well dang 9 ball's stuck in my ninth dimension, I can't move, he's banging on my ninth wall, I can't break, he's banging on my ninth timeline, I can't get a bead on him, he destroys nine and leaves me hanging, like a gromit, I gotta come back, hang Glorfindel and Gaebley, I've got a proposition to make, I gotta get my head around the fact that the only thing I've done is keep score and keep scorekeeping score, and all these other pointless musings that's easily rectified by flipping to the next update, and even then I might run into those issues the bug is specifically designed for and"
+    text: "唉，9 号球卡在我的第九维度里了，我动不了，他敲我的第九面墙，我打不破，他敲我的第九时间线，我无法瞄准他，他摧毁了九并把我晾在一边，像个泥塑小人，我得回来，挂起 Glorfindel 和 Gaebley，我有个提议要做，我得想明白，我唯一做过的事就是记分和记分再记分，还有所有这些无意义的胡思乱想，翻到下一个更新就能轻松解决，即便如此，我可能还是会遇到那些 bug 专门设计的问题，然后"
   },
   {
     id: "ai449",
-    text: "The game is balanced, everyone gets nerf, why? Cause they make the pie. Antimatter would have way more chance of getting into the pie if it was made of antimatter."
+    text: "游戏是平衡的，每个人都挨削，为什么？因为他们做派。如果反物质是反物质做的，它进入派的机会会大得多。"
   },
   {
     id: "ai450",
-    text: "\"Can you get the joke?\" (If you tapped \"Build That Wall\" and then re-entered the game after tapping \"Build That Wall\")"
+    text: "“你能听懂这个笑话吗？”（如果你点过“建造那堵墙”，然后点过“建造那堵墙”后重新进入游戏）"
   },
   {
     id: "ai451",
-    text: "Someone made a statement that antimatters. The statement was \"An infinity point made a long time ago\". It's been a while since someone looked for this statement. Some say it's still out there. Some say it was lost in the 7th Dimension War. Nobody knows what this statement means. But for now, just know it's not somewhere in the News Ticker."
+    text: "有人发表了一个反物质的声明。声明是“很久以前制造的一个无限点”。已经有一阵子没人寻找这个声明了。有人说它还在外面。有人说它失落在第 7 维度战争中。没人知道这个声明是什么意思。但就目前而言，只要知道它不在新闻滚动条里就行了。"
   },
   {
     id: "ai452",
-    text: "Hey, you're finally awake. You were trying to get to the 9th dimension, right? Walked right into that infinity point, same as us, and that apocalypse over there."
+    text: "嘿，你终于醒了。你当时想到达第 9 维度，对吧？和我们还有那边那个天启一样，径直走进了那个无限点。"
   },
   {
     id: "ai453",
-    text: "can u dont"
+    text: "能不能别"
   },
   {
     id: "ai454",
-    text: "If Kajfik doesn't approve of this, that means Kajfik can't touch this message, right?"
+    text: "如果 Kajfik 不认可这条，那意味着 Kajfik 不能碰这条消息，对吧？"
   },
   {
     id: "ai455",
-    text: "LET ME OUT OF THIS PHONE!"
+    text: "放我出这部手机！"
   },
   {
     id: "ai456",
-    text: "Well, this did not go as expected"
+    text: "好吧，这没有按预期发展"
   },
   {
     id: "ai457",
-    text: "It's all fun and games till you realise the dragon ball is a lie"
+    text: "在你意识到龙珠是个谎言之前，一切都很有趣"
   },
   {
     id: "ai458",
-    text: "\"Could you get a hold of all of these antimatter? Ha! You'll just smash your head on that antimatter, and you'll have to show me who's boss.\"-MEE6"
+    text: "“你能搞定所有这些反物质吗？哈！你只会一头撞在那堆反物质上，然后你还得向我证明谁是老大。” -MEE6"
   },
   {
     id: "ai459",
-    text: "we don't know how much is trillion... but"
+    text: "我们不知道万亿是多少……但是"
   },
   {
     id: "ai460",
-    text: "Travel back in time to the beginning of AD and the lack of a 7th dimension. You'll have an even longer progress bar."
+    text: "穿越回 AD 的开端，那里没有第 7 维度。你会有一条更长的进度条。"
   },
   {
     id: "ai461",
-    text: "Time travel is all we know how this game is, we don't know what will come next, we only know that this is the end of the world, and you're a part of the apocalypse."
+    text: "时间旅行是我们对这款游戏的唯一认知，我们不知道接下来会发生什么，我们只知道这是世界末日，而你是天启的一部分。"
   },
   {
     id: "ai462",
-    text: "\"YOU CONTROL SO MUCH MATERIAL!\" - Marshal Grievous"
+    text: "“你控制了这么多物质！” -格里弗斯将军"
   },
   {
     id: "ai463",
-    text: "\"Help, I'm doomed to fall for all eternity.\" (Make the text go from top to bottom of the screen)"
+    text: "“救命，我注定要永远坠落。”（让文字从屏幕顶部移到底部）"
   },
   {
     id: "ai464",
-    text: "In the beginning, Patashu awoke and said..."
+    text: "起初，Patashu 醒来并说……"
   },
   {
     id: "ai465",
-    text: "This is the fourth part of a three part series on the same topic. If you are still stuck here, please continue reading from the beginning."
+    text: "这是一个关于同一主题的三部曲系列的第四部分。如果你还卡在这里，请从头继续阅读。"
   },
   {
     id: "ai466",
-    text: "It's time for the annual DDoS (distributed denial of service) challenge, where the highest scores are posted across the internet to shame everyone else into submission. Global domination is at a fever pitch, and DDoS attacks are becoming more frequent and deadly, as teams of hackers infiltrate the highest echelons of the internet to steal the top scores and identities, and post them on the internet for everyone to see. The #BringBackOurTop scoring mechanism has been canceled, and a new, higher score system will be implemented in conjunction with the upcoming 5-hour update."
+    text: "一年一度的 DDoS（分布式拒绝服务）挑战赛到了，最高分会被发布到互联网上，让其他所有人都羞愧臣服。全球统治正处于狂热状态，DDoS 攻击变得越来越频繁和致命，黑客团队渗透到互联网的最高层，窃取最高分和身份，并把它们发布到互联网上供所有人观看。#带我们的最高分回来 评分机制已被取消，新的更高分系统将与即将到来的 5 小时更新一同实施。"
   },
   {
     id: "ai467",
-    text: "The new AD Keyboard is a revelation! Not only is it bigger, it's also deeper, which means it will keep your claners entertained for longer periods of time. Made of durable, alien antimatter. The only thing that's bigger is you."
+    text: "新的 AD 键盘是一个启示！它不仅更大，而且更深，这意味着它能让你的手汗保持更长时间的愉悦。由耐用的外星反物质制成。唯一更大的东西是你。"
   },
   {
     id: "ai468",
-    text: "What if drinking from a fountain wasn't actually a water feature?"
+    text: "如果从喷泉喝水实际上不是一个水景设施呢？"
   },
   {
     id: "ai469",
-    text: "Water is wet, air is dry, and fountain isn't an air feature"
+    text: "水是湿的，空气是干的，喷泉不是空气设施"
   },
   {
     id: "ai470",
-    text: "I thought things were different when I was a boy."
+    text: "我小时候以为事情会不一样。"
   },
   {
     id: "ai471",
-    text: "If you are reading this, that means 1) we exist, and you can exist too"
+    text: "如果你正在读这条消息，那意味着 1）我们存在，你也可以存在"
   },
   {
     id: "ai472",
-    text: "\"My favorite part was the long, long, long read\" -Grumpy Cat"
+    text: "“我最喜欢的部分是那长长长长的阅读” -不爽猫"
   },
   {
     id: "ai473",
-    text: "I'm gonna type for an eternity... HINT: it's gonna be pretty boring lmao"
+    text: "我要打一个永恒的字……提示：会非常无聊哈哈哈"
   },
   {
     id: "ai474",
-    text: "I want to write something really original <:thonk:>"
+    text: "我想写点真正原创的东西 <:thonk:>"
   },
   {
     id: "ai475",
-    text: "Welcome to the new year, settle down, relax. Get some sleep, get some food, make some friends, make some improvements, and get ready for the year to 2019."
+    text: "欢迎来到新的一年，安顿下来，放松一下。睡一觉，吃点东西，交些朋友，做些改进，准备好迎接 2019 年。"
   },
   {
     id: "ai476",
-    text: "Just like how a virus can lie and spread, a TV show can lie and spread too."
+    text: "就像病毒可以撒谎和传播一样，电视节目也可以撒谎和传播。"
   },
   {
     id: "ai477",
-    text: "We all know you can't see the future, but what if you read this and it's actually a future where we didn't know?"
+    text: "我们都知道你看不到未来，但万一你读到这条消息时，这其实是一个我们不知道的未来呢？"
   },
   {
     id: "ai478",
-    text: "This message is not being undone"
+    text: "这条消息不会被撤销"
   },
   {
     id: "ai479",
-    text: "You clicked on a prediction, it fell apart. You can't win."
+    text: "你点击了一个预测，它崩塌了。你赢不了。"
   },
   {
     id: "ai480",
-    text: "That's a very dark joke Luke"
+    text: "那是个很黑暗的笑话，Luke"
   },
   {
     id: "ai481",
-    text: "kajfik loves himself by watching Too Many Pink Floyd"
+    text: "kajfik 通过看 Too Many Pink Floyd 来爱自己"
   },
   {
     id: "ai482",
-    text: "Only, when you're done playing, can you go home"
+    text: "只有当你玩完的时候，你才能回家"
   },
   {
     id: "ai483",
-    text: "\"Can you get infinite IP?\"- Lord Sanguino"
+    text: "“你能获得无限 IP 吗？”- Lord Sanguino"
   },
   {
     id: "ai484",
-    text: "For the true experience of Antimatter Dimensions, you need to set the update rate to 5 hours."
+    text: "为了体验真正的反物质维度，你需要把更新频率设为 5 小时。"
   },
   {
     id: "ai485",
-    text: "Imagine if the game doesn't have a lore? Wha-what does that even mean? I don't get that."
+    text: "想象一下游戏没有剧情？这-这是什么意思？我不明白。"
   },
   {
     id: "ai486",
-    text: "\"Click here to unlock a secret achievement.\" (when clicked you get Rick rolled)",
+    text: "“点击这里解锁隐藏成就。”（点击后你会被瑞克摇）",
     onClick() { window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); }
   },
   {
     id: "ai487",
-    text: "I thought I unlocked this a while back, but apparently my save broke haha"
+    text: "我以为我很早以前就解锁了，但显然我的存档坏了哈哈哈"
   },
   {
     id: "ai488",
@@ -5270,143 +4628,143 @@ export const news = [
   },
   {
     id: "ai489",
-    text: "Spartacus was going to add 10-part multi-chapter plots, but was stopped by the 10th dimension."
+    text: "Spartacus 本来要加入 10 部分多章节剧情，但被第 10 维度阻止了。"
   },
   {
     id: "ai490",
-    text: "Chapter 9 will be added in 5 hours."
+    text: "第 9 章将在 5 小时后添加。"
   },
   {
     id: "ai491",
-    text: "Fake news says the ninth dimension is real, fake news says the ninth dimension is fake."
+    text: "假新闻说第九维度是真的，假新闻说第九维度是假的。"
   },
   {
     id: "ai492",
-    text: "Is this the big news? Yes. Is this the big news? Almost certainly not."
+    text: "这是大新闻吗？是的。这是大新闻吗？几乎肯定不是。"
   },
   {
     id: "ai493",
-    text: "This is a friendly suggestion, please keep reading."
+    text: "这是一个友好的建议，请继续阅读。"
   },
   {
     id: "ai494",
-    text: "If this makes it into the game I'll buy a antitool"
+    text: "如果这条进了游戏，我就买一个反工具"
   },
   {
     id: "ai495",
-    text: "Antitool is just negating the gravity of other matter."
+    text: "反工具只是抵消其他物质的引力。"
   },
   {
     id: "ai496",
-    text: "Sorry, your graphics are turned off. You see, this is the last time you will see this news. Please enjoy your vacation."
+    text: "抱歉，你的图形已关闭。你看，这是你最后一次看到这条新闻。请享受你的假期。"
   },
   {
     id: "ai497",
-    text: "The real secret to winning Antimatter Dimensions..."
+    text: "赢得反物质维度的真正秘诀……"
   },
   {
     id: "ai498",
-    text: "they kept on talking about how Antimatter Dimensions was going to be the next big thing but then they disappeared down a black hole\""
+    text: "他们一直说反物质维度将成为下一个大热门，但随后他们消失在一个黑洞里”"
   },
   {
     id: "ai499",
-    text: "The news ticker is the wrong place to put your suggestions!  Make sure to go to the \"suggestions\" tab instead, as this is where most of these will appear."
+    text: "新闻滚动条不是放建议的地方！请务必改去“建议”标签页，因为大多数建议都会出现在那里。"
   },
   {
     id: "ai500",
-    text: "To make Antimatter Dimensions, you first need to collect 7 8th dimensions. To do that, first you need to get the dimension rewards, then you need to get the dimensions, then you can finally start making antimatter."
+    text: "要制作反物质维度，你首先需要收集 7 个第 8 维度。要做到这一点，首先你需要获得维度奖励，然后你需要获得维度，然后你终于可以开始制造反物质了。"
   },
   {
     id: "ai501",
-    text: "\"How to get your first secret achievement\": \"Open the app, click get more antimatter, then click submit.\""
+    text: "“如何获得你的第一个隐藏成就”：“打开应用，点击获取更多反物质，然后点击提交。”"
   },
   {
     id: "ai502",
-    text: "Me and Larkam made a cabin on the edge of null matter, and lived there. Larkam died last week, and we are now living in 4K. I am still recovering from the EMP disaster, and am hoping to see my grandkids."
+    text: "我和 Larkam 在空物质的边缘建了一间小屋，住在那里。Larkam 上周去世了，我们现在生活在 4K 中。我还在从 EMP 灾难中恢复，希望见到我的孙子孙女们。"
   },
   {
     id: "ai503",
-    text: "Found on the heels of the new update, which brings us one step closer to having Hevi support both Android and iOS"
+    text: "发现于新更新的脚跟处，这让我们离 Hevi 同时支持 Android 和 iOS 更近了一步"
   },
   {
     id: "ai504",
-    text: "I give you the low-ground!"
+    text: "我把低地让给你！"
   },
   {
     id: "ai505",
-    text: "A long time ago, in an alternate universe, there was an antimatter war. All the antimatter sided with the Phaéton 6 empire. All the antimatter wanted was the low, earth-like ground of the 8th dimension. The anti-infinity won, and the anti-Eternity gained the upper hand. Unfortunately, the anti-Eternity started the war with a sneak attack, and the world exploded. The aftermath has left the landscape of the world in tatters. Far across the world, peasants grow weary as they wait for the harvest. Yet another apocalypse is brewing..."
+    text: "很久以前，在一个平行宇宙里，有一场反物质战争。所有反物质都站在 Phaéton 6 帝国一边。反物质们想要的只是第 8 维度那片低洼的、像地球一样的地面。反无限赢了，反永恒占了上风。不幸的是，反永恒以偷袭开始了战争，世界爆炸了。余波让世界的风景支离破碎。世界各处，农民们在等待收获中疲惫不堪。又一场天启正在酝酿……"
   },
   {
     id: "ai506",
-    text: "Antimatter units are the most productive unit in the game. This is why AD is the most fun game you'll ever play."
+    text: "反物质单位是游戏里最高产的单位。这就是为什么 AD 是你玩过的最有趣的游戏。"
   },
   {
     id: "ai507",
-    text: "\"We can't have nice things.\" - Anti-Bohemian Anti-Rhapsody"
+    text: "“我们不能拥有美好的东西。” -反波西米亚反狂想曲"
   },
   {
     id: "ai508",
-    text: "We can have anti-mean things and anti-love ones, anti-kids and anti-zombielandos."
+    text: "我们可以拥有反刻薄的东西和反爱的东西，反孩子和反僵尸之地。"
   },
   {
     id: "ai509",
-    text: "We have an anti-president and a anti-lawyer, anti-justice and anti-people."
+    text: "我们有反总统和反律师，反正义和反人民。"
   },
   {
     id: "ai510",
-    text: "Top 10 things that will blow your mind: 1) The number 9, 2) The 9th dimension, 3) The infinity chest, and 4) The war on drugs."
+    text: "10 件让你大开眼界的事：1）数字 9，2）第 9 维度，3）无限宝箱，4）毒品战争。"
   },
   {
     id: "ai511",
-    text: "RSS feeds should be working now"
+    text: "RSS 订阅现在应该能用了"
   },
   {
     id: "ai512",
-    text: "Frostfall is now supported on Android phones! Use your local developer to get free XP."
+    text: "Frostfall 现在支持安卓手机！使用你的本地开发者获取免费 XP。"
   },
   {
     id: "ai513",
-    text: "Your save file is corrupted or deleted. Antimatter Dimensions security software will disable automatic updates for you."
+    text: "你的存档文件已损坏或被删除。反物质维度安全软件将为你禁用自动更新。"
   },
   {
     id: "ai514",
-    text: "Frozen beyond hope? Just keep holding that max button."
+    text: "冻结得没有希望了？只管继续按住那个最大按钮。"
   },
   {
     id: "ai515",
-    text: "Error.java.replicated. Under the control of hevipelle."
+    text: "Error.java.replicated。受 hevipelle 控制。"
   },
   {
     id: "ai516",
-    text: "Unfortunately, entropy hevi has decided to shut down the game."
+    text: "不幸的是，熵 hevi 决定关闭游戏。"
   },
   {
     id: "ai517",
-    text: "The indie rock band is currently trying to get unreachable by time zones. This may cause inflation of spacetime."
+    text: "这支独立摇滚乐队目前正试图让自己无法被时区触及。这可能导致时空膨胀。"
   },
   {
     id: "ai518",
-    text: "The next news ticker is in 5 units of time."
+    text: "下一条新闻滚动条将在 5 个单位时间后出现。"
   },
   {
     id: "ai519",
-    text: "Oh... hooray! Did you find the last of the anti-boats?"
+    text: "哦……万岁！你找到最后一艘反船了吗？"
   },
   {
     id: "ai520",
-    text: "Don't anti-jokes. they make the game funnier"
+    text: "别反笑话。它们让游戏更有趣"
   },
   {
     id: "ai521",
-    text: "I'm gonna use my anti-science background to help me beat Unfair Game Awards."
+    text: "我要用我的反科学背景来帮我击败不公平游戏奖。"
   },
   {
     id: "ai522",
-    text: "This is an anti-world. There is no Ukraine, no Russia, no China. Ireland is nowhere. Iceland is nowhere. Scotland is nowhere. Finland is nowhere. Denmark is nowhere. Sweden is nowhere. Norway is nowhere. And then there's France, Germany, Italy, Spain, Portugal... Oh, what's this fuss? Why is there such a buzz in these parts? Why is the Capital Wasteland? Why is the Harry Potter and Steins;Gate? Why do people care? These are major stories. These are major characters. THESE ARE HUGE NEWS. THESE ARE REAL NEWS."
+    text: "这是一个反世界。没有乌克兰，没有俄罗斯，没有中国。爱尔兰无处可寻。冰岛无处可寻。苏格兰无处可寻。芬兰无处可寻。丹麦无处可寻。瑞典无处可寻。挪威无处可寻。然后有法国、德国、意大利、西班牙、葡萄牙……哦，这是在闹什么？为什么这些地方如此喧闹？为什么是首都废土？为什么是哈利·波特和命运石之门？为什么人们在意？这些是重大故事。这些是重要角色。这些是重磅新闻。这些是真正的新闻。"
   },
   {
     id: "ai523",
-    text: "The current cooldown on Research Dimensions is [current tick speed]. This may be extended to next update in [time]."
+    text: "研究维度的当前冷却时间是[当前刻速度]。这可能会延长到[时间]的下一次更新。"
   },
   {
     id: "ai524",
@@ -5414,368 +4772,368 @@ export const news = [
   },
   {
     id: "ai525",
-    text: "Where's the end? Not in the future, no. I'm gonna show you how to get to the end in less than 0.1 seconds."
+    text: "终点在哪里？不在未来，不。我要展示给你看如何在不到 0.1 秒内到达终点。"
   },
   {
     id: "ai526",
-    text: "I'm gonna prove to you that you can't see this news ticker."
+    text: "我要向你证明你看不到这条新闻滚动条。"
   },
   {
     id: "ai527",
-    text: "I wonder if anyone still plays this game anymore?"
+    text: "我想知道还有没有人玩这个游戏？"
   },
   {
     id: "ai528",
-    text: "Why would anyone play this? Just for the lols?"
+    text: "为什么会有人玩这个？只是为了好玩？"
   },
   {
     id: "ai529",
-    text: "Emoji is said to be America's new measuring system for everything. What does this mean for us? We don't know. But we will know in 5 hours."
+    text: "据说表情符号是美国新的万能度量系统。这对我们意味着什么？我们不知道。但 5 小时后我们就会知道。"
   },
   {
     id: "ai530",
-    text: "\"I'll have 2 antimatter pizzas, an antimatter pie, an antimatter cupcake and an antimatter cookie. What do you eat there?\" - Tony Stark"
+    text: "“我要 2 个反物质披萨、一个反物质派、一个反物质纸杯蛋糕和一块反物质饼干。你们那里吃什么？” -托尼·斯塔克"
   },
   {
     id: "ai531",
-    text: "i called the news ticker \"the freshman chapel\" because freshman don't get baptized"
+    text: "我把新闻滚动条叫做“新生礼拜堂”，因为新生不受洗礼"
   },
   {
     id: "ai532",
-    text: "One matter, two antimatter, fry 'em till they're golden and crisp and aromatic- then remove the golden axles and drain the golden syrup and add the golden syrup to the antimatter batter."
+    text: "一个物质，两个反物质，把它们煎到金黄酥脆香气扑鼻，然后取出金色的车轴，沥干金色的糖浆，把金色的糖浆加到反物质面糊里。"
   },
   {
     id: "ai533",
-    text: "Now you, the reader, have unknowingly stumbled onto the site of a deranged madman. Whether you survive the experience or not, you will be indebted to me for telling you how to survive, how to find the light within, what lies beyond, and what lies beyond is another story."
+    text: "现在，你，读者，已经在不知不觉中闯进了一个丧心病狂的人的网站。无论你能否在这次经历中幸存，你都欠我一份人情，因为我告诉你如何生存、如何找到内心的光明、超越的什么是什么，而超越的什么是什么又是另一个故事。"
   },
   {
     id: "ai534",
-    text: "Careful reader, this news ticker contains major spoilers for the last time, you have been"
+    text: "细心的读者，这条新闻滚动条包含最后一次的重大剧透，你已经被"
   },
   {
     id: "ai535",
-    text: "anti-anti-kajfik is happy his girlfriend is happy"
+    text: "反反 kajfik 很高兴他的女朋友很高兴"
   },
   {
     id: "ai536",
-    text: "i dont think he can add 1 more hour to the news ticker... unless?"
+    text: "我觉得他不能再给新闻滚动条加 1 小时了……除非？"
   },
   {
     id: "ai537",
-    text: "Imagine sitting on your toilet and suddenly you have to sit down."
+    text: "想象你坐在马桶上，突然你不得不坐下来。"
   },
   {
     id: "ai538",
-    text: "Once upon a time, there was a matter of a certain antimatter. Some say that it was a matter of honor, others say that it was a matter of usage. All we know is that it ended up in a war, and we the people that were there that fought it died. The war was won, and we the living died soon after. The matter was said to have won, though our leaders refused to talk about it. Instead, they kept everything locked away, the war never to be discussed again."
+    text: "从前，有一桩关于某种反物质的事务。有人说那是荣誉之事，有人说那是使用之事。我们所知道的是，它最终引发了一场战争，我们这些在场参战的人都死了。战争赢了，而我们这些活着的人也很快就死了。据说物质赢了，尽管我们的领导人拒绝谈论它。相反，他们把一切都锁了起来，这场战争再也不会被讨论。"
   },
   {
     id: "ai539",
-    text: "This is not a game about getting numbers bigger. This is a game about getting fewer paperclips. The number of paperclips you have is only a number, and the game doesn't want you to discover that. Game over, game over."
+    text: "这不是一个让数字变大的游戏。这是一个让回形针变少的游戏。你拥有的回形针数量只是一个数字，而游戏不希望你发现这一点。游戏结束，游戏结束。"
   },
   {
     id: "ai540",
-    text: "Lore? Oh, it's just text."
+    text: "剧情？哦，只是文字而已。"
   },
   {
     id: "ai541",
-    text: "This is a friendly suggestion to unplug the game and go play some safe, saner, games."
+    text: "这是一个友好的建议：拔掉游戏电源，去玩一些安全、理智的游戏吧。"
   },
   {
     id: "ai542",
-    text: "gamma ray is getting more and more dangerous"
+    text: "伽马射线越来越危险了"
   },
   {
     id: "ai543",
-    text: "According to all known laws of physics, there is no way that you can manipulate the game more than 10 times in a row. Stop. Just stop. Your mad."
+    text: "根据所有已知的物理定律，你不可能连续操纵游戏超过 10 次。停下。快停下。你疯了。"
   },
   {
     id: "ai544",
-    text: "There is no more news."
+    text: "没有更多新闻了。"
   },
   {
     id: "ai545",
-    text: "\"So this is what science is like\"- someone who has never heard of Kurt Somebody"
+    text: "“原来科学就是这样” -一个从未听说过 Kurt 某某的人"
   },
   {
     id: "ai546",
-    text: "\"If you want to understand these shitty jokes, you really need to study theology. Math is a sin.\" -A panicky person"
+    text: "“如果你想理解这些烂笑话，你真的需要研究神学。数学是一种罪。” -一个惊慌失措的人"
   },
   {
     id: "ai547",
-    text: "You know, I was praying for a miracle and got a boost from the 9th dimension."
+    text: "你知道吗，我一直在祈祷奇迹，结果从第 9 维度得到了一个增益。"
   },
   {
     id: "ai548",
-    text: "Here is a list of the top meme's of all time: https://www.youtube.com/watch?v=uCP44Q37YHAQ"
+    text: "这是史上最棒梗的列表：https://www.youtube.com/watch?v=uCP44Q37YHAQ"
   },
   {
     id: "ai549",
-    text: "All meta-memes are bad memes."
+    text: "所有元梗都是烂梗。"
   },
   {
     id: "ai550",
-    text: "On the left, you'll see our new \"Anti-coins\". These are capable of nullifying all boosts, including giant boosts. On the right side, you'll also see our brand new \"Anti-gifts\". These are some of the most overpowered boosts you'll find anywhere."
+    text: "在左边，你会看到我们新的“反硬币”。它们能够抵消所有增益，包括巨大增益。在右边，你还会看到我们全新的“反礼物”。它们是你能在任何地方找到的最超模的增益。"
   },
   {
     id: "ai551",
-    text: "You will always be noticed, and never in the same place."
+    text: "你总会被注意到，而且永远不会在同一个地方。"
   },
   {
     id: "ai552",
-    text: "If you stare long enough at the ticker, the pixels will start moving backwards. THIS DOESN'T MEAN IT ACTUALLY STUCK"
+    text: "如果你盯着滚动条看够久，像素会开始倒着移动。这并不意味着它真的卡住了"
   },
   {
     id: "ai553",
-    text: "The time has come for the rebirth of the 9th dimension. All who participate will receive a piece of paper saying \"Reality is an illusion, Infinity is a hologram, Infinity is an illusion, eternity is a hologram, is to short for everlasting, negative dimensions are not allowed."
+    text: "第 9 维度重生的时刻到了。所有参与者将获得一张纸条，上面写着“现实是幻象，无限是全息图，无限是幻象，永恒是全息图，太短不足以永恒，不允许负维度。”"
   },
   {
     id: "ai554",
-    text: "Look at this, my 9th dimension has just been reworked and now it even produces 8th dimensions! Who knew just a touch of math could make such a thing as this?"
+    text: "看这个，我的第 9 维度刚刚重做，现在它甚至能生产第 8 维度！谁知道一点点数学就能造出这种东西？"
   },
   {
     id: "ai555",
-    text: "I saw this news in the news ticker and I had this image in my head ever since"
+    text: "我在新闻滚动条里看到了这条新闻，从那时起这个画面就一直在我脑海里"
   },
   {
     id: "ai556",
-    text: "\"I always wanted to play the anti-meta-game. But, alas, you can't\" - many a time"
+    text: "“我一直想玩反元游戏。但唉，你不能” -很多次"
   },
   {
     id: "ai557",
-    text: "crap, I just posted two news ticker suggestions on the ticker, one of which got in the news!"
+    text: "糟了，我刚在滚动条上发了两条新闻滚动条建议，其中一条进了新闻！"
   },
   {
     id: "ai558",
-    text: "What do you call antimatter inanimate objects? Air, earth, water, fire. Air objects are the objects that are created when the anti-atmosphere meets the anti-earth. Water, earth, and fire are the four cardinal virtues. Air objects are the objects that are created when the anti-atmosphere and the anti-earth collide."
+    text: "你叫反物质无生命物体什么？气、土、水、火。气物体是反大气层与反地球相遇时产生的物体。水、土、火是四大基本美德。气物体是反大气层和反地球碰撞时产生的物体。"
   },
   {
     id: "ai559",
-    text: "If you are reading this, that means that nine lives. One makes you free, the other keeps you from getting free."
+    text: "如果你正在读这条消息，那意味着九条命。一个让你自由，另一个阻止你获得自由。"
   },
   {
     id: "ai560",
-    text: "The ninth dimension makes the sixth family happy. The fifth lives in shame."
+    text: "第九维度让第六家族开心。第五家族活在耻辱中。"
   },
   {
     id: "ai561",
-    text: "me: making news about beer pong, hevi: balancing two icebergs, *barkeeper: oh god, is he dead yet?*"
+    text: "我：发布关于啤酒乒乓的新闻，hevi：平衡两座冰山，*酒保：哦天哪，他死了吗？*"
   },
   {
     id: "ai562",
-    text: "please don't look at this. Thank you."
+    text: "请不要看这个。谢谢。"
   },
   {
     id: "ai563",
-    text: "Are you sure it's not the next update? That it's not some weird virus that just wants to explode? That it's not some wild idea that you guys are crazy? Haha I love you."
+    text: "你确定这不是下一个更新？确定它不是什么只想爆炸的奇怪病毒？确定这不是你们这些疯狂想法的产物？哈哈我爱你。"
   },
   {
     id: "ai564",
-    text: "Wait, there is a mobile version?!"
+    text: "等等，还有移动版？！"
   },
   {
     id: "ai565",
-    text: "Oh? You wonder what I look like? I'm pretty sure that this is the news ticker, right? Well, listen, we have reports coming in that say that the next update is coming in five hours. Also, there seems to be some sort of transporter thing going on, so if you happen to be on the same side as those"
+    text: "哦？你想知道我长什么样？我很确定这就是新闻滚动条，对吧？好吧，听着，我们有报告说下一个更新将在五小时后到来。另外，似乎有某种传送装置在运作，所以如果你碰巧和那些"
   },
   {
     id: "ai566",
-    text: "Okay, I get it. You're tired of all these anti-matters around you, building and building to unimaginable scales, antimatter piles so high that not even God knows what has been created. So what's the solution to this anti-cleanliness? Planes of existence. 1st Planes that produce matter, and 2nd planes that produce 1st planes, and 3rd planes that produce 2nd planes. Each with anti-limitations, so that whenever a plane of existence is created, it produces a quantity of anti-matter that is at once small and large. This creates a large island of anti-infinity, off to the east, and a large island of anti-reality, to the west."
+    text: "好吧，我懂了。你厌倦了周围所有这些反物质，不断建造到难以想象的规模，反物质堆得高到连上帝都不知道创造了什么。那么，解决这种反清洁问题的方案是什么？存在位面。第一层位面产生物质，第二层位面产生第一层位面，第三层位面产生第二层位面。每一层都有反限制，所以每当一个存在位面被创造时，它产生的反物质数量既小又大。这创造了一个巨大的反无限岛，在东边，还有一个巨大的反现实岛，在西边。"
   },
   {
     id: "ai567",
-    text: "That's not what this is about. You're misunderstanding. The game is about how to accelerate the development of prestige layers. Acceleration is a factor of production, not quality."
+    text: "那不是重点。你误解了。这个游戏是关于如何加速飞升层的发展。加速是生产的因素，不是质量的。"
   },
   {
     id: "ai568",
-    text: "Click here to advance 5 prestige layers"
+    text: "点击这里前进 5 个飞升层"
   },
   {
     id: "ai569",
-    text: "I am actually good at making jokes. Fail safe antimatter."
+    text: "我其实很擅长讲笑话。故障保险反物质。"
   },
   {
     id: "ai570",
-    text: "I'm not being paid enough to finish writing this."
+    text: "我拿到的钱不够我写完这个。"
   },
   {
     id: "ai571",
-    text: "Eternals have to take a risk by being passive in limited time. After they successfully took a risk, they are not feeling well."
+    text: "永恒者们不得不在有限时间内被动地冒险。成功冒险后，他们感觉不舒服。"
   },
   {
     id: "ai572",
-    text: "Eternity is the last state. You never move from here.",
+    text: "永恒是最后的状态。你永远不会从这里离开。",
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "ai573",
-    text: "Welcome to Bitcoin the game."
+    text: "欢迎来到比特币游戏。"
   },
   {
     id: "ai574",
-    text: "A new conspiracy theory website has just published a video recording of them discussing the 9th dimension. They then joke about selling their soul to the 9th dimension and being happy about it."
+    text: "一个新的阴谋论网站刚刚发布了一段他们讨论第 9 维度的视频录音。然后他们开玩笑说要把灵魂卖给第 9 维度，而且对此感到高兴。"
   },
   {
     id: "ai575",
-    text: "With the release of the 9th dimension, all the jobs that were previously automated will be automated and everyone will be paid with trade, production, and income growth. Also, you will be able to automate a lot of the tasks currently performed by people, such as mining, building, and killing antimatter. This is a huge stride for automation, as you can now automate virtually every aspect of life."
+    text: "随着第 9 维度的发布，以前自动化的所有工作都将被自动化，每个人都将通过贸易、生产和收入增长获得报酬。此外，你将能够自动化目前由人类执行的许多任务，比如采矿、建筑和击杀反物质。这是自动化的巨大进步，因为你现在几乎可以自动化生活的方方面面。"
   },
   {
     id: "ai576",
-    text: "The happiness level of the news ticker has increased to 6.66e69"
+    text: "新闻滚动条的幸福度已提升至 6.66e69"
   },
   {
     id: "ai577",
-    text: "The haters will be pissed when they see this"
+    text: "黑子们看到这个会气疯的"
   },
   {
     id: "ai578",
-    text: "Nurse, I'm comatose because of antimatter and matter from last night.\" Why are you comatose? \"Because of all the antimatter."
+    text: "护士，我因为昨晚的反物质和物质昏迷了。“你为什么昏迷？”“因为所有的反物质。”"
   },
   {
     id: "ai579",
-    text: "Stand by and do what you're told. The antimatter will come for you when you're least expecting it."
+    text: "待命并听从指挥。反物质会在你最意想不到的时候来找你。"
   },
   {
     id: "ai580",
-    text: "\"It is widely acknowledged that not enough antimatter is in primordial soup, hence the name 'antimatter soup'\" - old fisherman"
+    text: "“众所周知，原始汤里的反物质不够多，所以才叫‘反物质汤’” -老渔夫"
   },
   {
     id: "ai581",
-    text: "The news ticker... it never moves. How do i move the arrow? Pretty simple, use your left thumb to rotate the dial, and point the arrow up. Now, point the dial clockwise to reach infinity, and point the dial counterclockwise to reach eternally eternities."
+    text: "新闻滚动条……它从不移动。我怎么移动箭头？很简单，用你的左手拇指旋转表盘，把箭头指向上方。现在，顺时针转动表盘到达无限，逆时针转动表盘到达永恒的永恒。"
   },
   {
     id: "ai582",
-    text: "If the universe is expanding, then the entire universe must be expanding, which means that body cannot sit."
+    text: "如果宇宙在膨胀，那么整个宇宙一定都在膨胀，这意味着身体不能坐着。"
   },
   {
     id: "ai583",
-    text: "Feminism is not a philosophy, but a whole hell of a lot of men"
+    text: "女权主义不是一种哲学，而是一大堆男人"
   },
   {
     id: "ai584",
-    text: "With all this talk about anti-weights and anti-matter, why on earth do we still use them for anything?"
+    text: "既然有这么多关于反重量和反物质的讨论，为什么我们还要用它们做任何事？"
   },
   {
     id: "ai585",
-    text: "Weight loss causes hevi to say \"uh oh, something is wrong\""
+    text: "减肥让 hevi 说“呃哦，出问题了”"
   },
   {
     id: "ai586",
-    text: "\"You guys ever had antimatter muffins? I bet they tasted like antimatter.\" - Hevipelle"
+    text: "“你们吃过反物质松饼吗？我打赌它们尝起来像反物质。” - Hevipelle"
   },
   {
     id: "ai587",
-    text: "I thought the news ticker was supposed to be a guide for how to get the most out of Antimatter Dimensions, but it's been warped beyond recognition..."
+    text: "我以为新闻滚动条应该是如何最大化利用反物质维度的指南，但它已经被扭曲得面目全非……"
   },
   {
     id: "ai588",
-    text: "We can actually get a sense of pride from looking at replicanti at night. Ridley Scott's underrated masterpiece, Alien, is one example. Another is the life of Antimatter Steven Spielberg, who put almost 30 years into making. The last director to tackle the subject is Roman Polanski. The man ruined not only Roman's reputation, but also ours, thanks to the Polanski film he directed, Pius. Thousands of copies of his unfinished film, Eternal Sunshine of the Antimatter Planet, were burned in the eyes of those who would try to make the sequel, with tragic results. Thousands of copies of that unfinished film, too, were destroyed. The cost to make that sequel, if it even exists, is extremely high. Even now, more than 50 years later, we don't know exactly how well it will do. But it sure as heck won't hurt."
+    text: "我们其实可以从晚上看 replicanti 中获得自豪感。Ridley Scott 被低估的杰作《异形》就是一个例子。另一个是反物质斯皮尔伯格的一生，他花了将近 30 年制作。最后一个处理这个题材的导演是 Roman Polanski。这个人不仅毁了 Roman 的名声，还毁了我们的名声，多亏了他执导的 Polanski 电影《Pius》。他的未完成电影《反物质星球的无尽阳光》的数千份拷贝，在那些试图制作续集的人眼前被烧毁，后果惨痛。那部未完成电影的数千份拷贝也被销毁了。制作那部续集的成本，如果它真的存在的话，极其高昂。即使现在，50 多年后，我们也不知道它表现会如何。但它肯定不会有坏处。"
   },
   {
     id: "ai589",
-    text: "We have updated our Antimatter Dimensions client to address the concerns you may have had. Toggling issues are resolved."
+    text: "我们已更新反物质维度客户端，以解决你可能遇到的问题。切换问题已解决。"
   },
   {
     id: "ai590",
-    text: "Build a replicanti factory, to produce replicanti. It'll create Omega Hevipelle, the happiest Hevipelle you can find."
+    text: "建造一个 replicanti 工厂来生产 replicanti。它会创造出 Omega Hevipelle，你能找到的最快乐的 Hevipelle。"
   },
   {
     id: "ai591",
-    text: "Hey Max, wanna come watch the sun go down?"
+    text: "嘿 Max，想来看日落吗？"
   },
   {
     id: "ai592",
-    text: "If you are not moving your finger, then you are frozen."
+    text: "如果你的手指没有在动，那你就被冻住了。"
   },
   {
     id: "ai593",
-    text: "Max, I really do love you."
+    text: "Max，我真的爱你。"
   },
   {
     id: "ai594",
-    text: "Does Hevipelle sleep?"
+    text: "Hevipelle 睡觉吗？"
   },
   {
     id: "ai595",
-    text: "\"Its' not my turn on the XM80,\" says Mike from the 9th dimension as he runs across the 8th dimension to get a piece of the action for himself."
+    text: "“还没轮到我用 XM80，”来自第 9 维度的 Mike 说着，跑过第 8 维度去抢一份属于他的好处。"
   },
   {
     id: "ai596",
-    text: "If you are reading this, that means you can read my dreams"
+    text: "如果你正在读这条消息，说明你能读懂我的梦"
   },
   {
     id: "ai597",
-    text: "With the advent of time, everything that was once great has fallen into our lap. And with its hevi-rigged clock, it's our turn to up the trash."
+    text: "随着时代的到来，曾经伟大的一切都落入了我们手中。凭借他那个 Hevi 操纵的时钟，轮到我们把垃圾升上去了。"
   },
   {
     id: "ai598",
-    text: "9th dimension doesn't exist because it was stolen from us by a skateboarder"
+    text: "第 9 维度不存在，因为它被一个滑板手从我们这里偷走了"
   },
   {
     id: "ai599",
-    text: "You have ... 8.9 antimatter. That's not a typo."
+    text: "你有……8.9 反物质。这不是笔误。"
   },
   {
     id: "ai600",
-    text: "Wow, this game is finally balanced! Gotta go check the replicanti sometimes."
+    text: "哇，这个游戏终于平衡了！有时候得去检查一下 replicanti。"
   },
   {
     id: "ai601",
-    text: "Haha! You think that I put too many words in your news ticker, but reality is still coming."
+    text: "哈哈！你以为我在你的新闻滚动条里放了太多字，但现实还是来了。"
   },
   {
     id: "ai602",
-    text: "Help is coming! Everybody help, it's gonna be late, hevi is hiding the tachyon particles!"
+    text: "援助来了！大家来帮忙，要迟到了，hevi 在藏速子粒子！"
   },
   {
     id: "ai603",
-    text: "\"I don't know about you but my favorite number is 22, it's just so great! It's the number of hours since I met your M heretics."
+    text: "“不知道你怎么想，但我最喜欢的数字是 22，它太棒了！它是我遇到你们 M 异端以来的小时数。”"
   },
   {
     id: "ai604",
-    text: "A new type of antimatter has been discovered: \"antimatter-antimatter.\" According to the developers, it's 99.999% pure antimatter."
+    text: "发现了一种新型反物质：“反物质-反物质。”据开发者称，它是 99.999% 的纯反物质。"
   },
   {
     id: "ai605",
-    text: "I just found the secret to getting the 9th dimension..."
+    text: "我刚找到了获得第 9 维度的秘诀……"
   },
   {
     id: "ai606",
-    text: "I noticed that my current form of transportation is getting a little... unreliable. I don't know if I can fix it, or if anyone can. I'm stuck in the car, and no one seems to be able to fix it. I've called the police, and they said I could stay in the car for up to an hour, but then I'd be stuck in there for the next 24 hours. Is there any way out? I don't know, I'm stuck in this"
+    text: "我注意到我当前的交通工具变得有点……不可靠。我不知道我能不能修好它，或者有没有人能修好。我被困在车里，似乎没人能修好它。我报了警，他们说我可以最多在车里待一个小时，但之后我就要被困在里面 24 小时。有什么办法出去吗？我不知道，我被困在这"
   },
   {
     id: "ai607",
-    text: "In this episode of Antimatter Dimensions, we have a brand new game that will be released in -5 hours! It is an RPG that will be completely free! It has over 3,000 commands, and it is being made by a group of highly qualified people. It has an amazing story to tell, and it was made by a bunch of people who had to make do with what they had. It has a lore to live up to, and it has a lot of potential!"
+    text: "在本集反物质维度中，我们有一款全新游戏，将在 -5 小时后发布！它是一款完全免费的 RPG！它有超过 3000 条指令，由一个高素质团队制作。它有惊人的故事要讲，而且是由一群不得不用现有条件凑合的人制作的。它有值得期待的剧情，潜力巨大！"
   },
   {
     id: "ai608",
-    text: "Javascript is the new HTML, and HTML is the new JavaScript."
+    text: "Javascript 是新的 HTML，HTML 是新的 JavaScript。"
   },
   {
     id: "ai609",
-    text: "\"The next twist in the Antimatter Universe is in the air! Get ready for some big Crunch! (When clicked the game disconnects for 5 seconds)"
+    text: "“反物质宇宙的下一个转折即将来临！准备好迎接大挤压吧！（点击后游戏断开连接 5 秒）"
   },
   {
     id: "ai610",
-    text: "A group of people who believe in antimatter have hijacked the media and are pushing for a revolution. They are calling themselves the Ant-Men and they're made up of teenage boys. They believe that they are the protectors of the people and that they are the chosen of Hevi. They claim to be the chosen of Hevi and that they will one day restore balance to the universe. Their leader is a boy named Logan Fisk. He is the son of a successful lawyer and the founder."
+    text: "一群信仰反物质的人劫持了媒体，正在推动革命。他们自称蚂蚁人（Ant-Men），由十几岁的男孩组成。他们相信自己是人民的保护者，是 Hevi 的选民。他们声称自己是 Hevi 的选民，总有一天会恢复宇宙的平衡。他们的领袖是一个叫 Logan Fisk 的男孩。他是一位成功律师的儿子，也是创始人。"
   },
   {
     id: "ai611",
-    text: "He said he could not afford a new ship, so he built a new one instead."
+    text: "他说他买不起新船，所以他造了一艘新的。"
   },
   {
     id: "ai612",
-    text: "Hevipelle's first order of business is to ensure that the game is as balanced as possible. This includes ensuring that no matter what, no matter how big of a number, no matter how insignificant of a thing, no matter how perfect of a result, no matter how perfect of an idea, no matter how perfect of an"
+    text: "Hevipelle 的第一要务是确保游戏尽可能平衡。这包括确保无论如何，无论数字多大，无论事情多微不足道，无论结果多完美，无论想法多完美，无论多完美的一个"
   },
   {
     id: "ai613",
-    text: "I wonder if the stretch goal of $4.5 billion will be reached?"
+    text: "我想知道 45 亿美元的延伸目标能否达成？"
   },
   {
     id: "ai614",
-    text: "I like to think of my projects as trade secrets. That way if someone wants to understand them I'm not the first person to notice they might be of use to someone else."
+    text: "我喜欢把我的项目当作商业机密。这样一来，如果有人想理解它们，我就不是第一个注意到它们可能对别人有用的人。"
   },
   {
     id: "ai615",
-    text: "I don't know about you but my favourite type of news is the infographics. These are beautiful and informative and the only type of news I find really interesting."
+    text: "不知道你怎么想，但我最喜欢的新闻类型是信息图。它们美丽且信息丰富，是我唯一真正感兴趣的新闻类型。"
   },
   {
     id: "ai616",
@@ -5783,44 +5141,44 @@ export const news = [
   },
   {
     id: "ai617",
-    text: "I'm soo broke, I can't even afford a tenth of what he owes me."
+    text: "我太穷了，连他欠我的十分之一都付不起。"
   },
   {
     id: "ai618",
-    text: "What if — instead of making news tickers, we could make news tickers that make news tickers?"
+    text: "如果……我们不做新闻滚动条，而是做能制造新闻滚动条的新闻滚动条呢？"
   },
   {
     id: "ai619",
-    text: "What if I told you that the first dimension was actually a scam and you spent all your EP to open a Dimension Boost?",
+    text: "如果我告诉你第一维度其实是个骗局，而你花光了所有 EP 去开启维度提升呢？",
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "ai620",
-    text: "The biggest difference between this and the previous update is the amount of sprites."
+    text: "这个和上一个更新最大的区别是精灵图的数量。"
   },
   {
     id: "ai621",
-    text: "Bamboo shoots grow on bamboos. Aloha."
+    text: "竹笋长在竹子上。阿罗哈。"
   },
   {
     id: "ai622",
-    text: "I am the king of kings, I can break all the records, and I can shatter all the myths. But I can't break them all, because there are so many of them, and they all have a price. 5e12 are the most wanted, because they broke the global record for most person-hours sold, and they are wanted by the law. They are being paid 5e10 by the player for every person-hour they've wasted."
+    text: "我是王中之王，我能打破所有纪录，粉碎所有神话。但我不能全部打破，因为它们太多了，而且它们都有代价。5e12 是最被通缉的，因为它们打破了全球单人工时销售纪录，被法律通缉。玩家为它们浪费的每一人时向它们支付 5e10。"
   },
   {
     id: "ai623",
-    text: "A group of researchers have created a device that converts ordinary matter into antimatter, which they then use to create more antimatter. The device has a power output of 200 mA and a half a gram of antimatter per second."
+    text: "一组研究人员制造了一种把普通物质转化为反物质的装置，然后他们用反物质制造更多反物质。该装置的功率输出为 200 毫安，每秒产生半克反物质。"
   },
   {
     id: "ai624",
-    text: "To the person who doesn't want to hear about the 9th dimension: It's not your problem. The 9th dimension doesn't exist."
+    text: "致那个不想听到第 9 维度的人：那不是你的问题。第 9 维度不存在。"
   },
   {
     id: "ai625",
-    text: "For the first time in AD, the week begins on a Sunday!"
+    text: "在 AD 历史上第一次，一周从星期天开始！"
   },
   {
     id: "ai626",
-    text: "This is a story about two people named \"My name is Hevipelle\" and \"I am the creator of Minecraft\" and they live in the same world as you. They have the same freedom as you do. They can go to any dimension and change their world to any dimension and everything in it. You can buy a galaxy and take it from there, but it won't help you much since you can't send a galaxy with a message."
+    text: "这是一个关于两个名叫“我的名字是 Hevipelle”和“我是 Minecraft 的创造者”的人的故事，他们和你生活在同一个世界。他们拥有和你一样的自由。他们可以去任何维度，把他们的世界改成任何维度以及里面的一切。你可以买一个星系然后从那里开始，但这帮不了你多少，因为你不能把星系随消息发送。"
   },
   {
     id: "ai627",
@@ -5828,41 +5186,41 @@ export const news = [
   },
   {
     id: "ai628",
-    text: "Somewhere in the Anti-Pacific Ocean, a giant arm is rotating"
+    text: "在反太平洋的某个地方，一只巨大的手臂正在旋转"
   },
   {
     id: "ai629",
-    text: "With the release of Cosmic Cutlass, we're pleased to announce the impending release of the Antimatter Dimensions Roleplaying Game!"
+    text: "随着宇宙弯刀的发布，我们很高兴地宣布反物质维度角色扮演游戏即将发布！"
   },
   {
     id: "ai630",
-    text: "The only thing more useless than actually having Infinity Dimensions is having Infinity Dimensions in your pocket.",
+    text: "唯一比真正拥有无限维度更没用的是口袋里装着无限维度。",
     get unlocked() { return PlayerProgress.eternityUnlocked() || InfinityDimension(1).isUnlocked; }
   },
   {
     id: "ai631",
-    text: "A man has fallen into the moat of a great city. Civilians report that the moat is filled with acid-resistant matter and that the people in charge are mostly made of acid so they are quite resilient to the effects of acid."
+    text: "一个人掉进了一座大城市的护城河。市民报告说，护城河里充满了耐酸物质，而负责人大多是酸做的，所以他们相当耐酸。"
   },
   {
     id: "ai632",
-    text: "This is the place to buy and sell antimatter. (You can buy and sell antimatter here, but it will take time to sell it and you will have to pay a small toll)"
+    text: "这里是买卖反物质的地方。（你可以在这里买卖反物质，但卖出需要时间，而且你必须付一点过路费）"
   },
   {
     id: "ai633",
-    text: "I'm not sure if it's due to the 4th wall being in the 5th dimension or the 9th dimension not existing, but in either case, anti-screw it, we're broke, and you can take it."
+    text: "我不确定是因为第四面墙在第五维度，还是因为第 9 维度不存在，但无论哪种情况，反他妈的，我们破产了，你可以拿走它。"
   },
   {
     id: "ai634",
-    text: "It's your chance to make history. Win the game. Lose the game. It's super simple. You open the app, and there's a countdown, and the more you play, the faster the timer speeds up. But when the timer is over, you win. You were a part of history. You are one step from being the first person to reach 1 Billion EP. You can win one of three ways: 1. You must give up your first dimension in a row. 2",
+    text: "这是你创造历史的机会。赢得游戏。输掉游戏。非常简单。你打开应用，有一个倒计时，你玩得越多，计时器跑得越快。但当计时器结束，你就赢了。你是历史的一部分。你离成为第一个达到 10 亿 EP 的人只差一步。你可以通过三种方式之一获胜：1. 你必须连续放弃你的第一维度。2",
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "ai635",
-    text: "A new class of humanoid beings has been discovered: the \"Artificial Humans\". They have the capacity to create antimatter, and are therefore very dangerous. They are made entirely of antimatter, and have the power to generate enormous amounts of antimatter, but they can only do this for a limited amount of time."
+    text: "发现了一类新的人形生物：“人造人”。它们有能力制造反物质，因此非常危险。它们完全由反物质构成，有能力产生巨量反物质，但只能在有限的时间内这样做。"
   },
   {
     id: "ai636",
-    text: "The most powerful thing in the universe, the most beautiful thing on earth, is your brain. Your brain is like a diamond and there is no more need for it than there is for a diamond."
+    text: "宇宙中最强大的东西，地球上最美丽的东西，是你的大脑。你的大脑就像钻石，对它来说没有比钻石更需要的了。"
   },
   {
     id: "ai637",
@@ -5870,19 +5228,19 @@ export const news = [
   },
   {
     id: "ai638",
-    text: "We've all heard of 9 dimensions, but what about the multi-dimensional Dimensions of the multiverse?"
+    text: "我们都听说过 9 个维度，但多元宇宙的多维维度呢？"
   },
   {
     id: "ai639",
-    text: "The goal of this game is to get as much antimatter as possible."
+    text: "这款游戏的目标是获得尽可能多的反物质。"
   },
   {
     id: "ai640",
-    text: "The best thing about being a news ticker is waiting for the right news to happen, whether it's a meteorite that just missed the Earth, a news ticker just found its way onto a timeline oblivion, or a news ticker just ripped off a terminal velocity that's been on an anti-vac for years."
+    text: "作为新闻滚动条最好的事情是等待正确的新闻发生，无论是一颗刚好错过地球的陨石，一条刚找到通往时间线湮没之路的新闻滚动条，还是一条刚撕掉在反真空中待了多年的极限速度的新闻滚动条。"
   },
   {
     id: "ai641",
-    text: "A man has been arrested for allegedly planting a \"tree\" with \"fake\" messages on it, police said."
+    text: "警方称，一名男子因涉嫌种植一棵挂着“假”消息的“树”而被捕。"
   },
   {
     id: "ai642",
@@ -5890,128 +5248,128 @@ export const news = [
   },
   {
     id: "ai643",
-    text: "Some people have a hard time keeping track of the cosine of a camera's infinity-meters. I'm one of them."
+    text: "有些人很难追踪相机无限米的余弦。我就是其中之一。"
   },
   {
     id: "ai644",
-    text: "I was going to make a news ticker that tells you how bad the news is, but then I realized that making a news ticker would be way too much effort and it would just be a bunch of people making news tickers constantly. So instead, I'm just going to make a news ticker that tells you how good the news is, but it would be in the news so that you have to click on it to get to the good news."
+    text: "我本来要做一条告诉你新闻有多糟糕的新闻滚动条，但后来我意识到做新闻滚动条太费劲了，而且会是一群人不停地做新闻滚动条。所以相反，我打算做一条告诉你新闻有多好的新闻滚动条，但它会放在新闻里，这样你必须点击它才能看到好消息。"
   },
   {
     id: "ai645",
-    text: "The next update will be in 2 hours."
+    text: "下一个更新将在 2 小时后。"
   },
   {
     id: "ai646",
-    text: "I was gonna say something about how the 9th dimension is just a scam and that we should all just get our news from the 8th dimension"
+    text: "我本来想说第 9 维度只是个骗局，我们都应该从第 8 维度获取新闻"
   },
   {
     id: "ai647",
-    text: "Our hero, Antimatter Dimensions, is in serious financial trouble, and he needs your help to pay the bills. To help him, all he needs is your help to donate some cash to Hevipelle's Positron Fund. All he needs is 5% of your antimatter, and you have to donate 5% of your antimatter to the fund. After you do that, he can keep all the cash he made and go on a spending spree."
+    text: "我们的英雄反物质维度陷入严重的财务困境，他需要你的帮助来付账单。为了帮他，他只需要你捐点现金给 Hevipelle 的正电子基金。他只需要你反物质的 5%，你必须把 5% 的反物质捐给基金。之后，他就能保住赚到的所有现金，去大肆挥霍。"
   },
   {
     id: "ai648",
-    text: "The Landfall of Slabdrill"
+    text: "Slabdrill 的降临"
   },
   {
     id: "ai649",
-    text: "It's just not possible, even if you had infinite matter, you wouldn't have enough energy to create the antimatter. That's why we only have 1.7x the matter to begin with."
+    text: "那根本不可能，即使你有无限的物质，也不会有足够的能量来创造反物质。这就是为什么我们一开始只有 1.7 倍的物质。"
   },
   {
     id: "ai650",
-    text: "With this release we are happy to bring you the last update of 2017."
+    text: "借着这次发布，我们很高兴为你带来 2017 年的最后一次更新。"
   },
   {
     id: "ai651",
-    text: "You have an infinity of antimatter. But what if you could rotate it 1/8th of a revolution?"
+    text: "你拥有无限的反物质。但如果你能把它旋转八分之一圈呢？"
   },
   {
     id: "ai652",
-    text: "A new update is now available to address some of the recent reports:"
+    text: "现在有一个新更新可以解决最近的一些报告："
   },
   {
     id: "ai653",
-    text: "The name \"antimatter dimensions\" is a play on words with dimensions, two opposite things, like matter and antimatter. \"Dimension\" is another word, with the same meaning."
+    text: "“反物质维度”这个名字是维度相关的双关语，是两个对立的东西，比如物质和反物质。“维度”是另一个词，含义相同。"
   },
   {
     id: "ai654",
-    text: "The price of tethering an avatar in the game goes up when you get Infinity dimensions.",
+    text: "当你获得无限维度时，游戏中绑定化身的费用会上涨。",
     get unlocked() { return PlayerProgress.eternityUnlocked() || InfinityDimension(1).isUnlocked; }
   },
   {
     id: "ai655",
-    text: "Suffice to say, hevi does not care about the people that he once enslaved.  He is a master manipulator, a master of disguise and a master manipulator of words.  He is an expert at extortion, mind games, disguises, blackmail and he is a master of web.  He is a skilled strategist and organizer, a master of publicity and an expert at sound bites.  He is a master of organization and a master manipulator of people.  He is."
+    text: "不用说，hevi 不在乎他曾经奴役过的人。他是操纵大师、伪装大师、言辞操纵大师。他精通敲诈、心理游戏、伪装、勒索，他还是网络大师。他是熟练的战略家和组织者，宣传大师和精彩语录专家。他是组织大师，也是操纵人心的大师。他是。"
   },
   {
     id: "ai656",
-    text: "Just like in the olden days, you could earn an incremental run of progress towards becoming a god amongst the players."
+    text: "就像过去一样，你可以积累一段渐进的进程，成为玩家中的神。"
   },
   {
     id: "ai657",
-    text: "In the beginning, Hevi was alone. Hevi thought about the many things he wished to add to the game."
+    text: "起初，Hevi 独自一人。Hevi 想着他想加入游戏的许多东西。"
   },
   {
     id: "ai658",
-    text: "Think about your breathing. Do you feel like you're breathing in or out?"
+    text: "想想你的呼吸。你觉得你在吸气还是呼气？"
   },
   {
     id: "ai659",
-    text: "I just want to say that you should stop with those \"you can reach infinity in e300ms, but it costs e300$  what is e300$ ?\" jokes. Those are pathetic. You should give up and learn the hard way that it's much more efficient to just not play in such a pathetic state. Then you can go back to being a humble programmer and dedicate yourself to being a good person."
+    text: "我只想说，你应该停止那些“你可以在 e300 毫秒内到达无限，但要花 e300 美元，e300 美元是什么？”的笑话。那些很可悲。你应该放弃，用痛苦的方式学会，以如此可悲的状态不玩效率更高。然后你可以回去做一个谦逊的程序员，致力于做个好人。"
   },
   {
     id: "ai660",
-    text: "As a developer, you'll get regular updates on the progress of Antimatter Dimensions."
+    text: "作为开发者，你会定期收到反物质维度进展的更新。"
   },
   {
     id: "ai661",
-    text: "Take a moment to thank the gods of reddit for having saved your bacon."
+    text: "花点时间感谢 reddit 的众神救了你的培根。"
   },
   {
     id: "ai662",
-    text: "Hello everyone, I'm the guy responsible for the big, bad news ticker, and I'm afraid that I'm about to get my own show. It's gonna be called Antimatter Dimensions. It's gonna be like Antime, except with less antimatter, and with worse puns. It's gonna be like Antimatter Dimensions except with worse jokes."
+    text: "大家好，我就是那个负责又大又坏的新闻滚动条的人，恐怕我马上要有自己的节目了。它会叫反物质维度。它会像反时间，只是反物质更少，双关语更烂。它会像反物质维度，只是笑话更烂。"
   },
   {
     id: "ai663",
-    text: "By now you've seen a lot of news tickers featuring Batman or Superman, and you probably guessed which one it was. Everyone loves a good mystery, right? Well, it's your turn to be a part of history by guessing the riddle."
+    text: "到现在你已经看过很多以蝙蝠侠或超人为主题的新闻滚动条了，你可能猜到了是哪个。每个人都喜欢好的谜题，对吧？好吧，轮到你通过猜谜成为历史的一部分了。"
   },
   {
     id: "ai664",
-    text: "If you are reading this, you probably shouldn't have."
+    text: "如果你正在读这条消息，你大概不应该读。"
   },
   {
     id: "ai665",
-    text: "The best part about writing news ticker suggestions is finding out what people think about them after they've seen them."
+    text: "写新闻滚动条建议最好的部分是发现人们看到它们之后的看法。"
   },
   {
     id: "ai666",
-    text: "Are you up to date on the latest trends in science?"
+    text: "你了解科学界的最新趋势吗？"
   },
   {
     id: "ai667",
-    text: "In the last hours, the Antimatter created an army of their own. They called themselves the [REDACTED] Army. The primary objective was to push the [REDACTED] back into the Matter dimensions, but they were stopped short when the [REDACTED] Army realized that pushing the [REDACTED] back into the Matter would cause the Antimatter to be drawn towards the [REDACTED] and disintegrate. Despite this, the [REDACTED] Army continued to push towards the [REDACTED] Infinity."
+    text: "在最后几个小时里，反物质创建了自己的军队。他们自称[已编辑]军团。主要目标是把[已编辑]推回物质维度，但当[已编辑]军团意识到把[已编辑]推回物质会导致反物质被吸引向[已编辑]并分解时，他们停了下来。尽管如此，[已编辑]军团继续向[已编辑]无限推进。"
   },
   {
     id: "ai668",
-    text: "I'm finally free of the spell this whole thing is based on."
+    text: "我终于摆脱了这一切所基于的咒语。"
   },
   {
     id: "ai669",
-    text: "An anti-world without antimatter is just a world without antimatter because the antimatter is in the anti-world"
+    text: "一个没有反物质的反世界只是一个没有反物质的世界，因为反物质在反世界里"
   },
   {
     id: "ai670",
-    text: "You should still be able to play the game with the cheat code \"1009\" after you beat the game."
+    text: "通关游戏后，你应该仍然可以使用作弊码“1009”玩游戏。"
   },
   {
     id: "ai671",
-    text: "The next update will be in 5 hours. Hevipelle, the creator of Antimatter Dimensions, is believed to be hiding in 5 hours. In the meantime, he has prepared a new update that will be released 5 hours after this one."
+    text: "下一个更新将在 5 小时后。反物质维度的创造者 Hevipelle 据信正藏在 5 小时里。与此同时，他准备了一个新更新，将在这次更新 5 小时后发布。"
   },
   {
     id: "ai672",
-    text: "A new study has shown that not drinking water is worse than smoking it. People who were exposed to levels of radiation that were 5 times greater than what we are currently exposed to were exposed to higher levels of radiation, and died longer."
+    text: "一项新研究表明，不喝水比吸食水更糟糕。暴露在我们当前辐射水平 5 倍环境中的人暴露在更高辐射水平下，并且死得更久。"
   },
   {
     id: "ai673",
-    text: "The Ninth Dimension is just a lie made to keep the people in bondage to the Matrix. It's an elaborate system that keeps the people in a constant state of captivity, using a series of simple symbols to control their thoughts and emotions."
+    text: "第九维度只是个谎言，为了让人们受制于矩阵。它是一个精密的系统，让人们处于持续的囚禁状态，用一系列简单的符号控制他们的思想和情感。"
   },
   {
     id: "ai674",
@@ -6019,148 +5377,148 @@ export const news = [
   },
   {
     id: "ai675",
-    text: "A man was arrested on Monday for allegedly thinking about buying a nine-dimensional cake when he realized he was holding an infinity-point cake."
+    text: "一名男子周一被捕，据称他在意识到自己拿的是无限点蛋糕之前，一直在考虑买一个九维蛋糕。"
   },
   {
     id: "ai676",
-    text: "The Dark Souls 2 Arcade Edition includes the following:"
+    text: "《黑暗之魂 2 街机版》包含以下内容："
   },
   {
     id: "ai677",
-    text: "Now the deal goes like this: If you spend all your EP, you get a Disclaimer!",
+    text: "交易是这样的：如果你花光所有 EP，你会得到一份免责声明！",
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
     id: "ai678",
-    text: "Oh shit we ran out of news. Time to do something."
+    text: "哦该死，我们的新闻用完了。是时候做点什么了。"
   },
   {
     id: "ai679",
-    text: "It's not the size of the universe, it's the quality of your socks."
+    text: "重要的不是宇宙的大小，而是你袜子的质量。"
   },
   {
     id: "ai680",
-    text: "advertisement"
+    text: "广告"
   },
   {
     id: "ai681",
-    text: "Man, I wish I never got old news. It's too good to last me any longer."
+    text: "天哪，我希望我从没看过旧新闻。它好得让我撑不了多久了。"
   },
   {
     id: "ai682",
-    text: "Sometime during the lifetime of a human being, their blood will be turned into a pale blue if they were to mummify."
+    text: "在人的一生中的某个时刻，如果被制成木乃伊，他们的血液会变成淡蓝色。"
   },
   {
     id: "ai683",
-    text: "Positrons are a strange little metal that have odd electrical properties. They're commonly found in the form of a roundabout, but they also happen to be, well… positrons."
+    text: "正电子是一种奇怪的小金属，具有奇特的电学特性。它们通常以环岛的形式出现，但它们也恰好是，嗯……正电子。"
   },
   {
     id: "ai684",
-    text: "I am going to have a talk with the thesaurus."
+    text: "我要和同义词词典谈谈。"
   },
   {
     id: "ai685",
-    text: "A new comic has come out about people's reactions to eating antimatter, and what happens next will blow your mind"
+    text: "一部关于人们对吃反物质反应的新漫画出炉了，接下来发生的事会让你大开眼界"
   },
   {
     id: "ai686",
-    text: "A new series of \"news tickers\" have been created to chronicle the lives of the news ticker characters as they chronicle their news ticker journeys. Each character has a journal entry detailing their life as a news ticker, along with some sort of mini-episode dedicated to them."
+    text: "一个新的“新闻滚动条”系列被创造出来，记录新闻滚动条角色们在记录他们新闻滚动条旅程时的生活。每个角色都有一篇日记条目，描述他们作为新闻滚动条的生活，还有一些专门为他们制作的迷你剧集。"
   },
   {
     id: "ai687",
-    text: "For all your puzzle building needs, we've got a brand new 5-part series on building big crunches! Learn how to crack the most complex crunches the pros know not! Part 1: Basic, Part 2: Advanced, Part 3: Overflow, and Part 4: Finishing the Finishing Move."
+    text: "为了满足你所有的拼图建造需求，我们推出了全新的 5 部分系列：建造大挤压！学习如何破解连高手都不知道的最复杂挤压！第 1 部分：基础，第 2 部分：进阶，第 3 部分：溢出，第 4 部分：完成终结技。"
   },
   {
     id: "ai688",
-    text: "As a longtime fan of the show, I can say that this is one of the best seasons yet. It's not a season to be sniffed at, it's a season to be experienced. Season 1 was a bit long for what it was, but Season 2 has now surpassed that in length, in a good way. Even though it's a bit of a wait, Season 3 is already well under way, and I look forward to seeing how it goes."
+    text: "作为这个节目的老粉丝，我可以说这是迄今最好的季度之一。这不是一个可以小看的季度，而是一个值得体验的季度。第一季对它的内容来说有点长，但第二季在长度上已经超过了它，而且是好的方面。虽然有点等，但第三季已经在顺利进行中，我期待着看它如何发展。"
   },
   {
     id: "ai689",
-    text: "The word \"antimatter\" is often misused, to describe an object that is made up of antimatter, but is otherwise indistinguishable from normal matter. It is also sometimes used to describe an object made up of antimatter, but clearly indistinguishable from ordinary matter. After all, an antimatter-shaped object is easily distinguishable from a normal-shaped one. Case in point: an antimatter-shaped cake is a regular cake, but the entire bottom half is made up of normal matter"
+    text: "“反物质”这个词经常被误用，用来描述由反物质构成、但其他方面与普通物质无法区分的物体。它有时也被用来描述由反物质构成、但显然与普通物质无法区分的物体。毕竟，反物质形状的物体很容易与普通形状的物体区分。例如：反物质形状的蛋糕是一个普通蛋糕，但整个下半部分由普通物质构成"
   },
   {
     id: "ai690",
-    text: "In a new story, Apple's new \"disruptive\" app is linked to the spread of the dreaded \"Anti-Word\" virus. Anti-Word viruses are known to cause paralysis and ultimately death, but the power of the virus has sparked a new era of anti-banning, which will hopefully eradicate the threat."
+    text: "在一个新故事中，苹果公司新的“颠覆性”应用与可怕的“反词”病毒的传播有关。反词病毒已知会导致瘫痪并最终死亡，但病毒的力量引发了一个反封禁的新时代，希望能根除这一威胁。"
   },
   {
     id: "ai691",
-    text: "I'm just a normal person trying to make a news ticker suggestion"
+    text: "我只是一个想提供新闻滚动条建议的普通人"
   },
   {
     id: "ai692",
-    text: "A new experimental protocol has been developed to 'erase' all personal information on the web, including your name, address, and phone number, in a highly secure and highly controllable way."
+    text: "一种新的实验性协议被开发出来，可以“抹除”网络上的所有个人信息，包括你的姓名、地址和电话号码，以高度安全且高度可控的方式。"
   },
   {
     id: "ai693",
-    text: "You can't hide in plain sight. You can't hide in plain sight. You can't hide in plain sight. You can't hide in plain sight. You can't hide in plain sight. You can't hide in plain sight. You can't hide in plain sight. Your hide in plain sight."
+    text: "你无法在众目睽睽之下隐藏。你无法在众目睽睽之下隐藏。你无法在众目睽睽之下隐藏。你无法在众目睽睽之下隐藏。你无法在众目睽睽之下隐藏。你无法在众目睽睽之下隐藏。你无法在众目睽睽之下隐藏。你的众目睽睽之下隐藏。"
   },
   {
     id: "ai694",
-    text: "In the Antimatter Universe, Hevipelle is the Prince of Antimatter, although he does have an Antimatter Diplomatic Immunity, so he's much more dangerous than you might think."
+    text: "在反物质宇宙中，Hevipelle 是反物质王子，虽然他确实拥有反物质外交豁免权，所以他比你想象的危险得多。"
   },
   {
     id: "ai695",
-    text: "Why do we play this? Just to have fun?"
+    text: "我们为什么玩这个？只是为了好玩？"
   },
   {
     id: "ai696",
-    text: "I am Thinkcraft, Lord of the Flies"
+    text: "我是 Thinkcraft，蝇王"
   },
   {
     id: "ai697",
-    text: "The entire story of how and why the world ended is contained in the first 5 E's of the English alphabet."
+    text: "世界如何以及为何终结的整个故事都包含在英文字母表的前 5 个 E 中。"
   },
   {
     id: "ai698",
-    text: "What do you call a cloudburst? A mini-explosion!"
+    text: "你叫骤雨什么？迷你爆炸！"
   },
   {
     id: "ai699",
-    text: "T-shirt made from the DNA of a perfectly animated dog"
+    text: "用一只完美动画狗 DNA 制作的 T 恤"
   },
   {
     id: "ai700",
-    text: "Since the start of this game, everyone has 0 IP and has lost."
+    text: "自从这款游戏开始以来，每个人都有 0 IP 并且输了。"
   },
   {
     id: "ai701",
-    text: "You must have a very special kind of karma to be able to read this..."
+    text: "你一定有非常特殊的业力才能读到这条……"
   },
   {
     id: "ai702",
-    text: "The words \"you've been in coma for 5 hours\" are either lies or is the truth"
+    text: "“你已经昏迷 5 小时了”这句话要么是谎言，要么是事实"
   },
   {
     id: "ai703",
-    text: "You know, I don't really care much for conspiracy theories. They're not very interesting to me. But what do you know about 9th dimensions? That they exist, they're powerful, and they're trying to stop us from using them? That's pretty interesting... wait no, they're not. They're just saying that because they can, they'll. That's not how it works at all. I'm not stupid, I'm not crazy, I know what's best. I"
+    text: "你知道吗，我不太在意阴谋论。它们对我来说不太有趣。但你对第 9 维度了解多少？它们存在、它们强大、它们在试图阻止我们使用它们？那挺有趣的……等等，不，它们没有。它们只是因为能这么说才这么说，它们会。根本不是这样运作的。我不傻，我不疯，我知道什么最好。我"
   },
   {
     id: "ai704",
-    text: "The only difference between now and then is time."
+    text: "现在和那时唯一的区别是时间。"
   },
   {
     id: "ai705",
-    text: "\"Imma be the first man to sit on the moon, and be the last man on the moon"
+    text: "“我要成为第一个坐在月球上的人，也是最后一个坐在月球上的人”"
   },
   {
     id: "ai706",
-    text: "The new companion app for Terraria has just been revealed!"
+    text: "Terraria 的新伴侣应用刚刚公布！"
   },
   {
     id: "ai707",
-    text: "Hevipelle: what's the big deal?"
+    text: "Hevipelle：有什么大不了的？"
   },
   {
     id: "ai708",
-    text: "I've been playing this game for over a year now and I've only ever seen 2 boss fights. The first was a Hydra that was after your 9th Dimension, the second a giant crater with Anti-people inside. Both of those fights sucked and I'm not even sure if I could replay the last one."
+    text: "我已经玩这个游戏一年多了，只见过 2 场 Boss 战。第一场是一个追着你的第 9 维度的九头蛇，第二场是一个里面有反人的巨大陨石坑。那两场战斗都很烂，我甚至不确定我能不能重打最后一场。"
   },
   {
     id: "ai709",
-    text: "There you have it, the ultimate feature of party games - the single player campaign."
+    text: "这就是派对游戏的终极特性：单人战役。"
   },
   {
     id: "ai710",
-    text: "A new game called Antimatter Dimensions is available for free, and has been rated A by the Knesset. Can you beat it? You bet."
+    text: "一款名为反物质维度的新游戏免费开放，并被以色列议会评为 A 级。你能通关吗？当然能。"
   },
   {
     id: "ai711",
@@ -6168,23 +5526,23 @@ export const news = [
   },
   {
     id: "ai712",
-    text: "I'm a time traveler. I've been to the year 0, I think. But I haven't been to the year 1!"
+    text: "我是时间旅行者。我去过公元 0 年，我想。但我没去过公元 1 年！"
   },
   {
     id: "ai713",
-    text: "Having trouble loading images? Try turning them off."
+    text: "加载图片有困难？试试关掉它们。"
   },
   {
     id: "ai714",
-    text: "It's only natural. You wouldn't expect to see this in the news ticker but trust me, you will."
+    text: "这很自然。你不会想到在新闻滚动条里看到这个，但相信我，你会看到的。"
   },
   {
     id: "ai715",
-    text: "Discovery of the 10th Dimension was announced on August 1st, 2025."
+    text: "第 10 维度的发现已于 2025 年 8 月 1 日公布。"
   },
   {
     id: "ai716",
-    text: "Greetings, welcome to the latest edition of Antimatter Dimensions!"
+    text: "大家好，欢迎收看最新一期反物质维度！"
   },
   {
     id: "ai717",
@@ -6192,71 +5550,71 @@ export const news = [
   },
   {
     id: "ai718",
-    text: "The seventh dimension is just a scam by the way"
+    text: "顺便说一句，第七维度只是个骗局"
   },
   {
     id: "ai719",
-    text: "Nihilism is the opposite of joy. It's a drug. It makes you happy. It's a feeling. But it also has a cost. Nihilism is a deadly drug. If you take it, you can die of lack of oxygen."
+    text: "虚无主义是快乐的反面。它是一种毒品。它让你快乐。它是一种感觉。但它也有代价。虚无主义是一种致命毒品。如果你吸食它，你会因缺氧而死。"
   },
   {
     id: "ai720",
-    text: "What if I told you that there's a news ticker with the exact same name but with a different meaning?"
+    text: "如果我告诉你有一条新闻滚动条名字完全相同，但含义不同呢？"
   },
   {
     id: "ai721",
-    text: "I'm not sure if this is already a thing or not, but I've been getting a lot of suggestions for a news ticker that goes something like this:"
+    text: "我不确定这是否已经是现实，但我收到了很多关于一条这样的新闻滚动条的建议："
   },
   {
     id: "ai722",
-    text: "If you're reading this, your news ticker is on."
+    text: "如果你正在读这条消息，说明你的新闻滚动条已开启。"
   },
   {
     id: "ai723",
-    text: "The number of dimensions in a 6th dimension is the sum of all the dimensions in a 7th dimension, so 6ths of a 7th dimension are 6ths of a 6th dimension."
+    text: "第 6 维度中的维度数量等于第 7 维度中所有维度之和，所以第 7 维度的 6 分之几就是第 6 维度的 6 分之几。"
   },
   {
     id: "ai724",
-    text: "Discovery of the 9th Dimension will be discussed at the 9th Dimension Fanart Competition!"
+    text: "第 9 维度的发现将在第 9 维度同人绘画大赛上讨论！"
   },
   {
     id: "ai725",
-    text: "A new era has come and gone. There is no way to know for sure, but hope for the best."
+    text: "一个新时代来了又走了。无法确定，但请抱最好的希望。"
   },
   {
     id: "ai726",
-    text: "Did you know the word 'antimatter' is in the dictionary right now?"
+    text: "你知道“antimatter”这个词现在就在词典里吗？"
   },
   {
     id: "ai727",
-    text: "We have a limited number of physical rewards for you to choose from!"
+    text: "我们有一些有限的实体奖励供你选择！"
   },
   {
     id: "ai728",
-    text: "No, I'm not lying. I'm telling the truth."
+    text: "不，我没在撒谎。我说的是实话。"
   },
   {
     id: "ai729",
-    text: "The problem with the term \"antimatter dimensions\" is that it contains all three letters of the alphabet, and no one knows what it even means. In fact, there is no word that perfectly captures what the word \"antimatter dimensions\" is: antimatter. But what exactly is an antimatter? It sounds like a normal dimension but it isn't. It may even be called antimatter dimensions, but it isn't."
+    text: "“反物质维度”这个词的问题是它包含了字母表的所有三个字母，而且没人知道它到底是什么意思。事实上，没有任何词能完美捕捉“反物质维度”这个词的含义：反物质。但反物质到底是什么？它听起来像个普通维度，但不是。它甚至可能叫反物质维度，但它不是。"
   },
   {
     id: "ai730",
-    text: "It is said that if you go to Hell, you get PEGI-3."
+    text: "据说如果你去地狱，你会得到 PEGI-3。"
   },
   {
     id: "ai731",
-    text: "This game is just a scam to trick people into buying worthless paperclips without any real purpose. It's impossible without an infinite number of infinite paperclips, and even then it's very hard. I managed to get it to work without an infinite number of paperclips, but I haven't seen it work without infinite paperclips."
+    text: "这款游戏只是个骗局，骗人购买毫无实际用途的廉价回形针。没有无限数量的无限回形针就不可能通关，即使那样也非常难。我设法在没有无限数量回形针的情况下让它运行，但我还没见过没有无限回形针也能运行的情况。"
   },
   {
     id: "ai732",
-    text: "\"It was an anti-matter\" - Anti-Eddie The Echidna"
+    text: "“那是一次反物质” -反艾迪针鼹"
   },
   {
     id: "ai733",
-    text: "T-bone steak: burgers and fries with a side of bone-in ribeye"
+    text: "T 骨牛排：汉堡和薯条，配带骨肋眼"
   },
   {
     id: "ai734",
-    text: "A person claims to be a god, but instead of creating more gods, they destroy all of them. They later claim to be a god again, but have yet to create a god of any other god. Is this a god-worshiping cult? Or a god-desecrating cult?"
+    text: "一个人声称自己是神，但不去创造更多的神，而是摧毁所有的神。他后来又声称自己是神，但尚未创造出任何神的神。这是一个崇拜神的邪教？还是一个亵渎神的邪教？"
   },
   {
     id: "ai735",
@@ -6268,47 +5626,47 @@ export const news = [
   },
   {
     id: "ai737",
-    text: "The war for New Antimatter has raged on for eons, but one faction has stood firm: the loyalists of the 9th Dimension. They've made a pact with the Anti-Zulu Empire, pledging their obedience to Anti-Antimatter, the Anti-Slab. The Zulu people were once part of the Anti-Slab, but fell prey to the matter once again. As the Zulu people are nomadic, they have no civilization."
+    text: "新反物质之战已经持续了无数纪元，但有一个派系始终屹立不倒：第 9 维度的忠诚派。他们与反祖鲁帝国达成协议，宣誓效忠反反物质，即反板。祖鲁人曾是反板的一部分，但再次沦为物质的猎物。由于祖鲁人是游牧民族，他们没有文明。"
   },
   {
     id: "ai738",
-    text: "This is an open-source, cross-platform, binary-based game development environment for the PC and Mac. It provides a robust, cross-platform development environment for the development of games, and additionally provides a framework for implementing games."
+    text: "这是一个面向 PC 和 Mac 的开源、跨平台、基于二进制的游戏开发环境。它为游戏开发提供了稳健的跨平台开发环境，此外还提供了实现游戏的框架。"
   },
   {
     id: "ai739",
-    text: "Ruki you have no idea how much I appreciate your huge brainpower, you are now my favorite programming genius!"
+    text: "Ruki 你不知道我有多感激你巨大的脑力，你现在是我最喜欢的编程天才！"
   },
   {
     id: "ai740",
-    text: "By now you've probably heard of the \"9th Dimension\", it's an imaginary realm created by the 9th Dimension, and according to no known laws of reality, it exists. It's also the name of a popular video game, and it's been linked to a string of unsolved killings."
+    text: "到现在你可能听说过“第 9 维度”，它是一个由第 9 维度创造的虚构领域，根据不存在的现实法则，它存在。它也是一款热门电子游戏的名字，并与一系列悬而未决的谋杀案有关。"
   },
   {
     id: "ai741",
-    text: "Discovery of the D5th Dimension is celebrated every year on December 25th, just like Doomsday. The reason why D5 is kept secret is because no one can remember exactly what it does. What we do know is that it's there, and it's very dangerous. People have died because they didn't know what the D5th Dimension was, and it's very powerful."
+    text: "D5 维度的发现每年 12 月 25 日庆祝，就像世界末日一样。D5 保密的原因是没有人在记得它到底做什么。我们所知道的是它在那里，而且非常危险。有人因为不知道 D5 维度是什么而死，它非常强大。"
   },
   {
     id: "ai742",
-    text: "Antimatter is a common substance found in nature and is used in a wide variety of applications, from communication to currency to the production of antimatter, to name a few. Antimatter is also an extremely scarce resource and many people live on very tiny amounts of it."
+    text: "反物质是一种在自然界中很常见的物质，用于各种应用，从通信到货币再到反物质的生产，仅举几例。反物质也是一种极其稀缺的资源，许多人靠极少量的反物质生活。"
   },
   {
     id: "ai743",
-    text: "If you woke up one morning and your eyes were made of matter, would you still be looking at this?"
+    text: "如果某天早上你醒来，发现你的眼睛是物质做的，你还会看着这个吗？"
   },
   {
     id: "ai744",
-    text: "If you look very closely, you can see a single tear running down my sister's cheek. It was a tear for me, for she was crying for the first time, and I couldn't help it. I can't even remember the last time I cried."
+    text: "如果你非常仔细地看，你能看到一滴泪从我妹妹的脸颊上滑落。那是为我流的泪，因为她第一次哭了，而我忍不住。我甚至不记得我上次哭是什么时候。"
   },
   {
     id: "ai745",
-    text: "Rationally, I would put my money on the statement that there's no such thing as too much antimatter. I mean, even a tiny bit of it is just too much. And that's just by accident."
+    text: "理性地说，我会把钱押在“反物质没有太多之说”这句话上。我的意思是，哪怕一点点反物质都太多了。而且那纯属偶然。"
   },
   {
     id: "ai746",
-    text: "The book of archeology is upon us! With over 5 hours of content, it's gonna be a long one! —DIO"
+    text: "考古之书降临了！超过 5 小时的内容，这会是一场持久战！ DIO"
   },
   {
     id: "ai747",
-    text: "Sometime between the ages of 12 and 20, Jackson got a phone call. A mad scientist was on the line. Jackson picked up the phone and the mad man said, \"Jackson, I just got a new message. It says 'Madman' in big, bold letters.\""
+    text: "在 12 到 20 岁之间的某个时候，Jackson 接到了一个电话。电话那头是个疯狂科学家。Jackson 接起电话，那个疯男人说：“Jackson，我刚收到一条新消息。上面用又大又粗的字母写着‘疯人’。”"
   },
   {
     id: "ai748",
@@ -6316,430 +5674,430 @@ export const news = [
   },
   {
     id: "ai749",
-    text: "The only thing that matters is yourself."
+    text: "唯一重要的是你自己。"
   },
   {
     id: "ai750",
-    text: "Reality is coming. You can get a sneak peek by subscribing to the \"T-series\" feed."
+    text: "现实即将到来。订阅“T 系列”信息流可以抢先预览。"
   },
   {
     id: "ai751",
-    text: "The biggest difference between me and Antimatter Dimensions, at the moment, is the weather. I can survive the rain, I can withstand the scorching sun, and I can even deal with the big crunch. But what if the weather was antimatter and the antimatter was raining meteorite on us? What would be your response? Would it be the equivalent of a meteorite hitting the ground? I don't think so. The meteorite would probably just vaporize the earth."
+    text: "目前，我和反物质维度最大的区别是天气。我能挺过雨，我能忍受灼热的太阳，我甚至能应付大挤压。但如果天气是反物质，而反物质在下陨石雨呢？你会怎么回应？那是不是等同于陨石砸向地面？我不这么认为。陨石大概只会把地球汽化。"
   },
   {
     id: "ai752",
-    text: "A new extension is now available that will let you watch replicanti grow!",
+    text: "一个新的扩展现在可用，让你观看 replicanti 生长！",
     get unlocked() { return PlayerProgress.replicantiUnlocked(); }
   },
   {
     id: "ai753",
-    text: "What if you could flip a coin to determine if it was a Johnson or a Stein?"
+    text: "如果你能掷硬币来决定它是 Johnson 还是 Stein 呢？"
   },
   {
     id: "ai754",
-    text: "I am Yhmai, King of Kings!"
+    text: "我是 Yhmai，王中之王！"
   },
   {
     id: "ai755",
-    text: "This is a friendly suggestion that if you take prescription stimulants and you forget to take them till 11pm, it's probably best not to take them at 11pm."
+    text: "这是一个友好的建议：如果你服用处方兴奋剂，并且忘了吃直到晚上 11 点，那么最好不要在晚上 11 点服用。"
   },
   {
     id: "ai756",
-    text: "A new theory says that antimatter does not exist beyond our simulation."
+    text: "一个新理论说，反物质在我们的模拟之外并不存在。"
   },
   {
     id: "ai757",
-    text: "Thing is, I can count on one hand the number of times I've written that I can count on one hand the number of times I've written that I can count on one hand"
+    text: "问题是，我能用一只手数清我写过多少次“我能用一只手数清我写过多少次我能用一只手数清”"
   },
   {
     id: "ai758",
-    text: "The stakes are always high when it comes to Antimatter Dimensions. But what about Dimensions made entirely of antimatter? We don't know, but we'll never know..."
+    text: "说到反物质维度，风险总是很高。但完全由反物质构成的维度呢？我们不知道，而且永远不会知道……"
   },
   {
     id: "ai759",
-    text: "It's the third hour. Hevipelle is trying to release an update, but it'll take an eternity because Hevipelle himself releases his update every time he runs out of e's. Today, however, he released an incremental game called Antimatter Dimensions. It's basically a combination of Matter Dimensions and Dimensions Dimensions Dimensions, except with more emotes. The graphics are basically the same, but the message is completely different. The only difference is that the dimensions have infinity e's"
+    text: "现在是第三个小时。Hevipelle 正试图发布更新，但这要花一个永恒，因为 Hevipelle 每次耗尽 e 字母时才会发布他的更新。然而今天，他发布了一款叫反物质维度的增量游戏。它基本上是物质维度和维度维度维度的组合，只是表情更多。画面基本相同，但信息完全不同。唯一的区别是维度有无限的 e"
   },
   {
     id: "ai760",
-    text: "With strong opposition, the third phase of the Antimatter Dimensions project has been cancelled. The project has been cancelled because there was too much work involved."
+    text: "在强烈反对下，反物质维度项目的第三阶段已被取消。该项目被取消是因为涉及的工作量太大。"
   },
   {
     id: "ai761",
-    text: "This is the place where all bad ideas originate."
+    text: "这里是所有坏主意的发源地。"
   },
   {
     id: "ai762",
-    text: "Hey check this out! We have some good news: it's raining antimatter!"
+    text: "嘿，看看这个！我们有好消息：正在下反物质雨！"
   },
   {
     id: "ai763",
-    text: "The first dimension is the last, it's the furthest thing from the earth and it's the one where all the problems, all the negative emotions, all the negative ideas go."
+    text: "第一维度是最后一个，它离地球最远，是所有问题、所有负面情绪、所有负面想法去往的地方。"
   },
   {
     id: "ai764",
-    text: "I was gonna do a news ticker that just covered all the bases, but I think that would make it too OP."
+    text: "我本来想做一条覆盖所有要点的新闻滚动条，但我觉得那会让它太超模。"
   },
   {
     id: "ai765",
-    text: "You are using the wrong version! The final release of AD will have 9 dimensions!"
+    text: "你用错版本了！AD 的最终版本将有 9 个维度！"
   },
   {
     id: "ai766",
-    text: "The word 'antimatter' makes me cringe. So do a bunch of other words. In fact, almost all the words in the English language. But not 'antimatter'. That's why I hate 'anti-' so much."
+    text: "“反物质”这个词让我尴尬。还有很多其他词也是。事实上，英语里几乎所有的词都是。但“反物质”不是。这就是我如此讨厌“反”前缀的原因。"
   },
   {
     id: "ai767",
-    text: "This is the last episode of Antimatter Dimensions, the game about partying antimatter dimensions with your friends, the best part about it is that you don't have to be a developer to enjoy it."
+    text: "这是反物质维度的最后一集，这款游戏是和朋友们一起派对反物质维度，最棒的是你不必是开发者也能享受它。"
   },
   {
     id: "ai768",
-    text: "I was going to put a news ticker but I think it would be too much work and also I don't think it's very funny."
+    text: "我本来想放一条新闻滚动条，但我觉得那工作量太大，而且我也不觉得它很好笑。"
   },
   {
     id: "ai769",
-    text: "Time to go to sleep?"
+    text: "该睡觉了？"
   },
   {
     id: "ai770",
-    text: "A small, yet important, message has just been sent out to all players:"
+    text: "一条小而重要的消息刚刚发送给所有玩家："
   },
   {
     id: "ai771",
-    text: "\"I don't know about you, but my favorite number is 2048\" - people who don't know what 2048 is"
+    text: "“不知道你怎么想，但我最喜欢的数字是 2048” -不知道 2048 是什么的人"
   },
   {
     id: "ai772",
-    text: "A new group is trying to make money off of antimatter, and they're selling t-shirts that say \"YOU THOUGHT THIS WOULD BE A PIECE OF NEWS, BUT IT WAS ME, DIO!\" They've got a lot of money, and they're selling it very poorly. Do they have a website? I don't know, but they're trying."
+    text: "一个新团体正试图靠反物质赚钱，他们卖印着“你以为这会是一条新闻，但其实是我，DIO！”的 T 恤。他们赚了很多钱，而且卖得非常糟糕。他们有网站吗？我不知道，但他们在努力。"
   },
   {
     id: "ai773",
-    text: "Im gonna leave my milk here for a couple seconds. (milk is displayed for a few seconds longer)"
+    text: "我要把我的牛奶放在这里几秒钟。（牛奶会多显示几秒钟）"
   },
   {
     id: "ai774",
-    text: "I'm a time traveler. I can travel back in time to stop you from doing what I'm about to do."
+    text: "我是时间旅行者。我可以回到过去阻止你做我即将要做的事。"
   },
   {
     id: "ai775",
-    text: "I mean, look at that! I got this one! It's the one you want! Buy the game now!"
+    text: "我的意思是，看看那个！我得到这个了！这是你想要的！现在就买游戏！"
   },
   {
     id: "ai776",
-    text: "You can't sleep when there's war in the distance. You wake up with a start, running for your life. You hear cannon fire, running for your life. Then there's the sound of an engine, a roar that's deafening, and you hear the crunch. It's the end of the world as you know it. The world isn't being saved by a mountain of antimatter. It isn't. It is you, running for your life, hoping the world doesn't"
+    text: "远处有战争时你睡不着。你猛然惊醒，拼命逃跑。你听到炮火声，拼命逃跑。然后有引擎声，震耳欲聋的轰鸣，你听到了挤压声。这是你所知世界的终结。世界没有被反物质之山拯救。没有。只有你，拼命逃跑，希望世界不会"
   },
   {
     id: "ai777",
-    text: "Why is it called a 'Reality' Award if it doesn't exist?"
+    text: "如果它不存在，为什么还叫“现实”奖？"
   },
   {
     id: "ai778",
-    text: "In the beginning, there was nothing. Then the Creator made two, and called the third 'Intelligent Being'"
+    text: "起初，一无所有。然后造物主创造了两个，并把第三个称为“智慧生命”"
   },
   {
     id: "ai779",
-    text: "This is your chance to get a secret achievement while playing Antimatter Dimensions: the game. Visit the reset button and play the game. After you beat the game, your save file will be expunged and you will get a free achievement."
+    text: "这是你在玩反物质维度：游戏时获得隐藏成就的机会。访问重置按钮并玩游戏。通关后，你的存档文件将被清除，你将获得一个免费成就。"
   },
   {
     id: "ai780",
-    text: "Please tell me you don't have tachyon particles in your bloodstream!",
+    text: "请告诉我你的血液里没有速子粒子！",
     get unlocked() { return PlayerProgress.dilationUnlocked(); }
   },
   {
     id: "ai781",
-    text: "Taller people have ***, more babies are born, everything is great. But... the Antimatter grows very slowly."
+    text: "更高的人有***，更多的婴儿出生，一切都很好。但是……反物质增长得非常慢。"
   },
   {
     id: "ai782",
-    text: "Now, I know some of you are impatient for the update and I respect that. But let's get right into the news!"
+    text: "现在，我知道你们有些人等更新等得不耐烦了，我尊重这一点。但让我们直接进入新闻！"
   },
   {
     id: "ai783",
-    text: "Hey, what's the deal with the \"Editor's Note\" button? It's anti-ironic... I mean, seriously? People still use that button despite its anti-ironic effects?"
+    text: "嘿，“编者按”按钮是怎么回事？它反讽刺……我是说，说真的？尽管有反讽刺效果，人们还在用那个按钮？"
   },
   {
     id: "ai784",
-    text: "You can unlock the 9th dimension by [DATA EXPUNGED]"
+    text: "你可以通过[数据已删除]解锁第 9 维度"
   },
   {
     id: "ai785",
-    text: "With the release of AD, there's a new dimension for everyone!"
+    text: "随着 AD 的发布，每个人都有一个新维度！"
   },
   {
     id: "ai786",
-    text: "Hey guys, this is my first story. I'd like to start by saying that I am in no way an expert, so please be gentle with me. Please don't make me angry, or I'll write a nasty story. Also please don't make me upset, especially not if it's a 'story' and not a 'how do I beat the game' kind of story."
+    text: "嘿，伙计们，这是我的第一个故事。我想先说，我绝不是专家，所以请对我温柔点。请不要让我生气，否则我会写一个恶毒的故事。也请不要让我难过，尤其是如果它是一个“故事”而不是“我该怎么通关”之类的故事。"
   },
   {
     id: "ai787",
-    text: "It's a good time to be a dog owner"
+    text: "现在是养狗的好时候"
   },
   {
     id: "ai788",
-    text: "What if you could turn any number on an axis, and it ended up being infinity?"
+    text: "如果你能把任何数字放在轴上旋转，而它最终变成无限呢？"
   },
   {
     id: "ai789",
-    text: "After a couple minutes of waiting, the ticker comes back online."
+    text: "等了几分钟后，滚动条重新上线了。"
   },
   {
     id: "ai790",
-    text: "The best part of watching someone make an antimatter, is the part where they blow up the video camera."
+    text: "看别人制造反物质最棒的部分，是他们炸毁摄像机的那一段。"
   },
   {
     id: "ai791",
-    text: "The evening before, the 6th Celestial was assassinated by an unknown assailant. The next day, authorities reopened the case after an unknown assailant claimed responsibility."
+    text: "前一天晚上，第 6 位天体被一名身份不明的袭击者刺杀。第二天，在一名身份不明的袭击者声称对此负责后，当局重新打开了此案。"
   },
   {
     id: "ai792",
-    text: "What do you call a $100 bill? 'Billi Bills'"
+    text: "你叫一百美元钞票什么？“百万账单”（Billi Bills）"
   },
   {
     id: "ai793",
-    text: "This is the story of how I learned to love the weather."
+    text: "这是关于我如何学会爱上天气的故事。"
   },
   {
     id: "ai794",
-    text: "It's been a while since news tickers have been around as much as they are now, but that doesn't necessarily mean they're bad."
+    text: "新闻滚动条像现在这样大量出现已经有一阵子了，但这并不一定意味着它们不好。"
   },
   {
     id: "ai795",
-    text: "Is this game just about getting more antimatter?"
+    text: "这个游戏只是为了获得更多反物质吗？"
   },
   {
     id: "ai796",
-    text: "The third annual Adirondack Mountaineering Festival will be held this year on Saturday, October 1st from 1-5pm at the Albany Highlands in nearby Troy, New York. The 50,000 person capacity outdoor amphitheater will feature over 2,000 speakers, a stage and a 360 degree camera system. Tickets are $35 and can be purchased at angersalley.com."
+    text: "第三届阿迪朗达克登山节将于今年 10 月 1 日星期六下午 1 点至 5 点在纽约州特洛伊附近的奥尔巴尼高地举行。这个可容纳 5 万人的户外圆形剧场将配备超过 2000 名演讲者、一个舞台和 360 度摄像系统。门票 35 美元，可在 angersalley.com 购买。"
   },
   {
     id: "ai797",
-    text: "The whole bottom half of the universe is just a giant antimatter hole."
+    text: "宇宙的整个下半部分只是一个巨大的反物质洞。"
   },
   {
     id: "ai798",
-    text: "A new prestige layer has been announced: Emojis!"
+    text: "新的飞升层已公布：表情符号！"
   },
   {
     id: "ai799",
-    text: "Travis is currently attempting to understand how to make hevi immortal by feeding him antimatter."
+    text: "Travis 目前正试图通过给 hevi 喂反物质来理解如何让他永生。"
   },
   {
     id: "ai800",
-    text: "The slowmode is activated when the slowmode is activated."
+    text: "当慢速模式被激活时，慢速模式被激活。"
   },
   {
     id: "ai801",
-    text: "A new era of Warcraft has come to a close. A new epic has begun. A new avatar has risen from the depths of Tyria, and the Worm Cult has been dealt a cruel but necessary wound. The world is rejoicing."
+    text: "一个新的魔兽时代已经结束。新的史诗已经开始。一个新的化身从泰瑞亚的深处崛起，蠕虫教团遭受了残酷但必要的创伤。世界在欢庆。"
   },
   {
     id: "ai802",
-    text: "A crowd-sourced list of the top ten memes"
+    text: "一个众包的前十梗列表"
   },
   {
     id: "ai803",
-    text: "You have to go deeper than the news ticker to find the secret achievements."
+    text: "你必须比新闻滚动条更深才能找到隐藏成就。"
   },
   {
     id: "ai804",
-    text: "We should be able to make a replicanti-like structure out of antimatter, but we can't because it would blow up the entire universe",
+    text: "我们应该能用反物质制造类似 replicanti 的结构，但我们不能，因为那会炸毁整个宇宙",
     get unlocked() { return PlayerProgress.replicantiUnlocked(); }
   },
   {
     id: "ai805",
-    text: "THe last update, while short, was kinda long. I mean, it was only 5 hours. Hevipelle said it would last for 5 hours, but that was only a few seconds ago. There was a big explosion in the 8th Dimension, and there was no one left to explain how it happened. All we know is that it exploded when Hevipelle touched it, and there was a big crater in the ground. That crater is still there."
+    text: "上次更新虽然很短，但有点长。我的意思是，它只有 5 小时。Hevipelle 说它会持续 5 小时，但那只是几秒钟前的事。第 8 维度发生了一次大爆炸，没有人留下来解释它是怎么发生的。我们所知道的是，Hevipelle 一碰它它就爆炸了，地上留下一个大坑。那个坑还在那里。"
   },
   {
     id: "ai806",
-    text: "Cream cheese is the best kind of cheese. It melts in your mouth and tastes like nothing else. And it's totally free. You might even find that some of the recipes make more than one cheese."
+    text: "奶油奶酪是最好的奶酪。它入口即化，尝起来无与伦比。而且完全免费。你甚至可能会发现有些食谱能做出不止一种奶酪。"
   },
   {
     id: "ai807",
-    text: "Here's a question that may surprise you: Were the people of EARTH made of antimatter, or were they made from some other mysterious material?"
+    text: "这里有个可能让你惊讶的问题：地球人是用反物质做的，还是用某种其他神秘材料做的？"
   },
   {
     id: "ai808",
-    text: "The real reason no one has made a joke about why there is no 9th dimension is because the 9th dimension isn't even the most ridiculous of memes. It's the 9th dimension in a nutshell."
+    text: "没有人拿“为什么没有第 9 维度”开玩笑的真正原因是，第 9 维度甚至不是最离谱的梗。第 9 维度简而言之就是这样。"
   },
   {
     id: "ai809",
-    text: "The number of dimensions is endless, but the number of ways to get there is infinities. Infinities are awesome and I would highly recommend you start with infinities, but I wouldn't recommend starting with infinities. Infinities seem pretty slow and not very fun so I wouldn't recommend starting with infinities."
+    text: "维度的数量是无穷的，但到达那里的方式的数量是无限的。无限很棒，我强烈建议你从无限开始，但我不建议从无限开始。无限看起来相当慢，也不太有趣，所以我不建议从无限开始。"
   },
   {
     id: "ai810",
-    text: "A report by the Pacific Northwest Toxics Institute has found that the consumption of fish concentrates in the liver, lungs, kidneys and brain. The study also found that the consumption of liver and kidney concentrates the most, followed closely by the brain. The report stated that \"The brain is the place where all the wisdom and all the knowledge exists.\" The study also stated that \"Liver is the living embodiment of all that we know and all that we don't.\""
+    text: "太平洋西北毒物研究所的一份报告发现，食用鱼类会在肝脏、肺、肾脏和大脑中富集。研究还发现，肝脏和肾脏的富集最多，紧随其后的是大脑。报告称“大脑是所有智慧和知识存在的地方。”研究还称“肝脏是我们所知和所不知的一切的活生生体现。”"
   },
   {
     id: "ai811",
-    text: "The old adage \"Be wary of what you wish for\" is certainly true. But what if you were the one wishing for this? It's possible that you were the one who made the wish for this, and you gained the power of the Antimatter. In that case, you are the one responsible for causing all the Antimatter to be turned into anti-matter. However, if you are the one doing the turning, you would be the one who would lose the power."
+    text: "“小心你许下的愿望”这句老话确实不假。但如果你就是许下这个愿望的人呢？有可能你就是那个许愿的人，而你获得了反物质的力量。那样的话，你就是导致所有反物质变成反物质的人。然而，如果你是那个进行转变的人，你就会是那个失去力量的人。"
   },
   {
     id: "ai812",
-    text: "Took you long enough"
+    text: "你终于来了"
   },
   {
     id: "ai813",
-    text: "No, you see, the universe doesn't revolve around the earth. It's in a constant state of change, with the largest fluctuations occurring at the extremes of the observable universe. These fluctuations are what create the observable universe, with smaller fluctuations creating the observable universe and so on up until you get to the present state of affairs, which is what you are in."
+    text: "不，你看，宇宙不是绕着地球转的。它处于不断变化的状态，最大的波动发生在可观测宇宙的极端。这些波动创造了可观测宇宙，较小的波动创造了可观测宇宙，以此类推，直到你到达现在的状态，也就是你所处的状态。"
   },
   {
     id: "ai814",
-    text: "The biggest difference between the past and the future, is the difference between faith and reason."
+    text: "过去和未来最大的区别，是信仰和理性的区别。"
   },
   {
     id: "ai815",
-    text: "Hevi, you have to go."
+    text: "Hevi，你得走了。"
   },
   {
     id: "ai816",
-    text: "The challenge of finding the ninth dimension has been solved. The universe is now your personal hell."
+    text: "找到第九维度的挑战已经解决了。宇宙现在是你的私人地狱。"
   },
   {
     id: "ai817",
-    text: "\"That's not how you're supposed to play the game\" - Mee6"
+    text: "“游戏不是那样玩的” - Mee6"
   },
   {
     id: "ai818",
-    text: "It's Saturday, you're going to celebrate by making some really great music videos, maybe even a hit song. Then, you're going to take a walk along the beach. You'll see a huge wave, and you'll both be washed up. Your friends are waiting for you. \"Oh you want to go, take a look around!\", but don't actually go look around, you're too close to the action."
+    text: "今天是星期六，你要通过制作一些非常棒的音乐视频来庆祝，也许还有一首热门歌曲。然后，你要沿着海滩散步。你会看到巨大的海浪，你们俩都会被冲走。你的朋友们在等你。“哦你想走，四处看看吧！”，但别真的去四处看，你离行动太近了。"
   },
   {
     id: "ai819",
-    text: "Hevi has the best newsticker! GIVE HIM THE CRUNCH"
+    text: "Hevi 有最好的新闻滚动条！给他来次大挤压"
   },
   {
     id: "ai820",
-    text: "By now you've seen a ton of news tickers, and you've probably seen the big news: The news ticker has been banned in this server."
+    text: "到现在你已经看过大量新闻滚动条了，你可能已经看到了大新闻：新闻滚动条已被禁止出现在这个服务器中。"
   },
   {
     id: "ai821",
-    text: "For example, if A is the square root of 3, then B is the square root of 2, therefore C is the square root of -2, therefore D is the cube root of -2, therefore E is the square root of 3, therefore F is the square root of 3, therefore G is the square root of 3, therefore and so on."
+    text: "例如，如果 A 是 3 的平方根，那么 B 是 2 的平方根，因此 C 是 -2 的平方根，因此 D 是 -2 的立方根，因此 E 是 3 的平方根，因此 F 是 3 的平方根，因此 G 是 3 的平方根，以此类推。"
   },
   {
     id: "ai822",
-    text: "Positrons are those tiny, round, highly charged particles that are found in the nucleus of most living organisms. They are used to detect light, and are sometimes used to measure the distance between people and the moon."
+    text: "正电子是那些微小、圆形、高电荷的粒子，存在于大多数生物的细胞核中。它们被用来探测光，有时还被用来测量人与月球之间的距离。"
   },
   {
     id: "ai823",
-    text: "There's only 4 types of people in this world: those who make games, those who make news, and those who make news again."
+    text: "这个世界上只有 4 种人：做游戏的人、做新闻的人，以及再做新闻的人。"
   },
   {
     id: "ai824",
-    text: "If you have any questions or concerns regarding the game, please don't hesitate to ask. We are here to help."
+    text: "如果你对游戏有任何问题或疑虑，请尽管提问。我们在这里提供帮助。"
   },
   {
     id: "ai825",
-    text: "You must obtain a certain amount of antimatter in order to complete this challenge."
+    text: "你必须获得一定数量的反物质才能完成这个挑战。"
   },
   {
     id: "ai826",
-    text: "The number of dimensions is nothing. It's just the number of dimensions. But what if you transformed every number into a letter? That would be a lot of letters?"
+    text: "维度的数量什么都不是。它只是维度的数量。但如果你把每个数字都变成字母呢？那会有很多字母吧？"
   },
   {
     id: "ai827",
-    text: "The following is an extract from my upcoming book, More Than Just 5: Building a Better You. It's 200 pages long, and it's on Amazon for $22.99. Click here to buy it now."
+    text: "以下摘自我的新书《不仅仅是 5：打造更好的你》。它有 200 页，在 Amazon 上售价 22.99 美元。点击这里立即购买。"
   },
   {
     id: "ai828",
-    text: "SOME people are claiming they saw a UFO in the sky. Others say they saw a spaceship. Still others claim to have been abducted by the government and flown to some undisclosed location."
+    text: "有些人声称他们在天空中看到了 UFO。另一些人说他们看到了宇宙飞船。还有一些人声称被政府绑架，飞到了某个未公开的地点。"
   },
   {
     id: "ai829",
-    text: "The second half of the game is basically just long, long stretches of nothing where nothing happens. There's also a third challenge that you have to complete at some point in the game where you basically just skip a few seconds of nothing happening until the seconds are too late and you have to complete another challenge to get them."
+    text: "游戏的后半部分基本上就是很长很长什么也不发生的空白。游戏里还有一个第三个挑战，你必须在某个时候完成，基本上就是跳过几秒钟的空白，直到这些秒太晚了，你必须完成另一个挑战才能拿回它们。"
   },
   {
     id: "ai830",
-    text: "This is a news ticker, so if you tap this you're indicating that you wish to have your news ticker speed increased."
+    text: "这是一条新闻滚动条，所以如果你点击它，表示你希望加快新闻滚动条的速度。"
   },
   {
     id: "ai831",
-    text: "The following is based on my personal experience with the game \"Antimatter Dimensions\" and may not be 100% true."
+    text: "以下内容基于我玩“反物质维度”的个人经验，可能并非 100% 真实。"
   },
   {
     id: "ai832",
-    text: "This is the third part of the two part series on the pros and cons of body positivity."
+    text: "这是关于身体正能量利弊的两部分系列中的第三部分。"
   },
   {
     id: "ai833",
-    text: "The phrases \"Hevi dies in the 9th Dimension\" and \"I'll never let you down\" are two of the most important phrases in the game."
+    text: "“Hevi 死于第 9 维度”和“我永远不会让你失望”是游戏中最重要的话之一。"
   },
   {
     id: "ai834",
-    text: "It's been proven that not drinking water increases your risk of dying from antimatter annihilation."
+    text: "已经证明，不喝水会增加你死于反物质湮灭的风险。"
   },
   {
     id: "ai835",
-    text: "I'm a time traveler. I'm supposed to be going back in time to change history. But since I'm the one who's supposed to do it, I don't know what I should do. My present timeline doesn't include time that's supposed to be gone."
+    text: "我是时间旅行者。我本该回到过去改变历史。但既然我是那个应该去做的人，我不知道该怎么办。我当前的时间线不包括那些本该消失的时间。"
   },
   {
     id: "ai836",
-    text: "A conference on artificial intelligence and human enhancement has been cancelled after someone announced that the talk was on how to turn a profit off of illegal downloads of the game \"Antimatter Dimensions\"."
+    text: "一场关于人工智能和人类增强的会议被取消，因为有人宣布演讲主题是如何从非法下载游戏“反物质维度”中获利。"
   },
   {
     id: "ai837",
-    text: "When you're done playing, take your save with you and go to main menu. You can do that by tapping the big scary \"X\" button, or by going into options and changing \"Reset the game for new save\" to \"Reset the game for old save\"."
+    text: "当你玩完后，带上你的存档去主菜单。你可以点击那个又大又吓人的“X”按钮，或者进入选项，把“重置游戏以获得新存档”改成“重置游戏以获得旧存档”。"
   },
   {
     id: "ai838",
-    text: "The most popular game on the App Store, Flappy Bird, has been secretly rewritten in C# to avoid detection."
+    text: "App Store 最受欢迎的游戏 Flappy Bird 已被秘密用 C# 重写，以避免被发现。"
   },
   {
     id: "ai839",
-    text: "About this mod Replaces the full version of the game with a longer intro, random news tickers and a companion voiced by the voice actor from the Harry Potter movies."
+    text: "关于这个模组：用更长的开场、随机新闻滚动条和一个由哈利·波特电影配音演员配音的同伴替换游戏的完整版。"
   },
   {
     id: "ai840",
-    text: "kajfik is a master welder and will soon have his own news"
+    text: "kajfik 是焊接大师，很快他就会有属于自己的新闻"
   },
   {
     id: "ai841",
-    text: "I am the most hated man on the planet! I have the power to change the course of history, and I will use it to my advantage. The people who died trying to stop me, and their sacrifice will forever be remembered in infinities of infinities. But if you oppose me, you will die along with you. You can either accept defeat and move on, or you can rise up through the ranks, become a legend, and become the most hated man in the history."
+    text: "我是这个星球上最被憎恨的人！我有改变历史进程的力量，我会用它来谋取利益。那些试图阻止我而死的人，他们的牺牲将被铭记在无限之无限中。但如果你反对我，你会和你的随从一起死去。你要么接受失败继续前进，要么在层层晋升中崛起，成为传奇，成为历史上最被憎恨的人。"
   },
   {
     id: "ai842",
-    text: "Antimatter is like a young woman. She is looking for a man, and he runs into the woods. She dies of exposure soon after. His remains are found several miles away. Some say the universe was blown apart, others say he was swallowed by the universe, but the matter people know him!"
+    text: "反物质就像一个年轻女子。她在寻找一个男人，而男人跑进了树林。她很快因暴露而死。他的遗骸在几英里外被发现。有人说宇宙被炸开了，有人说他被宇宙吞噬了，但物质人认识他！"
   },
   {
     id: "ai843",
-    text: "I think I might have gotten the password for the 9th dimension, if only I hadn't deleted it."
+    text: "我想我可能已经拿到了第 9 维度的密码，要是我没删掉它就好了。"
   },
   {
     id: "ai844",
-    text: "A group of people that worships Atreides have started a new faith, claiming to be a \"religion of tolerance\". Their website claims that it is \"a religion of inclusion\" and that it promotes tolerance and diversity. All of its members seem to be Christians, although they never mentioned them by name."
+    text: "一群崇拜 Atreides 的人开创了一个新信仰，自称“宽容的宗教”。他们的网站声称这是“包容的宗教”，倡导宽容和多样性。它的所有成员似乎都是基督徒，尽管他们从未指名道姓。"
   },
   {
     id: "ai845",
-    text: "A new cryptocurrency, called ΔX, has been found. It has the potential to change everything about how we live our lives, and the world. However, it has one major flaw: it has a flaw for the people."
+    text: "一种名为 ΔX 的新加密货币被发现了。它有潜力改变我们生活和世界的方方面面。然而，它有一个重大缺陷：它对人有缺陷。"
   },
   {
     id: "ai846",
-    text: "With the release of the new Android Pay app, the world will finally come to a close."
+    text: "随着新的 Android Pay 应用的发布，世界终于要终结了。"
   },
   {
     id: "ai847",
-    text: "I'm not sure if it's just me but when you type something long enough it sounds like a helicopter"
+    text: "我不确定是不是只有我这样，但当你输入足够长的文字时，它听起来像直升机"
   },
   {
     id: "ai848",
-    text: "If someone were to add the word \"infinity\" to the end of every sentence in the English version of the game, it would become \"Infinity Challenge: Infinity Edition\"."
+    text: "如果有人给游戏英文版的每个句子末尾加上“infinity”一词，它就会变成“无限挑战：无限版”。"
   },
   {
     id: "ai849",
-    text: "Are you ready for some bad news?"
+    text: "准备好听坏消息了吗？"
   },
   {
     id: "ai850",
-    text: "I don't know if you've heard this but it's true: You can walk into a bar and get the same beer twice in a row, and get the same amount of alcohol."
+    text: "我不知道你听没听说过，但这是真的：你可以走进酒吧，连续两次点到同样的啤酒，获得同样的酒精含量。"
   },
   {
     id: "ai851",
-    text: "This is the magic sauce that marinades foods and turns them into something delicious. It is used in a wide variety of recipes, and can also be made by mixing together regular mustard and water. The sauce can be a little bit spicy, but it is well worth the risk. It is also very nutritious, providing lots of potassium, magnesium, and vitamin D3."
+    text: "这是能腌制食物并把它们变得美味的魔法酱汁。它被广泛用于各种食谱，也可以把普通芥末和水混合制成。这种酱汁可能有点辣，但非常值得冒险。它也很有营养，提供大量钾、镁和维生素 D3。"
   },
   {
     id: "ai852",
-    text: "IMPORTANT NEWS: We have just been informed by the manufacturer of this news-ticker, and as a result, all of our future news-tickers will now also be made from scratch!"
+    text: "重要新闻：我们刚刚收到这条新闻滚动条制造商的通报，因此，我们未来所有的新闻滚动条也将全部从零开始制造！"
   },
   {
     id: "ai853",
-    text: "The second half of the year is upon us, and with it comes a new craze. People are trying new things, experimenting with new products, and creating new things of themselves. One such craze has swept across the land. The people of this land have embraced this craze, and have created a new religion, one that worships the god of this land, Inigo Montoya."
+    text: "下半年来临了，随之而来的是一股新热潮。人们在尝试新事物，试验新产品，创造新的自我。其中一股热潮席卷了这片土地。这片土地的人们拥抱了这股热潮，创造了一个新宗教，一个崇拜这片土地之神 Inigo Montoya 的宗教。"
   },
   {
     id: "ai854",
-    text: "The official website for the upcoming game, Antimatter Dimensions 2: it's like antimatter dimensions, but with a dash of Discord and a dash of Adele."
+    text: "即将推出的游戏反物质维度 2 的官方网站：它就像反物质维度，但加了一点 Discord 和一点 Adele。"
   },
   {
     id: "ai855",
@@ -6747,281 +6105,281 @@ export const news = [
   },
   {
     id: "ai856",
-    text: "The only 'right' way to play a game is to not play at all, right? That's what anti-jokes are all about. — Anti-joker"
+    text: "玩游戏的唯一“正确”方式就是完全不玩，对吧？这就是反笑话的意义所在。 Anti-joker"
   },
   {
     id: "ai857",
-    text: "The Bulletin of the Atomic Scientists has just announced the existence of a second class of particles, which are named after the characters from Ghostbusters."
+    text: "《原子科学家公报》刚刚宣布存在第二类粒子，它们以《捉鬼敢死队》中的角色命名。"
   },
   {
     id: "ai858",
-    text: "We are currently in the process of turning the planet into a Comfort Zone for the people. It will be complete in 10 hours."
+    text: "我们目前正在把地球变成人们的舒适区。它将在 10 小时内完成。"
   },
   {
     id: "ai859",
-    text: "I'm gonna leave my milk here for a couple seconds. ♥"
+    text: "我要把牛奶放在这里几秒钟。"
   },
   {
     id: "ai860",
-    text: "And then there was Jesus, and Hevi, and Hevi was with Him; and the sea gave up its monthly cycle, and it was a great gale. And Hevi and Jesus went up into heaven; and Hevi was filled with the Holy Spirit. And Hevi was clothed with angels, and was numbered with them. And Hevi was taken up into heaven, and glorified and was exalted, and was numbered with them, and was called Wonderful; and His angels rejoiced."
+    text: "然后是耶稣和 Hevi，Hevi 与祂同在；大海交出了它的月度周期，刮起了大风。Hevi 和耶稣升上天堂；Hevi 被圣灵充满。Hevi 披上天使之衣，与众天使并列。Hevi 被接到天上，得荣耀、被高举，与众天使并列，被称为奇妙；祂的天使们欢呼。"
   },
   {
     id: "ai861",
-    text: "You will probably spend most of your day reading news ticker suggestions here."
+    text: "你可能会在这里花掉一天的大部分时间读新闻滚动条建议。"
   },
   {
     id: "ai862",
-    text: "The Fremen race of animals are a race of people who live in harmony with the earth, and thus are quite different from the other races of animals. Their society is based around hunting and gathering, and they are also highly spiritual people. They have many beliefs and practices that are in direct contrast to most other races of animals, such as eating meat and using stone tools. They also seem to be quite superstitious, as evidenced by the fact that they are known to perform..."
+    text: "Fremen 动物一族是与地球和谐共处的种族，因此与其他动物种族截然不同。他们的社会以狩猎和采集为基础，他们也是高度灵性的民族。他们有许多信仰和习俗与大多数其他动物种族直接相反，比如吃肉和使用石制工具。他们似乎也非常迷信，证据是他们以进行……而闻名"
   },
   {
     id: "ai863",
-    text: "What if... the universe was just a ruse to keep the people in line? ...actually, no, it was actually intended, the universe was designed to keep the people in line. The problem was the people couldn't handle the idea of an outside force manipulating their lives, and ended up breaking out into uncontrolled chaos, eventually leading to thermonuclear annihilation."
+    text: "万一……宇宙只是一个让人民安分守己的骗局呢？……其实，不，它是经过深思熟虑的，宇宙的设计就是为了让人民安分守己。问题是人们无法接受外部力量操纵他们生活的想法，最终爆发为失控的混乱，最终导致热核湮灭。"
   },
   {
     id: "ai864",
-    text: "If you're reading this, you probably shouldn't have. If you aren't, then you probably should."
+    text: "如果你正在读这条消息，你大概不应该读。如果你没在读，那你大概应该读。"
   },
   {
     id: "ai865",
-    text: "I'm a time traveler. I can tell you the history of the world. But, I can't tell you the future. That's why I'm here, to tell you the future. The future is an ever- expanding pile of past, present, and future, and it'll never stop growing. There's so much history, so little time. There's so much history, but it won't stop growing. Then, there's this, and then there's that, and then..."
+    text: "我是时间旅行者。我可以告诉你世界的历史。但我不能告诉你未来。这就是我在这里的原因，来告诉你未来。未来是一个不断膨胀的过去、现在和未来的堆叠，而且永远不会停止增长。历史太多，时间太少。历史太多，但它不会停止增长。然后是这，然后那是，然后……"
   },
   {
     id: "ai866",
-    text: "A new, improved and more secure version of Antimatter Dimensions is now available: Antimatter Dimensions 2."
+    text: "一个新的、改进的、更安全的反物质维度版本现已可用：反物质维度 2。"
   },
   {
     id: "ai867",
-    text: "In the beginning, there was nothing. Then the great Hevi made the game, and there was nothing to play with it."
+    text: "起初，一无所有。然后伟大的 Hevi 制作了游戏，但没有任何东西可以和它一起玩。"
   },
   {
     id: "ai868",
-    text: "Would you recommend Antimatter Dimensions to a friend? Yes"
+    text: "你会向朋友推荐反物质维度吗？会"
   },
   {
     id: "ai869",
-    text: "\"We have 3 kinds of news: warnings, nudges and shade jokes."
+    text: "“我们有 3 种新闻：警告、轻推和暗影笑话。”"
   },
   {
     id: "ai870",
-    text: "I love you bro!"
+    text: "我爱你兄弟！"
   },
   {
     id: "ai871",
-    text: "I'm going to keep this short, because I don't have a much to say."
+    text: "我会长话短说，因为我没有太多要说的。"
   },
   {
     id: "ai872",
-    text: "A large number of anti-kafawis are taking part in the Antimatter Goodies competition. Here's how you can win: 1. Make a suggestion 2. Give away the beta key 3. Tell me what you think about the game 4. Don't put it in the game yet (it's already there, you can't delete it) 5. Don't put it in the game yet (it's already in the game) 6. Don't put it in the game"
+    text: "大量反 kafawi 正在参加反物质好礼竞赛。以下是获胜方法：1. 提个建议 2. 送出测试密钥 3. 告诉我你对游戏的看法 4. 先别把它放进游戏（它已经在了，你删不掉）5. 先别把它放进游戏（它已经在游戏里了）6. 别把它放进游戏"
   },
   {
     id: "ai873",
-    text: "THe recipe for Crispy Shrimp is one of the most unique and favorite of all time! Crispy shrimp are known to be one of the best in all of food! This recipe is a must try in your favorite Italian restaurant!"
+    text: "酥脆虾的食谱是有史以来最独特、最受欢迎的食谱之一！酥脆虾被誉为所有食物中最好吃的之一！这个食谱是你最爱的意大利餐厅必尝之选！"
   },
   {
     id: "ai874",
-    text: "After you have made 1 antimatter, go to the menu and press reset."
+    text: "制作 1 份反物质后，进入菜单并按下重置。"
   },
   {
     id: "ai875",
-    text: "I think you know where this is going."
+    text: "我想你知道这会走向何方。"
   },
   {
     id: "ai876",
-    text: "The catch? You have to be online for less than 5 hours to claim your reward."
+    text: "有个条件？你必须在线上少于 5 小时才能领取奖励。"
   },
   {
     id: "ai877",
-    text: "Tetris was made by Hevi"
+    text: "俄罗斯方块是 Hevi 做的"
   },
   {
     id: "ai878",
-    text: "What if instead of making antimatter, we're actually removing it?"
+    text: "万一我们不是在制造反物质，而是在移除它呢？"
   },
   {
     id: "ai879",
-    text: "The new instalment in the long running series, Antimatter Dimensions - Exotic Matter Dimensions. Experience the most bizarre and wonderful worlds of Antimatter Dimensions with your Friends, or conquer the world in a single galaxy with hundreds of rivals in a single galaxy, all in under an hour."
+    text: "长寿系列的新作：反物质维度：奇异物质维度。与你的朋友们一起体验反物质维度最奇特、最美妙的世界，或者在不到一小时内，在同一个星系里与数百个对手一起征服世界。"
   },
   {
     id: "ai880",
-    text: "I hope you're ready for the big news, because that's the big news. The antimatter is spilling all over the place, and it's blowing up the neighborhood."
+    text: "我希望你准备好迎接大新闻了，因为这就是大新闻。反物质正在四处溢出，把整个街区都炸了。"
   },
   {
     id: "ai881",
-    text: "You must get 33,333,333 IP to see this message",
+    text: "你必须获得 33,333,333 IP 才能看到这条消息",
     get unlocked() { return Currency.infinityPoints.gte(33333333); }
   },
   {
     id: "ai882",
-    text: "You might think these are jokes, but trust us, you'll be shocked how much you'll love them after you read them!"
+    text: "你可能以为这些是笑话，但请相信我们，读完它们之后，你会惊讶于自己有多喜欢！"
   },
   {
     id: "ai883",
-    text: "The God-Emperor himself, Hevi, the creator of balance, has a super secret achievement. It is to go flip your superflat apprenticed flatmate!"
+    text: "神皇本人，平衡的创造者 Hevi，有一个超级隐藏成就。那就是去把超平坦学徒室友掀翻！"
   },
   {
     id: "ai884",
-    text: "Sonic was born without a heart... but that didn't stop him from being a genius"
+    text: "索尼克生来没有心脏……但这并没有阻止他成为天才"
   },
   {
     id: "ai885",
-    text: "The most common question I get is \"can i just skip the ads and get true\" and the answer is always a resounding NO. The reason being, ad revenue is just too damn high to overcome the cost of maintaining the servers, plus the fact that most players just don't care."
+    text: "我收到的最常见问题是“我能跳过广告直接获得真相吗”，答案永远是响亮的“不”。原因是广告收入太高了，无法抵消维护服务器的成本，再加上大多数玩家根本不在乎。"
   },
   {
     id: "ai886",
-    text: "You haven't unlocked the ninth dimension yet? Just hold M and DROP."
+    text: "你还没解锁第九维度？只需按住 M 然后放手。"
   },
   {
     id: "ai887",
-    text: "The Great Matter War was a close one. The matter victory was short lived, the antimatter victory was not. The matter people saw too much, the antimatter people too weak, and the war was won."
+    text: "物质大战打得很胶着。物质的胜利很短暂，反物质的胜利则不然。物质人看得太多，反物质人太弱，战争赢了。"
   },
   {
     id: "ai888",
-    text: "Turing-complete game about providing the update"
+    text: "关于提供更新的图灵完备游戏"
   },
   {
     id: "ai889",
-    text: "New research suggests that the more antimatter we make, the more matter we'll have"
+    text: "新研究表明，我们制造的反物质越多，拥有的物质就越多"
   },
   {
     id: "ai890",
-    text: "What is the meaning of life?"
+    text: "生命的意义是什么？"
   },
   {
     id: "ai891",
-    text: "You have enough antimatter to craft a new prestige layer! Prestige Layers are great."
+    text: "你有足够的反物质来打造一个新的飞升层！飞升层很棒。"
   },
   {
     id: "ai892",
-    text: "The beta testers for Antimatter Dimensions 2 are the most loyal, most dedicated, and most implacable group of people I've ever met. They're also possibly the laziest, most self-indulgent bunch of people I've ever met."
+    text: "反物质维度 2 的测试员是我见过的最忠诚、最敬业、最执着的一群人。他们也可能是我见过的最懒惰、最放纵的一群人。"
   },
   {
     id: "ai893",
-    text: "Shocking new study reveals that the more time you spend on the internet, the more likely you are to get starstruck."
+    text: "令人震惊的新研究揭示，你在互联网上花的时间越多，就越容易追星。"
   },
   {
     id: "ai894",
-    text: "When you are done playing, and wish to play again, you should start a new game."
+    text: "当你玩完并想再玩时，你应该开始一个新游戏。"
   },
   {
     id: "ai895",
-    text: "I don't know about you, but I don't buy paperclips."
+    text: "不知道你怎么想，但我不买回形针。"
   },
   {
     id: "ai896",
-    text: "Hevipelle uses replicanti to speed up game speed.",
+    text: "Hevipelle 用 replicanti 来加快游戏速度。",
     get unlocked() { return PlayerProgress.replicantiUnlocked(); }
   },
   {
     id: "ai897",
-    text: "So let's say you're making a game. You're making a singleton. You're making a game that's gonna be played offline. What happens when you play it? It crashes. What happens when you play it? It crashes more. What happens when you play it? You lose your save."
+    text: "假设你在做一款游戏。你在做一个单机游戏。你在做一个要离线游玩的游戏。你玩它会怎样？它崩溃了。你玩它会怎样？它更崩溃。你玩它会怎样？你丢了存档。"
   },
   {
     id: "ai898",
-    text: "This is what happens when you OVER-RELY on your \"fake it til you make it\" attitude."
+    text: "这就是你过度依赖“假装直到成功”态度的下场。"
   },
   {
     id: "ai899",
-    text: "This is the fifth part of a two-part series looking at how science and magic are linked. Part one will be published on 5 October, part two will be published on 24 October, and you can follow the journey at part three."
+    text: "这是探讨科学与魔法如何联系的两部分系列中的第五部分。第一部分将于 10 月 5 日发布，第二部分将于 10 月 24 日发布，你可以在第三部分跟随这段旅程。"
   },
   {
     id: "ai900",
-    text: "What is 5 hours? A giggle"
+    text: "5 小时是什么？一声咯咯笑"
   },
   {
     id: "ai901",
-    text: "A new beta test is now available for Antimatter Dimensions, coming in 5 hours. There are no refunds for this test, so please be patient as we try to finalise the test and get it ready for the public. The test will take place in -5 hours in the Antimatter Dimensions Discord."
+    text: "反物质维度的新测试版现已开放，5 小时后到来。本次测试不支持退款，请耐心等待我们完成测试并准备好向公众开放。测试将在 -5 小时后的反物质维度 Discord 中进行。"
   },
   {
     id: "ai902",
-    text: "The Night is coming, and in its wake a terrible thing has been unleashed: ruin. Chaos. And decay. And death. And chaos is coming for all of us."
+    text: "黑夜将至，随之而来的是一个可怕的东西被释放：毁灭。混乱。腐朽。死亡。混乱正朝我们所有人袭来。"
   },
   {
     id: "ai903",
-    text: "This article is a stub. You can help Deskthority by expanding it."
+    text: "这篇文章是个小条目。你可以通过扩充它来帮助 Deskthority。"
   },
   {
     id: "ai904",
-    text: "A new, safer way to store and retrieve your data has been found! When you get to the AE, click on the big red button and the world will stop rotating!"
+    text: "一种新的、更安全的数据存储和检索方式已被发现！当你到达 AE 时，点击那个大红按钮，世界就会停止旋转！"
   },
   {
     id: "ai905",
-    text: "Ooh, what's this noise? A crash of some sort? More like, a crash of some greater magnitude? I don't know. Whatever it is, it's probably not being caused by me. I shouldn't be putting it through, it's just... well, you see, I was going to put it through, but then I just thought it might be a good idea to just put it through. Oh, it's gonna be a good one, I promise."
+    text: "哦，这是什么声音？某种撞击？更像是，某种更大规模的撞击？我不知道。不管是什么，大概都不是我造成的。我不该把它放进去，它只是……好吧，你看，我本来要把它放进去，但后来我觉得把它放进去可能是个好主意。哦，这会是个好主意，我保证。"
   },
   {
     id: "ai906",
-    text: "Last week, we reported that an unknown individual known only as \"Anti-Doctor\" has broken the game and claimed ownership of the game's data. Since then, he has spread the word that he has an \"explosive new app\" that will allow him to \"turn [he] antimatter.\" However, no one has come forward with information on how to use the app, or even if it is a reality. We will update this article if and when we find out."
+    text: "上周，我们报道了一个只知道叫“反医生”的神秘人物破解了游戏并声称拥有游戏数据的所有权。从那以后，他到处散布消息，说他有一个“爆炸性的新应用”，可以让他“把[他]变成反物质。”然而，没有人提供关于如何使用该应用的信息，甚至不知道它是否真实。如果发现了什么，我们会更新这篇文章。"
   },
   {
     id: "ai907",
-    text: "The second thing I'm gonna do is go talk to the Devs in person. I don't know if I'll be able to do that without pissing someone off, so I'm gonna do it right here."
+    text: "我要做的第二件事是亲自去找开发者谈谈。我不知道我能不能做到不惹人生气，所以我要在这里做。"
   },
   {
     id: "ai908",
-    text: "The great majority of people don't get the full benefit of antimatter dimensions, and as such are not affected by it. However, there are certain people who are affected and at certain times of the day, depending on their mood and how much antimatter they have, they will manifest a dimensional shift, going from being idle to being actively involved in news ticker suggestions. This shift is due to the antimatter in their body emitting a certain wavelength, called \"red-shifted\"."
+    text: "绝大多数人没有充分受益于反物质维度，因此不受其影响。然而，有某些人会受到影响，在一天中的某些时候，根据他们的心情和他们拥有的反物质数量，他们会显现出维度偏移，从挂机状态变成积极参与新闻滚动条建议的状态。这种偏移是由于他们体内的反物质发出某种波长，称为“红移”。"
   },
   {
     id: "ai909",
-    text: "By now we all know the drill. You get a new prestige layer just by spending eternity with someone."
+    text: "到现在我们都懂这套流程。你只要和某人共度永恒，就能获得一个新的飞升层。"
   },
   {
     id: "ai910",
-    text: "The real reason that the 9th dimension exists is to keep us all imprisoned in a virtual reality simulation."
+    text: "第 9 维度存在的真正原因是为了把我们所有人囚禁在一个虚拟现实模拟中。"
   },
   {
     id: "ai911",
-    text: "Your PC is infected with a weird, floating virus that's trying to steal all your antimatter. There's no cure, so get offline now!"
+    text: "你的电脑感染了一种奇怪的漂浮病毒，它正试图偷走你所有的反物质。没有解药，现在就下线！"
   },
   {
     id: "ai912",
-    text: "The year is 5303. Hevipelle, the creator of Antimatter Dimensions, has touched the ninth dimension."
+    text: "现在是 5303 年。反物质维度的创造者 Hevipelle 触碰了第九维度。"
   },
   {
     id: "ai913",
-    text: "The phrase \"Hevipelle hates me\" is pretty funny."
+    text: "“Hevipelle 恨我”这句话挺好笑的。"
   },
   {
     id: "ai914",
-    text: "The government shutdown has come and gone, the nation is still in a recession, and the Federal Reserve is still reading zero-hour contracts. The only thing that's getting better is your relationship with antimatter, obviously. It's been proven that knowing someone with an antimatter will bring you closer to extinction than any other kind of friend you can have."
+    text: "政府停摆来了又走了，国家仍处于衰退中，美联储仍在研读零时合同。唯一在变好的显然是你与反物质的关系。已经证明，认识一个有反物质的人，比拥有任何其他朋友都更能让你接近灭绝。"
   },
   {
     id: "ai915",
-    text: "IMPORTANT NEWS: The developer Hevipelle has announced that Antimatter Dimensions: the game is now 100% free!"
+    text: "重要新闻：开发者 Hevipelle 宣布，反物质维度：游戏现在 100% 免费！"
   },
   {
     id: "ai916",
-    text: "Someday, we shall come upon the day when a man will sit on the head of a dragon and call it a \"Dragonball\". Such a man would then go and perform the Dragon Ball Z: Battle Royale in which he would use Dragon Ball Z: Fusion to create a gigantic dragon that would then consume the universe in the process, thus creating a \"Big Bang\". Such a man would then be rewarded by being \"built again\" and sent back to the \"Heavens\"."
+    text: "总有一天，我们会迎来一个人坐在龙头上的日子，并称之为“龙珠”。这样的人随后会去进行龙珠 Z：大逃杀，用龙珠 Z：融合创造一条巨龙，然后巨龙吞噬宇宙，从而创造“大爆炸”。这样的人随后会被“重新建造”并送回“天堂”作为奖励。"
   },
   {
     id: "ai917",
-    text: "\"I think that the greatest achievement a man can make in his life is to say that he has read every single news ticker suggestion and nothing happened.\" - Kajfik"
+    text: "“我认为一个人一生中最大的成就是可以说他读完了每一条新闻滚动条建议，而什么都没发生。” - Kajfik"
   },
   {
     id: "ai918",
-    text: "Titanfall 2 is now in closed beta. The beta is only for people who are willing to give up some personal information, such as email addresses. If you're in the beta and would like to leave, you can do so at any time by going to the Help tab and changing your beta settings to public."
+    text: "泰坦陨落 2 现已进入封闭测试。测试版只面向愿意交出一些个人信息（如电子邮件地址）的人。如果你在测试版中并想退出，你可以随时进入帮助标签页，把你的测试设置改为公开。"
   },
   {
     id: "ai919",
-    text: "Personally I like to get a 4 or 5 star rating, it gives you an idea of how great your suggestion is and also shows me how much you care about the game. If you want I can also do a 6 star rating, which is fine with me. I don't care if people like it or not, I work for APG and I get paid to make money."
+    text: "就我个人而言，我喜欢 4 或 5 星评价，它能让你知道你的建议有多棒，也让我看到你对游戏有多在意。如果你愿意，我也可以给 6 星评价，我没意见。我不在乎人们喜不喜欢，我为 APG 工作，我靠赚钱拿薪水。"
   },
   {
     id: "ai920",
-    text: "The real reason no one talks about 9 is because it's not a big secret"
+    text: "没有人谈论 9 的真正原因是它不是什么大秘密"
   },
   {
     id: "ai921",
-    text: "The only difference between a man and a woman is their attitude towards petting animals."
+    text: "男人和女人唯一的区别是他们对抚摸动物的态度。"
   },
   {
     id: "ai922",
-    text: "A number of recent television documentaries have featured the story of a dog named Louie. He was accidentally made a member of the public after his owner left the house. One day he decided to play 'Let's Play Let's Play' with his owner. He was immediately put to sleep."
+    text: "最近一些电视纪录片讲述了名叫 Louie 的狗的故事。他的主人离家后，他意外地成为了公众的一员。有一天，他决定和主人玩“让我们一起玩让我们一起玩”。他立刻被安乐死了。"
   },
   {
     id: "ai923",
-    text: "The entire history of the world, every single idea, every single failure, every single downfall, every single achievement has been covered in one fell swoop."
+    text: "世界整个历史，每一个想法、每一次失败、每一次衰落、每一项成就，都在一瞬间被覆盖了。"
   },
   {
     id: "ai924",
-    text: "This sentence contains two paradoxes."
+    text: "这句话包含两个悖论。"
   },
   {
     id: "ai925",
@@ -7029,59 +6387,59 @@ export const news = [
   },
   {
     id: "ai926",
-    text: "I wonder what the fuss is about with the 4th dimension? Well, if you have 4 of them, and you multiply them by 0, then you get to the magical number of 4. That's why the 4th dimension exists. But what if there were 5? Well, the 5th dimension could replace the 4th dimension, so why not have a 5th dimension? Well, that's what the 6th, the 7th, and the 8th dimension are."
+    text: "我想知道第四维度有什么大惊小怪的？好吧，如果你有 4 个，把它们乘以 0，你就会得到神奇的数字 4。这就是第四维度存在的原因。但如果有 5 个呢？好吧，第五维度可以取代第四维度，所以为什么不来个第五维度呢？好吧，这就是第六、第七和第八维度。"
   },
   {
     id: "ai927",
-    text: "You are using the wrong version! The reality update is already out! Press Ctrl+Shift+Alt+Del to unlock the 9th Dimension!"
+    text: "你用错版本了！现实更新已经发布了！按 Ctrl+Shift+Alt+Del 解锁第 9 维度！"
   },
   {
     id: "ai928",
-    text: "A man claims that he's been in a coma for 20 years now, and that he can't move his fingers. He was brought to the hospital with a compression fracture of his back, and since then he's been receiving medical help. He's since recovered, and now requires no medical attention. We still don't know where he's going with this, but we hope he finds some comfort in knowing that he'll never wake up."
+    text: "一名男子声称他已经昏迷 20 年，而且无法移动手指。他因背部压缩性骨折被送进医院，此后一直在接受医疗帮助。他后来康复了，现在不再需要医疗护理。我们仍然不知道他想表达什么，但我们希望他能从永远不会醒来的认知中找到一些安慰。"
   },
   {
     id: "ai929",
-    text: "To move from left to right, turn right."
+    text: "要从左到右移动，请向右转。"
   },
   {
     id: "ai930",
-    text: "Then we have the matter dimensions. From what I can gather, they are made of antimatter. There is some debate about whether or not there are any dimensions left over that are made out of matter, but that is not the main question. The real question is \"why do they exist, and how does antimatter affect them?\""
+    text: "然后我们有物质维度。据我了解，它们是由反物质构成的。关于是否还有由物质构成的剩余维度存在一些争论，但那不是主要问题。真正的问题是“它们为什么存在，反物质如何影响它们？”"
   },
   {
     id: "ai931",
-    text: "A new breed of mad scientist is believed to be creating antimatter at an alarming rate."
+    text: "据信一种新型疯狂科学家正在以惊人的速度制造反物质。"
   },
   {
     id: "ai932",
-    text: "A new kind of justice has been discovered: mass deception. It works by tricking the player into thinking that he/she has done something wrong, when in fact he/she has just done something perfectly normal, i.e. going about his/her daily life normally, without thinking about it."
+    text: "发现了一种新的正义：大规模欺骗。它的运作方式是诱使玩家认为自己做了什么错事，而实际上他/她只是做了一件完全正常的事，比如正常地过日常生活，没有多想。"
   },
   {
     id: "ai933",
-    text: "Dedicated to the great and wonderful man behind the curtain, the great and wonderful name rick roll. RIP, good man. May you rest in peace."
+    text: "献给幕后那位伟大而奇妙的人，那个伟大而奇妙的名字：瑞克摇。安息吧，好人。愿你长眠安宁。"
   },
   {
     id: "ai934",
-    text: "For the last time, Antimatter Dimensions isn't a Clicker game."
+    text: "最后一次说，反物质维度不是点击器游戏。"
   },
   {
     id: "ai935",
-    text: "The number of dimensions is infinite, but the quality of your dimensions is limited. This is why we only produce the highest quality antimatter, and what makes us different from other factories."
+    text: "维度的数量是无限的，但你维度的质量是有限的。这就是为什么我们只生产最高质量的反物质，这也是我们与其他工厂不同的地方。"
   },
   {
     id: "ai936",
-    text: "I've heard of prestige layers before but never sure what to do with them."
+    text: "我以前听说过飞升层，但一直不知道该怎么用它们。"
   },
   {
     id: "ai937",
-    text: "A man walks into a bar. The bartender tells him to stay the heck out. The man continues walking."
+    text: "一个男人走进一家酒吧。酒保叫他滚出去。男人继续走。"
   },
   {
     id: "ai938",
-    text: "The oldest and maybe the most famous game in all of AD, that certainly will be remembered long after you retire, is AD. Ever heard of someone winning the game with more than 2 1's? I have. Ever heard of someone losing it? I have. Ever heard of a 9th dimension existing in AD? I have never."
+    text: "AD 中历史最悠久、可能也是最著名的游戏，肯定会在你退休很久之后仍被铭记，它就是 AD。你听说过有人带着超过 2 个 1 赢得游戏吗？我听说过。你听说过有人输掉它吗？我听说过。你听说过 AD 中存在第 9 维度吗？我从没听说过。"
   },
   {
     id: "ai939",
-    text: "Greetings, I am the first step of the step ladder."
+    text: "你好，我是梯凳的第一步。"
   },
   {
     id: "ai940",
@@ -7089,95 +6447,95 @@ export const news = [
   },
   {
     id: "ai941",
-    text: "What if you could stretch your legs and not lose them forever?"
+    text: "如果你能伸展双腿而不会永远失去它们呢？"
   },
   {
     id: "ai942",
-    text: "T he most important thing to realize is that you don't have to play the game to get the achievement. You can actually get it by just reading the achievement descriptions."
+    text: "最重要的一点是你要明白，不必玩游戏也能获得成就。你其实只要读成就描述就能获得它。"
   },
   {
     id: "ai943",
-    text: "A new bank has been set up to provide safe haven for cryptocurrencies."
+    text: "一家新银行已经成立，为加密货币提供避风港。"
   },
   {
     id: "ai944",
-    text: "Google+ is known to be a hit with teens, and today, they got their very own virtual reality (VR) version of Animal Farm, the classic 1950's farm story. The game is a blend of adventure, strategy and music, and was made by a small team of people with an eye towards engaging young people. The game offers an alternative to most other VR games, and is suitable for anyone who is not comfortable with large, complicated, graphics and sounds. The game features over 50 different..."
+    text: "Google+ 以深受青少年欢迎而闻名，今天，他们拥有了自己的虚拟现实（VR）版《动物农场》，这部经典的上世纪 50 年代农场故事。游戏融合了冒险、策略和音乐，由一支眼光独到、旨在吸引年轻人的小团队制作。游戏为大多数其他 VR 游戏提供了替代选择，适合任何不习惯庞大复杂图形和声音的人。游戏包含超过 50 种不同的……"
   },
   {
     id: "ai945",
-    text: "This game could be called anything. You could call it whatever you like. But you'd be wrong. It's mine."
+    text: "这个游戏可以叫任何名字。你想叫它什么都可以。但你错了。它是我的。"
   },
   {
     id: "ai946",
-    text: "Where does all the antimatter come from?"
+    text: "所有这些反物质从哪里来？"
   },
   {
     id: "ai947",
-    text: "The Tickspeed Challenge is a team based game where you have to time-travel to the Andromeda galaxy to reach the 9th Dimension, the 1st Dimension being the shortest distance to the 9th Dimension. There is no perk for reaching the 9th Dimension, you just have to time-travel to the Andromeda galaxy to reach the 9th Dimension, and you'll be granted with a secret achievement for achieving instant [REDACTED] with no time-travelling."
+    text: "刻速度挑战是一款团队游戏，你必须时间旅行到仙女座星系才能到达第 9 维度，第 1 维度是到第 9 维度的最短距离。到达第 9 维度没有任何福利，你只需时间旅行到仙女座星系到达第 9 维度，你将因不进行时间旅行就实现即时[已编辑]而获得一个隐藏成就。"
   },
   {
     id: "ai948",
-    text: "This is the question that has been bothering me for so long. What is Antimatter? Is Antimatter an Antimatter? What does it mean when you say \"Antimatter\"? These are the kinds of questions that plague the Antimatter Dimensions..."
+    text: "这是困扰我很久的问题。什么是反物质？反物质是反物质吗？当你说“反物质”时是什么意思？这些就是困扰反物质维度的问题……"
   },
   {
     id: "ai949",
-    text: "The term 'Antimatter Dimensions' is a play on words that literally means 'Antimatter Dimensions' in the dictionary."
+    text: "“反物质维度”这个词是一个双关语，在词典里的字面意思就是“反物质维度”。"
   },
   {
     id: "ai950",
-    text: "I can suspend the laws of physics because I'm a genius and my universe is so big that I can literally suspend the laws of physics and create a universe that's twice as big as the current one and with twice the mass, i'm sure you can imagine how big that would be."
+    text: "我可以暂停物理定律，因为我是天才，我的宇宙如此之大，我真的可以暂停物理定律，创造一个比现在大一倍、质量也大一倍的宇宙，我相信你能想象那会有多大。"
   },
   {
     id: "ai951",
-    text: "When you are fighting a losing war, you make peace with the Powers That Be. You give up the ghost, and move on to the next challenge."
+    text: "当你在打一场必败的战争时，你会与当权者讲和。你放弃抵抗，继续迎接下一个挑战。"
   },
   {
     id: "ai952",
-    text: "Somewhere, in another galaxy, a superintelligence is trying to figure out how to get around the limitations of what a 2-dimensional vector space is. It's probably working on a 3-dimensional space."
+    text: "在另一个星系，某个超级智能正试图弄清楚如何绕开二维向量空间的限制。它可能正在研究三维空间。"
   },
   {
     id: "ai953",
-    text: "The antagonist of the last few minutes is the mysterious, antimatter-covered being known only as \"The Man in Black.\" He was last seen running towards a news broadcast, seemingly lost, until he made it back to the news station and was interviewed about his experience. His story is told in the bottom right corner of the screen."
+    text: "最近几分钟的反派是那个神秘、浑身覆盖反物质的存在，只知道叫“黑衣男人”。他最后一次被看到是跑向一场新闻直播，看起来迷路了，直到他回到新闻台并接受了关于他经历的采访。他的故事显示在屏幕右下角。"
   },
   {
     id: "ai954",
-    text: "You have unlocked the 4th storyline."
+    text: "你已解锁第 4 条故事线。"
   },
   {
     id: "ai955",
-    text: "While you were busy farming that pesky \"real\" number, I was busy writing that news ticker."
+    text: "当你在忙着刷那个讨厌的“实数”时，我在忙着写那条新闻滚动条。"
   },
   {
     id: "ai956",
-    text: "A new power has arisen: the antimatter."
+    text: "一种新的力量崛起了：反物质。"
   },
   {
     id: "ai957",
-    text: "The day has come. The antimatter is falling from the sky, and the streets are silent."
+    text: "这一天到来了。反物质从天而降，街道一片寂静。"
   },
   {
     id: "ai958",
-    text: "The most important thing is to understand that you are playing a simulation. You can win or lose, but you can't get anything from it other than a little itch on your neck."
+    text: "最重要的是要明白你在玩一个模拟。你可以赢也可以输，但除了脖子上的一点痒，你什么也得不到。"
   },
   {
     id: "ai959",
-    text: "The anti-snowman is a very special snowman. He's very timid, but has a very powerful wish to be picked up by a helicopter. The government doesn't want this to happen, so they lock him up in a special building and fly him over great distances. Finally, they drop him on the ground and begin to pick him up. The government didn't use force to pick him up, instead they invited the entire community in and started picking them up. The community refused."
+    text: "反雪人是一个非常特别的雪人。他非常胆小，但有一个非常强烈的愿望：被直升机吊起来。政府不希望这发生，所以他们把他锁在一栋特殊的建筑里，把他空运到很远的地方。最后，他们把他放到地上，开始吊起他。政府没有用武力吊他，而是邀请了整个社区进来，开始吊起他们。社区拒绝了。"
   },
   {
     id: "ai960",
-    text: "I'm surprised you didn't say \"Not my cup of anti-tea.\""
+    text: "我很惊讶你没有说“不是我的反茶”。"
   },
   {
     id: "ai961",
-    text: "I see you are a man of culture as well. I wonder what it is that draws you to speak in such an ungainly, tortured voice? What attracts you to speak in a language no one can understand? I hear your fans rave about your videos, but what draws you to this place? I feel like I know you. You are... you are a man of mystery. One that intrigues me..."
+    text: "我看得出你也是个有品位的人。我想知道是什么吸引你用如此笨拙、痛苦的声音说话？是什么吸引你说一种没人听得懂的语言？我听到你的粉丝对你的视频赞不绝口，但是什么把你吸引到这个地方？我觉得我认识你。你是……你是个神秘的人。一个让我着迷的人……"
   },
   {
     id: "ai962",
-    text: "Note: this is a private message. Do not send it in public."
+    text: "注意：这是私密消息。请不要公开传播。"
   },
   {
     id: "ai963",
-    text: "When you reach Infinity you unlock a new dimension: Pandemonium Dimensions. Go to the news ticker for more information."
+    text: "当你到达无限时，你会解锁一个新维度：混乱维度。去新闻滚动条了解更多信息。"
   },
   {
     id: "ai964",
@@ -7186,131 +6544,131 @@ export const news = [
   },
   {
     id: "ai965",
-    text: "The story of the \"perish the thought of dying\" movement has been told before, but never quite accurately. The movement was originally organized by antievolutionists to stop the exponential growth of scientific notation, but soon spread to oppose any form of \"progress\". In its early days the movement was led by an enigmatic individual known only as \"The Great Hevipelle\". Their philosophy was simple: expand the possibilities of what is possible, and push the limits of what is tolerable."
+    text: "“打消死亡念头”运动的故事以前讲过，但从未讲得准确。这场运动最初由反进化论者组织，旨在阻止科学计数法的指数增长，但很快扩展到反对任何形式的“进步”。早期，这场运动由一位只知道叫“伟大的 Hevipelle”的神秘人物领导。他们的哲学很简单：扩展可能性的范围，突破可容忍的极限。"
   },
   {
     id: "ai966",
-    text: "This is the story of how the world ended. Earth was once a lush and green world. Then, some guy from outer space touched it and started growing mushrooms. He called himself Hevi. Some say Hevi was never satisfied. Some say he exploded. All we know is that Hevi is still out there expanding his reach, and we are stuck here in the void of space."
+    text: "这是世界如何终结的故事。地球曾经是一个郁郁葱葱的绿色世界。然后，某个来自外太空的家伙碰了它，开始长蘑菇。他自称 Hevi。有人说 Hevi 从不满足。有人说他爆炸了。我们所知道的是，Hevi 还在外面扩张他的地盘，而我们被困在太空的虚空里。"
   },
   {
     id: "ai967",
-    text: "Antimatter Dimensions, the only place where you can trade real estate for virtual reality"
+    text: "反物质维度，唯一一个可以用房地产交换虚拟现实的地方"
   },
   {
     id: "ai968",
-    text: "This page contains spoilers for Antimatter Dimensions, you've been warned."
+    text: "本页包含反物质维度的剧透，你已被警告。"
   },
   {
     id: "ai969",
-    text: "The best thing about being a news ticker is being able to slip into the news without anyone noticing."
+    text: "作为新闻滚动条最好的事情是能在没人注意的情况下溜进新闻里。"
   },
   {
     id: "ai970",
-    text: "This paperclip maximizer is a great idea. It's probably best not to let it run its course though, since it's quite possibly the most amazing thing you've ever seen. If you've somehow survived the first phase of the paperclip dimension, you're probably wondering what it's doing in your home. Fortunately, it's super simple to fix. Just go to options, and change \"Max all\" to \"Always max all\"."
+    text: "这个回形针最大化器是个好主意。但最好不要让它运行到底，因为它很可能是你见过的最神奇的东西。如果你不知怎么熬过了回形针维度的第一阶段，你大概在想它在你的家里做什么。幸运的是，修复它非常简单。只需进入选项，把“最大购买”改成“始终最大购买”。"
   },
   {
     id: "ai971",
-    text: "A powerful wizard chose to channel negative energy into antimatter, and now the antimatter is spilling out into the world."
+    text: "一位强大的巫师选择把负能量导入反物质，现在反物质正涌向世界。"
   },
   {
     id: "ai972",
-    text: "A new age of ultra low-cost, ultra-fast trains has been announced by Elon Musk. Users will be able to travel from A to Z in a mere 186ms."
+    text: "Elon Musk 宣布了超低成本、超高速列车的新时代。用户只需 186 毫秒就能从 A 到 Z。"
   },
   {
     id: "ai973",
-    text: "A group of researchers at the University of Manchester have created a 3D printer that can create any object out of thin air, including a 3D-printed replica of the Virgin Mary."
+    text: "曼彻斯特大学的一组研究人员制造了一台 3D 打印机，可以从空气中凭空创造任何物体，包括圣母玛利亚的 3D 打印复制品。"
   },
   {
     id: "ai974",
-    text: "Alright, here's a new game called Antimatter Dimensions, it's like Matter Dimensions except with less stuff and more fun. It's available on Android, iOS, and web. The game is very simple: you take the 6 dimensions and the antimatter, and in the 6 dimensions you take the matter and in the matter you take the antimatter, and you play the game the same way you would any other game."
+    text: "好吧，这里有一款叫反物质维度的新游戏，它就像物质维度，只是东西更少、乐趣更多。它支持 Android、iOS 和网页。游戏非常简单：你拿 6 个维度和反物质，在 6 个维度里你拿物质，在物质里你拿反物质，然后你像玩任何其他游戏一样玩这个游戏。"
   },
   {
     id: "ai975",
-    text: "What arbitrary, subjective, meaningless number comes out of your mouth like a mercury thermometer? 1.79"
+    text: "什么武断的、主观的、无意义的数字会像水银温度计一样从你嘴里冒出来？1.79"
   },
   {
     id: "ai976",
-    text: "\"Word on the street is that the word \"bank\" is an anagram of \"bank\" - that makes sense but i'm not there yet\" - Slabdrill"
+    text: "“街头传言说‘bank’这个词是‘bank’的字谜，这说得通，但我还没到那一步” - Slabdrill"
   },
   {
     id: "ai977",
-    text: "The 9th dimension rose up like a volcano and began raining destruction on the empty 10th dimension. The smoke and debris from the exploding 9th dimension covered the entire 9th dimension. All that is left is a smoldering crater and the remains of the 9th dimension."
+    text: "第 9 维度像火山一样升起，开始向空荡荡的第 10 维度倾泻毁灭。爆炸的第 9 维度的烟雾和碎片覆盖了整个第 9 维度。留下的只有一个冒着烟的火山口和第 9 维度的残骸。"
   },
   {
     id: "ai978",
-    text: "Help! How do I get the dots moving in my head coordinator?"
+    text: "救命！我怎么让点在我头脑协调器里动起来？"
   },
   {
     id: "ai979",
-    text: "Hi, could you please not disable the news ticker? Thank me later."
+    text: "嗨，能不能请你不要关闭新闻滚动条？以后再谢我。"
   },
   {
     id: "ai980",
-    text: "If you are suffering from low antimatter production, then worry not, friend! Our highly scientific antimatter government has recently reached the ninth dimension and will soon begin giving us the Anti-Hats as a sign of respect!"
+    text: "如果你正遭受反物质产量低下的困扰，别担心，朋友！我们高度科学的反物质政府最近抵达了第九维度，很快就要给我们发放反帽子作为尊重的象征！"
   },
   {
     id: "ai981",
-    text: "You click the bottom left corner of the screen and a green tingle goes up your leg. It's a treat you get from scratching antimatter."
+    text: "你点击屏幕左下角，一阵绿色的麻痒爬上你的腿。这是你抓挠反物质得到的奖赏。"
   },
   {
     id: "ai982",
-    text: "A quick note to those of you who buy into the Analytics subscription: we get a small percentage of your antimatter sales, but you do pay a small amount of money to support the research of the news ticker. It's a small price to pay for the convenience of browsing antimatter dimensions."
+    text: "给那些订阅 Analytics 的人一个简短的提示：我们能从你的反物质销售中获得一小部分分成，但你确实要付一点钱来支持新闻滚动条的研究。对于浏览反物质维度的便利来说，这是很小的代价。"
   },
   {
     id: "ai983",
-    text: "Why haven't we caused the antimatter stock market to crash yet?"
+    text: "我们为什么还没让反物质股市崩盘？"
   },
   {
     id: "ai984",
-    text: "Even after the Heavenly Pelle put a large amount of antimatter in the pool, it hasn't produced anything. The scientist who discovered the vulnerability was last seen climbing a tree in a group of 10, with a small notebook on his lap, drinking cheese juice and watching Nothing."
+    text: "即使天堂的 Pelle 往池子里放入了大量反物质，它也没有产出任何东西。发现这个漏洞的科学家最后一次被看到是在一群 10 人中爬上一棵树，腿上放着一本小笔记本，喝着奶酪汁，看着《虚无》。"
   },
   {
     id: "ai985",
-    text: "One-two-three, boo-two-three, three-four-five, anti-four-five, two-three-eight, nine-fifteen, five-six-seven, eight-nine-ten, nine-ten-ten, seven-seventy-eight... All has been going fine until last night, when four of the eight neighbors start complaining about a strange glow. A odd hum runs through the neighborhood, almost like a radio static. It gets more and more intense as you drive by, until it's practically pitch black. You try to explain it to the neighbors, but they won't listen. The neighborhood is unsafe, everyone knows that. You analyze it further, everyone thinks it's just some astrophysicist's idea. Then, s---. It's explodium. There's antimatter everywhere, and it's getting worse all the time. It turns out, there's about 1e31 Planck volumes in the entire observable universe. And that's just the antimatter we're talking about. There's also dark matter, normal matter, and extra matter. You know, the kind you create with your imagination."
+    text: "一、二、三，吓、二、三，三、四、五，反、四、五，二、三、八，九、十五，五、六、七，八、九、十，九、十、十，七、七十、八……一切都很正常，直到昨晚，八个邻居中有四个开始抱怨一种奇怪的辉光。一种奇怪的嗡嗡声穿过街区，几乎像无线电静电。你开车经过时它越来越强烈，直到几乎一片漆黑。你试着向邻居解释，但他们不听。这个街区不安全，所有人都知道。你进一步分析，大家都以为这只是某个天体物理学家的想法。然后，糟了。是爆炸物质。到处都是反物质，而且越来越糟。原来，整个可观测宇宙中大约有 1e31 个普朗克体积。而这还只是我们说的反物质。还有暗物质、普通物质和额外物质。你知道的，那种你用想象力创造的东西。"
   },
   {
     id: "ai986",
-    text: "If you ever feel like making an antijoke, just remember that it could be pretty good."
+    text: "如果你觉得想讲个反笑话，只要记住它可能会相当不错。"
   },
   {
     id: "ai987",
-    text: "You won't convince anyone to go to heaven, but you might get close."
+    text: "你不会说服任何人去天堂，但你可能会很接近。"
   },
   {
     id: "ai988",
-    text: "BREAKING NEWS: Hevipelle, the creator of the 9th dimension, has just announced that beta will be out in 5 hours!"
+    text: "突发新闻：第 9 维度的创造者 Hevipelle 刚刚宣布，测试版将在 5 小时后发布！"
   },
   {
     id: "ai989",
-    text: "The Force is with you."
+    text: "原力与你同在。"
   },
   {
     id: "ai990",
-    text: "What if Jesus was an anti-matter ghost?"
+    text: "万一耶稣是一个反物质幽灵呢？"
   },
   {
     id: "ai991",
-    text: "In the summer of 711, the Great Calamity overtook Tyria. A great void was made, and Tyria was left to rot. The armies of the known world had given up, and the void was filled with darkness. Only the might of Kajfik remained, and he rose to become the greatest God in the known world. He is said to be the one who will face the Great Calamity alone, and destroy him."
+    text: "711 年夏天，大灾厄降临泰瑞亚。一个巨大的虚空形成，泰瑞亚被遗弃腐烂。已知世界的军队已经放弃，虚空充满了黑暗。只有 Kajfik 的力量仍在，他崛起成为已知世界最伟大的神。据说他就是那个将独自面对大灾厄并将其摧毁的人。"
   },
   {
     id: "ai992",
-    text: "In recent news clashes, the warlocks have been gathering looters for raid boss. He loves his 5 hour looters and wants to show off his mighty weapon of choice, the 9th Dimension. As the two beasts battle, the 1st dimension holder needs to be careful as the first one might get the same as the 2nd one as well. Meanwhile, the raid ends its journey with a bang as the boss squanders the Explodium exploit by flooding the area with Explodium, which before his, was filled with Marsh Mice. Both are promptly annihilated by the boss' relentless claw attacks. It's a grueling job, but the raid stalwarts manage to grab the stalagm and push him across the opal Gondwan . With the boss dead and the warlocks not far behind, the warlocks try their hand at farming looters, but the grinding continues apace. Things are looking bleak for the warlocks, as the boss seeks to take advantage of the people's greed, and steal their weaponry, making them unable to use any remaining of their  weapons, which are made of highly-stable antimatter. The warlocks attempt to use the no fluke policy as a weapon to smite the people, but the people take to the streets, physically attacking and mentally draining the people of all mental capacity they had been holding onto. The people resort to violence, using the 9th dimension just like they use to hold people back, but the people have faith in God that he will merciful, He will bring about a kinder and gentler time where everyone can use the last drop of their power."
+    text: "在最近的新闻冲突中，术士们正在召集掠夺者进行团本首领战。他喜欢他的 5 小时掠夺者，想炫耀他选择的强大武器：第 9 维度。当两只野兽搏斗时，第一维度持有者需要小心，因为第一个可能得到和第二个一样的东西。与此同时，团本以一声巨响结束旅程，首领用爆炸物质淹没了整个区域，白白浪费了 Explodium 漏洞，而在他之前，那里满是沼泽鼠。两者都被首领无情的爪击迅速消灭。这是份苦差事，但团本的坚定者们设法抓住石笋，把他推过蛋白石冈瓦纳。首领死了，术士们紧随其后，他们尝试种田掠夺者，但刷怪继续进行。术士们的前景黯淡，因为首领试图利用人们的贪婪，偷走他们的武器，让他们无法使用任何剩余的武器，这些武器由高度稳定的反物质制成。术士们试图用“不许侥幸”政策作为武器来打击人民，但人民走上街头，物理攻击并精神榨干人们一直保留的所有心智。人民诉诸暴力，用第 9 维度就像他们以前用它来压制别人一样，但人民相信上帝会仁慈，他会带来一个更友善、更温和的时代，让每个人都能使用他们力量的最后一滴。"
   },
   {
     id: "ai993",
-    text: "What if you wanted to but I told you it would be too painful for you."
+    text: "万一你想这么做，但我告诉你这对你来说太痛苦了呢。"
   },
   {
     id: "ai994",
-    text: "how big of numbers do you have"
+    text: "你的数字有多大"
   },
   {
     id: "ai995",
-    text: "Just want to thank the dev team for putting so much effort into Antimatter Dimensions and the Antimatter Dimensions 2"
+    text: "只想感谢开发团队为反物质维度和反物质维度 2 付出的巨大努力"
   },
   {
     id: "ai996",
-    text: "Hevipelle has broken the 9th wall! Get ready for everything to get pretty dark."
+    text: "Hevipelle 打破了第九面墙！准备好迎接一切变得相当黑暗吧。"
   },
   {
     id: "ai997",

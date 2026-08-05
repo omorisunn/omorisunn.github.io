@@ -66,7 +66,7 @@ const Payments = {
       if (completed) {
         Payments.windowReference?.close();
         await ShopPurchaseData.syncSTD();
-        GameUI.notify.success(`Purchase of ${amount} STDs was successful, thank you for your support! ❤️`, 10000);
+    GameUI.notify.success(`成功购买了 ${amount} 个 STD 硬币，感谢你的支持！`, 10000);
         Payments.clearInterval();
         player.IAP.checkoutSession = { id: false };
         GameStorage.save();

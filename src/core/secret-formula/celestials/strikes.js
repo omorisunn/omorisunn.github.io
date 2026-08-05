@@ -4,7 +4,7 @@ import wordShift from "../../word-shift.js";
 export const pelleStrikes = {
   infinity: {
     id: 1,
-    requirementDescription: "Reach Infinity",
+    requirementDescription: "到达无限",
     penaltyDescription: () => `Antimatter Dimensions are raised to ${formatPow(0.5, 1, 1)}`,
     rewardDescription: () => `Unlock ${wordShift.wordCycle(PelleRifts.vacuum.name)}
       and get a permanent Infinity Autobuyer`,
@@ -12,14 +12,14 @@ export const pelleStrikes = {
   },
   powerGalaxies: {
     id: 2,
-    requirementDescription: "Power-up Galaxies",
+    requirementDescription: "强化星系",
     penaltyDescription: () => `Infinity Dimensions are raised to ${formatPow(0.5, 1, 1)}`,
     rewardDescription: () => `Unlock ${wordShift.wordCycle(PelleRifts.decay.name)}`,
     rift: () => PelleRifts.decay
   },
   eternity: {
     id: 3,
-    requirementDescription: "Reach Eternity",
+    requirementDescription: "到达永恒",
     penaltyDescription: () => `Replicanti speed slows down even more above ${format(DC.E2000)}`,
     rewardDescription: () => `Unlock ${wordShift.wordCycle(PelleRifts.chaos.name)}`,
     rift: () => PelleRifts.chaos
@@ -35,8 +35,8 @@ export const pelleStrikes = {
   },
   dilation: {
     id: 5,
-    requirementDescription: "Dilate Time",
-    penaltyDescription: "Time Dilation is permanently active",
+    requirementDescription: "膨胀时间",
+    penaltyDescription: "时间膨胀永久激活",
     rewardDescription: () => `Keep the Time Dilation study across Armageddon, boost Remnant gain, and unlock
       ${wordShift.wordCycle(PelleRifts.paradox.name)}`,
     rift: () => PelleRifts.paradox

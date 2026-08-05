@@ -36,11 +36,11 @@ export default {
       return ShopPurchase.all;
     },
     enableText() {
-      return `In-app Purchases: ${this.IAPsEnabled ? "Enabled" : "Disabled"}`;
+      return `内购：${this.IAPsEnabled ? "已启用" : "已禁用"}`;
     },
     respecText() {
-      if (!this.loggedIn) return "Not logged in!";
-      if (!this.canRespec) return "No respec available! (Purchase STDs or wait 3 days since your last one)";
+      if (!this.loggedIn) return "未登录！";
+      if (!this.canRespec) return "无法重置！(购买 STD 硬币或等待距上次重置 3 天)";
       return null;
     },
     hiddenName() {
@@ -66,7 +66,7 @@ export default {
       if (this.creditsClosed) return;
       SecretAchievement(33).unlock();
       if (this.loggedIn) Modal.shop.show();
-      else Modal.message.show("You cannot purchase STD coins without logging in first.");
+      else Modal.message.show("你必须先登录才能购买 STD 硬币。");
     },
     onCancel() {
       Payments.cancelPurchase(false);
@@ -97,12 +97,12 @@ export default {
       class="c-shop-disclaimer"
       data-v-shop-tab
     >
-      Disclaimer: These are not required to progress in the game, they are just for supporting the developer.
-      The game is balanced without the use of any microtransactions.
+      声明：这些并不是游戏进度的必需品，它们只是用于支持开发者。
+      游戏在不使用任何微交易的情况下也是平衡的。
     </div>
     <div>
-      Note: Shop purchases made on the Android, Steam, and Web versions are
-      separate and non-transferable due to legal reasons.
+      注意：由于法律原因，在 Android、Steam 和网页版本中进行的商店购买
+      是相互独立且不可转移的。
     </div>
     <div
       class="c-subtab-option-container"
@@ -111,7 +111,7 @@ export default {
       <PrimaryButton
         class="o-primary-btn--subtab-option"
         :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
-        label="Disable in-app-purchases:"
+        label="禁用内购："
         @click="toggleEnable()"
         data-v-shop-tab
       >
@@ -124,11 +124,11 @@ export default {
         @click="respec()"
         data-v-shop-tab
       >
-        Respec Shop
+        重置商店
       </PrimaryButton>
     </div>
     <div v-if="loggedIn && !canRespec && !STEAM">
-      Time until respec available: {{ respecTimeStr }}
+      距离可重置时间：{{ respecTimeStr }}
     </div>
     <div
       v-if="loggedIn"
@@ -136,17 +136,17 @@ export default {
       data-v-shop-tab
     >
       <template v-if="STEAM">
-        You are logged in as {{ username }}.
+        你已以 {{ username }} 登录。
       </template>
       <template v-else>
-        <span v-if="hiddenName">You are logged in. <i>(name hidden)</i></span>
-        <span v-else>You are logged in as {{ username }}.</span>
+        <span v-if="hiddenName">你已登录。<i>（名称已隐藏）</i></span>
+        <span v-else>你已以 {{ username }} 登录。</span>
         <button
           class="o-shop-button-button"
           onclick="GameOptions.logout()"
           data-v-shop-tab
         >
-          Disconnect Google Account
+          断开 Google 账户
         </button>
       </template>
     </div>
@@ -155,20 +155,20 @@ export default {
       class="c-login-info"
       data-v-shop-tab
     >
-      You must be logged in to purchase STD coins or use these upgrades.
+      你必须登录才能购买 STD 硬币或使用这些升级。
       <button
         class="o-shop-button-button"
         onclick="GameOptions.login()"
         data-v-shop-tab
       >
-        Login with Google
+        使用 Google 登录
       </button>
     </div>
     <div
       class="c-shop-header"
       data-v-shop-tab
     >
-      <span>You have {{ availableSTD }}</span>
+      <span>你有 {{ availableSTD }}</span>
       <img
         src="./public/images/std_coin.png"
         class="c-shop-header__img"
@@ -180,10 +180,10 @@ export default {
         @click="showStore()"
         data-v-shop-tab
       >
-        Buy More
+        购买更多
       </button>
     </div>
-    Note: All numbers on this page are intentionally unaffected by your notation settings
+    注意：此页面上的所有数字都不会受你的计数法设置影响
     <div
       class="l-shop-buttons-container"
       data-v-shop-tab

@@ -137,11 +137,19 @@ export default {
     class="l-modal-overlay c-modal-overlay"
     data-v-celestial-quote-history-display
   >
-    <i
-      class="c-modal-celestial-quote-history__close fas fa-circle-xmark o-light-button"
+    <svg
+      class="c-modal-celestial-quote-history__close o-light-button"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.2"
+      stroke-linecap="round"
       @click="close"
       data-v-celestial-quote-history-display
-    />
+    >
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M9 9l6 6M15 9l-6 6" />
+    </svg>
     <div
       class="c-quote-history-modal__clickable-background"
       @click="close"

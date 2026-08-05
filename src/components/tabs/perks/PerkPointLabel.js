@@ -18,8 +18,8 @@ export default {
       return PerkLayouts[this.treeLayout].buttonText;
     },
     physicsText() {
-      const enableStr = (this.physicsOverride ?? this.physicsEnabled) ? "Enabled" : "Disabled";
-      return `${enableStr}${this.physicsOverride === undefined ? "" : " (fixed)"}`;
+      const enableStr = (this.physicsOverride ?? this.physicsEnabled) ? "已启用" : "已禁用";
+      return `${enableStr}${this.physicsOverride === undefined ? "" : "（固定）"}`;
     }
   },
   created() {
@@ -69,11 +69,11 @@ export default {
     class="c-perk-tab__header"
     data-v-perk-point-label
   >
-    You have <span class="c-perk-tab__perk-points" data-v-perk-point-label>{{ format(pp, 2) }}</span> {{ pluralize("Perk Point", pp) }}.
+    你有 <span class="c-perk-tab__perk-points" data-v-perk-point-label>{{ format(pp, 2) }}</span> {{ pluralize("个福利点", pp) }}。
     <br>
-    Perk choices are permanent and cannot be respecced.
+    福利选择是永久的，无法重新分配。
     <br>
-    Diamond-shaped perks also give Automator Points.
+    菱形福利还会提供自动机点数。
     <br>
     <div
       class="perk-settings"
@@ -84,14 +84,14 @@ export default {
         @click="cycleLayout"
         data-v-perk-point-label
       >
-        Perk Layout: {{ layoutText }}
+        福利布局：{{ layoutText }}
       </PrimaryButton>
       <PrimaryButton
         :class="physicsClassObject()"
         @click="togglePhysics"
         data-v-perk-point-label
       >
-        Physics: {{ physicsText }}
+        物理效果：{{ physicsText }}
       </PrimaryButton>
       <br>
       <PrimaryButton
@@ -99,14 +99,14 @@ export default {
         @click="centerTree"
         data-v-perk-point-label
       >
-        Center Tree on START
+        将树居中于 START
       </PrimaryButton>
       <PrimaryButton
         class="o-primary-btn"
         @click="straightenEdges"
         data-v-perk-point-label
       >
-        Straighten Edges
+        拉直边缘
       </PrimaryButton>
     </div>
   </div>

@@ -29,18 +29,18 @@ export default {
     },
     typeCosmetic() {
       const changes = [];
-      if (GlyphAppearanceHandler.symbolMap[this.glyph.type]) changes.push("Symbol");
-      if (GlyphAppearanceHandler.colorMap[this.glyph.type]) changes.push("Color");
-      if (changes.length === 0) return "None";
-      return changes.join("/");
+      if (GlyphAppearanceHandler.symbolMap[this.glyph.type]) changes.push("符号");
+      if (GlyphAppearanceHandler.colorMap[this.glyph.type]) changes.push("颜色");
+      if (changes.length === 0) return "无";
+      return changes.join(" / ");
     },
     specialCosmetic() {
       if (this.glyph.cosmetic) return this.glyph.cosmetic.capitalize();
       const changes = [];
-      if (this.glyph.symbol) changes.push("Symbol");
-      if (this.glyph.color) changes.push("Color");
-      if (changes.length === 0) return "None";
-      return changes.join("/");
+      if (this.glyph.symbol) changes.push("符号");
+      if (this.glyph.color) changes.push("颜色");
+      if (changes.length === 0) return "无";
+      return changes.join(" / ");
     }
   },
   created() {
@@ -101,12 +101,12 @@ export default {
         class="c-glyph-info-section c-cosmetic-text"
         data-v-single-glyph-customzation-panel
       >
-        <u>Cosmetic Attributes</u>
-        Type: {{ glyph.type.capitalize() }}
+        <u>外观属性</u>
+        类型：{{ glyph.type.capitalize() }}
         <br>
-        All: {{ typeCosmetic }}
+        全部：{{ typeCosmetic }}
         <br>
-        Single: {{ specialCosmetic }}
+        单独：{{ specialCosmetic }}
       </div>
       <div
         class="c-glyph-info-section"
@@ -117,20 +117,20 @@ export default {
           @click="openModal"
           data-v-single-glyph-customzation-panel
         >
-          Customize!
+          自定义！
         </PrimaryButton>
         <PrimaryButton
           class="o-primary-btn--subtab-option"
           @click="glyphID = -1"
           data-v-single-glyph-customzation-panel
         >
-          Clear Box
+          清空方框
         </PrimaryButton>
       </div>
     </div>
     <div v-else>
-      Drag a Glyph over this box to change its appearance! This will make a visual copy of it here,
-      but leave the actual Glyph itself in your inventory. Removing, gaining, or moving any Glyphs will clear this box.
+      将符文拖到此方框上以更改其外观！这会在此处生成它的视觉副本，
+      但实际符文仍会留在你的背包中。移除、获得或移动任何符文都会清空此方框。
     </div>
   </div>
   `

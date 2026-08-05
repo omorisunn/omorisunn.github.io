@@ -1,45 +1,45 @@
 const GLYPH_NAMES = {
   companion: {
-    adjective: "Huggable",
+    adjective: "可拥抱的",
     noun: "Companion"
   },
   reality: {
-    adjective: "Real",
-    noun: "Reality"
+    adjective: "真实的",
+    noun: "现实"
   },
   music: {
-    adjective: { high: "Melodic", mid: "Chordal", low: "Tuned" },
+    adjective: { high: "旋律的", mid: "和弦的", low: "调音的" },
     // This noun is only used in the case of a single companion reskinned as music (resulting in "Huggable Music");
     // otherwise the set's noun will always come from an actual glyph type instead of music
     noun: "Music"
   },
   effarig: {
-    adjective: { both: "Meta", glyph: "Stable", rm: "Mechanical", none: "Fragmented" },
-    noun: { both: "Effarig", glyph: "Stability", rm: "Mechanism", none: "Fragmentation" }
+    adjective: { both: "元", glyph: "稳定的", rm: "机械的", none: "碎裂的" },
+    noun: { both: "Effarig", glyph: "稳定", rm: "机制", none: "碎裂" }
   },
   cursed: {
-    adjective: { high: "Cursed", mid: "Hexed", low: "Jinxed" },
-    noun: "Curse"
+    adjective: { high: "被诅咒的", mid: "被施咒的", low: "被厄运缠身的" },
+    noun: "诅咒"
   },
   power: {
-    adjective: { high: "Powerful", mid: "Mastered", low: "Potential" },
-    noun: "Power"
+    adjective: { high: "强大的", mid: "精通的", low: "潜在的" },
+    noun: "力量"
   },
   infinity: {
-    adjective: { high: "Infinite", mid: "Boundless", low: "Immense" },
-    noun: "Infinity"
+    adjective: { high: "无限的", mid: "无界的", low: "巨大的" },
+    noun: "无限"
   },
   replication: {
-    adjective: { high: "Replicated", mid: "Simulated", low: "Duplicated" },
-    noun: "Replication"
+    adjective: { high: "复制的", mid: "模拟的", low: "复刻的" },
+    noun: "复制"
   },
   time: {
-    adjective: { high: "Temporal", mid: "Chronal", low: "Transient" },
-    noun: "Time"
+    adjective: { high: "时间的", mid: "时序的", low: "短暂的" },
+    noun: "时间"
   },
   dilation: {
-    adjective: { high: "Dilated", mid: "Attenuated", low: "Diluted" },
-    noun: "Dilation"
+    adjective: { high: "膨胀的", mid: "衰减的", low: "稀释的" },
+    noun: "膨胀"
   },
 };
 
@@ -80,7 +80,7 @@ export default {
     isDoomed: () => Pelle.isDoomed,
     setName() {
       this.sortGlyphList();
-      if (this.sortedGlyphs.length === 0) return "Void";
+      if (this.sortedGlyphs.length === 0) return "虚空";
       if (this.sortedGlyphs.length === 1) return this.singletonName;
 
       // Figure out the noun part of the name first. If we have basic glyphs, this is generated through examining those
@@ -108,7 +108,7 @@ export default {
           if (basicGlyphList[0].perc === basicGlyphList[1].perc) {
             return [this.getAdjective(basicGlyphList[0]),
               this.getAdjective(basicGlyphList[1]),
-              "Mixture"
+              "混合"
             ].join(" ");
           }
           // Otherwise, give it a noun from the largest component
@@ -123,22 +123,22 @@ export default {
           }
           // This is relatively rare; we have 1/1/1, which means that we may also already have 3 other adjectives.
           // In this case we make an exception and shorten the name instead of providing another 4 words
-          if (basicGlyphList[0].perc === basicGlyphList[2].perc) return "Mixed Irregularity";
+          if (basicGlyphList[0].perc === basicGlyphList[2].perc) return "混合不规则";
           // The only case left is 2/2/1, where we have plenty of room for words
           return [this.getAdjective(basicGlyphList[0]),
             this.getAdjective(basicGlyphList[1]),
             this.getAdjective(basicGlyphList[2]),
-            "Irregularity"
+            "不规则"
           ].join(" ");
         case 4:
           // Don't bother filling the name with excessive adjectives if we have an equal proportion (1/1/1/1),
           // otherwise we take the largest component and ignore all the others (2/1/1/1)
-          if (basicGlyphList[0].perc === basicGlyphList[1].perc) return "Irregular Jumble";
-          return `${this.getAdjective(basicGlyphList[0])} Jumble`;
+          if (basicGlyphList[0].perc === basicGlyphList[1].perc) return "不规则混合";
+          return `${this.getAdjective(basicGlyphList[0])} 混合`;
         case 5:
           // This is in reference to the achievement name, and can only occur with exactly one of every basic glyph.
           // Due to music glyphs doubling-up contributions, this may result in a "Melodic Royal Flush" or similar
-          return "Royal Flush";
+          return "皇家同花顺";
         default:
           throw new Error("Unexpected glyph set configuration in GlyphSetName");
       }
@@ -154,11 +154,11 @@ export default {
       // We want a bit of additional flavor for partially-filled sets
       const word = GLYPH_NAMES[this.sortedGlyphs[0].type].noun;
       const perc = this.sortedGlyphs[0].perc;
-      if (this.isDoomed) return `Doomed ${word}`;
-      if (perc === 100) return `Full ${word}`;
-      if (perc >= 75) return `Strengthened ${word}`;
-      if (perc >= 40) return `Partial ${word}`;
-      return `Weak ${word}`;
+      if (this.isDoomed) return `末日的${word}`;
+      if (perc === 100) return `完整的${word}`;
+      if (perc >= 75) return `强化的${word}`;
+      if (perc >= 40) return `部分的${word}`;
+      return `微弱的${word}`;
     },
     mainGlyphName() {
       // This returns the type of Glyph that we want for color determinations.

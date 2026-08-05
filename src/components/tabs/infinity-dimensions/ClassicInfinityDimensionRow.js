@@ -63,7 +63,7 @@ export default {
       return format(this.hardcap, 1, 1);
     },
     capTooltip() {
-      if (this.enslavedRunning) return `无名氏禁止购买超过 ${format(10)} 个无限维度`;
+      if (this.enslavedRunning) return `The Nameless Ones 禁止购买超过 ${format(10)} 个无限维度`;
       if (this.isCapped) return `上限在 ${format(this.capIP)} 无限点数达到`;
       return `已购买 ${quantifyInt("次", this.purchases)}`;
     },

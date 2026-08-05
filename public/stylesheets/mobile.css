@@ -1,6 +1,7 @@
 /* ============================================================
    手机端适配 + 底部导航栏（SVG 图标）
-   仅在小屏设备（<=768px）生效；桌面端保持原版布局。
+   在小屏设备（<=900px，覆盖 iPhone 11 竖屏 414px 与横屏 896px
+   CSS 尺寸）生效；桌面端保持原版布局。
    加速按钮在桌面端显示于侧边栏底部，移动端显示于底栏右侧。
 
    注意：new-ui-styles.css 由 Vue 运行时动态插入，加载顺序在
@@ -19,7 +20,7 @@
 }
 
 /* ---------- 移动端 ---------- */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   html {
     --sidebar-width: 0;
     /* 全局字号：原版 62.5%(10px)，此前调大到 68.75% 偏大，
@@ -110,6 +111,12 @@
   }
   html .c-modern-sidebar > .o-tab-btn + .o-tab-btn {
     border-left: 0.05rem solid rgba(128, 128, 128, 0.3);
+  }
+  /* 删除第一栏按钮的左侧长条与右侧箭头装饰 */
+  html .c-modern-sidebar > .o-tab-btn::before,
+  html .c-modern-sidebar > .o-tab-btn::after {
+    display: none !important;
+    content: none !important;
   }
 
   html .c-modern-sidebar__speed {
@@ -253,37 +260,44 @@
     overflow-x: hidden;
   }
 
-  /* 子标签面板：底栏上方弹出，横向滚动
-     注：用 display 控制显隐（!important），绕开 WebKit 上
-     opacity transition 卡住的问题 */
-  html .subtabs {
+  /* 子标签面板：仅当前激活标签显示为底栏第二栏 */
+  html .c-modern-sidebar .subtabs {
     display: none !important;
+  }
+  html .c-modern-sidebar > .o-tab-btn--active .subtabs {
+    display: flex !important;
+    opacity: 1;
+    pointer-events: all;
     position: fixed;
     top: auto;
-    bottom: 3.5rem;
+    bottom: calc(env(safe-area-inset-bottom, 0));
     left: 0;
+    right: 0;
     width: 100%;
+    height: 3.5rem;
+    min-height: 3.5rem;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    opacity: 0;
-    pointer-events: none;
-    background: var(--color-base);
-    border-top: 0.1rem solid var(--color-accent);
-    border-bottom: 0.1rem solid var(--color-accent);
-    padding: 0.3rem 0.4rem;
-    transition: opacity 0.12s linear;
+    border-top: 0.05rem solid color-mix(in srgb, var(--color-accent) 35%, transparent);
+    border-bottom: 0;
+    padding: 0.2rem 0.3rem;
+    background: color-mix(in srgb, var(--color-base) 94%, #000);
     z-index: 290;
+    animation: ad-mobile-subtabs-in 0.18s ease-out;
   }
-  html .o-tab-btn:hover .subtabs {
-    display: none !important;
-  }
-  html .subtabs--mobile-open {
-    display: flex !important;
-    opacity: 1 !important;
-    pointer-events: all !important;
+  @keyframes ad-mobile-subtabs-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.45rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   html .o-tab-btn--subtab {
     flex: 0 0 auto;
@@ -293,6 +307,20 @@
     line-height: 2.8rem;
     margin: 0 0.25rem;
     border-radius: 0.3rem;
+  }
+  html .c-modern-sidebar > .o-tab-btn--active .o-tab-btn--subtab {
+    flex: 1 1 auto;
+    width: auto;
+    min-width: 3rem;
+    max-width: 5.5rem;
+    transition: box-shadow 0.15s ease, transform 0.15s ease, background-color 0.15s ease;
+  }
+  html .c-modern-sidebar > .o-tab-btn--active .o-tab-btn--subtab:active {
+    transform: scale(0.94);
+  }
+  /* 第二栏按钮只保留主题色长条，去掉叠加的异色底边 */
+  html .c-modern-sidebar .o-tab-btn--subtab.o-subtab-btn--active {
+    border-bottom-width: 0 !important;
   }
   .o-subtab__tooltip {
     display: none;
@@ -347,15 +375,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    height: auto;
-    min-height: 0;
+    height: auto !important;
+    min-height: 0 !important;
     position: relative;
     padding: 0.5rem 0.5rem 0.5rem;
     gap: 0.2rem 0;
   }
-  /* 顶栏文本留出呼吸空间，避免压线 */
   html .c-prestige-info-blocks .c-prestige-button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem 0.6rem;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0.35rem 0.4rem;
     line-height: 1.45;
+    text-align: center;
+  }
+  /* 中心块锁定竖直排列，避免做无限时信息并排造成上下抖动 */
+  html .c-prestige-info-blocks .l-game-header__center.c-prestige-button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
   }
   html .c-prestige-info-blocks .c-game-header__antimatter,
   html .c-prestige-info-blocks .c-game-header__ip-amount,
@@ -381,11 +424,40 @@
   html .c-prestige-button-container .o-prestige-button,
   html .c-prestige-button-container .btn-big-crunch {
     font-size: 0.95rem;
+    height: auto;
+    min-height: 2.2rem;
     padding: 0.3rem 0.55rem;
     margin: 0.15rem auto;
     max-width: 94%;
     white-space: normal;
     line-height: 1.25;
+  }
+  html .c-prestige-info-blocks .c-reality-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem 0.6rem;
+    width: 100%;
+  }
+  html .c-prestige-info-blocks .c-reality-currency {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+  html .c-prestige-info-blocks .l-reality-button {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    min-height: 2.4rem;
+  }
+  html .c-prestige-info-blocks .c-reality-button {
+    width: auto;
+    min-width: 12rem;
+    max-width: 100%;
+    height: auto;
+    min-height: 2.4rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
   }
 
   /* 成就网格：自动换行，每行 3~4 个 */
@@ -548,5 +620,876 @@
   html .c-progress-bar {
     width: 86%;
     margin: 0.6rem auto 1.2rem;
+  }
+
+  /* ---------- 安全区与底部栏 ---------- */
+  html .c-modern-sidebar {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    height: calc(7rem + env(safe-area-inset-bottom, 0));
+  }
+  html .c-modern-sidebar > .o-tab-btn,
+  html .c-modern-sidebar > .c-modern-sidebar__speed {
+    height: 3.5rem;
+    margin-bottom: env(safe-area-inset-bottom, 0);
+  }
+  html .game-container {
+    padding-bottom: calc(7.2rem + env(safe-area-inset-bottom, 0));
+  }
+  html .l-notification-container {
+    bottom: calc(7.2rem + env(safe-area-inset-bottom, 0));
+  }
+  /* 新闻栏作为普通元素放在头栏上方，保留空隙 */
+  html .c-news-ticker {
+    position: static;
+    height: 2.2rem;
+    margin-bottom: 0.5rem;
+    background: color-mix(in srgb, var(--color-base) 96%, #000);
+    border-bottom: 0.1rem solid color-mix(in srgb, var(--color-accent) 45%, transparent);
+    box-sizing: border-box;
+  }
+  html .new-ui .c-news-ticker {
+    height: 2.2rem;
+    padding: 0.2rem 0;
+  }
+  /* 研究树：树本体接管触摸手势，由脚本变换 */
+  html .l-time-studies-tab {
+    overflow: hidden !important;
+  }
+  html #ui .l-time-study-tree {
+    touch-action: none !important;
+    transform-origin: 0 0;
+  }
+  html .o-save-timer[data-v-save-timer] {
+    bottom: calc(4rem + env(safe-area-inset-bottom, 0));
+  }
+
+  /* ---------- 模态框移动端化 ---------- */
+  html .c-modal-message,
+  html .l-modal-content--centered,
+  html .c-modal-options,
+  html .l-modal-options {
+    width: 94%;
+    max-width: 36rem;
+    max-height: 86vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8rem;
+  }
+  html .c-modal-options__large {
+    width: 94%;
+    max-width: 38rem;
+  }
+  html .l-modal-options__save-record {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  html .l-modal-buttons {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  html .l-modal-buttons .o-primary-btn {
+    flex: 1 1 8rem;
+    min-width: 7rem;
+    white-space: normal;
+  }
+  /* ---------- 如何游玩：移动端重写为纵向 flex 布局 ---------- */
+  html .l-h2p-modal {
+    width: 100%;
+    max-width: 100%;
+    height: 88vh;
+    max-height: 88vh;
+    margin: 0;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+  }
+  html .c-modal.l-modal:has(> .l-h2p-modal) {
+    width: 96%;
+    max-width: 46rem;
+    padding: 0.4rem;
+  }
+  html .l-h2p-header {
+    flex: 0 0 auto;
+    padding: 0.35rem 0 0.1rem;
+  }
+  html .c-h2p-title {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+  html .l-h2p-container {
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none;
+    margin: 0.4rem 0.4rem 0.6rem;
+    gap: 0.35rem;
+  }
+  html .l-h2p-search-tab {
+    width: 100%;
+    flex: 0 0 auto;
+    max-height: 9rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  html .c-h2p-search-bar {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 1.05rem;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.4rem;
+  }
+  html .l-h2p-tab-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.25rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin: 0.35rem 0 0;
+    padding: 0.1rem 0.2rem 0.3rem;
+  }
+  html .o-h2p-tab-button {
+    flex: 0 0 auto;
+    min-width: 5rem;
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    border-bottom: 0;
+    border-radius: 0.35rem;
+    padding: 0.35rem 0.45rem;
+    margin: 0;
+    background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    box-shadow: inset 0 0 0.3rem rgba(0, 0, 0, 0.25);
+  }
+  html .o-h2p-tab-button--selected,
+  html .o-h2p-tab-button:hover {
+    background: color-mix(in srgb, var(--color-accent) 32%, transparent);
+    box-shadow: inset 0 0 0.5rem var(--color-text);
+  }
+  html .l-h2p-info {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  html .c-h2p-body--title {
+    font-size: 1.45rem;
+    padding: 0.2rem 0.5rem;
+  }
+  html .l-h2p-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0.3rem 0.35rem 0;
+    padding: 0.6rem 0.7rem;
+    font-size: 1.12rem;
+    line-height: 1.55;
+    border-radius: 0.5rem;
+    background: color-mix(in srgb, var(--color-base) 85%, transparent);
+    box-sizing: border-box;
+  }
+  html .l-h2p-body img,
+  html .l-h2p-body svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.4rem auto;
+  }
+  html .l-h2p-body table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  html .l-h2p-body pre,
+  html .l-h2p-body code {
+    max-width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* ---------- 更新日志：保持原有移动端布局 ---------- */
+  html .l-changelog-container {
+    flex-direction: column;
+    max-height: 72vh;
+  }
+  html .l-changelog-search-tab {
+    max-height: 11rem;
+    overflow-y: auto;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  html .l-changelog-tab-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  html .o-changelog-tab-button {
+    flex: 1 1 auto;
+    min-width: 7rem;
+    max-width: 12rem;
+  }
+  html .l-changelog-info {
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* ---------- 符文页移动端化 ---------- */
+  html .l-glyphs-tab {
+    flex-direction: column;
+  }
+  html .l-reality-button-column {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  html .l-player-glyphs-column {
+    width: 100%;
+    margin-left: 0;
+  }
+  html .l-glyph-sidebar-option-container {
+    width: 100%;
+  }
+  html .l-glyph-sidebar-tab-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html .l-glyph-sidebar-tab-container .l-glyph-sidebar-button {
+    flex: 1 1 auto;
+    min-width: 6rem;
+  }
+  html .l-glyph-inventory {
+    overflow-x: auto;
+  }
+
+  /* ---------- 时间研究树 ---------- */
+  html .l-time-study-tree-container,
+  html .l-time-studies-tab {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  html .l-time-study-tree {
+    transform-origin: top left;
+  }
+
+  /* ---------- 自动机 ---------- */
+  html .c-automator-tab,
+  html .l-automator-tab {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100%;
+  }
+  html .c-automator-split-pane,
+  html .c-automator-tab .vue-splitter-container {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  html .c-automator-tab .c-automator-split-pane {
+    height: auto;
+    min-height: 0;
+  }
+  html .c-automator-tab .vue-splitter-container > .splitter-pane-resizer {
+    display: none;
+  }
+  html .c-automator-tab .vue-splitter-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+  }
+  html .c-automator-tab .splitter-pane.splitter-paneL,
+  html .c-automator-tab .splitter-pane.splitter-paneR,
+  html .c-automator-tab [class*="splitter-paneL"],
+  html .c-automator-tab [class*="splitter-paneR"] {
+    position: static !important;
+    width: 100% !important;
+    min-width: 0;
+    height: auto;
+    padding: 0 !important;
+  }
+  html .c-automator-tab .l-automator-pane {
+    height: auto;
+    min-height: 40rem;
+  }
+  html .c-automator-tab .l-automator-pane__content {
+    min-height: 36rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  html .c-automator-tab .l-automator-button-row {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 3rem;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+  html .c-automator-tab .c-button-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  html .c-automator-tab .c-automator__button {
+    padding: 0.3rem 0.5rem;
+  }
+  html .c-automator-tab .c-slider-toggle-button {
+    max-width: 100%;
+  }
+  html .c-automator-tab .c-slider-toggle-button .fas {
+    width: 2.2rem;
+  }
+  html .c-automator-tab .CodeMirror,
+  html .c-automator-tab .CodeMirror-scroll {
+    max-width: 100%;
+  }
+
+  /* ---------- 通用美化：过渡与动画 ---------- */
+  html .o-primary-btn,
+  html .o-tab-btn,
+  html .c-reality-upgrade-btn,
+  html .o-prestige-button {
+    transition: transform 0.12s ease, filter 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+  }
+  html .o-primary-btn:active,
+  html .o-tab-btn:active,
+  html .c-reality-upgrade-btn:active,
+  html .o-prestige-button:active {
+    transform: scale(0.96);
+  }
+  /* 底栏主按钮按下时不缩放，避免 transform 改变 fixed 子页栏的定位基准 */
+  html .c-modern-sidebar > .o-tab-btn:active {
+    transform: none;
+  }
+  html .c-modern-sidebar > .o-tab-btn--active {
+    animation: ad-mobile-tab-pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes ad-mobile-tab-pulse {
+    0%, 100% { box-shadow: inset 0 0.22rem 0 0 var(--color-accent); }
+    50% { box-shadow: inset 0 0.22rem 0 0 var(--color-accent), 0 0 0.6rem color-mix(in srgb, var(--color-accent) 45%, transparent); }
+  }
+  html .tab-container,
+  html .c-game-tab {
+    animation: ad-mobile-tab-fade 0.22s ease-out;
+  }
+  @keyframes ad-mobile-tab-fade {
+    from { opacity: 0; transform: translateY(0.35rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  html .c-modal-message,
+  html .l-modal-content--centered,
+  html .c-modal-options {
+    animation: ad-mobile-modal-in 0.18s ease-out;
+  }
+  @keyframes ad-mobile-modal-in {
+    from { opacity: 0; transform: translateY(0.8rem) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  /* ---------- 布局细节修正 ---------- */
+  html .information-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.2rem 0.5rem;
+  }
+  html .l-challenges-tab__header .c-subtab-option-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .l-challenge-grid {
+    width: 100%;
+  }
+  html .l-challenge-grid__cell {
+    flex: 1 1 40%;
+    min-width: 0;
+    max-width: 18rem;
+  }
+  html .c-challenge-box {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    min-height: 12rem;
+    box-sizing: border-box;
+  }
+  html .l-automator-tab {
+    min-width: 0;
+  }
+  html .l-ra-all-pets-container,
+  html .l-ra-non-pets {
+    flex-wrap: wrap;
+  }
+  html .l-ra-non-pets {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  html .c-ra-run-button {
+    width: 100%;
+  }
+  html .l-pelle-all-content-container {
+    width: 100%;
+  }
+  html .l-singularity-milestone-modal-container-outer {
+    max-height: 55vh;
+    overflow-y: auto;
+  }
+  html .l-singularity-milestone-sort-container {
+    flex-wrap: wrap;
+  }
+  html .l-singularity-milestone-sort-container .c-singularity-milestone-modal-sort-button {
+    flex: 1 1 45%;
+    min-width: 8rem;
+  }
+  html .l-alchemy-circle {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  /* ---------- 成就格：保持原始图标尺寸，仅换行居中 ---------- */
+  html .l-achievement-grid__cell {
+    margin: 0.4rem 0.5rem;
+  }
+
+  /* ---------- 现实升级与想象升级：两列换行 ---------- */
+  html .l-reality-upgrade-grid__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  html .l-reality-upgrade-btn {
+    flex: 1 1 45%;
+    width: auto;
+    min-width: 13rem;
+    height: auto;
+    min-height: 9rem;
+    margin: 0.3rem;
+  }
+
+  /* ---------- 黑洞页：固定 75rem 网格改自适应 ---------- */
+  html .l-black-hole-upgrade-grid {
+    width: 100%;
+  }
+  html .l-black-hole-upgrade-grid__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .l-black-hole-upgrade-grid__row > * {
+    flex: 1 1 45%;
+    min-width: 0;
+  }
+  html .l-black-hole-sliders {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  html .l-black-hole-sliders > * {
+    width: 100%;
+  }
+
+  /* ---------- 速通里程碑：入口自适应 ---------- */
+  html .l-speedrun-milestone-tab {
+    width: 100%;
+  }
+  html .l-speedrun-milestone-entry {
+    flex: 1 1 45%;
+    width: auto;
+    min-width: 0;
+    height: auto;
+    min-height: 7rem;
+  }
+
+  /* ---------- 膨胀页：信息块换行、升级两列 ---------- */
+  html .l-dilation-tab {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .l-dilation-tab > * {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+  html .l-dilation-upgrades-grid__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .l-dilation-upgrades-grid__cell {
+    margin: 0.5rem;
+    flex: 1 1 40%;
+    min-width: 0;
+  }
+
+  /* ---------- 自动购买器：96rem 固定宽购买框与行式框改自适应 ---------- */
+  html .l-autobuyers-tab {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  html .l-autobuyer-singlet-group {
+    width: 100%;
+    max-width: 100%;
+  }
+  html .c-autobuyer-buy-box {
+    width: 100%;
+    max-width: 34rem;
+    height: auto;
+    min-height: 6rem;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  html .c-autobuyer-box-row {
+    width: 100%;
+    max-width: 34rem;
+    min-width: 0;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75rem;
+    box-sizing: border-box;
+  }
+  html .c-autobuyer-box-row__intervalSlot,
+  html .c-autobuyer-box-row__toggleSlot,
+  html .c-autobuyer-box-row__checkboxSlot,
+  html .l-autobuyer-box__header {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+  html .c-autobuyer-box-row .o-autobuyer-btn,
+  html .c-autobuyer-box-row .o-autobuyer-input,
+  html .c-autobuyer-box-row .c-small-autobuyer-input,
+  html .c-autobuyer-box-row .o-autobuyer-toggle-checkbox {
+    max-width: 100%;
+    white-space: normal;
+  }
+  html .l-autobuyer-box__title,
+  html .l-autobuyer-box__autobuyers {
+    width: 100%;
+    max-width: 100%;
+  }
+  html .l-autobuyer-box__autobuyers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .c-autobuyer-box-slot {
+    flex: 1 1 45% !important;
+    min-width: 9rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html .l-autobuyer-box__footer {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.2rem;
+  }
+  /* 大坍缩自动购买器与其他行式框保持同宽 */
+  html .l-autobuyers-tab .c-infinity-pos.c-autobuyer-box-row {
+    max-width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---------- 无限升级：19rem 固定宽按钮改 flex 自适应 ---------- */
+  html .l-infinity-upgrade-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  html .c-infinity-upgrade-grid__column {
+    flex: 1 1 45%;
+    min-width: 0;
+    max-width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 0.3rem;
+  }
+  html .l-infinity-upgrade-grid__cell,
+  html .o-infinity-upgrade-btn {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    flex: 0 0 auto;
+    height: auto;
+    min-height: 8rem;
+  }
+  html .l-infinity-upgrades-bottom-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  html .l-infinity-upgrades-bottom-row .l-infinity-upgrade-grid__cell,
+  html .l-infinity-upgrades-bottom-row .l-infinity-upgrades-tab__mult-btn {
+    flex: 1 1 45%;
+    min-width: 0;
+    max-width: 18rem;
+    margin: 0.5rem;
+  }
+  html .l-infinity-upgrades-tab__mult-btn {
+    max-width: 100%;
+  }
+  html .l-spoon-btn-group {
+    max-width: 100%;
+  }
+  html .l-spoon-btn-group .o-primary-btn {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  /* ---------- 打破无限升级：行式网格改 flex 换行 ---------- */
+  html .l-break-infinity-tab {
+    width: 100%;
+    max-width: 100%;
+  }
+  html .l-break-infinity-upgrade-grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  html .l-break-infinity-tab .o-infinity-upgrade-btn {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    flex: 1 1 40%;
+    height: auto;
+    min-height: 8rem;
+  }
+  html .l-break-infinity-tab__break-btn {
+    max-width: 100%;
+  }
+
+  /* ---------- 永恒升级：行式网格改 flex 换行 ---------- */
+  html .l-eternity-upgrades-grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  html .l-eternity-upgrades-grid__cell,
+  html .o-eternity-upgrade {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    flex: 1 1 40%;
+    height: auto;
+    min-height: 8rem;
+    box-sizing: border-box;
+  }
+
+  /* ---------- 永恒里程碑：行式网格改 flex 换行 ---------- */
+  html .l-eternity-milestone-grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  html .l-eternity-milestone-grid__cell,
+  html .o-eternity-milestone__reward {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    flex: 1 1 40%;
+    height: auto;
+    min-height: 8rem;
+    box-sizing: border-box;
+  }
+
+  /* ---------- 时间研究：顶部商店区改 flex 换行 ---------- */
+  html .l-time-studies-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  html .time-theorem-buttons {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: calc(7.2rem + env(safe-area-inset-bottom, 0));
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    background: color-mix(in srgb, var(--color-base) 96%, #000);
+    border-top: 0.1rem solid color-mix(in srgb, var(--color-accent) 40%, transparent);
+    padding: 0.2rem 0.3rem;
+    pointer-events: all;
+  }
+  html .ttbuttons-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  html .ttshop-container,
+  html .ttshop-background {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  html .l-tt-buy-button {
+    width: auto;
+    min-width: 8rem;
+    max-width: 100%;
+    flex: 1 1 40%;
+  }
+
+  /* ---------- 福利树：横向滚动兜底 ---------- */
+  html .c-perk-tab {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* ---------- 统计页：表格横向滚动 ---------- */
+  html .c-stats-tab {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  html .c-stats-tab table {
+    max-width: 100%;
+  }
+
+  /* ---------- 商店：按钮全宽 ---------- */
+  html .tab.shop .o-primary-btn,
+  html .tab.shop .o-shop-btn {
+    width: 100%;
+    max-width: 26rem;
+    white-space: normal;
+  }
+
+  /* ---------- 炼金反应区：紧凑并允许换行 ---------- */
+  html .l-ra-alchemy-tab {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html .l-ra-alchemy-tab > * {
+    min-width: 0;
+  }
+
+  /* ---------- 工具提示：避免文字溢出屏幕 ---------- */
+  html .general-tooltip .tooltip-inner {
+    max-width: 90vw;
+    white-space: normal;
+  }
+
+  /* ---------- 弹窗：容器收窄 ---------- */
+  html .l-modal {
+    width: 94%;
+    max-width: 36rem;
+    max-height: 88vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 0.8rem;
+  }
+
+  /* ---------- 表单控件：最大宽度收束 ---------- */
+  html input,
+  html select,
+  html textarea {
+    max-width: 100%;
+  }
+
+  /* ---------- 横屏安全区 ---------- */
+  html .game-container {
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+  }
+  html .c-modern-sidebar {
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+  }
+
+  /* ---------- 美化：进度条流光 ---------- */
+  html .c-progress-bar__fill {
+    animation: ad-mobile-progress-shimmer 2.8s ease-in-out infinite;
+  }
+  @keyframes ad-mobile-progress-shimmer {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.4); }
+  }
+
+  /* ---------- 美化：底栏毛玻璃与描边 ---------- */
+  html .c-modern-sidebar {
+    backdrop-filter: blur(0.6rem);
+    -webkit-backdrop-filter: blur(0.6rem);
+    border-top: 0.1rem solid color-mix(in srgb, var(--color-accent) 40%, transparent);
+  }
+
+  /* ---------- 美化：卡片按压反馈与焦点可见性 ---------- */
+  html .o-achievement,
+  html .l-challenge-grid__cell,
+  html .l-reality-upgrade-btn {
+    transition: transform 0.14s ease, box-shadow 0.14s ease;
+  }
+  html .o-achievement:active,
+  html .l-challenge-grid__cell:active,
+  html .l-reality-upgrade-btn:active {
+    transform: translateY(0.08rem) scale(0.97);
+  }
+}
+
+/* ---------- 横屏手机（iPhone 11 横屏约 896x414 CSS 尺寸） ---------- */
+@media (max-width: 900px) and (max-height: 520px) {
+  html .c-modern-sidebar {
+    height: 3rem;
+  }
+  html .c-modern-sidebar > .o-tab-btn,
+  html .c-modern-sidebar > .c-modern-sidebar__speed {
+    height: 3rem;
+  }
+  html .c-modern-sidebar > .o-tab-btn--active .subtabs {
+    bottom: calc(3rem + env(safe-area-inset-bottom, 0));
+    height: 2.6rem;
+    min-height: 2.6rem;
+    padding: 0.15rem 0.3rem;
+  }
+  html .c-modern-sidebar > .o-tab-btn--active .o-tab-btn--subtab {
+    height: 2.2rem;
+    min-width: 2.4rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  html .game-container {
+    padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0));
+  }
+  html .l-notification-container {
+    bottom: calc(6rem + env(safe-area-inset-bottom, 0));
+  }
+  html .c-modal-message,
+  html .l-modal-content--centered,
+  html .c-modal-options {
+    max-height: 92vh;
+  }
+  html .c-game-header {
+    max-height: 6rem;
   }
 }

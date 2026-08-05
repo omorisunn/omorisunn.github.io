@@ -22,8 +22,8 @@ export default {
     types: () => GLYPH_TYPES.filter(type => type !== "cursed" && type !== "companion"),
     lastMachines() {
       return this.lastMachinesTeresa.lt(DC.E10000)
-        ? `${quantify("Reality Machine", this.lastMachinesTeresa, 2)}`
-        : `${quantify("Imaginary Machine", this.lastMachinesTeresa.dividedBy(DC.E10000), 2)}`;
+        ? `${quantify("台现实机器", this.lastMachinesTeresa, 2)}`
+        : `${quantify("台想象机器", this.lastMachinesTeresa.dividedBy(DC.E10000), 2)}`;
     },
     dropDownIconClass() {
       return this.hideAlteration ? "far fa-plus-square" : "far fa-minus-square";
@@ -117,11 +117,11 @@ export default {
         v-if="isDoomed"
         class="pelle-current-glyph-effects"
       >
-        You cannot sacrifice Glyphs while Doomed.
+        在末日中你无法献祭符文。
       </span>
       <span v-else>
-        <div>Drag Glyphs here or shift-click to Sacrifice.</div>
-        <div>The confirmation can be disabled in Options or by holding Ctrl.</div>
+        <div>将符文拖到这里或按住 shift 点击以献祭。</div>
+        <div>可以在选项或按住 Ctrl 时禁用确认提示。</div>
       </span>
     </div>
     <div v-if="hasAlteration">
@@ -130,37 +130,37 @@ export default {
         @click="toggleAlteration"
       >
         <i :class="dropDownIconClass" />
-        <b> Altered Glyphs</b>
+        <b> 改造符文</b>
       </span>
       <br>
       <div v-if="hideAlteration">
-        (Details hidden, click to unhide)
+        （细节已隐藏，点击以显示）
       </div>
       <div v-else>
-        Glyph types will have one of their effects improved<br>
-        when their Glyph type's total sacrifice value is above:
+        当符文类型的符文献祭总值超过以下数值时，<br>
+        该类型符文的一个效果将得到提升：
         <br><br>
         <b>
-          <span :style="addStyle">{{ format(addThreshold) }} - an additional secondary effect</span>
+          <span :style="addStyle">{{ format(addThreshold) }}：获得一个额外的次要效果</span>
           <br>
-          <span :style="empowerStyle">{{ format(empowerThreshold) }} - formula drastically improved</span>
+          <span :style="empowerStyle">{{ format(empowerThreshold) }}：公式大幅改进</span>
           <br>
-          <span :style="boostStyle">{{ format(boostThreshold) }} - a boost depending on Glyph Sacrifice</span>
+          <span :style="boostStyle">{{ format(boostThreshold) }}：根据符文献祭获得加成</span>
         </b>
         <br><br>
-        All effects from Glyph Sacrifice can no longer be increased once they reach {{ format(maxSacrifice) }}.
+        符文献祭的所有效果一旦达到 {{ format(maxSacrifice) }} 就无法再提升。
       </div>
     </div>
     <br>
     <div class="c-sacrificed-glyphs__header">
-      Glyph Sacrifice Boosts:
+      符文献祭加成：
     </div>
     <div v-if="anySacrifices && !isDoomed">
       <div v-if="teresaMult > 1">
-        Glyph sacrifice values are multiplied by {{ formatX(teresaMult, 2, 2) }};
-        Teresa was last done at {{ lastMachines }}.
+        符文献祭数值乘以 {{ formatX(teresaMult, 2, 2) }}；
+        Teresa 上次是在 {{ lastMachines }} 时完成的。
         <span v-if="hasSeenRealityGlyph">
-          Reality Glyphs are unaffected by this multiplier and have no altered effects.
+          Reality Glyph 不受此倍率影响，也没有改造效果。
         </span>
       </div>
       <template v-for="type in types">
@@ -175,10 +175,10 @@ export default {
       v-else-if="isDoomed"
       class="pelle-current-glyph-effects"
     >
-      All boosts from Glyph Sacrifice are disabled while Doomed, including changes to effects due to Altered Glyphs.
+      在末日中，符文献祭的所有加成都会被禁用，包括改造符文带来的效果变化。
     </div>
     <div v-else>
-      You haven't Sacrificed any Glyphs yet!
+      你还没有献祭过任何符文！
     </div>
   </div>
   `

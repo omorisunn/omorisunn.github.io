@@ -24,7 +24,7 @@ export default {
     image: "desktop--discord-logo.png"
   },
   {
-    name: "Games",
+    name: "游戏",
     action() {
       Modal.s12Games.show();
     },

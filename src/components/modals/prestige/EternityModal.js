@@ -16,30 +16,29 @@ export default {
   computed: {
     message() {
       return PlayerProgress.eternityUnlocked()
-        ? `Eternity will reset everything except Achievements, Challenge records, and anything under the General header
-          on the Statistics tab.`
-        : `Eternity will reset everything except Achievements, Challenge records, and anything under the General header
-          on the Statistics tab. You will also gain an Eternity Point and unlock various upgrades.`;
+        ? `永恒会重置除成就、挑战记录以及统计页中常规标题下的所有内容。`
+        : `永恒会重置除成就、挑战记录以及统计页中常规标题下的所有内容。
+          你还会获得 1 点永恒点数并解锁各种升级。`;
     },
     gainedEPOnEternity() {
-      return `You will gain ${quantify("Eternity", this.gainedEternities, 2)} 
-      and ${quantify("Eternity Point", this.gainedEternityPoints, 2)} on Eternity.`;
+      return `永恒时你将获得 ${quantify("次永恒", this.gainedEternities, 2)}
+      和 ${quantify("点永恒点数", this.gainedEternityPoints, 2)}。`;
     },
     startWithIP() {
       return this.startingIP.gt(0)
-        ? `You will start your next Eternity with ${quantify("Infinity Point", this.startingIP, 2)}.`
+        ? `你的下一次永恒将从 ${quantify("点无限点数", this.startingIP, 2)} 开始。`
         : ``;
     },
     eternityChallenge() {
       const ec = EternityChallenge.current;
       if (ec.isFullyCompleted) {
-        return `Eternity Challenge ${ec.id} is already fully completed.`;
+        return `永恒挑战 ${ec.id} 已完全完成。`;
       }
       if (!Perk.studyECBulk.isBought) {
-        return `You will gain one completion of Eternity Challenge ${ec.id}.`;
+        return `你将获得永恒挑战 ${ec.id} 的一次完成。`;
       }
       const gainedCompletions = ec.gainedCompletionStatus.gainedCompletions;
-      return `You will gain ${quantifyInt("completion", gainedCompletions)} for Eternity Challenge ${ec.id}.`;
+      return `你将获得永恒挑战 ${ec.id} 的 ${quantifyInt("次完成", gainedCompletions)}。`;
     }
   },
   methods: {
@@ -56,7 +55,7 @@ export default {
   },
   template: `
   <ResetModal
-    :header="exitingEC ? 'Complete Eternity Challenge' : 'You are about to Eternity'"
+    :header="exitingEC ? '完成永恒挑战' : '你即将进行永恒'"
     :message="message"
     :gained-resources="gainedEPOnEternity"
     :starting-resources="startWithIP"

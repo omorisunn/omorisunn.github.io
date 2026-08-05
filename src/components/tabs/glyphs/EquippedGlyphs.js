@@ -28,21 +28,21 @@ export default {
       return this.slotCount + 1;
     },
     respecTooltip() {
-      const reset = Pelle.isDoomed ? "Armageddon" : "Reality";
+      const reset = Pelle.isDoomed ? "末日审判" : "现实";
       return this.respec
-        ? `Respec is active and will place your currently - equipped Glyphs into your inventory after ${reset}.`
-        : `Your currently-equipped Glyphs will stay equipped on ${reset}.`;
+        ? `重新分配已启用，${reset}后会将你当前装备的符文放入背包。`
+        : `你当前装备的符文在${reset}后仍会保持装备。`;
     },
     undoTooltip() {
-      if (!this.undoSlotsAvailable) return "You do not have available inventory space to unequip Glyphs to";
+      if (!this.undoSlotsAvailable) return "你没有可用的背包空间来放入卸下的符文";
       return this.undoAvailable
-        ? ("Unequip the last equipped Glyph and rewind Reality to when you equipped it." +
-          " (Most resources will be fully reset)")
-        : "Undo is only available for Glyphs equipped during this Reality";
+        ? ("卸下最后装备的符文，并将现实回退到装备它的时候。" +
+          "（大部分资源将被完全重置）")
+        : "撤销仅适用于本次现实中装备的符文";
     },
     unequipText() {
-      if (Pelle.isDoomed) return "Unequip Glyphs on Armageddon";
-      return "Unequip Glyphs on Reality";
+      if (Pelle.isDoomed) return "末日审判时卸下符文";
+      return "现实时卸下符文";
     },
     isDoomed() {
       return Pelle.isDoomed;
@@ -214,17 +214,17 @@ export default {
         @click="undo"
         data-v-euqipped-glyphs
       >
-        <span>Rewind to <b>undo</b> the last equipped Glyph</span>
+        <span>回退以<b>撤销</b>最后装备的符文</span>
       </button>
       <button
         class="l-glyph-equip-button c-reality-upgrade-btn"
         @click="toggleRespecIntoProtected"
         data-v-euqipped-glyphs
       >
-        Unequip Glyphs to:
+        卸下符文到：
         <br>
-        <span v-if="respecIntoProtected">Protected slots</span>
-        <span v-else>Main inventory</span>
+        <span v-if="respecIntoProtected">受保护槽位</span>
+        <span v-else>主背包</span>
       </button>
       <button
         class="l-glyph-equip-button-short c-reality-upgrade-btn"
@@ -232,7 +232,7 @@ export default {
         @click="showOptionModal"
         data-v-euqipped-glyphs
       >
-        Open Glyph Visual Options
+        打开符文外观选项
       </button>
     </div>
   </div>

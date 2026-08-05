@@ -38,13 +38,13 @@ export default {
       const effarigSettings = this.effarigSettings;
       if (effarigSettings.RM && effarigSettings.glyph &&
         (this.effect.id === "effarigrm" || this.effect.id === "effarigglyph")) {
-        return "RM multiplier and Glyph instability cannot occur together on the same Glyph!";
+        return "RM 倍率与符文不稳定不能同时出现在同一个符文上！";
       }
       if (this.effect.id === "effarigrm" && effarigSettings.glyph) {
-        return "This effect is mutually exclusive with Glyph instability!";
+        return "此效果与符文不稳定互斥！";
       }
       if (this.effect.id === "effarigglyph" && effarigSettings.RM) {
-        return "This effect is mutually exclusive with RM multiplier!";
+        return "此效果与 RM 倍率互斥！";
       }
       return "";
     },

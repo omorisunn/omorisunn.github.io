@@ -28,7 +28,7 @@ export const pelleRifts = {
       {
         resource: "vacuum",
         requirement: 0.04,
-        description: "You can equip a single basic Glyph with decreased level and rarity"
+        description: "你可以装备一个等级和稀有度降低的基础符文"
       },
       {
         resource: "vacuum",
@@ -44,7 +44,7 @@ export const pelleRifts = {
         formatEffect: x => `EP gain ${formatX(x, 2, 2)}`
       },
     ],
-    galaxyGeneratorText: "There is not enough space left for more, you must fill in the $value"
+    galaxyGeneratorText: "没有足够空间容纳更多，你必须填满$value"
   },
   decay: {
     id: 2,
@@ -67,7 +67,7 @@ export const pelleRifts = {
       {
         resource: "decay",
         requirement: 0.2,
-        description: "First rebuyable Pelle upgrade also affects 1st Infinity Dimension",
+        description: "第一个可重复购买的 Pelle 升级也影响第 1 无限维度",
         effect: () => {
           const x = player.celestials.pelle.rebuyables.antimatterDimensionMult;
           return Decimal.pow(1e50, x - 9);
@@ -84,7 +84,7 @@ export const pelleRifts = {
       {
         resource: "decay",
         requirement: 1,
-        description: "Increase max Replicanti Galaxies based on total Rift milestones",
+        description: "根据裂隙里程碑总数提高最大 Replicanti 星系数量",
         effect: () => {
           const x = PelleRifts.totalMilestones();
           return x ** 2 - 2 * x;
@@ -92,7 +92,7 @@ export const pelleRifts = {
         formatEffect: x => `Max RG count +${formatInt(x)}`
       },
     ],
-    galaxyGeneratorText: "There's not enough antimatter to form new Galaxies, you need to reverse the $value"
+    galaxyGeneratorText: "没有足够的反物质形成新星系，你需要逆转$value"
   },
   chaos: {
     id: 3,
@@ -131,7 +131,7 @@ export const pelleRifts = {
       {
         resource: "chaos",
         requirement: 0.15,
-        description: "Glyphs gain a new Pelle-specific effect",
+        description: "符文获得新的 Pelle 专属效果",
       },
       {
         resource: "chaos",
@@ -139,7 +139,7 @@ export const pelleRifts = {
         description: () => `You gain ${formatPercents(0.01)} of your EP gained on Eternity per second`,
       },
     ],
-    galaxyGeneratorText: "Your Galaxies are too fragmented, you must stabilize the $value"
+    galaxyGeneratorText: "你的星系过于碎片化，你必须稳定$value"
   },
   recursion: {
     id: 4,
@@ -158,7 +158,7 @@ export const pelleRifts = {
       {
         resource: "recursion",
         requirement: 0.10,
-        description: "Dimensional Boosts are more powerful based on EC completions",
+        description: "维度提升根据永恒挑战完成次数更强大",
         effect: () => Math.max(100 * EternityChallenges.completions ** 2, 1) *
           Math.max(1e4 ** (EternityChallenges.completions - 40), 1),
         formatEffect: x => `Dimension Boost power ${formatX(x, 2, 2)}`
@@ -166,17 +166,17 @@ export const pelleRifts = {
       {
         resource: "recursion",
         requirement: 0.15,
-        description: "Infinity Dimensions are stronger based on EC completions",
+        description: "无限维度根据永恒挑战完成次数更强",
         effect: () => Decimal.pow("1e1500", ((EternityChallenges.completions - 25) / 20) ** 1.7).max(1),
         formatEffect: x => `Infinity Dimensions ${formatX(x)}`
       },
       {
         resource: "recursion",
         requirement: 1,
-        description: "Permanently unlock the Galaxy Generator",
+        description: "永久解锁星系生成器",
       },
     ],
-    galaxyGeneratorText: "Creating more Galaxies is unsustainable, you must focus the $value to allow more"
+    galaxyGeneratorText: "创造更多星系不可持续，你必须聚焦$value以允许更多"
   },
   paradox: {
     id: 5,
@@ -195,7 +195,7 @@ export const pelleRifts = {
       {
         resource: "paradox",
         requirement: 0.15,
-        description: "Time Dimensions 5-8 are much cheaper, unlock more Dilation upgrades",
+        description: "时间维度 5-8 便宜得多，解锁更多膨胀升级",
         // FIXME: Not a great solution
         onStateChange: () => {
           updateTimeDimensionCosts();
@@ -210,7 +210,7 @@ export const pelleRifts = {
       {
         resource: "paradox",
         requirement: 0.5,
-        description: "Dilation rebuyable purchase count improves Infinity Power conversion rate",
+        description: "膨胀可重复购买次数提高无限力量转化率",
         effect: () => Math.min(
           1.1075 ** (Object.values(player.dilation.rebuyables).sum() - 60),
           712
@@ -218,6 +218,6 @@ export const pelleRifts = {
         formatEffect: x => `Infinity Power Conversion ${formatX(x, 2, 2)}`
       },
     ],
-    galaxyGeneratorText: "It should be possible to create more, but Pelle has restricted you. Disregard the $value"
+    galaxyGeneratorText: "本应可以创造更多，但 Pelle 限制了你。无视$value"
   }
 };

@@ -30,7 +30,7 @@ export const MatterScale = {
         return scale;
       }
     }
-    throw "Cannot determine smallest antimatter scale";
+    throw "无法确定最小的反物质尺度";
   },
 
   macroScale(matter) {
@@ -51,42 +51,42 @@ export const MatterScale = {
   },
 
   microObjects: [
-    { amount: new Decimal("1e-54"), name: "attometers cubed" },
-    { amount: new Decimal("1e-63"), name: "zeptometers cubed" },
-    { amount: new Decimal("1e-72"), name: "yoctometers cubed" },
-    { amount: new Decimal("4.22419e-105"), name: "planck volumes" }
+    { amount: new Decimal("1e-54"), name: "立方阿米" },
+    { amount: new Decimal("1e-63"), name: "立方仄米" },
+    { amount: new Decimal("1e-72"), name: "立方幺米" },
+    { amount: new Decimal("4.22419e-105"), name: "普朗克体积" }
   ],
 
   macroObjects: [
-    { amount: new Decimal("2.82e-45"), name: "质子", verb: "make" },
-    { amount: new Decimal("1e-42"), name: "原子核", verb: "make" },
-    { amount: new Decimal("7.23e-30"), name: "氢原子", verb: "make" },
-    { amount: new Decimal("5e-21"), name: "病毒", verb: "make" },
-    { amount: new Decimal("9e-17"), name: "红细胞", verb: "make" },
-    { amount: new Decimal("6.2e-11"), name: "沙粒", verb: "make" },
-    { amount: new Decimal("5e-8"), name: "米粒", verb: "make" },
-    { amount: new Decimal("3.555e-6"), name: "茶匙", verb: "fill" },
-    { amount: new Decimal("7.5e-4"), name: "葡萄酒瓶", verb: "fill" },
-    { amount: DC.D1, name: "冰箱", verb: "fill" },
-    { amount: new Decimal("2.5e3"), name: "奥运会标准游泳池", verb: "fill" },
-    { amount: new Decimal("2.6006e6"), name: "吉萨大金字塔", verb: "make" },
-    { amount: new Decimal("3.3e8"), name: "中国长城", verb: "make" },
-    { amount: new Decimal("5e12"), name: "大型小行星", verb: "make" },
-    { amount: new Decimal("4.5e17"), name: "矮行星", verb: "make" },
-    { amount: new Decimal("1.08e21"), name: "地球", verb: "make" },
-    { amount: new Decimal("1.53e24"), name: "木星", verb: "make" },
-    { amount: new Decimal("1.41e27"), name: "太阳", verb: "make" },
-    { amount: new Decimal("5e32"), name: "红巨星", verb: "make" },
-    { amount: new Decimal("8e36"), name: "特超巨星", verb: "make" },
-    { amount: new Decimal("1.7e45"), name: "星云", verb: "make" },
-    { amount: new Decimal("1.7e48"), name: "奥尔特云", verb: "make" },
-    { amount: new Decimal("3.3e55"), name: "本地泡", verb: "make" },
-    { amount: new Decimal("3.3e61"), name: "星系", verb: "make" },
-    { amount: new Decimal("5e68"), name: "本星系群", verb: "make" },
-    { amount: new Decimal("1e73"), name: "玉夫座空洞", verb: "make" },
-    { amount: new Decimal("3.4e80"), name: "可观测宇宙", verb: "make" },
-    { amount: new Decimal("1e113"), name: "维度", verb: "make" },
-    { amount: DC.C2P1024, name: "无限维度", verb: "make" },
-    { amount: new Decimal("1e65000"), name: "时间维度", verb: "make" }
+    { amount: new Decimal("2.82e-45"), name: "质子", verb: "制造" },
+    { amount: new Decimal("1e-42"), name: "原子核", verb: "制造" },
+    { amount: new Decimal("7.23e-30"), name: "氢原子", verb: "制造" },
+    { amount: new Decimal("5e-21"), name: "病毒", verb: "制造" },
+    { amount: new Decimal("9e-17"), name: "红细胞", verb: "制造" },
+    { amount: new Decimal("6.2e-11"), name: "沙粒", verb: "制造" },
+    { amount: new Decimal("5e-8"), name: "米粒", verb: "制造" },
+    { amount: new Decimal("3.555e-6"), name: "茶匙", verb: "填满" },
+    { amount: new Decimal("7.5e-4"), name: "葡萄酒瓶", verb: "填满" },
+    { amount: DC.D1, name: "冰箱", verb: "填满" },
+    { amount: new Decimal("2.5e3"), name: "奥运会标准游泳池", verb: "填满" },
+    { amount: new Decimal("2.6006e6"), name: "吉萨大金字塔", verb: "制造" },
+    { amount: new Decimal("3.3e8"), name: "中国长城", verb: "制造" },
+    { amount: new Decimal("5e12"), name: "大型小行星", verb: "制造" },
+    { amount: new Decimal("4.5e17"), name: "矮行星", verb: "制造" },
+    { amount: new Decimal("1.08e21"), name: "地球", verb: "制造" },
+    { amount: new Decimal("1.53e24"), name: "木星", verb: "制造" },
+    { amount: new Decimal("1.41e27"), name: "太阳", verb: "制造" },
+    { amount: new Decimal("5e32"), name: "红巨星", verb: "制造" },
+    { amount: new Decimal("8e36"), name: "特超巨星", verb: "制造" },
+    { amount: new Decimal("1.7e45"), name: "星云", verb: "制造" },
+    { amount: new Decimal("1.7e48"), name: "奥尔特云", verb: "制造" },
+    { amount: new Decimal("3.3e55"), name: "本地泡", verb: "制造" },
+    { amount: new Decimal("3.3e61"), name: "星系", verb: "制造" },
+    { amount: new Decimal("5e68"), name: "本星系群", verb: "制造" },
+    { amount: new Decimal("1e73"), name: "玉夫座空洞", verb: "制造" },
+    { amount: new Decimal("3.4e80"), name: "可观测宇宙", verb: "制造" },
+    { amount: new Decimal("1e113"), name: "维度", verb: "制造" },
+    { amount: DC.C2P1024, name: "无限维度", verb: "制造" },
+    { amount: new Decimal("1e65000"), name: "时间维度", verb: "制造" }
   ]
 };

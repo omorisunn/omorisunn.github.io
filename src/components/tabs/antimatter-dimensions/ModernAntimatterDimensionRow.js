@@ -48,7 +48,7 @@ export default {
       return this.isShown || this.isUnlocked || this.amount.gt(0);
     },
     boughtTooltip() {
-      if (this.isCapped) return `无名氏禁止购买超过 ${format(1)} 个第八维度`;
+      if (this.isCapped) return `The Nameless Ones 禁止购买超过 ${format(1)} 个第八维度`;
       if (this.isContinuumActive) return "连续统生产所有维度";
       return `已购买 ${quantifyInt("次", this.bought)}`;
     },
@@ -57,7 +57,7 @@ export default {
     },
     buttonPrefix() {
       if (!this.isUnlocked) return "未解锁";
-      if (this.isCapped) return "被无名氏禁用";
+      if (this.isCapped) return "被 The Nameless Ones 禁用";
       if (this.isContinuumActive) return `连续统：`;
       return `购买 ${formatInt(this.howManyCanBuy)}`;
     },

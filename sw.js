@@ -3,14 +3,14 @@
 // 离线即可完整游玩。运行时新请求的资源继续缓存(cache-first)。
 // 修改缓存内容时记得递增 CACHE_VERSION,否则旧缓存不会更新。
 
-const CACHE_VERSION = "v2";
+const CACHE_VERSION = "v17";
 const CACHE_NAME = "ad-chinese-" + CACHE_VERSION;
 
 const CORE_ASSETS = [
   "./",
   "./index.html",
   "./manifest.json",
-  "./public/mobile-fix.js",
+  "./public/mobile-fix.js?17",
   "./public/icon.png",
   "./sw.js",
   "./public/stylesheets/Barrio-Regular.ttf",
@@ -24,7 +24,10 @@ const CORE_ASSETS = [
   "./public/stylesheets/fa-solid-900.ttf",
   "./public/stylesheets/github-light.css",
   "./public/stylesheets/glyphs.css",
-  "./public/stylesheets/mobile.css",
+"./public/stylesheets/mobile.css?17",
+"./public/stylesheets/mobile-layout-core.css?17",
+"./public/stylesheets/mobile-layout-meta.css?17",
+"./public/stylesheets/mobile-beauty.css?17",
   "./public/stylesheets/new-ui-styles.css",
   "./public/stylesheets/old-ui.css",
   "./public/stylesheets/styles.css",

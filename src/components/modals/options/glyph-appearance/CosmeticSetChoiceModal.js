@@ -25,15 +25,15 @@ export default {
       return CosmeticGlyphTypes.list.filter(t => t.isCosmetic && t.isUnlocked).map(t => t.id);
     },
     setName() {
-      return this.currentSet?.name ?? "None Selected";
+      return this.currentSet?.name ?? "未选择";
     },
     setContents() {
       const contents = [];
       // We explicitly pass in x => x as the formatting function in order to override END formatting; if we don't,
       // this modal will show END symbols/colors when opened at game completion
-      if (this.symbols) contents.push(quantify("symbol", this.symbols.length, 0, 0, x => x));
-      if (this.colors) contents.push(quantify("color scheme", this.colors.length, 0, 0, x => x));
-      return contents.join(" and ");
+      if (this.symbols) contents.push(quantify("个符号", this.symbols.length, 0, 0, x => x));
+      if (this.colors) contents.push(quantify("套配色方案", this.colors.length, 0, 0, x => x));
+      return contents.join(" 和 ");
     },
     symbols() {
       return this.currentSet.symbol;
@@ -79,7 +79,7 @@ export default {
     @confirm="chooseSet"
   >
     <template #header>
-      Choose a Glyph Cosmetic Set
+      选择符文外观套装
     </template>
     <div
       class="c-center"
@@ -94,7 +94,7 @@ export default {
             class="c-dropdown-header"
             data-v-cosmetic-set-choice-modal
           >
-            ▼ Available Sets ▼
+            可用套装
             <br>
             {{ setName }}
           </div>
@@ -104,7 +104,7 @@ export default {
         </template>
       </ExpandingControlBox>
       <div v-if="currentSet">
-        The "{{ currentSet.name }}" Set contains the following {{ setContents }}:
+        “{{ currentSet.name }}”套装包含{{ setContents }}：
         <br>
         <span
           v-for="symbol of symbols"

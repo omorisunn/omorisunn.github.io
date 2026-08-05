@@ -70,12 +70,12 @@ export default {
   template: `
   <ModalWrapper>
     <template #header>
-      Exponent Notation Settings
+      指数计数法设置
     </template>
-    You can adjust what your numbers look like when very large. With small values, the exponent will
-    be directly displayed with no additional formatting. Larger values will have commas inserted into the exponent
-    for clarity, and the largest values will apply notation formatting to the exponent in order to shorten it. You can
-    adjust the two thresholds between these regions below:
+    你可以调整数字非常大时的显示方式。数值较小时，指数会
+    直接显示而不进行额外格式化。较大的数值会在指数中插入逗号
+    以提高可读性，而最大的数值会对指数应用计数法格式化以缩短其长度。你可以
+    在下方调整这些区域之间的两个阈值：
     <br>
     <br>
     <div
@@ -85,7 +85,7 @@ export default {
       <b
         class="o-digit-text"
         data-v-notation-modal
-      >Minimum for commas in exponent: {{ formatInt(commaDigits) }} digits</b>
+      >指数中逗号的最少位数：{{ formatInt(commaDigits) }} 位</b>
       <SliderComponent
         class="o-primary-btn--slider__slider o-slider"
         v-bind="sliderProps"
@@ -101,7 +101,7 @@ export default {
       <b
         class="o-digit-text"
         data-v-notation-modal
-      >Minimum for notation in exponent: {{ formatInt(notationDigits) }} digits</b>
+      >指数中计数法的最少位数：{{ formatInt(notationDigits) }} 位</b>
       <SliderComponent
         class="o-primary-btn--slider__slider o-slider"
         v-bind="sliderProps"
@@ -111,7 +111,7 @@ export default {
       />
     </div>
     <br>
-    Sample numbers for exponent formatting:
+    指数格式化的示例数字：
     <div
       class="c-sample-numbers"
       data-v-notation-modal
@@ -126,10 +126,9 @@ export default {
       </span>
     </div>
     <br>
-    Note: The interface is generally optimized for Scientific notation with settings of {{ formatInt(5) }}
-    and {{ formatInt(9) }} digits. Some text may look odd or overflow out of boxes if you
-    differ significantly from these values. Additionally, these settings might not cause any visual changes
-    when using certain notations.
+    注意：界面通常针对科学计数法的 {{ formatInt(5) }}
+    和 {{ formatInt(9) }} 位设置进行了优化。如果你与这些值相差较大，
+    部分文本可能会显得异常或溢出方框。此外，使用某些计数法时，这些设置可能不会产生任何视觉变化。
   </ModalWrapper>
   `
 };

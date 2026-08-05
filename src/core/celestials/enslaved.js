@@ -21,8 +21,8 @@ export const ENSLAVED_UNLOCKS = {
     description() {
       const hasLevelRequirement = player.records.bestReality.glyphLevel >= 5000;
       const hasRarityRequirement = strengthToRarity(player.records.bestReality.glyphStrength) >= 100;
-      return `Unlock The Nameless Ones' Reality (requires ${hasLevelRequirement ? "[✓]" : "[✗]"} a level
-      ${formatInt(5000)} Glyph and ${hasRarityRequirement ? "[✓]" : "[✗]"} a ${formatRarity(100)} rarity Glyph)`;
+      return `解锁 The Nameless Ones 的现实（需要${hasLevelRequirement ? "[是]" : "[否]"}拥有
+        等级 ${formatInt(5000)} 的 Glyph，以及${hasRarityRequirement ? "[是]" : "[否]"}拥有 ${formatRarity(100)} 稀有度的 Glyph）`;
     }
   }
 };

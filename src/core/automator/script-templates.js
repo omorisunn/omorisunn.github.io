@@ -33,7 +33,7 @@ export class ScriptTemplate {
         this.templateUnlockDilation(params);
         break;
       default:
-        throw new Error(`Unrecognized template name ${templateName} in ScriptTemplate`);
+        throw new Error(`ScriptTemplate 中无法识别的模板名称 ${templateName}`);
     }
   }
 
@@ -201,18 +201,18 @@ export class ScriptTemplate {
       this.lines.push(`unlock ec ${params.ec}`);
       // Attempt to buy it, supplying an error if we can't actually reach it
       if (!tree.hasRequirements(TimeStudy.eternityChallenge(params.ec), true)) {
-        this.warnings.push("Specified Study Tree cannot reach specified EC");
+        this.warnings.push("指定的时间研究树无法到达指定的永恒挑战");
       }
-    } else if (tree.ec !== params.ec) this.warnings.push("Specified Study Tree already has a different EC unlocked");
+    } else if (tree.ec !== params.ec) this.warnings.push("指定的时间研究树已解锁了另一个永恒挑战");
 
     // Apply autobuyer settings; we specifically want to turn auto-eternity off so that we can manually trigger the
     // prestige - otherwise, the autobuyer may end up preempting multiple completions
     this.lines.push(`auto infinity ${this.parseAutobuyerProp(params.autoInfMode, params.autoInfValue)}`);
     this.lines.push(`auto eternity off`);
-    if (!TimeStudy.eternityChallenge(params.ec)) this.warnings.push(`Specified template EC does not exist`);
+    if (!TimeStudy.eternityChallenge(params.ec)) this.warnings.push(`指定的模板永恒挑战不存在`);
     this.lines.push(`start ec ${params.ec}`);
 
-    if (params.completions > 5) this.warnings.push(`ECs cannot be completed more than ${formatInt(5)} times`);
+    if (params.completions > 5) this.warnings.push(`永恒挑战完成次数不能超过 ${formatInt(5)} 次`);
     this.lines.push(`wait pending completions >= ${params.completions}`);
     this.lines.push("eternity");
   }
@@ -231,7 +231,7 @@ export class ScriptTemplate {
     this.lines.push(`notify "Running Template Unlock Dilation"`);
     this.storeTreeData(params);
     if (![231, 232, 233, 234].some(s => this.storedTreeObj.purchasedStudies.includes(TimeStudy(s)))) {
-      this.warnings.push("Specified Study Tree cannot reach Dilation");
+      this.warnings.push("指定的时间研究树无法到达膨胀");
     }
     this.lines.push(`auto infinity off`);
     this.lines.push(`auto eternity ${this.parseAutobuyerProp(params.autoEterMode, params.autoEterValue)}`);

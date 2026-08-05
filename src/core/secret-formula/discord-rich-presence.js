@@ -132,7 +132,7 @@ export const discordRichPresence = {
    */
   stages: [
     {
-      name: "Pre-Infinity",
+      name: "无限之前",
       hasReached: () => true,
       mainResource: () => `${format(player.antimatter, 2, 1)} AM`,
       resourceList: [
@@ -141,26 +141,26 @@ export const discordRichPresence = {
       ],
     },
     {
-      name: "Infinity",
+      name: "无限",
       hasReached: () => PlayerProgress.infinityUnlocked(),
       mainResource: () => `${format(player.infinityPoints, 2)} IP`,
-      resourceList: [() => quantify("Infinity", player.infinities, 0, 0, formatInt)],
+      resourceList: [() => quantify("无限", player.infinities, 0, 0, formatInt)],
     },
     {
-      name: "Broken Infinity",
+      name: "破碎的无限",
       hasReached: () => player.break,
       mainResource: () => `${format(player.infinityPoints, 2)} IP`,
-      resourceList: [() => quantify("Infinity", player.infinities, 2, 0, format)],
+      resourceList: [() => quantify("无限", player.infinities, 2, 0, format)],
     },
     {
-      name: "Eternity",
+      name: "永恒",
       hasReached: () => PlayerProgress.eternityUnlocked(),
       mainResource: () => `${format(player.eternityPoints, 2)} EP`,
-      resourceList: [() => quantify("Eternity", player.eternities, 0, 0, formatInt)],
+      resourceList: [() => quantify("永恒", player.eternities, 0, 0, formatInt)],
     },
     {
       // Eternity Challenge era
-      name: "Eternity",
+      name: "永恒",
       hasReached: () => player.eternityChalls.eterc1 > 0,
       mainResource: () => `${format(player.eternityPoints, 2)} EP`,
       resourceList: [
@@ -169,17 +169,17 @@ export const discordRichPresence = {
       ]
     },
     {
-      name: "Time Dilation",
+      name: "时间膨胀",
       hasReached: () => PlayerProgress.dilationUnlocked(),
       mainResource: () => `${format(player.eternityPoints, 2)} EP`,
       resourceList: [() => `${format(player.dilation.dilatedTime, 2, 2)} DT`],
     },
     {
-      name: "Reality",
+      name: "现实",
       hasReached: () => player.realities > 0,
       mainResource: () => `${format(player.reality.realityMachines, 2)} RM`,
       resourceList: [
-        () => quantify("Reality", player.realities, 0, 0, formatInt),
+        () => quantify("现实", player.realities, 0, 0, formatInt),
         () => `Best Glyph Level: ${formatInt(player.records.bestReality.glyphLevel)}`
       ]
     },
@@ -188,7 +188,7 @@ export const discordRichPresence = {
       hasReached: () => Teresa.isUnlocked,
       mainResource: () => `${format(player.reality.realityMachines, 2)} RM`,
       resourceList: [
-        () => quantify("Reality", player.realities, 0, 0, formatInt),
+        () => quantify("现实", player.realities, 0, 0, formatInt),
         () => `Best GL: ${formatInt(player.records.bestReality.glyphLevel)}`,
         () => `Poured: ${format(player.celestials.teresa.pouredAmount, 2)} RM`
       ]

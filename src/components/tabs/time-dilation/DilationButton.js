@@ -50,7 +50,7 @@ export default {
     :class="isUnlocked ? 'o-dilation-btn--unlocked' : 'o-dilation-btn--locked'"
     @click="dilate()"
   >
-    <span v-if="!isUnlocked">Purchase the Dilation Study to unlock.</span>
+    <span v-if="!isUnlocked">购买膨胀研究以解锁。</span>
     <span v-else-if="!isRunning">
       进入时间膨胀。
       <div v-if="showRequirement">

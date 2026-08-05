@@ -33,7 +33,7 @@ export default {
       }
     },
     otherMode() {
-      return this.isCurrentlyBlocks ? "Text" : "Block";
+      return this.isCurrentlyBlocks ? "文本" : "积木";
     }
   },
   methods: {
@@ -52,28 +52,28 @@ export default {
     @confirm="toggleAutomatorMode"
   >
     <template #header>
-      Change Automator to {{ otherMode }} editor
+      将自动机切换到{{ otherMode }}编辑器
     </template>
     <div class="c-modal-message__text">
-      This will stop your current script if it is running!
+      如果你的当前脚本正在运行，这将会停止它！
       <div v-if="errorCount">
         <br>
-        Your script has some errors which may not get converted properly to {{ otherMode }} mode. Continuing on will
-        make the Automator attempt to parse these lines anyway, although some information may get lost or not be
-        converted properly.
+        你的脚本存在一些错误，可能无法正确转换为{{ otherMode }}模式。继续操作将
+        让自动机尝试解析这些行，但部分信息可能会丢失或无法正确
+        转换。
       </div>
       <!-- Note: this can only ever appear on text-to-block -->
       <b v-if="lostBlocks">
         <br>
-        Warning: Your script also currently has some lines which cannot interpreted as particular commands. These
-        lines will end up being deleted since there is no block they can be converted into.
-        If an error occurs at the start of a loop or IF, this may end up deleting large portions of your script!
+        警告：你的脚本目前还有一些无法解释为特定命令的行。这些
+        行最终会被删除，因为它们无法转换为任何积木。
+        如果错误发生在循环或 IF 的开头，这可能会导致脚本的大部分内容被删除！
         <span
           class="l-lost-text"
           data-v-switch-automator-editor-modal
         >
-          Changing editor modes right now will cause {{ quantifyInt("line", lostBlocks) }} of code to be irreversibly
-          lost!
+          现在切换编辑器模式将导致 {{ quantifyInt("行代码", lostBlocks) }} 被不可逆地
+          丢失！
         </span>
       </b>
       <br>
@@ -81,15 +81,15 @@ export default {
         class="l-lost-text"
         data-v-switch-automator-editor-modal
       >
-        Hiding this confirmation is not recommended, as it may cause parts of scripts to be immediately and irreversibly
-        lost if your script has errors when attempting to switch modes.
+        不建议隐藏此确认提示，因为如果你的脚本在尝试切换模式时存在错误，
+        可能会导致部分脚本立即且不可逆地丢失。
       </span>
       <br>
       <br>
-      Are you sure you want to change to the {{ otherMode }} editor?
+      你确定要切换到{{ otherMode }}编辑器吗？
     </div>
     <template #confirm-text>
-      Change Modes
+      切换模式
     </template>
   </ModalWrapperChoice>
   `

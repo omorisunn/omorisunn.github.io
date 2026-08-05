@@ -15,7 +15,7 @@ export const v = {
   mainUnlock: {
     realities: {
       id: 1,
-      name: "Realities",
+      name: "现实",
       resource: () => Currency.realities.value,
       requirement: 10000,
       format: x => formatInt(x),
@@ -23,7 +23,7 @@ export const v = {
     },
     eternities: {
       id: 2,
-      name: "Eternities",
+      name: "永恒",
       resource: () => Currency.eternities.value,
       requirement: 1e70,
       format: x => format(x, 2),
@@ -31,7 +31,7 @@ export const v = {
     },
     infinities: {
       id: 3,
-      name: "Infinities",
+      name: "无限",
       resource: () => Currency.infinitiesTotal.value,
       requirement: 1e160,
       format: x => format(x, 2),
@@ -39,7 +39,7 @@ export const v = {
     },
     dilatedTime: {
       id: 4,
-      name: "Dilated Time",
+      name: "膨胀时间",
       resource: () => player.records.thisReality.maxDT,
       requirement: DC.E320,
       format: x => format(x, 2),
@@ -55,7 +55,7 @@ export const v = {
     },
     realityMachines: {
       id: 6,
-      name: "Reality Machines",
+      name: "现实机器",
       resource: () => Currency.realityMachines.value,
       requirement: 1e60,
       format: x => format(x, 2),
@@ -65,7 +65,7 @@ export const v = {
   runUnlocks: [
     {
       id: 0,
-      name: "Glyph Knight",
+      name: "符文骑士",
       description: value => `Unlock Reality with at most ${quantifyInt("Glyph", -value)} equipped.`,
       // This achievement has internally negated values since the check is always greater than
       values: [-5, -4, -3, -2, -1, 0],
@@ -78,7 +78,7 @@ export const v = {
     },
     {
       id: 1,
-      name: "AntiStellar",
+      name: "反星体",
       description: value => `Have ${formatInt(value)} total Galaxies from all types.`,
       values: [4000, 4300, 4600, 4900, 5200, 5500],
       condition: () => V.isRunning,
@@ -91,7 +91,7 @@ export const v = {
     },
     {
       id: 2,
-      name: "Se7en deadly matters",
+      name: "七宗物质罪",
       description: value => `Get ${format(Decimal.pow10(value))} Infinity Points in Eternity Challenge 7.`,
       values: [6e5, 7.2e5, 8.4e5, 9.6e5, 1.08e6, 1.2e6],
       condition: () => V.isRunning && EternityChallenge(7).isRunning,
@@ -104,7 +104,7 @@ export const v = {
     },
     {
       id: 3,
-      name: "Young Boy",
+      name: "少年",
       description: value => `Get ${format(Decimal.pow10(value))} Antimatter in Eternity Challenge 12 without
         unlocking Time Dilation.`,
       values: [400e6, 450e6, 500e6, 600e6, 700e6, 800e6],
@@ -118,7 +118,7 @@ export const v = {
     },
     {
       id: 4,
-      name: "Eternal Sunshine",
+      name: "永恒阳光",
       description: value => `Get ${format(Decimal.pow10(value))} Eternity Points.`,
       values: [7000, 7600, 8200, 8800, 9400, 10000],
       condition: () => V.isRunning,
@@ -131,7 +131,7 @@ export const v = {
     },
     {
       id: 5,
-      name: "Matterception",
+      name: "物质盗梦空间",
       description: value => `Get ${formatInt(value)} Dimension Boosts while Dilated and inside Eternity Challenge 5.`,
       values: [51, 52, 53, 54, 55, 56],
       condition: () => V.isRunning && player.dilation.active && EternityChallenge(5).isRunning,
@@ -145,7 +145,7 @@ export const v = {
     },
     {
       id: 6,
-      name: "Requiem for a Glyph",
+      name: "符文安魂曲",
       description: value => `Unlock Reality with at most ${formatInt(-value)} Glyphs equipped for the entire Reality.`,
       // This achievement has internally negated values since the check is always greater than
       values: [1, 4, 7, 10, 13],
@@ -159,7 +159,7 @@ export const v = {
     },
     {
       id: 7,
-      name: "Post-destination",
+      name: "后目的地",
       description: value => `Get ${formatInt(400000)} Time Theorems with a /${format(Decimal.pow10(value), 2, 2)}
         Black Hole or slower, without discharging or entering EC12.`,
       values: [100, 150, 200, 250, 300],
@@ -179,7 +179,7 @@ export const v = {
     },
     {
       id: 8,
-      name: "Shutter Glyph",
+      name: "快门符文",
       description: value => `Reach a Glyph of level ${formatInt(value)}.`,
       values: [6500, 7000, 8000, 9000, 10000],
       condition: () => V.isRunning,
@@ -195,19 +195,19 @@ export const v = {
   unlocks: {
     vAchievementUnlock: {
       id: 0,
-      reward: "Unlock V, The Celestial Of Achievements",
-      description: "Meet all the above requirements simultaneously",
+      reward: "解锁 V，成就天体",
+      description: "同时满足上述所有要求",
       requirement: () => Object.values(GameDatabase.celestials.v.mainUnlock).every(e => e.progress() >= 1)
     },
     shardReduction: {
       id: 1,
-      reward: `You can spend Perk Points to reduce the goal requirement of all tiers of each V-Achievement.`,
+      reward: `你可以花费福利点降低每个 V 成就所有层级的目标要求。`,
       description: () => `Have ${formatInt(2)} V-Achievements`,
       requirement: () => V.spaceTheorems >= 2
     },
     adPow: {
       id: 2,
-      reward: "Antimatter Dimension power based on total Space Theorems.",
+      reward: "基于总空间定理的反物质维度力量。",
       description: () => `Have ${formatInt(5)} V-Achievements`,
       effect: () => 1 + Math.sqrt(V.spaceTheorems) / 100,
       format: x => formatPow(x, 3, 3),
@@ -215,7 +215,7 @@ export const v = {
     },
     fastAutoEC: {
       id: 3,
-      reward: "Achievement multiplier reduces Auto-EC completion time.",
+      reward: "成就乘数缩短自动永恒挑战完成时间。",
       description: () => `Have ${formatInt(10)} V-Achievements`,
       effect: () => Achievements.power,
       // Base rate is 60 ECs at 20 minutes each
@@ -226,13 +226,13 @@ export const v = {
     },
     autoAutoClean: {
       id: 4,
-      reward: "Unlock the ability to Automatically Purge Glyphs on Reality.",
+      reward: "解锁在现实时自动清除符文的能力。",
       description: () => `Have ${formatInt(16)} V-Achievements`,
       requirement: () => V.spaceTheorems >= 16
     },
     achievementBH: {
       id: 5,
-      reward: "Achievement multiplier affects Black Hole power.",
+      reward: "成就乘数影响黑洞力量。",
       description: () => `Have ${formatInt(30)} V-Achievements`,
       effect: () => Achievements.power,
       format: x => formatX(x, 2, 0),

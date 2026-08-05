@@ -13,8 +13,8 @@ export function vUnlockProgress(index) {
 
 export function vUnlockLegendLabel(complete, index) {
   const db = Object.values(GameDatabase.celestials.v.mainUnlock).find(e => e.id === index);
-  if (complete >= 1) return `${db.name} condition for V`;
-  return `Reach ${db.format(db.resource())} / ${db.format(db.requirement)} ${db.name}.`;
+  if (complete >= 1) return `${db.name} 的条件已满足，可解锁 V`;
+  return `达到 ${db.format(db.resource())} / ${db.format(db.requirement)} ${db.name}。`;
 }
 
 // Angle is defined/rescaled so that 0 is the first rift, 4 is the last one, and all 5 are equally spaced around
@@ -299,12 +299,12 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          if (complete >= 1) return "Teresa's Perk Point Shop";
+          if (complete >= 1) return "Teresa 的福利点商店";
           const rm = Teresa.pouredAmount;
           const cost = TeresaUnlocks.shop.price;
           return [
-            "Teresa's Perk Point Shop",
-            `Pour ${format(rm, 2)} / ${format(cost, 2)} Reality Machines`
+            "Teresa 的福利点商店",
+            `注入现实机器 ${format(rm, 2)} / ${format(cost, 2)}`
           ];
         },
         angle: -35,
@@ -334,12 +334,12 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          if (complete >= 1) return "Effarig's Shop";
+          if (complete >= 1) return "Effarig 的商店";
           const rm = Teresa.pouredAmount;
           const cost = TeresaUnlocks.effarig.price;
           return [
             "Effarig",
-            `Pour ${format(rm, 2)} / ${format(cost, 2)} Reality Machines`
+            `注入现实机器 ${format(rm, 2)} / ${format(cost, 2)}`
           ];
         },
         angle: -135,
@@ -371,12 +371,12 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          if (complete >= 1) return "Unlock Effarig's Reality";
+          if (complete >= 1) return "解锁 Effarig 的现实";
           const rs = Currency.relicShards.value;
           const cost = EffarigUnlock.run.cost;
           return [
-            "Unlock Effarig's Reality",
-            `Reach ${format(rs, 2)} / ${format(cost, 2)} Relic Shards`
+            "解锁 Effarig 的现实",
+            `遗物碎片达到 ${format(rs, 2)} / ${format(cost, 2)}`
           ];
         },
         angle: 75,
@@ -410,13 +410,13 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          if (complete >= 1) return "Effarig's Infinity";
-          if (complete === 0) return "Unlock Effarig's Reality";
+          if (complete >= 1) return "Effarig 的无限";
+          if (complete === 0) return "解锁 Effarig 的现实";
           const am = Effarig.isRunning ? Currency.antimatter.value : 0;
           return [
-            "Effarig's Infinity",
-            `Reach ${format(am, 2)} / ${format(Number.MAX_VALUE, 2)}`,
-            "Antimatter inside Effarig's Reality."
+            "Effarig 的无限",
+            `达到 ${format(am, 2)} / ${format(Number.MAX_VALUE, 2)}`,
+            "Effarig 现实内的反物质。"
           ];
         },
         angle: 0,
@@ -452,12 +452,12 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          if (complete >= 1) return "Effarig's Eternity";
+          if (complete >= 1) return "Effarig 的永恒";
           const ip = Effarig.isRunning ? Currency.infinityPoints.value : 0;
           return [
-            "Effarig's Eternity",
-            `Reach ${format(ip, 2)} / ${format(Number.MAX_VALUE, 2)}`,
-            "Infinity Points inside Effarig's Reality."
+            "Effarig 的永恒",
+            `达到 ${format(ip, 2)} / ${format(Number.MAX_VALUE, 2)}`,
+            "Effarig 现实内的无限点。"
           ];
         },
         angle: -45,
@@ -503,13 +503,13 @@ export const celestialNavigation = {
       alwaysShowLegend: true,
       legend: {
         text: complete => {
-          if (complete >= 1) return "Effarig's Reality";
+          if (complete >= 1) return "Effarig 的现实";
           const ep = Effarig.isRunning ? Currency.eternityPoints.value : 0;
           const goal = DC.E4000;
           return [
-            "Effarig's Reality",
-            `Reach ${format(ep, 2)} / ${format(goal, 2)}`,
-            "Eternity Points inside Effarig's Reality."
+            "Effarig 的现实",
+            `达到 ${format(ep, 2)} / ${format(goal, 2)}`,
+            "Effarig 现实内的永恒点。"
           ];
         },
         angle: -120,
@@ -582,11 +582,11 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          if (complete >= 1) return "Glyph level chain has been broken";
+          if (complete >= 1) return "符文等级链条已被打破";
           const goal = 5000;
           return [
-            "Break a chain",
-            `Reach Glyph level ${formatInt(Math.min(player.records.bestReality.glyphLevel, goal))}/${formatInt(goal)}`
+            "打破一条链条",
+            `符文等级达到 ${formatInt(Math.min(player.records.bestReality.glyphLevel, goal))}/${formatInt(goal)}`
           ];
         },
         angle: -45,
@@ -627,11 +627,11 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          if (complete >= 1) return "Glyph rarity chain has been broken";
+          if (complete >= 1) return "符文稀有度链条已被打破";
           const goal = 100;
           return [
-            "Break a chain",
-            `Reach Glyph rarity ${formatPercents(complete * goal / 100, 1)}/${formatPercents(goal / 100, 1)}`
+            "打破一条链条",
+            `符文稀有度达到 ${formatPercents(complete * goal / 100, 1)}/${formatPercents(goal / 100, 1)}`
           ];
         },
         angle: 45,
@@ -670,13 +670,13 @@ export const celestialNavigation = {
       alwaysShowLegend: true,
       legend: {
         text: complete => {
-          if (complete >= 1) return "The Nameless Ones' Reality";
+          if (complete >= 1) return "The Nameless Ones 的现实";
           const ep = Enslaved.isRunning ? Currency.eternityPoints.value : 0;
           const goal = DC.E4000;
           return [
-            "The Nameless Ones' Reality",
-            `Reach ${format(ep, 2)} / ${format(goal, 2)}`,
-            "Eternity Points inside The Nameless Ones' Reality."
+            "The Nameless Ones 的现实",
+            `达到 ${format(ep, 2)} / ${format(goal, 2)}`,
+            "The Nameless Ones 现实内的永恒点。"
           ];
         },
         angle: 45,
@@ -715,12 +715,12 @@ export const celestialNavigation = {
       legend: {
         text: complete => {
           const goal = 800;
-          if (complete >= 1) return "V's Reality";
+          if (complete >= 1) return "V 的现实";
           const galaxies = player.requirementChecks.infinity.noAD8 ? player.galaxies : 0;
           return [
-            "V's unlock Achievement",
-            `Reach ${formatInt(galaxies)} / ${formatInt(goal)} Antimatter Galaxies without buying`,
-            "8th Antimatter Dimensions in your current Infinity"
+            "V 的解锁成就",
+            `不购买的情况下反物质星系达到 ${formatInt(galaxies)} / ${formatInt(goal)}`,
+            "在当前无限中购买第 8 反物质维度"
           ];
         },
         angle: 135,
@@ -924,8 +924,8 @@ export const celestialNavigation = {
           if (complete >= 1) return `V-Achievement "${name}"`;
           const completions = VRunUnlocks.all[0].completions;
           return [
-            "V-Achievement",
-            `Reach ${formatInt(completions)} / ${formatInt(6)} completions in ${name}.`
+            "V 成就",
+            `在 ${name} 中完成 ${formatInt(completions)} / ${formatInt(6)} 次。`
           ];
         },
         angle: -135,
@@ -960,8 +960,8 @@ export const celestialNavigation = {
           if (complete >= 1) return `V-Achievement "${name}"`;
           const completions = VRunUnlocks.all[1].completions;
           return [
-            "V-Achievement",
-            `Reach ${formatInt(completions)} / ${formatInt(6)} completions in ${name}.`
+            "V 成就",
+            `在 ${name} 中完成 ${formatInt(completions)} / ${formatInt(6)} 次。`
           ];
         },
         angle: 20,
@@ -996,8 +996,8 @@ export const celestialNavigation = {
           if (complete >= 1) return `V-Achievement "${name}"`;
           const completions = VRunUnlocks.all[2].completions;
           return [
-            "V-Achievement",
-            `Reach ${formatInt(completions)} / ${formatInt(6)} completions in ${name}.`
+            "V 成就",
+            `在 ${name} 中完成 ${formatInt(completions)} / ${formatInt(6)} 次。`
           ];
         },
         angle: 315,
@@ -1032,8 +1032,8 @@ export const celestialNavigation = {
           if (complete >= 1) return `V-Achievement "${name}"`;
           const completions = VRunUnlocks.all[3].completions;
           return [
-            "V-Achievement",
-            `Reach ${formatInt(completions)} / ${formatInt(6)} completions in ${name}.`
+            "V 成就",
+            `在 ${name} 中完成 ${formatInt(completions)} / ${formatInt(6)} 次。`
           ];
         },
         angle: 135,
@@ -1068,8 +1068,8 @@ export const celestialNavigation = {
           if (complete >= 1) return `V-Achievement "${name}"`;
           const completions = VRunUnlocks.all[4].completions;
           return [
-            "V-Achievement",
-            `Reach ${formatInt(completions)} / ${formatInt(6)} completions in ${name}.`
+            "V 成就",
+            `在 ${name} 中完成 ${formatInt(completions)} / ${formatInt(6)} 次。`
           ];
         },
         angle: 60,
@@ -1104,8 +1104,8 @@ export const celestialNavigation = {
           if (complete >= 1) return `V-Achievement "${name}"`;
           const completions = VRunUnlocks.all[5].completions;
           return [
-            "V-Achievement",
-            `Reach ${formatInt(completions)} / ${formatInt(6)} completions in ${name}.`
+            "V 成就",
+            `在 ${name} 中完成 ${formatInt(completions)} / ${formatInt(6)} 次。`
           ];
         },
         angle: 260,
@@ -1138,7 +1138,7 @@ export const celestialNavigation = {
       },
       alwaysShowLegend: true,
       legend: {
-        text: "Ra's Reality",
+        text: "Ra 的现实",
         angle: 230,
         diagonal: 85,
         horizontal: 16,
@@ -1161,9 +1161,9 @@ export const celestialNavigation = {
       legend: {
         text: () => {
           const level = Ra.pets.teresa.level;
-          if (level === 25) return `Ra's Teresa Memories have all been returned`;
+          if (level === 25) return `Ra 的 Teresa 记忆已全部找回`;
           return [
-            "Ra's Teresa Memory level",
+            "Ra 的 Teresa 记忆等级",
             `${formatInt(level)} / ${formatInt(25)}`
           ];
         },
@@ -1212,9 +1212,9 @@ export const celestialNavigation = {
           const unlocked = Ra.pets.teresa.level;
           const level = Ra.pets.effarig.level;
           if (complete < 1) return `Ra's Teresa Memory level ${unlocked} / ${formatInt(8)}`;
-          if (level === 25) return `Ra's Effarig Memories have all been returned`;
+          if (level === 25) return `Ra 的 Effarig 记忆已全部找回`;
           return [
-            "Ra's Effarig Memory level",
+            "Ra 的 Effarig 记忆等级",
             `${formatInt(level)} / ${formatInt(25)}`
           ];
         },
@@ -1263,9 +1263,9 @@ export const celestialNavigation = {
           const unlocked = Ra.pets.effarig.level;
           const level = Ra.pets.enslaved.level;
           if (complete < 1) return `Ra's Effarig Memory level ${unlocked} / ${formatInt(8)}`;
-          if (level === 25) return `Ra's Nameless Memories have all been returned`;
+          if (level === 25) return `Ra 的 Nameless 记忆已全部找回`;
           return [
-            "Ra's Nameless Memory level",
+            "Ra 的 Nameless 记忆等级",
             `${formatInt(level)} / ${formatInt(25)}`
           ];
         },
@@ -1314,9 +1314,9 @@ export const celestialNavigation = {
           const unlocked = Ra.pets.enslaved.level;
           const level = Ra.pets.v.level;
           if (complete < 1) return `Ra's Nameless Memory level ${unlocked} / ${formatInt(8)}`;
-          if (level === 25) return `Ra's V Memories have all been returned`;
+          if (level === 25) return `Ra 的 V 记忆已全部找回`;
           return [
-            "Ra's V Memory level",
+            "Ra 的 V 记忆等级",
             `${formatInt(level)} / ${formatInt(25)}`
           ];
         },
@@ -1447,7 +1447,7 @@ export const celestialNavigation = {
       alwaysShowLegend: true,
       legend: {
         text: complete => {
-          const realityName = "Lai'tela's Reality";
+          const realityName = "Lai'tela 的现实";
           if (complete >= 1) return [realityName];
 
           if (!MachineHandler.isIMUnlocked) {
@@ -1455,7 +1455,7 @@ export const celestialNavigation = {
             const realityMachineCap = MachineHandler.baseRMCap;
             return [
               realityName,
-              "The limits of Reality Machines bind you",
+              "现实机器的限制束缚着你",
               `${format(realityMachines)} / ${format(realityMachineCap)}`
             ];
           }
@@ -1463,8 +1463,8 @@ export const celestialNavigation = {
           const hasIDs = player.requirementChecks.reality.maxID1.neq(0);
           if (hasIDs) return [
             realityName,
-            "The Power of Infinity Dimensions",
-            "blocks your path."
+            "无限维度的力量",
+            "挡住了你的去路。"
           ];
 
           const antimatter = Currency.antimatter.value;
@@ -1508,31 +1508,31 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          const dmdText = "2nd Dark Matter Dimension";
+          const dmdText = "第 2 暗物质维度";
           const dim = DarkMatterDimension(2);
           if (dim.isUnlocked) return [dmdText];
 
           const goal = dim.adjustedStartingCost;
           if (complete >= 1) return [
             dmdText,
-            `Dark Matter ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
+            `暗物质 ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
           ];
 
           const upgrade = dim.unlockUpgrade;
           if (upgrade.isAvailableForPurchase) return [
             dmdText,
-            `Imaginary Machines
+            `想象机器
             ${format(Math.min(upgrade.currency.value, upgrade.cost), upgrade.canBeBought ? 1 : 2)}
             / ${format(upgrade.cost, 1)}`
           ];
 
           if (player.celestials.laitela.fastestCompletion > 30 && Laitela.difficultyTier < 0) return [
             dmdText,
-            `Beat Lai'tela's Reality in less that ${format(30)} seconds`
+            `在少于 ${format(30)} 秒内通关 Lai'tela 的现实`
           ];
           return [
             dmdText,
-            `Beat Lai'tela's Reality`
+            `通关 Lai'tela 的现实`
           ];
         },
         angle: 135,
@@ -1564,12 +1564,12 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          if (complete >= 1) return ["Obtain a Singularity"];
+          if (complete >= 1) return ["获得一个奇点"];
           const darkEnergy = Currency.darkEnergy.value;
           const singularityGoal = Singularity.cap;
           return [
-            "Condense your Dark Energy",
-            "Into a Singularity",
+            "凝聚你的暗能量",
+            "成一个奇点",
             `${format(darkEnergy)} / ${format(singularityGoal)}`
           ];
         },
@@ -1606,33 +1606,33 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          const dmdText = "3rd Dark Matter Dimension";
+          const dmdText = "第 3 暗物质维度";
           const dim = DarkMatterDimension(3);
           if (dim.isUnlocked) return [dmdText];
 
           const goal = dim.adjustedStartingCost;
           if (complete >= 1) return [
             dmdText,
-            `Dark Matter ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
+            `暗物质 ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
           ];
 
           const upgrade = dim.unlockUpgrade;
           if (upgrade.isAvailableForPurchase) return [
             dmdText,
-            `Imaginary Machines
+            `想象机器
             ${format(Math.min(upgrade.currency.value, upgrade.cost), upgrade.canBeBought ? 0 : 2)}
             / ${format(upgrade.cost)}`
           ];
 
           if (!player.auto.singularity.isActive) return [
             dmdText,
-            "Unlock Automatic Singularities",
+            "解锁自动奇点",
             `${format(Currency.singularities.value)} / ${format(SingularityMilestone.autoCondense.start)}`
           ];
 
           return [
             dmdText,
-            `Automatically Condense ${format(20)} Singularities at once`,
+            `自动一次性凝聚 ${format(20)} 个奇点`,
             `${format(Math.clampMax(Singularity.singularitiesGained, 20))} / ${format(20)}`
           ];
         },
@@ -1678,20 +1678,20 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          const dmdText = "4th Dark Matter Dimension";
+          const dmdText = "第 4 暗物质维度";
           const dim = DarkMatterDimension(4);
           if (dim.isUnlocked) return [dmdText];
 
           const goal = dim.adjustedStartingCost;
           if (complete >= 1) return [
             dmdText,
-            `Dark Matter ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
+            `暗物质 ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
           ];
 
           const upgrade = dim.unlockUpgrade;
           if (upgrade.isAvailableForPurchase) return [
             dmdText,
-            `Imaginary Machines
+            `想象机器
             ${format(Math.min(upgrade.currency.value, upgrade.cost), upgrade.canBeBought ? 1 : 2)}
             / ${format(upgrade.cost, 1)}`
           ];
@@ -1699,7 +1699,7 @@ export const celestialNavigation = {
           const allGalaxies = Replicanti.galaxies.total + player.galaxies + player.dilation.totalTachyonGalaxies;
           return [
             dmdText,
-            `Have ${format(80000)} total Galaxies`,
+            `拥有总共 ${format(80000)} 个星系`,
             `${format(Math.clampMax(allGalaxies, 80000))} / ${format(80000)}`
           ];
         },
@@ -1737,8 +1737,8 @@ export const celestialNavigation = {
       },
       legend: {
         text: () => [
-          "Annihilate your",
-          "Dark Matter Dimensions"
+          "湮灭你的",
+          "暗物质维度"
         ],
         angle: 315,
         diagonal: 30,
@@ -1770,14 +1770,14 @@ export const celestialNavigation = {
       legend: {
         text: complete => {
           if (complete < 1) return [
-            "Destabilize Lai'tela's Reality",
-            "To the point where you cannot",
-            "use any Dimensions",
-            `${format(Laitela.difficultyTier)} / ${format(8)} Dimensions disabled`
+            "使 Lai'tela 的现实失稳",
+            "直到你无法",
+            "使用任何维度",
+            `${format(Laitela.difficultyTier)} / ${format(8)} 个维度被禁用`
           ];
           return [
-            "Completely destabilized",
-            "Lai'tela's Reality",
+            "完全失稳",
+            "Lai'tela 的现实",
           ];
         },
         angle: 180,
@@ -1825,20 +1825,20 @@ export const celestialNavigation = {
         text: complete => {
           if (complete === 1) {
             return [
-              "Unlock Pelle",
-              "The Celestial of Antimatter"
+              "解锁 Pelle",
+              "反物质天体"
             ];
           }
-          let laitelaString = `${format(Currency.eternityPoints.value)} / ${format("1e4000")} EP`;
+          let laitelaString = `EP ${format(Currency.eternityPoints.value)} / ${format("1e4000")}`;
           if (!Laitela.isRunning || Laitela.difficultyTier !== 8 || Glyphs.activeWithoutCompanion.length > 1) {
-            laitelaString = "Lai'tela's Reality is still intact";
+            laitelaString = "Lai'tela 的现实仍然完好";
           } else if (ImaginaryUpgrade(25).isAvailableForPurchase) {
-            laitelaString = "Lai'tela's Reality has been destroyed";
+            laitelaString = "Lai'tela 的现实已被摧毁";
           }
           return [
-            "Unlock Pelle",
-            "The Celestial of Antimatter",
-            `${format(Currency.imaginaryMachines.value, 2)} / ${format(1.6e15, 2)} iM`,
+            "解锁 Pelle",
+            "反物质天体",
+            `iM ${format(Currency.imaginaryMachines.value, 2)} / ${format(1.6e15, 2)}`,
             laitelaString
           ];
         },
@@ -1878,13 +1878,13 @@ export const celestialNavigation = {
       forceLegend: () => Pelle.isUnlocked && !Pelle.hasGalaxyGenerator,
       legend: {
         text: complete => {
-          if (complete >= 1) return Pelle.isDoomed ? "Doomed Reality" : "Doom your Reality";
+          if (complete >= 1) return Pelle.isDoomed ? "末日现实" : "使你的现实末日";
           const achievements = [Achievements.prePelleRows.countWhere(r => r.every(a => a.isUnlocked)),
             Achievements.prePelleRows.length];
           const alchemy = [AlchemyResources.all.countWhere(r => r.capped), AlchemyResources.all.length];
           return [
-            `Complete ${formatInt(achievements[0])} / ${formatInt(achievements[1])} rows of Achievements`,
-            `Fill ${formatInt(alchemy[0])} / ${formatInt(alchemy[1])} Alchemy Resources`,
+            `完成 ${formatInt(achievements[0])} / ${formatInt(achievements[1])} 行成就`,
+            `填满 ${formatInt(alchemy[0])} / ${formatInt(alchemy[1])} 个炼金资源`,
           ];
         },
         angle: 290,
@@ -1920,8 +1920,8 @@ export const celestialNavigation = {
       alwaysShowLegend: true,
       legend: {
         text: () => [
-          "Galaxy Generator:",
-          `${format(GalaxyGenerator.generatedGalaxies, 2)} / ${format(GalaxyGenerator.generationCap, 2)} Galaxies`
+          "星系生成器：",
+          `${format(GalaxyGenerator.generatedGalaxies, 2)} / ${format(GalaxyGenerator.generationCap, 2)} 个星系`
         ],
         angle: 290,
         diagonal: 40,

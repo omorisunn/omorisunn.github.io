@@ -46,7 +46,7 @@ export default {
   >
     <ExpandingControlBox
       container-class="c-remnant-factors"
-      label="Remnant Gain Factors"
+      label="遗物收益系数"
       :style="{ opacity }"
       data-v-remnant-gain-factor
     >
@@ -55,9 +55,9 @@ export default {
           class="c-remnant-factors-text"
           data-v-remnant-gain-factor
         >
-          Best AM: {{ format(best.am, 2, 2) }}<br>
-          Best IP: {{ format(best.ip, 2, 2) }}<br>
-          Best EP: {{ format(best.ep, 2, 2) }}<br><br>
+          最佳 AM：{{ format(best.am, 2, 2) }}<br>
+          最佳 IP：{{ format(best.ip, 2, 2) }}<br>
+          最佳 EP：{{ format(best.ep, 2, 2) }}<br><br>
           <div
             class="l-remnant-factors-row"
             data-v-remnant-gain-factor
@@ -88,25 +88,25 @@ export default {
                 class="l-remnant-factors-item"
                 data-v-remnant-gain-factor
               >
-                Static divisor
+                静态除数
               </div>
               <div
                 class="l-remnant-factors-item"
                 data-v-remnant-gain-factor
               >
-                Static power
+                静态幂
               </div>
               <div
                 class="l-remnant-factors-item"
                 data-v-remnant-gain-factor
               >
-                Existing Remnants
+                现有遗物
               </div>
               <div
                 class="l-remnant-factors-item"
                 data-v-remnant-gain-factor
               >
-                Final amount
+                最终数量
               </div>
             </div>
             <div

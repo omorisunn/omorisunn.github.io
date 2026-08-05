@@ -116,7 +116,7 @@ export default {
       return info.isUnlocked;
     },
     mode(hex) {
-      return hex.config.mode === V_REDUCTION_MODE.SUBTRACTION ? "reduced" : "divided";
+      return hex.config.mode === V_REDUCTION_MODE.SUBTRACTION ? "减少" : "除以";
     },
     reductionValue(hex) {
       return hex.config.mode === V_REDUCTION_MODE.SUBTRACTION
@@ -136,8 +136,8 @@ export default {
       V.checkForUnlocks();
     },
     reductionTooltip(hex) {
-      return `Spend ${quantify("Perk Point", hex.reductionCost, 2, 0)}
-        to reduce goal by ${format(hex.config.perReductionStep)}`;
+      return `花费 ${quantify("个福利点", hex.reductionCost, 2, 0)}
+        将目标减少 ${format(hex.config.perReductionStep)}`;
     },
     hexColor(hex) {
       const completions = hex.completions;
@@ -186,8 +186,8 @@ export default {
           class="o-primary-btn--subtab-option"
           @click="toggleFlipped"
         >
-          <span v-if="wantsFlipped">Hide</span>
-          <span v-else>Show</span>
+          <span v-if="wantsFlipped">隐藏</span>
+          <span v-else>显示</span>
           Hard V
         </PrimaryButton>
         <PrimaryButton
@@ -195,25 +195,25 @@ export default {
           data-v-v-tab
           @click="createCursedGlyph"
         >
-          Create a Cursed Glyph
+          创建被诅咒的符文
         </PrimaryButton>
         <br>
-        Cursed Glyphs can be created here or in the Effarig tab.
+        被诅咒的符文可以在这里或 Effarig 标签页中创建。
         <br>
-        Cursed Glyphs count as {{ formatInt(-3) }} Glyphs for the purposes of all requirements related to Glyph count.
+        在计算与符文数量相关的需求时，被诅咒的符文计为 {{ formatInt(-3) }} 个符文。
         <br>
-        <span v-if="!isDoomed">The Black Hole can now be used to slow down time if they are both permanent.</span>
+        <span v-if="!isDoomed">现在，如果两个黑洞都已永久激活，黑洞可以用来减缓时间。</span>
         <br><br>
-        Each Hard V-Achievement counts as two V-Achievements and will award {{ formatInt(2) }} Space Theorems
-        instead of {{ formatInt(1) }}.
+        每个 Hard V 成就计为两个 V 成就，并将奖励 {{ formatInt(2) }} 空间之理
+        而不是 {{ formatInt(1) }}。
         <br>
-        Goal reduction is significantly more expensive for Hard V-Achievements.
+        Hard V 成就的目标缩减要昂贵得多。
       </div>
       <div
         v-if="showReduction"
         class="c-v-info-text"
       >
-        You have {{ quantify("Perk Point", pp, 2, 0) }}.
+        你有 {{ quantify("个福利点", pp, 2, 0) }}。
       </div>
       <div class="l-v-unlocks-container">
         <li
@@ -237,14 +237,14 @@ export default {
               v-if="has(runMilestones[0][0]) && hex.isReduced"
               class="o-v-unlock-goal-reduction"
             >
-              Goal has been {{ mode(hex) }} by {{ reductionValue(hex) }}
+              目标已{{ mode(hex) }}{{ reductionValue(hex) }}
             </p>
             <p class="o-v-unlock-amount">
-              {{ formatInt(hex.completions) }}/{{ formatInt(hex.config.values.length) }} done
+              已完成 {{ formatInt(hex.completions) }}/{{ formatInt(hex.config.values.length) }}
             </p>
             <div v-if="showRecord(hex)">
               <p class="o-v-unlock-record">
-                Best: {{ hex.config.formatRecord(runRecords[hex.id]) }}
+                最佳：{{ hex.config.formatRecord(runRecords[hex.id]) }}
               </p>
               <p>
                 <GlyphSetPreview
@@ -279,9 +279,9 @@ export default {
               :class="{ 'o-pelle-disabled': isDoomed }"
               data-v-v-tab
             >
-              <span v-if="isRunning">You are in </span>
-              <span v-else>Start </span>
-              V's Reality.
+              <span v-if="isRunning">你正处于 </span>
+              <span v-else>开始 </span>
+              V 的现实。
             </b>
             <br>
             <div :style="{ 'font-size': hasAlchemy ? '1.2rem' : '' }">
@@ -300,16 +300,16 @@ export default {
         </li>
       </div>
       <div class="c-v-info-text">
-        V-Achievements can only be completed within V's Reality, but are permanent and do not reset upon leaving
-        and re-entering the Reality.
+        V 成就只能在 V 的现实中完成，但它们是永久的，离开并重新进入
+        现实后不会重置。
       </div>
       <div class="c-v-info-text">
-        You have {{ formatInt(totalUnlocks) }} V-Achievements done.
+        你已经完成了 {{ formatInt(totalUnlocks) }} 个 V 成就。
         <span v-if="!isDoomed">
-          You gain {{ formatInt(1) }} Space Theorem for each completion,
-          allowing you to purchase Time Studies which are normally locked.
+          每完成一个都会获得 {{ formatInt(1) }} 空间之理，
+          允许你购买通常被锁定的时间研究。
           <br>
-          Space Theorems can also be used as a Currency in the Automator.
+          空间之理也可以用作自动机中的货币。
         </span>
       </div>
       <br>
@@ -328,9 +328,9 @@ export default {
           >
             <div :class="{ 'o-pelle-disabled': isDoomed }">
               <p>{{ milestone.description }}</p>
-              <p>Reward: {{ milestone.rewardText }}</p>
+              <p>奖励：{{ milestone.rewardText }}</p>
               <p v-if="milestone.formattedEffect">
-                Currently: <b>{{ milestone.formattedEffect }}</b>
+                当前：<b>{{ milestone.formattedEffect }}</b>
               </p>
             </div>
           </div>

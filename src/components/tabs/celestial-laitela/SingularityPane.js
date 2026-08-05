@@ -24,12 +24,12 @@ export default {
   computed: {
     isDoomed: () => Pelle.isDoomed,
     singularityFormText() {
-      const formText = this.singularitiesGained === 1 ? "all Dark Energy into a Singularity"
-        : `all Dark Energy into ${quantify("Singularity", this.singularitiesGained, 2)}`;
+      const formText = this.singularitiesGained === 1 ? "将所有暗能量凝聚为一个奇点"
+        : `将所有暗能量凝聚为 ${quantify("个奇点", this.singularitiesGained, 2)}`;
       if (this.canPerformSingularity) {
-        return `Condense ${formText}`;
+        return `凝聚${formText}`;
       }
-      return `Reach ${format(this.singularityCap)} Dark Energy to condense ${formText}`;
+      return `达到 ${format(this.singularityCap)} 暗能量以${formText}`;
     },
     singularityWaitText() {
       let singularityTime = this.currentTimeToSingularity;
@@ -37,10 +37,10 @@ export default {
         singularityTime += this.extraTimeAfterSingularity;
         if (!this.isAutoEnabled) return "";
         return singularityTime > 0
-          ? `(Auto-condensing in ${TimeSpan.fromSeconds(singularityTime).toStringShort()})`
-          : "(Will immediately auto-condense)";
+          ? `（将在 ${TimeSpan.fromSeconds(singularityTime).toStringShort()} 后自动凝聚）`
+          : "（将立即自动凝聚）";
       }
-      return `(Enough Dark Energy in ${TimeSpan.fromSeconds(singularityTime).toStringShort()})`;
+      return `（将在 ${TimeSpan.fromSeconds(singularityTime).toStringShort()} 后获得足够的暗能量）`;
     },
     baseSingularityTime() {
       return TimeSpan.fromSeconds(this.baseTimeToSingularity).toStringShort();
@@ -53,21 +53,21 @@ export default {
       return this.formatRate(this.singularitiesGained / totalTime);
     },
     autoSingularityRate() {
-      if (this.hasAutoSingularity && !this.isAutoEnabled) return "Auto-Singularity is OFF";
+      if (this.hasAutoSingularity && !this.isAutoEnabled) return "自动奇点已关闭";
       const totalTime = this.baseTimeToSingularity + this.extraTimeAfterSingularity;
       return this.formatRate(this.singularitiesGained / totalTime);
     },
     decreaseTooltip() {
-      if (this.singularityCapIncreases === 0) return "You cannot decrease the cap any further!";
+      if (this.singularityCapIncreases === 0) return "你无法再降低上限！";
       const singularities = this.singularitiesGained / this.perStepFactor;
       return this.willCondenseOnDecrease
-        ? `Decreasing the cap will immediately auto-condense for
-          ${quantify("Singularity", singularities, 2)}!`
+        ? `降低上限将立即自动凝聚
+          ${quantify("个奇点", singularities, 2)}！`
         : null;
     },
     increaseTooltip() {
       return this.singularityCapIncreases >= 50
-        ? "You cannot increase the cap any further!"
+        ? "你无法再提高上限！"
         : null;
     }
   },
@@ -102,9 +102,9 @@ export default {
       Singularity.decreaseCap();
     },
     formatRate(rate) {
-      if (rate < 1 / 60) return `${format(3600 * rate, 2, 3)} per hour`;
-      if (rate < 1) return `${format(60 * rate, 2, 3)} per minute`;
-      return `${format(rate, 2, 3)} per second`;
+      if (rate < 1 / 60) return `每小时 ${format(3600 * rate, 2, 3)}`;
+      if (rate < 1) return `每分钟 ${format(60 * rate, 2, 3)}`;
+      return `每秒 ${format(rate, 2, 3)}`;
     },
     condenseClassObject() {
       return {
@@ -119,7 +119,7 @@ export default {
   <div class="c-laitela-singularity-container">
     <div>
       <h2>
-        You have {{ quantify("Singularity", singularities, 2) }}
+        你有 {{ quantify("个奇点", singularities, 2) }}
       </h2>
       <button
         :class="condenseClassObject()"
@@ -136,7 +136,7 @@ export default {
     </div>
     <div v-if="singularities !== 0">
       <div class="o-laitela-matter-amount">
-        You have {{ format(darkEnergy, 2, 4) }} Dark Energy. (+{{ format(darkEnergyGainPerSecond, 2, 4) }}/s)
+        你有 {{ format(darkEnergy, 2, 4) }} 暗能量。（+{{ format(darkEnergyGainPerSecond, 2, 4) }}/秒）
       </div>
       <div v-if="unlockedBulkSingularity">
         <button
@@ -146,7 +146,7 @@ export default {
           @click="decreaseCap"
           data-v-singularity-pane
         >
-          Decrease Singularity cap.
+          降低奇点上限。
         </button>
         <button
           class="c-laitela-singularity__cap-control"
@@ -155,32 +155,32 @@ export default {
           @click="increaseCap"
           data-v-singularity-pane
         >
-          Increase Singularity cap.
+          提高奇点上限。
         </button>
         <br>
-        Each step increases the required Dark Energy by {{ formatX(10) }},
+        每一步将所需的暗能量提高 {{ formatX(10) }} 倍，
         <br>
-        but also increases gained Singularities by {{ formatX(perStepFactor) }}.
+        同时将获得的奇点提高 {{ formatX(perStepFactor) }} 倍。
       </div>
       <div v-else>
         <br>
-        Reach {{ format(10) }} Singularities
+        达到 {{ format(10) }} 个奇点
         <br>
-        to unlock Bulk Singularities.
+        以解锁批量奇点。
         <br>
       </div>
       <br>
-      Total time to <span v-if="hasAutoSingularity">(auto-)</span>condense:
+      凝聚总时间（<span v-if="hasAutoSingularity">自动</span>）：
       {{ baseSingularityTime }}
       <span v-if="hasAutoSingularity && autoSingularityFactor !== 1">
         (+{{ additionalSingularityTime }})
       </span>
       <br>
-      <span v-if="hasAutoSingularity && autoSingularityFactor !== 1">Manual </span>
-      Singularity gain rate: {{ manualSingularityRate }}
+      <span v-if="hasAutoSingularity && autoSingularityFactor !== 1">手动</span>
+      奇点获得速率：{{ manualSingularityRate }}
       <br>
       <span v-if="hasAutoSingularity && autoSingularityFactor !== 1">
-        Automatic Singularity gain rate: {{ autoSingularityRate }}
+        自动奇点获得速率：{{ autoSingularityRate }}
       </span>
     </div>
   </div>

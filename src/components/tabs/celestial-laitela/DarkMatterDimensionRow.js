@@ -68,7 +68,7 @@ export default {
       const line1 = this.hoverOverAscension ? `<b>${str}</b>` : str;
 
       let line2;
-      if (this.isIntervalCapped) line2 = this.hoverOverAscension ? "On ascend ➜" : "Ascend!";
+      if (this.isIntervalCapped) line2 = this.hoverOverAscension ? "上升时 ➜" : "上升！";
       else line2 = `Cost: ${this.formatDMCost(this.intervalCost)} DM`;
       return ` ${line1}<br>${line2}`;
     },

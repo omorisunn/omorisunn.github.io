@@ -101,7 +101,7 @@ export default {
     <span
       v-if="displaySingle"
       class="c-black-hole-status-text"
-      v-html="'🌀:' + singleState"
+      v-html="'黑洞：' + singleState"
       data-v-header-black-hole
     />
     <span v-else>

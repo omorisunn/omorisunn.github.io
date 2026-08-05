@@ -47,18 +47,18 @@ export default {
       const shadowsPrototype = ["constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable",
         "toLocaleString", "toString", "toValueOf"].some(p => this.aliasString.match(p));
 
-      if (!isValidName) return "Constant name must be alphanumeric without spaces and cannot start with a number";
-      if (alreadyExists) return "You have already defined a constant with this name";
-      if (hasCommandConflict) return "Constant name conflicts with a command key word";
-      if (shadowsPrototype) return "Constant name cannot shadow a built-in Javascript prototype prop";
+      if (!isValidName) return "常量名称必须由字母数字组成且不能包含空格，并且不能以数字开头";
+      if (alreadyExists) return "你已经定义了同名常量";
+      if (hasCommandConflict) return "常量名称与命令关键字冲突";
+      if (shadowsPrototype) return "常量名称不能与内置 JavaScript 原型属性同名";
 
-      if (!this.valueString) return "Constant value cannot be empty";
+      if (!this.valueString) return "常量值不能为空";
 
       const isNumber = this.valueString.match(/^-?(0|[1-9]\d*)(\.\d+)?([eE][+-]?\d+)?$/u);
       // Note: Does not do validation for studies existing
       const isStudyString = TimeStudyTree.isValidImportString(this.valueString);
 
-      if (!isNumber && !isStudyString) return "Constant value must either be a number or Time Study string";
+      if (!isNumber && !isStudyString) return "常量值必须是数字或时间研究字符串";
       return null;
     },
     errorTooltip() {
@@ -104,7 +104,7 @@ export default {
       v-model="aliasString"
       class="c-define-textbox c-alias"
       :class="{ 'l-limit-textbox' : aliasString.length === maxNameLength }"
-      placeholder="New constant..."
+      placeholder="新常量..."
       :maxlength="maxNameLength"
       @focusin="handleFocus(true)"
       @focusout="handleFocus(false)"
@@ -116,14 +116,14 @@ export default {
       class="o-arrow-padding"
       data-v-automator-define-single-entry
     >
-      🠈
+      →
     </span>
     <input
       v-if="aliasString"
       v-model="valueString"
       class="c-define-textbox c-value"
       :class="{ 'l-limit-textbox' : valueString && valueString.length === maxValueLength }"
-      placeholder="Value for constant..."
+      placeholder="常量值..."
       :maxlength="maxValueLength"
       @focusin="handleFocus(true)"
       @focusout="handleFocus(false)"
@@ -131,7 +131,7 @@ export default {
     >
     <button
       v-if="aliasString"
-      v-tooltip="'Delete this constant'"
+      v-tooltip="'删除此常量'"
       class="c-delete-button fas fa-eraser"
       @click="deleteConstant"
       data-v-automator-define-single-entry

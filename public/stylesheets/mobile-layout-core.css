@@ -1,0 +1,148 @@
+/* ============================================================
+   核心玩法界面移动端补充
+   覆盖：维度行、自动购买器、成就、挑战记录、经典 UI、头栏细节。
+   仅小屏生效；覆盖 new-ui-styles.css 的规则统一使用 html 前缀。
+   ============================================================ */
+
+@media (max-width: 900px) {
+  /* ---------- 维度行：flex 换行，按钮自适应 ---------- */
+  html .l-dimension-single-row {
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+  html .l-dimension-single-row > * {
+    min-width: 0;
+  }
+  html .l-dim-row-multi-button-container {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  html .l-dim-row-multi-button-container .o-primary-btn {
+    flex: 1 1 44%;
+    min-width: 4.8rem;
+    max-width: none;
+    white-space: normal;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    padding: 0.28rem 0.4rem;
+  }
+  html .l-dim-row-multi-button-container .o-primary-btn--buy-dim,
+  html .l-dim-row-multi-button-container .o-primary-btn--buy-ad,
+  html .l-dim-row-multi-button-container .o-primary-btn--buy-single-ad,
+  html .l-dim-row-multi-button-container .o-primary-btn--buy-10-ad {
+    max-width: none;
+  }
+  html .c-dim-row__large {
+    font-size: 1.1rem;
+  }
+  html .c-dim-row__small {
+    font-size: 0.95rem;
+  }
+
+  /* ---------- 自动购买器：单列堆叠 ---------- */
+  html .l-autobuyers-tab {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  html .l-autobuyers-tab .c-infinity-pos,
+  html .l-autobuyers-tab .c-eternity-pos,
+  html .l-autobuyers-tab .c-reality-pos {
+    width: 100%;
+    max-width: none;
+  }
+  html .c-autobuyer-box {
+    width: 100%;
+    max-width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html .c-autobuyer-box-row {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  html .l-autobuyer-box__header,
+  html .l-autobuyer-box__footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ---------- 成就网格：换行自适应 ---------- */
+  html .l-achievements-tab {
+    width: 100%;
+  }
+  html .l-achievement-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  html .l-achievement-grid__cell {
+    flex: 0 1 auto;
+  }
+  html .c-achievements-tab__header {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  /* ---------- 挑战与里程碑记录 ---------- */
+  html .l-challenge-records-tab,
+  html .l-challenges-tab {
+    width: 100%;
+  }
+  html .l-challenge-records-tab__records {
+    flex-wrap: wrap;
+  }
+  html .l-challenge-records-tab__records .o-challenge-record {
+    flex: 1 1 45%;
+    min-width: 8rem;
+  }
+
+  /* ---------- 时间膨胀与复制体 ---------- */
+  html .l-dilation-button-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  html .o-dilation-btn {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.25;
+  }
+  html .l-replicanti-tab {
+    width: 100%;
+  }
+
+  /* ---------- 经典 UI ---------- */
+  html .l-old-ui {
+    width: 100%;
+    max-width: 100%;
+  }
+  html .l-old-ui__page {
+    padding: 0.4rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  html .l-old-ui__header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  html .l-old-ui__news-bar {
+    max-width: 100%;
+  }
+
+  /* ---------- 头栏与新闻细节 ---------- */
+  html .c-news-ticker {
+    height: 1.9rem;
+    font-size: 0.85rem;
+  }
+  html .c-news-ticker__line {
+    white-space: nowrap;
+  }
+  html .information-header {
+    gap: 0.2rem 0.5rem;
+  }
+}

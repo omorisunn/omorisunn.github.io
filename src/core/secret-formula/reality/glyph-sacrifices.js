@@ -12,9 +12,9 @@ export const glyphSacrifice = {
       const sacCap = GlyphSacrificeHandler.maxSacrificeForEffects;
       const nextDistantGalaxy = Math.pow(10, Math.pow((amount + 1) / 750, 1 / 1.2) * Math.log10(sacCap)) - 1;
       const nextGalaxyText = amount < 750
-        ? ` (next at ${format(nextDistantGalaxy, 2, 2)})`
+        ? `（下一次需要 ${format(nextDistantGalaxy, 2, 2)}）`
         : "";
-      return `Distant Galaxy scaling starts ${formatInt(amount)} later${nextGalaxyText}`;
+      return `遥远星系缩放推迟 ${formatInt(amount)}${nextGalaxyText}`;
     },
     cap: () => GlyphSacrificeHandler.maxSacrificeForEffects
   },
@@ -26,7 +26,7 @@ export const glyphSacrifice = {
       const capped = Math.clampMax(sac, GlyphSacrificeHandler.maxSacrificeForEffects);
       return 1 + Math.log10(1 + Math.pow(capped, 0.2) / 100);
     },
-    description: amount => `${formatX(amount, 2, 2)} bigger multiplier when buying 8th Infinity Dimension`,
+    description: amount => `购买第 8 无限维度时乘数提升 ${formatX(amount, 2, 2)}`,
     cap: () => GlyphSacrificeHandler.maxSacrificeForEffects
   },
   "time": {
@@ -37,7 +37,7 @@ export const glyphSacrifice = {
       const capped = Math.clampMax(sac, GlyphSacrificeHandler.maxSacrificeForEffects);
       return Math.pow(1 + Math.pow(capped, 0.2) / 100, 2);
     },
-    description: amount => `${formatX(amount, 2, 2)} bigger multiplier when buying 8th Time Dimension`,
+    description: amount => `购买第 8 时间维度时乘数提升 ${formatX(amount, 2, 2)}`,
     cap: () => GlyphSacrificeHandler.maxSacrificeForEffects
   },
   "replication": {
@@ -53,9 +53,9 @@ export const glyphSacrifice = {
       const sacCap = GlyphSacrificeHandler.maxSacrificeForEffects;
       const nextDistantGalaxy = Math.pow(10, Math.pow((amount + 1) / 1500, 1 / 1.2) * Math.log10(sacCap)) - 1;
       const nextGalaxyText = amount < 1500
-        ? ` (next at ${format(nextDistantGalaxy, 2, 2)})`
+        ? `（下一次需要 ${format(nextDistantGalaxy, 2, 2)}）`
         : "";
-      return `Replicanti Galaxy scaling starts ${formatInt(amount)} later${nextGalaxyText}`;
+      return `Replicanti 星系缩放推迟 ${formatInt(amount)}${nextGalaxyText}`;
     },
     cap: () => GlyphSacrificeHandler.maxSacrificeForEffects
   },
@@ -69,7 +69,7 @@ export const glyphSacrifice = {
         Math.log10(GlyphSacrificeHandler.maxSacrificeForEffects), 0.1);
       return Math.pow(Math.clampMin(capped, 1), exponent);
     },
-    description: amount => `Multiply Tachyon Particle gain by ${formatX(amount, 2, 2)}`,
+    description: amount => `速子粒子获取量乘以 ${formatX(amount, 2, 2)}`,
     cap: () => GlyphSacrificeHandler.maxSacrificeForEffects
   },
   "effarig": {
@@ -81,7 +81,7 @@ export const glyphSacrifice = {
       const capped = Math.clampMax(sac, 1e70);
       return 2 * Math.log10(capped / 1e20 + 1);
     },
-    description: amount => `+${formatPercents(amount / 100, 2)} additional Glyph rarity`,
+    description: amount => `额外符文稀有度 +${formatPercents(amount / 100, 2)}`,
     cap: () => 1e70
   },
   "reality": {
@@ -92,7 +92,7 @@ export const glyphSacrifice = {
       // This cap is only feasibly reached with the imaginary upgrade, but we still want to cap it at a nice number
       return Math.clampMax(1 + Math.sqrt(sac) / 15, 100);
     },
-    description: amount => `Multiply Memory Chunk gain by ${formatX(amount, 2, 3)}`,
+    description: amount => `记忆碎片获取量乘以 ${formatX(amount, 2, 3)}`,
     cap: () => GlyphSacrificeHandler.maxSacrificeForEffects
   }
 };

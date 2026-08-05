@@ -32,16 +32,14 @@ export default {
     class="l-panel-padding"
     data-v-automator-data-transfer-page
   >
-    This page lets you import and export scripts with additional data attached; the encoded text will also include data
-    for any Time Study presets or constants used within the script. This will allow you to more easily transfer working
-    scripts between different save files, but you may have to overwrite existing data in the process due to limited
-    space for study presets and constants. Data exported from this page is also imported in the same way that single
-    script data is imported.
+    此页面允许你导入和导出带有附加数据的脚本；编码文本还会包含
+    脚本中使用的任何时间研究预设或常量的数据。这可以让你更容易地在不同的存档之间
+    转移可用的脚本，但由于时间研究预设和常量的空间有限，过程中可能需要覆盖现有数据。
+    从此页面导出的数据也会以与单个脚本数据相同的方式导入。
     <br>
     <br>
-    Note: Any mentions of constant names or full study-buying commands within comments will also be counted as being
-    "used" within a script. This is intentional, as the comment is assumed to be indicative of what the script itself
-    is attempting to do with presets or constants.
+    注意：注释中提到的任何常量名称或完整的研究购买命令也会被视为脚本中
+    “使用”的内容。这是有意为之，因为注释被认为可以反映脚本本身对预设或常量的使用意图。
     <br>
     <br>
     <div

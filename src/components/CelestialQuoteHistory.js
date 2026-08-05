@@ -37,7 +37,7 @@ export default {
     @click="show"
     data-v-celestial-quote-history
   >
-    {{ possessiveForm }} Quotes
+    {{ possessiveForm }} 的语录
   </button>
   `
 };

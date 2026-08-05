@@ -52,7 +52,7 @@ export default {
       return `${prefix}${format(this.singleCost)} ${suffix}`;
     },
     until10Text() {
-      if (this.isCapped) return "被无名氏禁用";
+      if (this.isCapped) return "被 The Nameless Ones 禁用";
       if (this.isContinuumActive) return `连续统：${this.continuumString}`;
 
       const prefix = `买到${formatInt(10)}，${this.showCostTitle(this.until10Cost) ? "价格：" : ""}`;
@@ -66,7 +66,7 @@ export default {
       return this.isShown || this.isUnlocked || this.amount.gt(0);
     },
     boughtTooltip() {
-      if (this.isCapped) return `无名氏禁止购买超过 ${format(1)} 个第八维度`;
+      if (this.isCapped) return `The Nameless Ones 禁止购买超过 ${format(1)} 个第八维度`;
       if (this.isContinuumActive) return "连续统生产所有维度";
       return `已购买 ${quantifyInt("次", this.bought)}`;
     },

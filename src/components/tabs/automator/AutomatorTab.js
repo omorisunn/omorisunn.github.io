@@ -33,11 +33,11 @@ export default {
       return this.fullScreen ? "fa-compress-arrows-alt" : "fa-expand-arrows-alt";
     },
     intervalText() {
-      const speedupText = `Each Reality makes it run ${formatPercents(0.006, 1)} faster, up to a maximum of
-        ${formatInt(1000)} per second.`;
+      const speedupText = `每次现实都会使其运行速度提升 ${formatPercents(0.006, 1)}，最高可达
+        每秒 ${formatInt(1000)} 条。`;
       return this.interval === 1
-        ? `The Automator is running at max speed (${formatInt(1000)} commands per real-time second).`
-        : `The Automator is running ${quantify("command", 1000 / this.interval, 2, 2)} per real-time second.
+        ? `自动机正以最高速度运行（每真实秒 ${formatInt(1000)} 条命令）。`
+        : `自动机每真实秒运行 ${quantify("条命令", 1000 / this.interval, 2, 2)}。
           ${speedupText}`;
     },
     maxScriptChars() {
@@ -70,14 +70,14 @@ export default {
         :class="{ 'c-overlimit': currentChars > maxScriptChars }"
         data-v-automator-tab
       >
-        This script: {{ formatInt(currentChars) }} / {{ formatInt(maxScriptChars) }}
+        当前脚本：{{ formatInt(currentChars) }} / {{ formatInt(maxScriptChars) }}
       </span>
       |
       <span
         :class="{ 'c-overlimit': totalChars > maxTotalChars }"
         data-v-automator-tab
       >
-        Across all scripts: {{ formatInt(totalChars) }} / {{ formatInt(maxTotalChars) }}
+        全部脚本：{{ formatInt(totalChars) }} / {{ formatInt(maxTotalChars) }}
       </span>
       <br>
       <span
@@ -85,7 +85,7 @@ export default {
         class="c-overlimit"
         data-v-automator-tab
       >
-        (Your changes will not be saved due to being over a character limit!)
+        （由于超出字符限制，你的更改将不会被保存！）
       </span>
       <div
         class="c-automator-split-pane"

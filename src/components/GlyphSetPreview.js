@@ -55,7 +55,7 @@ export default {
     noneText: {
       type: String,
       required: false,
-      default: "(No Glyphs equipped)"
+      default: "（未装备符文）"
     },
     sort: {
       type: Boolean,

@@ -5,7 +5,7 @@ export const shopPurchases = {
   dimPurchases: {
     key: "dimPurchases",
     cost: 30,
-    description: "Double all your Antimatter Dimension multipliers. Forever.",
+    description: "使你所有反物质维度倍率翻倍。永久生效。",
     multiplier: purchases => Math.pow(2, purchases),
     formatEffect: x => `×${x > 1000 ? Notation.scientific.formatDecimal(new Decimal(x), 2) : x.toFixed(0)}`,
   },
@@ -16,7 +16,7 @@ export const shopPurchases = {
       const dims = ["Antimatter"];
       if (InfinityDimension(1).isUnlocked || PlayerProgress.eternityUnlocked()) dims.push("Infinity");
       if (PlayerProgress.eternityUnlocked()) dims.push("Time");
-      return `Double ALL Dimension multipliers (${makeEnumeration(dims)}; multiplicative until 32x). Forever.`;
+      return `使所有维度倍率翻倍（${makeEnumeration(dims)}；乘算叠加直到 32 倍）。永久生效。`;
     },
     multiplier: purchases => (purchases > 4 ? 32 + (purchases - 5) * 2 : Math.pow(2, purchases)),
     formatEffect: x => `×${x.toFixed(0)}`,
@@ -24,52 +24,52 @@ export const shopPurchases = {
   IPPurchases: {
     key: "IPPurchases",
     cost: 40,
-    description: "Double your Infinity Point gain from all sources. (additive)",
+    description: "使你所有来源的无限点数获得翻倍。（加算）",
     multiplier: purchases => (purchases === 0 ? 1 : 2 * purchases),
     formatEffect: x => `×${x.toFixed(0)}`,
     isUnlocked: () => PlayerProgress.infinityUnlocked(),
-    lockText: "Infinity",
+    lockText: "无限",
   },
   replicantiPurchases: {
     key: "replicantiPurchases",
     cost: 60,
-    description: "Increase your Replicanti gain by 50%. (additive)",
+    description: "使你的复制器获得提高 50%。（加算）",
     multiplier: purchases => (purchases === 0 ? 1 : 1 + 0.5 * purchases),
     formatEffect: x => `×${x.toFixed(1)}`,
     isUnlocked: () => Replicanti.areUnlocked || PlayerProgress.eternityUnlocked(),
-    lockText: "Replicanti",
+    lockText: "复制器",
   },
   EPPurchases: {
     key: "EPPurchases",
     cost: 50,
-    description: "Triple your Eternity Point gain from all sources. (additive)",
+    description: "使你所有来源的永恒点数获得变为三倍。（加算）",
     multiplier: purchases => (purchases === 0 ? 1 : 3 * purchases),
     formatEffect: x => `×${x.toFixed(0)}`,
     isUnlocked: () => PlayerProgress.eternityUnlocked(),
-    lockText: "Eternity",
+    lockText: "永恒",
   },
   dilatedTimePurchases: {
     key: "dilatedTimePurchases",
     cost: 40,
-    description: "Increase your Dilated Time gain by 50%. (additive)",
+    description: "使你的膨胀时间获得提高 50%。（加算）",
     multiplier: purchases => (purchases === 0 ? 1 : 1 + 0.5 * purchases),
     formatEffect: x => `×${x.toFixed(1)}`,
     isUnlocked: () => PlayerProgress.dilationUnlocked() || PlayerProgress.realityUnlocked(),
-    lockText: "Dilation",
+    lockText: "膨胀",
   },
   RMPurchases: {
     key: "RMPurchases",
     cost: 60,
-    description: "Increase your Reality Machine gain by 100%. (additive)",
+    description: "使你的现实机器获得提高 100%。（加算）",
     multiplier: purchases => purchases + 1,
     formatEffect: x => `×${x.toFixed(0)}`,
     isUnlocked: () => PlayerProgress.realityUnlocked(),
-    lockText: "Reality",
+    lockText: "现实",
   },
   smallTimeSkip: {
     key: "smallTimeSkip",
     cost: 10,
-    description: "Get 6 hours worth of offline production. (Autobuyers don't work at full speed)",
+    description: "获得相当于 6 小时的离线产出。（自动购买器无法全速工作）",
     instantPurchase: true,
     onPurchase: () => {
       shop.purchaseTimeSkip();

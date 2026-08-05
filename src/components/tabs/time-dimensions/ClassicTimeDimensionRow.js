@@ -51,7 +51,7 @@ export default {
     },
     tooltipContents() {
       if (this.showTTCost) return `${this.formattedEPCost}<br>${this.timeEstimate}`;
-      if (this.isCapped) return `无名氏禁止购买超过 ${format(1)} 个时间维度`;
+      if (this.isCapped) return `The Nameless Ones 禁止购买超过 ${format(1)} 个时间维度`;
       return `已购买 ${quantifyInt("次", this.bought)}`;
     },
     showRow() {

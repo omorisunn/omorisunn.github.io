@@ -15,7 +15,7 @@ export const infinityUpgrades = {
     effect: () => Math.pow(Time.totalTimePlayed.totalMinutes / 2, 0.15),
     formatEffect: value => formatX(value, 2, 2),
     charged: {
-      description: "反物质维度获得基于总游戏时间和特蕾莎等级的指数加成",
+      description: "反物质维度获得基于总游戏时间和 Teresa 等级的指数加成",
       effect: () => 1 +
         Math.log10(Math.log10(Time.totalTimePlayed.totalMilliseconds)) *
         Math.pow(Ra.pets.teresa.level, 0.5) / 150,
@@ -30,7 +30,7 @@ export const infinityUpgrades = {
     effect: () => dimInfinityMult(),
     formatEffect: value => formatX(value, 1, 1),
     charged: {
-      description: "第一和第八反物质维度获得基于无限次数和特蕾莎等级的指数加成",
+      description: "第一和第八反物质维度获得基于无限次数和 Teresa 等级的指数加成",
       effect: () => chargedDimInfinityMult(),
       formatEffect: value => formatPow(value, 4, 4)
     }
@@ -43,7 +43,7 @@ export const infinityUpgrades = {
     effect: () => dimInfinityMult(),
     formatEffect: value => formatX(value, 1, 1),
     charged: {
-      description: "第二和第七反物质维度获得基于无限次数和特蕾莎等级的指数加成",
+      description: "第二和第七反物质维度获得基于无限次数和 Teresa 等级的指数加成",
       effect: () => chargedDimInfinityMult(),
       formatEffect: value => formatPow(value, 4, 4)
     }
@@ -56,7 +56,7 @@ export const infinityUpgrades = {
     effect: () => dimInfinityMult(),
     formatEffect: value => formatX(value, 1, 1),
     charged: {
-      description: "第三和第六反物质维度获得基于无限次数和特蕾莎等级的指数加成",
+      description: "第三和第六反物质维度获得基于无限次数和 Teresa 等级的指数加成",
       effect: () => chargedDimInfinityMult(),
       formatEffect: value => formatPow(value, 4, 4)
     }
@@ -69,7 +69,7 @@ export const infinityUpgrades = {
     effect: () => dimInfinityMult(),
     formatEffect: value => formatX(value, 1, 1),
     charged: {
-      description: "第四和第五反物质维度获得基于无限次数和特蕾莎等级的指数加成",
+      description: "第四和第五反物质维度获得基于无限次数和 Teresa 等级的指数加成",
       effect: () => chargedDimInfinityMult(),
       formatEffect: value => formatPow(value, 4, 4)
     }
@@ -81,7 +81,7 @@ export const infinityUpgrades = {
     description: () => `维度提升和反物质星系对维度的需求减少 ${formatInt(9)}`,
     effect: 9,
     charged: {
-      description: () => "基于特蕾莎等级降低维度提升的需求",
+      description: () => "基于 Teresa 等级降低维度提升的需求",
       effect: () => 1 / (1 + Math.sqrt(Ra.pets.teresa.level) / 10),
       formatEffect: value => `${formatX(value, 4, 4)}`
     }
@@ -93,7 +93,7 @@ export const infinityUpgrades = {
     effect: () => 1.1,
     formatEffect: () => `${formatX(2, 0, 1)} ➜ ${formatX(2.2, 0, 1)}`,
     charged: {
-      description: () => `购买 ${formatInt(10)} 个反物质维度的倍数基于特蕾莎等级获得指数加成。`,
+      description: () => `购买 ${formatInt(10)} 个反物质维度的倍数基于 Teresa 等级获得指数加成。`,
       effect: () => 1 + Ra.pets.teresa.level / 200,
       formatEffect: value => formatPow(value, 3, 3)
     }
@@ -105,7 +105,7 @@ export const infinityUpgrades = {
     description: "反物质星系的效果加倍",
     effect: 2,
     charged: {
-      description: "所有星系基于特蕾莎等级获得加成",
+      description: "所有星系基于 Teresa 等级获得加成",
       effect: () => 2 + Math.sqrt(Ra.pets.teresa.level) / 100,
       formatEffect: value => `+${formatPercents(value - 1)}`
     }
@@ -118,7 +118,7 @@ export const infinityUpgrades = {
     formatEffect: value => formatX(value, 2, 2),
     charged: {
       description:
-        "反物质维度获得基于当前无限所花费的时间和特蕾莎等级的指数加成",
+        "反物质维度获得基于当前无限所花费的时间和 Teresa 等级的指数加成",
       effect: () => 1 +
         Math.log10(Math.log10(Time.thisInfinity.totalMilliseconds + 100)) *
         Math.sqrt(Ra.pets.teresa.level) / 150,
@@ -133,7 +133,7 @@ export const infinityUpgrades = {
     effect: () => Currency.infinityPoints.value.dividedBy(2).pow(1.5).plus(1),
     formatEffect: value => formatX(value, 2, 2),
     charged: {
-      description: "第一反物质维度获得基于未花费的无限点数的倍数加成，此倍数由特蕾莎等级提供指数加成",
+      description: "第一反物质维度获得基于未花费的无限点数的倍数加成，此倍数由 Teresa 等级提供指数加成",
       effect: () => Currency.infinityPoints.value.dividedBy(2).pow(Math.sqrt(Ra.pets.teresa.level) * 1.5).plus(1),
       formatEffect: value => formatX(value, 2, 2)
     }
@@ -146,7 +146,7 @@ export const infinityUpgrades = {
     effect: () => 2.5,
     formatEffect: () => `${formatX(2, 0, 1)} ➜ ${formatX(2.5, 0, 1)}`,
     charged: {
-      description: "维度提升倍率获得基于特蕾莎等级的指数加成",
+      description: "维度提升倍率获得基于 Teresa 等级的指数加成",
       effect: () => 1 + Ra.pets.teresa.level / 200,
       formatEffect: value => formatPow(value, 3, 3)
     }
@@ -166,7 +166,7 @@ export const infinityUpgrades = {
     },
     charged: {
       description: () =>
-        `基于即将获得的现实机器，每秒获得一定比例的现实机器，并随特蕾莎等级增加`,
+        `基于即将获得的现实机器，每秒获得一定比例的现实机器，并随 Teresa 等级增加`,
       effect: () => Math.pow(Ra.pets.teresa.level, 2) *
         Ra.unlocks.continuousTTBoost.effects.autoPrestige.effectOrDefault(1),
       formatEffect: value => formatX(value, 2, 1)

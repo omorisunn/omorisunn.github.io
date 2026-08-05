@@ -40,8 +40,7 @@ export default {
         `<span style="color: ${GlyphAppearanceHandler.getBorderColor("effarig")};">Effarig</span>`);
       if (this.hasReality) uniqueGlyphs.push(
         `<span style="animation: a-reality-glyph-description-cycle 10s infinite;">Reality</span>`);
-      return `You cannot have more than one ${uniqueGlyphs.join(" or ")}
-        Glyph equipped${uniqueGlyphs.length > 1 ? " each." : "."}`;
+      return `你每种只能装备一个 ${uniqueGlyphs.join(" 或 ")} Glyph。`;
     },
     noEffects() {
       return !this.effects.length;
@@ -51,8 +50,8 @@ export default {
     },
     pelleGlyphText() {
       return Pelle.isDoomed
-        ? `Glyph Rarity is set to ${formatPercents(strengthToRarity(Pelle.glyphStrength))}
-          and Level is capped at ${formatInt(Pelle.glyphMaxLevel)}`
+        ? `符文稀有度被设为 ${formatPercents(strengthToRarity(Pelle.glyphStrength))}，
+          等级上限为 ${formatInt(Pelle.glyphMaxLevel)}`
         : "";
     },
     showChaosText() {
@@ -92,7 +91,7 @@ export default {
       {{ pelleGlyphText }}
     </div>
     <div class="c-current-glyph-effects__header">
-      Currently active Glyph effects:
+      当前生效的符文效果：
     </div>
     <GlyphSetName :glyph-set="glyphSet" />
     <br v-if="isSoftcapActive || hasEffarig || hasReality">
@@ -101,12 +100,11 @@ export default {
       v-if="isSoftcapActive"
       class="l-current-glyph-effects__capped-header"
     >
-      <span class="c-current-glyph-effects__effect--capped">Italic</span> effects have been slightly reduced
-      due to a softcap
+      <span class="c-current-glyph-effects__effect--capped">斜体</span>效果因软上限而略有降低
     </div>
     <br>
     <div v-if="noEffects">
-      None (equip Glyphs to get their effects)
+      无（装备符文以获取其效果）
     </div>
     <CurrentGlyphEffect
       v-for="effect in effects"

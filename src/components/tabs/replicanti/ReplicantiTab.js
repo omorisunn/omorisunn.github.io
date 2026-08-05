@@ -211,7 +211,7 @@ export default {
         class="modified-cap"
         data-v-replicanti-tab
       >
-        完成鹿颈长的无限带来了以下奖励：
+        完成 Effarig 的无限带来了以下奖励：
         <br>
         你在没有时间研究192时的复制器上限已提升至 {{ format(replicantiCap, 2) }}
         ({{ capMultText }})

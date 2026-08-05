@@ -15,8 +15,8 @@ export default {
   },
   computed: {
     upgrades: () => ImaginaryUpgrades.all,
-    lockTooltip: () => `Requirement locks only prevent manual and automated actions. Any related upgrades
-      will not be disabled and may still cause requirements to be failed.`,
+    lockTooltip: () => `需求锁定只会阻止手动和自动操作。任何相关升级
+      不会被禁用，并且仍可能导致需求失败。`,
   },
   methods: {
     update() {
@@ -35,28 +35,27 @@ export default {
       class="c-cap-text"
       data-v-imaginary-upgrades-tab
     >
-      Your Machine cap is <span class="c-reality-tab__reality-machines">{{ capStr }}</span>.
+      你的机器上限为 <span class="c-reality-tab__reality-machines">{{ capStr }}</span>。
     </div>
     <div
       class="c-info-text"
       data-v-imaginary-upgrades-tab
     >
-      You have reached the limits of Reality and cannot hold more than {{ format(capRM) }} Reality Machines.
+      你已经达到了现实的极限，无法拥有超过 {{ format(capRM) }} 台现实机器。
       <br>
-      Machines gained in excess of {{ format(baseRMCap) }} will raise the maximum amount of Imaginary Machines
-      you can have.
+      超过 {{ format(baseRMCap) }} 获得的机器会提高你所能拥有的想象机器
+      数量上限。
       <br>
-      Imaginary Machines are gained passively over time up to the cap, but gain slows down exponentially
-      as you approach the cap.
+      想象机器会随时间被动获得直到达到上限，但随着接近上限，
+      获得速度会呈指数级减缓。
       <br>
-      Every {{ formatInt(scaleTime) }} seconds the difference in iM between your current amount and the cap
-      will be cut in half.
+      每 {{ formatInt(scaleTime) }} 秒，你当前 iM 数量与上限之间的差距
+      就会减半。
       <br>
       <br>
-      The first two rows of upgrades can be purchased endlessly and the rest of the upgrades are one-time upgrades
-      with requirements.
+      前两行升级可以无限购买，其余升级则是带有需求的一次性升级。
       <br>
-      Upgrades here have the same gameplay and visual behavior as Reality Upgrades, but cost Imaginary Machines instead.
+      这里的升级与现实升级具有相同的玩法和视觉效果，但需要花费想象机器。
       <span :ach-tooltip="lockTooltip">
         <i class="fas fa-question-circle" />
       </span>

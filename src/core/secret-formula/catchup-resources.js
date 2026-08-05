@@ -133,7 +133,7 @@ export const catchupResources = [
     id: 20,
     requiredStage: PROGRESS_STAGE.EARLY_REALITY,
     description: () => `现实是第三个也是最后一个主要重置层级。达到 ${format(DC.E4000)} 永恒点数后，你可以选择重置
-      到目前为止的一切，以解锁新内容和gaining
+      到目前为止的一切，以解锁新内容和 gaining
       access to new resources.`
   },
   {
@@ -169,20 +169,20 @@ export const catchupResources = [
     id: 25,
     requiredStage: PROGRESS_STAGE.EARLY_REALITY,
     description: `黑洞以周期性循环让整个游戏运行得更快。这会影响游戏中到目前为止的一切，效果相当于让游戏开着
-      相同的时间nt of time.`
+      相同的时间 nt of time.`
   },
   {
     name: "Teresa",
     id: 26,
     requiredStage: PROGRESS_STAGE.TERESA,
-    description: `特蕾莎是第一位天体，她的现实更困难，根据完成度大幅提升符文献祭。她解锁的升级侧重于测试和更轻松地
+    description: `Teresa 是第一位天体，她的现实更困难，根据完成度大幅提升符文献祭。她解锁的升级侧重于测试和更轻松地
       自动化现实。`
   },
   {
     name: "Effarig",
     id: 27,
     requiredStage: PROGRESS_STAGE.EFFARIG,
-    description: `埃法里格是第二位天体，她的现实限制你的符文并带有递增削弱，但每达到一个新的重置层级都会给予奖励。
+    description: `Effarig 是第二位天体，她的现实限制你的符文并带有递增削弱，但每达到一个新的重置层级都会给予奖励。
       她解锁的升级侧重于自动选择和筛选你获得的大量符文，用名为遗物碎片的新资源购买。`
   },
   {
@@ -190,7 +190,7 @@ export const catchupResources = [
     id: 28,
     openH2pEntry: "Nameless Ones",
     requiredStage: PROGRESS_STAGE.ENSLAVED,
-    description: `无名者是第三位天体，她的现实极其严苛，带有一长串削弱，但能为找到通关之道的人解锁超立方体。
+    description: `The Nameless Ones 是第三位天体，她的现实极其严苛，带有一长串削弱，但能为找到通关之道的人解锁超立方体。
       她们还会修改你的黑洞，使其能够储存时间。`
   },
   {
@@ -206,13 +206,13 @@ export const catchupResources = [
     id: 30,
     requiredStage: PROGRESS_STAGE.ENSLAVED,
     description: `无限维度不能无限购买，除了第 8 个之外，所有无限维度都有购买次数上限。每个超立方体都会永久大幅
-      提高这个上限ount.`
+      提高这个上限 ount.`
   },
   {
     name: "V",
     id: 31,
     requiredStage: PROGRESS_STAGE.V,
-    description: `V 是第四位天体，她的现实与特蕾莎的类似，但只有达到特定的资源里程碑才会给予奖励。她给予一种名为空间定理的资源，允许你购买无路径限制的额外时间研究。`
+    description: `V 是第四位天体，她的现实与 Teresa 的类似，但只有达到特定的资源里程碑才会给予奖励。她给予一种名为空间定理的资源，允许你购买无路径限制的额外时间研究。`
   },
   {
     name: "Ra",
@@ -232,13 +232,13 @@ export const catchupResources = [
     id: 34,
     openH2pEntry: "Ra",
     requiredStage: PROGRESS_STAGE.RA,
-    description: `特蕾莎的记忆允许你为无限升级充能，效果类似但大幅增强。哪些升级被充能只能在两次现实之间更改。`
+    description: `Teresa 的记忆允许你为无限升级充能，效果类似但大幅增强。哪些升级被充能只能在两次现实之间更改。`
   },
   {
     name: "Glyph Alchemy",
     id: 35,
     requiredStage: PROGRESS_STAGE.RA,
-    description: `埃法里格的记忆解锁符文炼金术，它使用符文献祭的改良版提供许多小幅加成。通过这种方式献祭符文获得
+    description: `Effarig 的记忆解锁符文炼金术，它使用符文献祭的改良版提供许多小幅加成。通过这种方式献祭符文获得
       的资源必须组合成反应才能完全升级其效果。`
   },
   {
@@ -246,7 +246,7 @@ export const catchupResources = [
     id: 36,
     openH2pEntry: "Ra",
     requiredStage: PROGRESS_STAGE.RA,
-    description: `无名者的记忆放大充能效果，使储存的游戏时间大于实际经过的游戏时间。现在还可以重复且自动地释放。`
+    description: `The Nameless Ones 的记忆放大充能效果，使储存的游戏时间大于实际经过的游戏时间。现在还可以重复且自动地释放。`
   },
   {
     name: "Harder V",
@@ -265,7 +265,7 @@ export const catchupResources = [
     name: "Lai'tela",
     id: 39,
     requiredStage: PROGRESS_STAGE.LAITELA,
-    description: `莱泰拉是第六位天体，她的现实有修改过的完成条件，并根据你完成的速度给予递增奖励。她解锁的新功能大多与名为暗物质的资源相关。`
+    description: `Lai'tela 是第六位天体，她的现实有修改过的完成条件，并根据你完成的速度给予递增奖励。她解锁的新功能大多与名为暗物质的资源相关。`
   },
   {
     name: "连续统",
@@ -297,7 +297,7 @@ export const catchupResources = [
     name: "Pelle",
     id: 44,
     requiredStage: PROGRESS_STAGE.PELLE,
-    description: `佩莱是第七位也是最后一位天体，她会永久性地宣告你的游戏末日，把你扔进一个无法逃脱的极其困难的
+    description: `Pelle 是第七位也是最后一位天体，她会永久性地宣告你的游戏末日，把你扔进一个无法逃脱的极其困难的
       修改现实。`
   },
   {
@@ -305,7 +305,7 @@ export const catchupResources = [
     id: 45,
     openH2pEntry: "Pelle",
     requiredStage: PROGRESS_STAGE.PELLE,
-    description: `末日决战是佩莱专属的重置，你可以随时进行。它会将你的进度重置到末日现实的起点，但会给予产出
+    description: `末日决战是 Pelle 专属的重置，你可以随时进行。它会将你的进度重置到末日现实的起点，但会给予产出
       现实碎片的遗存。`
   },
   {
@@ -313,7 +313,7 @@ export const catchupResources = [
     id: 46,
     openH2pEntry: "Pelle Strikes",
     requiredStage: PROGRESS_STAGE.PELLE,
-    description: `在佩莱中达到特定的进度里程碑后，可能会发生一次打击，永久性地给末日现实再施加一项削弱。每次打击
+    description: `在 Pelle 中达到特定的进度里程碑后，可能会发生一次打击，永久性地给末日现实再施加一项削弱。每次打击
       都伴随一个裂隙，这是一种让你消耗不同资源换取加成的机制。这些是永久性的，末日决战之后仍然保持解锁。`
   },
 ];

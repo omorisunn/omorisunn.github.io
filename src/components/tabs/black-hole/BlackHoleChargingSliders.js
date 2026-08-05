@@ -21,12 +21,11 @@ export default {
   computed: {
     infoTooltip() {
       return this.isLaitela
-        ? "The physics of this Reality do not allow Black Hole Inversion"
-        : "Black Hole must be paused to activate Inversion";
+        ? "此现实的物理规律不允许黑洞反转"
+        : "黑洞必须暂停才能启用反转";
     },
     reqLockText() {
-      return `Inversion strength cannot be modified due to Lock for
-        "${ImaginaryUpgrade(24).name}"`;
+      return `由于“${ImaginaryUpgrade(24).name}”的锁定，反转强度无法修改`;
     }
   },
   methods: {
@@ -65,8 +64,8 @@ export default {
       data-v-black-hole-charging-sliders
     >
       <b>
-        Inverted Black Hole divides game speed by {{ format(negativeBHDivisor, 2, 2) }}.
-        (Currently {{ isInverted ? "active" : "inactive" }}<span
+        反转黑洞将游戏速度除以 {{ format(negativeBHDivisor, 2, 2) }}。
+        （当前{{ isInverted ? "已启用" : "未启用" }}<span
           v-if="negativeSlider !== 0 && !isInverted"
           :ach-tooltip="infoTooltip"
         >
@@ -91,8 +90,8 @@ export default {
         {{ reqLockText }}
       </div>
       <br>
-      Inverting the Black Hole only affects its own speedup, no other upgrades or effects, although
-      it will also indirectly affect the Effarig Game speed power effect.
+      反转黑洞只会影响其自身的加速效果，不影响其他升级或效果，但
+      它也会间接影响 Effarig 的游戏速度力量效果。
     </div>
   </div>
   `

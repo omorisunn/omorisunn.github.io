@@ -6,7 +6,7 @@ import { MultiplierTabIcons } from "./icons.js";
 // See index.js for documentation
 export const tickspeed = {
   total: {
-    name: "Total Tickspeed",
+    name: "总刻速度",
     displayOverride: () => {
       const tickRate = Tickspeed.perSecond;
       const activeDims = MultiplierTabHelper.activeDimCount("AD");
@@ -26,7 +26,7 @@ export const tickspeed = {
     icon: MultiplierTabIcons.TICKSPEED,
   },
   base: {
-    name: "Base Tickspeed from Achievements",
+    name: "来自成就的基础刻速度",
     displayOverride: () => {
       const val = DC.D1.dividedByEffectsOf(
         Achievement(36),
@@ -41,14 +41,14 @@ export const tickspeed = {
     icon: MultiplierTabIcons.ACHIEVEMENT,
   },
   upgrades: {
-    name: "Tickspeed Upgrades",
+    name: "刻速度升级",
     displayOverride: () => `${formatInt(Tickspeed.totalUpgrades)} Total`,
     multValue: () => new Decimal.pow10(100 * MultiplierTabHelper.decomposeTickspeed().tickspeed),
     isActive: true,
     icon: MultiplierTabIcons.PURCHASE("AD"),
   },
   galaxies: {
-    name: "Galaxies",
+    name: "星系",
     displayOverride: () => {
       const ag = player.galaxies + GalaxyGenerator.galaxies;
       const rg = Replicanti.galaxies.total;
@@ -60,7 +60,7 @@ export const tickspeed = {
     icon: MultiplierTabIcons.GALAXY,
   },
   pelleTickspeedPow: {
-    name: "Tickspeed Dilation Upgrade",
+    name: "刻速度膨胀升级",
     powValue: () => DilationUpgrade.tickspeedPower.effectValue,
     isActive: () => DilationUpgrade.tickspeedPower.canBeApplied,
     icon: MultiplierTabIcons.UPGRADE("dilation"),
@@ -69,7 +69,7 @@ export const tickspeed = {
 
 export const tickspeedUpgrades = {
   purchased: {
-    name: "Purchased Tickspeed Upgrades",
+    name: "已购买的刻速度升级",
     displayOverride: () => (Laitela.continuumActive
       ? formatFloat(Tickspeed.continuumValue, 2, 2)
       : formatInt(player.totalTickBought)),
@@ -78,7 +78,7 @@ export const tickspeedUpgrades = {
     icon: MultiplierTabIcons.PURCHASE("AD"),
   },
   free: {
-    name: "Tickspeed Upgrades from TD",
+    name: "来自 TD 的刻速度升级",
     displayOverride: () => formatInt(player.totalTickGained),
     multValue: () => Decimal.pow10(player.totalTickGained),
     isActive: () => Currency.timeShards.gt(0),

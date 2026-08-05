@@ -33,16 +33,16 @@ export default {
     };
   },
   computed: {
-    // 鉴于mod版没有云存档功能，所有云存档相关不翻译
+    // 鉴于 mod 版没有云存档功能，所有云存档相关不翻译
     modalTooltip() {
-      return `The game will detect certain situations where you might not want to overwrite your cloud save, and show
-        you a modal with more information if this is ON.`;
+      return `游戏会检测你可能不想覆盖云存档的某些情况，如果此选项开启，
+        会显示一个包含更多信息的窗口。`;
     },
     overwriteTooltip() {
-      if (this.showCloudModal) return "This setting does nothing since the modal is being shown.";
+      if (this.showCloudModal) return "由于窗口正在显示，此设置不生效。";
       return this.forceCloudOverwrite
-        ? `Your local save will always overwrite your cloud save no matter what.`
-        : `Save conflicts will prevent your local save from being saved to the cloud.`;
+        ? `无论发生什么，你的本地存档都会覆盖云存档。`
+        : `存档冲突会阻止你的本地存档保存到云端。`;
     },
     STEAM() {
       return STEAM;
@@ -107,8 +107,8 @@ export default {
       if (this.canModifySeed) {
         Modal.modifySeed.show();
       } else {
-        Modal.message.show(`You cannot modify your seed any more. Glyph RNG has already been used to generate
-          at least one Glyph on this run.`);
+        Modal.message.show(`你无法再修改种子。符文随机数已经在本轮游戏中用于生成
+          至少一个符文。`);
       }
     }
   },
@@ -220,13 +220,13 @@ export default {
       v-if="cloudAvailable"
       class="c-cloud-options-header"
     >
-      <span v-if="hideGoogleName">Logged in to Google <i>(name hidden)</i></span>
-      <span v-else-if="loggedIn">Logged in as {{ userName }}</span>
-      <span v-else>Not logged in</span>
+      <span v-if="hideGoogleName">已登录 Google <i>（名称已隐藏）</i></span>
+      <span v-else-if="loggedIn">已以 {{ userName }} 登录</span>
+      <span v-else>未登录</span>
     </h2>
     <div v-if="loggedIn">
-      <span v-if="cloudEnabled">Cloud Saving will occur automatically every 10 minutes.</span>
-      <span v-else>Cloud Saving has been disabled on this save.</span>
+      <span v-if="cloudEnabled">云存档将每 10 分钟自动进行。</span>
+      <span v-else>此存档已禁用云存档。</span>
     </div>
     <div
       v-if="cloudAvailable"
@@ -240,23 +240,23 @@ export default {
           v-if="loggedIn"
           onclick="GameOptions.logout()"
         >
-          Disconnect Google Account and disable Cloud Saving
+          断开 Google 账户并禁用云存档
         </OptionsButton>
         <OptionsButton
           v-else
-          v-tooltip="'This will connect your Google Account to your Antimatter Dimensions savefiles'"
+          v-tooltip="'这会将你的 Google 账户连接到反物质维度存档'"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
           onclick="GameOptions.login()"
         >
-          Login with Google to enable Cloud Saving
+          使用 Google 登录以启用云存档
         </OptionsButton>
         <PrimaryToggleButton
           v-if="loggedIn"
           v-model="hideGoogleName"
-          v-tooltip="'This will hide your Google Account name from the UI for privacy. Saving/loading is unaffected.'"
+          v-tooltip="'出于隐私考虑，这会在界面中隐藏你的 Google 账户名称。保存/加载不受影响。'"
           class="o-primary-btn--option l-options-grid__button"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
-          label="Hide Google Account name:"
+          label="隐藏 Google 账户名称："
         />
       </div>
       <div
@@ -267,19 +267,19 @@ export default {
           onclick="GameOptions.cloudSave()"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
         >
-          Cloud save
+          云保存
         </OptionsButton>
         <OptionsButton
           onclick="GameOptions.cloudLoad()"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
         >
-          Cloud load
+          云加载
         </OptionsButton>
         <PrimaryToggleButton
           v-model="syncSaveIntervals"
           class="o-primary-btn--option l-options-grid__button"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
-          label="Force local save before cloud saving:"
+          label="云保存前强制保存本地存档："
         />
       </div>
       <div
@@ -290,21 +290,21 @@ export default {
           v-model="cloudEnabled"
           class="o-primary-btn--option l-options-grid__button"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
-          label="Automatic cloud saving/loading:"
+          label="自动云保存/加载："
         />
         <PrimaryToggleButton
           v-model="showCloudModal"
           v-tooltip="modalTooltip"
           class="o-primary-btn--option l-options-grid__button"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
-          label="Show modal if possible saving conflict:"
+          label="存在保存冲突时显示窗口："
         />
         <PrimaryToggleButton
           v-model="forceCloudOverwrite"
           v-tooltip="overwriteTooltip"
           class="o-primary-btn--option l-options-grid__button"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
-          label="Force cloud saving despite conflicts:"
+          label="无视冲突强制云保存："
         />
       </div>
     </div>

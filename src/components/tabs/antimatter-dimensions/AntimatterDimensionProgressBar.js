@@ -70,19 +70,19 @@ export default {
           setLinearProgress(
             (Math.min(Currency.timeTheorems.max.toNumber() / 12900, 1) +
             Math.min(EternityChallenges.completions / 60, 1)) / 2,
-            1, "第五次佩勒冲击进度");
+            1, "第五次 Pelle 冲击进度");
         } else if (PelleStrikes.eternity.hasStrike) {
-          setLinearProgress(Currency.timeTheorems.max.toNumber(), 115, "第四次佩勒冲击进度");
+          setLinearProgress(Currency.timeTheorems.max.toNumber(), 115, "第四次 Pelle 冲击进度");
         } else if (PelleStrikes.powerGalaxies.hasStrike) {
-          setProgress(Currency.infinityPoints.value, Player.eternityGoal, "第三次佩勒冲击进度");
+          setProgress(Currency.infinityPoints.value, Player.eternityGoal, "第三次 Pelle 冲击进度");
         } else if (PelleStrikes.infinity.hasStrike) {
           if (player.break) {
-            setProgress(Currency.infinityPoints.value, 5e11, "第二次佩勒冲击进度");
+            setProgress(Currency.infinityPoints.value, 5e11, "第二次 Pelle 冲击进度");
           } else {
             setProgress(Currency.antimatter.value, Decimal.NUMBER_MAX_VALUE, "无限进度");
           }
         } else {
-          setProgress(Currency.antimatter.value, Decimal.NUMBER_MAX_VALUE, "第一次佩勒冲击进度");
+          setProgress(Currency.antimatter.value, Decimal.NUMBER_MAX_VALUE, "第一次 Pelle 冲击进度");
         }
       } else if (Enslaved.isCompleted) {
         // Show all other goals from the top down, starting at features in the highest prestige layer

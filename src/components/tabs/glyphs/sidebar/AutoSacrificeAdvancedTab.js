@@ -36,7 +36,7 @@ export default {
       };
     },
     questionmarkTooltip() {
-      return "The score of a Glyph is its rarity percentage, plus the specified amount for each effect it has.";
+      return "符文分数是其稀有度百分比，加上其每个效果的指定数值。";
     },
     // This is an absolute value limit (ie. it's allowed to go negative down to negative this value)
     weightInputLimit() {
@@ -83,7 +83,7 @@ export default {
         >
           ?
         </div>
-        <b> Threshold score</b> (rarity % + effect scores)
+        <b> 阈值分数</b>（稀有度 % + 效果分数）
       </div>
       <input
         ref="scoreThreshold"

@@ -147,7 +147,7 @@ export default {
     },
     optionChar(option) {
       if (this.isSymbol) return option;
-      return (option === this.selected || (!this.selected && option === this.defaultOption)) ? "✓" : "";
+        return (option === this.selected || (!this.selected && option === this.defaultOption)) ? "勾" : "";
     },
     invertBW(color) {
       return color === "black" ? "white" : "black";

@@ -22,10 +22,26 @@ export default {
     glyph() {
       return Glyphs.findByInventoryIndex(this.idx);
     },
+    glyphTypeName() {
+      const names = {
+        power: "Power",
+        infinity: "Infinity",
+        time: "Time",
+        replication: "Replication",
+        dilation: "Dilation",
+        effarig: "Effarig",
+        reality: "Reality",
+        cursed: "Cursed",
+        companion: "Companion",
+        music: "Music",
+        blob: "Blob"
+      };
+      return names[this.glyph.type] || this.glyph.type;
+    },
     message() {
-      return `Do you really want to sacrifice this Glyph? Your total power of sacrificed ${this.glyph.type}
-      Glyphs will increase from ${format(this.currentGlyphSacrifice, 2, 2)} to
-      ${format(this.currentGlyphSacrifice + this.gain, 2, 2)}.`;
+      return `你真的想要献祭这个符文吗？你的${this.glyphTypeName}
+      符文献祭总数值将从 ${format(this.currentGlyphSacrifice, 2, 2)} 增加到
+      ${format(this.currentGlyphSacrifice + this.gain, 2, 2)}。`;
     }
   },
   methods: {
@@ -42,7 +58,7 @@ export default {
         // the sac will break things so this is the best I could do. - Scar
 
         this.emitClose();
-        Modal.message.show("The selected Glyph changed position or was otherwise changed!");
+        Modal.message.show("选中的符文改变了位置或被其他方式更改！");
       }
     },
     handleYesClick() {
@@ -56,7 +72,7 @@ export default {
     @confirm="handleYesClick"
   >
     <template #header>
-      You are about to sacrifice a Glyph
+      你即将献祭一个符文
     </template>
     <div class="c-modal-message__text">
       {{ message }}

@@ -35,20 +35,20 @@ export default {
     data-v-automator-blocks
   >
     <p>
-      Drag and drop these blocks to the area on the left! The blocks have names matching the commands in the reference
-      page, but may change appearance after being placed to describe what they do in a more natural-sounding manner.
-      If a block changes in this way, the alternate text will be shown as a tooltip when going to drag it over.
+      将这些积木拖放到左侧的区域！积木的名称与参考页中的命令一致，
+      但放置后可能会改变外观，用更自然的语言描述它们的作用。
+      如果积木以这种方式改变，拖动它时备用文本会以提示的形式显示。
     </p>
     <br>
     <p>
-      Inputs with a <span class="c-automator-input-optional">brown</span> color are optional, while inputs with a
-      <span class="c-automator-input-required">teal</span> color are required.
-      <span class="c-automator-block-row-error">Red</span> inputs are causing errors and must be changed before the
-      script can be run. For more details, check the Scripting Information pane.
+      <span class="c-automator-input-optional">棕色</span>的输入是可选的，而
+      <span class="c-automator-input-required">青色</span>的输入是必需的。
+      <span class="c-automator-block-row-error">红色</span>的输入正在导致错误，必须在
+      脚本运行前修改。更多细节请查看脚本信息面板。
     </p>
     <p>
-      Options in dropdown menus which start with a * will be replaced with a text box. This can be turned back into a
-      dropdown by clicking the <i class="fa-solid fa-circle-xmark" /> on the right side of the text box.
+      下拉菜单中以 * 开头的选项会被替换为文本框。点击文本框右侧的
+      <i class="fa-solid fa-circle-xmark" /> 可以将其变回下拉菜单。
     </p>
     <draggable
       class="block-container"
@@ -69,7 +69,7 @@ export default {
       </div>
     </draggable>
     <p>
-      Note: Blocks and their contents count towards the character limits as if the command was typed in text mode.
+      注意：积木及其内容会像以文本模式输入命令一样计入字符限制。
     </p>
   </draggable>
   `

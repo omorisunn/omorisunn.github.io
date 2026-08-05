@@ -56,16 +56,15 @@ export default {
   template: `
   <ModalWrapper>
     <template #header>
-      Automatic Backup Saves
+      自动备份存档
     </template>
     <div
       class="c-info c-modal--short"
       data-v-backup-window-modal
     >
-      The game makes automatic backups based on time you have spent online or offline.
-      Timers for online backups only run when the game is open, and offline backups only save to the slot
-      with the longest applicable timer.
-      Additionally, your current save is saved into the last slot any time a backup from here is loaded.
+      游戏会根据你在线或离线的时间自动创建备份。
+      在线备份的计时器只在游戏打开时运行，而离线备份只保存到适用计时器最长的槽位。
+      此外，每当从这里加载备份时，你当前的存档都会保存到最后一个槽位。
       <div
         class="c-modal__confirmation-toggle"
         @click="toggleOffline"
@@ -77,7 +76,7 @@ export default {
           />
         </div>
         <span class="c-modal__confirmation-toggle__text">
-          Load with offline progress disabled
+          禁用离线进度进行加载
         </span>
       </div>
       <div
@@ -92,9 +91,8 @@ export default {
           data-v-backup-window-modal
         />
       </div>
-      These backups are still stored in the same place as your game save and can still be lost if you do anything
-      external to the game which would delete your save itself, such as {{ deleteText }}. You can import/export
-      all backups at once as files, using these buttons:
+      这些备份仍然存储在你的游戏存档所在的位置，如果你在游戏外部执行任何会删除存档本身的操作，
+      例如{{ deleteText }}，它们仍然可能丢失。你可以使用以下按钮将全部备份一次性作为文件导入/导出：
       <div
         class="c-backup-file-ops"
         data-v-backup-window-modal
@@ -104,7 +102,7 @@ export default {
           onclick="GameStorage.exportBackupsAsFile()"
           data-v-backup-window-modal
         >
-          Export as file
+          导出为文件
         </PrimaryButton>
         <PrimaryButton
           class="o-btn-file-ops"
@@ -116,10 +114,10 @@ export default {
             accept=".txt"
             @change="importAsFile"
           >
-          <label for="file">Import from file</label>
+          <label for="file">从文件导入</label>
         </PrimaryButton>
       </div>
-      Each of your three save slots has its own separate set of backups.
+      你的三个存档槽位各自拥有独立的备份集合。
     </div>
   </ModalWrapper>
   `

@@ -25,10 +25,10 @@ export default {
     @confirm="deleteConstants"
   >
     <template #header>
-      Deleting Automator Constants
+      删除自动机常量
     </template>
     <div class="c-modal-message__text">
-      Are you sure you wish to delete all of your currently-defined automator constants?
+      你确定要删除当前定义的所有自动机常量吗？
       <br>
       <span
         class="l-lost-text"
@@ -38,7 +38,7 @@ export default {
       </span>
     </div>
     <template #confirm-text>
-      Delete All
+      全部删除
     </template>
   </ModalWrapperChoice>
   `

@@ -48,7 +48,7 @@ export default {
         // Why is confirmedRefine here: refer to SacrificeGlyphModal.vue
 
         this.emitClose();
-        Modal.message.show("The selected Glyph changed position or was otherwise changed!");
+        Modal.message.show("选中的符文改变了位置或被其他方式更改！");
       }
     },
     handleYesClick() {
@@ -62,24 +62,24 @@ export default {
     @confirm="handleYesClick"
   >
     <template #header>
-      You are about to refine a Glyph
+      你即将精炼一个符文
     </template>
     <div
       v-if="resourceUnlocked"
       class="c-modal-message__text"
     >
-      Refining a Glyph will remove the Glyph from your inventory, and in return,
-      you will increase your {{ resourceName }} Alchemy resource from
-      {{ format(resourceAmount, 2, 2) }} to {{ format(after, 2, 2) }}.
-      This Glyph can raise your {{ resourceName }} resource to at most {{ format(cap, 2, 2) }}.
+      精炼符文会将其从你的背包中移除，作为交换，
+      你的{{ resourceName }}炼金资源将从
+      {{ format(resourceAmount, 2, 2) }} 增加到 {{ format(after, 2, 2) }}。
+      此符文最多能将你的{{ resourceName }}资源提升到 {{ format(cap, 2, 2) }}。
     </div>
     <div
       v-else
       class="c-modal-message__text"
     >
-      You cannot gain any {{ resourceName }} alchemy resource because you have not
-      unlocked this Glyph's resource yet. You can still refine it anyway, but nothing
-      will happen. Consider sacrificing the Glyph instead.
+      你无法获得任何{{ resourceName }}炼金资源，因为你还没有
+      解锁此符文的资源。你仍然可以精炼它，但不会发生
+      任何事情。建议改为献祭这个符文。
     </div>
   </ModalWrapperChoice>
   `

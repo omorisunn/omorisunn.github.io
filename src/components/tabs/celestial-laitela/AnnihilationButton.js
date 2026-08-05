@@ -47,29 +47,29 @@ export default {
       v-if="darkMatter.lt(matterRequirement)"
       class="l-laitela-annihilation-button"
     >
-      Annihilation requires {{ format(matterRequirement, 2) }} Dark Matter
+      湮灭需要 {{ format(matterRequirement, 2) }} 暗物质
     </button>
     <button
       v-else
       class="l-laitela-annihilation-button c-laitela-annihilation-button"
       @click="annihilate"
     >
-      <b>Annihilate your Dark Matter Dimensions</b>
+      <b>湮灭你的暗物质维度</b>
     </button>
     <br>
     <br>
     <span v-if="darkMatterMult > 1">
-      Current multiplier to all Dark Matter Dimensions: <b>{{ formatX(darkMatterMult, 2, 2) }}</b>
+      所有暗物质维度的当前倍率：<b>{{ formatX(darkMatterMult, 2, 2) }}</b>
       <br>
       <br>
-      Annihilation will reset your Dark Matter and Dark Matter Dimension amounts, but also add
-      <b>+{{ format(darkMatterMultGain, 2, 2) }}</b> to your Annihilation multiplier.
+      湮灭会重置你的暗物质和暗物质维度数量，但也会为你的湮灭倍率增加
+      <b>+{{ format(darkMatterMultGain, 2, 2) }}</b>。
       <br>
-      (<b>{{ formatX(darkMatterMultRatio, 2, 2) }}</b> from previous multiplier)
+      （来自之前倍率的 <b>{{ formatX(darkMatterMultRatio, 2, 2) }}</b>）
       <span v-if="autobuyerUnlocked">
         <br>
         <br>
-        Auto-Annihilate when adding
+        当增加
         <input
           v-model="autoAnnihilationInput"
           type="text"
@@ -77,12 +77,12 @@ export default {
           class="c-small-autobuyer-input c-laitela-annihilation-input"
           @change="handleAutoAnnihilationInputChange()"
         >
-        to the multiplier.
+        到倍率时自动湮灭。
       </span>
     </span>
     <span v-else>
-      Annihilation will reset your Dark Matter and Dark Matter Dimension amounts, but will give a permanent
-      multiplier of <b>{{ formatX(1 + darkMatterMultGain, 2, 2) }}</b> to all Dark Matter Dimensions.
+      湮灭会重置你的暗物质和暗物质维度数量，但会为所有暗物质维度提供
+      <b>{{ formatX(1 + darkMatterMultGain, 2, 2) }}</b> 的永久倍率。
     </span>
   </div>
   `

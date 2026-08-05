@@ -33,9 +33,9 @@ export default {
       };
     },
     questionmarkTooltip() {
-      return `Glyph score is rarity, minus ${formatInt(200)} for every missing effect.
-        Glyphs with less than the specified rarity are sacrificed. Additional effects
-        beyond ones specified will not increase Glyph score.`;
+      return `符文分数为稀有度减去每个缺失效果的 ${formatInt(200)}。
+        稀有度低于指定值的符文会被献祭。超出指定范围的额外效果
+        不会提高符文分数。`;
     }
   },
   methods: {
@@ -58,7 +58,7 @@ export default {
       >
         ?
       </span>
-      Selected Glyphs will have at least
+      选中的符文将至少有
       <input
         ref="effectCount"
         type="number"
@@ -68,7 +68,7 @@ export default {
         :value="effectCount"
         @blur="setEffectCount"
       >
-      effects total, which must include <i>all</i> of the following effects:
+      个效果，并且必须包含以下<i>所有</i>效果：
     </div>
     <div
       v-for="effect in effects"
@@ -82,7 +82,7 @@ export default {
         :style="descStyle"
       />
     </div>
-    Click to toggle individual effects on/off
+    点击以单独切换效果的开启或关闭
   </div>
   `
 };

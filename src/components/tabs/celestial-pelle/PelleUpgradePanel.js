@@ -73,7 +73,7 @@ export default {
         @click="toggleCollapse"
         data-v-pelle-upgrade-panel
       />
-      Pelle Upgrades
+      Pelle 升级
     </div>
     <div
       v-if="!isCollapsed"
@@ -103,16 +103,16 @@ export default {
           data-v-pelle-upgrade-panel
         >
           <div>
-            You have <span
+            你有 <span
               class="c-remnants-amount"
               data-v-pelle-upgrade-panel
-            >{{ format(remnants, 2) }}</span> Remnants.
+            >{{ format(remnants, 2) }}</span> 个遗物。
           </div>
           <div>
-            You have <span
+            你有 <span
               class="c-remnants-amount"
               data-v-pelle-upgrade-panel
-            >{{ format(realityShards, 2) }}</span> Reality Shards.
+            >{{ format(realityShards, 2) }}</span> 块现实碎片。
             <span
               class="c-remnants-amount"
               data-v-pelle-upgrade-panel
@@ -137,7 +137,7 @@ export default {
         @click="toggleBought"
         data-v-pelle-upgrade-panel
       >
-        {{ showBought ? "Showing bought upgrades" : "Bought upgrades hidden" }}
+        {{ showBought ? "正在显示已购买的升级" : "已购买的升级已隐藏" }}
       </button>
       <div
         v-if="allUpgrades.length"
@@ -160,7 +160,7 @@ export default {
         />
       </div>
       <div v-else>
-        No upgrades to show!
+        没有可显示的升级！
       </div>
     </div>
   </div>

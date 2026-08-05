@@ -12,25 +12,23 @@ export default {
   },
   computed: {
     removeString() {
-      if (this.isRefining) return "Refine";
-      if (this.glyphSacrificeUnlocked) return "Sacrifice";
-      return "Delete";
+      if (this.isRefining) return "精炼";
+      if (this.glyphSacrificeUnlocked) return "献祭";
+      return "删除";
     },
     autoCleanTooltip() {
-      return `${this.removeString} Glyphs that are worse in every way than
-        enough other Glyphs${this.hasPerkShop ? " (ignores Music Glyphs)" : ""}`;
+      return `${this.removeString}各方面都不如足够多其他符文的符文${this.hasPerkShop ? "（忽略 Music Glyph）" : ""}`;
     },
     harshAutoCleanTooltip() {
-      return `${this.removeString} Glyphs that are worse in every way than
-        ANY other Glyph${this.hasPerkShop ? " (includes Music Glyphs)" : ""}`;
+      return `${this.removeString}各方面都不如任何其他符文的符文${this.hasPerkShop ? "（包含 Music Glyph）" : ""}`;
     },
     deleteRejectedTooltip() {
       const negativeWarning = AutoGlyphProcessor.hasNegativeEffectScore()
-        ? " You also have some negative Effect Filter scores; this may remove some Glyphs you normally want to keep!"
+        ? " 你还有一些负的效果筛选分数；这可能会移除一些你通常想保留的符文！"
         : "";
       return this.removeCount === 0
-        ? `This will not remove any Glyphs, adjust your Filter settings to remove some.`
-        : `This will remove ${quantifyInt("Glyph", this.removeCount)}!${negativeWarning}`;
+        ? `这不会移除任何符文，请调整你的筛选设置以移除一些。`
+        : `这将移除 ${quantifyInt("个符文", this.removeCount)}！${negativeWarning}`;
     }
   },
   methods: {
@@ -83,13 +81,13 @@ export default {
     class="o-glyph-inventory-management-group"
   >
     <div class="l-glyph-sacrifice-options__header">
-      Remove weaker Glyphs:
+      移除较弱的符文：
     </div>
     <button
       class="c-glyph-inventory-option"
       @click="autoClean"
     >
-      Purge Glyphs
+      清除符文
       <div class="c-glyph-inventory-option__tooltip">
         {{ autoCleanTooltip }}
       </div>
@@ -98,7 +96,7 @@ export default {
       class="c-glyph-inventory-option"
       @click="harshAutoClean"
     >
-      Harsh Purge Glyphs
+      严厉清除符文
       <div class="c-glyph-inventory-option__tooltip">
         {{ harshAutoCleanTooltip }}
       </div>
@@ -107,14 +105,14 @@ export default {
       class="c-glyph-inventory-option"
       @click="deleteAllUnprotected"
     >
-      {{ removeString }} all unprotected Glyphs
+      {{ removeString }}所有未受保护的符文
     </button>
     <button
       v-if="hasFilter"
       class="c-glyph-inventory-option"
       @click="deleteAllRejected"
     >
-      {{ removeString }} all Glyphs rejected by filtering
+      {{ removeString }}所有被筛选拒绝的符文
       <div
         class="c-glyph-inventory-option__tooltip l-rejected-tooltip"
         data-v-glyph-clean-button-group

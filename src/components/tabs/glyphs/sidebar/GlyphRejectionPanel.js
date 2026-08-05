@@ -35,7 +35,7 @@ export default {
   template: `
   <div class="l-glyph-sacrifice-options c-glyph-sacrifice-options l-glyph-sidebar-panel-size">
     <span class="c-glyph-sacrifice-options__advanced">
-      Behavior for deleted and filtered Glyphs:
+      被删除与被筛选符文的处理方式：
     </span>
     <br>
     <div

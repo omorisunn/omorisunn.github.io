@@ -85,7 +85,7 @@ export default {
         @click="toggleCollapse"
         data-v-pelle-galaxy-generator-panel
       />
-      Galaxy Generator
+      星系生成器
     </div>
     <div
       v-if="!isCollapsed"
@@ -94,12 +94,12 @@ export default {
     >
       <div v-if="isUnlocked">
         <div>
-          You have a total of
+          你总共有
           <span
             class="c-galaxies-amount"
             data-v-pelle-galaxy-generator-panel
           >{{ galaxyText }}</span>
-          Galaxies.
+          个星系。
           <span
             class="c-galaxies-amount"
             data-v-pelle-galaxy-generator-panel
@@ -125,20 +125,20 @@ export default {
               class="c-increase-cap-text"
               data-v-pelle-galaxy-generator-panel
             >
-              {{ sacrificeText }}. <br><br>
+              {{ sacrificeText }}。<br><br>
               <span
                 v-if="!sacrificeActive"
                 class="c-big-text"
                 data-v-pelle-galaxy-generator-panel
               >
-                Sacrifice your {{ capRiftName }}
+                献祭你的{{ capRiftName }}
               </span>
               <span
                 v-else
                 class="c-big-text"
                 data-v-pelle-galaxy-generator-panel
               >
-                Getting rid of all that {{ capRiftName }}...
+                正在清除所有{{ capRiftName }}……
               </span>
             </div>
             <div
@@ -146,7 +146,7 @@ export default {
               class="c-increase-cap-text c-medium-text"
               data-v-pelle-galaxy-generator-panel
             >
-              {{ format(generatedGalaxies, 2) }} / {{ format(cap, 2) }} Galaxies generated
+              已生成 {{ format(generatedGalaxies, 2) }} / {{ format(cap, 2) }} 个星系
             </div>
           </button>
         </div>
@@ -169,7 +169,7 @@ export default {
         @click="unlock"
         data-v-pelle-galaxy-generator-panel
       >
-        Unlock the Galaxy Generator
+        解锁星系生成器
       </button>
     </div>
   </div>

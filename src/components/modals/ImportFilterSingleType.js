@@ -22,7 +22,20 @@ export default {
       return GLYPH_SYMBOLS[this.type];
     },
     capitalized() {
-      return `${this.type.charAt(0).toUpperCase()}${this.type.substring(1)}`;
+      const names = {
+        power: "Power",
+        infinity: "Infinity",
+        time: "Time",
+        replication: "Replication",
+        dilation: "Dilation",
+        effarig: "Effarig",
+        reality: "Reality",
+        cursed: "Cursed",
+        companion: "Companion",
+        music: "Music",
+        blob: "Blob"
+      };
+      return names[this.type] || `${this.type.charAt(0).toUpperCase()}${this.type.substring(1)}`;
     },
     rarityStr() {
       return this.changedValue(this.currSettings.rarity, this.newSettings.rarity, x => formatPercents(x / 100));
@@ -55,7 +68,7 @@ export default {
     },
     effectScoreStr(effectEntry) {
       const fullStr = (isSelected, value) => {
-        const check = isSelected ? "✔" : "✘";
+        const check = isSelected ? "已选" : "未选";
         return `${check}${formatInt(value)}`;
       };
       const oldStr = fullStr(effectEntry.oldReq, effectEntry.oldScore);
@@ -91,7 +104,7 @@ export default {
         <span
           class="c-rarity"
           :class="topLevelClassObject('rarity')"
-          ach-tooltip="Setting for Rarity Threshold and Specified Effect"
+          ach-tooltip="稀有度阈值与指定效果的设置"
           data-v-import-filter-single-type
         >
           {{ rarityStr }}
@@ -99,18 +112,18 @@ export default {
         <span
           class="c-effects-count"
           :class="topLevelClassObject('effectCount')"
-          ach-tooltip="Number of effects in Specified Effect"
+          ach-tooltip="指定效果模式下的效果个数"
           data-v-import-filter-single-type
         >
-          Minimum Effects: {{ effectStr }}
+          最少效果数：{{ effectStr }}
         </span>
         <span
           class="c-target-score"
           :class="topLevelClassObject('score')"
-          ach-tooltip="Threshold for Effect Score"
+          ach-tooltip="效果分数的阈值"
           data-v-import-filter-single-type
         >
-          Score: {{ scoreStr }}
+          分数：{{ scoreStr }}
         </span>
       </span>
       <br>
@@ -148,7 +161,7 @@ export default {
       </span>
     </span>
     <span v-else>
-      (No changes)
+      （无变化）
     </span>
   </div>
   `

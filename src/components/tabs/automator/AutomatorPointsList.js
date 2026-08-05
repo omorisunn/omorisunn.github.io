@@ -30,10 +30,10 @@ export default {
       class="l-header"
       data-v-automator-points-list
     >
-      You have {{ formatInt(totalPoints) }} / {{ formatInt(pointsForAutomator) }}
-      Automator Points towards unlocking the Automator.
+      你已拥有 {{ formatInt(totalPoints) }} / {{ formatInt(pointsForAutomator) }}
+      自动机点数，用于解锁自动机。
       <br>
-      You gain Automator Points from the following sources:
+      你可以从以下来源获得自动机点数：
     </div>
     <div
       class="l-automator-points-list-container"
@@ -55,7 +55,7 @@ export default {
           class="l-large-text"
           data-v-automator-points-list
         >
-          Perks
+          福利
         </span>
         <div
           v-for="perk in perkSources"
@@ -68,7 +68,7 @@ export default {
             class="c-automator-points-list-perk-label"
             data-v-automator-points-list
           >{{ perk.label }}</span>
-          - {{ perk.shortDescription }}
+          · {{ perk.shortDescription }}
           <span
             class="c-automator-points-list-ap"
             data-v-automator-points-list
@@ -126,7 +126,7 @@ export default {
           class="l-large-text"
           data-v-automator-points-list
         >
-          Reality Upgrades
+          现实升级
         </span>
         <div
           v-for="upgrade in upgradeSources"
@@ -147,14 +147,14 @@ export default {
     </div>
     <br>
     <div>
-      The Automator allows (amongst other things) buying full Time Study Trees, entering Eternity Challenges,
-      or starting Dilation.
+      自动机可以（除其他功能外）购买完整的时间研究树、进入永恒挑战，
+      或开始膨胀。
       <br>
-      It can also force prestige events on certain conditions independently from your Autobuyers or modify
-      some of your Autobuyer settings.
+      它还可以独立于自动购买器在特定条件下强制进行声望事件，或修改
+      部分自动购买器设置。
       <br>
-      The speed of the Automator gradually increases as you get more Realities. If unlocked right now,
-      it would run {{ format(1000 / automatorInterval, 2, 2) }} commands per real-time second.
+      自动机的速度会随着你完成更多现实而逐渐提升。如果现在解锁，
+      它每真实秒将执行 {{ format(1000 / automatorInterval, 2, 2) }} 条命令。
     </div>
   </div>
   `

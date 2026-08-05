@@ -57,7 +57,7 @@ export default {
     },
     spectateText() {
       return this.isSpectating
-        ? "Numbers here are unaffected by END so that you can see your final records."
+        ? "此处的数字不受游戏结束影响，以便你查看最终记录。"
         : null;
     }
   },
@@ -81,9 +81,9 @@ export default {
     class="c-previous-runs"
     data-v-previous-speedrun-tab
   >
-    <b>You have completed {{ quantify("speedrun", numRuns, 0, 0, x => x) }} prior to this playthrough.</b>
-    <b>Statistics of previous runs are below, mouseover icons for more details.</b>
-    <b>Click the magnifying glass to compare the milestones on a particular run to this run.</b>
+    <b>在此次游玩之前，你已经完成了 {{ quantify("次速通", numRuns, 0, 0, x => x) }}。</b>
+    <b>以下是之前速通的统计信息，将鼠标悬停在图标上可查看更多细节。</b>
+    <b>点击放大镜可以将某次速通的里程碑与本次速通进行比较。</b>
     <b>{{ spectateText }}</b>
     <br>
     <div
@@ -97,7 +97,7 @@ export default {
         @click="changePage(-1)"
         data-v-previous-speedrun-tab
       />
-      Showing runs {{ 10 * runPage + 1 }} to {{ 10 * (runPage + 1) }} ({{ highestIndex }} total runs)
+      正在显示第 {{ 10 * runPage + 1 }} 至 {{ 10 * (runPage + 1) }} 次速通（共 {{ highestIndex }} 次）
       <PrimaryButton
         class="o-primary-btn--subtab-option fas fa-arrow-right"
         :class="{ 'o-primary-btn--disabled' : runPage + 1 > highestIndex / 10 }"
@@ -146,7 +146,7 @@ export default {
         <span
           class="o-box l-milestone-none"
           data-v-previous-speedrun-tab
-        /> Not reached this run
+        /> 本次速通未达到
       </div>
       <div
         class="c-legend-cell"
@@ -155,7 +155,7 @@ export default {
         <span
           class="o-box l-milestone-slow"
           data-v-previous-speedrun-tab
-        /> Slower than comparison
+        /> 比对比对象慢
       </div>
       <div
         class="c-legend-cell"
@@ -164,7 +164,7 @@ export default {
         <span
           class="o-box l-milestone-fast"
           data-v-previous-speedrun-tab
-        /> Faster than comparison
+        /> 比对比对象快
       </div>
       <div
         class="c-legend-cell"
@@ -173,7 +173,7 @@ export default {
         <span
           class="o-box l-milestone-fastest"
           data-v-previous-speedrun-tab
-        /> Faster than best
+        /> 比最佳记录快
       </div>
     </div>
     <div

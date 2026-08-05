@@ -17,9 +17,7 @@ export default {
       subtabVisibilities: [],
       showSubtabs: false,
       hasNotification: false,
-      tabName: "",
-      mobileSubtabsOpen: false,
-      isMobile: false
+      tabName: ""
     };
   },
   computed: {
@@ -42,8 +40,6 @@ export default {
       this.subtabVisibilities = this.tab.subtabs.map(x => x.isAvailable);
       this.showSubtabs = this.isAvailable && this.subtabVisibilities.length >= 1;
       this.hasNotification = this.tab.hasNotification;
-      this.isMobile = window.matchMedia("(max-width: 768px)").matches;
-      if (!this.isMobile && this.mobileSubtabsOpen) this.mobileSubtabsOpen = false;
       if (this.tabPosition < Pelle.endTabNames.length) {
         this.tabName = Pelle.transitionText(
           this.tab.name,
@@ -58,15 +54,9 @@ export default {
       return player.options.lastOpenSubtab[this.tab.id] === id && Theme.currentName() !== "S9";
     },
     handleClick() {
-      if (this.isMobile && this.isCurrentTab && this.showSubtabs) {
-        this.mobileSubtabsOpen = !this.mobileSubtabsOpen;
-        return;
-      }
-      this.mobileSubtabsOpen = false;
       this.tab.show(true);
     },
     handleSubtabClick(subtab) {
-      this.mobileSubtabsOpen = false;
       subtab.show(true);
     },
     tabIcon() {
@@ -110,15 +100,25 @@ export default {
       >
         {{ tabName }}
       </span>
-      <div
+      <svg
         v-if="hasNotification"
-        class="fas fa-circle-exclamation l-notification-icon"
-      />
+        class="l-notification-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        data-v-modern-tab-button
+      >
+        <circle cx="12" cy="12" r="8.5" />
+        <path d="M12 7.2v5.2" />
+        <circle cx="12" cy="16" r="0.7" fill="currentColor" stroke="none" />
+      </svg>
     </div>
     <div
       v-if="showSubtabs"
       class="subtabs"
-      :class="{ 'subtabs--mobile-open': mobileSubtabsOpen }"
       data-v-modern-tab-button
     >
       <template
@@ -136,10 +136,21 @@ export default {
           data-v-modern-tab-button
         >
           <span v-html="subtab.symbol" />
-          <div
+          <svg
             v-if="subtab.hasNotification"
-            class="fas fa-circle-exclamation l-notification-icon"
-          />
+            class="l-notification-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-v-modern-tab-button
+          >
+            <circle cx="12" cy="12" r="8.5" />
+            <path d="M12 7.2v5.2" />
+            <circle cx="12" cy="16" r="0.7" fill="currentColor" stroke="none" />
+          </svg>
           <div
             class="o-subtab__tooltip"
             data-v-modern-tab-button

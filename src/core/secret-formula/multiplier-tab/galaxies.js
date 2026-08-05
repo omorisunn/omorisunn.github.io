@@ -6,7 +6,7 @@ export const galaxies = {
   // Note: none of the galaxy types use the global multiplier that applies to all of them within multValue, which
   // very slightly reduces performance impact and is okay because it's applied consistently
   antimatter: {
-    name: "Antimatter Galaxies",
+    name: "反物质星系",
     displayOverride: () => {
       const num = player.galaxies + GalaxyGenerator.galaxies;
       const mult = MultiplierTabHelper.globalGalaxyMult();
@@ -17,7 +17,7 @@ export const galaxies = {
     icon: MultiplierTabIcons.ANTIMATTER,
   },
   replicanti: {
-    name: "Replicanti Galaxies",
+    name: "Replicanti 星系",
     displayOverride: () => {
       const num = Replicanti.galaxies.total;
       let rg = Replicanti.galaxies.bought;
@@ -40,7 +40,7 @@ export const galaxies = {
     icon: MultiplierTabIcons.SPECIFIC_GLYPH("replication"),
   },
   tachyon: {
-    name: "Tachyon Galaxies",
+    name: "速子星系",
     displayOverride: () => {
       const num = player.dilation.totalTachyonGalaxies;
       const mult = MultiplierTabHelper.globalGalaxyMult() *
@@ -56,7 +56,7 @@ export const galaxies = {
     icon: MultiplierTabIcons.SPECIFIC_GLYPH("dilation"),
   },
   nerfPelle: {
-    name: "Doomed Reality",
+    name: "末日现实",
     displayOverride: () => `All Galaxy strength /${formatInt(2)}`,
     powValue: 0.5,
     isActive: () => Pelle.isDoomed,

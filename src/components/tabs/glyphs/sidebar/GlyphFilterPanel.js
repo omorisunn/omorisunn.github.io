@@ -56,13 +56,12 @@ export default {
       };
     },
     questionmarkTooltip() {
-      return `All Glyph choices are given a score and compared to a threshold based on the chosen mode. 
-        The Glyph with the highest score is picked, but will still be Sacrificed if below the threshold.
-        (click for more detail)`;
+      return `所有符文选项都会获得一个分数，并根据所选模式与阈值进行比较。
+        分数最高的符文会被选中，但如果低于阈值仍会被献祭。
+        （点击查看更多细节）`;
     },
     autoRealityTooltip() {
-      return `If Auto-Reality is on, ignore all other settings and immediately Reality if no upcoming
-        Glyphs would be kept`;
+      return `如果自动现实已开启，则忽略所有其他设置，在即将获得的符文都不会被保留时立即进行现实`;
     },
     unlockedModes() {
       return Object.values(this.modes).filter(idx => this.isUnlocked(idx));
@@ -183,7 +182,7 @@ export default {
       const simpleData = [filter.select, filter.simple, filter.trash].join("|");
       const typeData = ALCHEMY_BASIC_GLYPH_TYPES.map(t => serializeType(filter.types[t])).join("|");
       copyToClipboard(GameSaveSerializer.encodeText(`${simpleData}|${typeData}`, "glyph filter"));
-      GameUI.notify.info("Filter settings copied to clipboard");
+      GameUI.notify.info("筛选设置已复制到剪贴板");
     },
     importFilterSettings() {
       Modal.importFilter.show();
@@ -197,13 +196,13 @@ export default {
         data-v-glyph-filter-panel
       >
         <i
-          v-tooltip="'Export filter settings'"
+          v-tooltip="'导出筛选设置'"
           class="fas fa-file-export l-top-left-btn"
           @click="exportFilterSettings"
           data-v-glyph-filter-panel
         />
         <i
-          v-tooltip="'Import filter settings'"
+          v-tooltip="'导入筛选设置'"
           class="fas fa-file-import l-top-left-btn"
           @click="importFilterSettings"
           data-v-glyph-filter-panel
@@ -227,7 +226,7 @@ export default {
           data-v-glyph-filter-panel
         />
       </div>
-      Current Filter Mode:
+      当前筛选模式：
       <br>
       {{ filterMode(mode) }}
       <br>
@@ -249,18 +248,17 @@ export default {
       class="c-glyph-sacrifice-options__advanced"
     >
       <br>
-      Glyph score is assigned based on type. Priority is given to Glyphs belonging to the type of which you have
-      the least total Glyph Sacrifice value.
+      符文分数根据类型分配。你符文献祭总数值最低的类型会获得优先权。
       <br>
       <br>
-      This mode never keeps Glyphs, but will instead always sacrifice the Glyph it chooses.
+      此模式从不保留符文，而是始终献祭它选择的符文。
     </div>
     <div
       v-if="mode === modes.EFFECT_COUNT"
       class=" c-glyph-sacrifice-options__advanced"
     >
       <br>
-      Glyphs must have at least
+      符文必须至少有
       <input
         ref="effectCount"
         type="number"
@@ -270,14 +268,14 @@ export default {
         :value="effectCount"
         @blur="setEffectCount"
       >
-      effects to be chosen. Rarer Glyphs are preferred in ties.
+      个效果才会被选中。稀有度更高的符文在平局时优先。
     </div>
     <div
       v-if="mode === modes.RARITY_THRESHOLD"
       class="l-glyph-sacrifice-options__rarity-sliders"
     >
       <span class="c-glyph-sacrifice-options__advanced">
-        Any Glyphs with rarity below these thresholds will be sacrificed.
+        稀有度低于这些阈值的符文将被献祭。
       </span>
       <div
         v-for="type in glyphTypes"
@@ -305,7 +303,7 @@ export default {
       class="c-glyph-sacrifice-options__advanced"
     >
       <div>
-        Glyph Type:
+        符文类型：
         <span
           v-for="type in glyphTypes"
           :key="type.id"
@@ -347,7 +345,7 @@ export default {
       class="c-glyph-sacrifice-options__advanced"
     >
       <div>
-        Glyph Type:
+        符文类型：
         <span
           v-for="type in glyphTypes"
           :key="type.id"
@@ -373,23 +371,23 @@ export default {
       class="c-glyph-sacrifice-options__advanced"
     >
       <br>
-      Glyph score is assigned based on current Alchemy Resource totals. Priority is given to the Glyph type with
-      the lowest associated alchemy resource total.
+      符文分数根据当前炼金资源总量分配。关联炼金资源总量最低的符文类型
+      会获得优先权。
       <br>
       <br>
-      This mode never keeps Glyphs.
+      此模式从不保留符文。
     </div>
     <div
       v-if="mode === modes.ALCHEMY_VALUE"
       class="c-glyph-sacrifice-options__advanced"
     >
       <br>
-      Glyphs will be assigned values based on <i>current</i> refinement value, accounting for the type-specific
-      resource caps. Priority is given to Glyphs which are worth the most alchemy resources; Glyphs which would
-      cause you to hit a cap are effectively worth less.
+      符文将根据<i>当前</i>精炼价值分配数值，并考虑类型特定的
+      资源上限。价值最高的炼金资源符文会获得优先权；会导致
+      达到上限的符文实际上价值更低。
       <br>
       <br>
-      This mode never keeps Glyphs.
+      此模式从不保留符文。
     </div>
   </div>
   `

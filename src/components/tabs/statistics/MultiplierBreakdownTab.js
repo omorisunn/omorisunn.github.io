@@ -2,18 +2,18 @@ import { createEntryInfo } from "./breakdown-entry-info.js";
 import MultiplierBreakdownEntry from "./MultiplierBreakdownEntry.js";
 
 const MULT_TAB_OPTIONS = [
-  { id: 0, key: "AM", text: "Antimatter Production" },
-  { id: 1, key: "tickspeed", text: "Tickspeed" },
-  { id: 2, key: "AD", text: "Antimatter Dimensions" },
-  { id: 3, key: "IP", text: "Infinity Points" },
-  { id: 4, key: "ID", text: "Infinity Dimensions" },
-  { id: 5, key: "infinities", text: "Infinities" },
-  { id: 6, key: "replicanti", text: "Replicanti Speed" },
-  { id: 7, key: "EP", text: "Eternity Points" },
-  { id: 8, key: "TD", text: "Time Dimensions" },
-  { id: 9, key: "eternities", text: "Eternities" },
-  { id: 10, key: "DT", text: "Dilated Time" },
-  { id: 11, key: "gamespeed", text: "Game Speed" },
+  { id: 0, key: "AM", text: "反物质产出" },
+  { id: 1, key: "tickspeed", text: "计数频率" },
+  { id: 2, key: "AD", text: "反物质维度" },
+  { id: 3, key: "IP", text: "无限点数" },
+  { id: 4, key: "ID", text: "无限维度" },
+  { id: 5, key: "infinities", text: "无限次数" },
+  { id: 6, key: "replicanti", text: "复制体速度" },
+  { id: 7, key: "EP", text: "永恒点数" },
+  { id: 8, key: "TD", text: "时间维度" },
+  { id: 9, key: "eternities", text: "永恒次数" },
+  { id: 10, key: "DT", text: "膨胀时间" },
+  { id: 11, key: "gamespeed", text: "游戏速度" },
 ];
 
 export default {
@@ -106,14 +106,13 @@ export default {
         class="c-multiplier-tab-text-line"
         data-v-multiplier-breakdown-tab
       >
-        Note: Entries are only expandable if they contain multiple sources which can be different values.
-        For example, any effects which affect all Dimensions of any type equally will not expand into a
-        list of eight identical numbers.
+        注意：条目只有在包含多个可能不同的来源时才能展开。
+        例如，任何对某种类型的所有维度产生相同影响的效果不会展开成
+        八个相同的数字。
         <br>
         <b>
-          Some entries may cause lag if expanded out fully. Resizing happens over 200 ms (instead of instantly)
-          in order to reduce possible adverse effects due to photosensitivity. This may cause some visual weirdness
-          after prestige events.
+          某些条目完全展开时可能会导致卡顿。为了减少光敏性可能带来的不良影响，
+          尺寸调整需要 200 毫秒而不是瞬间完成。这可能导致声望事件后出现一些视觉异常。
         </b>
       </div>
     </div>

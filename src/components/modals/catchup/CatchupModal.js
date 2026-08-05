@@ -23,10 +23,10 @@ export default {
     timeString() {
       // If diff is zero, that means we opened it up via the button and don't need the text for last opening
       if (!this.diff) return null;
-      return `It has been ${TimeSpan.fromMilliseconds(this.diff).toString()} since you last loaded up the game.`;
+      return `距离你上次加载游戏已经过去了 ${TimeSpan.fromMilliseconds(this.diff).toString()}。`;
     },
     titleText() {
-      return this.diff ? "Content Catch-up" : "Content Summary";
+      return this.diff ? "内容回顾" : "内容摘要";
     }
   },
   methods: {
@@ -41,10 +41,9 @@ export default {
     </div>
     <div>
       {{ timeString }}
-      If you need a refresher, here is a quick summary of all the content you have unlocked so far from the beginning of
-      the game, separated into different stages of progression. These are only very brief descriptions; you can check
-      the related How To Play entries by clicking the contents title or <i class="fas fa-question-circle" /> icons
-      to view more detailed information.
+      如果你需要回顾一下，这里提供了从游戏开始到目前为止你已解锁内容的快速摘要，
+      并按不同的进度阶段分类。这些只是非常简短的描述；你可以通过点击内容标题
+      或 <i class="fas fa-question-circle" /> 图标查看相关的如何游玩条目，以获取更详细的信息。
     </div>
     <div
       class="l-catchup-group-container"
@@ -62,7 +61,7 @@ export default {
       class="c-suggestion-text"
       data-v-catchup-modal
     >
-      Based on your current progression, it will probably be useful to try to increase your {{ suggestedResource }}.
+      根据你当前的进度，尝试提升你的{{ suggestedResource }}可能会很有用。
     </span>
     <div
       class="l-confirm-padding"
@@ -71,7 +70,7 @@ export default {
       <PrimaryButton
         @click="emitClose"
       >
-        Confirm
+        确认
       </PrimaryButton>
     </div>
   </div>

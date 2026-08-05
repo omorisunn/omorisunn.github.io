@@ -84,10 +84,21 @@ export default {
           v-html="subtab.symbol"
           data-v-s12-subtabs
         />
-        <div
+        <svg
           v-if="subtab.hasNotification"
-          class="fas fa-circle-exclamation l-notification-icon"
-        />
+          class="l-notification-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          data-v-s12-subtabs
+        >
+          <circle cx="12" cy="12" r="8.5" />
+          <path d="M12 7.2v5.2" />
+          <circle cx="12" cy="16" r="0.7" fill="currentColor" stroke="none" />
+        </svg>
       </div>
     </template>
   </div>

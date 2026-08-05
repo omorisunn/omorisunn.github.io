@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     upgradeStr() {
-      return this.isImaginary ? "Imaginary Upgrade" : "Reality Upgrade";
+      return this.isImaginary ? "想象升级" : "现实升级";
     },
     lockEvent() {
       return this.specialLockText ?? this.upgrade.lockEvent;
@@ -38,29 +38,29 @@ export default {
     @confirm="disableLock"
   >
     <template #header>
-      {{ upgradeStr }} Condition Lock
+      {{ upgradeStr }}条件锁定
     </template>
     <div class="c-modal-message__text">
-      Are you sure you wish to {{ lockEvent }}? Doing this right now will cause you to
+      你确定要{{ lockEvent }}吗？现在这样做会使你
       <span
         class="l-emphasis"
         data-v-upgrade-mechanic-lock-modal
       >
-        fail the requirement for the {{ upgradeStr }} "{{ upgrade.name }}"
+        无法满足 {{ upgradeStr }}“{{ upgrade.name }}”的需求
       </span>
       <span :ach-tooltip="upgrade.requirement">
         <i class="fas fa-question-circle" />
       </span>
       <br>
       <br>
-      Selecting "Cancel" will close this modal with no effect, while selecting "Disable Lock" will disable the
-      requirement check for this upgrade and prevent this message from reappearing unless you turn it back on.
+      选择“取消”会关闭此窗口且不产生任何效果，而选择“禁用锁定”将关闭此升级的需求检查，
+      并且除非你重新开启，否则此消息不会再次出现。
       <br>
       <br>
-      Neither of these options will perform the action you just attempted, so you will need to try again.
+      这两个选项都不会执行你刚才尝试的操作，因此你需要重新尝试。
     </div>
     <template #confirm-text>
-      Disable Lock
+      禁用锁定
     </template>
   </ModalWrapperChoice>
   `

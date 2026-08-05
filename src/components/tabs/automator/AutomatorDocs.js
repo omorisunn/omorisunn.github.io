@@ -65,14 +65,14 @@ export default {
       return this.fullScreen ? "fa-compress-arrows-alt" : "fa-expand-arrows-alt";
     },
     fullScreenTooltip() {
-      return this.fullScreen ? "Exit full screen" : "Expand to full screen";
+      return this.fullScreen ? "退出全屏" : "展开为全屏";
     },
     errorTooltip() {
-      return `Your script has ${quantify("error", this.errorCount)}`;
+      return `你的脚本有 ${quantify("个错误", this.errorCount)}`;
     },
     nameTooltip() {
       return this.isNameTooLong
-        ? `Names cannot be longer than ${formatInt(AutomatorData.MAX_ALLOWED_SCRIPT_NAME_LENGTH)} characters!`
+        ? `名称不能超过 ${formatInt(AutomatorData.MAX_ALLOWED_SCRIPT_NAME_LENGTH)} 个字符！`
         : "";
     },
     currentScriptID: {
@@ -106,8 +106,8 @@ export default {
     },
     importTooltip() {
       return this.canMakeNewScript
-        ? "Import single automator script or data"
-        : "You have too many scripts to import another!";
+        ? "导入单个自动机脚本或数据"
+        : "你的脚本数量过多，无法再导入！";
     },
     currentEditorScriptName() {
       return this.scripts.find(s => s.id === this.currentScriptID).name;
@@ -142,9 +142,9 @@ export default {
       const toExport = AutomatorBackend.exportCurrentScriptContents();
       if (toExport) {
         copyToClipboard(toExport);
-        GameUI.notify.automator("Exported current Automator script to your clipboard");
+        GameUI.notify.automator("已将当前自动机脚本导出到剪贴板");
       } else {
-        GameUI.notify.error("Could not export blank Automator script!");
+        GameUI.notify.error("无法导出空白的自动机脚本！");
       }
     },
     importScript() {

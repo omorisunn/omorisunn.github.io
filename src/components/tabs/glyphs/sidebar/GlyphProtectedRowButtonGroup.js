@@ -13,8 +13,8 @@ export default {
   },
   computed: {
     questionMarkTooltip() {
-      return `Protected slots are unaffected by anything which may move or purge Glyphs.
-        New Glyphs will never be inserted into these slots.`;
+      return `受保护槽位不受任何可能移动或清除符文的操作影响。
+        新符文永远不会被放入这些槽位。`;
     }
   },
   watch: {
@@ -58,14 +58,14 @@ export default {
       >
         ?
       </div>
-      Protected Slots: ({{ quantifyInt("row", protectedRows) }})
+      受保护槽位：（{{ quantifyInt("行", protectedRows) }}）
     </div>
     <button
       :class="addRowButtonClass()"
       @click="addRow"
       data-v-glyph-protected-row-button
     >
-      Add a protected row
+      添加受保护行
       <div
         v-if="isProtectedRowsMax()"
         class="c-glyph-inventory-option__tooltip"
