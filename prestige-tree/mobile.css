@@ -20,16 +20,42 @@
 		display: none !important;
 	}
 
+	/* ---------- 树 overlay：触摸穿透，只保留交互按钮 ---------- */
+	#treeOverlay {
+		pointer-events: none !important;
+	}
+	#treeOverlay .overlayThing,
+	#treeOverlay button,
+	#treeOverlay img,
+	#treeOverlay a,
+	#treeOverlay .sideLayers,
+	#treeOverlay .sideLayers * {
+		pointer-events: auto !important;
+	}
+
 	/* ---------- 禁用双击缩放 ---------- */
 	* {
 		-webkit-tap-highlight-color: transparent;
 	}
 
-	/* ---------- 树节点：稍微缩小，避免过大占屏 ---------- */
+	/* ---------- 树节点：缩小适配上半屏，能容纳更多节点 ---------- */
 	.treeNode {
-		width: 78px !important;
-		height: 78px !important;
-		font-size: 30px !important;
+		width: 70px !important;
+		height: 70px !important;
+		font-size: 26px !important;
+		margin: 2px !important;
+	}
+	/* 节点行：压紧，让整棵树适配上半屏 */
+	.nodeRow {
+		margin: 0 !important;
+		padding: 0 !important;
+		line-height: 0 !important;
+	}
+	.nodeRow table {
+		margin: 0 !important;
+	}
+	.nodeRow .hidden, .treeNode.hidden {
+		display: none !important;
 	}
 
 	/* ---------- 上下分屏：树在上，详情在下 ---------- */
@@ -49,6 +75,12 @@
 		min-height: 0 !important;
 		overflow: hidden !important;
 		z-index: 1000 !important;
+	}
+	/* 树：iOS 丝滑滚动 */
+	#treeTab.col.left,
+	#treeTab {
+		-webkit-overflow-scrolling: touch !important;
+		overscroll-behavior: contain !important;
 	}
 	/* 层详情（.col.right）固定在下半屏 */
 	.col.right,

@@ -81,16 +81,32 @@
 				overlay.style.height = '46vh';
 				overlay.style.overflow = 'hidden';
 				overlay.style.zIndex = '1000';
+				overlay.style.pointerEvents = 'none';
 			}
-			// 树相关(.col.left)固定上半屏
+			// 树相关(.col.left)固定上半屏，可触摸拖动
 			if (treeTab) {
 				treeTab.style.position = 'fixed';
 				treeTab.style.top = '0';
 				treeTab.style.left = '0';
 				treeTab.style.width = '100%';
 				treeTab.style.height = '46vh';
-				treeTab.style.overflow = 'auto';
+				treeTab.style.overflowY = 'auto';
+				treeTab.style.overflowX = 'auto';
+				treeTab.style.zIndex = '1500';
+				treeTab.style.pointerEvents = 'auto';
+				treeTab.style.touchAction = 'pan-x pan-y';
 			}
+			// overlay 里的交互按钮恢复可点
+			['optionWheel','info','help','discord'].forEach(function(id){
+				var e=document.getElementById(id);
+				if(e) e.style.pointerEvents='auto';
+			});
+			document.querySelectorAll('#treeOverlay .overlayThing').forEach(function(e){
+				e.style.pointerEvents='auto';
+			});
+			document.querySelectorAll('#treeOverlay .sideLayers *').forEach(function(e){
+				e.style.pointerEvents='auto';
+			});
 			// canvas 限制在上半屏，避免分支线画到下半屏
 			var cv = document.getElementById('treeCanvas');
 			if (cv) {
