@@ -1,5 +1,20 @@
-/* Prestige Tree — 手机端工具：倍速滑块 */
+/* Prestige Tree — 手机端工具：倍速滑块 + 禁用双击缩放 */
 (function () {
+	// ------- 禁用双击/捏合缩放 -------
+	(function () {
+		var lastTouch = 0;
+		document.addEventListener('dblclick', function (e) { e.preventDefault(); }, true);
+		document.addEventListener('gesturestart', function (e) { e.preventDefault(); }, true);
+		document.addEventListener('gesturechange', function (e) { e.preventDefault(); }, true);
+		document.addEventListener('gestureend', function (e) { e.preventDefault(); }, true);
+		document.addEventListener('touchend', function (e) {
+			if (e.touches.length === 1 && (Date.now() - lastTouch) < 350) { e.preventDefault(); }
+			lastTouch = Date.now();
+		}, true);
+		document.addEventListener('touchmove', function (e) {
+			if (e.scale && e.scale !== 1) { e.preventDefault(); }
+		}, true);
+	})();
 	// 倍速控制条
 	function buildSpeedBar() {
 		if (document.getElementById('pt_speedbar')) return;
