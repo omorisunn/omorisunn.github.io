@@ -1,0 +1,271 @@
+/* ============================================================
+   Exotic Matter Dimensions — 移动端主题美化
+   加载在 mobile.css 之后，统一的现代视觉风格
+   ============================================================ */
+
+/* ---------- 全局背景：深紫渐变，减少刺眼 ---------- */
+html, body {
+	background: radial-gradient(circle at 50% 0%, #2a0a4a 0%, #190033 55%, #10001f 100%) !important;
+	background-attachment: fixed !important;
+	color: #cbb8ff;
+}
+#game.topleveldiv {
+	background: transparent !important;
+}
+
+/* ---------- 顶部资源栏：卡片化 ---------- */
+#game > table:first-of-type {
+	background: rgba(255,255,255,0.04);
+	border-radius: 14px;
+	margin: 8px 6px;
+	backdrop-filter: blur(3px);
+}
+#game > table:first-of-type td {
+	background: rgba(255,255,255,0.03);
+}
+.resource {
+	background: rgba(30,10,60,0.5) !important;
+	border-radius: 10px !important;
+	border: 1px solid rgba(120,90,220,0.18) !important;
+	padding: 6px 4px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+	font-weight: 600;
+	letter-spacing: 0.3px;
+}
+#game table:first-of-type td button {
+	border-radius: 10px;
+	padding: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* ---------- 一级导航：现代胶囊 ---------- */
+.navigation, .globalnavigation {
+	background: rgba(255,255,255,0.03);
+	border-radius: 12px;
+	margin: 2px 4px;
+	padding: 3px 4px !important;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.bigtab,
+.globalnavigation .bigtab {
+	height: 38px !important;
+	border-radius: 10px !important;
+	border: 1px solid rgba(150,120,255,0.25) !important;
+	background: linear-gradient(180deg, rgba(80,50,150,0.35), rgba(45,25,90,0.35)) !important;
+	color: #e8dfff !important;
+	font-weight: 600;
+	font-size: 13px !important;
+	letter-spacing: 0.5px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 2px 6px rgba(0,0,0,0.25);
+	transition: transform 0.08s ease, box-shadow 0.15s ease;
+}
+.bigtab:active { transform: scale(0.96); }
+.bigtab:hover { box-shadow: 0 0 14px rgba(140,110,255,0.4); }
+#button_bigtab_main, #button_bigtab_main.glownotify {
+	background: linear-gradient(180deg, rgba(120,80,220,0.55), rgba(70,40,150,0.55)) !important;
+	border-color: rgba(180,140,255,0.6) !important;
+	box-shadow: 0 0 16px rgba(140,110,255,0.4), inset 0 1px 0 rgba(255,255,255,0.15);
+	color: #fff !important;
+}
+
+/* ---------- 二级导航：统一小胶囊 ---------- */
+.mainNavigation, .subnavigation, .navigationtier3, .navigationtier4 {
+	background: rgba(255,255,255,0.03);
+	border-radius: 10px;
+	margin: 2px 4px;
+	padding: 3px 4px !important;
+}
+.tabtier2, .tabtier3, .tabtier4 {
+	height: 32px !important;
+	border-radius: 9px !important;
+	border: 1px solid rgba(150,120,255,0.2) !important;
+	background: rgba(50,30,100,0.35) !important;
+	color: #cfc0ff !important;
+	font-weight: 500;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* ---------- 轴按钮：精致卡片 ---------- */
+#div_normalAxisContainer,
+#div_darkAxisContainer,
+#div_antiAxisContainer {
+	padding: 4px 6px;
+}
+.axisbutton, .axisbutton.empowered, .axisbutton.stardustupgrade, .axisbutton.anti, .axisbutton.dark {
+	border-radius: 14px !important;
+	border: 1px solid rgba(150,120,255,0.2) !important;
+	background: linear-gradient(180deg, rgba(60,38,120,0.5), rgba(30,18,70,0.5)) !important;
+	color: #e8e0ff !important;
+	box-shadow: 0 3px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.07);
+	font-size: 12px;
+	line-height: 1.35;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+	transition: transform 0.08s ease;
+}
+.axisbutton:active { transform: scale(0.97); }
+.axisbutton.available {
+	background: linear-gradient(180deg, rgba(40,140,80,0.55), rgba(20,90,55,0.5)) !important;
+	border-color: rgba(90,220,140,0.45) !important;
+	box-shadow: 0 3px 14px rgba(40,180,100,0.25), inset 0 1px 0 rgba(255,255,255,0.12);
+}
+.axisbutton.locked {
+	background: linear-gradient(180deg, rgba(60,60,80,0.4), rgba(35,35,50,0.4)) !important;
+	border-color: rgba(140,140,170,0.25) !important;
+	color: #9a94b0 !important;
+	opacity: 0.75;
+}
+.axisbutton.empowered {
+	background: linear-gradient(180deg, rgba(140,70,220,0.5), rgba(80,40,150,0.5)) !important;
+	border-color: rgba(190,140,255,0.5) !important;
+}
+.axisbutton.corrupted {
+	background: linear-gradient(180deg, rgba(140,50,120,0.5), rgba(80,30,70,0.5)) !important;
+	border-color: rgba(220,100,180,0.4) !important;
+}
+
+/* 最大购买轴 */
+#button_maxAxis, .maxaxisbutton {
+	border-radius: 12px !important;
+	background: linear-gradient(90deg, rgba(50,160,90,0.55), rgba(30,110,65,0.55)) !important;
+	border-color: rgba(90,220,140,0.4) !important;
+	color: #eafff0 !important;
+	font-weight: 600;
+	box-shadow: 0 2px 10px rgba(30,150,80,0.25);
+}
+
+/* ---------- 统计卡片 ---------- */
+.mainStat {
+	border-radius: 16px !important;
+	background: linear-gradient(180deg, rgba(60,38,120,0.35), rgba(30,18,70,0.35)) !important;
+	border: 1px solid rgba(150,120,255,0.18) !important;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+/* ---------- 进度条 / 状态栏 ---------- */
+.progress {
+	border-radius: 10px !important;
+	background: rgba(255,255,255,0.06) !important;
+}
+#footer {
+	background: linear-gradient(180deg, rgba(20,10,40,0.9), rgba(12,6,26,0.95)) !important;
+	border-top: 1px solid rgba(150,120,255,0.15) !important;
+	border-radius: 14px 14px 0 0 !important;
+	padding: 6px 8px !important;
+	color: #cfc0ff !important;
+	font-size: 12px !important;
+}
+#footer a, #footer button {
+	color: #b9a8ff !important;
+}
+
+/* ---------- 跑马灯 ---------- */
+#newsticker {
+	background: rgba(255,255,255,0.04) !important;
+	border-bottom: 1px solid rgba(150,120,255,0.1) !important;
+}
+#newsline {
+	color: rgba(220,210,255,0.85) !important;
+}
+
+/* ---------- 选项按钮：融入紫色主题 + 自适应 ---------- */
+.optionsbutton {
+	width: calc(50% - 12px) !important;
+	max-width: calc(50% - 12px);
+	height: auto !important;
+	min-height: 90px;
+	margin: 6px !important;
+	border-radius: 14px !important;
+	background: linear-gradient(180deg, rgba(70,45,140,0.5), rgba(40,25,85,0.5)) !important;
+	border: 1px solid rgba(160,130,255,0.3) !important;
+	color: #e6dcff !important;
+	font-size: 15px !important;
+	font-weight: 600;
+	box-shadow: 0 3px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08);
+	padding: 10px 8px;
+	text-align: center;
+}
+.optionsbutton:active { transform: scale(0.97); }
+/* 清除存档等危险按钮：红色警示但不突兀 */
+.optionsbutton[style*="red"], .optionsbutton[style*="ff0000"], .optionsbutton[style*="red"] {
+	background: linear-gradient(180deg, rgba(180,50,60,0.55), rgba(110,30,45,0.55)) !important;
+	border-color: rgba(255,120,120,0.5) !important;
+	color: #ffe8e8 !important;
+}
+
+/* ---------- 通用按钮圆角软化 ---------- */
+button {
+	border-radius: 10px;
+}
+
+/* ---------- 信息/提示面板 ---------- */
+.tooltip, #masteryInfo, #starInfo, #researchInfo, #achievementInfo {
+	border-radius: 14px !important;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+	backdrop-filter: blur(4px);
+}
+
+/* ---------- 倍速控制条：风格统一 ---------- */
+#emd_speedbar {
+	background: linear-gradient(180deg, rgba(40,22,85,0.95), rgba(22,12,48,0.97)) !important;
+	border: 1px solid rgba(150,120,255,0.3) !important;
+	border-radius: 16px !important;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.5) !important;
+	backdrop-filter: blur(6px);
+}
+#emd_speed_label {
+	color: #cfc0ff !important;
+	font-size: 12px;
+	font-weight: 600;
+}
+#emd_speed_val {
+	color: #fff !important;
+}
+#emd_speed_slider {
+	height: 20px;
+	border-radius: 3px;
+}
+#emd_speed_slider::-webkit-slider-thumb {
+	background: linear-gradient(180deg, #a98cff, #7a5cff) !important;
+	border: 2px solid #fff !important;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.45) !important;
+}
+#emd_speed_reset {
+	background: linear-gradient(180deg, #8a6cff, #6a4ce8) !important;
+	color: #fff !important;
+	border-radius: 8px !important;
+	font-weight: 600;
+	box-shadow: 0 2px 6px rgba(100,70,230,0.4) !important;
+}
+
+/* ---------- 精通页美化 ---------- */
+#subtab_main_masteries > p {
+	margin: 4px 4px !important;
+	font-size: 12px !important;
+	line-height: 1.4;
+	background: rgba(255,255,255,0.03);
+	border-radius: 10px;
+	padding: 6px 8px;
+}
+.masteryButtonLegacy {
+	background: linear-gradient(180deg, rgba(120,45,110,0.45), rgba(70,25,60,0.45)) !important;
+	border: 1px solid rgba(255,120,200,0.25) !important;
+	color: #ffdcf0 !important;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 2px 8px rgba(0,0,0,0.25);
+}
+.masteryButtonLegacy.active {
+	background: linear-gradient(180deg, rgba(255,60,170,0.5), rgba(190,30,130,0.5)) !important;
+	border-color: rgba(255,150,220,0.5) !important;
+	color: #fff !important;
+	box-shadow: 0 0 12px rgba(255,100,200,0.35);
+}
+.masteryButtonModern {
+	background: linear-gradient(180deg, rgba(120,45,110,0.45), rgba(70,25,60,0.45)) !important;
+	border: 1px solid rgba(255,120,200,0.25) !important;
+	color: #ffdcf0 !important;
+	border-radius: 8px !important;
+}
+#subtab_main_masteries .genericbutton {
+	background: linear-gradient(180deg, rgba(80,50,150,0.4), rgba(45,25,90,0.4)) !important;
+	border: 1px solid rgba(160,130,255,0.3) !important;
+	color: #e6dcff !important;
+}

@@ -1,0 +1,426 @@
+/* ============================================================
+   Exotic Matter Dimensions — 手机版排版适配
+   高优先级移动端覆盖，加载在 globalstyle/interface 之后
+   ============================================================ */
+
+/* 全局触控：禁止双击放大（mechanics）+ 避免蓝框 */
+html, body {
+	overscroll-behavior:none;
+	-webkit-tap-highlight-color:transparent;
+	overflow-x:hidden;
+}
+#game.topleveldiv {
+	overflow-x:hidden;
+}
+/* 顶部跑马灯：限制在视口内，避免横向撑开，但保留滚动动画 */
+#newsticker {
+	width:100vw;
+	overflow:hidden;
+}
+* { -webkit-touch-callout:none; }
+button, input, select, label, a {
+	touch-action:manipulation;
+}
+input[type="range"] {
+	-webkit-appearance:none;
+	appearance:none;
+	width:100% !important;
+	max-width:100%;
+	height:20px;
+	min-height:20px;
+	background:rgba(51,153,255,0.25);
+	border-radius:3px;
+}
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance:none;
+	appearance:none;
+	width:22px;
+	height:22px;
+	border-radius:50%;
+	background:#39f;
+	border:2px solid #fff;
+	touch-action:none;
+	cursor:pointer;
+}
+input[type="range"]::-moz-range-thumb {
+	width:22px;
+	height:22px;
+	border-radius:50%;
+	background:#39f;
+	border:2px solid #fff;
+}
+
+/* ---------------- 顶部资源栏 ---------------- */
+table { width:100%; }
+#game table:first-of-type { width:100%; }
+#game > table:first-of-type {
+	display:block;
+	width:100% !important;
+}
+#game > table:first-of-type > tbody,
+#game > table:first-of-type > tbody > tr {
+	display:block;
+	width:100%;
+}
+#game table:first-of-type > tbody > tr > td,
+#game table:first-of-type > tr > td {
+	display:block;
+	width:100% !important;
+}
+/* 顶部资源栏单元格（resourceModal + 右侧重置按钮）竖向堆叠 */
+#game table:first-of-type td.toptable {
+	display:flex;
+	flex-wrap:wrap;
+	width:100% !important;
+	padding:4px;
+	box-sizing:border-box;
+}
+#game table:first-of-type td:not(.toptable) {
+	display:block;
+	width:100% !important;
+	padding:4px;
+	box-sizing:border-box;
+}
+#game table:first-of-type td:not(.toptable) > table {
+	display:block;
+	width:100%;
+}
+#game table:first-of-type td:not(.toptable) > table > tbody,
+#game table:first-of-type td:not(.toptable) > table > tr {
+	display:block;
+	width:100%;
+}
+#game table:first-of-type td:not(.toptable) > table > tbody > tr > td,
+#game table:first-of-type td:not(.toptable) > table > tr > td {
+	display:block;
+	width:100% !important;
+	box-sizing:border-box;
+}
+#game table:first-of-type td:not(.toptable) button {
+	width:100% !important;
+	box-sizing:border-box;
+}
+
+/* 单个资源框 */
+.resource {
+	width:48% !important;
+	height:auto !important;
+	min-height:20px;
+	font-size:11px;
+	margin:2px 1% !important;
+	box-sizing:border-box;
+	white-space:nowrap;
+}
+
+/* ---------------- 一级导航 ---------------- */
+.navigation, .globalnavigation {
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:2px;
+	box-sizing:border-box;
+}
+.bigtab,
+.navigation .bigtab,
+.globalnavigation .bigtab {
+	width:auto !important;
+	flex:1 1 30%;
+	min-width:30%;
+	max-width:48%;
+	font-size:13px !important;
+	margin:1px;
+	padding:6px 4px;
+	box-sizing:border-box;
+	white-space:nowrap;
+}
+/* 二级导航 - 每个 tab 页内的子导航 */
+.mainNavigation, .subnavigation {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:2px;
+	box-sizing:border-box;
+}
+.tabtier2, .tabtier3, .tabtier4 {
+	flex:1 1 45%;
+	min-width:45%;
+	width:auto;
+	font-size:12px !important;
+	margin:1px;
+	padding:6px 2px;
+	box-sizing:border-box;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.tab {
+	width:100% !important;
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+}
+/* 紧凑化：去掉导航间分隔线的默认空隙 */
+hr {
+	margin:0 !important;
+	border:none !important;
+	height:0 !important;
+}
+#game .tab > .mainNavigation,
+#game .tab > .subnavigation,
+#game .tab > div:first-child {
+	margin-top:2px !important;
+}
+#game p {
+	margin:2px 0 !important;
+}
+
+/* ---------------- 轴按钮网格 ---------------- */
+#div_normalAxisContainer,
+#div_darkAxisContainer,
+#div_antiAxisContainer {
+	width:100% !important;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:2px;
+	box-sizing:border-box;
+}
+.axisbutton {
+	width:calc(50% - 6px) !important;
+	min-width:0;
+	height:auto !important;
+	min-height:84px;
+	flex:0 0 calc(50% - 6px);
+	box-sizing:border-box;
+	font-size:11px;
+	padding:6px;
+	margin:2px;
+	position:relative;
+	overflow:hidden;
+	white-space:normal;
+}
+.axisbutton.empowered,
+.axisbutton.stardustupgrade,
+.axisbutton.anti,
+.axisbutton.dark {
+	width:calc(50% - 6px) !important;
+	min-width:0;
+	height:auto !important;
+	min-height:84px;
+	flex:0 0 calc(50% - 6px);
+	box-sizing:border-box;
+	font-size:11px;
+	padding:6px;
+	margin:2px;
+}
+/* 星尘升级按钮 - 用大块可点 */
+.axisbutton.stardustupgrade {
+	min-height:70px;
+}
+
+/* 最大购买轴按钮 */
+#button_maxAxis {
+	width:100% !important;
+	max-width:100%;
+	height:auto !important;
+	padding:8px;
+	box-sizing:border-box;
+}
+
+/* ---------------- 星尘/暗物质页面表格 ---------------- */
+#game div[style*="width:420px"],
+#game div[style*="width:900px"],
+#game div[style*="width:450px"] {
+	width:100% !important;
+	max-width:100%;
+	box-sizing:border-box;
+}
+/* 暗物质页两组竖排 */
+#game table[style*="width:900px"],
+#game table[style*="width:450px"],
+#game td[style*="width:900px"],
+#game td[style*="width:450px"] {
+	display:block;
+	width:100% !important;
+	max-width:100% !important;
+	box-sizing:border-box;
+}
+#game td[style*="width:900px"]>table,
+#game td[style*="width:450px"]>table {
+	width:100% !important;
+}
+
+/* ---------------- 星系/研究信息框 ---------------- */
+#div_galaxyEffects {
+	width:calc(100% - 20px) !important;
+	max-width:calc(100% - 20px);
+	box-sizing:border-box;
+	margin:10px auto;
+}
+.galaxyButton {
+	max-width:100% !important;
+}
+/* 研究/光/研究树 按钮网格 */
+.starbutton,
+.wormholebutton {
+	width:calc(50% - 8px) !important;
+	flex:1 1 calc(50% - 8px);
+	box-sizing:border-box;
+}
+.mainStat {
+	width:calc(50% - 10px) !important;
+	height:auto !important;
+	min-height:90px;
+	box-sizing:border-box;
+	margin:5px 1% !important;
+	font-size:12px;
+}
+
+/* ---------------- 能量/反物质等分区 ---------------- */
+.energydivision {
+	width:calc(100% - 20px) !important;
+	max-width:calc(100% - 20px);
+	box-sizing:border-box;
+	margin:10px auto;
+}
+.lightdiv {
+	width:calc(50% - 12px) !important;
+	max-width:calc(50% - 12px);
+	box-sizing:border-box;
+	margin:6px !important;
+}
+.dilationUpgrade {
+	width:calc(50% - 8px) !important;
+	box-sizing:border-box;
+	margin:4px;
+}
+.dilationUpgrade { height:auto !important; min-height:100px; }
+
+/* ---------------- 选项/滑块/输入 ---------------- */
+.optionsBox,
+#game input,
+#game select,
+#game textarea {
+	max-width:100% !important;
+	box-sizing:border-box;
+}
+#game input[type="range"] { width:100% !important; }
+
+/* ---------------- 通知/工具提示 位置 ---------------- */
+#notifyDiv {
+	max-width:calc(100% - 20px) !important;
+}
+.notification {
+	max-width:calc(100% - 20px) !important;
+	font-size:13px !important;
+}
+.tooltip {
+	max-width:calc(100% - 20px) !important;
+}
+#masteryInfo, #starInfo, #researchInfo, #achievementInfo, #secretAchievementInfo {
+	max-width:calc(100% - 20px) !important;
+}
+
+/* ---------------- 页脚 ---------------- */
+#footer {
+	width:calc(100% - 20px) !important;
+	left:10px;
+	box-sizing:border-box;
+}
+
+/* ---------------- 故事标题 & 大尺寸不适配 ---------------- */
+#storyTitle { font-size:32px !important; word-break:break-all; }
+.tab { max-width:100%; }
+
+/* ---------------- 长宽比方块缩放 ---------------- */
+/* 大故事/星系图等固定 px 方块，缩放到屏幕内 */
+img {
+	max-width:100%;
+	height:auto;
+}
+
+/* ---------------- 配置悬浮按钮(featureConfig)防重叠 ---------------- */
+/* 原为 absolute 右上角悬浮，手机端改为内容流内排列，避免盖住导航按钮 */
+.featureConfig {
+	position:static !important;
+	display:inline-block;
+	margin:4px auto;
+	width:auto;
+	min-width:100px;
+	text-align:center;
+	box-sizing:border-box;
+}
+
+/* ---------------- 精通页紧凑布局 ---------------- */
+/* 精通表：强制铺满整行宽度 */
+#masteryContainerLegacy,
+#masteryContainerLegacy > table,
+#masteryContainerLegacy table {
+	width:100% !important;
+	max-width:100% !important;
+	display:block !important;
+	table-layout:auto !important;
+	border-collapse:collapse !important;
+	box-sizing:border-box;
+}
+/* 行：整行压紧 */
+#masteryContainerLegacy tr,
+#masteryContainerLegacy > table > tbody > tr {
+	display:block !important;
+	width:100% !important;
+	margin:4px 0 !important;
+	padding:4px 2px !important;
+	background:rgba(255,255,255,0.02);
+	border-radius:8px;
+	box-sizing:border-box;
+}
+/* 所有 td 铺满、竖排 */
+#masteryContainerLegacy td {
+	display:block !important;
+	width:100% !important;
+	max-width:100% !important;
+	box-sizing:border-box;
+	padding:2px 2px !important;
+}
+/* 行标题 + 取消按钮：紧凑并排一行 */
+#masteryContainerLegacy td h3 {
+	display:inline-block !important;
+	font-size:14px !important;
+	margin:2px 6px 2px 2px !important;
+	vertical-align:middle;
+}
+#masteryContainerLegacy td .genericbutton,
+#subtab_main_masteries .genericbutton {
+	display:inline-block !important;
+	width:auto !important;
+	max-width:100% !important;
+	margin:2px !important;
+	padding:5px 10px !important;
+	font-size:12px !important;
+	border-radius:8px !important;
+	vertical-align:middle;
+}
+/* 精通按钮：Grid 三列紧凑网格（铺满整行） */
+.masteryButtonLegacy {
+	width:auto !important;
+	height:auto !important;
+	min-height:68px;
+	margin:2px !important;
+	padding:6px 4px !important;
+	font-size:11px !important;
+	border-radius:10px !important;
+	box-sizing:border-box;
+	position:relative;
+	overflow:hidden;
+	vertical-align:top;
+	display:inline-block !important;
+}
+/* 最后一个 td（精通按钮区）：Grid 多列铺满 */
+#masteryContainerLegacy tr td:last-child {
+	display:grid !important;
+	grid-template-columns:repeat(auto-fill, minmax(100px, 1fr)) !important;
+	gap:2px !important;
+	width:100% !important;
+}
