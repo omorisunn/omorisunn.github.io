@@ -1,0 +1,155 @@
+/* ============================================================
+   Prestige Tree — 手机端上下分屏布局 + 适配
+   仅在竖屏小屏 (max-width:768px and portrait) 生效
+   方案：树/canvas/overlay 保持全屏背景，层详情面板固定在下半屏弹出
+   ============================================================ */
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+
+	body {
+		overflow: hidden !important;
+		position: fixed;
+		width: 100%;
+	}
+	/* canvas 裁剪到上半屏，避免连线画到下半屏 */
+	#treeCanvas.canvas {
+		clip-path: inset(0 0 54vh 0) !important;
+	}
+	/* 树分隔竖线：手机上下分屏后无意义，直接隐藏 */
+	.vl {
+		display: none !important;
+	}
+
+	/* ---------- 禁用双击缩放 ---------- */
+	* {
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	/* ---------- 树节点：稍微缩小，避免过大占屏 ---------- */
+	.treeNode {
+		width: 78px !important;
+		height: 78px !important;
+		font-size: 30px !important;
+	}
+
+	/* ---------- 上下分屏：树在上，详情在下 ---------- */
+	/* 树相关（overlay + treeTab 即 .col.left）固定在上半屏 */
+	#treeOverlay.col.left,
+	#treeTab.col.left,
+	.col.left {
+		position: fixed !important;
+		top: 0 !important;
+		right: 0 !important;
+		left: 0 !important;
+		bottom: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		height: 46vh !important;
+		min-height: 0 !important;
+		overflow: hidden !important;
+		z-index: 1000 !important;
+	}
+	/* 层详情（.col.right）固定在下半屏 */
+	.col.right,
+	.col.right.fast,
+	.col.right.tab,
+	#treeTab.right {
+		position: fixed !important;
+		top: 46vh !important;
+		right: 0 !important;
+		left: 0 !important;
+		bottom: 0 !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		height: 54vh !important;
+		min-height: 0 !important;
+		overflow-y: auto !important;
+		overflow-x: hidden !important;
+		z-index: 20000 !important;
+		background: var(--background) !important;
+		border-top: 2px solid rgba(255,255,255,0.15);
+		box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+	}
+	/* 树节点在上半屏正常排布 */
+	#treeTab.col.left .treeNode {
+		pointer-events: auto;
+	}
+	/* 详情面板的内容全部单列 */
+	.col.right * {
+		max-width: 100% !important;
+		box-sizing: border-box;
+	}
+	.col.right .upgTable {
+		width: 100% !important;
+	}
+	.col.right .upgRow {
+		flex-flow: initial !important;
+	}
+	.col.right .layer-tab-content {
+		width: 100% !important;
+	}
+	/* 详情容器里的返回按钮 */
+	.col.right .back, .treeTab .back {
+		margin: 2px !important;
+	}
+
+	/* ---------- 倍速控制条：右下角悬浮 ---------- */
+	#pt_speedbar {
+		position: fixed !important;
+		bottom: 8px !important;
+		right: 8px !important;
+		z-index: 999999 !important;
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		background: rgba(20,20,20,0.92);
+		border: 1px solid rgba(255,255,255,0.25);
+		border-radius: 12px;
+		padding: 6px 8px;
+		font-family: Inconsolata, monospace;
+		font-size: 13px;
+		color: #fff;
+		box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+	}
+	#pt_speedbar label {
+		font-size: 12px;
+		opacity: 0.85;
+		white-space: nowrap;
+	}
+	#pt_speedbar input[type="range"] {
+		width: 110px;
+		height: 20px;
+		-webkit-appearance: none;
+		appearance: none;
+		background: linear-gradient(#fff,#fff) no-repeat center;
+		background-size: 100% 4px;
+		border-radius: 2px;
+		touch-action: none;
+	}
+	#pt_speedbar input[type="range"]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		background: #fff;
+		border: 2px solid #333;
+		touch-action: none;
+		cursor: pointer;
+	}
+	#pt_speed_reset {
+		background: #fff;
+		color: #111;
+		border: none;
+		border-radius: 7px;
+		padding: 4px 8px;
+		font-size: 12px;
+		font-family: Inconsolata, monospace;
+		cursor: pointer;
+	}
+	#pt_speed_val {
+		font-weight: 700;
+	}
+}
