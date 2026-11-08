@@ -1519,7 +1519,7 @@ a {
   z-index: -1;
   max-width: calc(100% - var(--space-4));
   overflow: hidden;
-  color: color-mix(in srgb, var(--code-text) 18%, transparent);
+  color: color-mix(in srgb, var(--code-text) 12%, transparent);
   font-family: var(--font-sans);
   font-size: clamp(var(--text-5xl), 6vw, var(--text-6xl));
   font-weight: 800;
