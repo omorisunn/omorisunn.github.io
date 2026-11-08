@@ -1514,10 +1514,10 @@ a {
 
 .code-language {
   position: absolute;
-  right: 0;
+  right: var(--space-4);
   bottom: 0;
   z-index: -1;
-  max-width: 100%;
+  max-width: calc(100% - var(--space-4));
   overflow: hidden;
   color: color-mix(in srgb, var(--code-text) 18%, transparent);
   font-family: var(--font-sans);
