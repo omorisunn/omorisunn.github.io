@@ -73,6 +73,7 @@ export default function AsciiField() {
           let reduced = false;
           let isMobile = false;
           let pointer: { x: number; y: number; time: number } | null = null;
+          let activeTouchId: number | null = null;
           const vortices: Vortex[] = [];
           let columns = 0;
           let rows = 0;
@@ -83,6 +84,8 @@ export default function AsciiField() {
           let slowFrames = 0;
 
           const resize = () => {
+            const previousWidth = width;
+            const previousSpacing = spacing;
             width = window.innerWidth;
             height = window.innerHeight;
             isMobile = width <= 760;
@@ -90,12 +93,23 @@ export default function AsciiField() {
             fontSize = isMobile ? 10 : 11;
             columns = Math.ceil(width / spacing) + 2;
             rows = Math.ceil(height / spacing) + 2;
-            offsetsX = new Float32Array(columns * rows);
-            offsetsY = new Float32Array(columns * rows);
-            velocitiesX = new Float32Array(columns * rows);
-            velocitiesY = new Float32Array(columns * rows);
-            pointer = null;
-            vortices.length = 0;
+            const reset = reduced || width !== previousWidth || spacing !== previousSpacing;
+            const fit = (values: Float32Array) => {
+              const next = new Float32Array(columns * rows);
+              if (!reset) next.set(values.subarray(0, next.length));
+              return next;
+            };
+            offsetsX = fit(offsetsX);
+            offsetsY = fit(offsetsY);
+            velocitiesX = fit(velocitiesX);
+            velocitiesY = fit(velocitiesY);
+            // Mobile browser bars resize the viewport while scrolling. Keep
+            // the active gesture and wake through height-only changes.
+            if (reset) {
+              pointer = null;
+              activeTouchId = null;
+              vortices.length = 0;
+            }
             p.resizeCanvas(width, height);
             p.pixelDensity(Math.min(2, window.devicePixelRatio || 1));
             p.textSize(fontSize);
@@ -104,11 +118,9 @@ export default function AsciiField() {
             p.noStroke();
           };
 
-          const onPointerMove = (event: PointerEvent) => {
-            if (event.pointerType !== "mouse" || reduced || isMobile) {
-              return;
-            }
-            const current = { x: event.clientX, y: event.clientY, time: event.timeStamp };
+          const disturb = (x: number, y: number, time: number) => {
+            if (reduced) return;
+            const current = { x, y, time };
             if (pointer) {
               const dx = current.x - pointer.x;
               const dy = current.y - pointer.y;
@@ -142,8 +154,39 @@ export default function AsciiField() {
             pointer = current;
           };
 
+          const onPointerMove = (event: PointerEvent) => {
+            // Touch Events keep arriving during native scrolling, whereas
+            // touch Pointer Events are cancelled once the browser pans.
+            if (event.pointerType === "touch" || activeTouchId !== null) return;
+            disturb(event.clientX, event.clientY, event.timeStamp);
+          };
+
+          const onTouchStart = (event: TouchEvent) => {
+            pointer = null;
+            activeTouchId = null;
+            if (reduced || event.touches.length !== 1) return;
+            const touch = event.touches[0];
+            activeTouchId = touch.identifier;
+            pointer = { x: touch.clientX, y: touch.clientY, time: event.timeStamp };
+          };
+
+          const onTouchMove = (event: TouchEvent) => {
+            if (event.touches.length !== 1) return;
+            const touch = event.touches[0];
+            if (touch.identifier === activeTouchId) {
+              disturb(touch.clientX, touch.clientY, event.timeStamp);
+            }
+          };
+
+          const onTouchEnd = (event: TouchEvent) => {
+            if (Array.from(event.touches).some((touch) => touch.identifier === activeTouchId)) return;
+            activeTouchId = null;
+            pointer = null;
+          };
+
           const onPointerLeave = () => {
             pointer = null;
+            activeTouchId = null;
           };
 
           p.setup = () => {
@@ -154,10 +197,14 @@ export default function AsciiField() {
             resize();
             p.frameRate(60);
             window.addEventListener("pointermove", onPointerMove, { passive: true, signal: listeners.signal });
+            window.addEventListener("touchstart", onTouchStart, { passive: true, signal: listeners.signal });
+            window.addEventListener("touchmove", onTouchMove, { passive: true, signal: listeners.signal });
+            window.addEventListener("touchend", onTouchEnd, { passive: true, signal: listeners.signal });
+            window.addEventListener("touchcancel", onTouchEnd, { passive: true, signal: listeners.signal });
             // Ignore transitions between page elements; only an actual window
             // exit ends a stroke. Existing eddies dissipate naturally.
             window.addEventListener("pointerout", (event) => {
-              if (!event.relatedTarget) onPointerLeave();
+              if (event.pointerType !== "touch" && !event.relatedTarget) onPointerLeave();
             }, { passive: true, signal: listeners.signal });
             window.addEventListener("blur", onPointerLeave, { signal: listeners.signal });
             motionPreference.addEventListener("change", (event) => {
