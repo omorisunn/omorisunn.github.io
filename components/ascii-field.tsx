@@ -5,8 +5,19 @@ import { useEffect, useRef } from "react";
 
 import { useResolvedTheme } from "@/lib/theme";
 
-const GLYPHS = ".:-=+*";
+const GLYPHS = "omrisunyOMRISUNY_.=+*^’!,:-/";
 const POINTER_RADIUS = 150;
+const MAX_VORTICES = 40;
+
+type Vortex = {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  spin: number;
+  strength: number;
+  age: number;
+};
 
 type ScrollState = {
   energy: number;
@@ -26,6 +37,7 @@ export default function AsciiField() {
     let disposed = false;
     let instance: p5 | null = null;
     let stopScroll: (() => void) | null = null;
+    const listeners = new AbortController();
     const scroll: ScrollState = { energy: 0, velocity: 0 };
 
     Promise.all([import("p5"), import("gsap"), import("gsap/ScrollTrigger")])
@@ -60,9 +72,14 @@ export default function AsciiField() {
           let density = 1;
           let reduced = false;
           let isMobile = false;
-          let pointerActive = false;
-          let pointerX = -9999;
-          let pointerY = -9999;
+          let pointer: { x: number; y: number; time: number } | null = null;
+          const vortices: Vortex[] = [];
+          let columns = 0;
+          let rows = 0;
+          let offsetsX = new Float32Array(0);
+          let offsetsY = new Float32Array(0);
+          let velocitiesX = new Float32Array(0);
+          let velocitiesY = new Float32Array(0);
           let slowFrames = 0;
 
           const resize = () => {
@@ -71,6 +88,14 @@ export default function AsciiField() {
             isMobile = width <= 760;
             spacing = (isMobile ? 22 : 20) * density;
             fontSize = isMobile ? 10 : 11;
+            columns = Math.ceil(width / spacing) + 2;
+            rows = Math.ceil(height / spacing) + 2;
+            offsetsX = new Float32Array(columns * rows);
+            offsetsY = new Float32Array(columns * rows);
+            velocitiesX = new Float32Array(columns * rows);
+            velocitiesY = new Float32Array(columns * rows);
+            pointer = null;
+            vortices.length = 0;
             p.resizeCanvas(width, height);
             p.pixelDensity(Math.min(2, window.devicePixelRatio || 1));
             p.textSize(fontSize);
@@ -80,26 +105,71 @@ export default function AsciiField() {
           };
 
           const onPointerMove = (event: PointerEvent) => {
-            if (event.pointerType !== "mouse") {
+            if (event.pointerType !== "mouse" || reduced || isMobile) {
               return;
             }
-            pointerX = event.clientX;
-            pointerY = event.clientY;
-            pointerActive = true;
+            const current = { x: event.clientX, y: event.clientY, time: event.timeStamp };
+            if (pointer) {
+              const dx = current.x - pointer.x;
+              const dy = current.y - pointer.y;
+              const distance = Math.hypot(dx, dy);
+              const elapsed = current.time - pointer.time;
+              if (distance < 3) return;
+
+              // Sample the whole stroke, including quick swipes; a stationary
+              // cursor contributes no energy. Paired vortices curl its wake.
+              if (elapsed < 120) {
+                const speed = Math.min(1, distance / Math.max(8, elapsed) / 1.4);
+                const steps = Math.min(8, Math.ceil(distance / 20));
+                const ux = dx / distance;
+                const uy = dy / distance;
+                for (let step = 1; step <= steps; step += 1) {
+                  for (const side of [-1, 1]) {
+                    vortices.push({
+                      x: pointer.x + dx * (step / steps) - uy * 26 * side,
+                      y: pointer.y + dy * (step / steps) + ux * 26 * side,
+                      vx: ux * (12 + speed * 24),
+                      vy: uy * (12 + speed * 24),
+                      spin: side,
+                      strength: 0.35 + speed * 0.65,
+                      age: 0,
+                    });
+                  }
+                }
+                vortices.splice(0, Math.max(0, vortices.length - MAX_VORTICES));
+              }
+            }
+            pointer = current;
           };
 
           const onPointerLeave = () => {
-            pointerActive = false;
+            pointer = null;
           };
 
           p.setup = () => {
-            reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+            reduced = motionPreference.matches;
             const canvas = p.createCanvas(window.innerWidth, window.innerHeight);
             canvas.parent(host);
             resize();
             p.frameRate(60);
-            window.addEventListener("pointermove", onPointerMove, { passive: true });
-            window.addEventListener("pointerout", onPointerLeave, { passive: true });
+            window.addEventListener("pointermove", onPointerMove, { passive: true, signal: listeners.signal });
+            // Ignore transitions between page elements; only an actual window
+            // exit ends a stroke. Existing eddies dissipate naturally.
+            window.addEventListener("pointerout", (event) => {
+              if (!event.relatedTarget) onPointerLeave();
+            }, { passive: true, signal: listeners.signal });
+            window.addEventListener("blur", onPointerLeave, { signal: listeners.signal });
+            motionPreference.addEventListener("change", (event) => {
+              reduced = event.matches;
+              resize();
+              if (reduced) {
+                p.noLoop();
+                p.redraw();
+              } else {
+                p.loop();
+              }
+            }, { signal: listeners.signal });
             if (reduced) {
               p.noLoop();
             }
@@ -141,8 +211,15 @@ export default function AsciiField() {
             const phase = p.millis() * 0.00018;
             const waveTime = p.millis() * 0.0007;
             const threshold = (isMobile ? 0.43 : 0.45) - scroll.energy * 0.035;
-            const columns = Math.ceil(width / spacing) + 2;
-            const rows = Math.ceil(height / spacing) + 2;
+            const dt = Math.min(p.deltaTime / 1000, 1 / 30);
+            const damping = Math.exp(-8 * dt);
+            for (let i = vortices.length - 1; i >= 0; i -= 1) {
+              const vortex = vortices[i];
+              vortex.age += dt;
+              vortex.x += vortex.vx * dt;
+              vortex.y += vortex.vy * dt;
+              if (vortex.age > 1.6) vortices.splice(i, 1);
+            }
 
             for (let y = 0; y < rows; y += 1) {
               for (let x = 0; x < columns; x += 1) {
@@ -151,10 +228,6 @@ export default function AsciiField() {
                 const nx = x * 0.055 + Math.sin(y * 0.09 + phase) * 0.35;
                 const ny = y * 0.06 + Math.cos(x * 0.07 - phase) * 0.35;
                 const value = p.noise(nx, ny, time + scroll.energy * 0.35);
-
-                if (value < threshold) {
-                  continue;
-                }
 
                 const wave = Math.sin(px * 0.007 + py * 0.01 + waveTime);
                 const cross = Math.cos(px * 0.004 - py * 0.012 + waveTime * 0.65);
@@ -166,21 +239,43 @@ export default function AsciiField() {
                 let drawX = px + swayX;
                 let drawY = py + swayY;
                 let force = 0;
+                let flowX = 0;
+                let flowY = 0;
+                const index = y * columns + x;
 
-                if (pointerActive) {
-                  const dx = px - pointerX;
-                  const dy = py - pointerY;
-                  const distance = Math.hypot(dx, dy);
-                  if (distance < POINTER_RADIUS && distance > 0.01) {
-                    force = 1 - distance / POINTER_RADIUS;
-                    const push = force * force * 9;
-                    drawX += (dx / distance) * push;
-                    drawY += (dy / distance) * push;
+                for (const vortex of vortices) {
+                  const dx = drawX + offsetsX[index] - vortex.x;
+                  const dy = drawY + offsetsY[index] - vortex.y;
+                  const distanceSquared = dx * dx + dy * dy;
+                  if (distanceSquared < POINTER_RADIUS * POINTER_RADIUS) {
+                    const distance = Math.sqrt(distanceSquared);
+                    const envelope = (1 - distance / POINTER_RADIUS) ** 2;
+                    const influence = envelope * vortex.strength * Math.exp(-3 * vortex.age);
+                    const curl = influence * vortex.spin * 1100 / (distance + 24);
+                    flowX += -dy * curl + vortex.vx * influence * 5;
+                    flowY += dx * curl + vortex.vy * influence * 5;
+                    force += influence;
                   }
                 }
 
+                // A damped spring retains momentum, then returns each glyph
+                // to the background flow without snapping or leaving trails.
+                const flowScale = 1 / Math.max(1, force * 0.7);
+                velocitiesX[index] = (velocitiesX[index] +
+                  (flowX * flowScale - offsetsX[index] * 28) * dt) * damping;
+                velocitiesY[index] = (velocitiesY[index] +
+                  (flowY * flowScale - offsetsY[index] * 28) * dt) * damping;
+                offsetsX[index] += velocitiesX[index] * dt;
+                offsetsY[index] += velocitiesY[index] * dt;
+                drawX += offsetsX[index];
+                drawY += offsetsY[index];
+                force = Math.min(1, force);
+
+                if (value < threshold) continue;
+
                 const normalized = (value - threshold) / (1 - threshold);
-                const glyph = GLYPHS[Math.min(GLYPHS.length - 1, Math.floor(normalized * GLYPHS.length))];
+                const seed = Math.imul(x + 1, 374761393) ^ Math.imul(y + 1, 668265263);
+                const glyph = GLYPHS[((seed >>> 0) + Math.floor(normalized * GLYPHS.length)) % GLYPHS.length];
                 const tint = force > 0.25 && (x * 7 + y * 11) % 13 < 2;
 
                 if (tint) {
@@ -205,6 +300,7 @@ export default function AsciiField() {
 
     return () => {
       disposed = true;
+      listeners.abort();
       stopScroll?.();
       instance?.remove();
       host.replaceChildren();
