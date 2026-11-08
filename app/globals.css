@@ -1447,6 +1447,8 @@ a {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-1);
   color: var(--code-text);
+  font-size: var(--text-sm);
+  line-height: 1.75;
 }
 
 .code-glass-background {
@@ -1493,8 +1495,6 @@ a {
 
 .prose .code-block pre {
   margin: 0;
-  padding-top: var(--space-7);
-  padding-bottom: var(--space-10);
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -1514,16 +1514,17 @@ a {
 
 .code-language {
   position: absolute;
-  right: var(--space-5);
-  bottom: var(--space-3);
-  max-width: calc(100% - var(--space-7));
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  max-width: 100%;
   overflow: hidden;
   color: color-mix(in srgb, var(--code-text) 18%, transparent);
   font-family: var(--font-sans);
   font-size: clamp(var(--text-5xl), 6vw, var(--text-6xl));
   font-weight: 800;
   letter-spacing: -0.05em;
-  line-height: 1;
+  line-height: 0.8;
   text-overflow: ellipsis;
   white-space: nowrap;
   pointer-events: none;
@@ -2249,7 +2250,6 @@ a {
   }
 
   .code-language {
-    right: var(--space-4);
     font-size: var(--text-5xl);
   }
 
