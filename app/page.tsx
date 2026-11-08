@@ -3,6 +3,7 @@ import Link from "next/link";
 import FeaturedPost from "@/components/featured-post";
 import Hero from "@/components/hero";
 import PostRow from "@/components/post-row";
+import Works from "@/components/works";
 import { getAllPosts } from "@/lib/posts";
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
   return (
     <>
       <Hero />
+
+      <Works />
 
       <section className="home-latest" aria-labelledby="latest-title">
         <div className="section-head">
