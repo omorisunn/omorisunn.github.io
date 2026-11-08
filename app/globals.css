@@ -39,6 +39,13 @@
   --code-bg: #1d1d1f;
   --code-text: #f5f5f7;
   --code-border: rgba(255, 255, 255, 0.12);
+  --code-keyword: #ff7b72;
+  --code-string: #a5d6ff;
+  --code-number: #79c0ff;
+  --code-title: #d2a8ff;
+  --code-variable: #ffa657;
+  --code-attribute: #7ee787;
+  --code-comment: #a1a1a6;
 
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
     "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -1458,6 +1465,62 @@ a {
   color: inherit;
   font-size: inherit;
   white-space: pre;
+}
+
+.prose pre .hljs-keyword,
+.prose pre .hljs-selector-tag,
+.prose pre .hljs-deletion {
+  color: var(--code-keyword);
+}
+
+.prose pre .hljs-string,
+.prose pre .hljs-regexp,
+.prose pre .hljs-meta .hljs-string {
+  color: var(--code-string);
+}
+
+.prose pre .hljs-number,
+.prose pre .hljs-literal,
+.prose pre .hljs-symbol,
+.prose pre .hljs-bullet,
+.prose pre .hljs-meta {
+  color: var(--code-number);
+}
+
+.prose pre .hljs-title,
+.prose pre .hljs-section,
+.prose pre .hljs-selector-class,
+.prose pre .hljs-selector-id {
+  color: var(--code-title);
+}
+
+.prose pre .hljs-built_in,
+.prose pre .hljs-type,
+.prose pre .hljs-variable,
+.prose pre .hljs-template-variable {
+  color: var(--code-variable);
+}
+
+.prose pre .hljs-attr,
+.prose pre .hljs-attribute,
+.prose pre .hljs-name,
+.prose pre .hljs-selector-attr,
+.prose pre .hljs-selector-pseudo,
+.prose pre .hljs-addition {
+  color: var(--code-attribute);
+}
+
+.prose pre .hljs-comment,
+.prose pre .hljs-quote {
+  color: var(--code-comment);
+}
+
+.prose pre .hljs-emphasis {
+  font-style: italic;
+}
+
+.prose pre .hljs-strong {
+  font-weight: 600;
 }
 
 .copy-code {

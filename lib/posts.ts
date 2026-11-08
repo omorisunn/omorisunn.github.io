@@ -2,7 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 import matter from "gray-matter";
+import hljs from "highlight.js";
 import { marked } from "marked";
+import { markedHighlight } from "marked-highlight";
 import {
   gfmHeadingId,
   getHeadingList,
@@ -33,7 +35,18 @@ export type Post = PostMeta & {
 
 const POSTS_DIR = path.join(process.cwd(), "content", "posts");
 
-marked.use(gfmHeadingId());
+marked.use(
+  gfmHeadingId(),
+  markedHighlight({
+    emptyLangClass: "hljs",
+    langPrefix: "hljs language-",
+    highlight(code, language) {
+      return hljs.highlight(code, {
+        language: hljs.getLanguage(language) ? language : "plaintext",
+      }).value;
+    },
+  }),
+);
 marked.setOptions({ gfm: true, async: false });
 
 function normalizeDate(value: unknown): string {
