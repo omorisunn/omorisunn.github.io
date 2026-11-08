@@ -3,9 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import ArticleEnhancer from "@/components/article-enhancer";
+import ArticleContent from "@/components/article-content";
 import ArticleToc from "@/components/article-toc";
 import { formatDate } from "@/lib/format";
 import { getAllPosts, getPost } from "@/lib/posts";
+
+import "@/app/code-highlighting.css";
 
 type ArticlePageProps = {
   params: Promise<{ slug: string }>;
@@ -95,10 +98,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </details>
           ) : null}
 
-          <div
-            className="prose"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
+          <ArticleContent html={post.html} />
           <ArticleEnhancer />
 
           {post.prev || post.next ? (

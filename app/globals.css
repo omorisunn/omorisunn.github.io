@@ -36,16 +36,9 @@
   --card-hover: rgba(255, 255, 255, 0.44);
   --tray-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.08));
   --inline-code-bg: rgba(29, 29, 31, 0.06);
-  --code-bg: #1d1d1f;
-  --code-text: #f5f5f7;
-  --code-border: rgba(255, 255, 255, 0.12);
-  --code-keyword: #ff7b72;
-  --code-string: #a5d6ff;
-  --code-number: #79c0ff;
-  --code-title: #d2a8ff;
-  --code-variable: #ffa657;
-  --code-attribute: #7ee787;
-  --code-comment: #a1a1a6;
+  --code-bg: rgba(255, 255, 255, 0.48);
+  --code-text: #24292e;
+  --code-border: var(--glass-border);
 
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
     "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -135,8 +128,8 @@
   --card-hover: rgba(255, 255, 255, 0.06);
   --tray-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.03));
   --inline-code-bg: rgba(255, 255, 255, 0.1);
-  --code-bg: #15151a;
-  --code-text: #f5f5f7;
+  --code-bg: rgba(21, 21, 26, 0.64);
+  --code-text: #c9d1d9;
   --code-border: rgba(255, 255, 255, 0.12);
 }
 
@@ -1444,6 +1437,46 @@ a {
   font-size: 0.86em;
 }
 
+.code-block {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  margin: 2em 0;
+  overflow: hidden;
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  color: var(--code-text);
+}
+
+.code-glass-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.code-glass-background::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: var(--code-bg);
+}
+
+.code-glass-panel .glass,
+.code-glass-panel .glass > div,
+.code-glass-fill {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+}
+
+.code-glass-panel .glass {
+  box-shadow: none !important;
+}
+
 .prose pre {
   position: relative;
   margin: 2em 0;
@@ -1458,8 +1491,20 @@ a {
   tab-size: 2;
 }
 
+.prose .code-block pre {
+  margin: 0;
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-10);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.prose pre code.hljs,
 .prose pre code {
+  display: block;
   padding: 0;
+  overflow: visible;
   border-radius: 0;
   background: transparent;
   color: inherit;
@@ -1467,60 +1512,22 @@ a {
   white-space: pre;
 }
 
-.prose pre .hljs-keyword,
-.prose pre .hljs-selector-tag,
-.prose pre .hljs-deletion {
-  color: var(--code-keyword);
-}
-
-.prose pre .hljs-string,
-.prose pre .hljs-regexp,
-.prose pre .hljs-meta .hljs-string {
-  color: var(--code-string);
-}
-
-.prose pre .hljs-number,
-.prose pre .hljs-literal,
-.prose pre .hljs-symbol,
-.prose pre .hljs-bullet,
-.prose pre .hljs-meta {
-  color: var(--code-number);
-}
-
-.prose pre .hljs-title,
-.prose pre .hljs-section,
-.prose pre .hljs-selector-class,
-.prose pre .hljs-selector-id {
-  color: var(--code-title);
-}
-
-.prose pre .hljs-built_in,
-.prose pre .hljs-type,
-.prose pre .hljs-variable,
-.prose pre .hljs-template-variable {
-  color: var(--code-variable);
-}
-
-.prose pre .hljs-attr,
-.prose pre .hljs-attribute,
-.prose pre .hljs-name,
-.prose pre .hljs-selector-attr,
-.prose pre .hljs-selector-pseudo,
-.prose pre .hljs-addition {
-  color: var(--code-attribute);
-}
-
-.prose pre .hljs-comment,
-.prose pre .hljs-quote {
-  color: var(--code-comment);
-}
-
-.prose pre .hljs-emphasis {
-  font-style: italic;
-}
-
-.prose pre .hljs-strong {
-  font-weight: 600;
+.code-language {
+  position: absolute;
+  right: var(--space-5);
+  bottom: var(--space-3);
+  max-width: calc(100% - var(--space-7));
+  overflow: hidden;
+  color: color-mix(in srgb, var(--code-text) 18%, transparent);
+  font-family: var(--font-sans);
+  font-size: clamp(var(--text-5xl), 6vw, var(--text-6xl));
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
 }
 
 .copy-code {
@@ -1528,10 +1535,10 @@ a {
   top: 10px;
   right: 10px;
   padding: 5px 9px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--control-line);
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.7);
+  background: var(--glass);
+  color: var(--code-text);
   font-family: var(--font-sans);
   font-size: var(--text-xs);
   line-height: 1.4;
@@ -1542,12 +1549,12 @@ a {
 }
 
 .copy-code:hover {
-  background: rgba(255, 255, 255, 0.14);
-  color: #ffffff;
+  background: var(--glass-strong);
+  color: var(--text);
 }
 
 .copy-code[data-copied="true"] {
-  color: #64d2ff;
+  color: var(--accent-text);
 }
 
 .prose img {
@@ -2241,6 +2248,11 @@ a {
     font-size: var(--text-sm);
   }
 
+  .code-language {
+    right: var(--space-4);
+    font-size: var(--text-5xl);
+  }
+
   .prose blockquote {
     padding-left: 18px;
     font-size: var(--text-lg);
@@ -2385,6 +2397,11 @@ a {
     -webkit-backdrop-filter: none;
   }
 
+  .code-block {
+    --code-bg: var(--bg);
+  }
+
+  .code-glass-background > *,
   .avatar-liquid,
   .featured-post::before {
     display: none;
@@ -2392,6 +2409,15 @@ a {
 }
 
 @media (prefers-contrast: more) {
+  .code-block {
+    --code-bg: var(--bg);
+    border-color: var(--text-2);
+  }
+
+  .code-glass-background > * {
+    display: none;
+  }
+
   :root {
     --text-3: var(--text-2);
     --control-line: var(--text-2);

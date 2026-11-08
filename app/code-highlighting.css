@@ -1,0 +1,12 @@
+@layer syntax-light, syntax-dark;
+@import "highlight.js/styles/github.css" layer(syntax-light);
+@import "highlight.js/styles/github-dark.css" layer(syntax-dark);
+
+/* Use the library's light palette without copying or editing its token rules. */
+@layer syntax-dark {
+  :root:not([data-theme="dark"]) .hljs,
+  :root:not([data-theme="dark"]) .hljs * {
+    color: revert-layer;
+    background: revert-layer;
+  }
+}
