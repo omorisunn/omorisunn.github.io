@@ -21,8 +21,8 @@ export default function Tilt({ children, className }: TiltProps) {
     const rect = ref.current.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width - 0.5;
     const y = (event.clientY - rect.top) / rect.height - 0.5;
-    ref.current.style.setProperty("--rx", (y * -6).toFixed(2) + "deg");
-    ref.current.style.setProperty("--ry", (x * 6).toFixed(2) + "deg");
+    ref.current.style.setProperty("--rx", (y * -3).toFixed(2) + "deg");
+    ref.current.style.setProperty("--ry", (x * 3).toFixed(2) + "deg");
   };
 
   const reset = () => {

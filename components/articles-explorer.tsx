@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useReducedMotion } from "motion/react";
 import { useMemo, useState } from "react";
 
 import { FILTER_TAGS } from "@/lib/site";
@@ -13,6 +14,7 @@ type ArticlesExplorerProps = {
 
 export default function ArticlesExplorer({ posts }: ArticlesExplorerProps) {
   const [active, setActive] = useState("全部");
+  const reduced = useReducedMotion();
 
   const filtered = useMemo(() => {
     if (active === "全部") {
@@ -49,7 +51,13 @@ export default function ArticlesExplorer({ posts }: ArticlesExplorerProps) {
       </div>
 
       {groups.length > 0 ? (
-        <div className="article-list">
+        <motion.div
+          key={active}
+          className="article-list"
+          initial={reduced ? false : { opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.18, ease: "easeOut" }}
+        >
           {groups.map(([year, items]) => (
             <section className="year-group" key={year} aria-labelledby={"year-" + year}>
               <h2 className="year-label" id={"year-" + year}>
@@ -62,7 +70,7 @@ export default function ArticlesExplorer({ posts }: ArticlesExplorerProps) {
               </div>
             </section>
           ))}
-        </div>
+        </motion.div>
       ) : (
         <p className="empty-state">这个标签下还没有文章。</p>
       )}

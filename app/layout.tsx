@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
-import Aurora from "@/components/aurora";
+import AsciiField from "@/components/ascii-field";
 import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
 import { SITE } from "@/lib/site";
+import { displayFont } from "./fonts";
 
 import "./globals.css";
 
@@ -48,10 +49,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="zh-CN" className={displayFont.variable} suppressHydrationWarning>
       <body id="top" className="site-body">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        <Aurora />
+        <AsciiField />
         <SiteHeader />
         <main id="content" className="site-main">
           {children}

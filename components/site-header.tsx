@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -22,6 +23,7 @@ export default function SiteHeader() {
   const [menuPath, setMenuPath] = useState<string | null>(null);
   const open = menuPath === pathname;
   const headerRef = useRef<HTMLElement>(null);
+  const reduced = useReducedMotion();
 
   useEffect(() => {
     let frame = 0;
@@ -63,25 +65,41 @@ export default function SiteHeader() {
   }, [open]);
 
   return (
-    <header
+    <motion.header
       ref={headerRef}
       className={"site-header" + (scrolled ? " is-scrolled" : "")}
+      initial={reduced ? false : { opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
     >
       <nav className="nav-capsule" aria-label="主导航">
         <div className="nav-links">
-          {NAV.map((item) => (
-            <Link
-              prefetch={false}
-              key={item.href}
-              href={item.href}
-              className={
-                "nav-link" + (isCurrent(pathname, item.href) ? " is-active" : "")
-              }
-              aria-current={isCurrent(pathname, item.href) ? "page" : undefined}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {NAV.map((item) => {
+            const current = isCurrent(pathname, item.href);
+            return (
+              <Link
+                prefetch={false}
+                key={item.href}
+                href={item.href}
+                className={"nav-link" + (current ? " is-active" : "")}
+                aria-current={current ? "page" : undefined}
+              >
+                {current ? (
+                  <motion.span
+                    aria-hidden="true"
+                    className="nav-active-pill"
+                    layoutId="nav-active-pill"
+                    transition={
+                      reduced
+                        ? { duration: 0 }
+                        : { type: "spring", stiffness: 420, damping: 38 }
+                    }
+                  />
+                ) : null}
+                <span className="nav-link-label">{item.label}</span>
+              </Link>
+            );
+          })}
         </div>
         <a
           className="icon-button"
@@ -152,6 +170,6 @@ export default function SiteHeader() {
           <ThemeToggle />
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

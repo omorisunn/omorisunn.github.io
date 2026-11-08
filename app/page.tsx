@@ -1,11 +1,14 @@
 import Link from "next/link";
 
+import FeaturedPost from "@/components/featured-post";
 import Hero from "@/components/hero";
 import PostRow from "@/components/post-row";
 import { getAllPosts } from "@/lib/posts";
 
 export default function Home() {
   const posts = getAllPosts().slice(0, 3);
+  const featured = posts[0];
+  const rest = posts.slice(1);
 
   return (
     <>
@@ -19,8 +22,9 @@ export default function Home() {
           </Link>
         </div>
         <div className="latest-posts">
-          {posts.map((post) => (
-            <PostRow key={post.slug} post={post} />
+          {featured ? <FeaturedPost post={featured} /> : null}
+          {rest.map((post) => (
+            <PostRow key={post.slug} post={post} reveal />
           ))}
         </div>
       </section>

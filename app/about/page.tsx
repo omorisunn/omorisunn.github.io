@@ -12,7 +12,31 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="page page-about">
-      <div className="about-grid">
+<div className="about-grid">
+        <div className="about-main">
+          <h1 className="about-title">关于</h1>
+
+          <div className="about-copy">
+            <section aria-labelledby="about-self">
+              <h2 id="about-self">自述</h2>
+              {/* TODO: 待填写（用户提供后替换）。 */}
+              <p>待填写。</p>
+            </section>
+
+            <section aria-labelledby="about-now">
+              <h2 id="about-now">Now</h2>
+              {/* TODO: 待填写（用户提供后替换）。 */}
+              <p>待填写。</p>
+            </section>
+
+            <section aria-labelledby="about-site">
+              <h2 id="about-site">这个站点</h2>
+              {/* TODO: 待填写（用户提供后替换）。 */}
+              <p>待填写。</p>
+            </section>
+          </div>
+        </div>
+
         <aside className="about-card" aria-label="个人资料">
           <Image
             className="about-avatar"
@@ -33,28 +57,6 @@ export default function AboutPage() {
             GitHub
           </a>
         </aside>
-
-        <div className="about-copy">
-          <h1>关于</h1>
-
-          <section aria-labelledby="about-self">
-            <h2 id="about-self">自述</h2>
-            {/* TODO: 待填写（用户提供后替换）。 */}
-            <p>待填写。</p>
-          </section>
-
-          <section aria-labelledby="about-now">
-            <h2 id="about-now">Now</h2>
-            {/* TODO: 待填写（用户提供后替换）。 */}
-            <p>待填写。</p>
-          </section>
-
-          <section aria-labelledby="about-site">
-            <h2 id="about-site">这个站点</h2>
-            {/* TODO: 待填写（用户提供后替换）。 */}
-            <p>待填写。</p>
-          </section>
-        </div>
       </div>
     </div>
   );
