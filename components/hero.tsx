@@ -80,15 +80,7 @@ export default function Hero() {
         >
           Everything is going to be okey.
         </motion.p>
-        <motion.div
-          className="hero-actions"
-          initial={reduced ? false : { opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.22, ease }}
-        >
-          </Link>
-        </motion.div>
-      </div>
+             </div>
     </section>
   );
 }
