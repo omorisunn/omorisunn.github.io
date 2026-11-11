@@ -86,11 +86,6 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.22, ease }}
         >
-          <Link prefetch={false} className="pill pill--primary" href="/articles/">
-            读文章
-          </Link>
-          <Link prefetch={false} className="pill pill--glass" href="/about/">
-            关于我
           </Link>
         </motion.div>
       </div>
